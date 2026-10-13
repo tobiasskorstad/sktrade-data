@@ -1,0 +1,196 @@
+{
+ "updated": "2026-10-13T20:36+00:00",
+ "failed": [],
+ "markets": [
+  {
+   "key": "XAG",
+   "name": "Sølv",
+   "grp": "metall",
+   "tv": "TVC:SILVER",
+   "src": "Yahoo",
+   "first": 13880,
+   "last": 20739,
+   "n": 4724
+  },
+  {
+   "key": "COPPER",
+   "name": "Kobber",
+   "grp": "metall",
+   "tv": "COMEX:HG1!",
+   "src": "Yahoo",
+   "first": 13880,
+   "last": 20739,
+   "n": 4725
+  },
+  {
+   "key": "PLATINUM",
+   "name": "Platina",
+   "grp": "metall",
+   "tv": "TVC:PLATINUM",
+   "src": "Yahoo",
+   "first": 13880,
+   "last": 20739,
+   "n": 4439
+  },
+  {
+   "key": "WTI",
+   "name": "Olje (WTI)",
+   "grp": "energi",
+   "tv": "TVC:USOIL",
+   "src": "Yahoo",
+   "first": 13880,
+   "last": 20739,
+   "n": 4723
+  },
+  {
+   "key": "BRENT",
+   "name": "Olje (Brent)",
+   "grp": "energi",
+   "tv": "TVC:UKOIL",
+   "src": "Yahoo",
+   "first": 13880,
+   "last": 20739,
+   "n": 4673
+  },
+  {
+   "key": "NATGAS",
+   "name": "Naturgass",
+   "grp": "energi",
+   "tv": "NYMEX:NG1!",
+   "src": "Yahoo",
+   "first": 13880,
+   "last": 20739,
+   "n": 4726
+  },
+  {
+   "key": "WHEAT",
+   "name": "Hvete",
+   "grp": "landbruk",
+   "tv": "CBOT:ZW1!",
+   "src": "Yahoo",
+   "first": 13880,
+   "last": 20739,
+   "n": 4724
+  },
+  {
+   "key": "SP500",
+   "name": "S&P 500",
+   "grp": "indeks",
+   "tv": "SP:SPX",
+   "src": "Yahoo",
+   "first": 13880,
+   "last": 20739,
+   "n": 4725
+  },
+  {
+   "key": "NDX",
+   "name": "Nasdaq 100 (XYZ100)",
+   "grp": "indeks",
+   "tv": "NASDAQ:NDX",
+   "src": "Yahoo",
+   "first": 13880,
+   "last": 20739,
+   "n": 4725
+  },
+  {
+   "key": "EUR",
+   "name": "EUR/USD",
+   "grp": "valuta",
+   "tv": "FX:EURUSD",
+   "src": "Yahoo",
+   "first": 13879,
+   "last": 20739,
+   "n": 4872
+  },
+  {
+   "key": "JPY",
+   "name": "JPY/USD",
+   "grp": "valuta",
+   "tv": "FX_IDC:JPYUSD",
+   "src": "Yahoo",
+   "first": 13879,
+   "last": 20739,
+   "n": 4872
+  },
+  {
+   "key": "GOOGL",
+   "name": "Alphabet",
+   "grp": "aksje",
+   "tv": "NASDAQ:GOOGL",
+   "src": "Yahoo",
+   "first": 13880,
+   "last": 20739,
+   "n": 4725
+  },
+  {
+   "key": "NVDA",
+   "name": "Nvidia",
+   "grp": "aksje",
+   "tv": "NASDAQ:NVDA",
+   "src": "Yahoo",
+   "first": 13880,
+   "last": 20739,
+   "n": 4725
+  },
+  {
+   "key": "AMZN",
+   "name": "Amazon",
+   "grp": "aksje",
+   "tv": "NASDAQ:AMZN",
+   "src": "Yahoo",
+   "first": 13880,
+   "last": 20739,
+   "n": 4725
+  },
+  {
+   "key": "TSLA",
+   "name": "Tesla",
+   "grp": "aksje",
+   "tv": "NASDAQ:TSLA",
+   "src": "Yahoo",
+   "first": 14789,
+   "last": 20739,
+   "n": 4098
+  },
+  {
+   "key": "INTC",
+   "name": "Intel",
+   "grp": "aksje",
+   "tv": "NASDAQ:INTC",
+   "src": "Yahoo",
+   "first": 13880,
+   "last": 20739,
+   "n": 4725
+  },
+  {
+   "key": "MSFT",
+   "name": "Microsoft",
+   "grp": "aksje",
+   "tv": "NASDAQ:MSFT",
+   "src": "Yahoo",
+   "first": 13880,
+   "last": 20739,
+   "n": 4725
+  },
+  {
+   "key": "BABA",
+   "name": "Alibaba",
+   "grp": "aksje",
+   "tv": "NYSE:BABA",
+   "src": "Yahoo",
+   "first": 16332,
+   "last": 20739,
+   "n": 3034
+  },
+  {
+   "key": "HIMS",
+   "name": "Hims & Hers",
+   "grp": "aksje",
+   "tv": "NYSE:HIMS",
+   "src": "Yahoo",
+   "first": 18152,
+   "last": 20739,
+   "n": 1780
+  }
+ ]
+}
