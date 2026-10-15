@@ -37,6 +37,9 @@ a{color:inherit;text-underline-offset:2px}
 .seg button:not(.on):hover{color:var(--tx)}
 .pn{display:none}.pn.on{display:block}
 .sgv{display:none}.sgv.on{display:block}
+.tr{font-size:12px;font-weight:700;padding:3px 9px;border-radius:999px;white-space:nowrap;cursor:help}
+.tu{color:var(--g);background:color-mix(in srgb,var(--g) 14%,transparent)}.td{color:var(--r);background:color-mix(in srgb,var(--r) 14%,transparent)}.tn{color:var(--mu);background:var(--soft)}
+#nbo td{vertical-align:top}#nbo td.w{min-width:260px}#nbo .src a{font-size:12px;white-space:nowrap}
 .tag{display:inline-block;font-size:11px;font-weight:600;color:var(--mu);background:var(--soft);border-radius:6px;padding:2px 7px;margin-left:6px;vertical-align:2px}
 
 /* felles */
@@ -182,22 +185,12 @@ details.more[open]{padding-bottom:16px}
   <div class="brand"><b>SKTRADE</b><span>Gull, krypto og aksjer. Donchian 55/20 på dagsgraf, kun long</span></div>
   <div class="stat"><span id="lv">kobler til…</span><span id="up">laster…</span><button id="go" class="ghost" title="Hent signaler på nytt">Oppdater</button></div>
  </header>
- <nav class="nav"><div class="seg" id="nav"><button data-v="sig" class="on"><span class="lgv">Krypto og gull</span><span class="smv">Krypto</span></button><button data-v="stk">Aksjer</button><button data-v="an">Analyse</button><button data-v="set">Innstillinger</button></div></nav>
+ <nav class="nav"><div class="seg" id="nav"><button data-v="sig" class="on"><span class="lgv">Hovedliste</span><span class="smv">Hoved</span></button><button data-v="stk"><span class="lgv">Andre markeder</span><span class="smv">Andre</span></button><button data-v="nb"><span class="lgv">Nyhetsbilde</span><span class="smv">Nyheter</span></button><button data-v="an">Analyse</button><button data-v="set">Innstillinger</button></div></nav>
 
  <section class="pn on" id="pSig">
-  <div class="sub" id="sgs"><button data-s="core" class="on">Hovedliste</button><button data-s="top">Topp 20</button></div>
-  <div class="sgv on" id="sgCore">
   <div class="hero"><h1 id="hv">Henter dagens signaler…</h1><p id="hs"></p></div>
-  <div class="rl"><span><i style="background:var(--b)"></i>Blå: høy sannsynlighet</span><span><i style="background:var(--g)"></i>Grønn: positiv sjanse</span><span><i style="background:var(--r)"></i>Rød: nei</span><span>Vurdert etter strategiens 5-års backtest, ingen garanti. Trykk på et kort for graf.</span></div>
+  <div class="rl"><span><i style="background:var(--b)"></i>Blå: høy sannsynlighet</span><span><i style="background:var(--g)"></i>Grønn: positiv sjanse</span><span><i style="background:var(--r)"></i>Rød: nei</span><span>Vurdert etter strategiens 5-års backtest, ingen garanti. ▲/▼ er en enkel trendoppsummering, ikke et signal. Trykk på et kort for graf.</span></div>
   <div class="grid" id="g"></div>
-  </div>
-  <div class="sgv" id="sgTop">
-  <div class="hero"><h1 id="hv3">Henter topp 20…</h1><p id="hs3"></p></div>
-  <div class="rl"><span><i style="background:var(--b)"></i>Blå: høy sannsynlighet</span><span><i style="background:var(--g)"></i>Grønn: positiv sjanse</span><span><i style="background:var(--r)"></i>Rød: nei</span><span>Samme strategi og konto. Trykk på et kort for graf.</span></div>
-  <div class="grid" id="g3"></div>
-  <div class="ft">De 20 største coinene etter markedsverdi (CoinGecko, 13.10.2026), uten stablecoins, gulltoken og token som ikke handles som vanlige perps (Figure Heloc, WhiteBIT Coin, LEO, Rain). BTC, ETH, BNB, XRP og SOL ligger i Hovedliste, her er de 15 neste. Data fra Binance, eller fra Hyperliquid når Binance ikke har coinen. Kort merket «ikke på Hyperliquid» finnes trolig ikke på SizeProp. Disse coinene er med i backtestene, men <b>ikke i Telegram-varslene fra GitHub</b>. Test først, og si fra hvis de skal inn der.</div>
-  </div>
-
   <h2>Ordre til SizeProp</h2>
   <p class="lead">Tallene for aktive signaler, klare til å kopieres inn i terminalen.</p>
   <div id="cpv">
@@ -216,10 +209,27 @@ details.more[open]{padding-bottom:16px}
  </section>
 
  <section class="pn" id="pStk">
+  <div class="sub" id="sgs"><button data-s="top" class="on">Topp 20 krypto</button><button data-s="stk">Aksjer</button></div>
+  <div class="sgv on" id="sgTop">
+  <div class="hero"><h1 id="hv3">Henter topp 20…</h1><p id="hs3"></p></div>
+  <div class="rl"><span><i style="background:var(--b)"></i>Blå: høy sannsynlighet</span><span><i style="background:var(--g)"></i>Grønn: positiv sjanse</span><span><i style="background:var(--r)"></i>Rød: nei</span><span>Samme strategi og konto. ▲/▼ er en enkel trendoppsummering. Trykk på et kort for graf.</span></div>
+  <div class="grid" id="g3"></div>
+  <div class="ft">De 20 største coinene etter markedsverdi (CoinGecko, 13.10.2026), uten stablecoins, gulltoken og token som ikke handles som vanlige perps (Figure Heloc, WhiteBIT Coin, LEO, Rain). BTC, ETH, BNB, XRP og SOL ligger i Hovedliste, her er de 15 neste. Data fra Binance, eller fra Hyperliquid når Binance ikke har coinen. Kort merket «ikke på Hyperliquid» finnes trolig ikke på SizeProp. Disse coinene er med i backtestene, men <b>ikke i Telegram-varslene</b>, som bare gjelder hovedlista.</div>
+  </div>
+
+  <div class="sgv" id="sgStk">
   <div class="hero"><h1 id="hv2">Henter aksjer…</h1><p id="hs2"></p></div>
-  <div class="rl"><span><i style="background:var(--b)"></i>Blå: høy sannsynlighet</span><span><i style="background:var(--g)"></i>Grønn: positiv sjanse</span><span><i style="background:var(--r)"></i>Rød: nei</span><span>Samme strategi og samme konto som krypto. Trykk på et kort for graf.</span></div>
+  <div class="rl"><span><i style="background:var(--b)"></i>Blå: høy sannsynlighet</span><span><i style="background:var(--g)"></i>Grønn: positiv sjanse</span><span><i style="background:var(--r)"></i>Rød: nei</span><span>Samme strategi og samme konto som krypto. ▲/▼ er en enkel trendoppsummering. Trykk på et kort for graf.</span></div>
   <div class="grid" id="g2"></div>
-  <div class="ft">Aksjene handles som perps på Hyperliquid (trade.xyz), samme priser som i SizeProp-terminalen. Prisene oppdateres hvert 10. sekund. De handles døgnet rundt, og dagens candle lukker kl. 00:00 UTC som for krypto. Når børsen i USA er stengt, står prisen ofte stille, så signalene kommer i praksis etter handelsdager. Markedene finnes bare på Hyperliquid fra rundt høsten 2025 (SpaceX fra juni 2026), så det er for lite historikk til en 5-års vurdering. Aksjene deler konto og risikotak med krypto og gull.</div>
+  <div class="ft">Aksjene handles som perps på Hyperliquid (trade.xyz), samme priser som i SizeProp-terminalen. Prisene oppdateres hvert 10. sekund. De handles døgnet rundt, og dagens candle lukker kl. 00:00 UTC som for krypto. Når børsen i USA er stengt, står prisen ofte stille, så signalene kommer i praksis etter handelsdager. Markedene finnes bare på Hyperliquid fra rundt høsten 2025 (SpaceX fra juni 2026), så det er for lite historikk til en 5-års vurdering. Aksjene deler konto og risikotak med krypto og gull. Ikke med i Telegram-varslene.</div>
+  </div>
+ </section>
+
+ <section class="pn" id="pNb">
+  <div class="hero"><h1 id="nbh">Nyhetsbilde</h1><p id="nbs">Henter…</p></div>
+  <div class="bar" style="margin:4px 0 12px"><label>Vis<select id="nbf"><option value="all">Alle</option><option value="core">Hovedliste</option><option value="top">Topp 20 krypto</option><option value="stk">Aksjer</option></select></label></div>
+  <div id="nbo" style="overflow-x:auto"></div>
+  <div class="ft">Nyhetsbildet er en kort oppsummering av ferske nyheter, kvartalsrapporter og kommende hendelser, satt sammen av Claude fra åpne kilder. «Opp» og «ned» er en vurdering av nyhetstonen, ikke en prognose, og er ikke testet som strategi. Bruk det som bakgrunn: signalene fra strategien gjelder fortsatt. Trend-kolonnen er beregnet fra dagsgrafen her på siden. Ikke finansiell rådgivning.</div>
  </section>
 
  <section class="pn" id="pAn">
@@ -458,15 +468,21 @@ async function kl(sym,iv){if(isY(sym))return yK(sym,300);if(STK.has(sym)||isHL(s
  for(const host of["api.binance.com","data-api.binance.vision"]){
   try{const r=await fetch(`https://${host}/api/v3/klines?symbol=${sym}&interval=${iv}&limit=300`);if(r.ok)return r.json()}catch(e){}}
  throw 0}
+/* Enkel trendoppsummering fra dagsgrafen: pris mot EMA 50, EMA 50 mot EMA 200 og retning siste 20 dager. Ikke et signal. */
+function trendOf(k){const c=k.map(z=>+z[4]),n=c.length,e50=ema(c,50).at(-1),e200=ema(c,200).at(-1),m20=n>21?c[n-1]/c[n-21]-1:0;
+ const parts=[c[n-1]>e50,n>=200?e50>e200:null,m20>0].filter(v=>v!==null),ts=parts.filter(Boolean).length/parts.length;
+ return{ts,up:ts>.5,txt:ts==1?"Opp":ts>.5?"Svakt opp":ts>0?"Svakt ned":"Ned",
+  why:`Pris ${c[n-1]>e50?"over":"under"} EMA 50`+(n>=200?` · EMA 50 ${e50>e200?"over":"under"} EMA 200`:" · for kort historikk for EMA 200")+` · ${m20>=0?"+":""}${(m20*100).toFixed(1)} % siste 20 dager`}}
+const trBadge=t=>t?`<span class="tr ${t.up?"tu":"td"}" title="${t.why}. Enkel oppsummering fra dagsgrafen, ikke et signal.">${t.up?"▲":"▼"} ${t.txt}</span>`:"";
 async function run(ins){
  const[nm,sym,tv]=ins,all=await klN(sym,"1d",1000),k=all.filter(z=>+z[6]<Date.now()),cu=all.at(-1);
  if(k.length<120)throw 0;
  const S=donState(k),pr=(P[sym]&&P[sym].p)||+cu[4],a=S.at,fd=t=>new Date(t).toLocaleDateString("no",{day:"numeric",month:"short"});
- const o={nm,sym,tv,stk:STK.has(sym),top:!!TOPI[sym],dir:"AVVENT",lbl:"AVVENT",sc:0,tfs:[],p:pr,r:50,a,sl:0,tp:0,xl:S.L,new:false,hold:false,pts:+k.at(-1)[6]+1,ets:0,price:pr,days:0,R0:0,closed:S.closed,lines:[[DA+"D HØY",S.H,"g"]],sub:`Donchian ${DA}/${DB} · daglig · kun long`,txt:"",info:[]};
+ const o={nm,sym,tv,stk:STK.has(sym),top:!!TOPI[sym],dir:"AVVENT",lbl:"AVVENT",sc:0,tfs:[],p:pr,r:50,a,sl:0,tp:0,xl:S.L,new:false,hold:false,pts:+k.at(-1)[6]+1,ets:0,price:pr,days:0,R0:0,closed:S.closed,lines:[[DA+"D HØY",S.H,"g"]],sub:`Donchian ${DA}/${DB} · daglig · kun long`,txt:"",info:[],trend:trendOf(k)};
  if(S.pend!=null){const e=pr;Object.assign(o,{dir:"KJØP",lbl:"KJØP",sc:1,new:true,p:e,sl:e-3*a,txt:`Nytt signal: dagen lukket over ${DA}-dagers høy`,lines:[["ENTRY",e,"#3b82f6"],["STOP",e-3*a,"r"],[DB+"D LAV",S.L,"#f59e0b"]]})}
  else if(S.pos){const q=S.pos,u=(pr-q.e)/q.R0;Object.assign(o,{dir:"KJØP",lbl:"HOLD LONG",sc:.5,hold:true,ets:+k[q.di-1][6]+1,days:q.n,R0:q.R0,p:q.e,sl:q.st,txt:`Åpen siden ${fd(+k[q.di][0])} (${q.n} dager) · ${u>=0?"+":""}${u.toFixed(2)}R nå · hold, og flytt stop til ${f(q.st)}`,lines:[["ENTRY",q.e,"#3b82f6"],["STOP",q.st,"r"],[DB+"D LAV",S.L,"#f59e0b"]]})}
  else o.txt=`Ingen posisjon. Kjøpssignal hvis dagen lukker over ${f(S.H)} (${((S.H/pr-1)*100).toFixed(1)}% unna)`;
- o.info=[["Siste lukkekurs",f(S.c)],["Kjøpsnivå ("+DA+"-dagers høy)",f(S.H)],["Exit-nivå ("+DB+"-dagers lav)",f(S.L)],["ATR (14 dager)",f(a)],["Status",o.txt]];
+ o.info=[["Trend (enkel)",`${o.trend.up?"▲":"▼"} ${o.trend.txt}: ${o.trend.why}`],["Siste lukkekurs",f(S.c)],["Kjøpsnivå ("+DA+"-dagers høy)",f(S.H)],["Exit-nivå ("+DB+"-dagers lav)",f(S.L)],["ATR (14 dager)",f(a)],["Status",o.txt]];
  return o}
 const f=x=>x>=100?x.toFixed(2):x>=1?x.toFixed(3):x.toFixed(5);
 function card(d,i){
@@ -476,7 +492,7 @@ function card(d,i){
   lv=`<div class="lv"><div><small>Entry</small>${f(d.p)}</div><div><small>Stop (trailing)</small>${f(d.sl)}</div><div><small>Exit under</small>${f(d.xl)}</div></div>
   <div class="nt">${d.new?`Størrelse ved ${rk}% risiko: ${!isFinite(q)?"ukjent (mangler dollarkurs)":q<10?q.toFixed(4):q.toFixed(2)} ${d.stk?"aksjer":"enheter"} · ingen fast TP, flytt stop opp hver dag`:d.txt}</div>`}
  else lv=`<div class="nt">${d.txt}</div>`;
- return`<div class="c ${d.dir}" data-i="${i}"><div class="t"><span class="nm">${d.nm}${d.top&&TOPI[d.sym]&&!TOPI[d.sym].onHL?'<span class="tag">ikke på Hyperliquid</span>':""}${isHL(d.sym)?'<span class="tag">data: Hyperliquid</span>':""}</span></div><div class="lp" data-p="${d.sym}"><span class="v">…</span><span class="chg"></span></div>
+ return`<div class="c ${d.dir}" data-i="${i}"><div class="t"><span class="nm">${d.nm}${d.top&&TOPI[d.sym]&&!TOPI[d.sym].onHL?'<span class="tag">ikke på Hyperliquid</span>':""}${isHL(d.sym)?'<span class="tag">data: Hyperliquid</span>':""}</span>${trBadge(d.trend)}</div><div class="lp" data-p="${d.sym}"><span class="v">…</span><span class="chg"></span></div>
  <div class="sig">${d.lbl}</div><div class="ms">${d.sub}</div>
  <div data-rt="${i}"></div>${lv}
  <div class="nt"><a href="https://www.tradingview.com/chart/?symbol=${d.tv}" target="_blank" rel="noopener">Åpne i TradingView ↗</a></div></div>`}
@@ -484,7 +500,7 @@ async function load(){
  $("go").disabled=true;$("up").textContent="oppdaterer…";
  await TOPREADY;const res=await Promise.all(INS.map(i=>run(i).catch(()=>({err:1,nm:i[0],sym:i[1],stk:STK.has(i[1]),top:!!TOPI[i[1]],sc:0}))));
  res.sort((a,b)=>Math.abs(b.sc)-Math.abs(a.sc));window._r=res;newSig(res);track(res);hero(res);
- renderCards();paintAll();renderCP();
+ renderCards();paintAll();renderCP();if(NB&&$("pNb").classList.contains("on"))loadNb();
  $("up").textContent="oppdatert "+new Date().toLocaleTimeString("no");$("go").disabled=false}
 $("go").onclick=load;
 ["acc","rk"].forEach(i=>$(i).oninput=()=>{if(window._r)renderCards();paintAll()});
@@ -1084,11 +1100,26 @@ async function wfRun(){const b=$("wfgo"),st=$("wfst");b.disabled=true;$("wfo").i
  b.disabled=false}
 $("wfgo").onclick=wfRun;
 
+/* ===== Nyhetsbilde: tabell fra data/nyhetsbilde.json i sktrade-data (oppdateres av Claude) ===== */
+let NB=null;
+async function loadNb(force){
+ if(!NB||force){try{const r=await fetch(yBase()+"/nyhetsbilde.json",{cache:"no-store"});if(!r.ok)throw new Error("svarte "+r.status);NB=await r.json()}
+  catch(e){$("nbs").textContent="Fant ikke nyhetsbildet ("+(e.message||e)+"). Sjekk Innstillinger → Andre markeder.";return}}
+ const tr={};(window._r||[]).forEach(d=>{if(d.trend)tr[d.nm]=d.trend});
+ const g=$("nbf").value,ord={core:0,top:1,stk:2},items=NB.items.filter(x=>g=="all"||x.grp==g).sort((a,b)=>ord[a.grp]-ord[b.grp]);
+ const nd={opp:["tu","▲ Opp"],ned:["td","▼ Ned"],blandet:["tn","■ Blandet"]},gl={core:"Hovedliste",top:"Topp 20",stk:"Aksje"};
+ const up=items.filter(x=>x.dir=="opp").length,dn=items.filter(x=>x.dir=="ned").length;
+ $("nbh").textContent=`Nyhetsbilde: ${up} opp, ${dn} ned, ${items.length-up-dn} blandet`;
+ $("nbs").innerHTML=`Oppdatert ${NB.updated}. ${NB.note||""}`;
+ $("nbo").innerHTML=`<table><tr><th>Instrument</th><th>Nyheter</th><th>Trend (graf)</th><th>Hvorfor</th><th>Neste hendelse</th><th>Kilder</th></tr>${items.map(x=>{const t=tr[x.nm],n=nd[x.dir]||nd.blandet;
+  return`<tr><td><b>${x.name}</b><br><span class="nt" style="margin:0">${gl[x.grp]||""}</span></td><td><span class="tr ${n[0]}">${n[1]}</span></td><td>${t?trBadge(t):"–"}</td><td class="w">${x.why}</td><td>${x.event||"–"}</td><td class="src">${(x.src||[]).map(s=>`<a href="${s.u}" target="_blank" rel="noopener">${s.t} ↗</a>`).join("<br>")}</td></tr>`}).join("")}</table>`}
+$("nbf").onchange=()=>loadNb();
+
 /* ===== Navigasjon: fire hovedfaner + underfaner i Analyse ===== */
 const store=(k,v)=>{try{if(v===undefined)return localStorage.getItem(k);localStorage.setItem(k,v)}catch(e){return null}};
 function showTab(v){document.querySelectorAll("#nav button").forEach(b=>b.classList.toggle("on",b.dataset.v==v));
- [["sig","pSig"],["stk","pStk"],["an","pAn"],["set","pSet"]].forEach(([k,id])=>$(id).classList.toggle("on",k==v));store("sk_tab",v);if(v=="an"&&subNow=="nw")loadNews()}
-function showSg(v){document.querySelectorAll("#sgs button").forEach(b=>b.classList.toggle("on",b.dataset.s==v));$("sgCore").classList.toggle("on",v=="core");$("sgTop").classList.toggle("on",v=="top");store("sk_sg",v)}
+ [["sig","pSig"],["stk","pStk"],["nb","pNb"],["an","pAn"],["set","pSet"]].forEach(([k,id])=>$(id).classList.toggle("on",k==v));store("sk_tab",v);if(v=="an"&&subNow=="nw")loadNews();if(v=="nb")loadNb()}
+function showSg(v){if(v!="stk")v="top";document.querySelectorAll("#sgs button").forEach(b=>b.classList.toggle("on",b.dataset.s==v));$("sgTop").classList.toggle("on",v=="top");$("sgStk").classList.toggle("on",v=="stk");store("sk_sg",v)}
 $("sgs").onclick=e=>{const b=e.target.closest("button");if(b)showSg(b.dataset.s)};
 let subNow="nw";
 const ARK=["ks","wf","sv","bt"];
@@ -1166,8 +1197,8 @@ function heroFor(res,hv,hs,stk){try{const ok=res.filter(d=>!d.err),nw=ok.filter(
 setInterval(()=>{if(window._r)hero(window._r)},6e4);
 
 showSub(store("sk_sub")||"tf");
-showTab(["sig","stk","an","set"].includes(store("sk_tab"))?store("sk_tab"):"sig");
-showSg(store("sk_sg")=="top"?"top":"core");
+showTab(["sig","stk","nb","an","set"].includes(store("sk_tab"))?store("sk_tab"):"sig");
+showSg(store("sk_sg"));
 renderEv();
 hlMids();setInterval(hlMids,1e4);
 
