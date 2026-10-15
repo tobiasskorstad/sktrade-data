@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-14T02:00+00:00",
+ "updated": "2026-10-15T02:02+00:00",
  "failed": [],
  "markets": [
   {
@@ -9,8 +9,8 @@
    "tv": "TVC:SILVER",
    "src": "Yahoo",
    "first": 13880,
-   "last": 20739,
-   "n": 4724
+   "last": 20740,
+   "n": 4725
   },
   {
    "key": "COPPER",
@@ -19,8 +19,8 @@
    "tv": "COMEX:HG1!",
    "src": "Yahoo",
    "first": 13880,
-   "last": 20739,
-   "n": 4725
+   "last": 20740,
+   "n": 4726
   },
   {
    "key": "PLATINUM",
@@ -29,8 +29,8 @@
    "tv": "TVC:PLATINUM",
    "src": "Yahoo",
    "first": 13880,
-   "last": 20739,
-   "n": 4439
+   "last": 20740,
+   "n": 4441
   },
   {
    "key": "WTI",
@@ -39,8 +39,8 @@
    "tv": "TVC:USOIL",
    "src": "Yahoo",
    "first": 13880,
-   "last": 20739,
-   "n": 4723
+   "last": 20740,
+   "n": 4724
   },
   {
    "key": "BRENT",
@@ -49,8 +49,8 @@
    "tv": "TVC:UKOIL",
    "src": "Yahoo",
    "first": 13880,
-   "last": 20739,
-   "n": 4673
+   "last": 20740,
+   "n": 4674
   },
   {
    "key": "NATGAS",
@@ -59,8 +59,8 @@
    "tv": "NYMEX:NG1!",
    "src": "Yahoo",
    "first": 13880,
-   "last": 20739,
-   "n": 4726
+   "last": 20740,
+   "n": 4727
   },
   {
    "key": "WHEAT",
@@ -69,8 +69,8 @@
    "tv": "CBOT:ZW1!",
    "src": "Yahoo",
    "first": 13880,
-   "last": 20739,
-   "n": 4724
+   "last": 20740,
+   "n": 4725
   },
   {
    "key": "SP500",
@@ -79,8 +79,8 @@
    "tv": "SP:SPX",
    "src": "Yahoo",
    "first": 13880,
-   "last": 20739,
-   "n": 4725
+   "last": 20740,
+   "n": 4726
   },
   {
    "key": "NDX",
@@ -89,8 +89,8 @@
    "tv": "NASDAQ:NDX",
    "src": "Yahoo",
    "first": 13880,
-   "last": 20739,
-   "n": 4725
+   "last": 20740,
+   "n": 4726
   },
   {
    "key": "EUR",
@@ -99,8 +99,8 @@
    "tv": "FX:EURUSD",
    "src": "Yahoo",
    "first": 13879,
-   "last": 20740,
-   "n": 4873
+   "last": 20741,
+   "n": 4874
   },
   {
    "key": "JPY",
@@ -109,8 +109,8 @@
    "tv": "FX_IDC:JPYUSD",
    "src": "Yahoo",
    "first": 13879,
-   "last": 20740,
-   "n": 4873
+   "last": 20741,
+   "n": 4874
   },
   {
    "key": "GOOGL",
@@ -119,8 +119,8 @@
    "tv": "NASDAQ:GOOGL",
    "src": "Yahoo",
    "first": 13880,
-   "last": 20739,
-   "n": 4725
+   "last": 20740,
+   "n": 4726
   },
   {
    "key": "NVDA",
@@ -129,8 +129,8 @@
    "tv": "NASDAQ:NVDA",
    "src": "Yahoo",
    "first": 13880,
-   "last": 20739,
-   "n": 4725
+   "last": 20740,
+   "n": 4726
   },
   {
    "key": "AMZN",
@@ -139,8 +139,8 @@
    "tv": "NASDAQ:AMZN",
    "src": "Yahoo",
    "first": 13880,
-   "last": 20739,
-   "n": 4725
+   "last": 20740,
+   "n": 4726
   },
   {
    "key": "TSLA",
@@ -149,8 +149,8 @@
    "tv": "NASDAQ:TSLA",
    "src": "Yahoo",
    "first": 14789,
-   "last": 20739,
-   "n": 4098
+   "last": 20740,
+   "n": 4099
   },
   {
    "key": "INTC",
@@ -159,8 +159,8 @@
    "tv": "NASDAQ:INTC",
    "src": "Yahoo",
    "first": 13880,
-   "last": 20739,
-   "n": 4725
+   "last": 20740,
+   "n": 4726
   },
   {
    "key": "MSFT",
@@ -169,8 +169,8 @@
    "tv": "NASDAQ:MSFT",
    "src": "Yahoo",
    "first": 13880,
-   "last": 20739,
-   "n": 4725
+   "last": 20740,
+   "n": 4726
   },
   {
    "key": "BABA",
@@ -179,8 +179,8 @@
    "tv": "NYSE:BABA",
    "src": "Yahoo",
    "first": 16332,
-   "last": 20739,
-   "n": 3034
+   "last": 20740,
+   "n": 3035
   },
   {
    "key": "HIMS",
@@ -189,8 +189,8 @@
    "tv": "NYSE:HIMS",
    "src": "Yahoo",
    "first": 18152,
-   "last": 20739,
-   "n": 1780
+   "last": 20740,
+   "n": 1781
   }
  ]
 }
