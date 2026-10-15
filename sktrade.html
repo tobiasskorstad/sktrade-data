@@ -114,6 +114,8 @@ details.more[open]{padding-bottom:16px}
 .sub{display:flex;gap:4px;flex-wrap:wrap;border-bottom:1px solid var(--bd);margin:6px 0 18px}
 .sub button{background:none;color:var(--mu);border:0;border-bottom:2px solid transparent;border-radius:0;padding:10px 12px;font-weight:600;margin-bottom:-1px}
 .sub button.on{color:var(--tx);border-bottom-color:var(--au)}
+.sub2{border:0;margin:-6px 0 14px;gap:6px}.sub2 button{border:1px solid var(--bd);border-radius:999px;padding:6px 12px;margin:0;font-size:13px}.sub2 button.on{border-color:var(--tx);background:var(--soft)}
+.verdict{display:inline-block;font-size:12px;font-weight:600;color:var(--mu);background:var(--soft);border-radius:6px;padding:3px 8px;margin:0 0 10px}
 .sv{display:none}.sv.on{display:block}
 #bc{width:100%;height:220px;display:block;margin:14px 0}
 .nwg{display:grid;grid-template-columns:minmax(0,5fr) minmax(0,6fr);gap:18px;align-items:start}
@@ -222,9 +224,14 @@ details.more[open]{padding-bottom:16px}
 
  <section class="pn" id="pAn">
   <div class="hero" style="padding-bottom:6px;border:0;margin:0"><h1 id="ah" style="font:500 clamp(26px,4.4vw,36px)/1.15 var(--serif);margin:0">Backtester, strategier og nyheter</h1></div>
-  <div class="sub" id="sub"><button data-a="nw" class="on">Nyheter</button><button data-a="tf">Langsiktig trend</button><button data-a="ks">Kort sikt (15m–4t)</button><button data-a="pt">SizeProp-test</button><button data-a="wf">Topp N (walk-forward)</button><button data-a="sv">Strategier (1 time)</button><button data-a="bt">Backtest (1 time)</button></div>
+  <div class="sub" id="sub"><button data-a="tf" class="on">Langsiktig trend</button><button data-a="pt">SizeProp-test</button><button data-a="nw">Nyheter</button><button data-a="ar">Arkiv</button></div>
 
-  <div class="sv on" id="nwv">
+  <div class="sv" id="arv">
+   <p class="lead">Tester vi har kjørt og lagt bort. De ligger her så du kan se og kjøre dem igjen, men ingen av dem brukes i signalene.</p>
+   <div class="sub sub2" id="sub2"><button data-b="ks" class="on">Kort sikt (15m–4t)</button><button data-b="wf">Topp N (walk-forward)</button><button data-b="sv">Strategier (1 time)</button><button data-b="bt">Backtest (1 time)</button></div>
+  </div>
+
+  <div class="sv" id="nwv">
    <p class="lead">Store hendelser i USA kan flytte gull og krypto kraftig på minutter. Strategien bruker ikke nyheter i signalene, men vurder å vente med nye kjøp til etter en stor hendelse samme dag. Et kraftig hopp kan treffe SizeProps daglige tapsgrense.</p>
    <div class="nwg">
     <div class="box"><h3>Kommende hendelser</h3><div id="nwc"></div><div class="nt" id="nwcs"></div></div>
@@ -246,6 +253,7 @@ details.more[open]{padding-bottom:16px}
    <div class="ft">Seks trendstrategier med lik utgang: start-stop og trailing stop (chandelier) på stop × ATR, i tillegg til strategiens egen utgangsregel. Entry og signalutgang skjer på åpning av neste candle. Risiko per trade hentes fra Innstillinger. Trening = første 60 % av perioden, test = siste 40 %. Historikken starter ulikt (SOL 2020, PAXG 2019), og «Maks» bruker det som finnes. Slippage og funding hentes fra Innstillinger (Kostnader i backtestene), og short mottar funding når long betaler. Instrumentene er ikke slått sammen til én portefølje. Få trades gir stor usikkerhet, og en test som dekker bare ett markedsregime sier lite. Historikk er ingen garanti.</div>
   </div>
   <div class="sv" id="ksv">
+   <div class="verdict">Lagt bort 13.10.2026: ingen av 40 kombinasjoner var lønnsomme etter kostnader</div>
    <p class="lead">Backtest av åtte kortsiktige strategier på 15 minutter til 4 timer. Gir flere handler enn swing-strategien, men avgift og slippage spiser mer jo kortere tidsrammen er. Velg «Alle» for å sammenligne tidsrammene side om side.</p>
    <div class="bar">
     <label>Tidsramme<select id="kstf"><option value="all" selected>Alle (15m–4t)</option><option value="15m">15 min</option><option value="30m">30 min</option><option value="1h">1 time</option><option value="2h">2 timer</option><option value="4h">4 timer</option></select></label>
@@ -264,6 +272,7 @@ details.more[open]{padding-bottom:16px}
    <div class="ft">Strategier: Donchian 20/10 og 55/20 (breakout), EMA 9/21-kryss med EMA 200-filter, EMA 20/50-kryss, Supertrend (10, 3), MACD-kryss med EMA 200-filter, RSI(2)-pullback i trend (exit over 5-snitt) og Bollinger-reversal (exit ved midtlinjen). Signal på lukking av candle, inngang på åpningen av neste. Innen samme candle sjekkes stop før TP og exit (forsiktig), og hopp forbi stop fylles på åpningen. Én posisjon om gangen per instrument og strategi. «Bare med dagstrenden» tar bare handler i retning av dagsgrafen (pris over/under EMA 50). Trening = første 60 % av perioden, test = siste 40 %. R = resultat delt på startrisikoen (stop × ATR). Kostnad R/trade viser hvor mye avgift og slippage tar av hver handel. Verste dag og maks fall er regnet om til % med risikoen per trade fra Innstillinger, med alle valgte instrumenter handlet samtidig. Sammenlign med SizeProps daglige tapsgrense (2–4 %) og maks drawdown (3–6 %). Sjekk SizeProps faktiske avgift. Funding er ikke med. Aksjer fra Hyperliquid har bare de siste 5000 candlene (om lag 52 dager på 15 min, 208 dager på 1 time). Med 40 kombinasjoner vil noen se gode ut ved ren flaks, så stol mest på strategier som holder på flere tidsrammer og instrumenter. 15 min over 24 måneder tar et par minutter å hente. Historikk er ingen garanti.</div>
   </div>
   <div class="sv" id="wfv">
+   <div class="verdict">Lagt bort 13.10.2026: å velge markeder underveis ga ingen fordel over hovedlista</div>
    <p class="lead">Handler bare de instrumentene som har gått best med strategien den siste tiden, og bytter utvalg jevnlig. Rangeringen bruker bare handler som var avsluttet på rangeringsdagen, så testen vet aldri noe om framtiden.</p>
    <div class="bar">
     <label>Instrumenter å velge fra<select id="wfu"><option value="all" selected>Alle krypto og gull</option><option value="top">Topp 20 (15 til)</option><option value="core">Hovedliste (6)</option><option value="alt">Andre markeder</option><option value="coreAlt">Hovedliste + andre markeder</option><option value="coreAltNS">Hovedliste + andre, uten enkeltaksjer</option></select></label>
@@ -298,6 +307,7 @@ details.more[open]{padding-bottom:16px}
    <div class="ft">Alle instrumentene handles samtidig på én konto med Donchian 55/20 (kun long). Testen starter en ny evaluering hver N-te dag i historikken (opptil ca. 8 år) og følger den til den er bestått, brutt eller tiden går ut. Regler fra sizeprop.com/our-rules (sjekket 13.10.2026): ingen tidsgrense og ingen minste antall dager, men minst én handel hver 90. dag. «Brutt (inaktiv)» teller bare kjøp og salg fra strategien som handel, ikke å holde en posisjon. Du kan unngå dette ved å ta en liten handel selv før 90 dager har gått, men sjekk med SizeProp at det teller. Forenklinger: innen dagen antas alle åpne posisjoner å treffe laveste kurs samtidig (pessimistisk), daglig tapsgrense regnes fra saldoen ved starten av UTC-dagen (SizeProp bruker kl. 20:00 UTC), fyllinger på stop-nivå med slippage fra Innstillinger, og hoppes et signal over, venter instrumentet til sitt neste signal. Startdatoene overlapper, så de uavhengige utfallene er få. Slippage og funding fra Innstillinger er med, og funding trekkes også fra åpne posisjoner underveis. Spread og SizeProps egne avgifter er ikke med. Historikk er ingen garanti. Laveste equity har startsaldo 100.</div>
   </div>
   <div class="sv" id="stv">
+   <div class="verdict">Lagt bort: ingen var lønnsomme etter avgifter</div>
    <p class="lead">Sju kortsiktige strategier på 1-timesgraf. Ingen av dem var lønnsomme etter avgifter, og derfor bruker signalene dagsgraf.</p>
    <div class="bar">
     <label>Periode<select id="sp"><option value="2160">3 måneder</option><option value="4320" selected>6 måneder</option><option value="8640">12 måneder</option></select></label>
@@ -310,6 +320,7 @@ details.more[open]{padding-bottom:16px}
    <div class="ft">Alle sju strategier handler på lukking av signalcandelen (1t), med samme SL/TP og avgifter, én posisjon om gangen per instrument. Trening = første 60 % av perioden, test = siste 40 %. Ingenting er justert på testdelen, men velger du vinneren av mange, blir testresultatet likevel litt for optimistisk. Avgift R/trade viser hvor mye avgiftene spiser av hver trade målt i risikoenheter: lav volatilitet (gull) gir høy avgiftsandel. Historikk er ingen garanti.</div>
   </div>
   <div class="sv" id="btv">
+   <div class="verdict">Lagt bort: den gamle strategien, bare til sammenligning</div>
    <p class="lead">Den gamle kortsiktige strategien, til sammenligning.</p>
    <div class="bar">
     <label>Startsum ($)<input id="bts" type="number" value="1000"></label>
@@ -1080,10 +1091,18 @@ function showTab(v){document.querySelectorAll("#nav button").forEach(b=>b.classL
 function showSg(v){document.querySelectorAll("#sgs button").forEach(b=>b.classList.toggle("on",b.dataset.s==v));$("sgCore").classList.toggle("on",v=="core");$("sgTop").classList.toggle("on",v=="top");store("sk_sg",v)}
 $("sgs").onclick=e=>{const b=e.target.closest("button");if(b)showSg(b.dataset.s)};
 let subNow="nw";
-function showSub(a){subNow=a;document.querySelectorAll("#sub button").forEach(b=>b.classList.toggle("on",b.dataset.a==a));
- ["nw","tf","ks","pt","wf","sv","bt"].forEach(k=>$(k=="sv"?"stv":k+"v").classList.toggle("on",k==a));store("sk_sub",a);if(a=="nw")loadNews()}
+const ARK=["ks","wf","sv","bt"];
+function showSub(a){if(ARK.includes(a)){store("sk_sub2",a);a="ar"}if(!["tf","pt","nw","ar"].includes(a))a="tf";subNow=a;
+ const b2=ARK.includes(store("sk_sub2"))?store("sk_sub2"):"ks";
+ document.querySelectorAll("#sub button").forEach(b=>b.classList.toggle("on",b.dataset.a==a));
+ document.querySelectorAll("#sub2 button").forEach(b=>b.classList.toggle("on",b.dataset.b==b2));
+ $("arv").classList.toggle("on",a=="ar");
+ ["nw","tf","pt"].forEach(k=>$(k+"v").classList.toggle("on",k==a));
+ ARK.forEach(k=>$(k=="sv"?"stv":k+"v").classList.toggle("on",a=="ar"&&k==b2));
+ store("sk_sub",a);if(a=="nw")loadNews()}
 $("nav").onclick=e=>{const b=e.target.closest("button");if(b)showTab(b.dataset.v)};
 $("sub").onclick=e=>{const b=e.target.closest("button");if(b)showSub(b.dataset.a)};
+$("sub2").onclick=e=>{const b=e.target.closest("button");if(b)showSub(b.dataset.b)};
 
 /* ===== Konto og risiko huskes ===== */
 [["acc","sk_acc"],["rk","sk_rk"]].forEach(([id,k])=>{const v=store(k);if(v!=null&&v!=="")$(id).value=v;$(id).addEventListener("input",()=>{store(k,$(id).value);if(window._r)hero(window._r)})});
@@ -1146,7 +1165,7 @@ function heroFor(res,hv,hs,stk){try{const ok=res.filter(d=>!d.err),nw=ok.filter(
  $(hs).innerHTML=parts.join(" ")}catch(e){console.error(e)}}
 setInterval(()=>{if(window._r)hero(window._r)},6e4);
 
-showSub(["nw","tf","ks","pt","wf","sv","bt"].includes(store("sk_sub"))?store("sk_sub"):"nw");
+showSub(store("sk_sub")||"tf");
 showTab(["sig","stk","an","set"].includes(store("sk_tab"))?store("sk_tab"):"sig");
 showSg(store("sk_sg")=="top"?"top":"core");
 renderEv();
