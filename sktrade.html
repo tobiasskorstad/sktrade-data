@@ -1,0 +1,1161 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>SKTRADE</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600&family=Instrument+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+ --bg:#ECEEE9;--card:#FFFFFF;--soft:#F4F6F2;--tx:#17211C;--mu:#5E6A64;--bd:#D7DDD6;--au:#9C7424;--aus:#F3EAD6;
+ --g:#1E8A4E;--r:#C43F38;--b:#2C63BF;--n:#98A39D;--sh:0 1px 2px rgba(23,33,28,.06),0 6px 18px rgba(23,33,28,.05);
+ --serif:"Fraunces",Georgia,"Times New Roman",serif;--sans:"Instrument Sans",system-ui,-apple-system,"Segoe UI",sans-serif}
+@media(prefers-color-scheme:dark){:root{
+ --bg:#121A16;--card:#18231E;--soft:#1E2B25;--tx:#E7ECE7;--mu:#97A49D;--bd:#2A3832;--au:#D5AF5E;--aus:#2D2817;
+ --g:#41B877;--r:#E2675F;--b:#5D8FE4;--n:#6E7B74;--sh:0 1px 2px rgba(0,0,0,.3)}}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--bg);color:var(--tx);font:15px/1.5 var(--sans)}
+.w{max-width:1080px;margin:0 auto;padding:0 16px 56px}
+a{color:inherit;text-underline-offset:2px}
+:focus-visible{outline:2px solid var(--au);outline-offset:2px}
+
+/* topp */
+.top{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:18px 0 14px;flex-wrap:wrap}
+.brand{display:flex;align-items:baseline;gap:10px}
+.brand b{font:600 24px/1 var(--serif);letter-spacing:.01em}
+.brand span{color:var(--mu);font-size:13px}
+.stat{display:flex;align-items:center;gap:10px;font-size:13px;color:var(--mu)}
+#lv{font-weight:600}
+.nav{position:sticky;top:0;z-index:5;background:var(--bg);padding:6px 0 12px}
+.seg{display:flex;background:var(--card);border:1px solid var(--bd);border-radius:12px;padding:4px;gap:4px;box-shadow:var(--sh)}
+.seg button{flex:1;background:none;color:var(--mu);border:0;border-radius:9px;padding:10px 12px;font:600 15px var(--sans);cursor:pointer}
+.seg button.on{background:var(--tx);color:var(--bg)}
+.smv{display:none}
+.seg button:not(.on):hover{color:var(--tx)}
+.pn{display:none}.pn.on{display:block}
+.sgv{display:none}.sgv.on{display:block}
+.tag{display:inline-block;font-size:11px;font-weight:600;color:var(--mu);background:var(--soft);border-radius:6px;padding:2px 7px;margin-left:6px;vertical-align:2px}
+
+/* felles */
+button{padding:9px 16px;border:0;border-radius:9px;background:var(--tx);color:var(--bg);font:600 14px var(--sans);cursor:pointer}
+button:disabled{opacity:.5;cursor:default}
+.ghost{background:var(--card);color:var(--tx);border:1px solid var(--bd)}
+label{display:flex;flex-direction:column;font-size:12.5px;color:var(--mu);gap:5px}
+input,select{width:120px;padding:9px 10px;border:1px solid var(--bd);border-radius:9px;background:var(--card);color:var(--tx);font:15px var(--sans)}
+input:focus,select:focus{border-color:var(--au);outline:none}
+.bar{display:flex;flex-wrap:wrap;gap:12px;align-items:end;margin:4px 0 18px}
+h2{font:600 22px/1.2 var(--serif);margin:34px 0 4px}
+h3{font-size:15px;margin:18px 0 8px}
+.lead{color:var(--mu);margin:0 0 14px;max-width:68ch}
+.nt{font-size:12.5px;color:var(--mu);margin-top:10px}
+.ft{margin-top:22px;font-size:12px;color:var(--mu);max-width:80ch;line-height:1.55}
+.u{color:var(--g)}.d{color:var(--r)}.z{color:var(--n)}
+table{width:100%;border-collapse:collapse;font-size:13px;font-variant-numeric:tabular-nums}
+td,th{padding:8px 7px;text-align:center;border-bottom:1px solid var(--bd);white-space:nowrap}
+td:first-child,th:first-child{text-align:left;white-space:normal}
+th{color:var(--mu);font-weight:500;font-size:12px}
+#tfo,#sout,#pto,#btout,#kso{overflow-x:auto}
+#kso tr[data-k]{cursor:pointer}#kso tr[data-k]:hover td,#kso tr.sel td{background:var(--soft)}
+#ksc{width:100%;height:220px;display:block;margin:10px 0 4px}
+.bar .chk{flex-direction:row;align-items:center;gap:8px;color:var(--tx);font-size:14px;padding-bottom:9px}.bar .chk input{width:auto}
+.kmx td{font-size:12.5px}
+
+/* signaler: dagens beskjed */
+.hero{padding:22px 0 18px;border-bottom:1px solid var(--bd);margin-bottom:18px}
+#hv,#hv2,#hv3{font:500 clamp(28px,5.2vw,44px)/1.1 var(--serif);margin:0;letter-spacing:-.01em;max-width:24ch}
+#hs,#hs2,#hs3{color:var(--mu);margin:10px 0 0;max-width:70ch}
+#hs b,#hs2 b,#hs3 b{color:var(--tx);font-weight:600}
+.rl{display:flex;flex-wrap:wrap;gap:6px 16px;font-size:12.5px;color:var(--mu);margin:0 0 14px}
+.rl i{display:inline-block;width:10px;height:10px;border-radius:3px;margin-right:6px;vertical-align:-1px}
+
+/* kort */
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:14px}
+.c{background:var(--card);border:1px solid var(--bd);border-radius:14px;padding:16px 16px 14px;box-shadow:var(--sh);position:relative;overflow:hidden}
+.c::before{content:"";position:absolute;left:0;top:0;bottom:0;width:4px;background:var(--n)}
+.c.KJØP::before{background:var(--g)}.c.SELG::before{background:var(--r)}
+.c[data-i]{cursor:pointer}.c[data-i]:hover{border-color:var(--mu)}
+.t{display:flex;justify-content:space-between;align-items:center;gap:8px}
+.nm{font-weight:700;font-size:17px}
+.pr{color:var(--mu);font-variant-numeric:tabular-nums}
+.sig{font:600 26px/1 var(--serif);margin:14px 0 4px;letter-spacing:.01em}
+.KJØP .sig{color:var(--g)}.SELG .sig{color:var(--r)}.AVVENT .sig{color:var(--mu)}
+.ms{display:none}
+.lv{display:grid;grid-template-columns:repeat(3,1fr);gap:6px;font-variant-numeric:tabular-nums;margin-top:10px}
+.lv div{background:var(--soft);border-radius:9px;padding:8px 6px;text-align:center;font-size:13.5px;font-weight:600}
+.lv small{display:block;color:var(--mu);font-size:11px;font-weight:400}
+.lp{display:flex;justify-content:space-between;align-items:baseline;background:var(--soft);border-radius:10px;padding:8px 12px;margin:12px 0 0}
+.lp .v{font-size:20px;font-weight:700;font-variant-numeric:tabular-nums}.lp .chg{font-size:12px;font-variant-numeric:tabular-nums}
+.lp.inl{display:inline-flex;gap:10px;padding:3px 10px;margin:0 0 0 8px}.lp.inl .v{font-size:16px}
+.lp.up{animation:fu .7s}.lp.dn{animation:fd .7s}
+@keyframes fu{0%{background:rgba(30,138,78,.35)}100%{background:var(--soft)}}
+@keyframes fd{0%{background:rgba(196,63,56,.35)}100%{background:var(--soft)}}
+.rt{margin:4px 0 0;padding:9px 11px;border-radius:10px;font-size:13px;font-weight:700;color:#fff}
+.rt small{display:block;font-weight:400;opacity:.92;margin-top:2px}
+.rt.RØD{background:var(--r)}.rt.GRØNN{background:var(--g)}.rt.BLÅ{background:var(--b)}.rt.NA{background:var(--soft);color:var(--mu)}
+.c .nt a{color:var(--mu)}
+
+/* kopier til SizeProp */
+.cpx{margin-bottom:14px;max-width:380px}.cpx input{width:100%}
+.cr{display:flex;align-items:center;gap:10px;background:var(--soft);border-radius:10px;padding:8px 10px;margin-top:8px}
+.cl{color:var(--mu);font-size:12px;width:76px}.cval{flex:1;font-size:18px;font-weight:700;font-variant-numeric:tabular-nums}
+.cb{padding:6px 12px;font-size:13px;background:var(--card);color:var(--tx);border:1px solid var(--bd)}
+.cb.ok,.cpa.ok{background:var(--g);color:#fff;border-color:var(--g)}
+.cpa{width:100%;margin-top:10px;background:var(--card);color:var(--tx);border:1px solid var(--bd)}
+.s-KJØP{color:var(--g)}.s-SELG{color:var(--r)}.s-AVVENT{color:var(--mu)}
+details.more{margin-top:28px;background:var(--card);border:1px solid var(--bd);border-radius:14px;padding:4px 16px}
+details.more summary{cursor:pointer;padding:12px 0;font-weight:600}
+details.more[open]{padding-bottom:16px}
+.dm{white-space:pre-wrap;background:var(--soft);border-radius:10px;padding:12px;font-size:13px;line-height:1.55}
+
+/* analyse */
+.sub{display:flex;gap:4px;flex-wrap:wrap;border-bottom:1px solid var(--bd);margin:6px 0 18px}
+.sub button{background:none;color:var(--mu);border:0;border-bottom:2px solid transparent;border-radius:0;padding:10px 12px;font-weight:600;margin-bottom:-1px}
+.sub button.on{color:var(--tx);border-bottom-color:var(--au)}
+.sv{display:none}.sv.on{display:block}
+#bc{width:100%;height:220px;display:block;margin:14px 0}
+.nwg{display:grid;grid-template-columns:minmax(0,5fr) minmax(0,6fr);gap:18px;align-items:start}
+.box{background:var(--card);border:1px solid var(--bd);border-radius:14px;padding:6px 16px 14px;box-shadow:var(--sh)}
+.box h3{margin:12px 0 4px}
+.ev{display:grid;grid-template-columns:86px 1fr;gap:10px;padding:10px 0;border-bottom:1px solid var(--bd)}
+.ev:last-child{border-bottom:0}
+.ev time{font-size:12.5px;color:var(--mu);line-height:1.35}
+.ev time b{display:block;color:var(--tx);font-size:14px}
+.ev .tt{font-weight:600}.ev .why{font-size:12.5px;color:var(--mu)}
+.ev.soon{background:var(--aus);margin:0 -16px;padding:10px 16px}
+.hl{display:block;padding:10px 0;border-bottom:1px solid var(--bd);text-decoration:none}
+.hl:last-child{border-bottom:0}
+.hl span{display:block;font-size:12px;color:var(--mu);margin-bottom:2px}
+.hl:hover strong{text-decoration:underline}
+.hl strong{font-weight:600}
+.hl em{font-style:normal;color:var(--au);font-weight:700;margin-right:4px}
+
+/* innstillinger */
+.sets{columns:3 300px;column-gap:14px;margin-top:6px}.sets .grp{break-inside:avoid;margin-bottom:14px}
+.grp{background:var(--card);border:1px solid var(--bd);border-radius:14px;padding:6px 18px 18px;box-shadow:var(--sh)}
+.grp h3{font:600 19px/1.3 var(--serif);margin:14px 0 4px}
+.grp .lead{font-size:13px;margin-bottom:12px}
+.fl{display:grid;gap:12px}
+.fl label input,.fl label select{width:100%}
+.chk{flex-direction:row;align-items:center;gap:8px;color:var(--tx);font-size:14px}
+.fl .chk input{width:auto}
+.row{display:flex;gap:10px;align-items:center;flex-wrap:wrap}
+#bell.on{background:var(--g);color:#fff}
+.warn{background:var(--aus);border-radius:10px;padding:10px 12px;font-size:13px;margin:0 0 12px}
+
+/* graf-vindu og varsler */
+#md{display:none;position:fixed;inset:0;background:rgba(10,16,13,.6);z-index:9;overflow:auto;padding:16px}#md.on{display:block}
+.mb{background:var(--card);max-width:860px;margin:0 auto;border-radius:16px;padding:18px}
+#mx{background:none;color:var(--tx);font-size:20px;padding:2px 8px}
+#tb{display:flex;gap:6px;margin:12px 0}
+#tb button{background:var(--soft);color:var(--tx);border:1px solid var(--bd);padding:6px 14px;font-size:13px}
+#tb button.on{background:var(--tx);color:var(--bg)}
+#cv{width:100%;height:340px;display:block}
+.lg{display:flex;flex-wrap:wrap;gap:14px;font-size:12px;color:var(--mu);margin:8px 0 14px}
+.lg i{display:inline-block;width:12px;height:3px;margin-right:5px;vertical-align:middle}
+.mb .lv{margin-bottom:14px}.mb h3{font-size:14px;margin:16px 0 6px}
+.opt{display:flex;gap:18px;margin-bottom:8px}.opt label{flex-direction:row;align-items:center;font-size:13px;color:var(--tx);cursor:pointer}.opt input{width:auto}
+#ts{position:fixed;top:12px;right:12px;z-index:20;display:flex;flex-direction:column;gap:8px;max-width:min(320px,calc(100vw - 24px))}
+.toast{background:var(--card);color:var(--tx);border:1px solid var(--bd);border-left:5px solid var(--n);border-radius:10px;padding:10px 12px;box-shadow:0 4px 14px rgba(0,0,0,.25);font-size:13px;cursor:pointer}
+.toast.tp{border-left-color:var(--g)}.toast.sl{border-left-color:var(--r)}.toast.new{border-left-color:var(--b)}.toast.en{border-left-color:var(--au)}
+
+@media(max-width:720px){
+ .nwg{grid-template-columns:1fr}
+ .seg button{padding:10px 4px;font-size:13.5px}
+ .lgv{display:none}.smv{display:inline}
+ .brand span{display:none}
+ .grid{grid-template-columns:1fr}
+ input,select{width:100%}
+ .bar label{flex:1 1 140px}
+}
+@media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
+</style>
+</head>
+<body>
+<div id="ts"></div>
+<div class="w">
+ <header class="top">
+  <div class="brand"><b>SKTRADE</b><span>Gull, krypto og aksjer. Donchian 55/20 på dagsgraf, kun long</span></div>
+  <div class="stat"><span id="lv">kobler til…</span><span id="up">laster…</span><button id="go" class="ghost" title="Hent signaler på nytt">Oppdater</button></div>
+ </header>
+ <nav class="nav"><div class="seg" id="nav"><button data-v="sig" class="on"><span class="lgv">Krypto og gull</span><span class="smv">Krypto</span></button><button data-v="stk">Aksjer</button><button data-v="an">Analyse</button><button data-v="set">Innstillinger</button></div></nav>
+
+ <section class="pn on" id="pSig">
+  <div class="sub" id="sgs"><button data-s="core" class="on">Hovedliste</button><button data-s="top">Topp 20</button></div>
+  <div class="sgv on" id="sgCore">
+  <div class="hero"><h1 id="hv">Henter dagens signaler…</h1><p id="hs"></p></div>
+  <div class="rl"><span><i style="background:var(--b)"></i>Blå: høy sannsynlighet</span><span><i style="background:var(--g)"></i>Grønn: positiv sjanse</span><span><i style="background:var(--r)"></i>Rød: nei</span><span>Vurdert etter strategiens 5-års backtest, ingen garanti. Trykk på et kort for graf.</span></div>
+  <div class="grid" id="g"></div>
+  </div>
+  <div class="sgv" id="sgTop">
+  <div class="hero"><h1 id="hv3">Henter topp 20…</h1><p id="hs3"></p></div>
+  <div class="rl"><span><i style="background:var(--b)"></i>Blå: høy sannsynlighet</span><span><i style="background:var(--g)"></i>Grønn: positiv sjanse</span><span><i style="background:var(--r)"></i>Rød: nei</span><span>Samme strategi og konto. Trykk på et kort for graf.</span></div>
+  <div class="grid" id="g3"></div>
+  <div class="ft">De 20 største coinene etter markedsverdi (CoinGecko, 13.10.2026), uten stablecoins, gulltoken og token som ikke handles som vanlige perps (Figure Heloc, WhiteBIT Coin, LEO, Rain). BTC, ETH, BNB, XRP og SOL ligger i Hovedliste, her er de 15 neste. Data fra Binance, eller fra Hyperliquid når Binance ikke har coinen. Kort merket «ikke på Hyperliquid» finnes trolig ikke på SizeProp. Disse coinene er med i backtestene, men <b>ikke i Telegram-varslene fra GitHub</b>. Test først, og si fra hvis de skal inn der.</div>
+  </div>
+
+  <h2>Ordre til SizeProp</h2>
+  <p class="lead">Tallene for aktive signaler, klare til å kopieres inn i terminalen.</p>
+  <div id="cpv">
+   <div class="cpx"><label>Gull: XAUUSD-prisen i plattformen din nå (valgfritt)<input id="xp" type="number" step="0.01" placeholder="f.eks. 4012.50"></label>
+   <div class="nt">Gull hentes som PAXG. Fyll inn XAUUSD-prisen hos deg, så justeres entry og stop etter forskjellen.</div></div>
+   <div class="grid" id="cpl"></div>
+  </div>
+
+  <details class="more"><summary>Dagens melding fra nettsiden</summary>
+   <p class="lead">Telegram-varslene kommer fra GitHub hver natt. Dette er nettsidens egen versjon, som følger posisjoner mens siden er åpen.</p>
+   <div class="dm" id="dm">Venter på data…</div>
+   <h3>Posisjoner nettsiden følger</h3>
+   <div id="tps"></div>
+   <div class="ft">Første gang siden åpnes, ignoreres posisjoner som allerede var åpne ifølge strategien. Bare signaler etter det følges. Tok du ikke et signal, trykk «Hopp over» her, og send <b>/hopp</b> til boten for GitHub-varslene.</div>
+  </details>
+ </section>
+
+ <section class="pn" id="pStk">
+  <div class="hero"><h1 id="hv2">Henter aksjer…</h1><p id="hs2"></p></div>
+  <div class="rl"><span><i style="background:var(--b)"></i>Blå: høy sannsynlighet</span><span><i style="background:var(--g)"></i>Grønn: positiv sjanse</span><span><i style="background:var(--r)"></i>Rød: nei</span><span>Samme strategi og samme konto som krypto. Trykk på et kort for graf.</span></div>
+  <div class="grid" id="g2"></div>
+  <div class="ft">Aksjene handles som perps på Hyperliquid (trade.xyz), samme priser som i SizeProp-terminalen. Prisene oppdateres hvert 10. sekund. De handles døgnet rundt, og dagens candle lukker kl. 00:00 UTC som for krypto. Når børsen i USA er stengt, står prisen ofte stille, så signalene kommer i praksis etter handelsdager. Markedene finnes bare på Hyperliquid fra rundt høsten 2025 (SpaceX fra juni 2026), så det er for lite historikk til en 5-års vurdering. Aksjene deler konto og risikotak med krypto og gull.</div>
+ </section>
+
+ <section class="pn" id="pAn">
+  <div class="hero" style="padding-bottom:6px;border:0;margin:0"><h1 id="ah" style="font:500 clamp(26px,4.4vw,36px)/1.15 var(--serif);margin:0">Backtester, strategier og nyheter</h1></div>
+  <div class="sub" id="sub"><button data-a="nw" class="on">Nyheter</button><button data-a="tf">Langsiktig trend</button><button data-a="ks">Kort sikt (15m–4t)</button><button data-a="pt">SizeProp-test</button><button data-a="wf">Topp N (walk-forward)</button><button data-a="sv">Strategier (1 time)</button><button data-a="bt">Backtest (1 time)</button></div>
+
+  <div class="sv on" id="nwv">
+   <p class="lead">Store hendelser i USA kan flytte gull og krypto kraftig på minutter. Strategien bruker ikke nyheter i signalene, men vurder å vente med nye kjøp til etter en stor hendelse samme dag. Et kraftig hopp kan treffe SizeProps daglige tapsgrense.</p>
+   <div class="nwg">
+    <div class="box"><h3>Kommende hendelser</h3><div id="nwc"></div><div class="nt" id="nwcs"></div></div>
+    <div class="box"><h3>Siste overskrifter</h3><div id="nwh"><div class="nt">Henter…</div></div><div class="nt" id="nwhs"></div></div>
+   </div>
+  </div>
+  <div class="sv" id="tfv">
+   <p class="lead">Testen bak dagens strategi: seks trendstrategier på dagsgraf over flere år, med trening og test hver for seg.</p>
+   <div class="bar">
+    <label>Tidsramme<select id="tfi"><option value="1d" selected>Daglig</option><option value="4h">4 timer</option></select></label>
+    <label>Historikk<select id="tfy"><option value="3">3 år</option><option value="5" selected>5 år</option><option value="8">Maks (opptil 8 år)</option></select></label>
+    <label>Retning<select id="tfd"><option value="lo" selected>Kun long</option><option value="ls">Long + short</option></select></label>
+    <label>Stop (× ATR)<input id="tfm" type="number" value="3" step="0.5"></label>
+    <label>Avgift per side (%)<input id="tff" type="number" value="0.1" step="0.01"></label>
+    <label>Instrumenter<select id="tfu"><option value="core" selected>Hovedliste (6)</option><option value="top">Topp 20 (15 til)</option><option value="all">Alle krypto og gull</option><option value="alt">Andre markeder</option><option value="coreAlt">Hovedliste + andre markeder</option><option value="coreAltNS">Hovedliste + andre, uten enkeltaksjer</option></select></label>
+    <button id="tfgo">Test langsiktig trend</button>
+   </div>
+   <div class="nt" id="tfst"></div><div id="tfo"></div>
+   <div class="ft">Seks trendstrategier med lik utgang: start-stop og trailing stop (chandelier) på stop × ATR, i tillegg til strategiens egen utgangsregel. Entry og signalutgang skjer på åpning av neste candle. Risiko per trade hentes fra Innstillinger. Trening = første 60 % av perioden, test = siste 40 %. Historikken starter ulikt (SOL 2020, PAXG 2019), og «Maks» bruker det som finnes. Slippage og funding hentes fra Innstillinger (Kostnader i backtestene), og short mottar funding når long betaler. Instrumentene er ikke slått sammen til én portefølje. Få trades gir stor usikkerhet, og en test som dekker bare ett markedsregime sier lite. Historikk er ingen garanti.</div>
+  </div>
+  <div class="sv" id="ksv">
+   <p class="lead">Backtest av åtte kortsiktige strategier på 15 minutter til 4 timer. Gir flere handler enn swing-strategien, men avgift og slippage spiser mer jo kortere tidsrammen er. Velg «Alle» for å sammenligne tidsrammene side om side.</p>
+   <div class="bar">
+    <label>Tidsramme<select id="kstf"><option value="all" selected>Alle (15m–4t)</option><option value="15m">15 min</option><option value="30m">30 min</option><option value="1h">1 time</option><option value="2h">2 timer</option><option value="4h">4 timer</option></select></label>
+    <label>Periode<select id="ksp"><option value="3">3 måneder</option><option value="6" selected>6 måneder</option><option value="12">12 måneder</option><option value="24">24 måneder</option></select></label>
+    <label>Instrumenter<select id="ksi"><option value="cry" selected>Krypto og gull (hovedliste)</option><option value="top">Topp 20 (15 til)</option><option value="crall">Alle krypto og gull</option><option value="stk">Aksjer</option><option value="all">Alle</option></select></label>
+    <label>Retning<select id="ksd"><option value="ls" selected>Long + short</option><option value="lo">Kun long</option></select></label>
+    <label>Utgang<select id="ksx"><option value="trail" selected>Trailing stop + signal</option><option value="both">Fast SL/TP + signal</option><option value="fixed">Bare fast SL/TP</option></select></label>
+    <label>Stop (× ATR)<input id="kssl" type="number" value="2" step="0.25"></label>
+    <label>TP (× ATR)<input id="kstp" type="number" value="3" step="0.25" disabled></label>
+    <label>Avgift per side (%)<input id="ksf" type="number" value="0.05" step="0.01"></label>
+    <label>Slippage per side (%)<input id="kss" type="number" value="0.02" step="0.01"></label>
+    <label class="chk"><input id="kst" type="checkbox"> Bare med dagstrenden</label>
+    <button id="ksgo">Kjør backtest</button>
+   </div>
+   <div class="nt" id="ksst"></div><div id="kso"></div>
+   <div class="ft">Strategier: Donchian 20/10 og 55/20 (breakout), EMA 9/21-kryss med EMA 200-filter, EMA 20/50-kryss, Supertrend (10, 3), MACD-kryss med EMA 200-filter, RSI(2)-pullback i trend (exit over 5-snitt) og Bollinger-reversal (exit ved midtlinjen). Signal på lukking av candle, inngang på åpningen av neste. Innen samme candle sjekkes stop før TP og exit (forsiktig), og hopp forbi stop fylles på åpningen. Én posisjon om gangen per instrument og strategi. «Bare med dagstrenden» tar bare handler i retning av dagsgrafen (pris over/under EMA 50). Trening = første 60 % av perioden, test = siste 40 %. R = resultat delt på startrisikoen (stop × ATR). Kostnad R/trade viser hvor mye avgift og slippage tar av hver handel. Verste dag og maks fall er regnet om til % med risikoen per trade fra Innstillinger, med alle valgte instrumenter handlet samtidig. Sammenlign med SizeProps daglige tapsgrense (2–4 %) og maks drawdown (3–6 %). Sjekk SizeProps faktiske avgift. Funding er ikke med. Aksjer fra Hyperliquid har bare de siste 5000 candlene (om lag 52 dager på 15 min, 208 dager på 1 time). Med 40 kombinasjoner vil noen se gode ut ved ren flaks, så stol mest på strategier som holder på flere tidsrammer og instrumenter. 15 min over 24 måneder tar et par minutter å hente. Historikk er ingen garanti.</div>
+  </div>
+  <div class="sv" id="wfv">
+   <p class="lead">Handler bare de instrumentene som har gått best med strategien den siste tiden, og bytter utvalg jevnlig. Rangeringen bruker bare handler som var avsluttet på rangeringsdagen, så testen vet aldri noe om framtiden.</p>
+   <div class="bar">
+    <label>Instrumenter å velge fra<select id="wfu"><option value="all" selected>Alle krypto og gull</option><option value="top">Topp 20 (15 til)</option><option value="core">Hovedliste (6)</option><option value="alt">Andre markeder</option><option value="coreAlt">Hovedliste + andre markeder</option><option value="coreAltNS">Hovedliste + andre, uten enkeltaksjer</option></select></label>
+    <label>Ranger etter siste<select id="wfl"><option value="12">12 måneder</option><option value="24" selected>24 måneder</option><option value="36">36 måneder</option></select></label>
+    <label>Ny rangering hver<select id="wfb"><option value="1">måned</option><option value="3" selected>3. måned</option><option value="6">6. måned</option></select></label>
+    <label>Konto<select id="wfa"><option value="all" selected>Alle tre</option><option>Degen</option><option>1-Step</option><option>2-Step</option></select></label>
+    <label>Risiko per trade (%)<input id="wfr" type="number" value="0.5" step="0.25"></label>
+    <label>Tak åpen risiko (%)<input id="wfc" type="number" value="2" step="0.5"></label>
+    <label>Maks dager<input id="wfh" type="number" value="730"></label>
+    <label>Dager mellom starter<input id="wfs" type="number" value="7"></label>
+    <label>Avgift per side (%)<input id="wff" type="number" value="0.1" step="0.01"></label>
+    <label class="chk"><input id="wfi" type="checkbox"> Handel minst hver 90. dag</label>
+    <button id="wfgo">Kjør walk-forward</button>
+   </div>
+   <div class="nt" id="wfst"></div><div id="wfo" style="overflow-x:auto"></div>
+   <div class="ft">Slik virker testen: på hver rangeringsdag summeres strategiens resultat i R (etter avgift, slippage og funding) for hvert instrument over den valgte perioden bakover. Bare handler som allerede var lukket teller. Topp N er de N instrumentene med høyest sum, og bare instrumenter med positiv sum kan velges. Nye kjøp tas bare i valgte instrumenter fram til neste rangering, mens åpne posisjoner får løpe ut som vanlig. Deretter kjøres samme SizeProp-simulering som i SizeProp-testen, med evalueringer som starter først når den første rangeringen finnes. «Alle» og «Hovedliste (fast)» kjøres på de samme startdatoene til sammenligning. Hovedlista ble satt sammen med kjennskap til historikken, så den har en liten fordel. Velg rangeringsperiode og intervall før du kjører, og ikke prøv alle kombinasjoner til noe ser bra ut: da sniker feilkilden seg inn igjen. «Handel minst hver 90. dag» er av som standard fordi du kan løse den med en liten handel selv. Historikk er ingen garanti.</div>
+  </div>
+  <div class="sv" id="ptv">
+   <p class="lead">Hvor ofte strategien ville bestått en SizeProp-evaluering, og hvor ofte den ville brutt tapsgrensene.</p>
+   <div class="bar">
+    <label>Konto<select id="pta"><option value="all" selected>Alle tre</option><option>Degen</option><option>1-Step</option><option>2-Step</option></select></label>
+    <label>Risiko per trade (%)<input id="ptr" value="0.5, 0.75, 1, 1.5" style="width:150px"></label>
+    <label>Tak åpen risiko (%)<input id="ptc" value="2, 3, 4" style="width:80px"></label>
+    <label>Maks dager<input id="pth" type="number" value="730"></label>
+    <label>Dager mellom starter<input id="pts" type="number" value="7"></label>
+    <label>Avgift per side (%)<input id="ptf" type="number" value="0.1" step="0.01"></label>
+    <label>Instrumenter<select id="ptu"><option value="core" selected>Hovedliste (6)</option><option value="top">Topp 20 (15 til)</option><option value="all">Alle krypto og gull</option><option value="alt">Andre markeder</option><option value="coreAlt">Hovedliste + andre markeder</option><option value="coreAltNS">Hovedliste + andre, uten enkeltaksjer</option></select></label>
+    <label class="chk"><input id="pti" type="checkbox" checked> Handel minst hver 90. dag</label>
+    <button id="ptgo">Kjør porteføljetest</button>
+   </div>
+   <div class="nt" id="ptst"></div><div id="pto"></div>
+   <div class="ft">Alle instrumentene handles samtidig på én konto med Donchian 55/20 (kun long). Testen starter en ny evaluering hver N-te dag i historikken (opptil ca. 8 år) og følger den til den er bestått, brutt eller tiden går ut. Regler fra sizeprop.com/our-rules (sjekket 13.10.2026): ingen tidsgrense og ingen minste antall dager, men minst én handel hver 90. dag. «Brutt (inaktiv)» teller bare kjøp og salg fra strategien som handel, ikke å holde en posisjon. Du kan unngå dette ved å ta en liten handel selv før 90 dager har gått, men sjekk med SizeProp at det teller. Forenklinger: innen dagen antas alle åpne posisjoner å treffe laveste kurs samtidig (pessimistisk), daglig tapsgrense regnes fra saldoen ved starten av UTC-dagen (SizeProp bruker kl. 20:00 UTC), fyllinger på stop-nivå med slippage fra Innstillinger, og hoppes et signal over, venter instrumentet til sitt neste signal. Startdatoene overlapper, så de uavhengige utfallene er få. Slippage og funding fra Innstillinger er med, og funding trekkes også fra åpne posisjoner underveis. Spread og SizeProps egne avgifter er ikke med. Historikk er ingen garanti. Laveste equity har startsaldo 100.</div>
+  </div>
+  <div class="sv" id="stv">
+   <p class="lead">Sju kortsiktige strategier på 1-timesgraf. Ingen av dem var lønnsomme etter avgifter, og derfor bruker signalene dagsgraf.</p>
+   <div class="bar">
+    <label>Periode<select id="sp"><option value="2160">3 måneder</option><option value="4320" selected>6 måneder</option><option value="8640">12 måneder</option></select></label>
+    <label>SL (× ATR)<input id="ssl" type="number" value="1.5" step="0.25"></label>
+    <label>TP (× ATR)<input id="stp" type="number" value="3" step="0.25"></label>
+    <label>Avgift per side (%)<input id="sfe" type="number" value="0.1" step="0.01"></label>
+    <button id="sgo">Sammenlign strategier</button>
+   </div>
+   <div class="nt" id="sst"></div><div id="sout"></div>
+   <div class="ft">Alle sju strategier handler på lukking av signalcandelen (1t), med samme SL/TP og avgifter, én posisjon om gangen per instrument. Trening = første 60 % av perioden, test = siste 40 %. Ingenting er justert på testdelen, men velger du vinneren av mange, blir testresultatet likevel litt for optimistisk. Avgift R/trade viser hvor mye avgiftene spiser av hver trade målt i risikoenheter: lav volatilitet (gull) gir høy avgiftsandel. Historikk er ingen garanti.</div>
+  </div>
+  <div class="sv" id="btv">
+   <p class="lead">Den gamle kortsiktige strategien, til sammenligning.</p>
+   <div class="bar">
+    <label>Startsum ($)<input id="bts" type="number" value="1000"></label>
+    <label>Risiko per trade (%)<input id="btr" type="number" value="1" step="0.25"></label>
+    <label>Avgift per side (%)<input id="btf" type="number" value="0.1" step="0.01"></label>
+    <label>Periode<select id="btp"><option value="720">1 måned</option><option value="2160" selected>3 måneder</option><option value="4320">6 måneder</option></select></label>
+    <label>Instrument<select id="bti"></select></label>
+    <button id="btgo">Kjør backtest</button>
+   </div>
+   <div class="nt" id="btst"></div><div id="btout"></div>
+   <div class="ft">Dette er den gamle 1-times trendstrategien (EMA, MACD, RSI, ATR-baserte SL/TP), ikke dagens Donchian-signaler. Den tapte i testene og ligger her bare til sammenligning. Forenklinger: 15m-tidsrammen er utelatt (kun 1t, 4t og 1d), én posisjon om gangen per instrument, SL regnes som truffet først hvis SL og TP ligger i samme time, ingen slippage og ingen belåningsgrense. Historiske resultater sier ingenting sikkert om fremtiden.</div>
+  </div>
+ </section>
+
+ <section class="pn" id="pSet">
+  <div class="hero" style="padding-bottom:6px;border:0;margin:0"><h1 style="font:500 clamp(26px,4.4vw,36px)/1.15 var(--serif);margin:0">Innstillinger</h1></div>
+  <div class="sets">
+   <div class="grp"><h3>Konto og risiko</h3>
+    <p class="lead">Brukes til posisjonsstørrelse i kortene og i dagens melding, for både krypto, gull og aksjer på SizeProp. GitHub-varslene bruker tallene i sktrade.yml, så endre dem der også.</p>
+    <div class="fl">
+     <label>Kontostørrelse ($)<input id="acc" type="number" value="10000"></label>
+     <label>Risiko per trade (%)<input id="rk" type="number" value="1" step="0.25"></label>
+     <label>Tak for samlet åpen risiko (%)<input id="cap" type="number" value="2" step="0.25"></label>
+    </div>
+   </div>
+   <div class="grp"><h3>Kostnader i backtestene</h3>
+    <p class="lead">Brukes i Langsiktig trend, SizeProp-test og fargene på signalkortene. Kort sikt har egne felt.</p>
+    <div class="fl">
+     <label>Slippage per side (%)<input id="csl" type="number" value="0.05" step="0.01"></label>
+     <label>Funding<select id="cfm"><option value="hist" selected>Historisk (Binance / Hyperliquid)</option><option value="fix">Fast sats</option><option value="off">Av</option></select></label>
+     <label>Fast funding (% per år, long betaler)<input id="cfy" type="number" value="11" step="1"></label>
+    </div>
+    <div class="ft">Funding på perps betales hver 8. time (Binance) eller hver time (Hyperliquid). Positiv sats betyr at long betaler. «Historisk» henter de faktiske satsene og bruker den faste satsen der historikk mangler, for eksempel før et marked fikk perps. 11 % per år tilsvarer standardsatsen 0,01 % per 8. time. Sjekk om SizeProp faktisk trekker funding på kontoen din.</div>
+   </div>
+   <div class="grp"><h3>Andre markeder</h3>
+    <p class="lead">Metaller, energi, hvete, indekser, valuta og aksjer som finnes på SizeProp, med historikk fra 2008. Hentes fra Yahoo hver natt av GitHub-repoet sktrade-data. Brukes foreløpig bare i backtestene.</p>
+    <div class="fl">
+     <label>Adresse til data<input id="ydu" value="https://raw.githubusercontent.com/tobiasskorstad/sktrade-data/main/data" autocomplete="off"></label>
+     <div class="row"><button id="ydt" type="button" class="ghost">Sjekk data</button><span class="nt" id="yds" style="margin:0"></span></div>
+     <div class="row"><button id="yfb" type="button" class="ghost">Hent funding fra Hyperliquid</button></div><div class="nt" id="yfs" style="margin:0"></div>
+    </div>
+    <div id="yfo" style="overflow-x:auto;margin-top:8px"></div>
+    <div class="ft">Råvarer og indekser bruker kontinuerlige futures eller indekskurser fra Yahoo, aksjene er justert for splitt og utbytte. Perpene på SizeProp følger de samme prisene, men kan avvike noe, særlig rundt bytte av futureskontrakt.</div>
+   </div>
+   <div class="grp"><h3>Varsler i nettleseren</h3>
+    <p class="lead">Lyd og melding på skjermen ved nytt signal, stopp og stengt posisjon. Virker bare mens siden er åpen.</p>
+    <div class="row"><button id="bell" type="button" class="ghost"></button></div>
+   </div>
+   <div class="grp"><h3>Telegram fra nettsiden</h3>
+    <div class="warn">Telegram-varslene sendes nå fra GitHub hver natt, også når PC-en er av. La «Send til Telegram» stå av her, ellers får du doble meldinger.</div>
+    <div class="fl">
+     <label>Bot-token<input id="tgt" type="password" placeholder="123456:ABC…" autocomplete="off"></label>
+     <label>Chat-ID<input id="tgc" placeholder="123456789"></label>
+     <label class="chk"><input id="tgon" type="checkbox"> Send til Telegram fra nettsiden</label>
+     <div class="row"><button id="tgtest" type="button" class="ghost">Send test</button><span class="nt" id="tgst" style="margin:0"></span></div>
+    </div>
+    <div class="ft">Token og chat-ID lagres bare i denne nettleseren.</div>
+   </div>
+   <div class="grp"><h3>Om siden</h3>
+    <p class="lead" style="font-size:13px">Ikke finansiell rådgivning. Signalene er automatiske og kan ta feil. Bruk alltid stop og test på demokonto først. Gull hentes via PAXG som tilnærming til XAUUSD. Fargene bygger på forventet gevinst per trade (i R, etter avgift, slippage og funding fra Innstillinger) de siste 5 årene og er ingen garanti for neste trade. Dagens candle lukker kl. 00:00 UTC.</p>
+   </div>
+  </div>
+ </section>
+</div>
+<div id="md"><div class="mb">
+ <div class="t"><div><span class="nm" id="mt"></span> <span class="lp inl" id="mp"></span></div><button id="mx" aria-label="Lukk">✕</button></div>
+ <div id="tb"></div>
+ <div class="opt"><label><input type="checkbox" id="cks"> Støtte og motstand</label><label><input type="checkbox" id="ckr" checked> RSI</label></div>
+ <div><canvas id="cv"></canvas><div id="cn" class="nt"></div></div>
+ <div class="lg"><span><i style="background:#3b82f6"></i>Entry</span><span><i style="background:var(--g)"></i>55-dagers høy</span><span><i style="background:var(--r)"></i>Stop</span><span><i style="background:#f59e0b"></i>EMA 50 / 20-dagers lav</span><span><i style="background:#8b5cf6"></i>RSI</span><span>R = motstand, S = støtte (prikket)</span></div>
+ <div id="st"></div><div id="ck"></div>
+</div></div>
+<script>
+const INS=[["Gull (XAU)","PAXGUSDT","OANDA:XAUUSD"],["Bitcoin","BTCUSDT","BINANCE:BTCUSDT"],["Ethereum","ETHUSDT","BINANCE:ETHUSDT"],["Solana","SOLUSDT","BINANCE:SOLUSDT"],["XRP","XRPUSDT","BINANCE:XRPUSDT"],["BNB","BNBUSDT","BINANCE:BNBUSDT"]];
+/* ===== Aksjer som perps på Hyperliquid (trade.xyz), samme priser som i SizeProp-terminalen ===== */
+const STOCKS=[["SpaceX","SPCX","NASDAQ:SPCX"],["Microsoft","MSFT","NASDAQ:MSFT"],["Tesla","TSLA","NASDAQ:TSLA"],["Nvidia","NVDA","NASDAQ:NVDA"]];
+const STK=new Set(STOCKS.map(s=>s[1])),CRY=INS.slice();INS.push(...STOCKS);
+const HL="https://api.hyperliquid.xyz/info",HLDEX="xyz",HLC={},HLP={},IVMS={"15m":9e5,"30m":18e5,"1h":36e5,"2h":72e5,"4h":144e5,"1d":864e5};
+async function hlPost(b){const r=await fetch(HL,{method:"POST",headers:{"Content-Type":"application/json"},body:JSON.stringify(b)});if(!r.ok)throw new Error("Hyperliquid svarte "+r.status);return r.json()}
+let HLM=null;
+function hlMeta(){return HLM=HLM||hlPost({type:"meta",dex:HLDEX}).then(m=>{const o={};(m.universe||[]).forEach(u=>{o[String(u.name).split(":").pop()]=u.name});return o}).catch(()=>{HLM=null;return{}})}
+async function hlName(sym){const m=await hlMeta();return m[sym]||HLDEX+":"+sym}
+function hlK(sym,iv,n){const key=sym+iv,c=HLC[key],want=iv=="1d"?5000:Math.min(n,5000),main=isHL(sym);
+ if(c&&Date.now()-c.t<(iv=="1d"?6e4:3e4))return Promise.resolve(c.k.slice(-n));
+ if(!HLP[key])HLP[key]=(async()=>{try{const coin=main?sym.slice(3):await hlName(sym),now=Date.now(),r=await hlPost({type:"candleSnapshot",req:{coin,interval:iv,startTime:now-want*IVMS[iv],endTime:now}});
+   const k=(Array.isArray(r)?r:[]).map(z=>[+z.t,+z.o,+z.h,+z.l,+z.c,+z.v,+z.T]);if(!k.length)throw new Error("ingen data for "+coin);HLC[key]={t:Date.now(),k};return k}
+  catch(e){if(c)return c.k;throw e}finally{delete HLP[key]}})();
+ return HLP[key].then(k=>k.slice(-n))}
+async function hlMids(){try{const[m,names]=await Promise.all([hlPost({type:"allMids",dex:HLDEX}),hlMeta()]);
+ for(const[,sym]of STOCKS){const v=m[names[sym]||HLDEX+":"+sym];if(v==null)continue;const c=HLC[sym+"1d"],k=c&&c.k;
+  const o=k&&k.length>1?(k.at(-1)[6]>Date.now()?k.at(-2)[4]:k.at(-1)[4]):+v;tick(sym,+v,o)}}catch(e){}
+ const hk=TOP.filter(t=>isHL(t[1]));if(hk.length)try{const m=await hlPost({type:"allMids"});hk.forEach(([,sym])=>{const v=m[sym.slice(3)];if(v==null)return;const c=HLC[sym+"1d"],k=c&&c.k;
+  tick(sym,+v,k&&k.length>1?(k.at(-1)[6]>Date.now()?k.at(-2)[4]:k.at(-1)[4]):+v)})}catch(e){}}
+const fxOf=()=>1;
+/* ===== Topp 20 krypto (CoinGecko 13.10.2026). Datakilde avgjøres når siden laster: Binance, ellers Hyperliquid ===== */
+const TOPDEF=[["TRON",["TRXUSDT"],["TRX"]],["Zcash",["ZECUSDT"],["ZEC"]],["Hyperliquid",["HYPEUSDT"],["HYPE"]],["Dogecoin",["DOGEUSDT"],["DOGE"]],["Monero",["XMRUSDT"],["XMR"]],["Chainlink",["LINKUSDT"],["LINK"]],["Cardano",["ADAUSDT"],["ADA"]],["Stellar",["XLMUSDT"],["XLM"]],["NEAR",["NEARUSDT"],["NEAR"]],["Bitcoin Cash",["BCHUSDT"],["BCH"]],["Litecoin",["LTCUSDT"],["LTC"]],["Uniswap",["UNIUSDT"],["UNI"]],["Avalanche",["AVAXUSDT"],["AVAX"]],["Sui",["SUIUSDT"],["SUI"]],["Gram (Toncoin)",["GRAMUSDT","TONUSDT"],["GRAM","TON"]]];
+const TOP=[],TOPI={},isHL=s=>String(s).startsWith("HL:");
+const ALT=[],YI={},YC={},isY=s=>String(s).startsWith("Y:");
+const ALLC=()=>CRY.concat(TOP),pick=v=>v=="core"?CRY:v=="top"?TOP:v=="alt"?ALT:v=="coreAlt"?CRY.concat(ALT):v=="coreAltNS"?CRY.concat(ALT.filter(a=>YI[a[1]].grp!="aksje")):ALLC();
+const yBase=()=>{let v="";try{v=document.getElementById("ydu").value}catch(e){}return(v||"").trim().replace(/\/+$/,"")};
+let ALTP=null;
+function altReady(){return ALTP=ALTP||(async()=>{try{const r=await fetch(yBase()+"/index.json",{cache:"no-store"});if(!r.ok)throw new Error("svarte "+r.status);const j=await r.json();
+ ALT.length=0;(j.markets||[]).forEach(m=>{const sym="Y:"+m.key;ALT.push([m.name,sym,m.tv||""]);YI[sym]=m});if(!ALT.length)throw new Error("ingen markeder i index.json");
+ return{ok:true,updated:j.updated,n:ALT.length,failed:j.failed||[]}}catch(e){ALTP=null;return{ok:false,err:String(e&&e.message||e)}}})()}
+async function needAlt(v){if(/alt/i.test(v)){const a=await altReady();if(!a.ok)throw new Error(`fant ikke data for andre markeder (${a.err}). Sjekk Innstillinger → Andre markeder`)}}
+async function yK(sym,n){const m=YI[sym];if(!m)throw new Error("ukjent marked "+sym);let c=YC[sym];
+ if(!c){const r=await fetch(yBase()+"/"+m.key+".json");if(!r.ok)throw new Error("data mangler for "+m.name);const j=await r.json();
+  c=YC[sym]=(j.rows||[]).map(z=>[z[0]*864e5,z[1],z[2],z[3],z[4],0,z[0]*864e5+864e5-1])}
+ return c.slice(-n)}
+async function bnOK(sym){for(const h of["api.binance.com","data-api.binance.vision"]){try{const r=await fetch(`https://${h}/api/v3/klines?symbol=${sym}&interval=1d&limit=1`);if(r.ok)return true;if(r.status==400)return false}catch(e){}}return false}
+const TOPREADY=(async()=>{let hlm=new Set();try{const m=await hlPost({type:"meta"});(m.universe||[]).forEach(u=>{if(!u.isDelisted)hlm.add(String(u.name))})}catch(e){}
+ const res=await Promise.all(TOPDEF.map(async([nm,bn,hl])=>{const onHL=hl.find(x=>hlm.has(x));let b=null;for(const c of bn)if(await bnOK(c)){b=c;break}
+  if(b)return[nm,b,"BINANCE:"+b,!!onHL];if(onHL)return[nm,"HL:"+onHL,"CRYPTO:"+onHL+"USD",true];return[nm,null,"",false]}));
+ res.forEach(([nm,sym,tv,on])=>{if(!sym){TOPI["X:"+nm]={nm,miss:true};return}TOP.push([nm,sym,tv]);TOPI[sym]={onHL:on}});
+ INS.push(...TOP);try{$("ksi").innerHTML+=TOP.map(x=>`<option value="${INS.indexOf(x)}">${x[0]}</option>`).join("")}catch(e){}
+ if(ws){ws.onclose=ws.onerror=null;try{ws.close()}catch(e){}connect()}})();
+function renderCards(){const r=window._r||[];$("g").innerHTML=r.map((d,i)=>d.stk||d.top?"":card(d,i)).join("");$("g2").innerHTML=r.map((d,i)=>d.stk?card(d,i):"").join("");$("g3").innerHTML=r.map((d,i)=>d.top?card(d,i):"").join("")||'<div class="nt">Henter topp 20…</div>'}
+const TF=[["15m","15m",1],["1t","1h",2],["4t","4h",3],["1d","1d",4]];
+const SL=1.5,TP=3,TERSKEL=.25;
+const $=id=>document.getElementById(id);
+const ema=(a,n)=>{const k=2/(n+1);let e=a[0];return a.map(v=>e=v*k+e*(1-k))};
+function rsi(c,n=14){let g=0,l=0;for(let i=1;i<=n;i++){const d=c[i]-c[i-1];d>0?g+=d:l-=d}g/=n;l/=n;
+ for(let i=n+1;i<c.length;i++){const d=c[i]-c[i-1];g=(g*(n-1)+Math.max(d,0))/n;l=(l*(n-1)+Math.max(-d,0))/n}
+ return l==0?100:100-100/(1+g/l)}
+function atr(h,l,c,n=14){const tr=[];for(let i=1;i<c.length;i++)tr.push(Math.max(h[i]-l[i],Math.abs(h[i]-c[i-1]),Math.abs(l[i]-c[i-1])));
+ let a=tr.slice(0,n).reduce((x,y)=>x+y)/n;for(let i=n;i<tr.length;i++)a=(a*(n-1)+tr[i])/n;return a}
+function analyse(k){
+ const h=k.map(x=>+x[2]),l=k.map(x=>+x[3]),c=k.map(x=>+x[4]),p=c.at(-1);
+ const e20=ema(c,20).at(-1),e50=ema(c,50).at(-1),e200=ema(c,200).at(-1);
+ const m=ema(c,12).map((v,i)=>v-ema(c,26)[i]),hist=m.at(-1)-ema(m,9).at(-1);
+ const r=rsi(c);let s=0;
+ s+=p>e50?1:-1;s+=e20>e50?1:-1;s+=e50>e200?1:-1;s+=hist>0?1:-1;s+=r>55?1:r<45?-1:0;
+ return{score:s/5,p,r,a:atr(h,l,c),ck:[p>e50?1:-1,e20>e50?1:-1,e50>e200?1:-1,hist>0?1:-1,r>55?1:r<45?-1:0]}}
+async function kl(sym,iv){if(isY(sym))return yK(sym,300);if(STK.has(sym)||isHL(sym))return hlK(sym,iv,300);
+ for(const host of["api.binance.com","data-api.binance.vision"]){
+  try{const r=await fetch(`https://${host}/api/v3/klines?symbol=${sym}&interval=${iv}&limit=300`);if(r.ok)return r.json()}catch(e){}}
+ throw 0}
+async function run(ins){
+ const[nm,sym,tv]=ins,all=await klN(sym,"1d",1000),k=all.filter(z=>+z[6]<Date.now()),cu=all.at(-1);
+ if(k.length<120)throw 0;
+ const S=donState(k),pr=(P[sym]&&P[sym].p)||+cu[4],a=S.at,fd=t=>new Date(t).toLocaleDateString("no",{day:"numeric",month:"short"});
+ const o={nm,sym,tv,stk:STK.has(sym),top:!!TOPI[sym],dir:"AVVENT",lbl:"AVVENT",sc:0,tfs:[],p:pr,r:50,a,sl:0,tp:0,xl:S.L,new:false,hold:false,pts:+k.at(-1)[6]+1,ets:0,price:pr,days:0,R0:0,closed:S.closed,lines:[[DA+"D HØY",S.H,"g"]],sub:`Donchian ${DA}/${DB} · daglig · kun long`,txt:"",info:[]};
+ if(S.pend!=null){const e=pr;Object.assign(o,{dir:"KJØP",lbl:"KJØP",sc:1,new:true,p:e,sl:e-3*a,txt:`Nytt signal: dagen lukket over ${DA}-dagers høy`,lines:[["ENTRY",e,"#3b82f6"],["STOP",e-3*a,"r"],[DB+"D LAV",S.L,"#f59e0b"]]})}
+ else if(S.pos){const q=S.pos,u=(pr-q.e)/q.R0;Object.assign(o,{dir:"KJØP",lbl:"HOLD LONG",sc:.5,hold:true,ets:+k[q.di-1][6]+1,days:q.n,R0:q.R0,p:q.e,sl:q.st,txt:`Åpen siden ${fd(+k[q.di][0])} (${q.n} dager) · ${u>=0?"+":""}${u.toFixed(2)}R nå · hold, og flytt stop til ${f(q.st)}`,lines:[["ENTRY",q.e,"#3b82f6"],["STOP",q.st,"r"],[DB+"D LAV",S.L,"#f59e0b"]]})}
+ else o.txt=`Ingen posisjon. Kjøpssignal hvis dagen lukker over ${f(S.H)} (${((S.H/pr-1)*100).toFixed(1)}% unna)`;
+ o.info=[["Siste lukkekurs",f(S.c)],["Kjøpsnivå ("+DA+"-dagers høy)",f(S.H)],["Exit-nivå ("+DB+"-dagers lav)",f(S.L)],["ATR (14 dager)",f(a)],["Status",o.txt]];
+ return o}
+const f=x=>x>=100?x.toFixed(2):x>=1?x.toFixed(3):x.toFixed(5);
+function card(d,i){
+ if(d.err)return`<div class="c AVVENT" data-e="${i}"><div class="nm">${d.nm}</div><div class="nt">Kunne ikke hente data. Sjekk internettilkobling.</div></div>`;
+ const acc=+$("acc").value,rk=+$("rk").value,fx=fxOf(d);let lv;
+ if(d.dir!="AVVENT"){const q=acc*rk/100*fx/Math.abs(d.p-d.sl);
+  lv=`<div class="lv"><div><small>Entry</small>${f(d.p)}</div><div><small>Stop (trailing)</small>${f(d.sl)}</div><div><small>Exit under</small>${f(d.xl)}</div></div>
+  <div class="nt">${d.new?`Størrelse ved ${rk}% risiko: ${!isFinite(q)?"ukjent (mangler dollarkurs)":q<10?q.toFixed(4):q.toFixed(2)} ${d.stk?"aksjer":"enheter"} · ingen fast TP, flytt stop opp hver dag`:d.txt}</div>`}
+ else lv=`<div class="nt">${d.txt}</div>`;
+ return`<div class="c ${d.dir}" data-i="${i}"><div class="t"><span class="nm">${d.nm}${d.top&&TOPI[d.sym]&&!TOPI[d.sym].onHL?'<span class="tag">ikke på Hyperliquid</span>':""}${isHL(d.sym)?'<span class="tag">data: Hyperliquid</span>':""}</span></div><div class="lp" data-p="${d.sym}"><span class="v">…</span><span class="chg"></span></div>
+ <div class="sig">${d.lbl}</div><div class="ms">${d.sub}</div>
+ <div data-rt="${i}"></div>${lv}
+ <div class="nt"><a href="https://www.tradingview.com/chart/?symbol=${d.tv}" target="_blank" rel="noopener">Åpne i TradingView ↗</a></div></div>`}
+async function load(){
+ $("go").disabled=true;$("up").textContent="oppdaterer…";
+ await TOPREADY;const res=await Promise.all(INS.map(i=>run(i).catch(()=>({err:1,nm:i[0],sym:i[1],stk:STK.has(i[1]),top:!!TOPI[i[1]],sc:0}))));
+ res.sort((a,b)=>Math.abs(b.sc)-Math.abs(a.sc));window._r=res;newSig(res);track(res);hero(res);
+ renderCards();paintAll();renderCP();
+ $("up").textContent="oppdatert "+new Date().toLocaleTimeString("no");$("go").disabled=false}
+$("go").onclick=load;
+["acc","rk"].forEach(i=>$(i).oninput=()=>{if(window._r)renderCards();paintAll()});
+const CH=["Pris over EMA 50","EMA 20 over EMA 50","EMA 50 over EMA 200","MACD-histogram positiv","RSI-momentum (>55 / <45)"];
+let cur=null,curIv="1h";const cache={};
+function openD(i){cur=window._r[i];const d=cur;
+ $("mt").innerHTML=`${d.nm} <span class="s-${d.dir}">${d.lbl}</span>`;$("mp").dataset.p=d.sym;$("mp").dataset.last="";$("mp").innerHTML='<span class="v">…</span><span class="chg"></span>';paint($("mp"),d.sym);
+ $("tb").innerHTML=TF.map(([l,iv])=>`<button data-iv="${iv}">${l}</button>`).join("");
+ $("st").innerHTML=rtHTML(d)+(d.dir!="AVVENT"?`<div class="lv"><div><small>Entry</small>${f(d.p)}</div><div><small>Stop (trailing)</small>${f(d.sl)}<small>${(Math.abs(d.sl-d.p)/d.p*100).toFixed(2)}% unna</small></div><div><small>Exit under</small>${f(d.xl)}<small>${DB}-dagers lav</small></div></div>`:"");
+ $("ck").innerHTML=`<h3>Slik virker strategien</h3><table>${d.info.map(r=>`<tr><td>${r[0]}</td><td>${r[1]}</td></tr>`).join("")}</table>
+ <div class="nt">Donchian ${DA}/${DB} på daglige candles, kun long. Kjøp når dagen lukker over høyeste høy de siste ${DA} dagene. Start-stop er 3×ATR(14) under entry, og trailing stop følger høyeste høy minus 3×ATR og flyttes bare oppover. Exit også hvis dagen lukker under laveste lav de siste ${DB} dagene. Ingen fast take profit. Dagen lukker kl. 00:00 UTC.</div>`;
+ $("md").classList.add("on");document.body.style.overflow="hidden";showChart("1d")}
+function closeD(){$("md").classList.remove("on");document.body.style.overflow=""}
+async function showChart(iv){curIv=iv;document.querySelectorAll("#tb button").forEach(b=>b.classList.toggle("on",b.dataset.iv==iv));
+ const key=cur.sym+iv;$("cn").textContent="";
+ if(!cache[key]||Date.now()-cache[key].t>6e4){try{cache[key]={t:Date.now(),k:await kl(cur.sym,iv)}}catch(e){$("cn").textContent="Kunne ikke hente graf.";return}}
+ if(curIv==iv)draw(cache[key].k)}
+function draw(k){
+ const rs=$("ckr").checked,sr=$("cks").checked,cv=$("cv"),dpr=window.devicePixelRatio||1;cv.style.height=rs?"430px":"340px";const W=cv.clientWidth,H0=cv.clientHeight,H=rs?H0-110:H0;cv.width=W*dpr;cv.height=H0*dpr;
+ const x=cv.getContext("2d");x.scale(dpr,dpr);
+ const st=getComputedStyle(document.documentElement),col=n=>st.getPropertyValue(n).trim(),d=cur,N=90;
+ const e50=ema(k.map(z=>+z[4]),50).slice(-N),kk=k.slice(-N);
+ let mx=Math.max(...kk.map(z=>+z[2])),mn=Math.min(...kk.map(z=>+z[3])),lev=!!(d.lines&&d.lines.length);
+ if(lev)d.lines.forEach(l=>{mx=Math.max(mx,l[1]);mn=Math.min(mn,l[1])});
+ const pd=(mx-mn)*.06;mx+=pd;mn-=pd;
+ const R=100,T=8,B=8,cw=(W-R)/N,y=v=>T+(mx-v)/(mx-mn)*(H-T-B);
+ x.font="11px system-ui";x.textBaseline="middle";
+ for(let i=0;i<=4;i++){const v=mn+(mx-mn)*i/4,yy=y(v);x.strokeStyle=col("--bd");x.lineWidth=1;x.beginPath();x.moveTo(0,yy);x.lineTo(W-R,yy);x.stroke();x.fillStyle=col("--mu");x.textAlign="left";x.fillText(f(v),W-R+6,yy)}
+ if(lev){const z=(a,b,c)=>{x.fillStyle=c;x.fillRect(0,Math.min(y(a),y(b)),W-R,Math.abs(y(a)-y(b)))};
+  if(d.sl)z(d.p,d.sl,"rgba(220,38,38,.15)")}
+ kk.forEach((z,i)=>{const o=+z[1],h=+z[2],l=+z[3],c=+z[4],cx=i*cw+cw/2;x.strokeStyle=x.fillStyle=c>=o?col("--g"):col("--r");x.lineWidth=1;
+  x.beginPath();x.moveTo(cx,y(h));x.lineTo(cx,y(l));x.stroke();x.fillRect(cx-cw*.35,y(Math.max(o,c)),cw*.7,Math.max(1,Math.abs(y(o)-y(c))))});
+ x.strokeStyle="#f59e0b";x.lineWidth=1.5;x.beginPath();e50.forEach((v,i)=>{const px=i*cw+cw/2;i?x.lineTo(px,y(v)):x.moveTo(px,y(v))});x.stroke();
+ if(sr){const hh=k.map(z=>+z[2]),ll=k.map(z=>+z[3]),pv=[],w=5;
+  for(let i=w;i<k.length-w;i++){if(hh[i]==Math.max(...hh.slice(i-w,i+w+1)))pv.push(hh[i]);if(ll[i]==Math.min(...ll.slice(i-w,i+w+1)))pv.push(ll[i])}
+  pv.sort((a,b)=>a-b);const tol=(mx-mn)*.02,cl=[];
+  pv.forEach(v=>{const c=cl.at(-1);if(c&&v-c.m<tol){c.n++;c.s+=v;c.m=c.s/c.n}else cl.push({m:v,n:1,s:v})});
+  const cp=+k.at(-1)[4],ls=cl.filter(c=>c.m>mn&&c.m<mx),res=ls.filter(c=>c.m>cp).slice(0,3),sup=ls.filter(c=>c.m<=cp).slice(-3);
+  [[res,"R",col("--r")],[sup,"S",col("--g")]].forEach(([a,n,c])=>a.forEach(l=>{const yy=y(l.m);x.strokeStyle=c;x.globalAlpha=.85;x.lineWidth=1+Math.min(l.n,4)*.4;x.setLineDash([2,3]);x.beginPath();x.moveTo(0,yy);x.lineTo(W-R,yy);x.stroke();x.setLineDash([]);x.globalAlpha=1;x.fillStyle=c;x.textAlign="right";x.fillText(n+" "+f(l.m)+" ("+l.n+"x)",W-R-6,yy-7)}))}
+ if(lev){d.lines.map(l=>[l[0],l[1],l[2]=="g"?col("--g"):l[2]=="r"?col("--r"):l[2]]).forEach(([n,v,c])=>{const yy=y(v);
+  x.strokeStyle=c;x.lineWidth=1.5;x.setLineDash([6,4]);x.beginPath();x.moveTo(0,yy);x.lineTo(W-R,yy);x.stroke();x.setLineDash([]);
+  x.fillStyle=c;x.fillRect(W-R,yy-9,R,18);x.fillStyle="#fff";x.textAlign="center";x.fillText(n+" "+f(v),W-R/2,yy)});
+  x.fillStyle="#3b82f6";x.beginPath();x.arc((N-1)*cw+cw/2,y(d.p),5,0,7);x.fill()}
+ if(rs){const r=rsiS(k.map(z=>+z[4])).slice(-N),t0=H+22,h=H0-t0-6,yr=v=>t0+(100-v)/100*h;
+  x.fillStyle=col("--bg");x.fillRect(0,t0,W-R,h);
+  [30,50,70].forEach(v=>{x.strokeStyle=col("--bd");x.lineWidth=1;x.setLineDash(v==50?[]:[4,4]);x.beginPath();x.moveTo(0,yr(v));x.lineTo(W-R,yr(v));x.stroke();x.setLineDash([]);x.fillStyle=col("--mu");x.textAlign="left";x.fillText(v,W-R+6,yr(v))});
+  x.strokeStyle="#8b5cf6";x.lineWidth=1.5;x.beginPath();r.forEach((v,i)=>{const px=i*cw+cw/2;i?x.lineTo(px,yr(v)):x.moveTo(px,yr(v))});x.stroke();
+  x.fillStyle="#8b5cf6";x.textAlign="left";x.fillText("RSI 14 · "+r.at(-1).toFixed(0),6,t0+9)}}
+function rsiS(c,n=14){const o=Array(c.length).fill(50);let g=0,l=0;for(let i=1;i<=n;i++){const d=c[i]-c[i-1];d>0?g+=d:l-=d}g/=n;l/=n;o[n]=l==0?100:100-100/(1+g/l);
+ for(let i=n+1;i<c.length;i++){const d=c[i]-c[i-1];g=(g*(n-1)+Math.max(d,0))/n;l=(l*(n-1)+Math.max(-d,0))/n;o[i]=l==0?100:100-100/(1+g/l)}return o}
+$("g").onclick=e=>{const c=e.target.closest("[data-i]");if(c&&!e.target.closest("a"))openD(+c.dataset.i)};
+$("g2").onclick=$("g3").onclick=$("g").onclick;
+$("tb").onclick=e=>{const b=e.target.closest("button");if(b)showChart(b.dataset.iv)};
+$("md").onclick=e=>{if(e.target.id=="md"||e.target.id=="mx")closeD()};
+document.onkeydown=e=>{if(e.key=="Escape")closeD()};
+$("cks").onchange=$("ckr").onchange=()=>{if(cur&&cache[cur.sym+curIv])draw(cache[cur.sym+curIv].k)};
+window.onresize=()=>{if(cur&&$("md").classList.contains("on")&&cache[cur.sym+curIv])draw(cache[cur.sym+curIv].k)};
+const P={};let ws,rc=0,poll=0;
+function paint(el,sym,flash){const q=P[sym];if(!q)return;const old=+el.dataset.last||q.p;
+ el.querySelector(".v").textContent=f(q.p);
+ if(q.o){const c=(q.p/q.o-1)*100,h=el.querySelector(".chg");h.textContent=(c>=0?"+":"")+c.toFixed(2)+"% 24t";h.className="chg "+(c>=0?"u":"d")}
+ if(flash&&q.p!=old){el.classList.remove("up","dn");void el.offsetWidth;el.classList.add(q.p>old?"up":"dn")}
+ el.dataset.last=q.p}
+function paintAll(){document.querySelectorAll("[data-p]").forEach(el=>paint(el,el.dataset.p));paintRt()}
+function tick(sym,p,o){P[sym]={p,o};check(sym,p);document.querySelectorAll(`[data-p="${sym}"]`).forEach(el=>paint(el,sym,true))}
+function setLive(on){const e=$("lv");e.textContent=on?"● Live":"◌ Oppdaterer hvert 2. sek";e.style.color=on?"var(--g)":"var(--mu)"}
+async function pollOnce(){for(const h of["api.binance.com","data-api.binance.vision"]){try{
+ const r=await fetch(`https://${h}/api/v3/ticker/24hr?symbols=${encodeURIComponent(JSON.stringify(ALLC().map(i=>i[1]).filter(s=>!isHL(s))))}`);
+ if(r.ok){(await r.json()).forEach(t=>tick(t.symbol,+t.lastPrice,+t.openPrice));return}}catch(e){}}}
+function startPoll(){if(!poll){pollOnce();poll=setInterval(pollOnce,2000)}}
+function lost(){if(rc)return;setLive(false);startPoll();rc=setTimeout(()=>{rc=0;connect()},5000)}
+function connect(){
+ try{ws=new WebSocket("wss://stream.binance.com:9443/stream?streams="+ALLC().map(i=>i[1]).filter(s=>!isHL(s)).map(s=>s.toLowerCase()+"@miniTicker").join("/"))}catch(e){lost();return}
+ ws.onopen=()=>{clearInterval(poll);poll=0;setLive(true)};
+ ws.onmessage=e=>{const d=JSON.parse(e.data).data;if(d)tick(d.s,+d.c,+d.o)};
+ ws.onclose=ws.onerror=lost}
+let AL=false,actx;const W={},fired=new Set(),lastDir={};
+try{AL=localStorage.getItem("skal")=="1"}catch(e){}
+function beep(seq){try{actx=actx||new(window.AudioContext||window.webkitAudioContext)();actx.resume();
+ seq.forEach(([fr,t])=>{const o=actx.createOscillator(),g=actx.createGain(),s=actx.currentTime+t;o.frequency.value=fr;o.connect(g);g.connect(actx.destination);
+  g.gain.setValueAtTime(.15,s);g.gain.exponentialRampToValueAtTime(.001,s+.25);o.start(s);o.stop(s+.26)})}catch(e){}}
+function alertMsg(txt,kind){if(!AL)return;
+ beep(kind=="tp"?[[660,0],[880,.2],[1100,.4]]:kind=="sl"?[[500,0],[380,.2],[260,.4]]:[[800,0],[800,.3]]);
+ const t=document.createElement("div");t.className="toast "+kind;t.textContent=txt;t.onclick=()=>t.remove();$("ts").appendChild(t);setTimeout(()=>t.remove(),12000);
+ try{if(Notification.permission=="granted")new Notification("SKTRADE",{body:txt})}catch(e){}}
+function newSig(res){res.forEach(d=>{if(d.err)return;const o=lastDir[d.sym];
+ if(o!==undefined&&o!=d.dir&&d.dir!="AVVENT")alertMsg(`🟢 ${d.nm}: Nytt KJØP-signal (Donchian ${DA}/${DB})`,"new");
+ if(o=="KJØP"&&d.dir=="AVVENT")alertMsg(`🔴 ${d.nm}: Posisjonen er stengt (stop eller exit-signal)`,"sl");
+ lastDir[d.sym]=d.dir})}
+function check(sym,p){const d=(window._r||[]).find(x=>x.sym==sym);if(!d||d.dir=="AVVENT")return;
+ const up=d.dir=="KJØP",k=sym+d.dir+f(d.sl)+f(d.tp),w=W[k]=W[k]||{last:p,armed:false};
+ if(d.tp&&!fired.has(k+"tp")&&(up?p>=d.tp:p<=d.tp)){fired.add(k+"tp");alertMsg(`✅ ${d.nm}: Take profit nådd (${f(d.tp)})`,"tp")}
+ if(!fired.has(k+"sl")&&(up?p<=d.sl:p>=d.sl)){fired.add(k+"sl");alertMsg(`⛔ ${d.nm}: Stop loss nådd (${f(d.sl)})`,"sl")}
+ if(d.new&&w.armed&&!fired.has(k+"en")&&(w.last-d.p)*(p-d.p)<=0){fired.add(k+"en");alertMsg(`🎯 ${d.nm}: Prisen er tilbake ved entry (${f(d.p)})`,"en")}
+ if(Math.abs(p-d.p)>.3*d.a)w.armed=true;w.last=p}
+function setAL(on){AL=on;$("bell").textContent=on?"🔔 Varsler på":"🔕 Varsler av";$("bell").classList.toggle("on",on);try{localStorage.setItem("skal",on?"1":"0")}catch(e){}}
+$("bell").onclick=()=>{setAL(!AL);if(AL){beep([[800,0]]);try{Notification.requestPermission()}catch(e){}}};
+let xo=0;const raw=v=>v.toFixed(v>=100?2:v>=1?4:5);
+function renderCP(){const r=(window._r||[]).filter(d=>!d.err&&d.dir!="AVVENT");
+ $("cpl").innerHTML=r.length?r.map(d=>{const o=d.sym=="PAXGUSDT"?xo:0,e=raw(d.p+o),sl=raw(d.sl+o),tp=raw(d.tp+o);
+  const row=(l,v)=>`<div class="cr"><span class="cl">${l}</span><span class="cval">${v}</span><button class="cb" data-t="${v}">Kopier</button></div>`;
+  return`<div class="c ${d.dir}"><div class="t"><span class="nm">${d.nm}</span><span class="s-${d.dir}" style="font-weight:700">${d.lbl}</span></div>
+  ${row(d.new?"Entry":"Åpnet ved",e)}${row(d.new?"Stop loss":"Nå. stop",sl)}${d.tp?row("Take profit",tp):""}
+  <button class="cpa" data-t="Entry: ${e}\nSL: ${sl}${d.tp?"\nTP: "+tp:""}">Kopier alle</button>
+  ${o?`<div class="nt">Justert ${o>0?"+":""}${o.toFixed(2)} mot PAXG</div>`:""}</div>`}).join(""):'<div class="nt">Ingen aktive signaler akkurat nå – alle instrumenter står på AVVENT.</div>'}
+async function copyT(t,b){try{await navigator.clipboard.writeText(t)}catch(e){const a=document.createElement("textarea");a.value=t;document.body.appendChild(a);a.select();try{document.execCommand("copy")}catch(_){}a.remove()}
+ const o=b.textContent;b.textContent="Kopiert ✓";b.classList.add("ok");setTimeout(()=>{b.textContent=o;b.classList.remove("ok")},1200)}
+$("cpv").onclick=e=>{const b=e.target.closest("[data-t]");if(b)copyT(b.dataset.t,b)};
+$("xp").oninput=()=>{const v=+$("xp").value;xo=v&&P.PAXGUSDT?v-P.PAXGUSDT.p:0;renderCP()};
+const HOSTS=["api.binance.com","data-api.binance.vision"];
+async function klN(sym,iv,n){if(isY(sym)){if(iv!="1d")throw new Error("bare dagsdata");return yK(sym,n)}if(STK.has(sym)||isHL(sym))return hlK(sym,iv,n);let out=[],end=Date.now();while(out.length<n){const m=Math.min(1000,n-out.length);let r=null;
+ for(const h of HOSTS){try{const x=await fetch(`https://${h}/api/v3/klines?symbol=${sym}&interval=${iv}&limit=${m}&endTime=${end}`);if(x.ok){r=await x.json();break}}catch(e){}}
+ if(!r)throw 0;if(!r.length)break;out=r.concat(out);end=r[0][0]-1}return out}
+function scs(k){const c=k.map(z=>+z[4]),e20=ema(c,20),e50=ema(c,50),e200=ema(c,200),a=ema(c,12),b=ema(c,26),m=a.map((v,i)=>v-b[i]),sg=ema(m,9),rs=rsiS(c);
+ return c.map((p,i)=>i<200?null:((p>e50[i]?1:-1)+(e20[i]>e50[i]?1:-1)+(e50[i]>e200[i]?1:-1)+(m[i]-sg[i]>0?1:-1)+(rs[i]>55?1:rs[i]<45?-1:0))/5)}
+function atrS(k,n=14){const o=Array(k.length).fill(null);let a=0;for(let i=1;i<k.length;i++){const h=+k[i][2],l=+k[i][3],pc=+k[i-1][4],t=Math.max(h-l,Math.abs(h-pc),Math.abs(l-pc));
+ if(i<=n){a+=t;if(i==n){a/=n;o[i]=a}}else{a=(a*(n-1)+t)/n;o[i]=a}}return o}
+async function bt(sym,bars,start,risk,fee){
+ const[k1,k4,kd]=await Promise.all([klN(sym,"1h",bars+250),klN(sym,"4h",Math.ceil(bars/4)+250),klN(sym,"1d",Math.ceil(bars/24)+250)]);
+ const s1=scs(k1),s4=scs(k4),sd=scs(kd),at=atrS(k1),rs=rsiS(k1.map(z=>+z[4]));
+ let j4=-1,jd=-1,eq=start;const tr=[];
+ const sig=i=>{const ct=k1[i][6];while(j4+1<k4.length&&k4[j4+1][6]<=ct)j4++;while(jd+1<kd.length&&kd[jd+1][6]<=ct)jd++;
+  if(s1[i]==null||j4<0||jd<0||s4[j4]==null||sd[jd]==null)return 0;
+  const sc=(s1[i]*2+s4[j4]*3+sd[jd]*4)/9;let d=sc>=.25?1:sc<=-.25?-1:0;
+  if((d==1&&rs[i]>75)||(d==-1&&rs[i]<25))d=0;return d};
+ for(let i=Math.max(200,k1.length-bars);i<k1.length-1;){const d=sig(i);if(!d||at[i]==null){i++;continue}
+  const p=+k1[i][4],a=at[i],sl=p-d*SL*a,tp=p+d*TP*a,risk$=eq*risk/100,u=risk$/(SL*a);let j=i+1,ex=null,why="";
+  for(;j<k1.length;j++){const h=+k1[j][2],l=+k1[j][3];
+   if(d==1?l<=sl:h>=sl){ex=sl;why="SL";break}
+   if(d==1?h>=tp:l<=tp){ex=tp;why="TP";break}}
+  if(ex==null){j=k1.length-1;ex=+k1[j][4];why="åpen"}
+  const pnl=d*(ex-p)*u-(p+ex)*u*fee/100;eq+=pnl;tr.push({t:+k1[j][6],pnl,rr:pnl/risk$,d,why});i=j}
+ const first=k1[Math.max(200,k1.length-bars)][4];
+ return{sym,start,end:eq,tr,bh:(+k1[k1.length-1][4]/+first-1)*100}}
+
+$("bti").innerHTML='<option value="all">Alle (startsum delt likt)</option>'+CRY.map((x,i)=>`<option value="${i}">${x[0]}</option>`).join("");
+const $$=v=>"$"+v.toFixed(2);
+function showBT(rs,start){
+ const all=rs.flatMap(r=>r.tr.map(t=>({...t,s:r.nm}))).sort((a,b)=>a.t-b.t);
+ let eq=start,pk=start,dd=0,w=0,gp=0,gl=0,rr=0;const pts=[start];
+ all.forEach(t=>{eq+=t.pnl;pts.push(eq);pk=Math.max(pk,eq);dd=Math.max(dd,(pk-eq)/pk);if(t.pnl>0){w++;gp+=t.pnl}else gl-=t.pnl;rr+=t.rr});
+ const n=all.length,ret=(eq/start-1)*100,cls=ret>=0?"u":"d";
+ const box=(l,v,c)=>`<div><small>${l}</small><span class="${c||""}">${v}</span></div>`;
+ $("btout").innerHTML=`<div class="lv">${box("Sluttsaldo",$$(eq),cls)}${box("Avkastning",(ret>=0?"+":"")+ret.toFixed(1)+"%",cls)}${box("Antall trades",n)}
+  ${box("Vinnerandel",n?(w/n*100).toFixed(0)+"%":"-")}${box("Profit factor",gl?(gp/gl).toFixed(2):n?"∞":"-")}${box("Maks drawdown","-"+(dd*100).toFixed(1)+"%","d")}</div>
+  <div class="nt">Snitt per trade: ${n?(rr/n).toFixed(2):"-"} R · samlet startsum ${$$(start)}</div>
+  <canvas id="bc"></canvas>
+  <table><tr><th>Instrument</th><th>Trades</th><th>Vinn%</th><th>Slutt</th><th>Avkastn.</th><th>Kjøp og hold</th></tr>
+  ${rs.map(r=>{const v=r.tr.filter(t=>t.pnl>0).length,a=(r.end/r.start-1)*100;return`<tr><td>${r.nm}</td><td>${r.tr.length}</td><td>${r.tr.length?Math.round(v/r.tr.length*100)+"%":"-"}</td><td>${$$(r.end)}</td><td class="${a>=0?"u":"d"}">${a>=0?"+":""}${a.toFixed(1)}%</td><td>${r.bh>=0?"+":""}${r.bh.toFixed(1)}%</td></tr>`}).join("")}</table>`;
+ const cv=$("bc"),dpr=window.devicePixelRatio||1,W=cv.clientWidth,H=cv.clientHeight;cv.width=W*dpr;cv.height=H*dpr;
+ const x=cv.getContext("2d");x.scale(dpr,dpr);const st=getComputedStyle(document.documentElement),col=q=>st.getPropertyValue(q).trim();
+ const mx=Math.max(...pts,start),mn=Math.min(...pts,start),pd=(mx-mn)*.1||1,y=v=>8+(mx+pd-v)/(mx-mn+2*pd)*(H-16),R=70,xs=i=>pts.length>1?i/(pts.length-1)*(W-R):0;
+ x.font="11px system-ui";x.textBaseline="middle";x.strokeStyle=col("--mu");x.lineWidth=1;x.setLineDash([4,4]);x.beginPath();x.moveTo(0,y(start));x.lineTo(W-R,y(start));x.stroke();x.setLineDash([]);
+ x.fillStyle=col("--mu");x.fillText($$(start),W-R+6,y(start));
+ x.strokeStyle=eq>=start?col("--g"):col("--r");x.lineWidth=2;x.beginPath();pts.forEach((v,i)=>i?x.lineTo(xs(i),y(v)):x.moveTo(xs(i),y(v)));x.stroke();
+ x.fillStyle=x.strokeStyle;x.fillText($$(eq),W-R+6,y(eq)+(Math.abs(y(eq)-y(start))<12?12:0))}
+$("btgo").onclick=async()=>{const b=$("btgo"),st=+$("bts").value||1000,rk=+$("btr").value||1,fe=+$("btf").value||0,bars=+$("btp").value,sel=$("bti").value,list=sel=="all"?CRY:[CRY[+sel]];
+ b.disabled=true;$("btout").innerHTML="";const rs=[];
+ try{for(const ins of list){$("btst").textContent=`Henter historikk og kjører: ${ins[0]}…`;const r=await bt(ins[1],bars,st/list.length,rk,fe);r.nm=ins[0];rs.push(r)}
+  $("btst").textContent="";showBT(rs,st)}catch(e){$("btst").textContent="Kunne ikke hente historiske data. Sjekk internettilkoblingen."}
+ b.disabled=false};
+
+/* ===== Vurdering: NEI (rød) / POSITIV SJANSE (grønn) / HØY SANNSYNLIGHET (blå) =====
+   Basert på forventet gevinst per trade (R, etter avgifter) for samme signalretning siste 6 mnd. */
+const MINN=15,MINN_HOY=30,E_POS=.1,E_HOY=.25,Z_HOY=1.64,HW={};
+function stat(e){const n=e.n,m=n?e.s/n:0,v=n>1?Math.max(0,(e.q-n*m*m)/(n-1)):0;return{n,m,se:n>1?Math.sqrt(v/n):9,w:n?e.w/n:0}}
+function rate(d){
+ if(d.dir=="AVVENT")return["NA","INGEN SIGNAL",d.txt];
+ const h=HW[d.sym],PP=d.stk?HW._ps:d.top?HW._pt:HW._p;if(!h||!PP)return["NA","Beregner historikk…",""];
+ if(!d.stk&&h.n<10)return["NA","FOR KORT HISTORIKK",`Data fra ${new Date(h.from).toLocaleDateString("no",{month:"short",year:"numeric"})}, bare ${h.n} handler i testen. Bruk lav risiko.`];
+ if(d.stk&&h.n<10)return["NA","FOR KORT HISTORIKK",`Handlet på Hyperliquid siden ${new Date(h.from).toLocaleDateString("no",{month:"short",year:"numeric"})}, bare ${h.n} handler i testen. Strategien er testet på krypto og gull, så bruk lav risiko.`];
+ const s=stat(h),ps=stat(PP),tx=`Snitt ${f2(s.m)}R · ${Math.round(s.w*100)}% vinn · ${s.n} trades (5 år)`;
+ const usd=(+$("acc").value)*(+$("rk").value)/100*s.m,ev=` · ≈ ${usd>=0?"+":""}$${usd.toFixed(0)} per trade`;
+ if(s.n<10||s.m<E_POS)return["RØD","NEI",(s.m<=0?"Taper historisk: ":"For tynn kant: ")+tx];
+ const hoy=ps.m-Z_HOY*ps.se>0&&PP.a.n>=10&&PP.b.n>=10&&PP.a.s>0&&PP.b.s>0&&s.m>=E_HOY&&s.n>=12;
+ return hoy?["BLÅ","HØY SANNSYNLIGHET",tx+ev+` · strategien holder samlet (${ps.n} trades, ${f2(ps.m)}R)`]:["GRØNN","POSITIV SJANSE",tx+ev]}
+function rtHTML(d){if(d.err||d.dir=="AVVENT")return"";const[c,t,s]=rate(d);return`<div class="rt ${c}">${t}<small>${s}</small></div>`}
+function paintRt(){document.querySelectorAll("[data-rt]").forEach(el=>{const d=(window._r||[])[+el.dataset.rt];if(d)el.innerHTML=rtHTML(d)})}
+let hwRun=0;
+async function loadHW(){await TOPREADY;const my=++hwRun,cc=costCfg(),tot={n:0,w:0,s:0,q:0,a:{n:0,s:0},b:{n:0,s:0}};
+ const tots={n:0,w:0,s:0,q:0,a:{n:0,s:0},b:{n:0,s:0}};
+ const tott={n:0,w:0,s:0,q:0,a:{n:0,s:0},b:{n:0,s:0}};
+ for(const i of [...CRY,"core",...TOP,"top",...STOCKS]){if(my!=hwRun)return;if(i=="core"){HW._p=tot;paintRt();continue}if(i=="top"){HW._pt=tott;paintRt();continue}const sk=STK.has(i[1]),T=sk?tots:TOPI[i[1]]?tott:tot,Y=sk?1260:1825;try{
+  const k=await getT(i[1],"1d",Y+300),c=k.map(z=>+z[4]),at=atrS(k),hs=k.map(z=>+z[2]),ls=k.map(z=>+z[3]),x={c,hi:n=>rollM(hs,n,1),lo:n=>rollM(ls,n,-1)},g=don(x,DA,DB);
+  const s0=Math.max(sk?60:300,k.length-Y),cut=+k[s0][6]+(+k.at(-1)[6]-+k[s0][6])*.6,fx=await fundFor(i[1],+k[s0][0]),tr=simT(k,g.en,g.xl,g.xs,at,3,.1,true,s0,{sp:cc.sp,F:fx.F}),o={n:0,w:0,s:0,q:0,a:{n:0,s:0},b:{n:0,s:0}};
+  tr.forEach(t=>{const h=t.t<cut?"a":"b";[o,T].forEach(e=>{e.n++;e.s+=t.rr;e.q+=t.rr*t.rr;if(t.rr>0)e.w++;e[h].n++;e[h].s+=t.rr})});
+  o.from=+k[0][0];HW[i[1]]=o;paintRt()}catch(e){}}
+ if(my!=hwRun)return;HW._p=tot;HW._pt=tott;HW._ps=tots;paintRt()}
+
+/* ===== Strategisammenligning: 7 strategier, samme SL/TP og avgifter, trening (første 60 %) mot test (siste 40 %) ===== */
+const BEST={},KC={},f2=v=>(v>=0?"+":"")+v.toFixed(2);
+const bbS=(c,n=20)=>{const u=[],lo=[];for(let i=0;i<c.length;i++){if(i<n-1){u.push(null);lo.push(null);continue}let s=0,q=0;for(let j=i-n+1;j<=i;j++){s+=c[j];q+=c[j]*c[j]}const m=s/n,sd=Math.sqrt(Math.max(0,q/n-m*m));u.push(m+2*sd);lo.push(m-2*sd)}return[u,lo]};
+function trendSig(k1,k4,kd,rs){const s1=scs(k1),s4=scs(k4),sd=scs(kd);let j4=-1,jd=-1;
+ return k1.map((z,i)=>{const ct=z[6];while(j4+1<k4.length&&k4[j4+1][6]<=ct)j4++;while(jd+1<kd.length&&kd[jd+1][6]<=ct)jd++;
+  if(s1[i]==null||j4<0||jd<0||s4[j4]==null||sd[jd]==null)return 0;
+  const sc=(s1[i]*2+s4[j4]*3+sd[jd]*4)/9;let d=sc>=.25?1:sc<=-.25?-1:0;
+  if((d==1&&rs[i]>75)||(d==-1&&rs[i]<25))d=0;return d})}
+const STR=[
+ ["Trend-score (nåværende)","Trend",x=>x.trend],
+ ["EMA 20/50-kryss + EMA200-filter","EMA-kryss",x=>x.c.map((p,i)=>i<200?0:x.e20[i-1]<=x.e50[i-1]&&x.e20[i]>x.e50[i]&&p>x.e200[i]?1:x.e20[i-1]>=x.e50[i-1]&&x.e20[i]<x.e50[i]&&p<x.e200[i]?-1:0)],
+ ["Donchian-breakout (55 timer)","Donchian",x=>x.c.map((p,i)=>{if(i<200)return 0;let H=-1/0,L=1/0;for(let j=i-55;j<i;j++){H=Math.max(H,x.h[j]);L=Math.min(L,x.l[j])}return p>H?1:p<L?-1:0})],
+ ["RSI-pullback i trend","RSI-pullb.",x=>x.c.map((p,i)=>i<200?0:x.rs[i-1]<35&&x.rs[i]>=35&&x.e50[i]>x.e200[i]&&p>x.e200[i]?1:x.rs[i-1]>65&&x.rs[i]<=65&&x.e50[i]<x.e200[i]&&p<x.e200[i]?-1:0)],
+ ["Pullback til EMA 50","EMA50-pullb.",x=>x.c.map((p,i)=>i<200?0:x.e50[i]>x.e200[i]&&x.l[i]<=x.e50[i]&&p>x.e50[i]?1:x.e50[i]<x.e200[i]&&x.h[i]>=x.e50[i]&&p<x.e50[i]?-1:0)],
+ ["MACD-kryss + EMA200-filter","MACD",x=>x.c.map((p,i)=>i<200?0:x.m[i-1]<=x.sgl[i-1]&&x.m[i]>x.sgl[i]&&p>x.e200[i]?1:x.m[i-1]>=x.sgl[i-1]&&x.m[i]<x.sgl[i]&&p<x.e200[i]?-1:0)],
+ ["Bollinger-reversal (uten trendfilter)","Bollinger",x=>x.c.map((p,i)=>i<200?0:x.bl[i-1]!=null&&x.c[i-1]<x.bl[i-1]&&p>=x.bl[i]?1:x.bu[i-1]!=null&&x.c[i-1]>x.bu[i-1]&&p<=x.bu[i]?-1:0)]
+];
+function sim(k1,sg,at,bars,slm,tpm,fee){const tr=[];
+ for(let i=Math.max(200,k1.length-bars);i<k1.length-1;){const d=sg[i];if(!d||at[i]==null){i++;continue}
+  const p=+k1[i][4],a=at[i],sl=p-d*slm*a,tp=p+d*tpm*a;let j=i+1,ex=null;
+  for(;j<k1.length;j++){const h=+k1[j][2],l=+k1[j][3];
+   if(d==1?l<=sl:h>=sl){ex=sl;break}
+   if(d==1?h>=tp:l<=tp){ex=tp;break}}
+  if(ex==null){j=k1.length-1;ex=+k1[j][4]}
+  const u=1/(slm*a),fr=(p+ex)*u*fee/100;tr.push({t:+k1[j][6],rr:d*(ex-p)*u-fr,fr,d});i=j}
+ return tr}
+function stats(tr){const n=tr.length;if(!n)return{n:0,m:0,w:0,pf:0,dd:0,se:9,fc:0};let s=0,q=0,w=0,gp=0,gl=0,eq=0,pk=0,dd=0,fc=0;
+ tr.forEach(t=>{s+=t.rr;q+=t.rr*t.rr;fc+=t.fr;if(t.rr>0){w++;gp+=t.rr}else gl-=t.rr;eq+=t.rr;pk=Math.max(pk,eq);dd=Math.max(dd,pk-eq)});
+ const m=s/n,v=n>1?Math.max(0,(q-n*m*m)/(n-1)):0;return{n,m,w:w/n,pf:gl?gp/gl:gp?9:0,dd,se:n>1?Math.sqrt(v/n):9,fc:fc/n}}
+async function getK(sym,bars){const c=KC[sym];if(c&&c.bars>=bars&&Date.now()-c.t<9e5)return c;
+ const[k1,k4,kd]=await Promise.all([klN(sym,"1h",bars+250),klN(sym,"4h",Math.ceil(bars/4)+250),klN(sym,"1d",Math.ceil(bars/24)+250)]);
+ return KC[sym]={t:Date.now(),bars,k1,k4,kd}}
+async function cmp(){
+ const b=$("sgo"),bars=+$("sp").value,slm=+$("ssl").value||1.5,tpm=+$("stp").value||3,fe=+$("sfe").value||0,R=[];
+ b.disabled=true;$("sout").innerHTML="";
+ try{for(const[nm,sym]of CRY){$("sst").textContent=`Henter historikk og tester: ${nm}…`;
+  const K=await getK(sym,bars),k=K.k1,c=k.map(z=>+z[4]),e12=ema(c,12),e26=ema(c,26),m=e12.map((v,i)=>v-e26[i]),rs=rsiS(c),[bu,bl]=bbS(c);
+  const x={c,h:k.map(z=>+z[2]),l:k.map(z=>+z[3]),e20:ema(c,20),e50:ema(c,50),e200:ema(c,200),rs,m,sgl:ema(m,9),bu,bl,trend:trendSig(k,K.k4,K.kd,rs)},at=atrS(k);
+  const s0=Math.max(200,k.length-bars),cut=+k[s0][6]+(+k.at(-1)[6]-+k[s0][6])*.6;
+  STR.forEach(([sn,,fn])=>{const tr=sim(k,fn(x),at,bars,slm,tpm,fe),aT=tr.filter(t=>t.t<cut),bT=tr.filter(t=>t.t>=cut);R.push({sn,nm,sym,aT,bT,a:stats(aT),b:stats(bT)})})}
+  $("sst").textContent="";showCmp(R)}catch(e){console.error(e);$("sst").textContent="Kunne ikke hente historiske data eller kjøre testen. Sjekk internettilkoblingen."}
+ b.disabled=false}
+function showCmp(R){
+ const inst=[...new Set(R.map(r=>r.nm))],c=m=>m>0?"u":m<0?"d":"z";
+ const pool=sn=>{const q=R.filter(r=>r.sn==sn),A=q.flatMap(r=>r.aT),B=q.flatMap(r=>r.bT);return{sn,a:stats(A),b:stats(B),al:stats(A.concat(B))}};
+ const rows=STR.map(s=>pool(s[0])).sort((x,y)=>y.b.m-x.b.m);
+ const tag=r=>r.b.n<15?["z","For få trades"]:r.a.m>0&&r.b.m>0?["u","Holder"]:r.b.m>0?["z","Svak"]:["d","Nei"];
+ INS.forEach(i=>{const q=R.filter(r=>r.sym==i[1]&&r.b.n>=15&&r.a.m>0&&r.b.m>=E_POS).sort((x,y)=>y.b.m-x.b.m)[0];if(q)BEST[i[1]]={name:q.sn,m:q.b.m,n:q.b.n,ok:q.a.m>0};else delete BEST[i[1]]});
+ const good=rows.filter(r=>tag(r)[1]=="Holder").length;
+ $("sout").innerHTML=`<div class="nt" style="margin:0 0 8px">${good?good+" av "+rows.length+" strategier var lønnsomme både i treningsdelen og testdelen. Se på dem som kandidater, ikke som bevis.":"Ingen strategi var lønnsom både i trening og test. Da bør du ikke handle mekanisk på noen av dem."}</div>
+ <table><tr><th>Strategi (alle instrumenter)</th><th>Trades</th><th>Vinn%</th><th>Trening R</th><th>Test R</th><th>PF test</th><th>Avgift R/trade</th><th>Vurdering</th></tr>
+ ${rows.map(r=>{const t=tag(r);return`<tr><td>${r.sn}</td><td>${r.al.n}</td><td>${r.al.n?Math.round(r.al.w*100)+"%":"-"}</td><td class="${c(r.a.m)}">${f2(r.a.m)}</td><td class="${c(r.b.m)}">${f2(r.b.m)}</td><td>${r.b.pf.toFixed(2)}</td><td>${r.al.fc.toFixed(2)}</td><td class="${t[0]}">${t[1]}</td></tr>`}).join("")}</table>
+ <h3 style="font-size:14px;margin:18px 0 6px">Testperiode per instrument: snitt R (antall trades)</h3>
+ <table><tr><th>Instrument</th>${STR.map(s=>`<th>${s[1]}</th>`).join("")}<th>Beste</th></tr>
+ ${inst.map(nm=>{const q=R.filter(r=>r.nm==nm),b=q.filter(r=>r.b.n>=15&&r.a.m>0&&r.b.m>=E_POS).sort((x,y)=>y.b.m-x.b.m)[0];
+  return`<tr><td>${nm}</td>${STR.map(s=>{const r=q.find(z=>z.sn==s[0]);return r.b.n<8?`<td class="z">– (${r.b.n})</td>`:`<td class="${c(r.b.m)}">${f2(r.b.m)} (${r.b.n})</td>`}).join("")}<td>${b?STR.find(s=>s[0]==b.sn)[1]:"–"}</td></tr>`}).join("")}</table>`;
+ paintRt()}
+$("sgo").onclick=cmp;
+
+/* ===== Kostnader: slippage og funding (historisk fra Binance / Hyperliquid, ellers fast sats) ===== */
+const YR=365*864e5,FUND={},FUNDP={},FROM0=Date.UTC(2019,8,1);
+const costCfg=()=>({sp:Math.max(0,+$("csl").value||0)/100,mode:$("cfm").value,fy:(+$("cfy").value||0)/100});
+function fundHist(sym){const from=FROM0,c=FUND[sym];if(c&&c.from<=from&&Date.now()-c.t<36e5)return Promise.resolve(c.r);
+ if(FUNDP[sym])return FUNDP[sym];
+ return FUNDP[sym]=(async()=>{try{const out=[];let st=from;
+  if(STK.has(sym)||isHL(sym)){const coin=isHL(sym)?sym.slice(3):await hlName(sym);
+   for(let g=0;g<80;g++){if(g)await new Promise(z=>setTimeout(z,300));let r;try{r=await hlPost({type:"fundingHistory",coin,startTime:st})}catch(e){if(out.length)break;throw e}if(!Array.isArray(r)||!r.length)break;
+    r.forEach(z=>out.push([+z.time,+z.fundingRate]));const last=+r.at(-1).time;if(r.length<500||last>=Date.now()-36e5)break;st=last+1}}
+  else for(let g=0;g<40;g++){let x;try{x=await fetch(`https://fapi.binance.com/fapi/v1/fundingRate?symbol=${sym}&startTime=${st}&limit=1000`)}catch(e){x={ok:false}}if(!x.ok){if(out.length)break;throw 0}
+   const r=await x.json();if(!Array.isArray(r)||!r.length)break;r.forEach(z=>out.push([+z.fundingTime,+z.fundingRate]));if(r.length<1000)break;st=+r.at(-1).fundingTime+1}
+  if(!out.length)return null;out.sort((a,b)=>a[0]-b[0]);FUND[sym]={t:Date.now(),from,r:out};return out}catch(e){return null}finally{delete FUNDP[sym]}})()}
+function fundFn(rec,fy){if(!rec||!rec.length)return t=>fy*t/YR;
+ const ts=rec.map(r=>r[0]),cum=[];let s=0;rec.forEach(r=>{s+=r[1];cum.push(s)});const t0=ts[0],tl=ts.at(-1),cl=cum.at(-1);
+ return t=>{if(t<=t0)return fy*(t-t0)/YR;if(t>=tl)return cl+fy*(t-tl)/YR;let lo=0,hi=ts.length-1;while(hi-lo>1){const m=(lo+hi)>>1;ts[m]<=t?lo=m:hi=m}return cum[lo]}}
+async function fundFor(sym,from){const c=costCfg();if(c.mode=="off")return{F:null,src:"off"};if(isY(sym)){if(c.mode=="hist"){const v=await yFund(sym);if(v&&v.avg!=null)return{F:fundFn(null,v.avg),src:"yh"}}return{F:fundFn(null,c.fy),src:"y"}}
+ if(c.mode=="hist"){const r=await fundHist(sym);if(r)return{F:fundFn(r,c.fy),src:r[0][0]>from+30*864e5?"part":"hist"}}
+ return{F:fundFn(null,c.fy),src:c.mode=="hist"?"miss":"fix"}}
+function fundNote(L){const c=costCfg(),g=k=>L.filter(x=>x[1]==k).map(x=>x[0].replace(" (XAU)","")),fy=(c.fy*100).toFixed(0)+" % per år";
+ if(c.mode=="off")return"Funding er slått av.";if(c.mode=="fix")return`Funding: fast ${fy}.`;
+ const h=g("hist"),p=g("part"),m=g("miss"),y=g("y"),yh=g("yh");return"Funding: "+[yh.length?`snitt av faktisk Hyperliquid-funding siste år for ${yh.join(", ")}`:"",y.length?`fast ${fy} for ${y.join(", ")} (fant ikke funding på Hyperliquid)`:"",h.length?"historisk for "+h.join(", "):"",p.length?"historisk med fast sats før perps fantes for "+p.join(", "):"",m.length?`fast ${fy} for ${m.join(", ")} (fikk ikke historikk)`:""].filter(Boolean).join("; ")+"."}
+function tCost(d,e,ex,R0,fee,sp,F,t0,t1){const e1=e*(1+d*sp),x1=ex*(1-d*sp),fe=(e1+x1)*fee/100/R0,sl=sp*(e+ex)/R0,fu=F?d*(e+ex)/2*(F(t1)-F(t0))/R0:0;return{fe,sl,fu,all:fe+sl+fu}}
+function costLine(tr,name){if(!tr.length)return"";const a=k=>tr.reduce((s,t)=>s+(t[k]||0),0)/tr.length,m=a("rr");
+ return`${name}: snitt ${f2(m+a("fr"))} R før kostnader og ${f2(m)} R etter (avgift ${a("fe").toFixed(2)}, slippage ${a("sl").toFixed(2)}, funding ${f2(a("fu"))} R per handel).`}
+/* ===== Funding for andre markeder: faktiske satser fra Hyperliquid (alle HIP-3-børser) =====
+   Henter fire utvalg à 500 timer spredt over siste år og bruker snittet per marked. Lagres i 7 dager. */
+const YCAND={XAG:["SILVER","XAG"],COPPER:["COPPER","HG"],PLATINUM:["PLATINUM","PLAT","XPT"],WTI:["CL","WTIOIL","WTI","OIL","USOIL"],BRENT:["BRENTOIL","BRENT","UKOIL"],NATGAS:["NATGAS","NG"],WHEAT:["WHEAT","ZW"],SP500:["SP500","S&P500","SPX","US500","SPY"],NDX:["XYZ100","NDX","NAS100","US100"],EUR:["EUR","EURUSD"],JPY:["JPY","JPYUSD","USDJPY"]};
+const sleep=ms=>new Promise(r=>setTimeout(r,ms)),YF={};let HLD=null,hlGap=Promise.resolve();
+async function hlSlow(b){const p=hlGap.then(()=>hlPost(b));hlGap=p.catch(()=>{}).then(()=>sleep(2600));return p}
+function hlDisc(){return HLD=HLD||(async()=>{let dexs=[];try{const r=await hlPost({type:"perpDexs"});dexs=(Array.isArray(r)?r:[]).filter(Boolean).map(d=>d&&d.name).filter(Boolean)}catch(e){}
+ if(!dexs.includes("xyz"))dexs.unshift("xyz");dexs.sort((a,b)=>(b=="xyz")-(a=="xyz"));const out=[];
+ for(const dex of dexs){try{await sleep(200);const m=await hlPost({type:"meta",dex});let mids={};try{mids=await hlPost({type:"allMids",dex})}catch(e){}
+  (m.universe||[]).forEach(u=>{if(u.isDelisted)return;const full=String(u.name);out.push({dex,full,base:full.split(":").pop().toUpperCase(),mid:+mids[full]||null})})}catch(e){}}
+ if(!out.length)throw new Error("fant ingen markeder");return out})().catch(e=>{HLD=null;return[]})}
+async function yFund(sym,force){const m=YI[sym];if(!m)return null;if(!force&&YF[sym])return YF[sym];const ck="sk_yf_"+m.key;
+ if(!force)try{const c=JSON.parse(localStorage.getItem(ck)||"null");if(c&&Date.now()-c.t<7*864e5)return YF[sym]=c.v}catch(e){}
+ const L=await hlDisc();if(!L.length)return{miss:"fikk ikke kontakt med Hyperliquid"};
+ let hit=null;for(const c of(YCAND[m.key]||[m.key]).map(x=>x.toUpperCase())){hit=L.find(x=>x.base==c);if(hit)break}
+ const keep=v=>{YF[sym]=v;try{localStorage.setItem(ck,JSON.stringify({t:Date.now(),v}))}catch(e){}return v};
+ if(!hit)return keep({miss:"finnes ikke på Hyperliquid"});
+ let inv=false;if(m.grp=="valuta"&&hit.mid){try{const lc=(await yK(sym,1))[0][4];if(Math.abs(hit.mid/lc-1)>.05){if(Math.abs(hit.mid*lc-1)<.05)inv=true;else return keep({coin:hit.full,miss:"usikker prisretning"})}}catch(e){}}
+ const H={};let err=0;for(const back of[360,270,180,90]){try{const r=await hlSlow({type:"fundingHistory",coin:hit.full,startTime:Date.now()-back*864e5});(Array.isArray(r)?r:[]).forEach(z=>{H[Math.round(+z.time/36e5)]=+z.fundingRate*(inv?-1:1)})}catch(e){err++}}
+ const hrs=Object.keys(H).length;if(hrs<200)return err?{coin:hit.full,miss:"fikk ikke hentet funding"}:keep({coin:hit.full,miss:"for kort funding-historikk"});
+ const first=Math.min(...Object.keys(H).map(Number));return keep({coin:hit.full,inv,avg:Object.values(H).reduce((a,b)=>a+b,0)/hrs*8760,hrs,from:first*36e5})}
+$("yfb").onclick=async()=>{const b=$("yfb");b.disabled=true;$("yfo").innerHTML="";try{const a=await altReady();if(!a.ok)throw new Error(a.err);const rows=[];
+ for(const[nm,sym]of ALT){$("yfs").textContent=`Henter funding: ${nm}… (tar rundt 3 minutter første gang)`;const v=await yFund(sym,true);rows.push([nm,v])}
+ $("yfs").textContent=`Ferdig. Lagret i 7 dager og brukes i backtestene når Funding står på «Historisk».`;
+ $("yfo").innerHTML=`<table><tr><th>Marked</th><th>Hyperliquid</th><th>Snitt per år</th><th>Timer i utvalget</th></tr>${rows.map(([nm,v])=>`<tr><td>${nm}</td><td>${v&&v.coin?v.coin+(v.inv?" (snudd)":""):"–"}</td><td class="${v&&v.avg!=null?(v.avg>0?"d":"u"):"z"}">${v&&v.avg!=null?(v.avg*100).toFixed(1)+" %":v&&v.miss||"–"}</td><td>${v&&v.hrs||"–"}</td></tr>`).join("")}</table><div class="nt">Positiv sats betyr at long betaler. Markeder uten treff bruker den faste satsen.</div>`}
+ catch(e){$("yfs").textContent="Kunne ikke hente: "+(e&&e.message||e)}b.disabled=false};
+["ydu"].forEach(id=>{try{const v=localStorage.getItem("sk_"+id);if(v)$(id).value=v}catch(e){}$(id).addEventListener("change",()=>{try{localStorage.setItem("sk_"+id,$(id).value)}catch(e){}ALTP=null;for(const k in YC)delete YC[k];for(const k in KT)if(k.startsWith("Y:"))delete KT[k]})});
+$("ydt").onclick=async()=>{$("yds").textContent="Sjekker…";ALTP=null;const a=await altReady();$("yds").textContent=a.ok?`OK: ${a.n} markeder, oppdatert ${String(a.updated||"").replace("T"," ").slice(0,16)} UTC${a.failed.length?". Feilet sist: "+a.failed.join(", "):""}`:"Fant ikke data: "+a.err};
+let hwT=0;const lsx=(k,v)=>{try{if(v===undefined)return localStorage.getItem(k);localStorage.setItem(k,v)}catch(e){return null}};
+["csl","cfm","cfy"].forEach(id=>{const k="sk_"+id,v=lsx(k);if(v!=null&&v!=="")$(id).value=v;
+ $(id).addEventListener(id=="cfm"?"change":"input",()=>{lsx(k,$(id).value);clearTimeout(hwT);hwT=setTimeout(loadHW,1500)})});
+
+/* ===== Langsiktig trend (daglig/4t): trailing stop, flere år, trening mot test ===== */
+const KT={};
+const smaS=(c,N)=>{let s=0;return c.map((v,i)=>{s+=v;if(i>=N)s-=c[i-N];return i>=N-1?s/N:null})};
+const rollM=(a,N,sg)=>a.map((_,i)=>{if(i<N)return null;let m=a[i-N];for(let j=i-N+1;j<i;j++)m=sg>0?Math.max(m,a[j]):Math.min(m,a[j]);return m});
+const flip=S=>({en:S.map((v,i)=>i&&v&&S[i-1]&&v!=S[i-1]?v:0),xl:S.map(v=>v==-1),xs:S.map(v=>v==1)});
+const don=(x,a,b)=>{const H=x.hi(a),L=x.lo(a),h2=x.hi(b),l2=x.lo(b);return{en:x.c.map((p,i)=>H[i]==null?0:p>H[i]?1:p<L[i]?-1:0),xl:x.c.map((p,i)=>l2[i]!=null&&p<l2[i]),xs:x.c.map((p,i)=>h2[i]!=null&&p>h2[i])}};
+const TS=[
+ ["Donchian 55/20 (turtle)","Don 55/20",x=>don(x,55,20)],
+ ["Donchian 20/10","Don 20/10",x=>don(x,20,10)],
+ ["EMA 50/200-kryss","EMA 50/200",x=>{const a=x.ema(50),b=x.ema(200);return flip(a.map((v,i)=>v>b[i]?1:-1))}],
+ ["EMA 20/50-kryss","EMA 20/50",x=>{const a=x.ema(20),b=x.ema(50);return flip(a.map((v,i)=>v>b[i]?1:-1))}],
+ ["Pris over/under 200-dagers snitt","SMA 200",x=>{const m=x.sma(200);return flip(x.c.map((p,i)=>m[i]==null?null:p>m[i]?1:-1))}],
+ ["Momentum 90 dager","Mom 90d",x=>flip(x.c.map((p,i)=>i<x.d(90)?null:p>x.c[i-x.d(90)]?1:-1))]
+];
+function simT(k,en,xl,xs,at,slm,fee,lo,s0,cx){const tr=[],sp=cx?cx.sp:0,F=cx&&cx.F;let i=s0;
+ while(i<k.length-2){const d=en[i];if(!d||(lo&&d<0)||at[i]==null){i++;continue}
+  const e=+k[i+1][1],R0=slm*at[i];let st=e-d*R0,ext=e,j=i+1,ex=null,nx,te;
+  for(;j<k.length;j++){const o=+k[j][1],h=+k[j][2],l=+k[j][3];
+   if(d==1?l<=st:h>=st){ex=d==1?Math.min(o,st):Math.max(o,st);nx=j;te=+k[j][6];break}
+   ext=d==1?Math.max(ext,h):Math.min(ext,l);st=d==1?Math.max(st,ext-slm*at[j]):Math.min(st,ext+slm*at[j]);
+   if(j<k.length-1&&(d==1?xl[j]:xs[j])){ex=+k[j+1][1];nx=j;te=+k[j+1][0];break}}
+  if(ex==null){j=k.length-1;ex=+k[j][4];nx=j;te=+k[j][6]}
+  const c=tCost(d,e,ex,R0,fee,sp,F,+k[i+1][0],te);tr.push({t:+k[j][6],rr:d*(ex-e)/R0-c.all,fr:c.all,fe:c.fe,sl:c.sl,fu:c.fu,d,ei:i+1});i=Math.max(nx,i+1)}
+ return tr}
+const eqc=(tr,rk)=>{let e=1,pk=1,dd=0;tr.forEach(t=>{e*=Math.max(0,1+rk*t.rr);pk=Math.max(pk,e);dd=Math.max(dd,1-e/pk)});return{ret:(e-1)*100,dd:dd*100}};
+async function getT(sym,iv,n){const c=KT[sym+iv];if(c&&c.n>=n&&Date.now()-c.t<9e5)return c.k;const k=await klN(sym,iv,n);KT[sym+iv]={t:Date.now(),n,k};return k}
+async function tfRun(){
+ const b=$("tfgo"),iv=$("tfi").value,bpd=iv=="4h"?6:1,yrs=+$("tfy").value,lo=$("tfd").value=="lo",slm=+$("tfm").value||3,fe=+$("tff").value||0,rk=(+$("rk").value||1)/100,warm=300*bpd,bars0=Math.round(yrs*365*bpd),R=[],FL=[],cc=costCfg();
+ b.disabled=true;$("tfo").innerHTML="";
+ try{await TOPREADY;await needAlt($("tfu").value);for(const[nm,sym]of pick($("tfu").value)){if(isY(sym)&&iv!="1d"){R.push({nm,short:1});continue}const bars=isY(sym)?Math.round(yrs*252):bars0;$("tfst").textContent=`Henter historikk og tester: ${nm}… (4t og mange år tar lengre tid)`;
+  const k=await getT(sym,iv,bars+warm);if(k.length<warm+120){R.push({nm,short:1});continue}
+  const c=k.map(z=>+z[4]),at=atrS(k),s0=Math.max(warm,k.length-bars),hs=k.map(z=>+z[2]),ls=k.map(z=>+z[3]);
+  const x={c,d:n=>Math.round(n*bpd),ema:n=>ema(c,Math.round(n*bpd)),sma:n=>smaS(c,Math.round(n*bpd)),hi:n=>rollM(hs,Math.round(n*bpd),1),lo:n=>rollM(ls,Math.round(n*bpd),-1)};
+  $("tfst").textContent=`Henter funding og tester: ${nm}…`;const fx=await fundFor(sym,+k[s0][0]),cx={sp:cc.sp,F:fx.F};FL.push([nm,fx.src]);
+  const cut=+k[s0][6]+(+k.at(-1)[6]-+k[s0][6])*.6;let pk=c[s0],dd=0;for(let i=s0;i<c.length;i++){pk=Math.max(pk,c[i]);dd=Math.max(dd,1-c[i]/pk)}
+  const bh={ret:(c.at(-1)/c[s0]-1)*100,dd:dd*100};
+  TS.forEach(([sn,,fn])=>{const g=fn(x),tr=simT(k,g.en,g.xl,g.xs,at,slm,fe,lo,s0,cx),aT=tr.filter(t=>t.t<cut),bT=tr.filter(t=>t.t>=cut);R.push({sn,nm,sym,aT,bT,a:stats(aT),b:stats(bT),full:eqc(tr,rk),bh})})}
+  $("tfst").textContent="";tfShow(R,FL)}catch(e){console.error(e);$("tfst").textContent="Kunne ikke hente historiske data eller kjøre testen. Sjekk internettilkoblingen."}
+ b.disabled=false}
+function tfShow(R,FL){
+ const c=m=>m>0?"u":m<0?"d":"z",ok=R.filter(r=>!r.short),short=R.filter(r=>r.short).map(r=>r.nm),inst=[...new Set(ok.map(r=>r.nm))];
+ const av=a=>a.length?a.reduce((s,t)=>s+Math.abs(t.rr),0)/a.length:0;
+ const pool=sn=>{const q=ok.filter(r=>r.sn==sn),A=q.flatMap(r=>r.aT),B=q.flatMap(r=>r.bT),al=A.concat(B);return{sn,a:stats(A),b:stats(B),al:stats(al),aw:av(al.filter(t=>t.rr>0)),lw:av(al.filter(t=>t.rr<=0)),dd:q.reduce((s,r)=>s+r.full.dd,0)/(q.length||1)}};
+ const rows=TS.map(s=>pool(s[0])).sort((x,y)=>y.b.m-x.b.m);
+ const tag=r=>r.b.n<15?["z","For få trades"]:r.a.m>0&&r.b.m>0?["u",r.b.m-1.64*r.b.se>0?"Holder · signifikant":"Holder"]:r.b.m>0?["z","Svak"]:["d","Nei"];
+ const good=rows.filter(r=>tag(r)[0]=="u").length;
+ $("tfo").innerHTML=`<div class="nt" style="margin:0 0 8px">${good?good+" av "+rows.length+" strategier var lønnsomme både i trening og test. Kandidater, ikke bevis.":"Ingen strategi var lønnsom både i trening og test med disse innstillingene."}${short.length?" For lite historikk: "+short.join(", ")+".":""}</div>
+ <div class="nt" style="margin:0 0 10px"><b>${costLine(ok.filter(r=>r.sn==TS[0][0]).flatMap(r=>r.aT.concat(r.bT)),"Donchian 55/20 (strategien du bruker)")}</b> Slippage ${(costCfg().sp*100).toFixed(2)} % per side. ${fundNote(FL||[])}</div>
+ <table><tr><th>Strategi (alle instrumenter)</th><th>Trades</th><th>Vinn%</th><th>Snitt gevinst / tap (R)</th><th>Trening R</th><th>Test R</th><th>PF test</th><th>Snitt maks fall</th><th>Vurdering</th></tr>
+ ${rows.map(r=>{const t=tag(r);return`<tr><td>${r.sn}</td><td>${r.al.n}</td><td>${r.al.n?Math.round(r.al.w*100)+"%":"-"}</td><td>${r.aw.toFixed(2)} / ${r.lw.toFixed(2)}</td><td class="${c(r.a.m)}">${f2(r.a.m)}</td><td class="${c(r.b.m)}">${f2(r.b.m)}</td><td>${r.b.pf.toFixed(2)}</td><td>-${r.dd.toFixed(0)}%</td><td class="${t[0]}">${t[1]}</td></tr>`}).join("")}</table>
+ <h3 style="font-size:14px;margin:18px 0 6px">Testperiode per instrument: snitt R (antall trades)</h3>
+ <table><tr><th>Instrument</th>${TS.map(s=>`<th>${s[1]}</th>`).join("")}</tr>
+ ${inst.map(nm=>`<tr><td>${nm}</td>${TS.map(s=>{const r=ok.find(z=>z.nm==nm&&z.sn==s[0]);return!r||r.b.n<5?`<td class="z">– (${r?r.b.n:0})</td>`:`<td class="${c(r.b.m)}">${f2(r.b.m)} (${r.b.n})</td>`}).join("")}</tr>`).join("")}</table>
+ <h3 style="font-size:14px;margin:18px 0 6px">Hele perioden: avkastning / største fall ved din risiko per trade</h3>
+ <table><tr><th>Instrument</th>${TS.map(s=>`<th>${s[1]}</th>`).join("")}<th>Kjøp og hold</th></tr>
+ ${inst.map(nm=>{const bh=ok.find(z=>z.nm==nm).bh;return`<tr><td>${nm}</td>${TS.map(s=>{const r=ok.find(z=>z.nm==nm&&z.sn==s[0]);return`<td class="${c(r.full.ret)}">${f2(r.full.ret)}% / -${r.full.dd.toFixed(0)}%</td>`}).join("")}<td class="${c(bh.ret)}">${f2(bh.ret)}% / -${bh.dd.toFixed(0)}%</td></tr>`}).join("")}</table>`}
+$("tfgo").onclick=async()=>{await TOPREADY;tfRun()};
+
+/* ===== Live-signal: Donchian DA/DB, daglig, kun long (samme regler som i backtesten) ===== */
+const DA=55,DB=20;
+function donState(k){const n=k.length,c=k.map(z=>+z[4]),H=rollM(k.map(z=>+z[2]),DA,1),L=rollM(k.map(z=>+z[3]),DB,-1),at=atrS(k);let pos=null,pend=null,closed=null;
+ for(let i=Math.max(DA,15);i<n;i++){let cl=null;
+  if(pend!=null){const e=+k[i][1];pos={e,st:e-3*at[pend],ext:e,R0:3*at[pend],di:i,n:0};pend=null}
+  if(pos){const h=+k[i][2],l=+k[i][3];pos.n++;
+   if(l<=pos.st){cl=["STOP",pos.st];pos=null}
+   else{pos.ext=Math.max(pos.ext,h);pos.st=Math.max(pos.st,pos.ext-3*at[i]);if(L[i]!=null&&c[i]<L[i]){cl=["EXIT",L[i]];pos=null}}}
+  if(!pos&&H[i]!=null&&c[i]>H[i])pend=i;
+  if(i==n-1)closed=cl}
+ return{pos,pend,closed,at:at[n-1],H:Math.max(...k.slice(-DA).map(z=>+z[2])),L:Math.min(...k.slice(-DB).map(z=>+z[3])),c:c[n-1]}}
+
+/* ===== Varsler: følger posisjonene dine, risikotak og Telegram (port av sktrade_signals.py) ===== */
+let MEM=null;
+const posLoad=()=>{try{const s=localStorage.getItem("skpos");if(s)return JSON.parse(s)}catch(e){}return MEM};
+const posSave=o=>{MEM=o;try{localStorage.setItem("skpos",JSON.stringify(o))}catch(e){}};
+const closedText=d=>{const c=d.closed;return c&&c[0]=="STOP"?`🔴 STENGT: ${d.nm} – stop truffet (ca. ${f(c[1])}). Sjekk at posisjonen er lukket i terminalen.`:c&&c[0]=="EXIT"?`🔴 EXIT: ${d.nm} – dagen lukket under ${DB}-dagers lav (${f(c[1])}). Lukk posisjonen nå (til markedspris).`:`🔴 STENGT: ${d.nm} – posisjonen er avsluttet (stop eller exit). Sjekk terminalen.`};
+async function tgSend(txt){const t=($("tgt").value||"").trim(),c=($("tgc").value||"").trim();if(!t||!c)return"mangler token eller chat-ID";
+ try{const r=await fetch(`https://api.telegram.org/bot${t}/sendMessage?chat_id=${encodeURIComponent(c)}&text=${encodeURIComponent(txt)}`),j=await r.json();return j.ok?"sendt":"Telegram svarte: "+(j.description||r.status)}catch(e){return"kunne ikke nå Telegram (nettverk eller blokkert)"}}
+function track(res){try{
+ const S0=posLoad()||{pos:{},day:0},ps=S0.pos,acc=+$("acc").value||0,rk=+$("rk").value||0,capp=+$("cap").value||0,want=acc*rk/100,cap=acc*capp/100,ok=res.filter(d=>!d.err),N=[],Hd=[],C=[],I=[];
+ const pcg=(a,b)=>(Math.abs(a/b-1)*100).toFixed(1)+"%";
+ ok.forEach(d=>{const tr=ps[d.sym];if(d.new&&tr&&tr.ets==d.pts)return;
+  if(d.hold){
+   if(tr&&tr.ets==d.ets){if(tr.st=="open"){tr.ls=d.sl;const r=(d.price-d.p)/d.R0;Hd.push(`• ${d.nm}: flytt stop til ${f(d.sl)} (${pcg(d.sl,d.price)} under nå). Nå ${f(d.price)} = ${r>=0?"+":""}${r.toFixed(2)}R, dag ${d.days}. Exit hvis dagen lukker under ${f(d.xl)}.`)}}
+   else{if(tr&&tr.st=="open")C.push(`🔴 ${d.nm}: forrige posisjon er stengt (siden var ikke åpen hver dag).`);ps[d.sym]={ets:d.ets,st:"ignored"};I.push(d.nm)}}
+  else if(tr&&tr.st=="open"){C.push(closedText(d));tr.st="closed"}});
+ const orisk=()=>Object.entries(ps).reduce((s,[sym,t])=>{const d=ok.find(x=>x.sym==sym);return s+(t.st=="open"&&d?t.u*Math.max(0,d.price-t.ls):0)},0);
+ ok.forEach(d=>{if(!d.new)return;const tr=ps[d.sym];if(tr&&tr.ets==d.pts)return;
+  const R0=3*d.a,take=cap>0?Math.min(want,cap-orisk()):want;
+  if(take<.0001*acc){ps[d.sym]={ets:d.pts,st:"skipped"};N.push(`🟡 SIGNAL, MEN SPRING OVER: ${d.nm} – samlet åpen risiko ville gå over taket på ${capp}%.`);return}
+  const u=take/R0;ps[d.sym]={ets:d.pts,st:"open",u,ls:d.sl};
+  N.push(`🟢 NYTT KJØP-SIGNAL: ${d.nm}\n   Entry ca. ${f(d.p)} · Stop ${f(d.sl)} (${pcg(d.sl,d.p)} under) · Exit hvis dagen lukker under ${f(d.xl)}\n   Størrelse: ${u<10?u.toFixed(4):u.toFixed(2)} (≈ $${Math.round(u*d.p)}) → risiko $${Math.round(take)} = ${(take/acc*100).toFixed(2)}% av kontoen${take<want-1e-9?` (redusert fra ${rk}% pga. risikotaket)`:""}\n   Ingen take profit. Flytt stop opp hver dag.${d.sym=="PAXGUSDT"?"\n   Gull: prisen er PAXG. Bruk avstandene i % mot XAU-prisen i terminalen.":""}`)});
+ const head=`SKTRADE ${new Date().toLocaleDateString("no")} – Donchian ${DA}/${DB}, daglig, kun long`,ign=I.length?["","Åpne fra før og ignorert (ikke dine): "+I.join(", ")]:[];
+ const mk=(held)=>[head,...(N.length?["",...N]:[]),...(C.length?["",...C]:[]),...(held&&Hd.length?["","ÅPNE POSISJONER (flytt stop):",...Hd]:[]),...ign,...(N.length||C.length||(held&&Hd.length)?[]:["","Ingen nye signaler og ingen åpne posisjoner."])].join("\n");
+ $("dm").textContent=mk(true);
+ $("tps").innerHTML=Object.entries(ps).filter(([,t])=>t.st=="open").map(([sym,t])=>{const d=ok.find(x=>x.sym==sym);return`<div class="cr"><span class="cl" style="width:auto;flex:1;color:var(--tx)">${d?d.nm:sym}: ${t.u<10?t.u.toFixed(4):t.u.toFixed(2)} enheter · stop ${f(t.ls)}</span><button class="cb" data-sk="${sym}">Hopp over</button></div>`}).join("")||'<div class="nt">Ingen åpne posisjoner følges akkurat nå.</div>';
+ const dayKey=ok.length?ok[0].pts:0,sendHeld=S0.day!=dayKey&&Hd.length>0;
+ if($("tgon").checked&&(N.length||C.length||sendHeld)){if(sendHeld)S0.day=dayKey;tgSend(mk(sendHeld)).then(r=>{$("tgst").textContent="Telegram: "+r})}
+ posSave(S0)}catch(e){console.error(e)}}
+$("tps").onclick=e=>{const b=e.target.closest("[data-sk]");if(!b)return;const S0=posLoad();if(S0&&S0.pos[b.dataset.sk]){S0.pos[b.dataset.sk].st="skipped";posSave(S0);if(window._r)track(window._r)}};
+[["tgt","sk_tgt"],["tgc","sk_tgc"],["cap","sk_cap"]].forEach(([id,k])=>{try{const v=localStorage.getItem(k);if(v!=null)$(id).value=v}catch(e){}$(id).oninput=()=>{try{localStorage.setItem(k,$(id).value)}catch(e){}if(window._r&&id=="cap")track(window._r)}});
+try{$("tgon").checked=localStorage.getItem("sk_tgon")=="1"}catch(e){}$("tgon").onchange=()=>{try{localStorage.setItem("sk_tgon",$("tgon").checked?"1":"0")}catch(e){}};
+$("tgtest").onclick=async()=>{$("tgst").textContent="Sender…";$("tgst").textContent="Telegram: "+await tgSend("SKTRADE: test OK")};
+
+/* ===== Porteføljetest mot SizeProp-regler (port av sizeprop_portfolio_test.py) ===== */
+const PTA={Degen:{phases:[8],daily:2,dd:3},"1-Step":{phases:[10],daily:3,dd:5},"2-Step":{phases:[5,10],daily:4,dd:6}},PTRES=[];
+function tradesP(k){const n=k.length,c=k.map(z=>+z[4]),H=rollM(k.map(z=>+z[2]),DA,1),L2=rollM(k.map(z=>+z[3]),DB,-1),at=atrS(k),out=[];let i=Math.max(DA,15);
+ while(i<n-2){if(at[i]==null||H[i]==null||!(c[i]>H[i])){i++;continue}
+  const e=+k[i+1][1],R0=3*at[i];let st=e-R0,ext=e,j=i+1,ex=null,kind="stop",nx;const stops=[];
+  while(j<n){const o=+k[j][1],h=+k[j][2],l=+k[j][3];stops.push(st);
+   if(l<=st){ex=Math.min(o,st);nx=j;break}
+   ext=Math.max(ext,h);st=Math.max(st,ext-3*at[j]);
+   if(j<n-1&&L2[j]!=null&&c[j]<L2[j]){ex=+k[j+1][1];nx=j;kind="signal";break}
+   j++}
+  if(ex==null){j=n-1;ex=c[n-1];nx=j;kind="end"}
+  out.push({ei:i+1,e,R0,ex,jd:j,kind,stops});i=Math.max(nx,i+1)}
+ return out}
+async function ptBuild(days,fee,LST,stEl){const ks={},now=Date.now(),cc=costCfg(),FL=[];
+ const from=now-days*864e5;for(const[nm,sym]of LST){stEl.textContent=`Henter historikk: ${nm}…`;try{const k=(await getT(sym,"1d",isY(sym)?Math.ceil(days*252/365)+40:days)).filter(z=>+z[6]<now&&+z[0]>=from);if(k.length>DA+60)ks[sym]=[nm,k]}catch(e){}}
+ const ents=Object.values(ks);if(!ents.length)throw new Error("ingen data");
+ const DY=864e5,t0=Math.min(...ents.map(([,k])=>+k[0][0])),N=Math.max(...ents.map(([,k])=>Math.round((+k.at(-1)[0]-t0)/DY)))+1,M={N,t0,O:{},L:{},C:{},T:{}},info=[];
+ for(const[sym,[nm,k]]of Object.entries(ks)){const O=Array(N).fill(null),L=Array(N).fill(null),C=Array(N).fill(null),dm=i=>Math.round((+k[i][0]-t0)/DY);
+  k.forEach((z,i)=>{const d=dm(i);O[d]=+z[1];L[d]=+z[3];C[d]=+z[4]});
+  for(let d=dm(0)+1;d<N;d++)if(C[d]==null&&C[d-1]!=null){O[d]=L[d]=C[d]=C[d-1]}
+  M.O[sym]=O;M.L[sym]=L;M.C[sym]=C;
+  stEl.textContent=`Henter funding: ${nm}…`;const fx=await fundFor(sym,+k[0][0]),sp=cc.sp;FL.push([nm,fx.src]);
+  for(const t of tradesP(k)){const ei=dm(t.ei),sd=t.kind=="stop"?dm(t.jd):null,xm=t.kind=="signal"?dm(t.jd+1):dm(t.jd),te=t.kind=="signal"?+k[t.jd+1][0]:+k[t.jd][6],c=tCost(1,t.e,t.ex,t.R0,fee,sp,fx.F,+k[t.ei][0],te);
+   (M.T[ei]=M.T[ei]||[]).push({sym,ei_m:ei,e:t.e*(1+sp),e0:t.e,R0:t.R0,ex:t.ex*(1-sp),kind:t.kind,stop_day:sd,exit_m:xm,stops:(()=>{const a=[];t.stops.forEach((v,b)=>{a[dm(t.ei+b)-ei]=v});for(let d=1;d<a.length;d++)if(a[d]==null)a[d]=a[d-1];return a})(),F:fx.F,tE:+k[t.ei][0],rr:(t.ex-t.e)/t.R0-c.all,kd:t.kind=="end"?null:t.kind=="stop"?sd:xm});
+   info.push({rr:(t.ex-t.e)/t.R0-c.all,fr:c.all,fe:c.fe,sl:c.sl,fu:c.fu})}}
+ return{M,info,ks,FL}}
+const fuc=(q,tm,px)=>q.F?q.u*(q.e0+px)/2*(q.F(tm)-q.F(q.tE)):0;
+function ptPhase(M,s,target,daily,dd,risk,cap,maxd,fee,ina){
+ let bal=100,minEq=100,last=s;const tgt=100*(1+target/100),floor=100*(1-dd/100),pos=[],end=Math.min(M.N,s+maxd);
+ for(let t=s;t<end;t++){const dayBal=bal;
+  if(ina&&t-last>ina)return{out:"inactive",days:t-s+1,minEq};
+  for(const q of pos.filter(q=>q.kind=="signal"&&q.exit_m==t)){bal+=q.u*(q.ex-q.e)-q.u*q.ex*fee/100-fuc(q,M.t0+t*864e5,q.ex);pos.splice(pos.indexOf(q),1);last=t}
+  if(bal>=tgt)return{out:"pass",days:t-s+1,end:t,minEq};
+  for(const tr of(M.T[t]||[])){let cur=0;for(const q of pos)cur+=q.u*Math.max(0,M.O[q.sym][t]-q.stops[Math.min(t-q.ei_m,q.stops.length-1)]);
+   if(cap&&cur+risk>cap+1e-9)continue;const u=risk/tr.R0;bal-=u*tr.e*fee/100;pos.push({...tr,u});last=t}
+  let w=0;const stopped=[];
+  const te=M.t0+(t+1)*864e5;for(const q of pos){if(q.stop_day==t){w+=q.u*(q.ex-q.e)-fuc(q,te,q.ex);stopped.push(q)}else w+=q.u*(M.L[q.sym][t]-q.e)-fuc(q,te,M.L[q.sym][t])}
+  const weq=bal+w,dl=dayBal*(1-daily/100);minEq=Math.min(minEq,weq);
+  if(weq<=Math.max(dl,floor)+1e-9)return{out:dl>=floor?"daily":"static",days:t-s+1,minEq};
+  for(const q of stopped){bal+=q.u*(q.ex-q.e)-q.u*q.ex*fee/100-fuc(q,te,q.ex);pos.splice(pos.indexOf(q),1);last=t}
+  if(bal>=tgt)return{out:"pass",days:t-s+1,end:t,minEq}}
+ return{out:"open",days:end-s,minEq}}
+function ptEval(M,s,ac,risk,cap,hz,fee,ina){let used=0,r;
+ for(const target of ac.phases){r=ptPhase(M,s,target,ac.daily,ac.dd,risk,cap,hz-used,fee,ina);used+=r.days;if(r.out!="pass"){r.days=used;return r}s=r.end+1}
+ r.days=used;return r}
+const med=a=>{if(!a.length)return null;const s=[...a].sort((x,y)=>x-y),m=s.length>>1;return s.length%2?s[m]:(s[m-1]+s[m])/2};
+async function ptRun(){const b=$("ptgo");b.disabled=true;$("pto").innerHTML="";PTRES.length=0;
+ const list=v=>v.split(/[ ,;]+/).filter(x=>x!=="").map(Number).filter(x=>!isNaN(x)),risks=list($("ptr").value).filter(x=>x>0),caps=list($("ptc").value).filter(x=>x>=0),hz=+$("pth").value||730,stp=Math.max(1,+$("pts").value||7),fee=+$("ptf").value||0,sel=$("pta").value,accts=sel=="all"?Object.keys(PTA):[sel];
+ try{$("ptst").textContent="Henter historikk for alle instrumenter (opptil 8 år)…";await TOPREADY;await needAlt($("ptu").value);const{M,info,ks,FL}=await ptBuild(3000,fee,pick($("ptu").value),$("ptst"));
+  const rr=info.map(t=>t.rr),first=Math.min(...Object.keys(M.T).map(Number)),starts=[];for(let s=first;s<M.N-hz;s+=stp)starts.push(s);
+  if(!starts.length||!rr.length)throw new Error("for lite historikk for valgt horisont");
+  const dt=i=>new Date(M.t0+i*864e5).toISOString().slice(0,10),mean=rr.reduce((a,x)=>a+x,0)/rr.length;
+  let h=`<div class="nt" style="margin:0 0 8px">Data: ${dt(0)} til ${dt(M.N-1)}, ${Object.keys(ks).length} instrumenter. Strategien alene: ${rr.length} handler, snitt ${f2(mean)} R, vinnerandel ${Math.round(rr.filter(x=>x>0).length/rr.length*100)} %, avgift ${fee} % per side. ${starts.length} startdatoer (hver ${stp}. dag), maks ${hz} dager per evaluering. Se på «brutt» først: «ikke ferdig» betyr hverken bestått eller brutt innen tiden.</div>
+  <div class="nt" style="margin:0 0 8px"><b>${costLine(info,"Per handel")}</b> Slippage ${(costCfg().sp*100).toFixed(2)} % per side. ${fundNote(FL)}</div>`;
+  for(const an of accts){const ac=PTA[an];
+   h+=`<h3 style="font-size:14px;margin:16px 0 6px">${an}: mål ${ac.phases.join(" % og ")} %, daglig tap ${ac.daily} %, maks drawdown ${ac.dd} %</h3><table><tr><th>Risiko</th><th>Tak</th><th>Bestått</th><th>Brutt (dag)</th><th>Brutt (maks)</th><th>Brutt (inaktiv)</th><th>Ikke ferdig</th><th>Median dager</th><th>Laveste equity</th></tr>`;
+   for(const rk of risks)for(const cp of caps){$("ptst").textContent=`Kjører ${an}, risiko ${rk} %, tak ${cp||"ingen"}…`;await new Promise(r=>setTimeout(r));
+    const res=starts.map(s=>ptEval(M,s,ac,rk,cp,hz,fee,$("pti").checked?90:0)),n=res.length,cn=k=>res.filter(r=>r.out==k).length,ps=res.filter(r=>r.out=="pass"),md=med(ps.map(r=>r.days)),me=med(ps.map(r=>r.minEq)),P=x=>Math.round(x/n*100)+" %";
+    PTRES.push({an,rk,cp,n,pass:cn("pass"),daily:cn("daily"),static:cn("static"),inactive:cn("inactive"),open:cn("open"),md,me});
+    h+=`<tr><td>${rk} %</td><td>${cp?cp+" %":"ingen"}</td><td class="${cn("pass")/n>=.5?"u":""}">${P(cn("pass"))}</td><td class="${cn("daily")?"d":""}">${P(cn("daily"))}</td><td class="${cn("static")?"d":""}">${P(cn("static"))}</td><td class="${cn("inactive")?"d":""}">${P(cn("inactive"))}</td><td>${P(cn("open"))}</td><td>${md==null?"-":Math.round(md)}</td><td>${me==null?"-":me.toFixed(1)}</td></tr>`}
+   h+="</table>";$("pto").innerHTML=h}
+  $("ptst").textContent=""}catch(e){console.error(e);$("ptst").textContent="Kunne ikke kjøre testen: "+(e&&e.message||"sjekk internettilkoblingen")}
+ b.disabled=false}
+$("ptgo").onclick=ptRun;
+
+/* ===== Kort sikt: åtte strategier på 15m–4t, trening mot test, kostnader og SizeProp-mål ===== */
+const KTF={"15m":["15 min",96],"30m":["30 min",48],"1h":["1 time",24],"2h":["2 timer",12],"4h":["4 timer",6]};
+const xu=(a,b,i)=>i>0&&a[i-1]<=b[i-1]&&a[i]>b[i],xd=(a,b,i)=>i>0&&a[i-1]>=b[i-1]&&a[i]<b[i];
+function superT(h,l,c,at,m){const n=c.length,dir=Array(n).fill(0);let up=null,dn=null,d=1;
+ for(let i=1;i<n;i++){if(at[i]==null)continue;const mid=(h[i]+l[i])/2,bu=mid+m*at[i],bl=mid-m*at[i];
+  up=up==null||bu<up||c[i-1]>up?bu:up;dn=dn==null||bl>dn||c[i-1]<dn?bl:dn;
+  if(d==1&&c[i]<dn)d=-1;else if(d==-1&&c[i]>up)d=1;dir[i]=d}return dir}
+const KS=[
+ ["Donchian 20/10","Don 20/10",x=>don(x,20,10)],
+ ["Donchian 55/20","Don 55/20",x=>don(x,55,20)],
+ ["EMA 9/21-kryss + EMA 200","EMA 9/21",x=>{const a=ema(x.c,9),b=ema(x.c,21),t=x.e200;return{en:x.c.map((p,i)=>i<200?0:xu(a,b,i)&&p>t[i]?1:xd(a,b,i)&&p<t[i]?-1:0),xl:a.map((v,i)=>v<b[i]),xs:a.map((v,i)=>v>b[i])}}],
+ ["EMA 20/50-kryss","EMA 20/50",x=>{const a=ema(x.c,20),b=ema(x.c,50);return flip(a.map((v,i)=>i<50?null:v>b[i]?1:-1))}],
+ ["Supertrend (10, 3)","Supertrend",x=>flip(superT(x.h,x.l,x.c,atrS(x.k,10),3).map(v=>v||null))],
+ ["MACD-kryss + EMA 200","MACD",x=>({en:x.c.map((p,i)=>i<200?0:xu(x.m,x.sg,i)&&p>x.e200[i]?1:xd(x.m,x.sg,i)&&p<x.e200[i]?-1:0),xl:x.m.map((v,i)=>v<x.sg[i]),xs:x.m.map((v,i)=>v>x.sg[i])})],
+ ["RSI(2)-pullback i trend","RSI(2)",x=>{const r=rsiS(x.c,2),s5=smaS(x.c,5);return{en:x.c.map((p,i)=>i<200?0:p>x.e200[i]&&r[i]<10?1:p<x.e200[i]&&r[i]>90?-1:0),xl:x.c.map((p,i)=>s5[i]!=null&&p>s5[i]),xs:x.c.map((p,i)=>s5[i]!=null&&p<s5[i])}}],
+ ["Bollinger-reversal (20, 2)","Bollinger",x=>{const[u,lo]=bbS(x.c,20),m=smaS(x.c,20);return{en:x.c.map((p,i)=>i<200||lo[i-1]==null?0:x.c[i-1]<lo[i-1]&&p>=lo[i]?1:x.c[i-1]>u[i-1]&&p<=u[i]?-1:0),xl:x.c.map((p,i)=>m[i]!=null&&p>=m[i]),xs:x.c.map((p,i)=>m[i]!=null&&p<=m[i])}}]
+];
+function simK(k,g,at,o){const n=k.length,tr=[];let i=o.s0;
+ while(i<n-2){const d=g.en[i];if(!d||(o.lo&&d<0)||at[i]==null||(o.tf&&o.tf[i]!=d)){i++;continue}
+  const e0=+k[i+1][1],R0=o.slm*at[i],e=e0*(1+d*o.sp),tp=o.tpm>0?e0+d*o.tpm*at[i]:null;let st=e0-d*R0,ext=e0,ex=null,j=i+1,nx;
+  for(;j<n;j++){const op=+k[j][1],h=+k[j][2],l=+k[j][3];
+   if(d==1?l<=st:h>=st){ex=d==1?Math.min(op,st):Math.max(op,st);nx=j;break}
+   if(tp!=null&&(d==1?h>=tp:l<=tp)){ex=d==1?Math.max(op,tp):Math.min(op,tp);nx=j;break}
+   if(o.trail){ext=d==1?Math.max(ext,h):Math.min(ext,l);if(at[j]!=null)st=d==1?Math.max(st,ext-o.slm*at[j]):Math.min(st,ext+o.slm*at[j])}
+   if(o.sig&&j<n-1&&(d==1?g.xl[j]:g.xs[j])){ex=+k[j+1][1];nx=j;j++;break}}
+  if(ex==null){j=n-1;ex=+k[j][4];nx=j}
+  const x1=ex*(1-d*o.sp),gross=d*(ex-e0)/R0,rr=d*(x1-e)/R0-(e+x1)*o.fee/R0;
+  tr.push({t:+k[j][6],rr,fr:gross-rr,d,b:j-i});i=Math.max(nx,i+1)}
+ return tr}
+function dTrend(k,kd){const c=kd.map(z=>+z[4]),e=ema(c,50);let j=-1;
+ return k.map(z=>{const ct=+z[6];while(j+1<kd.length&&+kd[j+1][6]<=ct)j++;return j<50?0:c[j]>e[j]?1:-1})}
+function kStats(tr){const s=stats(tr);let eq=0,pk=0,dd=0;const day={};
+ tr.forEach(t=>{eq+=t.rr;pk=Math.max(pk,eq);dd=Math.max(dd,pk-eq);const d=Math.floor(t.t/864e5);day[d]=(day[d]||0)+t.rr});
+ s.ddR=dd;s.wd=Object.values(day).reduce((m,v)=>Math.min(m,v),0);s.sum=eq;s.bars=tr.length?tr.reduce((a,t)=>a+t.b,0)/tr.length:0;return s}
+const KR=[];
+async function ksRun(){
+ const b=$("ksgo"),tfs=$("kstf").value=="all"?Object.keys(KTF):[$("kstf").value],mo=+$("ksp").value,set=$("ksi").value,
+  list=set=="cry"?CRY:set=="top"?TOP:set=="crall"?ALLC():set=="stk"?STOCKS:set=="all"?INS:[INS[+set]],ex=$("ksx").value,flt=$("kst").checked,
+  o={slm:+$("kssl").value||2,tpm:ex=="trail"?0:(+$("kstp").value||0),trail:ex=="trail",sig:ex!="fixed",lo:$("ksd").value=="lo",fee:(+$("ksf").value||0)/100,sp:(+$("kss").value||0)/100};
+ b.disabled=true;$("kso").innerHTML="";const R=[],miss=[];
+ try{for(const iv of tfs){const bpd=KTF[iv][1],bars=Math.round(mo*30.4*bpd),warm=250;
+   for(const[nm,sym]of list){$("ksst").textContent=`Henter ${KTF[iv][0]}-candles og tester: ${nm}…`;await new Promise(r=>setTimeout(r));
+    let k;try{k=(await getT(sym,iv,bars+warm)).filter(z=>+z[6]<Date.now())}catch(e){miss.push(nm+" "+KTF[iv][0]);continue}
+    if(k.length<warm+200){miss.push(nm+" "+KTF[iv][0]);continue}
+    const c=k.map(z=>+z[4]),hs=k.map(z=>+z[2]),ls=k.map(z=>+z[3]),e12=ema(c,12),e26=ema(c,26),m=e12.map((v,i)=>v-e26[i]);
+    const x={k,c,h:hs,l:ls,e200:ema(c,200),m,sg:ema(m,9),hi:n=>rollM(hs,n,1),lo:n=>rollM(ls,n,-1)},at=atrS(k);
+    const s0=Math.max(warm,k.length-bars),t0=+k[s0][0],t1=+k.at(-1)[6],cut=t0+(t1-t0)*.6;
+    let tf=null;if(flt){try{tf=dTrend(k,await getT(sym,"1d",Math.ceil(k.length/bpd)+80))}catch(e){miss.push(nm+" dagstrend")}}
+    KS.forEach(([sn,,fn])=>R.push({sn,iv,nm,sym,tr:simK(k,fn(x),at,{...o,s0,tf}),cut,wk:(t1-t0)/6048e5}))}}
+  $("ksst").textContent="";ksShow(R,tfs,miss)}catch(e){console.error(e);$("ksst").textContent="Kunne ikke kjøre testen: "+(e&&e.message||"sjekk internettilkoblingen")}
+ b.disabled=false}
+function ksShow(R,tfs,miss){
+ const c=m=>m>0?"u":m<0?"d":"z",rk=+$("rk").value||.5,G={};
+ R.forEach(r=>{const key=r.sn+"|"+r.iv;(G[key]=G[key]||{sn:r.sn,iv:r.iv,rs:[]}).rs.push(r)});
+ const rows=Object.values(G).map(g=>{const all=g.rs.flatMap(r=>r.tr).sort((a,b)=>a.t-b.t),A=g.rs.flatMap(r=>r.tr.filter(t=>t.t<r.cut)),B=g.rs.flatMap(r=>r.tr.filter(t=>t.t>=r.cut));
+  return{...g,all,a:stats(A),b:stats(B),al:kStats(all),wk:Math.max(...g.rs.map(r=>r.wk)),cut:g.rs.reduce((s,r)=>s+r.cut,0)/g.rs.length}}).sort((x,y)=>y.b.m-x.b.m);
+ KR.length=0;KR.push(...rows);
+ if(!rows.length){$("kso").innerHTML=`<div class="nt">Fikk ikke data for noen av instrumentene.${miss.length?" Mangler: "+miss.join(", ")+".":""}</div>`;return}
+ const tag=r=>r.b.n<30?["z","For få trades"]:r.a.m>0&&r.b.m>0?["u",r.b.m-1.64*r.b.se>0?"Holder · signifikant":"Holder"]:r.b.m>0?["z","Svak"]:["d","Nei"];
+ const good=rows.filter(r=>tag(r)[0]=="u").length,dur=r=>{const h=r.al.bars*24/KTF[r.iv][1];return h<48?h.toFixed(h<10?1:0)+" t":(h/24).toFixed(1)+" d"};
+ let h=`<div class="nt" style="margin:0 0 8px">${good?`${good} av ${rows.length} kombinasjoner var lønnsomme i både trening og test etter kostnader.`:`Ingen av ${rows.length} kombinasjoner var lønnsomme i både trening og test etter kostnader.`} Med mange forsøk vil noen se gode ut ved flaks. Se etter strategier som holder på flere tidsrammer og instrumenter, ikke bare øverste rad.${miss.length?" Mangler data: "+miss.join(", ")+".":""}</div>`;
+ if(tfs.length>1){h+=`<h3 style="font-size:14px;margin:14px 0 6px">Test R per handel, etter kostnader (antall handler i testen)</h3><table class="kmx"><tr><th>Strategi</th>${tfs.map(iv=>`<th>${KTF[iv][0]}</th>`).join("")}</tr>
+  ${KS.map(([sn])=>`<tr><td>${sn}</td>${tfs.map(iv=>{const r=rows.find(z=>z.sn==sn&&z.iv==iv);return!r||r.b.n<10?`<td class="z">– (${r?r.b.n:0})</td>`:`<td class="${c(r.b.m)}">${f2(r.b.m)} (${r.b.n})</td>`}).join("")}</tr>`).join("")}</table>`}
+ h+=`<h3 style="font-size:14px;margin:18px 0 6px">Alle kombinasjoner, best i testen øverst. Trykk på en rad for kurven.</h3>
+ <table><tr><th>Strategi</th><th>Tid</th><th>Trades</th><th>Per uke</th><th>Vinn%</th><th>Varighet</th><th>Trening R</th><th>Test R</th><th>PF test</th><th>Kostnad R</th><th>Verste dag</th><th>Maks fall</th><th>Vurdering</th></tr>
+ ${rows.map((r,i)=>{const t=tag(r);return`<tr data-k="${i}"><td>${r.sn}</td><td>${KTF[r.iv][0]}</td><td>${r.al.n}</td><td>${r.wk?(r.al.n/r.wk).toFixed(1):"-"}</td><td>${r.al.n?Math.round(r.al.w*100)+"%":"-"}</td><td>${r.al.n?dur(r):"-"}</td><td class="${c(r.a.m)}">${f2(r.a.m)}</td><td class="${c(r.b.m)}">${f2(r.b.m)}</td><td>${r.b.pf.toFixed(2)}</td><td>${r.al.fc.toFixed(2)}</td><td class="${r.al.wd*rk<=-2?"d":""}">${(r.al.wd*rk).toFixed(1)} %</td><td class="${r.al.ddR*rk>=3?"d":""}">-${(r.al.ddR*rk).toFixed(1)} %</td><td class="${t[0]}">${t[1]}</td></tr>`}).join("")}</table>
+ <div class="nt">Verste dag og maks fall ved ${rk} % risiko per trade. Rødt = over SizeProps strengeste grenser (2 % per dag, 3 % totalt).</div>`;
+ const inst=[...new Set(R.map(r=>r.nm))];
+ if(tfs.length==1&&inst.length>1)h+=`<h3 style="font-size:14px;margin:18px 0 6px">Testperiode per instrument: snitt R (antall trades)</h3><table class="kmx"><tr><th>Instrument</th>${KS.map(s=>`<th>${s[1]}</th>`).join("")}</tr>
+  ${inst.map(nm=>`<tr><td>${nm}</td>${KS.map(([sn])=>{const r=R.find(z=>z.nm==nm&&z.sn==sn),B=r?r.tr.filter(t=>t.t>=r.cut):[],s=stats(B);return s.n<5?`<td class="z">– (${s.n})</td>`:`<td class="${c(s.m)}">${f2(s.m)} (${s.n})</td>`}).join("")}</tr>`).join("")}</table>`;
+ h+=`<h3 style="font-size:14px;margin:18px 0 6px" id="kscn"></h3><canvas id="ksc"></canvas><div class="nt" id="ksci"></div>`;
+ $("kso").innerHTML=h;ksCurve(0)}
+function ksCurve(i){const r=KR[i],cv=$("ksc");if(!r||!cv)return;
+ document.querySelectorAll("#kso tr[data-k]").forEach(t=>t.classList.toggle("sel",+t.dataset.k==i));
+ const rk=+$("rk").value||.5,tr=r.all;$("kscn").textContent=`Kurve: ${r.sn}, ${KTF[r.iv][0]}`;
+ if(tr.length<2){$("ksci").textContent="For få handler til å tegne en kurve.";cv.style.display="none";return}cv.style.display="block";
+ const dpr=window.devicePixelRatio||1,W=cv.clientWidth,H=cv.clientHeight;cv.width=W*dpr;cv.height=H*dpr;
+ const x=cv.getContext("2d");x.scale(dpr,dpr);const st=getComputedStyle(document.documentElement),col=q=>st.getPropertyValue(q).trim();
+ let e=0;const pts=[[tr[0].t,0]];tr.forEach(t=>{e+=t.rr;pts.push([t.t,e])});
+ const ta=pts[0][0],tb=pts.at(-1)[0]||ta+1,ys=pts.map(p=>p[1]),mx=Math.max(0,...ys),mn=Math.min(0,...ys),pd=(mx-mn)*.08||1,R=60;
+ const X=t=>(t-ta)/(tb-ta||1)*(W-R),Y=v=>8+(mx+pd-v)/(mx-mn+2*pd)*(H-24);
+ x.font="11px system-ui";x.textBaseline="middle";x.strokeStyle=col("--mu");x.lineWidth=1;x.setLineDash([4,4]);x.beginPath();x.moveTo(0,Y(0));x.lineTo(W-R,Y(0));x.stroke();
+ const cx=X(r.cut);if(cx>0&&cx<W-R){x.beginPath();x.moveTo(cx,4);x.lineTo(cx,H-14);x.stroke();x.fillStyle=col("--mu");x.textAlign="right";x.fillText("trening",cx-6,H-8);x.textAlign="left";x.fillText("test",cx+6,H-8)}
+ x.setLineDash([]);x.fillStyle=col("--mu");x.textAlign="left";x.fillText("0 R",W-R+6,Y(0));
+ x.strokeStyle=e>=0?col("--g"):col("--r");x.lineWidth=2;x.beginPath();pts.forEach(([t,v],k)=>k?x.lineTo(X(t),Y(v)):x.moveTo(X(t),Y(v)));x.stroke();
+ x.fillStyle=x.strokeStyle;x.fillText(f2(e)+" R",W-R+6,Y(e)+(Math.abs(Y(e)-Y(0))<12?12:0));
+ $("ksci").textContent=`${tr.length} handler, sum ${f2(e)} R, alle valgte instrumenter. Ved ${rk} % risiko per trade tilsvarer det om lag ${f2(e*rk)} % (enkel sum, uten rentes rente).`}
+$("ksi").innerHTML+=INS.map((x,i)=>`<option value="${i}">${x[0]}</option>`).join("");
+$("ksx").onchange=()=>{$("kstp").disabled=$("ksx").value=="trail"};
+$("ksgo").onclick=ksRun;
+$("kso").onclick=e=>{const t=e.target.closest("tr[data-k]");if(t)ksCurve(+t.dataset.k)};
+window.addEventListener("resize",()=>{const t=document.querySelector("#kso tr.sel");if(t&&$("ksv").classList.contains("on"))ksCurve(+t.dataset.k)});
+
+/* ===== Topp N walk-forward: velger instrumenter bare med historikk fram til rangeringsdagen ===== */
+async function wfRun(){const b=$("wfgo"),st=$("wfst");b.disabled=true;$("wfo").innerHTML="";
+ const fee=+$("wff").value||0,risk=+$("wfr").value||.5,cap=Math.max(0,+$("wfc").value||0),hz=+$("wfh").value||730,stp=Math.max(1,+$("wfs").value||7),
+  LBm=+$("wfl").value,RBm=+$("wfb").value,LB=Math.round(LBm*30.44),RB=Math.round(RBm*30.44),ina=$("wfi").checked?90:0,uni=$("wfu").value,sel=$("wfa").value,accts=sel=="all"?Object.keys(PTA):[sel];
+ try{await TOPREADY;await needAlt(uni);const{M,ks,FL}=await ptBuild(3000,fee,pick(uni),st),syms=Object.keys(ks),hist={},nm=s=>ks[s][0].replace(" (XAU)","");
+  syms.forEach(s=>hist[s]=[]);Object.values(M.T).flat().forEach(tr=>{if(tr.kd!=null)hist[tr.sym].push(tr)});
+  const first=Math.min(...Object.keys(M.T).map(Number)),r0=first+LB;
+  if(r0>=M.N-hz-30)throw new Error("for lite historikk til rangering pluss maks dager. Prøv kortere rangering eller færre maks dager");
+  const rebs=[];for(let d=r0;d<M.N;d+=RB)rebs.push(d);
+  const score=(s,d)=>{let v=0,n=0;for(const t of hist[s])if(t.kd<d&&t.kd>=d-LB){v+=t.rr;n++}return{s,v,n}};
+  const ranks=rebs.map(d=>syms.map(s=>score(s,d)).sort((a,b)=>b.v-a.v));
+  const V=[1,2,3,4,6,8].filter(n=>n<syms.length).map(n=>({lbl:"Topp "+n,n})).concat([{lbl:`Alle (${syms.length})`,n:1e9,all:1}]);
+  if(uni!="core"&&CRY.every(c=>ks[c[1]]))V.push({lbl:"Hovedliste (fast)",fix:new Set(CRY.map(c=>c[1]))});
+  const kAt=d=>{let k=0;while(k+1<rebs.length&&rebs[k+1]<=d)k++;return k};
+  const selAt=(v,d)=>v.fix?v.fix:v.all?new Set(syms):new Set(ranks[kAt(d)].filter(x=>x.v>0).slice(0,v.n).map(x=>x.s));
+  const starts=[];for(let s0=r0;s0<M.N-hz;s0+=stp)starts.push(s0);
+  const dt=i=>new Date(M.t0+i*864e5).toISOString().slice(0,10),yrs=(M.N-r0)/365;
+  V.forEach(v=>{const T={};for(const[d,arr]of Object.entries(M.T)){const dd=+d;if(dd<r0)continue;const S=selAt(v,dd),a=arr.filter(tr=>S.has(tr.sym));if(a.length)T[dd]=a}
+   v.M={...M,T};const tr=Object.values(T).flat();v.n=tr.length;v.m=tr.length?tr.reduce((x,t)=>x+t.rr,0)/tr.length:0});
+  let h=`<div class="nt" style="margin:0 0 8px">Data ${dt(0)} til ${dt(M.N-1)}, ${syms.length} instrumenter. Første rangering ${dt(r0)}, deretter hver ${RBm==1?"måned":RBm+". måned"} (${rebs.length} rangeringer) etter sum R siste ${LBm} måneder. ${starts.length} evalueringer fra ${dt(r0)}, risiko ${risk} %, tak ${cap?cap+" %":"ingen"}, maks ${hz} dager.</div>
+  <div class="nt" style="margin:0 0 8px">Slippage ${(costCfg().sp*100).toFixed(2)} % per side. ${fundNote(FL)}</div>`;
+  for(const an of accts){const ac=PTA[an];
+   h+=`<h3 style="font-size:14px;margin:16px 0 6px">${an}: mål ${ac.phases.join(" % og ")} %, daglig tap ${ac.daily} %, maks drawdown ${ac.dd} %</h3><table><tr><th>Utvalg</th><th>Handler/år</th><th>Snitt R</th><th>Bestått</th><th>Brutt (dag)</th><th>Brutt (maks)</th><th>Brutt (inaktiv)</th><th>Ikke ferdig</th><th>Median dager</th><th>Laveste equity</th></tr>`;
+   for(const v of V){st.textContent=`Kjører ${an}: ${v.lbl}…`;await new Promise(r=>setTimeout(r));
+    const res=starts.map(s0=>ptEval(v.M,s0,ac,risk,cap,hz,fee,ina)),n=res.length,cn=k=>res.filter(r=>r.out==k).length,ps=res.filter(r=>r.out=="pass"),md=med(ps.map(r=>r.days)),me=med(ps.map(r=>r.minEq)),P=x=>Math.round(x/n*100)+" %";
+    h+=`<tr><td>${v.lbl}</td><td>${(v.n/yrs).toFixed(0)}</td><td class="${v.m>0?"u":"d"}">${f2(v.m)}</td><td class="${cn("pass")/n>=.5?"u":""}">${P(cn("pass"))}</td><td class="${cn("daily")?"d":""}">${P(cn("daily"))}</td><td class="${cn("static")?"d":""}">${P(cn("static"))}</td><td class="${cn("inactive")?"d":""}">${P(cn("inactive"))}</td><td>${P(cn("open"))}</td><td>${md==null?"-":Math.round(md)}</td><td>${me==null?"-":me.toFixed(1)}</td></tr>`}
+   h+="</table>";$("wfo").innerHTML=h}
+  const now=syms.map(s=>score(s,M.N)).sort((a,b)=>b.v-a.v),in3=s=>Math.round(ranks.filter(r=>r.filter(x=>x.v>0).slice(0,3).some(x=>x.s==s)).length/ranks.length*100);
+  h+=`<h3 style="font-size:14px;margin:20px 0 6px">Rangering i dag (sum R siste ${LBm} måneder)</h3><table><tr><th>Plass</th><th>Instrument</th><th>Sum R</th><th>Handler</th><th>I topp 3 historisk</th></tr>
+  ${now.map((x,i)=>`<tr><td>${i+1}</td><td>${nm(x.s)}</td><td class="${x.v>0?"u":x.v<0?"d":"z"}">${f2(x.v)}</td><td>${x.n}</td><td>${in3(x.s)} %</td></tr>`).join("")}</table>
+  <div class="nt">«I topp 3 historisk» er hvor stor andel av rangeringene instrumentet var blant de tre beste. Lav andel betyr at utvalget skifter mye.</div>`;
+  $("wfo").innerHTML=h;st.textContent=""}catch(e){console.error(e);st.textContent="Kunne ikke kjøre testen: "+(e&&e.message||"sjekk internettilkoblingen")}
+ b.disabled=false}
+$("wfgo").onclick=wfRun;
+
+/* ===== Navigasjon: fire hovedfaner + underfaner i Analyse ===== */
+const store=(k,v)=>{try{if(v===undefined)return localStorage.getItem(k);localStorage.setItem(k,v)}catch(e){return null}};
+function showTab(v){document.querySelectorAll("#nav button").forEach(b=>b.classList.toggle("on",b.dataset.v==v));
+ [["sig","pSig"],["stk","pStk"],["an","pAn"],["set","pSet"]].forEach(([k,id])=>$(id).classList.toggle("on",k==v));store("sk_tab",v);if(v=="an"&&subNow=="nw")loadNews()}
+function showSg(v){document.querySelectorAll("#sgs button").forEach(b=>b.classList.toggle("on",b.dataset.s==v));$("sgCore").classList.toggle("on",v=="core");$("sgTop").classList.toggle("on",v=="top");store("sk_sg",v)}
+$("sgs").onclick=e=>{const b=e.target.closest("button");if(b)showSg(b.dataset.s)};
+let subNow="nw";
+function showSub(a){subNow=a;document.querySelectorAll("#sub button").forEach(b=>b.classList.toggle("on",b.dataset.a==a));
+ ["nw","tf","ks","pt","wf","sv","bt"].forEach(k=>$(k=="sv"?"stv":k+"v").classList.toggle("on",k==a));store("sk_sub",a);if(a=="nw")loadNews()}
+$("nav").onclick=e=>{const b=e.target.closest("button");if(b)showTab(b.dataset.v)};
+$("sub").onclick=e=>{const b=e.target.closest("button");if(b)showSub(b.dataset.a)};
+
+/* ===== Konto og risiko huskes ===== */
+[["acc","sk_acc"],["rk","sk_rk"]].forEach(([id,k])=>{const v=store(k);if(v!=null&&v!=="")$(id).value=v;$(id).addEventListener("input",()=>{store(k,$(id).value);if(window._r)hero(window._r)})});
+
+/* ===== Viktige hendelser (USA) og overskrifter ===== */
+// Tider i UTC. Kilder: federalreserve.gov (FOMC 2026 og foreløpig 2027), bls.gov (utgivelser 2026).
+const EVS=[
+ ["2026-10-14T12:30Z","cpi"],["2026-10-15T12:30Z","ppi"],["2026-10-28T18:00Z","fomc"],
+ ["2026-11-06T13:30Z","nfp"],["2026-11-10T13:30Z","cpi"],["2026-11-13T13:30Z","ppi"],
+ ["2026-12-04T13:30Z","nfp"],["2026-12-09T19:00Z","fomc"],["2026-12-10T13:30Z","cpi"],["2026-12-15T13:30Z","ppi"],
+ ["2027-01-27T19:00Z","fomc"],["2027-03-17T18:00Z","fomc"],["2027-04-28T18:00Z","fomc"],["2027-06-09T18:00Z","fomc"],
+ ["2027-07-28T18:00Z","fomc"],["2027-09-15T18:00Z","fomc"],["2027-10-27T18:00Z","fomc"],["2027-12-08T19:00Z","fomc"]];
+const EVN={fomc:["Rentebeslutning i USA (FOMC)","Største hendelse for gull og krypto. Pressekonferansen kommer 30 minutter etter."],
+ cpi:["Inflasjon i USA (KPI)","Høyere inflasjon enn ventet gir ofte fall i gull og krypto."],
+ nfp:["Sysselsetting i USA","Jobbtallene kan gi store hopp i dollar og gull."],
+ ppi:["Produsentpriser i USA","Mindre enn KPI, men kan flytte markedet."]};
+const fdt=t=>{const d=new Date(t);return[d.toLocaleDateString("no",{weekday:"short",day:"numeric",month:"short"}),d.toLocaleTimeString("no",{hour:"2-digit",minute:"2-digit"})]};
+const until=t=>{const m=Math.round((t-Date.now())/6e4);if(m<60)return`om ${Math.max(m,0)} min`;const h=Math.round(m/60);return h<48?`om ${h} timer`:`om ${Math.round(h/24)} dager`};
+let LIVE_EV=null;
+function evList(){const now=Date.now()-36e5;let L=EVS.map(([t,k])=>({t:Date.parse(t),tt:EVN[k][0],why:EVN[k][1]}));
+ if(LIVE_EV){const end=Math.max(...LIVE_EV.map(e=>e.t),0);L=LIVE_EV.concat(L.filter(e=>e.t>end+864e5))}
+ return L.filter(e=>e.t>now).sort((a,b)=>a.t-b.t)}
+function nextBig(){return evList().find(e=>e.t>Date.now())}
+function renderEv(){const L=evList().slice(0,8);
+ $("nwc").innerHTML=L.length?L.map(e=>{const[d,h]=fdt(e.t),soon=e.t-Date.now()<48*36e5;return`<div class="ev${soon?" soon":""}"><time><b>${d}</b>kl. ${h}</time><div><div class="tt">${e.tt}</div><div class="why">${until(e.t)}. ${e.why}</div></div></div>`}).join(""):'<div class="nt">Kalenderen er tom. Be om en oppdatert versjon av siden.</div>';
+ $("nwcs").innerHTML=(LIVE_EV?"Denne uken fra Forex Factory (høy viktighet, USD). ":"")+'Kilder: <a href="https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm" target="_blank" rel="noopener">Federal Reserve</a> og <a href="https://www.bls.gov/schedule/2026/home.htm" target="_blank" rel="noopener">BLS</a>. Tider i norsk tid.'}
+const FFN=[[/fomc|federal funds|rate statement/i,"Rentebeslutning i USA (FOMC)"],[/core cpi/i,"Kjerne-KPI i USA"],[/cpi/i,"Inflasjon i USA (KPI)"],[/non-farm|nfp/i,"Sysselsetting i USA"],[/core ppi/i,"Kjerne-PPI i USA"],[/ppi/i,"Produsentpriser i USA"],[/retail sales/i,"Detaljhandel i USA"],[/gdp/i,"BNP i USA"],[/pce/i,"PCE-inflasjon i USA"],[/unemployment/i,"Arbeidsledighet i USA"],[/speaks|testifies/i,null]];
+async function loadCal(){try{const r=await fetch("https://nfs.faireconomy.media/ff_calendar_thisweek.json");if(!r.ok)throw 0;
+  const j=await r.json(),seen=new Set(),L=[];
+  j.filter(e=>e.country=="USD"&&e.impact=="High").forEach(e=>{const m=FFN.find(([re])=>re.test(e.title)),tt=m&&m[1]?m[1]:e.title+" (USA)",t=Date.parse(e.date),key=tt+t;if(isNaN(t)||seen.has(key))return;seen.add(key);
+   L.push({t,tt,why:e.forecast?`Ventet ${e.forecast}, forrige ${e.previous||"–"}.`:"Høy viktighet."})});
+  if(L.length)LIVE_EV=L}catch(e){}renderEv()}
+const NWS=[["CoinDesk","https://www.coindesk.com/arc/outboundfeeds/rss/",null],["FXStreet","https://www.fxstreet.com/rss/news",/gold|xau|fed\b|fomc|powell|warsh|cpi|inflation|dollar|treasury|tariff|rate cut|rate hike|bitcoin|crypto/i]];
+const HOT=/\bfed\b|fomc|\bcpi\b|\bsec\b|hack|exploit|tariff|rate cut|rate hike|liquidat|\bban\b|crash/i;
+let newsT=0;
+async function loadNews(){if(Date.now()-newsT<15*6e4)return;newsT=Date.now();loadCal();const out=[],bad=[];
+ await Promise.all(NWS.map(async([src,url,flt])=>{try{const r=await fetch("https://api.rss2json.com/v1/api.json?rss_url="+encodeURIComponent(url));const j=await r.json();if(j.status!="ok")throw 0;
+  j.items.forEach(it=>{if(flt&&!flt.test(it.title))return;out.push({src,t:Date.parse((it.pubDate||"").replace(" ","T")+"Z"),title:it.title,link:it.link})})}catch(e){bad.push(src)}}));
+ out.sort((a,b)=>b.t-a.t);const sn=new Set();for(let i=out.length-1;i>=0;i--){const k=out[i].title.toLowerCase();if(sn.has(k))out.splice(i,1);else sn.add(k)}const ago=t=>{const m=Math.round((Date.now()-t)/6e4);return isNaN(m)?"":m<60?m+" min siden":m<1440?Math.round(m/60)+" t siden":Math.round(m/1440)+" d siden"};
+ const esc=s=>String(s).replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+ $("nwh").innerHTML=out.length?out.slice(0,12).map(n=>`<a class="hl" href="${esc(n.link)}" target="_blank" rel="noopener"><span>${n.src}, ${ago(n.t)}</span><strong>${HOT.test(n.title)?"<em>Viktig</em>":""}${esc(n.title)}</strong></a>`).join(""):'<div class="nt">Fikk ikke hentet overskrifter nå. Prøv igjen om litt, eller åpne <a href="https://www.coindesk.com" target="_blank" rel="noopener">CoinDesk</a> og <a href="https://www.fxstreet.com/news" target="_blank" rel="noopener">FXStreet</a>.</div>';
+ $("nwhs").textContent=(bad.length&&out.length?"Mangler nå: "+bad.join(", ")+". ":"")+"Overskrifter på engelsk. Fra FXStreet vises bare saker om gull, Fed, inflasjon og dollar."}
+
+/* ===== Dagens beskjed øverst på Krypto og gull / Aksjer ===== */
+function closeIn(){const n=Date.now(),c=Math.ceil(n/864e5)*864e5;return{t:c,txt:until(c)}}
+function hero(res){heroFor(res.filter(d=>!d.stk&&!d.top),"hv","hs",false);heroFor(res.filter(d=>d.stk),"hv2","hs2",true);heroFor(res.filter(d=>d.top),"hv3","hs3",false)}
+function heroFor(res,hv,hs,stk){try{const ok=res.filter(d=>!d.err),nw=ok.filter(d=>d.new),hd=ok.filter(d=>d.hold),cl=ok.filter(d=>d.closed&&!d.hold&&!d.new),er=res.length-ok.length;
+ const and=a=>a.length<2?a[0]:a.slice(0,-1).join(", ")+" og "+a.at(-1),nm=a=>and(a.map(d=>d.nm.replace(" (XAU)","").replace(" (NOK)","")));
+ let h;if(nw.length)h=nw.length>1?`${nw.length} nye kjøpssignaler: ${nm(nw)}.`:`Nytt kjøpssignal: ${nm(nw)}.`;
+ else if(cl.length)h=`Stengt i dag: ${nm(cl)}. Sjekk at posisjonen er lukket.`;
+ else if(hd.length)h=`Ingen nye signaler. Hold ${nm(hd)}, og flytt stop.`;
+ else h=ok.length?"Ingen handel i dag. Alle står på avvent.":stk?"Fikk ikke hentet aksjedata.":"Fikk ikke hentet data.";
+ $(hv).textContent=h;
+ const parts=[];
+ if(nw.length){const acc=+$("acc").value||0,rk=+$("rk").value||0;parts.push(`Risiko <b>${rk} %</b> av $${acc.toLocaleString("no")} per handel, se størrelse i kortet.`)}
+ if(hd.length&&nw.length)parts.push(`Åpne fra før: ${nm(hd)}.`);
+ {const c=closeIn(),[,ct]=fdt(c.t);parts.push(`Dagens candle lukker kl. ${ct} (${c.txt}), da kan nye signaler komme.`)}
+ const nb=nextBig();if(nb){const[d,t]=fdt(nb.t),soon=nb.t-Date.now()<24*36e5;parts.push(`${soon?"<b>Obs:</b> ":""}Neste store hendelse: ${nb.tt}, ${d} kl. ${t}.`)}
+ if(er)parts.push(`${er} ${stk?"aksje":"instrument"}${er>1?"r":""} mangler data${stk?" (Hyperliquid svarte ikke, prøver igjen om 2 minutter)":""}.`);
+ $(hs).innerHTML=parts.join(" ")}catch(e){console.error(e)}}
+setInterval(()=>{if(window._r)hero(window._r)},6e4);
+
+showSub(["nw","tf","ks","pt","wf","sv","bt"].includes(store("sk_sub"))?store("sk_sub"):"nw");
+showTab(["sig","stk","an","set"].includes(store("sk_tab"))?store("sk_tab"):"sig");
+showSg(store("sk_sg")=="top"?"top":"core");
+renderEv();
+hlMids();setInterval(hlMids,1e4);
+
+setAL(AL);
+connect();
+load();setInterval(load,120000);
+loadHW();setInterval(loadHW,18e5);
+</script>
+</body>
+</html>
