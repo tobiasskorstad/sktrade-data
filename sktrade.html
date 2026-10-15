@@ -1101,16 +1101,16 @@ async function wfRun(){const b=$("wfgo"),st=$("wfst");b.disabled=true;$("wfo").i
 $("wfgo").onclick=wfRun;
 
 /* ===== Nyhetsbilde: tabell fra data/nyhetsbilde.json i sktrade-data (oppdateres av Claude) ===== */
-let NB=null;
+let NB=null,NBt=0;
 async function loadNb(force){
- if(!NB||force){try{const r=await fetch(yBase()+"/nyhetsbilde.json",{cache:"no-store"});if(!r.ok)throw new Error("svarte "+r.status);NB=await r.json()}
+ if(!NB||force||Date.now()-NBt>6e5){try{const r=await fetch(yBase()+"/nyhetsbilde.json?t="+Math.floor(Date.now()/6e5),{cache:"no-store"});if(!r.ok)throw new Error("svarte "+r.status);NB=await r.json();NBt=Date.now()}
   catch(e){$("nbs").textContent="Fant ikke nyhetsbildet ("+(e.message||e)+"). Sjekk Innstillinger → Andre markeder.";return}}
  const tr={};(window._r||[]).forEach(d=>{if(d.trend)tr[d.nm]=d.trend});
  const g=$("nbf").value,ord={core:0,top:1,stk:2},items=NB.items.filter(x=>g=="all"||x.grp==g).sort((a,b)=>ord[a.grp]-ord[b.grp]);
  const nd={opp:["tu","▲ Opp"],ned:["td","▼ Ned"],blandet:["tn","■ Blandet"]},gl={core:"Hovedliste",top:"Topp 20",stk:"Aksje"};
  const up=items.filter(x=>x.dir=="opp").length,dn=items.filter(x=>x.dir=="ned").length;
  $("nbh").textContent=`Nyhetsbilde: ${up} opp, ${dn} ned, ${items.length-up-dn} blandet`;
- $("nbs").innerHTML=`Oppdatert ${NB.updated}. ${NB.note||""}`;
+ $("nbs").innerHTML=`Oppdatert ${NB.updated}. Oppdateres hver time mens børsen i New York er åpen (hverdager ca. kl. 15:35–21:35 norsk tid). ${NB.note||""}`;
  $("nbo").innerHTML=`<table><tr><th>Instrument</th><th>Nyheter</th><th>Trend (graf)</th><th>Hvorfor</th><th>Neste hendelse</th><th>Kilder</th></tr>${items.map(x=>{const t=tr[x.nm],n=nd[x.dir]||nd.blandet;
   return`<tr><td><b>${x.name}</b><br><span class="nt" style="margin:0">${gl[x.grp]||""}</span></td><td><span class="tr ${n[0]}">${n[1]}</span></td><td>${t?trBadge(t):"–"}</td><td class="w">${x.why}</td><td>${x.event||"–"}</td><td class="src">${(x.src||[]).map(s=>`<a href="${s.u}" target="_blank" rel="noopener">${s.t} ↗</a>`).join("<br>")}</td></tr>`}).join("")}</table>`}
 $("nbf").onchange=()=>loadNb();
