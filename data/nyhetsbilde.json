@@ -1,5 +1,5 @@
 {
- "updated": "16.10.2026 kl. 20:42",
+ "updated": "16.10.2026 kl. 21:42",
  "note": "Bakteppe: inflasjonen i USA steg til 3,7 % i september (ventet 3,6 %), og Fed kan heve renten igjen fra 3,75–4,00 % på møtet 27.–28. oktober. Høye lange renter presser krypto, gull og teknologiaksjer. TSMC-tallene 15.10 viste at etterspørselen etter avanserte brikker fortsatt er svært sterk.",
  "items": [
   {
@@ -321,12 +321,16 @@
    "name": "SpaceX",
    "grp": "stk",
    "dir": "blandet",
-   "why": "Første kvartalsrapport som børsnotert (14.10): omsetning $8 mrd., $940 mill. over forventet. Aksjen falt likevel til ca. $152, og den svinger svært mye (beta 4,6).",
-   "event": "–",
+   "why": "Første kvartalsrapport etter børsnoteringen (Q2, 4.08) slo forventningene med omsetning $7,81 mrd., men aksjen falt ca. 10 % på økte AI-investeringer. Analytikerne venter $12,9 mrd. i Q3.",
+   "event": "Kvartalstall Q3 (dato ikke satt)",
    "src": [
     {
-     "t": "Market Chameleon 14.10",
-     "u": "https://marketchameleon.com/Overview/SPCX/SingleLegOptionTradesNew/"
+     "t": "HDFC Sky 05.08",
+     "u": "https://hdfcsky.com/news/spacex-shares-tumble10percent-in-premarket-trade-after1stearnings-report-since-ipo"
+    },
+    {
+     "t": "Benzinga 16.10",
+     "u": "https://www.benzinga.com/quote/spcx/earnings"
     }
    ]
   },
@@ -367,7 +371,7 @@
    "name": "Nvidia",
    "grp": "stk",
    "dir": "blandet",
-   "why": "TSMC leverte rekordomsetning på $46,7 mrd. i Q3 (+51 %) og venter $52–54 mrd. i Q4, et tegn på sterk brikkeetterspørsel. Høye renter og nylig chip-salg trekker ned.",
+   "why": "Steg 1 % til $228,52 13.10 og kjøper en minoritetspost i Doctolib. TSMC-tallene 15.10 (+51 %, rekord $46,7 mrd.) viser sterk brikkeetterspørsel, men høye renter trekker ned.",
    "event": "Kvartalstall ventet sent i november",
    "src": [
     {
@@ -375,8 +379,8 @@
      "u": "https://www.sec.gov/Archives/edgar/data/0001046179/000104617926000726/a3q26e_withguidancexfinal.htm"
     },
     {
-     "t": "Ted Pillows 13.10",
-     "u": "https://tedpillows.substack.com/p/crypto-and-finance-market-report-acb"
+     "t": "Gotrade 14.10",
+     "u": "https://www.heygotrade.com/en/news/nvidia-nvda-stock-news-october-14-2026/"
     }
    ]
   }
