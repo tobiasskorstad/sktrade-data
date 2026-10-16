@@ -295,7 +295,7 @@ details.more[open]{padding-bottom:16px}
     <label>Instrumenter å velge fra<select id="wfu"><option value="all" selected>Alle krypto og gull</option><option value="top">Topp 20 (15 til)</option><option value="core">Hovedliste (6)</option><option value="alt">Andre markeder</option><option value="coreAlt">Hovedliste + andre markeder</option><option value="coreAltNS">Hovedliste + andre, uten enkeltaksjer</option></select></label>
     <label>Ranger etter siste<select id="wfl"><option value="12">12 måneder</option><option value="24" selected>24 måneder</option><option value="36">36 måneder</option></select></label>
     <label>Ny rangering hver<select id="wfb"><option value="1">måned</option><option value="3" selected>3. måned</option><option value="6">6. måned</option></select></label>
-    <label>Konto<select id="wfa"><option value="all" selected>Alle tre</option><option>Degen</option><option>1-Step</option><option>2-Step</option></select></label>
+    <label>Konto<select id="wfa"><option value="all" selected>Alle</option><option>Degen</option><option>1-Step</option><option>2-Step</option></select></label>
     <label>Risiko per trade (%)<input id="wfr" type="number" value="0.5" step="0.25"></label>
     <label>Tak åpen risiko (%)<input id="wfc" type="number" value="2" step="0.5"></label>
     <label>Maks dager<input id="wfh" type="number" value="730"></label>
@@ -310,7 +310,7 @@ details.more[open]{padding-bottom:16px}
   <div class="sv" id="ptv">
    <p class="lead">Hvor ofte strategien ville bestått en SizeProp-evaluering, og hvor ofte den ville brutt tapsgrensene.</p>
    <div class="bar">
-    <label>Konto<select id="pta"><option value="all" selected>Alle tre</option><option>Degen</option><option>1-Step</option><option>2-Step</option></select></label>
+    <label>Konto<select id="pta"><option value="all" selected>Alle</option><option value="sp">Alle SizeProp</option><option value="other">HyroTrader og FTMO</option><option value="Degen">SizeProp Degen</option><option value="1-Step">SizeProp 1-Step</option><option value="2-Step">SizeProp 2-Step</option><option value="Hyro 2-Step">HyroTrader 2-Step</option><option value="Hyro 1-Step">HyroTrader 1-Step</option><option value="FTMO 2-Step">FTMO 2-Step Swing</option></select></label>
     <label>Risiko per trade (%)<input id="ptr" value="0.5, 0.75, 1, 1.5" style="width:150px"></label>
     <label>Tak åpen risiko (%)<input id="ptc" value="2, 3, 4" style="width:80px"></label>
     <label>Maks dager<input id="pth" type="number" value="730"></label>
@@ -321,7 +321,7 @@ details.more[open]{padding-bottom:16px}
     <button id="ptgo">Kjør porteføljetest</button>
    </div>
    <div class="nt" id="ptst"></div><div id="pto"></div>
-   <div class="ft">Alle instrumentene handles samtidig på én konto med Donchian 55/20 (kun long). Testen starter en ny evaluering hver N-te dag i historikken (opptil ca. 8 år) og følger den til den er bestått, brutt eller tiden går ut. Regler fra sizeprop.com/our-rules (sjekket 13.10.2026): ingen tidsgrense og ingen minste antall dager, men minst én handel hver 90. dag. «Brutt (inaktiv)» teller bare kjøp og salg fra strategien som handel, ikke å holde en posisjon. Du kan unngå dette ved å ta en liten handel selv før 90 dager har gått, men sjekk med SizeProp at det teller. Forenklinger: innen dagen antas alle åpne posisjoner å treffe laveste kurs samtidig (pessimistisk), daglig tapsgrense regnes fra saldoen ved starten av UTC-dagen (SizeProp bruker kl. 20:00 UTC), fyllinger på stop-nivå med slippage fra Innstillinger, og hoppes et signal over, venter instrumentet til sitt neste signal. Startdatoene overlapper, så de uavhengige utfallene er få. Slippage og funding fra Innstillinger er med, og funding trekkes også fra åpne posisjoner underveis. Spread og SizeProps egne avgifter er ikke med. Historikk er ingen garanti. Laveste equity har startsaldo 100.</div>
+   <div class="ft">Alle instrumentene handles samtidig på én konto med Donchian 55/20 (kun long). Testen starter en ny evaluering hver N-te dag i historikken (opptil ca. 8 år) og følger den til den er bestått, brutt eller tiden går ut. HyroTrader og FTMO (sjekket 16.10.2026): HyroTrader 2-Step mål 10 % og 5 %, 5 % daglig, 10 % totalt, 1-Step 10 %, 4 % og 6 %, regnet med tillegget Swing slik at daglig tap måles fra dagens start. Ingen dag kan stå for over 40 % av gevinsten, og det kreves 5 dager med lukket handel per fase (HyroTrader krever i tillegg en viss størrelse og ±1 % resultat for at dagen skal telle, det er ikke modellert). Maks 3 % tap per handel er aldri et problem med risikoen her. FTMO 2-Step Swing: 10 % og 5 %, 5 % daglig, 10 % totalt, beste dag maks 50 % av gevinsten og minst 4 handelsdager. CFD-kostnader hos FTMO er ikke med, bare funding fra Innstillinger. 90-dagersregelen gjelder bare SizeProp. Regler fra sizeprop.com/our-rules (sjekket 13.10.2026): ingen tidsgrense og ingen minste antall dager, men minst én handel hver 90. dag. «Brutt (inaktiv)» teller bare kjøp og salg fra strategien som handel, ikke å holde en posisjon. Du kan unngå dette ved å ta en liten handel selv før 90 dager har gått, men sjekk med SizeProp at det teller. Forenklinger: innen dagen antas alle åpne posisjoner å treffe laveste kurs samtidig (pessimistisk), daglig tapsgrense regnes fra saldoen ved starten av UTC-dagen (SizeProp bruker kl. 20:00 UTC), fyllinger på stop-nivå med slippage fra Innstillinger, og hoppes et signal over, venter instrumentet til sitt neste signal. Startdatoene overlapper, så de uavhengige utfallene er få. Slippage og funding fra Innstillinger er med, og funding trekkes også fra åpne posisjoner underveis. Spread og SizeProps egne avgifter er ikke med. Historikk er ingen garanti. Laveste equity har startsaldo 100.</div>
   </div>
   <div class="sv" id="stv">
    <div class="verdict">Lagt bort: ingen var lønnsomme etter avgifter</div>
@@ -915,7 +915,12 @@ try{$("tgon").checked=localStorage.getItem("sk_tgon")=="1"}catch(e){}$("tgon").o
 $("tgtest").onclick=async()=>{$("tgst").textContent="Sender…";$("tgst").textContent="Telegram: "+await tgSend("SKTRADE: test OK")};
 
 /* ===== Porteføljetest mot SizeProp-regler (port av sizeprop_portfolio_test.py) ===== */
-const PTA={Degen:{phases:[8],daily:2,dd:3},"1-Step":{phases:[10],daily:3,dd:5},"2-Step":{phases:[5,10],daily:4,dd:6}},PTRES=[];
+/* Kontotyper. SizeProp: sizeprop.com/our-rules. HyroTrader og FTMO: regler sjekket 16.10.2026 (hyrotrader.com, ftmo.com, cryptoslate.com, propfirmmap.com).
+   cons = ingen enkeltdag kan stå for mer enn denne andelen av gevinsten før målet godkjennes. minDays = minst så mange dager med lukket handel per fase. ina = 90-dagersregelen gjelder. */
+const PTA={Degen:{lbl:"SizeProp Degen",phases:[8],daily:2,dd:3,ina:1},"1-Step":{lbl:"SizeProp 1-Step",phases:[10],daily:3,dd:5,ina:1},"2-Step":{lbl:"SizeProp 2-Step",phases:[5,10],daily:4,dd:6,ina:1},
+ "Hyro 2-Step":{lbl:"HyroTrader 2-Step (med Swing)",phases:[10,5],daily:5,dd:10,cons:.4,minDays:5},
+ "Hyro 1-Step":{lbl:"HyroTrader 1-Step (med Swing)",phases:[10],daily:4,dd:6,cons:.4,minDays:5},
+ "FTMO 2-Step":{lbl:"FTMO 2-Step Swing",phases:[10,5],daily:5,dd:10,cons:.5,minDays:4}},PTRES=[];
 function tradesP(k){const n=k.length,c=k.map(z=>+z[4]),H=rollM(k.map(z=>+z[2]),DA,1),L2=rollM(k.map(z=>+z[3]),DB,-1),at=atrS(k),out=[];let i=Math.max(DA,15);
  while(i<n-2){if(at[i]==null||H[i]==null||!(c[i]>H[i])){i++;continue}
   const e=+k[i+1][1],R0=3*at[i];let st=e-R0,ext=e,j=i+1,ex=null,kind="stop",nx;const stops=[];
@@ -941,27 +946,29 @@ async function ptBuild(days,fee,LST,stEl){const ks={},now=Date.now(),cc=costCfg(
    info.push({rr:(t.ex-t.e)/t.R0-c.all,fr:c.all,fe:c.fe,sl:c.sl,fu:c.fu})}}
  return{M,info,ks,FL}}
 const fuc=(q,tm,px)=>q.F?q.u*(q.e0+px)/2*(q.F(tm)-q.F(q.tE)):0;
-function ptPhase(M,s,target,daily,dd,risk,cap,maxd,fee,ina){
- let bal=100,minEq=100,last=s;const tgt=100*(1+target/100),floor=100*(1-dd/100),pos=[],end=Math.min(M.N,s+maxd);
- for(let t=s;t<end;t++){const dayBal=bal;
+function ptPhase(M,s,target,daily,dd,risk,cap,maxd,fee,ina,opt){
+ opt=opt||{};let bal=100,minEq=100,last=s,best=0,tdays=0;const tgt=100*(1+target/100),floor=100*(1-dd/100),pos=[],end=Math.min(M.N,s+maxd);
+ const ok=dp=>bal>=tgt&&(!opt.minDays||tdays+(dp.c?1:0)>=opt.minDays)&&(!opt.cons||Math.max(best,dp.v)<=opt.cons*(bal-100)+1e-9);
+ for(let t=s;t<end;t++){const dayBal=bal,dp={v:0,c:0};
   if(ina&&t-last>ina)return{out:"inactive",days:t-s+1,minEq};
-  for(const q of pos.filter(q=>q.kind=="signal"&&q.exit_m==t)){bal+=q.u*(q.ex-q.e)-q.u*q.ex*fee/100-fuc(q,M.t0+t*864e5,q.ex);pos.splice(pos.indexOf(q),1);last=t}
-  if(bal>=tgt)return{out:"pass",days:t-s+1,end:t,minEq};
+  for(const q of pos.filter(q=>q.kind=="signal"&&q.exit_m==t)){const g=q.u*(q.ex-q.e)-q.u*q.ex*fee/100-fuc(q,M.t0+t*864e5,q.ex);bal+=g;dp.v+=g;dp.c=1;pos.splice(pos.indexOf(q),1);last=t}
+  if(ok(dp))return{out:"pass",days:t-s+1,end:t,minEq};
   for(const tr of(M.T[t]||[])){let cur=0;for(const q of pos)cur+=q.u*Math.max(0,M.O[q.sym][t]-q.stops[Math.min(t-q.ei_m,q.stops.length-1)]);
    if(cap&&cur+risk>cap+1e-9)continue;const u=risk/tr.R0;bal-=u*tr.e*fee/100;pos.push({...tr,u});last=t}
   let w=0;const stopped=[];
   const te=M.t0+(t+1)*864e5;for(const q of pos){if(q.stop_day==t){w+=q.u*(q.ex-q.e)-fuc(q,te,q.ex);stopped.push(q)}else w+=q.u*(M.L[q.sym][t]-q.e)-fuc(q,te,M.L[q.sym][t])}
   const weq=bal+w,dl=dayBal*(1-daily/100);minEq=Math.min(minEq,weq);
   if(weq<=Math.max(dl,floor)+1e-9)return{out:dl>=floor?"daily":"static",days:t-s+1,minEq};
-  for(const q of stopped){bal+=q.u*(q.ex-q.e)-q.u*q.ex*fee/100-fuc(q,te,q.ex);pos.splice(pos.indexOf(q),1);last=t}
-  if(bal>=tgt)return{out:"pass",days:t-s+1,end:t,minEq}}
+  for(const q of stopped){const g=q.u*(q.ex-q.e)-q.u*q.ex*fee/100-fuc(q,te,q.ex);bal+=g;dp.v+=g;dp.c=1;pos.splice(pos.indexOf(q),1);last=t}
+  if(ok(dp))return{out:"pass",days:t-s+1,end:t,minEq};
+  if(dp.c){tdays++;best=Math.max(best,dp.v)}}
  return{out:"open",days:end-s,minEq}}
 function ptEval(M,s,ac,risk,cap,hz,fee,ina){let used=0,r;
- for(const target of ac.phases){r=ptPhase(M,s,target,ac.daily,ac.dd,risk,cap,hz-used,fee,ina);used+=r.days;if(r.out!="pass"){r.days=used;return r}s=r.end+1}
+ for(const target of ac.phases){r=ptPhase(M,s,target,ac.daily,ac.dd,risk,cap,hz-used,fee,ac.ina?ina:0,ac);used+=r.days;if(r.out!="pass"){r.days=used;return r}s=r.end+1}
  r.days=used;return r}
 const med=a=>{if(!a.length)return null;const s=[...a].sort((x,y)=>x-y),m=s.length>>1;return s.length%2?s[m]:(s[m-1]+s[m])/2};
 async function ptRun(){const b=$("ptgo");b.disabled=true;$("pto").innerHTML="";PTRES.length=0;
- const list=v=>v.split(/[ ,;]+/).filter(x=>x!=="").map(Number).filter(x=>!isNaN(x)),risks=list($("ptr").value).filter(x=>x>0),caps=list($("ptc").value).filter(x=>x>=0),hz=+$("pth").value||730,stp=Math.max(1,+$("pts").value||7),fee=+$("ptf").value||0,sel=$("pta").value,accts=sel=="all"?Object.keys(PTA):[sel];
+ const list=v=>v.split(/[ ,;]+/).filter(x=>x!=="").map(Number).filter(x=>!isNaN(x)),risks=list($("ptr").value).filter(x=>x>0),caps=list($("ptc").value).filter(x=>x>=0),hz=+$("pth").value||730,stp=Math.max(1,+$("pts").value||7),fee=+$("ptf").value||0,sel=$("pta").value,accts=sel=="all"?Object.keys(PTA):sel=="sp"?["Degen","1-Step","2-Step"]:sel=="other"?["Hyro 2-Step","Hyro 1-Step","FTMO 2-Step"]:[sel];
  try{$("ptst").textContent="Henter historikk for alle instrumenter (opptil 8 år)…";await TOPREADY;await needAlt($("ptu").value);const{M,info,ks,FL}=await ptBuild(3000,fee,pick($("ptu").value),$("ptst"));
   const rr=info.map(t=>t.rr),first=Math.min(...Object.keys(M.T).map(Number)),starts=[];for(let s=first;s<M.N-hz;s+=stp)starts.push(s);
   if(!starts.length||!rr.length)throw new Error("for lite historikk for valgt horisont");
@@ -969,7 +976,7 @@ async function ptRun(){const b=$("ptgo");b.disabled=true;$("pto").innerHTML="";P
   let h=`<div class="nt" style="margin:0 0 8px">Data: ${dt(0)} til ${dt(M.N-1)}, ${Object.keys(ks).length} instrumenter. Strategien alene: ${rr.length} handler, snitt ${f2(mean)} R, vinnerandel ${Math.round(rr.filter(x=>x>0).length/rr.length*100)} %, avgift ${fee} % per side. ${starts.length} startdatoer (hver ${stp}. dag), maks ${hz} dager per evaluering. Se på «brutt» først: «ikke ferdig» betyr hverken bestått eller brutt innen tiden.</div>
   <div class="nt" style="margin:0 0 8px"><b>${costLine(info,"Per handel")}</b> Slippage ${(costCfg().sp*100).toFixed(2)} % per side. ${fundNote(FL)}</div>`;
   for(const an of accts){const ac=PTA[an];
-   h+=`<h3 style="font-size:14px;margin:16px 0 6px">${an}: mål ${ac.phases.join(" % og ")} %, daglig tap ${ac.daily} %, maks drawdown ${ac.dd} %</h3><table><tr><th>Risiko</th><th>Tak</th><th>Bestått</th><th>Brutt (dag)</th><th>Brutt (maks)</th><th>Brutt (inaktiv)</th><th>Ikke ferdig</th><th>Median dager</th><th>Laveste equity</th></tr>`;
+   h+=`<h3 style="font-size:14px;margin:16px 0 6px">${ac.lbl||an}: mål ${ac.phases.join(" % og ")} %, daglig tap ${ac.daily} %, maks drawdown ${ac.dd} %${ac.cons?`, beste dag maks ${ac.cons*100} % av gevinsten`:""}${ac.minDays?`, minst ${ac.minDays} handelsdager`:""}</h3><table><tr><th>Risiko</th><th>Tak</th><th>Bestått</th><th>Brutt (dag)</th><th>Brutt (maks)</th><th>Brutt (inaktiv)</th><th>Ikke ferdig</th><th>Median dager</th><th>Laveste equity</th></tr>`;
    for(const rk of risks)for(const cp of caps){$("ptst").textContent=`Kjører ${an}, risiko ${rk} %, tak ${cp||"ingen"}…`;await new Promise(r=>setTimeout(r));
     const res=starts.map(s=>ptEval(M,s,ac,rk,cp,hz,fee,$("pti").checked?90:0)),n=res.length,cn=k=>res.filter(r=>r.out==k).length,ps=res.filter(r=>r.out=="pass"),md=med(ps.map(r=>r.days)),me=med(ps.map(r=>r.minEq)),P=x=>Math.round(x/n*100)+" %";
     PTRES.push({an,rk,cp,n,pass:cn("pass"),daily:cn("daily"),static:cn("static"),inactive:cn("inactive"),open:cn("open"),md,me});
