@@ -128,6 +128,7 @@ details.more[open]{padding-bottom:16px}
 .verdict{display:inline-block;font-size:12px;font-weight:600;color:var(--mu);background:var(--soft);border-radius:6px;padding:3px 8px;margin:0 0 10px}
 .sv{display:none}.sv.on{display:block}
 #bc{width:100%;height:220px;display:block;margin:14px 0}
+#htg .box{min-width:0}#htg td{white-space:normal;text-align:left;vertical-align:top}#htg table{width:100%;table-layout:fixed}#htg td:first-child{width:34%;padding-right:8px}
 .nwg{display:grid;grid-template-columns:minmax(0,5fr) minmax(0,6fr);gap:18px;align-items:start}
 .box{background:var(--card);border:1px solid var(--bd);border-radius:14px;padding:6px 16px 14px;box-shadow:var(--sh)}
 .box h3{margin:12px 0 4px}
@@ -192,7 +193,7 @@ details.more[open]{padding-bottom:16px}
   <div class="brand"><b>SKTRADE</b><span>Gull, krypto og aksjer. Donchian 55/20 på dagsgraf, kun long</span></div>
   <div class="stat"><span id="lv">kobler til…</span><span id="up">laster…</span><button id="go" class="ghost" title="Hent signaler på nytt">Oppdater</button></div>
  </header>
- <nav class="nav"><div class="seg" id="nav"><button data-v="sig" class="on"><span class="lgv">Hovedliste</span><span class="smv">Hoved</span></button><button data-v="stk"><span class="lgv">Andre markeder</span><span class="smv">Andre</span></button><button data-v="nb"><span class="lgv">Nyhetsbilde</span><span class="smv">Nyheter</span></button><button data-v="an">Analyse</button><button data-v="set">Innstillinger</button></div></nav>
+ <nav class="nav"><div class="seg" id="nav"><button data-v="sig" class="on"><span class="lgv">Hovedliste</span><span class="smv">Hoved</span></button><button data-v="stk"><span class="lgv">Andre markeder</span><span class="smv">Andre</span></button><button data-v="nb"><span class="lgv">Nyhetsbilde</span><span class="smv">Nyheter</span></button><button data-v="ht"><span class="lgv">Hurtigtrades</span><span class="smv">Hurtig</span></button><button data-v="an">Analyse</button><button data-v="set"><span class="lgv">Innstillinger</span><span class="smv">Innst.</span></button></div></nav>
 
  <section class="pn on" id="pSig">
   <div class="hero"><h1 id="hv">Henter dagens signaler…</h1><p id="hs"></p></div>
@@ -237,6 +238,49 @@ details.more[open]{padding-bottom:16px}
   <div class="bar" style="margin:4px 0 12px"><label>Vis<select id="nbf"><option value="all">Alle</option><option value="core">Hovedliste</option><option value="top">Topp 20 krypto</option><option value="stk">Aksjer</option></select></label></div>
   <div id="nbo" style="overflow-x:auto"></div>
   <div class="ft">Nyhetsbildet er en kort oppsummering av ferske nyheter, kvartalsrapporter og kommende hendelser, satt sammen av Claude fra åpne kilder. «Opp» og «ned» er en vurdering av nyhetstonen, ikke en prognose, og er ikke testet som strategi. Bruk det som bakgrunn: signalene fra strategien gjelder fortsatt. Trend-kolonnen er beregnet fra dagsgrafen her på siden. Ikke finansiell rådgivning.</div>
+ </section>
+
+ <section class="pn" id="pHt">
+  <div class="hero"><h1>Hurtigtrades</h1><p id="hts">Én handel om dagen med mål på +0,5 %. Testet på 15-minutters data for hovedlista fra 2021.</p></div>
+  <div class="verdict">Testet 18.10.2026: ingen strategi holdt seg etter kostnader. Den beste kandidaten er bare i pluss med limit-ordre, og hvert marked for seg holder bare gull.</div>
+  <p class="lead">Åtte kjente dagstrade-oppsett er testet med samme regler: maks én handel per døgn på tvers av de seks markedene, gevinstmål +0,5 % etter kostnader, fast stop, og alt lukkes senest ved døgnslutt (00:00 UTC). Kostnaden per handel er rundt 0,13 % med markedsordre, altså en fjerdedel av målet. Det er det som gjør dette så vanskelig.</p>
+
+  <h2>Dagens oppsett (kandidat, ikke bevist)</h2>
+  <p class="lead">Tilbakefall i trend, kun long: legg en kjøpsordre et halvt snitt-døgnutslag under døgnåpningen i markeder der dagstrenden er opp. Den første som fylles er dagens handel. Slett de andre ordrene da. Lukk ved +0,5 % netto, stop 2 %, eller ved døgnslutt.</p>
+  <div class="bar">
+   <label>Størrelse (× konto)<input id="htf" type="number" value="0.5" step="0.25" min="0.1"></label>
+   <button id="htgo1">Oppdater</button>
+  </div>
+  <div class="grid" id="htg"><div class="nt">Henter dagsdata…</div></div>
+  <div class="nt" id="htgs"></div>
+
+  <h2>Resultat fra backtesten</h2>
+  <p class="lead">Snitt per handel er avkastning i % av kursen etter avgift og slippage. Med størrelse lik kontoen er det samme tall i % av kontoen. Trening er perioden før delingsdatoen, test er etter. «Markeder i pluss» teller hvor mange av de seks som er lønnsomme hver for seg.</p>
+  <div class="bar">
+   <label>Stop<select id="hrsl"><option value="0.5">0,5 %</option><option value="1">1 %</option><option value="2" selected>2 %</option></select></label>
+   <label>Ordretype<select id="hrmk"><option value="mkt">Markedsordre</option><option value="lim" selected>Limit der det går</option></select></label>
+  </div>
+  <div id="hro" style="overflow-x:auto"><div class="nt">Henter resultater…</div></div>
+  <div class="nt" id="hros"></div>
+
+  <h2>Kjør backtest selv</h2>
+  <p class="lead">Laster 15-minutters historikk fra 2021 (om lag 22 MB første gang) og legger til de siste dagene fra Binance. Kjøringen skjer her i nettleseren.</p>
+  <div class="bar">
+   <label>Strategi<select id="hbs"></select></label>
+   <label>Retning<select id="hbd"></select></label>
+   <label>Mål (%)<input id="hbtp" type="number" value="0.5" step="0.1"></label>
+   <label class="chk"><input id="hbn" type="checkbox" checked> Målet er etter kostnader</label>
+   <label>Stop (%, 0 = ingen)<input id="hbsl" type="number" value="2" step="0.25"></label>
+   <label>Avgift per side (%)<input id="hbf" type="number" value="0.045" step="0.005"></label>
+   <label>Slippage per side (%)<input id="hbsp" type="number" value="0.02" step="0.01"></label>
+   <label>Limit-avgift (%, tom = markedsordre)<input id="hbmk" type="number" value="0.015" step="0.005"></label>
+   <label>Marked<select id="hbu"><option value="">Hovedliste (første signal)</option><option value="PAXGUSDT">Gull (PAXG)</option><option value="BTCUSDT">BTC</option><option value="ETHUSDT">ETH</option><option value="SOLUSDT">SOL</option><option value="XRPUSDT">XRP</option><option value="BNBUSDT">BNB</option></select></label>
+   <label>Størrelse (× konto)<input id="hbz" type="number" value="0.5" step="0.25" min="0.1"></label>
+   <button id="hbgo">Kjør backtest</button>
+  </div>
+  <div class="nt" id="hbst"></div><div id="hbo"></div>
+
+  <div class="ft">Data: Binance spot 15 min (PAXG for gull, SizeProp bruker XAUT, som følger gull med samme %). Dagstrend: forrige døgns sluttkurs og EMA 20 mot EMA 50 på dagsgraf. ATR: snitt av de 14 siste døgnenes utslag i %. Inngang med stoppordre fylles på nivået, eller på åpningen hvis kursen hopper forbi. Limit-ordre fylles når kursen berører nivået (optimistisk: i praksis står du i kø). Når mål og stop treffes i samme 15-minutters candle, regnes stop. Mål regnes ikke i samme candle som inngangen, unntatt ved markedsordre. Kostnader: avgift 0,045 % per side (som Hyperliquid taker) og slippage 0,02 % per side. «Limit der det går» gir 0,015 % avgift og ingen slippage på limit-inngang og på målet. Det er ukjent om SizeProp har lavere avgift på limit-ordre. Degen-simuleringen starter en ny evaluering hver uke og bruker SizeProps grenser (mål 8 %, døgntap 2 %, maks fall 3 %) med den størrelsen du velger. Den ser bare på resultatet av hver handel, ikke svingningene underveis, så den er for snill. 192 kombinasjoner er testet. Noen vil se gode ut ved flaks. Ikke finansiell rådgivning.</div>
  </section>
 
  <section class="pn" id="pAn">
@@ -1132,7 +1176,7 @@ $("nbf").onchange=()=>loadNb();
 /* ===== Navigasjon: fire hovedfaner + underfaner i Analyse ===== */
 const store=(k,v)=>{try{if(v===undefined)return localStorage.getItem(k);localStorage.setItem(k,v)}catch(e){return null}};
 function showTab(v){document.querySelectorAll("#nav button").forEach(b=>b.classList.toggle("on",b.dataset.v==v));
- [["sig","pSig"],["stk","pStk"],["nb","pNb"],["an","pAn"],["set","pSet"]].forEach(([k,id])=>$(id).classList.toggle("on",k==v));store("sk_tab",v);if(v=="an"&&subNow=="nw")loadNews();if(v=="nb")loadNb()}
+ [["sig","pSig"],["stk","pStk"],["nb","pNb"],["ht","pHt"],["an","pAn"],["set","pSet"]].forEach(([k,id])=>$(id).classList.toggle("on",k==v));store("sk_tab",v);if(v=="ht")htShow();if(v=="an"&&subNow=="nw")loadNews();if(v=="nb")loadNb()}
 function showSg(v){if(v!="stk")v="top";document.querySelectorAll("#sgs button").forEach(b=>b.classList.toggle("on",b.dataset.s==v));$("sgTop").classList.toggle("on",v=="top");$("sgStk").classList.toggle("on",v=="stk");store("sk_sg",v)}
 $("sgs").onclick=e=>{const b=e.target.closest("button");if(b)showSg(b.dataset.s)};
 let subNow="nw";
@@ -1211,7 +1255,285 @@ function heroFor(res,hv,hs,stk){try{const ok=res.filter(d=>!d.err),nw=ok.filter(
 setInterval(()=>{if(window._r)hero(window._r)},6e4);
 
 showSub(store("sk_sub")||"tf");
-showTab(["sig","stk","nb","an","set"].includes(store("sk_tab"))?store("sk_tab"):"sig");
+
+/* ===== Hurtigtrades-motor: én handel per dag, mål +0,5 % ===== */
+/* Data per marked: {s, t:[ms], o:[], h:[], l:[], c:[]} på 15 min, UTC. */
+const HT_DAY = 864e5, HT_BPD = 96;
+const HT_STRATS = {
+  asia: { n: "Asia-range brudd", d: "Topp/bunn 00–08 UTC. Kjøp ved brudd over toppen (salg under bunnen) mellom 08 og 20 UTC." },
+  ny:   { n: "NY-åpning brudd", d: "Topp/bunn i første time etter børsåpning i New York (13:30–14:30 UTC). Kjøp ved brudd over, salg ved brudd under, til 21 UTC." },
+  pd:   { n: "Gårsdagens topp/bunn", d: "Kjøp når kursen går over gårsdagens høyeste (salg under laveste), 00–20 UTC." },
+  open: { n: "Åpning med trend", d: "Gå inn ved døgnåpning 00 UTC i retning av dagstrenden (EMA 20 og 50 på dagsgraf)." },
+  pull: { n: "Tilbakefall i trend", d: "Kjøpsordre et halvt snitt-døgnutslag (ATR) under døgnåpningen når dagstrenden er opp (motsatt ned)." },
+  rsi:  { n: "RSI(2) på timegraf", d: "Kjøp når RSI(2) på 1 t lukker under 10 (salg over 90), 00–20 UTC." },
+  mom:  { n: "Intradagsmomentum", d: "Kl. 14:30 UTC (etter første time i New York): gå i samme retning som kursen har gått siden døgnåpningen." },
+  fade: { n: "Fade stort utslag", d: "Kjøp når kursen har falt 0,8 × ATR fra døgnåpningen (salg ved like stor stigning), uansett trend." }
+};
+const HT_DIRS = { long: "Kun long", short: "Kun short", both: "Begge veier", trend: "Med dagstrenden" };
+
+function htEma(a, n) { const k = 2 / (n + 1), o = []; let e = a[0]; for (let i = 0; i < a.length; i++) { e = i ? a[i] * k + e * (1 - k) : a[0]; o.push(e) } return o }
+
+/* Bygger døgn og indikatorer for ett marked */
+function htPrep(m) {
+  const n = m.t.length, days = [];
+  let i = 0;
+  while (i < n) {
+    const d = Math.floor(m.t[i] / HT_DAY); let j = i;
+    while (j + 1 < n && Math.floor(m.t[j + 1] / HT_DAY) == d) j++;
+    if (j - i + 1 >= 90) {
+      let hi = -1e99, lo = 1e99; for (let k = i; k <= j; k++) { if (m.h[k] > hi) hi = m.h[k]; if (m.l[k] < lo) lo = m.l[k] }
+      days.push({ d, a: i, b: j, o: m.o[i], h: hi, l: lo, c: m.c[j], full: j - i + 1 >= HT_BPD - 1 && Math.floor(m.t[j] / HT_DAY) == d && (m.t[j] % HT_DAY) >= HT_DAY - 9e5 });
+    }
+    i = j + 1;
+  }
+  const C = days.map(x => x.c), e20 = htEma(C, 20), e50 = htEma(C, 50), tr = [];
+  days.forEach((x, k) => { const pc = k ? days[k - 1].c : x.o; tr.push(Math.max(x.h - x.l, Math.abs(x.h - pc), Math.abs(x.l - pc)) / pc) });
+  days.forEach((x, k) => {
+    /* Bare tidligere døgn brukes, så det ikke ser fremover */
+    if (k < 50) { x.ok = false; return }
+    x.ok = true; const p = k - 1;
+    x.tr = C[p] > e50[p] && e20[p] > e50[p] ? 1 : C[p] < e50[p] && e20[p] < e50[p] ? -1 : 0;
+    let s = 0; for (let q = k - 14; q < k; q++) s += tr[q]; x.atr = s / 14;
+    x.ph = days[p].h; x.pl = days[p].l; x.pd = days[p].d == x.d - 1;
+  });
+  /* RSI(2) på 1 t: verdien er kjent ved slutten av hver hele time */
+  const rs = new Float64Array(n).fill(NaN); let ag = null, al = null, prev = null;
+  for (let k = 0; k < n; k++) {
+    if ((m.t[k] % 36e5) != 27e5) continue; /* siste 15m-bar i timen */
+    const c = m.c[k];
+    if (prev != null) { const ch = c - prev, g = ch > 0 ? ch : 0, l = ch < 0 ? -ch : 0;
+      if (ag == null) { ag = g; al = l } else { ag = (ag + g) / 2; al = (al + l) / 2 }
+      rs[k] = al == 0 ? 100 : 100 - 100 / (1 + ag / al) }
+    prev = c;
+  }
+  return { s: m.s, m, days, rs };
+}
+
+const htOff = (m, k, x) => Math.round((m.t[k] - x.d * HT_DAY) / 9e5); /* bar nr i døgnet, 0–95 */
+const htAllow = (dir, x, side) => dir == "both" || (dir == "long" && side > 0) || (dir == "short" && side < 0) || (dir == "trend" && x.tr == side);
+
+/* Finner dagens inngang for ett marked. Gir {k, px, dir} eller null */
+function htEntry(P, x, st, dir) {
+  const m = P.m, H = m.h, L = m.l, O = m.o;
+  const stop = (k0, k1, up, dn) => { /* stoppordre over up / under dn */
+    for (let k = k0; k <= k1; k++) {
+      const u = up != null && H[k] >= up, d = dn != null && L[k] <= dn;
+      if (u && d) return null; /* begge i samme bar: uklart, hopp over dagen */
+      if (u) return { k, px: Math.max(up, O[k]), dir: 1, typ: "stop" };
+      if (d) return { k, px: Math.min(dn, O[k]), dir: -1, typ: "stop" };
+    } return null };
+  const lim = (k0, k1, bl, sl) => { /* kjøpsordre under bl / salgsordre over sl */
+    for (let k = k0; k <= k1; k++) {
+      const u = bl != null && L[k] <= bl, d = sl != null && H[k] >= sl;
+      if (u && d) return null;
+      if (u) return { k, px: Math.min(bl, O[k]), dir: 1, typ: "lim" };
+      if (d) return { k, px: Math.max(sl, O[k]), dir: -1, typ: "lim" };
+    } return null };
+  const at = off => { for (let k = x.a; k <= x.b; k++) if (htOff(m, k, x) >= off) return k; return x.b + 1 };
+  const UP = htAllow(dir, x, 1), DN = htAllow(dir, x, -1);
+  if (!UP && !DN) return null;
+  if (st == "asia" || st == "ny") {
+    const [r0, r1, e1] = st == "asia" ? [0, 32, 80] : [54, 58, 84];
+    const a = at(r0), b = at(r1); if (b <= a || b > x.b) return null;
+    let hi = -1e99, lo = 1e99; for (let k = a; k < b; k++) { if (H[k] > hi) hi = H[k]; if (L[k] < lo) lo = L[k] }
+    return stop(b, Math.min(x.b, at(e1) - 1), UP ? hi : null, DN ? lo : null);
+  }
+  if (st == "pd") { if (!x.pd) return null; return stop(x.a, Math.min(x.b, at(80) - 1), UP ? x.ph : null, DN ? x.pl : null) }
+  if (st == "open") { /* long/short: hver dag; begge/trend: i trendens retning */
+    const side = dir == "long" ? 1 : dir == "short" ? -1 : x.tr; if (!side) return null;
+    return { k: x.a, px: O[x.a], dir: side, typ: "mkt" } }
+  if (st == "pull") { const g = x.atr * 0.5; const L1 = (x.tr > 0 && UP) ? x.o * (1 - g) : null, S1 = (x.tr < 0 && DN) ? x.o * (1 + g) : null;
+    if (L1 == null && S1 == null) return null; return lim(x.a, Math.min(x.b, at(80) - 1), L1, S1) }
+  if (st == "fade") { const g = x.atr * 0.8; return lim(x.a, Math.min(x.b, at(80) - 1), UP ? x.o * (1 - g) : null, DN ? x.o * (1 + g) : null) }
+  if (st == "mom") { const k = at(58); if (k > x.b) return null; const side = m.c[k - 1] > x.o ? 1 : m.c[k - 1] < x.o ? -1 : 0;
+    if (!side || !htAllow(dir, x, side)) return null; return { k, px: O[k], dir: side, typ: "mkt" } }
+  if (st == "rsi") { const e1 = Math.min(x.b - 1, at(80) - 1);
+    for (let k = x.a; k <= e1; k++) { const r = P.rs[k]; if (isNaN(r)) continue;
+      if (r < 10 && UP) return { k: k + 1, px: O[k + 1], dir: 1, typ: "mkt" };
+      if (r > 90 && DN) return { k: k + 1, px: O[k + 1], dir: -1, typ: "mkt" } } return null }
+  return null;
+}
+
+/* Følger handelen til mål, stop eller døgnslutt. Ved mål og stop i samme bar: stop. */
+function htExit(P, x, e, tp, sl) {
+  const m = P.m, s = e.dir, T = e.px * (1 + s * tp), S = sl > 0 ? e.px * (1 - s * sl) : null;
+  for (let k = e.k; k <= x.b; k++) {
+    const hitS = S != null && (s > 0 ? m.l[k] <= S : m.h[k] >= S);
+    const hitT = (k > e.k || e.typ == "mkt") && (s > 0 ? m.h[k] >= T : m.l[k] <= T);
+    if (hitS) return { k, px: s > 0 ? Math.min(S, m.o[k]) : Math.max(S, m.o[k]), why: "stop" };
+    if (hitT) return { k, px: T, why: "mål" };
+  }
+  return { k: x.b, px: m.c[x.b], why: "døgnslutt" };
+}
+
+/* Kjører én strategi over flere markeder, maks én handel per døgn */
+/* o: {st, dir, tp (i %), sl (%; 0 = ingen), fee, slip (% per side), mk (avgift på limit-ordre i %, null = som markedsordre),
+      net (true = målet er tp % etter kostnader), only (marked eller ""), from, to (dag-nr)}
+   Med mk: limit-inngang og mål (som ligger som limit) betaler mk og har ingen slippage. Stop og døgnslutt er markedsordre. */
+function htRun(PS, o) {
+  const tk = (o.fee + o.slip) / 100, mk = o.mk == null ? tk : o.mk / 100, sl = o.sl / 100;
+  const cIn = e => e.typ == "lim" ? mk : tk, cOut = w => w == "mål" ? mk : tk;
+  const byDay = new Map();
+  PS.forEach((P, pi) => { if (o.only && P.s != o.only) return; P.days.forEach(x => { if (!x.ok || (o.from && x.d < o.from) || (o.to && x.d >= o.to)) return; let L = byDay.get(x.d); if (!L) byDay.set(x.d, L = []); L.push([pi, x]) }) });
+  const trades = [], ds = [...byDay.keys()].sort((a, b) => a - b);
+  for (const d of ds) {
+    let best = null;
+    for (const [pi, x] of byDay.get(d)) { const e = htEntry(PS[pi], x, o.st, o.dir); if (!e || e.k > x.b) continue;
+      const t = PS[pi].m.t[e.k]; if (!best || t < best.t) best = { t, pi, x, e } }
+    if (!best) continue;
+    const P = PS[best.pi], ci = cIn(best.e), tp = o.tp / 100 + (o.net ? ci + mk : 0);
+    const ex = htExit(P, best.x, best.e, tp, sl), g = best.e.dir * (ex.px - best.e.px) / best.e.px;
+    trades.push({ d, s: P.s, dir: best.e.dir, t0: best.t, t1: P.m.t[ex.k], en: best.e.px, ex: ex.px, why: ex.why, g, r: g - ci - cOut(ex.why) });
+  }
+  return trades;
+}
+
+/* Nøkkeltall. r er avkastning i % av pris; ved 1x størrelse er det også % av kontoen. */
+function htStats(tr, days) {
+  const n = tr.length; if (!n) return { n: 0 };
+  let s = 0, q = 0, w = 0, tp = 0, gp = 0, gl = 0, eq = 1, pk = 1, dd = 0, ls = 0, cur = 0;
+  for (const t of tr) { s += t.r; q += t.r * t.r; if (t.r > 0) { w++; gp += t.r } else { gl -= t.r } if (t.why == "mål") tp++;
+    eq *= 1 + t.r; if (eq > pk) pk = eq; dd = Math.max(dd, 1 - eq / pk); cur = t.r <= 0 ? cur + 1 : 0; ls = Math.max(ls, cur) }
+  const m = s / n, sd = Math.sqrt(Math.max(0, (q - n * m * m) / Math.max(1, n - 1)));
+  return { n, m, w: w / n, tp: tp / n, pf: gl ? gp / gl : 99, dd, ls, tot: eq - 1, t: sd ? m / (sd / Math.sqrt(n)) : 0, perWeek: days ? n / (days / 7) : 0 };
+}
+
+/* SizeProp Degen med størrelse f (1 = posisjon lik kontoen): mål 8 %, døgntap 2 %, maks fall 3 % fra start */
+function htDegen(tr, f, horizon) {
+  const out = { pass: 0, fail: 0, open: 0, days: [] };
+  const D = tr.map(t => t.d), first = D[0], last = D[D.length - 1];
+  for (let start = first; start + horizon <= last + 1; start += 7) {
+    let eq = 1, res = 0, i = tr.findIndex(t => t.d >= start);
+    if (i < 0) break;
+    for (; i < tr.length && tr[i].d < start + horizon; i++) { const r = tr[i].r * f;
+      /* verste punkt underveis anslås som stop-avstand hvis handelen gikk i minus */
+      eq *= 1 + r; if (r <= -0.02 || eq <= 0.97) { res = -1; break } if (eq >= 1.08) { res = 1; out.days.push(tr[i].d - start); break } }
+    res > 0 ? out.pass++ : res < 0 ? out.fail++ : out.open++;
+  }
+  const N = out.pass + out.fail + out.open; out.n = N; out.days.sort((a, b) => a - b);
+  out.med = out.days.length ? out.days[out.days.length >> 1] : null; return out;
+}
+
+
+/* ===== Hurtigtrades: fanen ===== */
+const HT_SYMS = ["PAXGUSDT", "BTCUSDT", "ETHUSDT", "SOLUSDT", "XRPUSDT", "BNBUSDT"];
+const HT_NAME = { PAXGUSDT: "Gull (PAXG → XAUT)", BTCUSDT: "BTC", ETHUSDT: "ETH", SOLUSDT: "SOL", XRPUSDT: "XRP", BNBUSDT: "BNB" };
+const HT_RAW = "https://raw.githubusercontent.com/tobiasskorstad/sktrade-data/hurtig-data/k15/";
+const htPct = (v, d = 2) => (v * 100).toFixed(d).replace(".", ",") + " %";
+const htNum = v => v >= 1000 ? v.toFixed(1) : v >= 10 ? v.toFixed(2) : v >= 1 ? v.toFixed(3) : v.toFixed(4);
+const htCls = v => v > 0 ? "var(--g)" : v < 0 ? "var(--r)" : "var(--mu)";
+let HTRES = null, HTPS = null, htBusy = false;
+
+async function htFetch(path) { for (const h of HOSTS) { try { const r = await fetch(`https://${h}${path}`); if (r.ok) return r.json() } catch (e) {} } throw new Error("Binance svarte ikke") }
+
+/* Dagens oppsett: samme regler som i backtesten (Tilbakefall i trend, kun long) */
+async function htToday() {
+  const g = $("htg"), f = Math.max(0.1, +$("htf").value || 0.5), acc = +($("acc") && $("acc").value) || 5000;
+  const mk = 0.00015, now = Date.now(), d0 = Math.floor(now / HT_DAY) * HT_DAY, cut = d0 + 20 * 36e5;
+  g.innerHTML = '<div class="nt">Henter dagsdata…</div>';
+  const res = await Promise.all(HT_SYMS.map(async s => {
+    try {
+      const k = await htFetch(`/api/v3/klines?symbol=${s}&interval=1d&limit=300`);
+      const last = k.at(-1); if (+last[0] != d0) throw new Error("dagens candle mangler");
+      const pr = k.slice(0, -1), C = pr.map(z => +z[4]), e20 = htEma(C, 20), e50 = htEma(C, 50), p = C.length - 1;
+      const tr = C[p] > e50[p] && e20[p] > e50[p] ? 1 : C[p] < e50[p] && e20[p] < e50[p] ? -1 : 0;
+      let a = 0; for (let q = p - 13; q <= p; q++) { const h = +pr[q][2], l = +pr[q][3], pc = +pr[q - 1][4]; a += Math.max(h - l, Math.abs(h - pc), Math.abs(l - pc)) / pc } a /= 14;
+      const o = +last[1], lo = +last[3], px = +last[4], lim = o * (1 - 0.5 * a);
+      return { s, tr, a, o, lo, px, lim, tp: lim * (1 + 0.005 + 2 * mk), sl: lim * 0.98, hit: lo <= lim };
+    } catch (e) { return { s, err: e.message || "feil" } }
+  }));
+  const act = res.filter(r => !r.err && r.tr > 0), size = acc * f;
+  g.innerHTML = res.map(r => {
+    if (r.err) return `<div class="box"><h3>${HT_NAME[r.s]}</h3><div class="nt">Fikk ikke data: ${r.err}</div></div>`;
+    const tt = r.tr > 0 ? "▲ Opp" : r.tr < 0 ? "▼ Ned" : "Uklar";
+    if (r.tr <= 0) return `<div class="box"><h3>${HT_NAME[r.s]}</h3><p style="margin:6px 0;color:var(--mu)">Ingen ordre i dag. Dagstrend: ${tt}.</p><div class="nt">Kurs ${htNum(r.px)}</div></div>`;
+    const dist = r.px / r.lim - 1;
+    return `<div class="box"><h3>${HT_NAME[r.s]} <span style="color:var(--g);font-size:13px">${tt}</span></h3>
+     <table><tr><td>Kjøp limit</td><td><b>${htNum(r.lim)}</b> (${htPct(r.lim / r.o - 1)} fra åpning)</td></tr>
+     <tr><td>Mål (TP)</td><td>${htNum(r.tp)} (+${htPct(r.tp / r.lim - 1)})</td></tr>
+     <tr><td>Stop (SL)</td><td>${htNum(r.sl)} (−2,00 %)</td></tr>
+     <tr><td>Størrelse</td><td>$${Math.round(size)} (gevinst ≈ $${(size * 0.005).toFixed(0)}, tap ved stop ≈ $${(size * 0.0203).toFixed(0)})</td></tr>
+     <tr><td>Kurs nå</td><td>${htNum(r.px)} · ${r.hit ? '<b style="color:var(--au)">nivået er nådd i dag</b>' : htPct(dist) + " over nivået"}</td></tr></table>
+     ${r.s == "PAXGUSDT" ? '<div class="nt">SizeProp: XAUTUSDT. Bruk samme % fra XAUT sin døgnåpning.</div>' : ""}</div>`;
+  }).join("");
+  const left = cut - now;
+  $("htgs").innerHTML = (act.length ? `${act.length} ${act.length == 1 ? "marked har" : "markeder har"} trend opp i dag. ` : "Ingen markeder har trend opp i dag, så ingen handel. ") +
+    (left > 0 ? `Ordrer som ikke er fylt kl. 20:00 UTC (om ${Math.floor(left / 36e5)} t ${Math.round(left % 36e5 / 6e4)} min), slettes. ` : "Etter 20:00 UTC legges ingen nye ordrer i dag. ") +
+    `Døgnet lukker 00:00 UTC (${new Date(d0 + HT_DAY).toLocaleTimeString("no-NO", { hour: "2-digit", minute: "2-digit" })} norsk tid). Konto $${acc} fra Innstillinger. Med størrelse ${String(f).replace(".", ",")}× gir målet ${htPct(0.005 * f)} av kontoen. Ved 1× tar ett stop hele døgntapsgrensen på Degen (2 %).`;
+}
+
+/* Resultattabell fra data/hurtig.json */
+async function htLoadRes() {
+  try { const r = await fetch(yBase() + "/hurtig.json?t=" + Math.floor(Date.now() / 6e5), { cache: "no-store" }); if (!r.ok) throw new Error("svarte " + r.status); HTRES = await r.json(); htRenderRes() }
+  catch (e) { $("hro").innerHTML = `<div class="nt">Fant ikke resultatene (${e.message}). Kjør backtesten under.</div>` }
+}
+function htRenderRes() {
+  if (!HTRES) return; const sl = +$("hrsl").value, lim = $("hrmk").value == "lim";
+  const R = HTRES.rader.filter(r => r.sl == sl && (r.mk != null) == lim && !(r.dir == "both" && ["open", "pull"].includes(r.st))).sort((a, b) => b.m - a.m);
+  const c = v => `<span style="color:${htCls(v)}">${v >= 0 ? "+" : ""}${(v * 100).toFixed(3).replace(".", ",")} %</span>`;
+  $("hro").innerHTML = `<table style="min-width:760px"><tr><th>Strategi</th><th>Retning</th><th>Handler</th><th>Treff</th><th>Snitt per handel</th><th>Trening</th><th>Test</th><th>Markeder i pluss</th><th>Største fall</th><th>Degen 1×: bestått / brudd</th></tr>` +
+    R.map(r => `<tr><td>${HT_STRATS[r.st].n}</td><td>${HT_DIRS[r.dir]}</td><td>${r.n}</td><td>${Math.round(r.w * 100)} %</td><td>${c(r.m)}</td><td>${c(r.trm)}</td><td>${c(r.tem)}</td><td>${r.pos} av 6</td><td>${Math.round(r.dd * 100)} %</td><td>${Math.round(r.dgp * 100)} / ${Math.round(r.dgf * 100)} %</td></tr>`).join("") + "</table>";
+  $("hros").textContent = `Data ${HTRES.fra} til ${HTRES.til}, deling trening/test ${HTRES.deling}. Avgift ${String(HTRES.kost.fee).replace(".", ",")} % og slippage ${String(HTRES.kost.slip).replace(".", ",")} % per side${lim ? `, limit-avgift ${String(HTRES.kost.mk).replace(".", ",")} %` : ""}. Grønn i både trening og test: ${R.filter(r => r.trm > 0 && r.tem > 0).length} av ${R.length}.`;
+}
+
+/* Historikk: gzip fra grenen hurtig-data, pluss nyeste candles fra Binance */
+async function htHist(st) {
+  if (HTPS) return HTPS; const out = [];
+  for (const s of HT_SYMS) {
+    st.textContent = `Laster ${HT_NAME[s]} (${out.length + 1} av 6)…`;
+    const r = await fetch(HT_RAW + s + ".csv.gz"); if (!r.ok) throw new Error("fant ikke historikk for " + s);
+    const txt = await new Response(r.body.pipeThrough(new DecompressionStream("gzip"))).text();
+    const m = { s, t: [], o: [], h: [], l: [], c: [] };
+    for (const line of txt.trim().split("\n")) { const a = line.split(","); m.t.push(+a[0]); m.o.push(+a[1]); m.h.push(+a[2]); m.l.push(+a[3]); m.c.push(+a[4]) }
+    let t = m.t.at(-1) + 9e5;
+    try { for (let i = 0; i < 40 && t < Date.now() - 9e5; i++) { const k = await htFetch(`/api/v3/klines?symbol=${s}&interval=15m&limit=1000&startTime=${t}`); if (!k.length) break;
+      for (const z of k) { if (+z[0] <= m.t.at(-1) || +z[6] > Date.now()) continue; m.t.push(+z[0]); m.o.push(+z[1]); m.h.push(+z[2]); m.l.push(+z[3]); m.c.push(+z[4]) } t = +k.at(-1)[0] + 9e5; if (k.length < 1000) break } } catch (e) {}
+    out.push(htPrep(m)); await sleep(0);
+  }
+  return HTPS = out;
+}
+
+async function htBt() {
+  if (htBusy) return; htBusy = true; const b = $("hbgo"), st = $("hbst"); b.disabled = true; $("hbo").innerHTML = "";
+  try {
+    const PS = await htHist(st); st.textContent = "Regner…"; await sleep(30);
+    const mkv = $("hbmk").value.trim(), o = { st: $("hbs").value, dir: $("hbd").value, tp: +$("hbtp").value || 0.5, sl: +$("hbsl").value || 0, fee: +$("hbf").value || 0, slip: +$("hbsp").value || 0, mk: mkv === "" ? null : +mkv, net: $("hbn").checked, only: $("hbu").value };
+    const f = Math.max(0.1, +$("hbz").value || 0.5), tr = htRun(PS, o);
+    if (!tr.length) { st.textContent = "Ingen handler med disse innstillingene."; return }
+    const d0 = tr[0].d, d1 = tr.at(-1).d + 1, sp = Math.round(d0 + (d1 - d0) * 0.6), A = htStats(tr, d1 - d0), T1 = htStats(tr.filter(t => t.d < sp)), T2 = htStats(tr.filter(t => t.d >= sp)), dg = htDegen(tr, f, 365);
+    const c = v => `<b style="color:${htCls(v)}">${v >= 0 ? "+" : ""}${(v * 100).toFixed(3).replace(".", ",")} %</b>`, iso = d => new Date(d * HT_DAY).toISOString().slice(0, 10);
+    const grp = key => { const G = {}; tr.forEach(t => (G[key(t)] = G[key(t)] || []).push(t)); return Object.keys(G).sort().map(k => [k, htStats(G[k])]) };
+    const why = {}; tr.forEach(t => why[t.why] = (why[t.why] || 0) + 1);
+    /* kontokurve med valgt størrelse */
+    let eq = 1; const pts = tr.map(t => eq *= 1 + t.r * f), mn = Math.min(1, ...pts), mx = Math.max(1, ...pts), W = 600, Hh = 120;
+    const path = pts.map((v, i) => `${i ? "L" : "M"}${(i / (pts.length - 1 || 1) * W).toFixed(1)},${(Hh - (v - mn) / (mx - mn || 1) * Hh).toFixed(1)}`).join("");
+    $("hbo").innerHTML = `<div class="box"><h3>${HT_STRATS[o.st].n} · ${HT_DIRS[o.dir]}</h3>
+      <p style="margin:4px 0 10px">${A.n} handler (${A.perWeek.toFixed(1).replace(".", ",")} per uke), treff ${Math.round(A.w * 100)} %, mål nådd ${Math.round(A.tp * 100)} %. Snitt per handel ${c(A.m)}. Trening ${c(T1.m || 0)} · test ${c(T2.m || 0)} (deling ${iso(sp)}). t-verdi ${A.t.toFixed(1).replace(".", ",")}, gevinstfaktor ${A.pf.toFixed(2).replace(".", ",")}, lengste tapsrekke ${A.ls}.</p>
+      <p style="margin:0 0 10px">Med størrelse ${String(f).replace(".", ",")}× konto: totalt ${c(pts.at(-1) - 1)} over perioden. Degen (ny start hver uke, 365 dager): bestått ${Math.round(dg.pass / dg.n * 100)} %, brudd ${Math.round(dg.fail / dg.n * 100)} %, ikke ferdig ${Math.round(dg.open / dg.n * 100)} %${dg.med != null ? `, median ${dg.med} dager til bestått` : ""}.</p>
+      <svg viewBox="0 0 ${W} ${Hh}" style="width:100%;height:120px;display:block" preserveAspectRatio="none"><path d="${path}" fill="none" stroke="var(--au)" stroke-width="1.6" vector-effect="non-scaling-stroke"/></svg>
+      <div class="nt">Kontokurve ${iso(d0)} – ${iso(d1 - 1)}. Utgang: ${Object.entries(why).map(([k, v]) => `${k} ${v}`).join(", ")}.</div></div>
+      <div class="nwg" style="margin-top:14px">
+       <div class="box"><h3>Per år</h3><table><tr><th>År</th><th>Handler</th><th>Treff</th><th>Snitt</th></tr>${grp(t => new Date(t.d * HT_DAY).getUTCFullYear()).map(([k, s]) => `<tr><td>${k}</td><td>${s.n}</td><td>${Math.round(s.w * 100)} %</td><td>${c(s.m)}</td></tr>`).join("")}</table></div>
+       <div class="box"><h3>Per marked (valgt som dagens handel)</h3><table><tr><th>Marked</th><th>Handler</th><th>Treff</th><th>Snitt</th></tr>${grp(t => t.s).map(([k, s]) => `<tr><td>${HT_NAME[k]}</td><td>${s.n}</td><td>${Math.round(s.w * 100)} %</td><td>${c(s.m)}</td></tr>`).join("")}</table></div>
+      </div>
+      <div class="box" style="margin-top:14px;overflow-x:auto"><h3>Siste 15 handler</h3><table><tr><th>Dato</th><th>Marked</th><th>Retning</th><th>Inn (UTC)</th><th>Inn</th><th>Ut</th><th>Utgang</th><th>Resultat</th></tr>${tr.slice(-15).reverse().map(t => `<tr><td>${iso(t.d)}</td><td>${HT_NAME[t.s]}</td><td>${t.dir > 0 ? "Long" : "Short"}</td><td>${new Date(t.t0).toISOString().slice(11, 16)}</td><td>${htNum(t.en)}</td><td>${htNum(t.ex)}</td><td>${t.why}</td><td>${c(t.r)}</td></tr>`).join("")}</table></div>`;
+    st.textContent = `Ferdig. Historikk til ${iso(Math.max(...PS.map(P => P.days.at(-1).d)))}.`;
+  } catch (e) { st.textContent = "Feil: " + (e.message || e) } finally { b.disabled = false; htBusy = false }
+}
+
+(function htInit() {
+  $("hbs").innerHTML = Object.entries(HT_STRATS).map(([k, v]) => `<option value="${k}"${k == "pull" ? " selected" : ""}>${v.n}</option>`).join("");
+  $("hbd").innerHTML = Object.entries(HT_DIRS).map(([k, v]) => `<option value="${k}"${k == "long" ? " selected" : ""}>${v}</option>`).join("");
+  $("hbs").onchange = () => { $("hbst").textContent = HT_STRATS[$("hbs").value].d };
+  $("hrsl").onchange = $("hrmk").onchange = htRenderRes;
+  $("htgo1").onclick = () => htToday().catch(e => $("htg").innerHTML = `<div class="nt">Feil: ${e.message}</div>`);
+  $("hbgo").onclick = htBt;
+  const v = store("sk_htf"); if (v) $("htf").value = v; $("htf").onchange = () => { store("sk_htf", $("htf").value); htToday() };
+})();
+let htLoaded = 0;
+function htShow() { if (Date.now() - htLoaded < 3e5) return; htLoaded = Date.now(); htToday().catch(e => $("htg").innerHTML = `<div class="nt">Feil: ${e.message}</div>`); if (!HTRES) htLoadRes() }
+
+showTab(["sig","stk","nb","ht","an","set"].includes(store("sk_tab"))?store("sk_tab"):"sig");
 showSg(store("sk_sg"));
 renderEv();
 hlMids();setInterval(hlMids,1e4);
