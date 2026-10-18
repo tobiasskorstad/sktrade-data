@@ -263,6 +263,17 @@ details.more[open]{padding-bottom:16px}
   <div id="hro" style="overflow-x:auto"><div class="nt">Henter resultater…</div></div>
   <div class="nt" id="hros"></div>
 
+  <h2>Eksperiment med innstillinger (18.10.2026)</h2>
+  <p class="lead">Fortsatt én handel per døgn. Innstillingene er valgt på treningsperioden (2021-07 til 2024-09) og sjekket på testperioden (2024-09 til 2026-10), som de ikke har sett. I tillegg en walk-forward: hvert år velges det beste oppsettet fra de to årene før, og det handles året etter.</p>
+  <div class="box" style="overflow-x:auto"><table style="min-width:620px">
+   <tr><th>Hva ble endret</th><th>Antall oppsett</th><th>Resultat på test / walk-forward</th></tr>
+   <tr><td>8 strategier × retning × trendfilter (EMA 20/50, EMA 50, EMA 200, ingen) × dybde × mål 0,3–1 % × stop 0,5–3 % eller ingen</td><td>3 180 × 2 kostnader</td><td>Topp 50 fra trening: <b>+0,010 %</b> per handel med limit (28 av 50 i pluss), <b style="color:var(--r)">−0,064 %</b> med markedsordre (7 av 50)</td></tr>
+   <tr><td>Walk-forward, alle oppsettene over</td><td>1 per år</td><td>Limit: +0,017 % per handel, t 0,7, +15 % totalt ved 1× over 4 år. Markedsordre: −0,028 %, −22 %</td></tr>
+   <tr><td>Bare stop ≤ 2 % (må til for SizeProps døgntap)</td><td>1 680</td><td>Topp 20 fra trening: <b style="color:var(--r)">−0,012 %</b> (limit), <b style="color:var(--r)">−0,090 %</b> (markedsordre). Med markedsordre er ingen i pluss i både trening og test</td></tr>
+   <tr><td>Bare gull · bare krypto · BTC + ETH, holdetid 8 t, siste inngang 12 UTC, mål og stop i × ATR</td><td>960</td><td>Gull alene var best i trening (t ≈ 6), men 0 av 10 i pluss på test. Bare krypto: 10 av 10 i pluss (+0,07 %), men bare uten stop: verste handel −9 til −15 %, og Degen brytes i ca. 90 % av forsøkene</td></tr>
+  </table></div>
+  <p class="lead" style="margin-top:12px"><b>Konklusjon:</b> ingen innstilling holder når stoppen må være innenfor SizeProps grenser. Det som så bra ut i 2021–2023, er negativt i 2025–2026. Kanten forsvinner med tiden, og den fantes bare med limit-avgift. Mer leting her vil mest finne flaks.</p>
+
   <h2>Kjør backtest selv</h2>
   <p class="lead">Laster 15-minutters historikk fra 2021 (om lag 22 MB første gang) og legger til de siste dagene fra Binance. Kjøringen skjer her i nettleseren.</p>
   <div class="bar">
