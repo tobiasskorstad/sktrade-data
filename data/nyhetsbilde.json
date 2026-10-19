@@ -1,22 +1,22 @@
 {
- "updated": "19.10.2026 kl. 16:38",
- "note": "Bakteppe: Nasdaq falt 2,3 % 16.10 og hadde sin verste uke siden april 2025, på frykt for finansieringen av AI-utbyggingen. Olje (WTI) steg til $101 på risiko for opptrapping med Iran, mens 10-årsrenten er 5,09 %. Denne uken kommer kvartalstall fra SpaceX (20.10) og Tesla (21.10), og Fed-møtet 27.–28.10 kan gi ny renteheving.",
+ "updated": "19.10.2026 kl. 17:45",
+ "note": "Bakteppe: Oljeprisen faller 19.10 (WTI ca. $98) etter at Trump fritok russisk olje fra sanksjoner, og rentene går ned. Nasdaq-futures steg ca. 1 % før åpning etter verste uke siden april 2025. Denne uken: SpaceX (20.10) og Tesla (21.10), og Fed-møtet 27.–28.10 kan gi ny renteheving.",
  "items": [
   {
    "nm": "Gull (XAU)",
    "name": "Gull",
    "grp": "core",
    "dir": "blandet",
-   "why": "Handlet rundt $4 168 16.10, under motstanden ved $4 200. Høye realrenter trekker ned, mens Iran-risiko og svakere dollar gir støtte.",
+   "why": "Steg ca. 0,25 % til rundt $4 175 19.10 da olje og renter falt. Holder seg under motstanden ved $4 200 før Fed-møtet.",
    "event": "Fed-møte 28.10",
    "src": [
     {
-     "t": "investingLive 16.10",
-     "u": "https://investinglive.com/news/investinglive-americas-market-news-wrap-nasdaq-sinks-and-oil-jumps/"
+     "t": "TradingKey 19.10",
+     "u": "https://tradingkey.com/analysis/stocks/us-stocks/262223737-us-premarket-oil-falls-trump-eases-russia-sanctions-intel-mu-sndk-memory-stocks-rise-tradingkey"
     },
     {
-     "t": "XTB 15.10",
-     "u": "https://www.xtb.com/int/market-analysis/news-and-research/gold-sell-off-over-central-banks-buy-the-most-in-nearly-two-years"
+     "t": "investingLive 16.10",
+     "u": "https://investinglive.com/news/investinglive-americas-market-news-wrap-nasdaq-sinks-and-oil-jumps/"
     }
    ]
   },
@@ -24,17 +24,17 @@
    "nm": "Bitcoin",
    "name": "Bitcoin",
    "grp": "core",
-   "dir": "ned",
-   "why": "Bitcoin-fondene hadde $679 mill. i utstrømming siste uke, og den varme inflasjonen sendte kursen mot $81 000. Strategy og Robinhood kjøper fortsatt.",
+   "dir": "blandet",
+   "why": "Steg ca. 1 % til rundt $82 800 19.10 på lavere oljepris. Fondene hadde likevel $229 mill. i utstrømming uken 12.–16.10, og kursen har gått sidelengs ($80 000–87 000) en måned.",
    "event": "Fed-møte 28.10",
    "src": [
     {
-     "t": "Caleb & Brown 13.10",
-     "u": "https://calebandbrown.com/blog/weekly-rollup-october-13-2026/"
+     "t": "KuCoin 19.10",
+     "u": "https://www.kucoin.com/news/flash/bitcoin-price-rises-amid-black-monday-fears-etfs-see-229m-outflow"
     },
     {
-     "t": "Quartz 14.10",
-     "u": "https://qz.com/bitcoin-price-falls-september-cpi-inflation-101426"
+     "t": "Investing.com 19.10",
+     "u": "https://www.investing.com/news/cryptocurrency-news/bitcoin-rises-to-near-83k-amid-some-relief-from-falling-oil-prices-4956420"
     }
    ]
   },
@@ -43,16 +43,16 @@
    "name": "Ethereum",
    "grp": "core",
    "dir": "ned",
-   "why": "Ni dager på rad med utstrømming fra ETH-fondene (−$542 mill. på en uke). BitMine sier de slutter å kjøpe ved 5 % av tilbudet, og de er nesten der.",
+   "why": "ETH-fondene hadde $320 mill. i utstrømming uken 12.–16.10, mer enn bitcoin-fondene. Kursen var rundt $2 406 19.10, kun +0,4 %.",
    "event": "Glamsterdam-test på Hoodi ca. 27.10",
    "src": [
     {
-     "t": "Caleb & Brown 13.10",
-     "u": "https://calebandbrown.com/blog/weekly-rollup-october-13-2026/"
+     "t": "KuCoin 19.10",
+     "u": "https://www.kucoin.com/news/flash/bitcoin-price-rises-amid-black-monday-fears-etfs-see-229m-outflow"
     },
     {
-     "t": "Crypto.com 07.10",
-     "u": "https://crypto.com/uk/market-updates/best-crypto-to-watch-october-2026"
+     "t": "Investing.com 19.10",
+     "u": "https://www.investing.com/news/cryptocurrency-news/bitcoin-rises-to-near-83k-amid-some-relief-from-falling-oil-prices-4956420"
     }
    ]
   },
@@ -374,17 +374,17 @@
    "nm": "Nvidia",
    "name": "Nvidia",
    "grp": "stk",
-   "dir": "ned",
-   "why": "Falt til $217,23 15.10, ca. 11 % under toppen. Brikkeaksjene har falt åtte dager på rad, lengste rekke på 16 år, på tvil om AI-investeringene og CoreWeaves gjeld.",
+   "dir": "blandet",
+   "why": "Steg ca. 1,5 % før åpning 19.10 etter fall til $217 15.10, ca. 11 % under toppen. Tvilen om AI-investeringene er ikke borte.",
    "event": "Kvartalstall ventet sent i november",
    "src": [
     {
-     "t": "Gotrade 16.10",
-     "u": "https://www.heygotrade.com/en/news/nvidia-nvda-stock-news-october-16-2026/"
+     "t": "TradingKey 19.10",
+     "u": "https://tradingkey.com/analysis/stocks/us-stocks/262223737-us-premarket-oil-falls-trump-eases-russia-sanctions-intel-mu-sndk-memory-stocks-rise-tradingkey"
     },
     {
-     "t": "KuCoin 16.10",
-     "u": "https://www.kucoin.com/news/flash/chip-stocks-fall-for-8-straight-days-amid-ai-spending-doubts"
+     "t": "Gotrade 16.10",
+     "u": "https://www.heygotrade.com/en/news/nvidia-nvda-stock-news-october-16-2026/"
     }
    ]
   }
