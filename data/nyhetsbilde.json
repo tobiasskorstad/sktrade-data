@@ -1,22 +1,22 @@
 {
- "updated": "16.10.2026 kl. 21:42",
- "note": "Bakteppe: inflasjonen i USA steg til 3,7 % i september (ventet 3,6 %), og Fed kan heve renten igjen fra 3,75–4,00 % på møtet 27.–28. oktober. Høye lange renter presser krypto, gull og teknologiaksjer. TSMC-tallene 15.10 viste at etterspørselen etter avanserte brikker fortsatt er svært sterk.",
+ "updated": "19.10.2026 kl. 15:50",
+ "note": "Bakteppe: Nasdaq falt 2,3 % 16.10 og hadde sin verste uke siden april 2025, på frykt for finansieringen av AI-utbyggingen. Olje (WTI) steg til $101 på risiko for opptrapping med Iran, mens 10-årsrenten er 5,09 %. Fed-møtet 27.–28.10 kan gi ny renteheving.",
  "items": [
   {
    "nm": "Gull (XAU)",
    "name": "Gull",
    "grp": "core",
    "dir": "blandet",
-   "why": "Falt under $4 100 etter inflasjonstallene, fordi høyere realrente gjør gull mindre attraktivt. Sentralbankene kjøpte 63 tonn i september, mest siden november 2024.",
+   "why": "Handlet rundt $4 168 16.10, under motstanden ved $4 200. Høye realrenter trekker ned, mens Iran-risiko og svakere dollar gir støtte.",
    "event": "Fed-møte 28.10",
    "src": [
     {
-     "t": "XTB 15.10",
-     "u": "https://www.xtb.com/int/market-analysis/news-and-research/gold-sell-off-over-central-banks-buy-the-most-in-nearly-two-years"
+     "t": "investingLive 16.10",
+     "u": "https://investinglive.com/news/investinglive-americas-market-news-wrap-nasdaq-sinks-and-oil-jumps/"
     },
     {
-     "t": "Coin Edition 15.10",
-     "u": "https://coinedition.com/bitcoin-stocks-and-metals-slide-as-hot-cpi-revives-fed-rate-hike-fears/"
+     "t": "XTB 15.10",
+     "u": "https://www.xtb.com/int/market-analysis/news-and-research/gold-sell-off-over-central-banks-buy-the-most-in-nearly-two-years"
     }
    ]
   },
@@ -61,9 +61,13 @@
    "name": "Solana",
    "grp": "core",
    "dir": "opp",
-   "why": "Alpenglow-oppgraderingen skal aktiveres på mainnet 21.10 og kutte bekreftelsestiden til ca. 150 ms. Mastercard lanserte en stablecoin på Solana.",
+   "why": "Alpenglow aktiveres på mainnet 21.10 ca. kl. 16:50 norsk tid og skal kutte bekreftelsestiden fra 12,8 s til ca. 150 ms. Overgangen gir en kort pause i transaksjonene.",
    "event": "Alpenglow 21.10",
    "src": [
+    {
+     "t": "Solana Compass 13.10",
+     "u": "https://solanacompass.com/news/anza-sets-alpenglow-mainnet-date-solanas-consensus-switch-is-scheduled-for-october-21-at-about-1450-utc"
+    },
     {
      "t": "Crypto Briefing 13.10",
      "u": "https://cryptobriefing.com/solanas-alpenglow-upgrade-to-enhance-transaction-speed-on-october-21/"
@@ -370,17 +374,17 @@
    "nm": "Nvidia",
    "name": "Nvidia",
    "grp": "stk",
-   "dir": "blandet",
-   "why": "Steg 1 % til $228,52 13.10 og kjøper en minoritetspost i Doctolib. TSMC-tallene 15.10 (+51 %, rekord $46,7 mrd.) viser sterk brikkeetterspørsel, men høye renter trekker ned.",
+   "dir": "ned",
+   "why": "Falt til $217,23 15.10, ca. 11 % under toppen. Brikkeaksjene har falt åtte dager på rad, lengste rekke på 16 år, på tvil om AI-investeringene og CoreWeaves gjeld.",
    "event": "Kvartalstall ventet sent i november",
    "src": [
     {
-     "t": "TSMC (SEC) 15.10",
-     "u": "https://www.sec.gov/Archives/edgar/data/0001046179/000104617926000726/a3q26e_withguidancexfinal.htm"
+     "t": "Gotrade 16.10",
+     "u": "https://www.heygotrade.com/en/news/nvidia-nvda-stock-news-october-16-2026/"
     },
     {
-     "t": "Gotrade 14.10",
-     "u": "https://www.heygotrade.com/en/news/nvidia-nvda-stock-news-october-14-2026/"
+     "t": "KuCoin 16.10",
+     "u": "https://www.kucoin.com/news/flash/chip-stocks-fall-for-8-straight-days-amid-ai-spending-doubts"
     }
    ]
   }
