@@ -1,5 +1,5 @@
 {
- "updated": "19.10.2026 kl. 17:45",
+ "updated": "19.10.2026 kl. 18:45",
  "note": "Bakteppe: Oljeprisen faller 19.10 (WTI ca. $98) etter at Trump fritok russisk olje fra sanksjoner, og rentene går ned. Nasdaq-futures steg ca. 1 % før åpning etter verste uke siden april 2025. Denne uken: SpaceX (20.10) og Tesla (21.10), og Fed-møtet 27.–28.10 kan gi ny renteheving.",
  "items": [
   {
@@ -357,16 +357,16 @@
    "name": "Tesla",
    "grp": "stk",
    "dir": "blandet",
-   "why": "Leverte 486 532 biler i Q3, bedre enn ventet, men 2,1 % færre enn i fjor. Barclays spekulerer i en sammenslåing med SpaceX.",
-   "event": "Kvartalstall 21.10 (etter stengetid)",
+   "why": "Leverte 486 532 biler og 13,7 GWh energilagring i Q3. Bilsalget var 2,1 % lavere enn i fjor. Marginene og Cybercab-planene er i fokus 21.10.",
+   "event": "Kvartalstall 21.10 (webcast kl. 23:30 norsk tid)",
    "src": [
+    {
+     "t": "Basenor 16.10",
+     "u": "https://www.basenor.com/blogs/news/spacex-and-tesla-both-report-q3-2026-earnings-this-week"
+    },
     {
      "t": "Not a Tesla App",
      "u": "https://www.notateslaapp.com/news/4759/tesla-announces-q3-2026-vehicle-deliveries-beating-analyst-estimates"
-    },
-    {
-     "t": "Tesla Oracle",
-     "u": "https://www.teslaoracle.com/?p=66789"
     }
    ]
   },
