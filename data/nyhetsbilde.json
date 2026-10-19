@@ -1,6 +1,6 @@
 {
- "updated": "19.10.2026 kl. 15:50",
- "note": "Bakteppe: Nasdaq falt 2,3 % 16.10 og hadde sin verste uke siden april 2025, på frykt for finansieringen av AI-utbyggingen. Olje (WTI) steg til $101 på risiko for opptrapping med Iran, mens 10-årsrenten er 5,09 %. Fed-møtet 27.–28.10 kan gi ny renteheving.",
+ "updated": "19.10.2026 kl. 16:38",
+ "note": "Bakteppe: Nasdaq falt 2,3 % 16.10 og hadde sin verste uke siden april 2025, på frykt for finansieringen av AI-utbyggingen. Olje (WTI) steg til $101 på risiko for opptrapping med Iran, mens 10-årsrenten er 5,09 %. Denne uken kommer kvartalstall fra SpaceX (20.10) og Tesla (21.10), og Fed-møtet 27.–28.10 kan gi ny renteheving.",
  "items": [
   {
    "nm": "Gull (XAU)",
@@ -325,12 +325,12 @@
    "name": "SpaceX",
    "grp": "stk",
    "dir": "blandet",
-   "why": "Første kvartalsrapport etter børsnoteringen (Q2, 4.08) slo forventningene med omsetning $7,81 mrd., men aksjen falt ca. 10 % på økte AI-investeringer. Analytikerne venter $12,9 mrd. i Q3.",
-   "event": "Kvartalstall Q3 (dato ikke satt)",
+   "why": "Legger fram Q3-tall 20.10 etter stengetid. Analytikerne venter omsetning på $12,9 mrd. Etter Q2 falt aksjen ca. 10 % på økte AI-investeringer, selv om tallene slo forventningene.",
+   "event": "Kvartalstall 20.10 (kl. 22:30 norsk tid)",
    "src": [
     {
-     "t": "HDFC Sky 05.08",
-     "u": "https://hdfcsky.com/news/spacex-shares-tumble10percent-in-premarket-trade-after1stearnings-report-since-ipo"
+     "t": "SpaceX IR 16.10",
+     "u": "https://ir.spacex.com/updates/releases-details/2026/SpaceX-to-Post-Third-Quarter-2026-Results-and-Host-Webcast-on-October-20-2026-2026-QssQGye3im/default.aspx"
     },
     {
      "t": "Benzinga 16.10",
@@ -358,7 +358,7 @@
    "grp": "stk",
    "dir": "blandet",
    "why": "Leverte 486 532 biler i Q3, bedre enn ventet, men 2,1 % færre enn i fjor. Barclays spekulerer i en sammenslåing med SpaceX.",
-   "event": "Kvartalstall 21.10",
+   "event": "Kvartalstall 21.10 (etter stengetid)",
    "src": [
     {
      "t": "Not a Tesla App",
