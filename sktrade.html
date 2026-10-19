@@ -274,9 +274,37 @@ details.more[open]{padding-bottom:16px}
   </table></div>
   <p class="lead" style="margin-top:12px"><b>Konklusjon:</b> ingen innstilling holder når stoppen må være innenfor SizeProps grenser. Det som så bra ut i 2021–2023, er negativt i 2025–2026. Kanten forsvinner med tiden, og den fantes bare med limit-avgift. Mer leting her vil mest finne flaks.</p>
 
+  <h2>NY-åpning: bare 0–100 minutter (19.10.2026)</h2>
+  <div class="verdict">Ingen strategi holder. Vinduet er dårligere enn hele døgnet.</div>
+  <p class="lead">Samme test, men inngang og utgang må skje innen 100 minutter etter at børsen i New York åpner kl. 09:30 New York-tid (13:30 UTC om sommeren, 14:30 om vinteren, 15:30 norsk tid, men 14:30 i noen uker vår og høst når USA og Norge bytter tid på ulike datoer). Alt lukkes etter 100 minutter. Bare hverdager, 1 364 dager per marked fra juli 2021. 5-minutters data. Fortsatt maks én handel per dag, mål +0,5 % etter kostnader.</p>
+  <div class="box" style="overflow-x:auto"><table style="min-width:620px">
+   <tr><th>Steg</th><th>Antall oppsett</th><th>Resultat</th></tr>
+   <tr><td>Uten kostnader: finnes det noe å hente?</td><td>99</td><td>Best: short ved åpning når kursen har falt siden 00 UTC, <b style="color:var(--g)">+0,059 %</b> per handel (t 3,3), i pluss alle år 2021–2026. Men kostnaden er 0,07–0,13 % per handel, så med limit blir det <b style="color:var(--r)">−0,055 %</b>, og negativt alle år</td></tr>
+   <tr><td>11 strategier × retning × trendfilter × mål 0,3–1 % × stop 0,25–2 % eller ingen</td><td>4 340 × 2 kostnader</td><td>Limit: 20 av 4 220 i pluss i trening, 2 i både trening og test. Topp 50 fra trening gir <b style="color:var(--r)">−0,045 %</b> på test. Markedsordre: <b>ingen</b> i pluss i trening, topp 50 gir <b style="color:var(--r)">−0,116 %</b> på test</td></tr>
+   <tr><td>Bare stop ≤ 2 % (SizeProp)</td><td>3 376</td><td>0 i pluss i både trening og test, med begge ordretyper</td></tr>
+   <tr><td>Walk-forward (beste fra de to forrige årene, handlet året etter)</td><td>1 per år</td><td>Limit <b style="color:var(--r)">−0,029 %</b> per handel (−16 % totalt ved 1×), markedsordre <b style="color:var(--r)">−0,145 %</b> (−47 %)</td></tr>
+   <tr><td>Topp 30 × bare gull / bare krypto / BTC + ETH × siste inngang 30, 60 eller 100 min × mål og stop i × ATR</td><td>1 440</td><td>Beste i trening: tilbakefall 0,3 × ATR, kun long, bare krypto, inngang innen 60 min, +0,142 % i trening, men <b style="color:var(--r)">−0,001 %</b> på test. Walk-forward <b style="color:var(--r)">−0,079 %</b>. Gull alene er negativ allerede i trening</td></tr>
+  </table></div>
+  <div class="box" style="overflow-x:auto;margin-top:14px"><h3>Per strategi (limit, stop ≤ 2 %, beste innstilling fra trening)</h3><table style="min-width:520px">
+   <tr><th>Strategi</th><th>Beste t i trening</th><th>Snitt på test (topp 5)</th></tr>
+   <tr><td>Fade utslag fra åpning</td><td>0,1</td><td style="color:var(--r)">−0,044 %</td></tr>
+   <tr><td>Med nattens bevegelse</td><td>−0,2</td><td style="color:var(--r)">−0,072 %</td></tr>
+   <tr><td>Tilbakefall i trend</td><td>0,0</td><td style="color:var(--r)">−0,091 %</td></tr>
+   <tr><td>Brudd på åpningsrange (5, 15, 30 min)</td><td>−3,0</td><td style="color:var(--r)">−0,092 %</td></tr>
+   <tr><td>Gårsdagens topp/bunn</td><td>−1,8</td><td style="color:var(--r)">−0,111 %</td></tr>
+   <tr><td>Falskt brudd på åpningsrange</td><td>−1,8</td><td style="color:var(--r)">−0,112 %</td></tr>
+   <tr><td>Momentum fra åpning (5–60 min)</td><td>−2,1</td><td style="color:var(--r)">−0,113 %</td></tr>
+   <tr><td>Mot bevegelsen fra åpning</td><td>−2,0</td><td style="color:var(--r)">−0,117 %</td></tr>
+   <tr><td>RSI(2) på 5 min</td><td>−2,8</td><td style="color:var(--r)">−0,118 %</td></tr>
+   <tr><td>Mot nattens bevegelse</td><td>−1,2</td><td style="color:var(--r)">−0,126 %</td></tr>
+   <tr><td>Kjøp/salg ved åpning</td><td>−7,1</td><td style="color:var(--r)">−0,155 %</td></tr>
+  </table></div>
+  <p class="lead" style="margin-top:12px"><b>Hvorfor det går dårligere:</b> 100 minutter er kort tid. Mange handler når verken mål eller stop og lukkes på tid. Da betaler du full markedsavgift ut. Krypto svinger typisk 1,4–2,5 % i vinduet, men retningen er nesten tilfeldig. Gull når 0,5 % bare på 42 % av dagene. Den lille kanten som finnes før kostnader (rundt 0,05 %), er under halvparten av kostnaden.</p>
+
   <h2>Kjør backtest selv</h2>
-  <p class="lead">Laster 15-minutters historikk fra 2021 (om lag 22 MB første gang) og legger til de siste dagene fra Binance. Kjøringen skjer her i nettleseren.</p>
+  <p class="lead">Laster 15-minutters historikk fra 2021 (om lag 22 MB første gang, pluss 9 MB 5-minutters data for NY-vinduet) og legger til de siste dagene fra Binance. Kjøringen skjer her i nettleseren.</p>
   <div class="bar">
+   <label>Tidsvindu<select id="hbw"><option value="day" selected>Hele døgnet (15 min)</option><option value="ny">NY-åpning 0–100 min (5 min)</option></select></label>
    <label>Strategi<select id="hbs"></select></label>
    <label>Retning<select id="hbd"></select></label>
    <label>Mål (%)<input id="hbtp" type="number" value="0.5" step="0.1"></label>
@@ -291,7 +319,7 @@ details.more[open]{padding-bottom:16px}
   </div>
   <div class="nt" id="hbst"></div><div id="hbo"></div>
 
-  <div class="ft">Data: Binance spot 15 min (PAXG for gull, SizeProp bruker XAUT, som følger gull med samme %). Dagstrend: forrige døgns sluttkurs og EMA 20 mot EMA 50 på dagsgraf. ATR: snitt av de 14 siste døgnenes utslag i %. Inngang med stoppordre fylles på nivået, eller på åpningen hvis kursen hopper forbi. Limit-ordre fylles når kursen berører nivået (optimistisk: i praksis står du i kø). Når mål og stop treffes i samme 15-minutters candle, regnes stop. Mål regnes ikke i samme candle som inngangen, unntatt ved markedsordre. Kostnader: avgift 0,045 % per side (som Hyperliquid taker) og slippage 0,02 % per side. «Limit der det går» gir 0,015 % avgift og ingen slippage på limit-inngang og på målet. Det er ukjent om SizeProp har lavere avgift på limit-ordre. Degen-simuleringen starter en ny evaluering hver uke og bruker SizeProps grenser (mål 8 %, døgntap 2 %, maks fall 3 %) med den størrelsen du velger. Den ser bare på resultatet av hver handel, ikke svingningene underveis, så den er for snill. 192 kombinasjoner er testet. Noen vil se gode ut ved flaks. Ikke finansiell rådgivning.</div>
+  <div class="ft">Data: Binance spot 15 min (PAXG for gull, SizeProp bruker XAUT, som følger gull med samme %). Dagstrend: forrige døgns sluttkurs og EMA 20 mot EMA 50 på dagsgraf. ATR: snitt av de 14 siste døgnenes utslag i %. Inngang med stoppordre fylles på nivået, eller på åpningen hvis kursen hopper forbi. Limit-ordre fylles når kursen berører nivået (optimistisk: i praksis står du i kø). Når mål og stop treffes i samme 15-minutters candle, regnes stop. Mål regnes ikke i samme candle som inngangen, unntatt ved markedsordre. Kostnader: avgift 0,045 % per side (som Hyperliquid taker) og slippage 0,02 % per side. «Limit der det går» gir 0,015 % avgift og ingen slippage på limit-inngang og på målet. Det er ukjent om SizeProp har lavere avgift på limit-ordre. Degen-simuleringen starter en ny evaluering hver uke og bruker SizeProps grenser (mål 8 %, døgntap 2 %, maks fall 3 %) med den størrelsen du velger. Den ser bare på resultatet av hver handel, ikke svingningene underveis, så den er for snill. 192 kombinasjoner er testet. Noen vil se gode ut ved flaks. NY-vinduet: åpningen er 09:30 New York-tid med amerikansk sommertid (13:30 eller 14:30 UTC). Amerikanske helligdager er tatt med som vanlige hverdager. Gårsdagens topp/bunn, trend og ATR er per UTC-døgn fra dagene før. Ikke finansiell rådgivning.</div>
  </section>
 
  <section class="pn" id="pAn">
@@ -1504,12 +1532,107 @@ async function htHist(st) {
   return HTPS = out;
 }
 
+/* ===== Hurtigtrades i NY-vinduet: 0–100 min etter 09:30 New York-tid (5m-data) ===== */
+const HT_RAW5 = "https://raw.githubusercontent.com/tobiasskorstad/sktrade-data/hurtig-data/k5/";
+const HT_NYN = { orb: "Brudd på åpningsrange", orbr: "Falskt brudd på åpningsrange", mom: "Momentum fra åpning", rev: "Mot bevegelsen fra åpning", on: "Med nattens bevegelse", onr: "Mot nattens bevegelse", open: "Kjøp/salg ved åpning", pull: "Tilbakefall i trend", fade: "Fade utslag fra åpning", pd: "Gårsdagens topp/bunn", rsi: "RSI(2) på 5 min" };
+const HT_NYD = { orb: "Høyeste/laveste de første {k} min. Stoppordre over/under etter det.", orbr: "Kursen bryter åpningsrangen ({k} min) og lukker tilbake inni. Gå motsatt vei.", mom: "Etter {k} min: gå i retningen kursen har gått siden åpningen.", rev: "Etter {k} min: gå mot retningen kursen har gått siden åpningen.",
+  on: "Ved åpningen: gå i samme retning som kursen har gått siden 00 UTC{kk}.", onr: "Ved åpningen: gå mot retningen kursen har gått siden 00 UTC{kk}.", open: "Markedsordre ved åpningen.", pull: "Limit {k} × ATR under åpningskursen når dagstrenden er opp (over når den er ned).",
+  fade: "Limit {k} × ATR under og over åpningskursen.", pd: "Stoppordre over gårsdagens høyeste / under laveste.", rsi: "RSI(2) på 5 min under {k} → long, over {k2} → short." };
+const HT_NYV = ["orb:5", "orb:15", "orb:30", "orbr:15", "mom:15", "mom:30", "rev:15", "rev:30", "on:0", "on:0.3", "onr:0", "open:0", "pull:0.2", "pull:0.3", "fade:0.1", "fade:0.3", "pd:0", "rsi:10"];
+const htNyLbl = v => { const [s, k] = v.split(":"); return HT_NYN[s] + (["orb", "orbr", "mom", "rev"].includes(s) ? ` (${k} min)` : ["pull", "fade"].includes(s) ? ` (${k.replace(".", ",")} × ATR)` : s == "rsi" ? ` (${k}/${100 - k})` : (s == "on" || s == "onr") && +k ? " (minst 0,3 × ATR)" : "") };
+const htNyDesc = v => { const [s, k] = v.split(":"); return HT_NYD[s].replace("{k2}", 100 - k).replace("{kk}", +k ? `, hvis bevegelsen er minst ${k.replace(".", ",")} × ATR` : "").replace("{k}", String(k).replace(".", ",")) };
+
+function htNyOpen(d) { const y = new Date(d * HT_DAY).getUTCFullYear(), sun = (mo, n) => { const f = (7 - new Date(Date.UTC(y, mo, 1)).getUTCDay()) % 7; return Date.UTC(y, mo, 1 + f + 7 * (n - 1)) / HT_DAY };
+  return d * HT_DAY + ((d >= sun(2, 2) && d < sun(10, 1)) ? 13.5 : 14.5) * 36e5 }
+
+function htNyPrep(P, m5) {
+  const byT = new Map(); m5.t.forEach((t, i) => byT.set(t, i));
+  const rs = new Float64Array(m5.t.length).fill(NaN); let ag = null, al = null, prev = null, pd = -1;
+  for (let k = 0; k < m5.t.length; k++) { const d = Math.floor(m5.t[k] / HT_DAY); if (d != pd) { ag = al = prev = null; pd = d } const c = m5.c[k];
+    if (prev != null) { const ch = c - prev, g = ch > 0 ? ch : 0, l = ch < 0 ? -ch : 0; if (ag == null) { ag = g; al = l } else { ag = (ag + g) / 2; al = (al + l) / 2 } rs[k] = al == 0 ? 100 : 100 - 100 / (1 + ag / al) } prev = c }
+  const days = [];
+  for (const x of P.days) { if (!x.ok) continue; const wd = new Date(x.d * HT_DAY).getUTCDay(); if (wd == 0 || wd == 6) continue;
+    const t0 = htNyOpen(x.d), idx = []; for (let j = 0; j < 20; j++) { const i = byT.get(t0 + j * 3e5); if (i == null) break; idx.push(i) }
+    if (idx.length < 20) continue; days.push({ d: x.d, t0, idx, tr: x.tr, atr: x.atr, ph: x.ph, pl: x.pl, pd: x.pd, dopen: x.o, p0: m5.o[idx[0]] }) }
+  return { s: P.s, m: m5, rs, days };
+}
+
+function htNyEntry(P, x, st, k, dir) {
+  const m = P.m, I = x.idx, tr = x.tr, last = I.length - 1;
+  const ok = side => dir == "both" || (dir == "long" && side > 0) || (dir == "short" && side < 0) || (dir == "trend" && tr == side);
+  const UP = ok(1), DN = ok(-1); if (!UP && !DN) return null;
+  const stop = (j0, up, dn) => { for (let j = j0; j <= last; j++) { const i = I[j], u = up != null && m.h[i] >= up, d = dn != null && m.l[i] <= dn; if (u && d) return null;
+    if (u) return { j, px: Math.max(up, m.o[i]), dir: 1, typ: "stop" }; if (d) return { j, px: Math.min(dn, m.o[i]), dir: -1, typ: "stop" } } return null };
+  const lim = (j0, bl, sl) => { for (let j = j0; j <= last; j++) { const i = I[j], u = bl != null && m.l[i] <= bl, d = sl != null && m.h[i] >= sl; if (u && d) return null;
+    if (u) return { j, px: Math.min(bl, m.o[i]), dir: 1, typ: "lim" }; if (d) return { j, px: Math.max(sl, m.o[i]), dir: -1, typ: "lim" } } return null };
+  const mkt = (j, side) => j <= last && side && ok(side) ? { j, px: m.o[I[j]], dir: side, typ: "mkt" } : null;
+  const rng = n => { let hi = -1e99, lo = 1e99; for (let j = 0; j < n; j++) { const i = I[j]; if (m.h[i] > hi) hi = m.h[i]; if (m.l[i] < lo) lo = m.l[i] } return [hi, lo] };
+  switch (st) {
+    case "orb": { const n = k / 5, [hi, lo] = rng(n); return stop(n, UP ? hi : null, DN ? lo : null) }
+    case "orbr": { const n = k / 5, [hi, lo] = rng(n); let br = 0;
+      for (let j = n; j < last; j++) { const i = I[j]; if (!br) { if (m.h[i] > hi) br = 1; else if (m.l[i] < lo) br = -1 }
+        if (br > 0 && m.c[i] < hi) return mkt(j + 1, -1); if (br < 0 && m.c[i] > lo) return mkt(j + 1, 1) } return null }
+    case "mom": case "rev": { const n = k / 5; const mv = m.c[I[n - 1]] / x.p0 - 1; return mkt(n, Math.sign(mv) * (st == "rev" ? -1 : 1)) }
+    case "on": case "onr": { const mv = x.p0 / x.dopen - 1; if (Math.abs(mv) < k * x.atr) return null; return mkt(0, Math.sign(mv) * (st == "onr" ? -1 : 1)) }
+    case "open": return mkt(0, dir == "long" ? 1 : dir == "short" ? -1 : tr);
+    case "pull": { const g = x.atr * k; return lim(0, UP && tr > 0 ? x.p0 * (1 - g) : null, DN && tr < 0 ? x.p0 * (1 + g) : null) }
+    case "fade": { const g = x.atr * k; return lim(0, UP ? x.p0 * (1 - g) : null, DN ? x.p0 * (1 + g) : null) }
+    case "pd": if (!x.pd) return null; return stop(0, UP ? Math.max(x.ph, x.p0 * 1.0001) : null, DN ? Math.min(x.pl, x.p0 * 0.9999) : null);
+    case "rsi": { for (let j = 0; j < last; j++) { const r = P.rs[I[j]]; if (isNaN(r)) continue; if (r < k && UP) return mkt(j + 1, 1); if (r > 100 - k && DN) return mkt(j + 1, -1) } return null }
+  }
+  return null;
+}
+
+/* Samme felt som htRun, så visningen kan brukes likt. Alt lukkes ved 100 min. */
+function htNyRun(PS, o) {
+  const [st, k0] = o.st.split(":"), k = +k0, tk = (o.fee + o.slip) / 100, mk = o.mk == null ? tk : o.mk / 100, sl = o.sl / 100;
+  const byDay = new Map();
+  PS.forEach((P, pi) => { if (o.only && P.s != o.only) return; P.days.forEach(x => { let L = byDay.get(x.d); if (!L) byDay.set(x.d, L = []); L.push([pi, x]) }) });
+  const out = [];
+  for (const d of [...byDay.keys()].sort((a, b) => a - b)) {
+    let best = null; for (const [pi, x] of byDay.get(d)) { const e = htNyEntry(PS[pi], x, st, k, o.dir); if (e && (!best || e.j < best.e.j)) best = { pi, x, e } }
+    if (!best) continue;
+    const P = PS[best.pi], m = P.m, x = best.x, e = best.e, s = e.dir, I = x.idx, ci = e.typ == "lim" ? mk : tk, tp = o.tp / 100 + (o.net ? ci + mk : 0);
+    const T = e.px * (1 + s * tp), S = sl > 0 ? e.px * (1 - s * sl) : null; let ex = null;
+    for (let j = e.j; j < I.length; j++) { const i = I[j], hs = S != null && (s > 0 ? m.l[i] <= S : m.h[i] >= S), ht = (j > e.j || e.typ == "mkt") && (s > 0 ? m.h[i] >= T : m.l[i] <= T);
+      if (hs) { ex = { j, px: s > 0 ? Math.min(S, m.o[i]) : Math.max(S, m.o[i]), why: "stop" }; break } if (ht) { ex = { j, px: T, why: "mål" }; break } }
+    if (!ex) ex = { j: I.length - 1, px: m.c[I[I.length - 1]], why: "100 min" };
+    const g = s * (ex.px - e.px) / e.px;
+    out.push({ d, s: P.s, dir: s, t0: m.t[I[e.j]], t1: m.t[I[ex.j]] + 3e5, en: e.px, ex: ex.px, why: ex.why, g, r: g - ci - (ex.why == "mål" ? mk : tk) });
+  }
+  return out;
+}
+
+let HTPS5 = null;
+async function htHistNY(st) {
+  if (HTPS5) return HTPS5; const P15 = await htHist(st), out = [];
+  for (const P of P15) { const s = P.s;
+    st.textContent = `Laster 5-minutters data for ${HT_NAME[s]} (${out.length + 1} av 6)…`;
+    const r = await fetch(HT_RAW5 + s + ".csv.gz"); if (!r.ok) throw new Error("fant ikke 5m-historikk for " + s);
+    const txt = await new Response(r.body.pipeThrough(new DecompressionStream("gzip"))).text();
+    const m = { t: [], o: [], h: [], l: [], c: [] };
+    for (const line of txt.trim().split("\n")) { const a = line.split(","); m.t.push(+a[0]); m.o.push(+a[1]); m.h.push(+a[2]); m.l.push(+a[3]); m.c.push(+a[4]) }
+    let t = m.t.at(-1) + 3e5;
+    try { for (let i = 0; i < 30 && t < Date.now() - 3e5; i++) { const k = await htFetch(`/api/v3/klines?symbol=${s}&interval=5m&limit=1000&startTime=${t}`); if (!k.length) break;
+      for (const z of k) { const mi = Math.floor(+z[0] / 6e4) % 1440; if (+z[0] <= m.t.at(-1) || +z[6] > Date.now() || mi < 720 || mi >= 1020) continue; m.t.push(+z[0]); m.o.push(+z[1]); m.h.push(+z[2]); m.l.push(+z[3]); m.c.push(+z[4]) }
+      t = +k.at(-1)[0] + 3e5; if (k.length < 1000) break } } catch (e) {}
+    out.push(htNyPrep(P, m)); await sleep(0) }
+  return HTPS5 = out;
+}
+function htWin() {
+  const ny = $("hbw").value == "ny";
+  $("hbs").innerHTML = ny ? HT_NYV.map(v => `<option value="${v}"${v == "on:0" ? " selected" : ""}>${htNyLbl(v)}</option>`).join("")
+    : Object.entries(HT_STRATS).map(([k, v]) => `<option value="${k}"${k == "pull" ? " selected" : ""}>${v.n}</option>`).join("");
+  if (ny) { $("hbd").value = "short"; $("hbsl").value = "1" } else { $("hbd").value = "long"; $("hbsl").value = "2" }
+  $("hbst").textContent = ny ? htNyDesc($("hbs").value) : HT_STRATS[$("hbs").value].d;
+}
+
 async function htBt() {
   if (htBusy) return; htBusy = true; const b = $("hbgo"), st = $("hbst"); b.disabled = true; $("hbo").innerHTML = "";
   try {
-    const PS = await htHist(st); st.textContent = "Regner…"; await sleep(30);
+    const NY = $("hbw").value == "ny", PS = NY ? await htHistNY(st) : await htHist(st); st.textContent = "Regner…"; await sleep(30);
     const mkv = $("hbmk").value.trim(), o = { st: $("hbs").value, dir: $("hbd").value, tp: +$("hbtp").value || 0.5, sl: +$("hbsl").value || 0, fee: +$("hbf").value || 0, slip: +$("hbsp").value || 0, mk: mkv === "" ? null : +mkv, net: $("hbn").checked, only: $("hbu").value };
-    const f = Math.max(0.1, +$("hbz").value || 0.5), tr = htRun(PS, o);
+    const f = Math.max(0.1, +$("hbz").value || 0.5), tr = NY ? htNyRun(PS, o) : htRun(PS, o);
     if (!tr.length) { st.textContent = "Ingen handler med disse innstillingene."; return }
     const d0 = tr[0].d, d1 = tr.at(-1).d + 1, sp = Math.round(d0 + (d1 - d0) * 0.6), A = htStats(tr, d1 - d0), T1 = htStats(tr.filter(t => t.d < sp)), T2 = htStats(tr.filter(t => t.d >= sp)), dg = htDegen(tr, f, 365);
     const c = v => `<b style="color:${htCls(v)}">${v >= 0 ? "+" : ""}${(v * 100).toFixed(3).replace(".", ",")} %</b>`, iso = d => new Date(d * HT_DAY).toISOString().slice(0, 10);
@@ -1518,7 +1641,7 @@ async function htBt() {
     /* kontokurve med valgt størrelse */
     let eq = 1; const pts = tr.map(t => eq *= 1 + t.r * f), mn = Math.min(1, ...pts), mx = Math.max(1, ...pts), W = 600, Hh = 120;
     const path = pts.map((v, i) => `${i ? "L" : "M"}${(i / (pts.length - 1 || 1) * W).toFixed(1)},${(Hh - (v - mn) / (mx - mn || 1) * Hh).toFixed(1)}`).join("");
-    $("hbo").innerHTML = `<div class="box"><h3>${HT_STRATS[o.st].n} · ${HT_DIRS[o.dir]}</h3>
+    $("hbo").innerHTML = `<div class="box"><h3>${NY ? "NY-åpning · " + htNyLbl(o.st) : HT_STRATS[o.st].n} · ${HT_DIRS[o.dir]}</h3>
       <p style="margin:4px 0 10px">${A.n} handler (${A.perWeek.toFixed(1).replace(".", ",")} per uke), treff ${Math.round(A.w * 100)} %, mål nådd ${Math.round(A.tp * 100)} %. Snitt per handel ${c(A.m)}. Trening ${c(T1.m || 0)} · test ${c(T2.m || 0)} (deling ${iso(sp)}). t-verdi ${A.t.toFixed(1).replace(".", ",")}, gevinstfaktor ${A.pf.toFixed(2).replace(".", ",")}, lengste tapsrekke ${A.ls}.</p>
       <p style="margin:0 0 10px">Med størrelse ${String(f).replace(".", ",")}× konto: totalt ${c(pts.at(-1) - 1)} over perioden. Degen (ny start hver uke, 365 dager): bestått ${Math.round(dg.pass / dg.n * 100)} %, brudd ${Math.round(dg.fail / dg.n * 100)} %, ikke ferdig ${Math.round(dg.open / dg.n * 100)} %${dg.med != null ? `, median ${dg.med} dager til bestått` : ""}.</p>
       <svg viewBox="0 0 ${W} ${Hh}" style="width:100%;height:120px;display:block" preserveAspectRatio="none"><path d="${path}" fill="none" stroke="var(--au)" stroke-width="1.6" vector-effect="non-scaling-stroke"/></svg>
@@ -1533,9 +1656,9 @@ async function htBt() {
 }
 
 (function htInit() {
-  $("hbs").innerHTML = Object.entries(HT_STRATS).map(([k, v]) => `<option value="${k}"${k == "pull" ? " selected" : ""}>${v.n}</option>`).join("");
   $("hbd").innerHTML = Object.entries(HT_DIRS).map(([k, v]) => `<option value="${k}"${k == "long" ? " selected" : ""}>${v}</option>`).join("");
-  $("hbs").onchange = () => { $("hbst").textContent = HT_STRATS[$("hbs").value].d };
+  $("hbw").onchange = htWin; htWin(); $("hbst").textContent = "";
+  $("hbs").onchange = () => { $("hbst").textContent = $("hbw").value == "ny" ? htNyDesc($("hbs").value) : HT_STRATS[$("hbs").value].d };
   $("hrsl").onchange = $("hrmk").onchange = htRenderRes;
   $("htgo1").onclick = () => htToday().catch(e => $("htg").innerHTML = `<div class="nt">Feil: ${e.message}</div>`);
   $("hbgo").onclick = htBt;
