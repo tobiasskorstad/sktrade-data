@@ -1,392 +1,392 @@
 {
- "updated": "19.10.2026 kl. 18:45",
- "note": "Bakteppe: Oljeprisen faller 19.10 (WTI ca. $98) etter at Trump fritok russisk olje fra sanksjoner, og rentene går ned. Nasdaq-futures steg ca. 1 % før åpning etter verste uke siden april 2025. Denne uken: SpaceX (20.10) og Tesla (21.10), og Fed-møtet 27.–28.10 kan gi ny renteheving.",
- "items": [
-  {
-   "nm": "Gull (XAU)",
-   "name": "Gull",
-   "grp": "core",
-   "dir": "blandet",
-   "why": "Steg ca. 0,25 % til rundt $4 175 19.10 da olje og renter falt. Holder seg under motstanden ved $4 200 før Fed-møtet.",
-   "event": "Fed-møte 28.10",
-   "src": [
+  "updated": "19.10.2026 kl. 19:37",
+  "note": "Bakteppe: Oljeprisen faller 19.10 (WTI ca. $98) etter at Trump fritok russisk olje fra sanksjoner, og Nasdaq henter seg inn etter en svak uke, mens 10-årsrenten ligger rundt 5,1 %. Ca. 85 % venter uendret rente på Fed-møtet 27.–28.10 (CME FedWatch), men BofA venter heving. SpaceX (20.10) og Tesla (21.10) legger fram tall denne uken.",
+  "items": [
     {
-     "t": "TradingKey 19.10",
-     "u": "https://tradingkey.com/analysis/stocks/us-stocks/262223737-us-premarket-oil-falls-trump-eases-russia-sanctions-intel-mu-sndk-memory-stocks-rise-tradingkey"
+      "nm": "Gull (XAU)",
+      "name": "Gull",
+      "grp": "core",
+      "dir": "blandet",
+      "why": "Steg ca. 0,25 % til rundt $4 175 19.10 da olje og renter falt. Holder seg under motstanden ved $4 200 før Fed-møtet.",
+      "event": "Fed-møte 28.10",
+      "src": [
+        {
+          "t": "TradingKey 19.10",
+          "u": "https://tradingkey.com/analysis/stocks/us-stocks/262223737-us-premarket-oil-falls-trump-eases-russia-sanctions-intel-mu-sndk-memory-stocks-rise-tradingkey"
+        },
+        {
+          "t": "investingLive 16.10",
+          "u": "https://investinglive.com/news/investinglive-americas-market-news-wrap-nasdaq-sinks-and-oil-jumps/"
+        }
+      ]
     },
     {
-     "t": "investingLive 16.10",
-     "u": "https://investinglive.com/news/investinglive-americas-market-news-wrap-nasdaq-sinks-and-oil-jumps/"
-    }
-   ]
-  },
-  {
-   "nm": "Bitcoin",
-   "name": "Bitcoin",
-   "grp": "core",
-   "dir": "blandet",
-   "why": "Steg ca. 1 % til rundt $82 800 19.10 på lavere oljepris. Fondene hadde likevel $229 mill. i utstrømming uken 12.–16.10, og kursen har gått sidelengs ($80 000–87 000) en måned.",
-   "event": "Fed-møte 28.10",
-   "src": [
-    {
-     "t": "KuCoin 19.10",
-     "u": "https://www.kucoin.com/news/flash/bitcoin-price-rises-amid-black-monday-fears-etfs-see-229m-outflow"
+      "nm": "Bitcoin",
+      "name": "Bitcoin",
+      "grp": "core",
+      "dir": "blandet",
+      "why": "Steg ca. 1 % til rundt $82 800 19.10 på lavere oljepris. Fondene hadde likevel $229 mill. i utstrømming uken 12.–16.10, og kursen har gått sidelengs ($80 000–87 000) en måned.",
+      "event": "Fed-møte 28.10",
+      "src": [
+        {
+          "t": "KuCoin 19.10",
+          "u": "https://www.kucoin.com/news/flash/bitcoin-price-rises-amid-black-monday-fears-etfs-see-229m-outflow"
+        },
+        {
+          "t": "Investing.com 19.10",
+          "u": "https://www.investing.com/news/cryptocurrency-news/bitcoin-rises-to-near-83k-amid-some-relief-from-falling-oil-prices-4956420"
+        }
+      ]
     },
     {
-     "t": "Investing.com 19.10",
-     "u": "https://www.investing.com/news/cryptocurrency-news/bitcoin-rises-to-near-83k-amid-some-relief-from-falling-oil-prices-4956420"
-    }
-   ]
-  },
-  {
-   "nm": "Ethereum",
-   "name": "Ethereum",
-   "grp": "core",
-   "dir": "ned",
-   "why": "ETH-fondene hadde $320 mill. i utstrømming uken 12.–16.10, mer enn bitcoin-fondene. Kursen var rundt $2 406 19.10, kun +0,4 %.",
-   "event": "Glamsterdam-test på Hoodi ca. 27.10",
-   "src": [
-    {
-     "t": "KuCoin 19.10",
-     "u": "https://www.kucoin.com/news/flash/bitcoin-price-rises-amid-black-monday-fears-etfs-see-229m-outflow"
+      "nm": "Ethereum",
+      "name": "Ethereum",
+      "grp": "core",
+      "dir": "ned",
+      "why": "ETH-fondene hadde $320 mill. i utstrømming uken 12.–16.10, mer enn bitcoin-fondene. Kursen var rundt $2 406 19.10, kun +0,4 %.",
+      "event": "Glamsterdam-test på Hoodi ca. 27.10",
+      "src": [
+        {
+          "t": "KuCoin 19.10",
+          "u": "https://www.kucoin.com/news/flash/bitcoin-price-rises-amid-black-monday-fears-etfs-see-229m-outflow"
+        },
+        {
+          "t": "Investing.com 19.10",
+          "u": "https://www.investing.com/news/cryptocurrency-news/bitcoin-rises-to-near-83k-amid-some-relief-from-falling-oil-prices-4956420"
+        }
+      ]
     },
     {
-     "t": "Investing.com 19.10",
-     "u": "https://www.investing.com/news/cryptocurrency-news/bitcoin-rises-to-near-83k-amid-some-relief-from-falling-oil-prices-4956420"
-    }
-   ]
-  },
-  {
-   "nm": "Solana",
-   "name": "Solana",
-   "grp": "core",
-   "dir": "opp",
-   "why": "Alpenglow aktiveres på mainnet 21.10 ca. kl. 16:50 norsk tid og skal kutte bekreftelsestiden fra 12,8 s til ca. 150 ms. Overgangen gir en kort pause i transaksjonene.",
-   "event": "Alpenglow 21.10",
-   "src": [
-    {
-     "t": "Solana Compass 13.10",
-     "u": "https://solanacompass.com/news/anza-sets-alpenglow-mainnet-date-solanas-consensus-switch-is-scheduled-for-october-21-at-about-1450-utc"
+      "nm": "Solana",
+      "name": "Solana",
+      "grp": "core",
+      "dir": "opp",
+      "why": "Alpenglow aktiveres på mainnet 21.10 ca. kl. 16:50 norsk tid og skal kutte bekreftelsestiden fra 12,8 s til ca. 150 ms. Overgangen gir en kort pause i transaksjonene.",
+      "event": "Alpenglow 21.10",
+      "src": [
+        {
+          "t": "Solana Compass 13.10",
+          "u": "https://solanacompass.com/news/anza-sets-alpenglow-mainnet-date-solanas-consensus-switch-is-scheduled-for-october-21-at-about-1450-utc"
+        },
+        {
+          "t": "Crypto Briefing 13.10",
+          "u": "https://cryptobriefing.com/solanas-alpenglow-upgrade-to-enhance-transaction-speed-on-october-21/"
+        }
+      ]
     },
     {
-     "t": "Crypto Briefing 13.10",
-     "u": "https://cryptobriefing.com/solanas-alpenglow-upgrade-to-enhance-transaction-speed-on-october-21/"
-    }
-   ]
-  },
-  {
-   "nm": "XRP",
-   "name": "XRP",
-   "grp": "core",
-   "dir": "blandet",
-   "why": "Falt 9 % siste uke etter at Evernorth (XRPN) kom på Nasdaq. XRP-fondene har likevel hatt innstrømming i mange uker på rad.",
-   "event": "SEC-høring om kryptoregler slutter 20.10",
-   "src": [
-    {
-     "t": "Caleb & Brown 13.10",
-     "u": "https://calebandbrown.com/blog/weekly-rollup-october-13-2026/"
+      "nm": "XRP",
+      "name": "XRP",
+      "grp": "core",
+      "dir": "blandet",
+      "why": "Falt 9 % siste uke etter at Evernorth (XRPN) kom på Nasdaq. XRP-fondene har likevel hatt innstrømming i mange uker på rad.",
+      "event": "SEC-høring om kryptoregler slutter 20.10",
+      "src": [
+        {
+          "t": "Caleb & Brown 13.10",
+          "u": "https://calebandbrown.com/blog/weekly-rollup-october-13-2026/"
+        },
+        {
+          "t": "24/7 Wall St 12.10",
+          "u": "https://www.aol.com/articles/cardano-avalanche-litecoin-more-20-190027000.html"
+        }
+      ]
     },
     {
-     "t": "24/7 Wall St 12.10",
-     "u": "https://www.aol.com/articles/cardano-avalanche-litecoin-more-20-190027000.html"
-    }
-   ]
-  },
-  {
-   "nm": "BNB",
-   "name": "BNB",
-   "grp": "core",
-   "dir": "ned",
-   "why": "Under alle de viktige glidende snittene og brøt nedre Bollinger-bånd 15.10. Ingen nye nyheter fra Binance som kan snu det.",
-   "event": "–",
-   "src": [
-    {
-     "t": "Blockchain.News 15.10",
-     "u": "https://blockchain.news/news/20261015-price-prediction-bnb-lower-bollinger-band-breached-as-analysts"
-    }
-   ]
-  },
-  {
-   "nm": "TRON",
-   "name": "TRON",
-   "grp": "top",
-   "dir": "opp",
-   "why": "Kvartalsrapporten for Q3 viser $2,21 billioner i stablecoin-oppgjør og økende aktivitet på nettverket. Rapporten er sponset.",
-   "event": "–",
-   "src": [
-    {
-     "t": "GlobeNewswire 12.10",
-     "u": "https://www.globenewswire.com/news-release/2026/10/12/3379264/0/en/state-of-tron-q3-2026-report-highlights-2-21-trillion-in-stablecoin-settlement-amid-network-activity-growth.html"
-    }
-   ]
-  },
-  {
-   "nm": "Zcash",
-   "name": "Zcash",
-   "grp": "top",
-   "dir": "blandet",
-   "why": "Har steget kraftig i 2026, med søknad om spot-ETF fra Grayscale og mer bruk av skjulte transaksjoner. Etter så stor oppgang er fallhøyden stor.",
-   "event": "ETF-beslutning (dato ukjent)",
-   "src": [
-    {
-     "t": "Whale Alert",
-     "u": "https://whale-alert.io/stories/b3b901ba1af463/Zcash-surges-on-SEC-clearance-Multicoin-stake-disclosure-Grayscale-ETF-filing-and-shielded-supply-growth"
-    }
-   ]
-  },
-  {
-   "nm": "Hyperliquid",
-   "name": "Hyperliquid",
-   "grp": "top",
-   "dir": "blandet",
-   "why": "Tilbakekjøp og vekst i nye markeder (HIP-3) trekker opp. En stor token-opplåsing for teamet (9,9 mill. HYPE) trekker ned, og datoen er uklar.",
-   "event": "Opplåsing (dato uklar)",
-   "src": [
-    {
-     "t": "CoinMarketCap 15.10",
-     "u": "https://www.coinmarketcap.com/cmc-ai/hyperliquid/latest-updates/"
-    }
-   ]
-  },
-  {
-   "nm": "Dogecoin",
-   "name": "Dogecoin",
-   "grp": "top",
-   "dir": "ned",
-   "why": "Brøt ned fra en stigende kanal og tester $0,080. Kinesiske påtalemyndigheter vil inndra millioner av DOGE, noe som kan gi salgspress.",
-   "event": "–",
-   "src": [
-    {
-     "t": "CoinMarketCap 15.10",
-     "u": "https://coinmarketcap.com/cmc-ai/dogecoin/latest-updates/"
-    }
-   ]
-  },
-  {
-   "nm": "Monero",
-   "name": "Monero",
-   "grp": "top",
-   "dir": "blandet",
-   "why": "Lite ferske nyheter. Fjerning fra børser er fortsatt en risiko for personvernmynter, men kursen har klart seg godt i 2026.",
-   "event": "–",
-   "src": [
-    {
-     "t": "KuCoin",
-     "u": "https://www.kucoin.com/news/flash/monero-survives-73-exchange-delistings-in-2025-amid-privacy-gains-and-political-backing?lang=en_US"
-    }
-   ]
-  },
-  {
-   "nm": "Chainlink",
-   "name": "Chainlink",
-   "grp": "top",
-   "dir": "opp",
-   "why": "Infosys tok i bruk seks Chainlink-tjenester, og CCIP 2.0 ble lansert i slutten av september. Kursen steg over 20 % i september.",
-   "event": "–",
-   "src": [
-    {
-     "t": "Crypto.com 07.10",
-     "u": "https://crypto.com/uk/market-updates/best-crypto-to-watch-october-2026"
-    }
-   ]
-  },
-  {
-   "nm": "Cardano",
-   "name": "Cardano",
-   "grp": "top",
-   "dir": "ned",
-   "why": "Falt 11,5 % siste uke, nesten seks ganger så mye som bitcoin. Er fortsatt opp 9 % siste 30 dager.",
-   "event": "–",
-   "src": [
-    {
-     "t": "24/7 Wall St 15.10",
-     "u": "https://www.aol.com/articles/bitcoin-fell-2-week-5-143938000.html"
-    }
-   ]
-  },
-  {
-   "nm": "Stellar",
-   "name": "Stellar",
-   "grp": "top",
-   "dir": "blandet",
-   "why": "Lite ferske nyheter. Følger i hovedsak resten av kryptomarkedet.",
-   "event": "–",
-   "src": [
-    {
-     "t": "CoinMarketCap",
-     "u": "https://coinmarketcap.com/ja/cmc-ai/stellar/latest-updates/"
-    }
-   ]
-  },
-  {
-   "nm": "NEAR",
-   "name": "NEAR",
-   "grp": "top",
-   "dir": "blandet",
-   "why": "Doblet seg siste 30 dager, men falt 10,8 % siste uke. Den eneste av de svake altcoinene med innstrømming i fond 14.10.",
-   "event": "–",
-   "src": [
-    {
-     "t": "24/7 Wall St 15.10",
-     "u": "https://www.aol.com/articles/bitcoin-fell-2-week-5-143938000.html"
-    }
-   ]
-  },
-  {
-   "nm": "Bitcoin Cash",
-   "name": "Bitcoin Cash",
-   "grp": "top",
-   "dir": "blandet",
-   "why": "Lite ferske nyheter. Følger bitcoin.",
-   "event": "–",
-   "src": [
-    {
-     "t": "CoinMarketCap",
-     "u": "https://coinmarketcap.com/cmc-ai/bitcoin-cash/latest-updates/"
-    }
-   ]
-  },
-  {
-   "nm": "Litecoin",
-   "name": "Litecoin",
-   "grp": "top",
-   "dir": "opp",
-   "why": "Opp 20,7 % siste 30 dager. Halveringen i 2027 vil redusere nye mynter.",
-   "event": "Halvering 2027",
-   "src": [
-    {
-     "t": "24/7 Wall St 12.10",
-     "u": "https://www.aol.com/articles/cardano-avalanche-litecoin-more-20-190027000.html"
-    }
-   ]
-  },
-  {
-   "nm": "Uniswap",
-   "name": "Uniswap",
-   "grp": "top",
-   "dir": "blandet",
-   "why": "Gebyrbryteren er slått på, og en del av gebyrene brukes til å brenne UNI. Det er positivt på sikt, men ikke nytt i oktober.",
-   "event": "–",
-   "src": [
-    {
-     "t": "DEXTools",
-     "u": "https://www.dextools.io/news/uniswap-fee-switch-protocol-fees-uni-burn-onchain-july-2026"
-    }
-   ]
-  },
-  {
-   "nm": "Avalanche",
-   "name": "Avalanche",
-   "grp": "top",
-   "dir": "opp",
-   "why": "Opp 47,6 % siste 30 dager på fokus på tokenisering av tradisjonelle verdier. Er fortsatt over 90 % under toppen.",
-   "event": "–",
-   "src": [
-    {
-     "t": "24/7 Wall St 12.10",
-     "u": "https://www.aol.com/articles/cardano-avalanche-litecoin-more-20-190027000.html"
-    }
-   ]
-  },
-  {
-   "nm": "Sui",
-   "name": "Sui",
-   "grp": "top",
-   "dir": "ned",
-   "why": "Falt 11,5 % siste uke og 5,2 % på en dag 13.10, mer enn resten av markedet.",
-   "event": "–",
-   "src": [
-    {
-     "t": "24/7 Wall St 15.10",
-     "u": "https://www.aol.com/articles/bitcoin-fell-2-week-5-143938000.html"
+      "nm": "BNB",
+      "name": "BNB",
+      "grp": "core",
+      "dir": "ned",
+      "why": "Under alle de viktige glidende snittene og brøt nedre Bollinger-bånd 15.10. Ingen nye nyheter fra Binance som kan snu det.",
+      "event": "–",
+      "src": [
+        {
+          "t": "Blockchain.News 15.10",
+          "u": "https://blockchain.news/news/20261015-price-prediction-bnb-lower-bollinger-band-breached-as-analysts"
+        }
+      ]
     },
     {
-     "t": "Ted Pillows 13.10",
-     "u": "https://tedpillows.substack.com/p/crypto-and-finance-market-report-acb"
-    }
-   ]
-  },
-  {
-   "nm": "Gram (Toncoin)",
-   "name": "Gram (Toncoin)",
-   "grp": "top",
-   "dir": "opp",
-   "why": "Telegram utvidet tilgangen til lommeboken «Money» 9.10, og den skal på sikt ut til over 1 milliard brukere.",
-   "event": "Opplåsing 24.03.2027",
-   "src": [
-    {
-     "t": "CoinMarketCap",
-     "u": "https://coinmarketcap.com/cmc-ai/gram/latest-updates/"
-    }
-   ]
-  },
-  {
-   "nm": "SpaceX",
-   "name": "SpaceX",
-   "grp": "stk",
-   "dir": "blandet",
-   "why": "Legger fram Q3-tall 20.10 etter stengetid. Analytikerne venter omsetning på $12,9 mrd. Etter Q2 falt aksjen ca. 10 % på økte AI-investeringer, selv om tallene slo forventningene.",
-   "event": "Kvartalstall 20.10 (kl. 22:30 norsk tid)",
-   "src": [
-    {
-     "t": "SpaceX IR 16.10",
-     "u": "https://ir.spacex.com/updates/releases-details/2026/SpaceX-to-Post-Third-Quarter-2026-Results-and-Host-Webcast-on-October-20-2026-2026-QssQGye3im/default.aspx"
+      "nm": "TRON",
+      "name": "TRON",
+      "grp": "top",
+      "dir": "opp",
+      "why": "Kvartalsrapporten for Q3 viser $2,21 billioner i stablecoin-oppgjør og økende aktivitet på nettverket. Rapporten er sponset.",
+      "event": "–",
+      "src": [
+        {
+          "t": "GlobeNewswire 12.10",
+          "u": "https://www.globenewswire.com/news-release/2026/10/12/3379264/0/en/state-of-tron-q3-2026-report-highlights-2-21-trillion-in-stablecoin-settlement-amid-network-activity-growth.html"
+        }
+      ]
     },
     {
-     "t": "Benzinga 16.10",
-     "u": "https://www.benzinga.com/quote/spcx/earnings"
-    }
-   ]
-  },
-  {
-   "nm": "Microsoft",
-   "name": "Microsoft",
-   "grp": "stk",
-   "dir": "blandet",
-   "why": "Opp ca. 34 % siste tre måneder før kvartalstallene. Markedet venter Azure-vekst rundt 45 %, og investeringer på $175 mrd. i 2026 presser marginene.",
-   "event": "Kvartalstall 27.10",
-   "src": [
-    {
-     "t": "Trefis 01.10",
-     "u": "https://www.trefis.com/articles/617316/which-dates-could-move-microsoft-stock-most/2026-10-01"
-    }
-   ]
-  },
-  {
-   "nm": "Tesla",
-   "name": "Tesla",
-   "grp": "stk",
-   "dir": "blandet",
-   "why": "Leverte 486 532 biler og 13,7 GWh energilagring i Q3. Bilsalget var 2,1 % lavere enn i fjor. Marginene og Cybercab-planene er i fokus 21.10.",
-   "event": "Kvartalstall 21.10 (webcast kl. 23:30 norsk tid)",
-   "src": [
-    {
-     "t": "Basenor 16.10",
-     "u": "https://www.basenor.com/blogs/news/spacex-and-tesla-both-report-q3-2026-earnings-this-week"
+      "nm": "Zcash",
+      "name": "Zcash",
+      "grp": "top",
+      "dir": "blandet",
+      "why": "Har steget kraftig i 2026, med søknad om spot-ETF fra Grayscale og mer bruk av skjulte transaksjoner. Etter så stor oppgang er fallhøyden stor.",
+      "event": "ETF-beslutning (dato ukjent)",
+      "src": [
+        {
+          "t": "Whale Alert",
+          "u": "https://whale-alert.io/stories/b3b901ba1af463/Zcash-surges-on-SEC-clearance-Multicoin-stake-disclosure-Grayscale-ETF-filing-and-shielded-supply-growth"
+        }
+      ]
     },
     {
-     "t": "Not a Tesla App",
-     "u": "https://www.notateslaapp.com/news/4759/tesla-announces-q3-2026-vehicle-deliveries-beating-analyst-estimates"
-    }
-   ]
-  },
-  {
-   "nm": "Nvidia",
-   "name": "Nvidia",
-   "grp": "stk",
-   "dir": "blandet",
-   "why": "Steg ca. 1,5 % før åpning 19.10 etter fall til $217 15.10, ca. 11 % under toppen. Tvilen om AI-investeringene er ikke borte.",
-   "event": "Kvartalstall ventet sent i november",
-   "src": [
-    {
-     "t": "TradingKey 19.10",
-     "u": "https://tradingkey.com/analysis/stocks/us-stocks/262223737-us-premarket-oil-falls-trump-eases-russia-sanctions-intel-mu-sndk-memory-stocks-rise-tradingkey"
+      "nm": "Hyperliquid",
+      "name": "Hyperliquid",
+      "grp": "top",
+      "dir": "blandet",
+      "why": "Tilbakekjøp og vekst i nye markeder (HIP-3) trekker opp. En stor token-opplåsing for teamet (9,9 mill. HYPE) trekker ned, og datoen er uklar.",
+      "event": "Opplåsing (dato uklar)",
+      "src": [
+        {
+          "t": "CoinMarketCap 15.10",
+          "u": "https://www.coinmarketcap.com/cmc-ai/hyperliquid/latest-updates/"
+        }
+      ]
     },
     {
-     "t": "Gotrade 16.10",
-     "u": "https://www.heygotrade.com/en/news/nvidia-nvda-stock-news-october-16-2026/"
+      "nm": "Dogecoin",
+      "name": "Dogecoin",
+      "grp": "top",
+      "dir": "ned",
+      "why": "Brøt ned fra en stigende kanal og tester $0,080. Kinesiske påtalemyndigheter vil inndra millioner av DOGE, noe som kan gi salgspress.",
+      "event": "–",
+      "src": [
+        {
+          "t": "CoinMarketCap 15.10",
+          "u": "https://coinmarketcap.com/cmc-ai/dogecoin/latest-updates/"
+        }
+      ]
+    },
+    {
+      "nm": "Monero",
+      "name": "Monero",
+      "grp": "top",
+      "dir": "blandet",
+      "why": "Lite ferske nyheter. Fjerning fra børser er fortsatt en risiko for personvernmynter, men kursen har klart seg godt i 2026.",
+      "event": "–",
+      "src": [
+        {
+          "t": "KuCoin",
+          "u": "https://www.kucoin.com/news/flash/monero-survives-73-exchange-delistings-in-2025-amid-privacy-gains-and-political-backing?lang=en_US"
+        }
+      ]
+    },
+    {
+      "nm": "Chainlink",
+      "name": "Chainlink",
+      "grp": "top",
+      "dir": "opp",
+      "why": "Infosys tok i bruk seks Chainlink-tjenester, og CCIP 2.0 ble lansert i slutten av september. Kursen steg over 20 % i september.",
+      "event": "–",
+      "src": [
+        {
+          "t": "Crypto.com 07.10",
+          "u": "https://crypto.com/uk/market-updates/best-crypto-to-watch-october-2026"
+        }
+      ]
+    },
+    {
+      "nm": "Cardano",
+      "name": "Cardano",
+      "grp": "top",
+      "dir": "ned",
+      "why": "Falt 11,5 % siste uke, nesten seks ganger så mye som bitcoin. Er fortsatt opp 9 % siste 30 dager.",
+      "event": "–",
+      "src": [
+        {
+          "t": "24/7 Wall St 15.10",
+          "u": "https://www.aol.com/articles/bitcoin-fell-2-week-5-143938000.html"
+        }
+      ]
+    },
+    {
+      "nm": "Stellar",
+      "name": "Stellar",
+      "grp": "top",
+      "dir": "blandet",
+      "why": "Lite ferske nyheter. Følger i hovedsak resten av kryptomarkedet.",
+      "event": "–",
+      "src": [
+        {
+          "t": "CoinMarketCap",
+          "u": "https://coinmarketcap.com/ja/cmc-ai/stellar/latest-updates/"
+        }
+      ]
+    },
+    {
+      "nm": "NEAR",
+      "name": "NEAR",
+      "grp": "top",
+      "dir": "blandet",
+      "why": "Doblet seg siste 30 dager, men falt 10,8 % siste uke. Den eneste av de svake altcoinene med innstrømming i fond 14.10.",
+      "event": "–",
+      "src": [
+        {
+          "t": "24/7 Wall St 15.10",
+          "u": "https://www.aol.com/articles/bitcoin-fell-2-week-5-143938000.html"
+        }
+      ]
+    },
+    {
+      "nm": "Bitcoin Cash",
+      "name": "Bitcoin Cash",
+      "grp": "top",
+      "dir": "blandet",
+      "why": "Lite ferske nyheter. Følger bitcoin.",
+      "event": "–",
+      "src": [
+        {
+          "t": "CoinMarketCap",
+          "u": "https://coinmarketcap.com/cmc-ai/bitcoin-cash/latest-updates/"
+        }
+      ]
+    },
+    {
+      "nm": "Litecoin",
+      "name": "Litecoin",
+      "grp": "top",
+      "dir": "opp",
+      "why": "Opp 20,7 % siste 30 dager. Halveringen i 2027 vil redusere nye mynter.",
+      "event": "Halvering 2027",
+      "src": [
+        {
+          "t": "24/7 Wall St 12.10",
+          "u": "https://www.aol.com/articles/cardano-avalanche-litecoin-more-20-190027000.html"
+        }
+      ]
+    },
+    {
+      "nm": "Uniswap",
+      "name": "Uniswap",
+      "grp": "top",
+      "dir": "blandet",
+      "why": "Steg 3,2 % til ca. $7,42 19.10 da DeFi-tokenene ledet oppgangen i kryptomarkedet. Gebyrbryteren, der deler av gebyrene brenner UNI, er positivt på sikt.",
+      "event": "–",
+      "src": [
+        {
+          "t": "CoinDesk 19.10",
+          "u": "https://www.coindesk.com/markets/2026/10/19/bitcoin-extends-bounce-above-usd82-000-as-stocks-rebound-defi-tokens-lead-altcoin-gains"
+        }
+      ]
+    },
+    {
+      "nm": "Avalanche",
+      "name": "Avalanche",
+      "grp": "top",
+      "dir": "opp",
+      "why": "Opp 47,6 % siste 30 dager på fokus på tokenisering av tradisjonelle verdier. Er fortsatt over 90 % under toppen.",
+      "event": "–",
+      "src": [
+        {
+          "t": "24/7 Wall St 12.10",
+          "u": "https://www.aol.com/articles/cardano-avalanche-litecoin-more-20-190027000.html"
+        }
+      ]
+    },
+    {
+      "nm": "Sui",
+      "name": "Sui",
+      "grp": "top",
+      "dir": "ned",
+      "why": "Falt 11,5 % siste uke og 5,2 % på en dag 13.10, mer enn resten av markedet.",
+      "event": "–",
+      "src": [
+        {
+          "t": "24/7 Wall St 15.10",
+          "u": "https://www.aol.com/articles/bitcoin-fell-2-week-5-143938000.html"
+        },
+        {
+          "t": "Ted Pillows 13.10",
+          "u": "https://tedpillows.substack.com/p/crypto-and-finance-market-report-acb"
+        }
+      ]
+    },
+    {
+      "nm": "Gram (Toncoin)",
+      "name": "Gram (Toncoin)",
+      "grp": "top",
+      "dir": "opp",
+      "why": "Telegram utvidet tilgangen til lommeboken «Money» 9.10, og den skal på sikt ut til over 1 milliard brukere.",
+      "event": "Opplåsing 24.03.2027",
+      "src": [
+        {
+          "t": "CoinMarketCap",
+          "u": "https://coinmarketcap.com/cmc-ai/gram/latest-updates/"
+        }
+      ]
+    },
+    {
+      "nm": "SpaceX",
+      "name": "SpaceX",
+      "grp": "stk",
+      "dir": "blandet",
+      "why": "Legger fram Q3-tall 20.10 etter stengetid. Analytikerne venter omsetning på $12,9 mrd. Etter Q2 falt aksjen ca. 10 % på økte AI-investeringer, selv om tallene slo forventningene.",
+      "event": "Kvartalstall 20.10 (kl. 22:30 norsk tid)",
+      "src": [
+        {
+          "t": "SpaceX IR 16.10",
+          "u": "https://ir.spacex.com/updates/releases-details/2026/SpaceX-to-Post-Third-Quarter-2026-Results-and-Host-Webcast-on-October-20-2026-2026-QssQGye3im/default.aspx"
+        },
+        {
+          "t": "Benzinga 16.10",
+          "u": "https://www.benzinga.com/quote/spcx/earnings"
+        }
+      ]
+    },
+    {
+      "nm": "Microsoft",
+      "name": "Microsoft",
+      "grp": "stk",
+      "dir": "blandet",
+      "why": "Opp ca. 34 % siste tre måneder før kvartalstallene. Markedet venter Azure-vekst rundt 45 %, og investeringer på $175 mrd. i 2026 presser marginene.",
+      "event": "Kvartalstall 27.10",
+      "src": [
+        {
+          "t": "Trefis 01.10",
+          "u": "https://www.trefis.com/articles/617316/which-dates-could-move-microsoft-stock-most/2026-10-01"
+        }
+      ]
+    },
+    {
+      "nm": "Tesla",
+      "name": "Tesla",
+      "grp": "stk",
+      "dir": "blandet",
+      "why": "Leverte 486 532 biler og 13,7 GWh energilagring i Q3. Bilsalget var 2,1 % lavere enn i fjor. Marginene og Cybercab-planene er i fokus 21.10.",
+      "event": "Kvartalstall 21.10 (webcast kl. 23:30 norsk tid)",
+      "src": [
+        {
+          "t": "Basenor 16.10",
+          "u": "https://www.basenor.com/blogs/news/spacex-and-tesla-both-report-q3-2026-earnings-this-week"
+        },
+        {
+          "t": "Not a Tesla App",
+          "u": "https://www.notateslaapp.com/news/4759/tesla-announces-q3-2026-vehicle-deliveries-beating-analyst-estimates"
+        }
+      ]
+    },
+    {
+      "nm": "Nvidia",
+      "name": "Nvidia",
+      "grp": "stk",
+      "dir": "blandet",
+      "why": "Steg ca. 1,5 % før åpning 19.10 etter fall til $217 15.10, ca. 11 % under toppen. Tvilen om AI-investeringene er ikke borte.",
+      "event": "Kvartalstall ventet sent i november",
+      "src": [
+        {
+          "t": "TradingKey 19.10",
+          "u": "https://tradingkey.com/analysis/stocks/us-stocks/262223737-us-premarket-oil-falls-trump-eases-russia-sanctions-intel-mu-sndk-memory-stocks-rise-tradingkey"
+        },
+        {
+          "t": "Gotrade 16.10",
+          "u": "https://www.heygotrade.com/en/news/nvidia-nvda-stock-news-october-16-2026/"
+        }
+      ]
     }
-   ]
-  }
- ]
+  ]
 }
