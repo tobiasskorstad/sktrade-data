@@ -1,22 +1,22 @@
 {
-  "updated": "20.10.2026 kl. 15:40",
-  "note": "Bakteppe: Oljen snudde kraftig opp 20.10 (WTI +4 % til ca. $108, Brent ca. $111) etter Houthi-angrep på Saudi-Arabia, og Nasdaq-futures falt ca. 0,5 % med AI-aksjene svake. Ca. 85 % venter uendret rente på Fed-møtet 27.–28.10. SpaceX legger fram tall i kveld, Tesla 21.10.",
+  "updated": "20.10.2026 kl. 16:40",
+  "note": "Bakteppe: Råoljen steg over $100 fatet 20.10 etter nye angrep på Saudi-Arabia og skipsfart i Gulfen, mens 10-årsrenten falt til 5,09 % etter svake boligtall (−5,2 % i september). Dollarindeksen er ned 0,25 % til 101,7. Fed-møte 27.–28.10; SpaceX legger fram tall i kveld, Tesla 21.10.",
   "items": [
     {
       "nm": "Gull (XAU)",
       "name": "Gull",
       "grp": "core",
       "dir": "blandet",
-      "why": "Steg ca. 0,25 % til rundt $4 175 19.10 da olje og renter falt. Holder seg under motstanden ved $4 200 før Fed-møtet.",
+      "why": "Ned ca. 0,4 % til rundt $4 143 ved åpning 20.10, til tross for svakere dollar og lavere renter. Holder seg under $4 200 før Fed-møtet.",
       "event": "Fed-møte 28.10",
       "src": [
         {
-          "t": "TradingKey 19.10",
-          "u": "https://tradingkey.com/analysis/stocks/us-stocks/262223737-us-premarket-oil-falls-trump-eases-russia-sanctions-intel-mu-sndk-memory-stocks-rise-tradingkey"
+          "t": "Schwab 20.10",
+          "u": "https://www.schwab.com/learn/story/stock-market-update-open"
         },
         {
-          "t": "investingLive 16.10",
-          "u": "https://investinglive.com/news/investinglive-americas-market-news-wrap-nasdaq-sinks-and-oil-jumps/"
+          "t": "TradingKey 19.10",
+          "u": "https://tradingkey.com/analysis/stocks/us-stocks/262223737-us-premarket-oil-falls-trump-eases-russia-sanctions-intel-mu-sndk-memory-stocks-rise-tradingkey"
         }
       ]
     },
@@ -325,16 +325,16 @@
       "name": "SpaceX",
       "grp": "stk",
       "dir": "blandet",
-      "why": "Legger fram Q3-tall i kveld etter stengetid, samme dag som Netflix. Analytikerne venter omsetning på $12,9 mrd.; etter Q2 falt aksjen ca. 10 % på økte AI-investeringer.",
+      "why": "Legger fram Q3-tall i kveld; Schwab viser til ventet omsetning rundt $23 mrd. og resultat $0,13 per aksje. Barclays (14.10) mener en fusjon med Tesla kan kunngjøres før desember; ny lock-up-utløsning følger.",
       "event": "Kvartalstall 20.10 (kl. 22:30 norsk tid)",
       "src": [
         {
-          "t": "Reuters/KFGO 20.10",
-          "u": "https://kfgo.com/2026/10/20/nasdaq-futures-dip-as-oil-prices-climb-earnings-loom/"
+          "t": "Schwab 20.10",
+          "u": "https://www.schwab.com/learn/story/stock-market-update-open"
         },
         {
-          "t": "SpaceX IR 16.10",
-          "u": "https://ir.spacex.com/updates/releases-details/2026/SpaceX-to-Post-Third-Quarter-2026-Results-and-Host-Webcast-on-October-20-2026-2026-QssQGye3im/default.aspx"
+          "t": "24/7 Wall St 15.10",
+          "u": "https://247wallst.com/investing/2026/10/15/barclays-says-a-tesla-spacex-merger-could-be-announced-before-december/"
         }
       ]
     },
