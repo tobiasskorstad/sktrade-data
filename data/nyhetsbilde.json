@@ -1,6 +1,6 @@
 {
-  "updated": "19.10.2026 kl. 21:36",
-  "note": "Bakteppe: Oljeprisen faller 19.10 (WTI ca. $98) etter at Trump fritok russisk olje fra sanksjoner, og Nasdaq henter seg inn etter en svak uke, mens 10-årsrenten ligger rundt 5,1 %. Ca. 85 % venter uendret rente på Fed-møtet 27.–28.10 (CME FedWatch), men BofA venter heving. SpaceX (20.10) og Tesla (21.10) legger fram tall denne uken.",
+  "updated": "20.10.2026 kl. 15:40",
+  "note": "Bakteppe: Oljen snudde kraftig opp 20.10 (WTI +4 % til ca. $108, Brent ca. $111) etter Houthi-angrep på Saudi-Arabia, og Nasdaq-futures falt ca. 0,5 % med AI-aksjene svake. Ca. 85 % venter uendret rente på Fed-møtet 27.–28.10. SpaceX legger fram tall i kveld, Tesla 21.10.",
   "items": [
     {
       "nm": "Gull (XAU)",
@@ -25,12 +25,12 @@
       "name": "Bitcoin",
       "grp": "core",
       "dir": "blandet",
-      "why": "Steg ca. 1 % til rundt $82 800 19.10 på lavere oljepris. Fondene hadde likevel $229 mill. i utstrømming uken 12.–16.10, og kursen har gått sidelengs ($80 000–87 000) en måned.",
+      "why": "Rundt $81 600 20.10, ned ca. 0,5 %, da Nasdaq-futures falt og oljen steg. Fondene hadde største innstrømming på en måned 19.10 ifølge CoinDesk.",
       "event": "Fed-møte 28.10",
       "src": [
         {
-          "t": "KuCoin 19.10",
-          "u": "https://www.kucoin.com/news/flash/bitcoin-price-rises-amid-black-monday-fears-etfs-see-229m-outflow"
+          "t": "CoinDesk 20.10",
+          "u": "https://www.coindesk.com/de/newsletters/daybook-us"
         },
         {
           "t": "Investing.com 19.10",
@@ -325,16 +325,16 @@
       "name": "SpaceX",
       "grp": "stk",
       "dir": "blandet",
-      "why": "Legger fram Q3-tall 20.10 etter stengetid. Analytikerne venter omsetning på $12,9 mrd. Etter Q2 falt aksjen ca. 10 % på økte AI-investeringer, selv om tallene slo forventningene.",
+      "why": "Legger fram Q3-tall i kveld etter stengetid, samme dag som Netflix. Analytikerne venter omsetning på $12,9 mrd.; etter Q2 falt aksjen ca. 10 % på økte AI-investeringer.",
       "event": "Kvartalstall 20.10 (kl. 22:30 norsk tid)",
       "src": [
         {
-          "t": "SpaceX IR 16.10",
-          "u": "https://ir.spacex.com/updates/releases-details/2026/SpaceX-to-Post-Third-Quarter-2026-Results-and-Host-Webcast-on-October-20-2026-2026-QssQGye3im/default.aspx"
+          "t": "Reuters/KFGO 20.10",
+          "u": "https://kfgo.com/2026/10/20/nasdaq-futures-dip-as-oil-prices-climb-earnings-loom/"
         },
         {
-          "t": "Benzinga 16.10",
-          "u": "https://www.benzinga.com/quote/spcx/earnings"
+          "t": "SpaceX IR 16.10",
+          "u": "https://ir.spacex.com/updates/releases-details/2026/SpaceX-to-Post-Third-Quarter-2026-Results-and-Host-Webcast-on-October-20-2026-2026-QssQGye3im/default.aspx"
         }
       ]
     },
@@ -357,16 +357,16 @@
       "name": "Tesla",
       "grp": "stk",
       "dir": "blandet",
-      "why": "Leverte 486 532 biler og 13,7 GWh energilagring i Q3. Bilsalget var 2,1 % lavere enn i fjor. Marginene og Cybercab-planene er i fokus 21.10.",
+      "why": "Steg 3,8 % 19.10 før kvartalstallene. Leverte 486 532 biler i Q3, 2,1 % færre enn i fjor; marginer og Cybercab i fokus 21.10.",
       "event": "Kvartalstall 21.10 (webcast kl. 23:30 norsk tid)",
       "src": [
         {
-          "t": "Basenor 16.10",
-          "u": "https://www.basenor.com/blogs/news/spacex-and-tesla-both-report-q3-2026-earnings-this-week"
+          "t": "TipRanks 20.10",
+          "u": "https://www.tipranks.com/news/stock-market-today-oct-20-futures-mixed-as-oil-prices-rise-and-ai-stocks-retreat-again"
         },
         {
-          "t": "Not a Tesla App",
-          "u": "https://www.notateslaapp.com/news/4759/tesla-announces-q3-2026-vehicle-deliveries-beating-analyst-estimates"
+          "t": "Basenor 16.10",
+          "u": "https://www.basenor.com/blogs/news/spacex-and-tesla-both-report-q3-2026-earnings-this-week"
         }
       ]
     },
@@ -375,16 +375,16 @@
       "name": "Nvidia",
       "grp": "stk",
       "dir": "blandet",
-      "why": "Steg ca. 1,5 % før åpning 19.10 etter fall til $217 15.10, ca. 11 % under toppen. Tvilen om AI-investeringene er ikke borte.",
+      "why": "Steg 1,4 % 19.10, men var svakt ned før åpning 20.10 da AI- og brikkeaksjer falt igjen (Micron −2,5 %). Fortsatt ca. 10 % under toppen.",
       "event": "Kvartalstall ventet sent i november",
       "src": [
         {
-          "t": "TradingKey 19.10",
-          "u": "https://tradingkey.com/analysis/stocks/us-stocks/262223737-us-premarket-oil-falls-trump-eases-russia-sanctions-intel-mu-sndk-memory-stocks-rise-tradingkey"
+          "t": "TipRanks 20.10",
+          "u": "https://www.tipranks.com/news/stock-market-today-oct-20-futures-mixed-as-oil-prices-rise-and-ai-stocks-retreat-again"
         },
         {
-          "t": "Gotrade 16.10",
-          "u": "https://www.heygotrade.com/en/news/nvidia-nvda-stock-news-october-16-2026/"
+          "t": "Reuters/KFGO 20.10",
+          "u": "https://kfgo.com/2026/10/20/nasdaq-futures-dip-as-oil-prices-climb-earnings-loom/"
         }
       ]
     }
