@@ -174,7 +174,20 @@ details.more[open]{padding-bottom:16px}
 .toast{background:var(--card);color:var(--tx);border:1px solid var(--bd);border-left:5px solid var(--n);border-radius:10px;padding:10px 12px;box-shadow:0 4px 14px rgba(0,0,0,.25);font-size:13px;cursor:pointer}
 .toast.tp{border-left-color:var(--g)}.toast.sl{border-left-color:var(--r)}.toast.new{border-left-color:var(--b)}.toast.en{border-left-color:var(--au)}
 
+#kvg .c{padding:16px}#kvg .kh{display:flex;justify-content:space-between;gap:8px;align-items:baseline;flex-wrap:wrap}
+#kvg .kh h3{margin:0;font-size:17px}#kvg .kd{font-size:13px;color:var(--mu);margin:2px 0 10px}
+#kvg .kp{display:grid;grid-template-columns:1fr 1fr 1fr;gap:6px;margin:10px 0}
+#kvg .kp div{background:var(--soft);border-radius:9px;padding:7px 8px;font-size:12px;color:var(--mu);line-height:1.3}
+#kvg .kp b{display:block;font-size:14px;color:var(--tx);margin-top:2px}
+#kvg .kf{font-size:13px;margin:6px 0}#kvg .kf span{color:var(--mu)}
+#kvg table{font-size:12.5px;margin-top:8px}#kvg td,#kvg th{padding:5px 4px}
+#kvg .kw{font-size:13.5px;line-height:1.5;margin:8px 0 4px}
+#kvg .ko{font-size:12.5px;border-left:3px solid var(--au);background:var(--aus);padding:6px 9px;border-radius:6px;margin:8px 0}
+.kvx{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:14px;margin-bottom:22px}
+.kvx .box h3{margin:12px 0 4px;font-size:15px}.kvx .box p{margin:0 0 6px;font-size:13.5px;line-height:1.55;color:var(--tx)}
 @media(max-width:720px){
+ .seg{gap:2px;padding:3px}.seg button{padding:9px 1px!important;font-size:12px!important;letter-spacing:-.2px}
+ .kvx{grid-template-columns:1fr}#kvg .kp{grid-template-columns:1fr 1fr}
  .nwg{grid-template-columns:1fr}
  .seg button{padding:10px 4px;font-size:13.5px}
  .lgv{display:none}.smv{display:inline}
@@ -193,7 +206,7 @@ details.more[open]{padding-bottom:16px}
   <div class="brand"><b>SKTRADE</b><span>Gull, krypto og aksjer. Donchian 55/20 på dagsgraf, kun long</span></div>
   <div class="stat"><span id="lv">kobler til…</span><span id="up">laster…</span><button id="go" class="ghost" title="Hent signaler på nytt">Oppdater</button></div>
  </header>
- <nav class="nav"><div class="seg" id="nav"><button data-v="sig" class="on"><span class="lgv">Hovedliste</span><span class="smv">Hoved</span></button><button data-v="stk"><span class="lgv">Andre markeder</span><span class="smv">Andre</span></button><button data-v="nb"><span class="lgv">Nyhetsbilde</span><span class="smv">Nyheter</span></button><button data-v="ht"><span class="lgv">Hurtigtrades</span><span class="smv">Hurtig</span></button><button data-v="an">Analyse</button><button data-v="set"><span class="lgv">Innstillinger</span><span class="smv">Innst.</span></button></div></nav>
+ <nav class="nav"><div class="seg" id="nav"><button data-v="sig" class="on"><span class="lgv">Hovedliste</span><span class="smv">Hoved</span></button><button data-v="stk"><span class="lgv">Andre markeder</span><span class="smv">Andre</span></button><button data-v="nb"><span class="lgv">Nyhetsbilde</span><span class="smv">Nyheter</span></button><button data-v="kv"><span class="lgv">Kvartalsrapporter</span><span class="smv">Kvartal</span></button><button data-v="ht"><span class="lgv">Hurtigtrades</span><span class="smv">Hurtig</span></button><button data-v="an">Analyse</button><button data-v="set"><span class="lgv">Innstillinger</span><span class="smv">Innst.</span></button></div></nav>
 
  <section class="pn on" id="pSig">
   <div class="hero"><h1 id="hv">Henter dagens signaler…</h1><p id="hs"></p></div>
@@ -240,6 +253,21 @@ details.more[open]{padding-bottom:16px}
   <div class="ft">Nyhetsbildet er en kort oppsummering av ferske nyheter, kvartalsrapporter og kommende hendelser, satt sammen av Claude fra åpne kilder. «Opp» og «ned» er en vurdering av nyhetstonen, ikke en prognose, og er ikke testet som strategi. Bruk det som bakgrunn: signalene fra strategien gjelder fortsatt. Trend-kolonnen er beregnet fra dagsgrafen her på siden. Ikke finansiell rådgivning.</div>
  </section>
 
+ <section class="pn" id="pKv">
+  <div class="hero"><h1>Kvartalsrapporter</h1><p id="kvs">Henter…</p></div>
+  <div class="verdict" id="kvv">Regner ut historikk…</div>
+  <div class="kvx">
+   <div class="box"><h3>Hva er en kvartalsrapport?</h3><p>Børsnoterte selskaper i USA legger fram regnskapet fire ganger i året. Det skjer oftest rett etter at børsen stenger (kl. 22:00 norsk tid, 21:00 i ukene der USA og Norge har ulik sommertid) eller før den åpner. Etterpå svarer ledelsen på spørsmål i en telefonkonferanse.</p>
+    <h3>Tallene som betyr noe</h3><p><b>Omsetning</b> (salg), <b>resultat per aksje</b> (EPS, justert for engangsposter), <b>marginer</b> og <b>guiding</b>: selskapets eget anslag for neste kvartal. Guidingen og det ledelsen sier om framtiden flytter ofte kursen mer enn tallene for kvartalet som er over.</p></div>
+   <div class="box"><h3>Forventninger styrer reaksjonen</h3><p>Analytikerne lager et snitt av anslagene (konsensus). Kursen reagerer på avviket fra dette, ikke på tallene alene. Rundt tre av fire store selskaper slår forventningene, fordi de guider forsiktig. Et «slag» er derfor normalen og ligger allerede i prisen. «Slo forventningene, men falt» er vanlig.</p>
+    <h3>Forventet utslag</h3><p>Opsjonsmarkedet priser inn hvor stort hoppet blir dagen etter (± %), men ikke retningen. Det faktiske hoppet blir omtrent like ofte større som mindre.</p></div>
+   <div class="box"><h3>Hva betyr det for deg?</h3><p>Aksjene handles døgnet rundt som perps på Hyperliquid og SizeProp. Hoppet kommer derfor med en gang etter rapporten, i samme døgncandle (lukker kl. 00:00 UTC). En stop som står 4–5 % unna kan bli hoppet over, og et kjøps- eller salgssignal den natten kan være drevet av rapporten alene.</p>
+    <h3>Kan utfallet forutsies?</h3><p>Delvis. Om selskapet slår forventningene er ganske forutsigbart, og størrelsen på utslaget er priset av opsjonene. Retningen på kursen er nær et myntkast. Vurderingene under er bakgrunn, ikke signaler, og ikke finansiell rådgivning.</p></div>
+  </div>
+  <h2>Rapporter nå og framover</h2>
+  <div class="grid" id="kvg"></div>
+  <div class="ft" id="kvf">Forventninger og datoer er hentet fra åpne kilder (lenket i hvert kort) og satt sammen av Claude. Kursreaksjonen er regnet her på siden fra dagsdata (Yahoo, i sktrade-data): sluttkurs dagen etter rapporten mot sluttkurs før rapporten. Aksjene er ikke med i Telegram-varslene.</div>
+ </section>
  <section class="pn" id="pHt">
   <div class="hero"><h1>Hurtigtrades</h1><p id="hts">Én handel om dagen med mål på +0,5 %. Testet på 15-minutters data for hovedlista fra 2021.</p></div>
   <div class="verdict">Testet 18.10.2026: ingen strategi holdt seg etter kostnader. Den beste kandidaten er bare i pluss med limit-ordre, og hvert marked for seg holder bare gull.</div>
@@ -1212,10 +1240,48 @@ async function loadNb(force){
   return`<tr><td><b>${x.name}</b><br><span class="nt" style="margin:0">${gl[x.grp]||""}</span></td><td><span class="tr ${n[0]}">${n[1]}</span></td><td>${t?trBadge(t):"–"}</td><td class="w">${x.why}</td><td>${x.event||"–"}</td><td class="src">${(x.src||[]).map(s=>`<a href="${s.u}" target="_blank" rel="noopener">${s.t} ↗</a>`).join("<br>")}</td></tr>`}).join("")}</table>`}
 $("nbf").onchange=()=>loadNb();
 
+/* ===== Kvartalsrapporter: data/kvartal.json (oppdateres av Claude) + kursreaksjon regnet fra dagsdata ===== */
+let KV=null,KVt=0;const KVR={};
+async function kvReact(it){if(!it.key||!(it.hist||[]).length)return[];if(KVR[it.key])return KVR[it.key];
+ try{const r=await fetch(yBase()+"/"+it.key+".json");if(!r.ok)throw 0;const j=await r.json(),rows=j.rows||[],ix={};rows.forEach((z,i)=>ix[z[0]]=i);
+  KVR[it.key]=it.hist.map(([d,a,e])=>{const n=Math.round(Date.parse(d+"T00:00Z")/864e5),i=ix[n];let m=null;
+   if(i!=null){if(it.when=="bmo"){if(i>0)m=rows[i][4]/rows[i-1][4]-1}else if(i+1<rows.length)m=rows[i+1][4]/rows[i][4]-1}
+   return{d,a,e,m,beat:a>e}})}catch(e){KVR[it.key]=it.hist.map(([d,a,e])=>({d,a,e,m:null,beat:a>e}))}
+ return KVR[it.key]}
+async function kvMids(){try{return await hlPost({type:"allMids",dex:HLDEX})}catch(e){return{}}}
+const kvPct=(v,dg=1)=>(v>0?"+":"")+(v*100).toFixed(dg).replace(".",",")+" %";
+const kvNum=v=>String(v).replace(".",",").replace(/^-/,"−");
+async function loadKv(force){
+ if(!KV||force||Date.now()-KVt>6e5){try{const r=await fetch(yBase()+"/kvartal.json?t="+Math.floor(Date.now()/6e5),{cache:"no-store"});if(!r.ok)throw new Error("svarte "+r.status);KV=await r.json();KVt=Date.now()}
+  catch(e){$("kvs").textContent="Fant ikke kvartalsdataene ("+(e.message||e)+"). Sjekk Innstillinger → Andre markeder.";return}}
+ $("kvs").innerHTML=`Oppdatert ${KV.updated}. ${KV.note||""}`;
+ const now=Date.now(),its=KV.items.filter(x=>Date.parse(x.t)>now-4*864e5).sort((a,b)=>Date.parse(a.t)-Date.parse(b.t));
+ const [mids,reacts]=await Promise.all([kvMids(),Promise.all(KV.items.map(kvReact))]);
+ const all=reacts.flat(),ok=all.filter(x=>x.m!=null),nb=all.filter(x=>x.beat).length,up=ok.filter(x=>x.m>0).length,upB=ok.filter(x=>x.beat&&x.m>0).length,nB=ok.filter(x=>x.beat).length;
+ if(all.length)$("kvv").textContent=`De ${all.length} siste rapportene her: ${Math.round(nb/all.length*100)} % slo resultatforventningen, men kursen steg bare etter ${Math.round(up/Math.max(ok.length,1)*100)} %. Også når de slo, steg kursen bare ${upB} av ${nB} ganger.`;
+ const R={};KV.items.forEach((x,i)=>R[x.name]=reacts[i]);
+ $("kvg").innerHTML=its.map(it=>{const h=R[it.name]||[],hm=h.filter(x=>x.m!=null),t=Date.parse(it.t),[dd,tt]=fdt(t),done=it.done||t<now;
+  const avg=hm.length?hm.reduce((s,x)=>s+Math.abs(x.m),0)/hm.length:null,mv=it.imp!=null?it.imp/100:avg;
+  const px=it.hl?+mids[HLDEX+":"+it.hl]:NaN,nb=h.filter(x=>x.beat).length,nu=hm.filter(x=>x.m>0).length;
+  const bc={"Trolig ja":"tu","Usikkert":"tn","Trolig nei":"td","Slo":"tu","Bommet":"td"}[it.beat]||"tn";
+  let o=`<div class="c"><div class="kh"><h3>${it.name}</h3><span class="tr ${done?"tu":it.ok?"tn":"tn"}">${done?"Rapportert":it.ok?"Bekreftet dato":"Dato er anslag"}</span></div>
+  <div class="kd">${it.q} · ${dd} kl. ${tt} norsk tid · ${it.when=="bmo"?"før børsen åpner":"etter stengetid"}${done?"":" · "+until(t)}</div>`;
+  if(done){o+=`<div class="kp"><div>Resultat per aksje<b>${kvNum(it.eps)} $</b>forv. ${it.epsE}</div><div>Omsetning<b>${it.rev}</b>forv. ${it.revE}</div><div>Kursen<b class="${it.move>0?"u":"d"}">${kvPct(it.move/100)}</b>etter rapporten</div></div>
+   <div class="kw">${it.res}</div><div class="kf"><span>Reaksjon:</span> ${it.moveTxt}.</div>`}
+  else{o+=`<div class="kp"><div>Forventet resultat per aksje<b>${it.epsE}</b></div><div>Forventet omsetning<b>${it.revE}</b></div><div>${it.guide?"Egen guiding<b>"+it.guide+"</b>":"Forventet utslag<b>±"+(mv!=null?(mv*100).toFixed(1).replace(".",",")+" %":"–")+"</b>"}</div></div>
+   <div class="kf"><span>Slår forventningene?</span> <span class="tr ${bc}">${it.beat}</span> ${h.length?`slo ${nb} av ${h.length} sist`:""}</div>
+   <div class="kf"><span>Forventet utslag:</span> <b>±${mv!=null?(mv*100).toFixed(1).replace(".",","):"?"} %</b> ${it.imp!=null?"(opsjonsmarkedet)":"(snitt av de siste reaksjonene)"}${px&&mv?`, altså ca. $${Math.round(px*(1-mv)).toLocaleString("no")}–${Math.round(px*(1+mv)).toLocaleString("no")} fra $${px.toLocaleString("no",{maximumFractionDigits:2})} nå`:""}</div>
+   <div class="kf"><span>Retning:</span> ${it.dir=="opp"?'<span class="tr tu">▲ Heller opp</span>':it.dir=="ned"?'<span class="tr td">▼ Heller ned</span>':'<span class="tr tn">■ Myntkast</span>'} ${hm.length?`steg etter ${nu} av ${hm.length} sist`:""}</div>
+   <div class="kw">${it.why}</div><div class="kf"><span>Følg med på:</span> ${it.watch}</div>`;
+   if(it.sl&&px&&mv&&px*(1-mv)<it.sl)o+=`<div class="ko">Hvis ${it.slTxt} fortsatt er åpen: stopen ligger ${((1-it.sl/px)*100).toFixed(1).replace(".",",")} % under kursen, innenfor forventet utslag. Et hopp ned kan gå forbi stopen.</div>`}
+  if(done&&it.watch)o+=`<div class="kf"><span>Videre:</span> ${it.watch}</div>`;
+  if(h.length)o+=`<table><tr><th>Rapport</th><th>Resultat mot forv.</th><th>Kurs etter</th></tr>${h.slice().reverse().map(x=>`<tr><td>${new Date(x.d+"T12:00Z").toLocaleDateString("no",{day:"numeric",month:"short",year:"2-digit"})}</td><td class="${x.beat?"u":"d"}">${kvNum(x.a)} mot ${kvNum(x.e)} ${x.beat?"✓":"✗"}</td><td class="${x.m==null?"z":x.m>0?"u":"d"}">${x.m==null?"–":kvPct(x.m)}</td></tr>`).join("")}</table>`;
+  o+=`<div class="nt">${(it.src||[]).map(([n,u])=>`<a href="${u}" target="_blank" rel="noopener">${n} ↗</a>`).join(" · ")}</div></div>`;return o}).join("")||'<div class="nt">Ingen rapporter de neste ukene. Be Claude om en oppdatering.</div>'}
+
 /* ===== Navigasjon: fire hovedfaner + underfaner i Analyse ===== */
 const store=(k,v)=>{try{if(v===undefined)return localStorage.getItem(k);localStorage.setItem(k,v)}catch(e){return null}};
 function showTab(v){document.querySelectorAll("#nav button").forEach(b=>b.classList.toggle("on",b.dataset.v==v));
- [["sig","pSig"],["stk","pStk"],["nb","pNb"],["ht","pHt"],["an","pAn"],["set","pSet"]].forEach(([k,id])=>$(id).classList.toggle("on",k==v));store("sk_tab",v);if(v=="ht")htShow();if(v=="an"&&subNow=="nw")loadNews();if(v=="nb")loadNb()}
+ [["sig","pSig"],["stk","pStk"],["nb","pNb"],["kv","pKv"],["ht","pHt"],["an","pAn"],["set","pSet"]].forEach(([k,id])=>$(id).classList.toggle("on",k==v));store("sk_tab",v);if(v=="ht")htShow();if(v=="an"&&subNow=="nw")loadNews();if(v=="nb")loadNb();if(v=="kv")loadKv()}
 function showSg(v){if(v!="stk")v="top";document.querySelectorAll("#sgs button").forEach(b=>b.classList.toggle("on",b.dataset.s==v));$("sgTop").classList.toggle("on",v=="top");$("sgStk").classList.toggle("on",v=="stk");store("sk_sg",v)}
 $("sgs").onclick=e=>{const b=e.target.closest("button");if(b)showSg(b.dataset.s)};
 let subNow="nw";
@@ -1667,7 +1733,7 @@ async function htBt() {
 let htLoaded = 0;
 function htShow() { if (Date.now() - htLoaded < 3e5) return; htLoaded = Date.now(); htToday().catch(e => $("htg").innerHTML = `<div class="nt">Feil: ${e.message}</div>`); if (!HTRES) htLoadRes() }
 
-showTab(["sig","stk","nb","ht","an","set"].includes(store("sk_tab"))?store("sk_tab"):"sig");
+showTab(["sig","stk","nb","kv","ht","an","set"].includes(store("sk_tab"))?store("sk_tab"):"sig");
 showSg(store("sk_sg"));
 renderEv();
 hlMids();setInterval(hlMids,1e4);
