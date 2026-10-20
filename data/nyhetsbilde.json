@@ -1,6 +1,6 @@
 {
-  "updated": "20.10.2026 kl. 16:40",
-  "note": "Bakteppe: Råoljen steg over $100 fatet 20.10 etter nye angrep på Saudi-Arabia og skipsfart i Gulfen, mens 10-årsrenten falt til 5,09 % etter svake boligtall (−5,2 % i september). Dollarindeksen er ned 0,25 % til 101,7. Fed-møte 27.–28.10; SpaceX legger fram tall i kveld, Tesla 21.10.",
+  "updated": "20.10.2026 kl. 17:36",
+  "note": "Bakteppe: Brent nådde $111 fatet 20.10, høyeste siden mai, etter Houthi-angrep mot saudiske energianlegg, mens 10-årsrenten falt til 5,09 % etter svake boligtall (−5,2 % i september). Dollarindeksen er ned 0,25 % til 101,7. Fed-møte 27.–28.10; SpaceX legger fram tall i kveld, Tesla 21.10.",
   "items": [
     {
       "nm": "Gull (XAU)",
@@ -25,16 +25,16 @@
       "name": "Bitcoin",
       "grp": "core",
       "dir": "blandet",
-      "why": "Rundt $81 600 20.10, ned ca. 0,5 %, da Nasdaq-futures falt og oljen steg. Fondene hadde største innstrømming på en måned 19.10 ifølge CoinDesk.",
+      "why": "Rundt $81 500 20.10, under 20-dagers snitt ($82 571), da oljen steg. Bitcoin-fondene fikk inn $526,7 mill. 19.10, mest på nesten en måned.",
       "event": "Fed-møte 28.10",
       "src": [
         {
-          "t": "CoinDesk 20.10",
-          "u": "https://www.coindesk.com/de/newsletters/daybook-us"
+          "t": "Ted Pillows 20.10",
+          "u": "https://tedpillows.substack.com/p/crypto-and-finance-market-report-0a7"
         },
         {
-          "t": "Investing.com 19.10",
-          "u": "https://www.investing.com/news/cryptocurrency-news/bitcoin-rises-to-near-83k-amid-some-relief-from-falling-oil-prices-4956420"
+          "t": "CoinDesk 20.10",
+          "u": "https://www.coindesk.com/de/newsletters/daybook-us"
         }
       ]
     },
@@ -43,16 +43,16 @@
       "name": "Ethereum",
       "grp": "core",
       "dir": "ned",
-      "why": "ETH-fondene hadde $320 mill. i utstrømming uken 12.–16.10, mer enn bitcoin-fondene. Kursen var rundt $2 406 19.10, kun +0,4 %.",
+      "why": "ETH-fondene tapte $103,3 mill. 19.10, fjerde dag på rad med utstrømming ($338 mill. siste fem dager). ETH/BTC falt til 0,0293 20.10.",
       "event": "Glamsterdam-test på Hoodi ca. 27.10",
       "src": [
         {
-          "t": "KuCoin 19.10",
-          "u": "https://www.kucoin.com/news/flash/bitcoin-price-rises-amid-black-monday-fears-etfs-see-229m-outflow"
+          "t": "Ted Pillows 20.10",
+          "u": "https://tedpillows.substack.com/p/crypto-and-finance-market-report-0a7"
         },
         {
-          "t": "Investing.com 19.10",
-          "u": "https://www.investing.com/news/cryptocurrency-news/bitcoin-rises-to-near-83k-amid-some-relief-from-falling-oil-prices-4956420"
+          "t": "KuCoin 19.10",
+          "u": "https://www.kucoin.com/news/flash/bitcoin-price-rises-amid-black-monday-fears-etfs-see-229m-outflow"
         }
       ]
     },
@@ -96,10 +96,14 @@
       "nm": "BNB",
       "name": "BNB",
       "grp": "core",
-      "dir": "ned",
-      "why": "Under alle de viktige glidende snittene og brøt nedre Bollinger-bånd 15.10. Ingen nye nyheter fra Binance som kan snu det.",
+      "dir": "blandet",
+      "why": "Eneste store kryptovaluta i pluss morgenen 20.10. Brøt likevel nedre Bollinger-bånd 15.10 og ligger under de viktige glidende snittene.",
       "event": "–",
       "src": [
+        {
+          "t": "Ted Pillows 20.10",
+          "u": "https://tedpillows.substack.com/p/crypto-and-finance-market-report-0a7"
+        },
         {
           "t": "Blockchain.News 15.10",
           "u": "https://blockchain.news/news/20261015-price-prediction-bnb-lower-bollinger-band-breached-as-analysts"
