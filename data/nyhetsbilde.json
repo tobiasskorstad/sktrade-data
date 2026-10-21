@@ -1,6 +1,6 @@
 {
-  "updated": "21.10.2026 kl. 20:41",
-  "note": "Bakteppe: Brent rundt $109–110 fatet 21.10 etter topp på $111,99 dagen før, da meklingssamtaler mellom USA og Iran dempet frykten for tilbudsbrudd. 10-årsrenten ned til ca. 5,10 %, og futures steg før åpning etter sterke SpaceX-tall. Solanas Alpenglow ble aktivert 21.10. Fed-møte 27.–28.10; Tesla legger fram tall i kveld.",
+  "updated": "21.10.2026 kl. 21:45",
+  "note": "Bakteppe: Brent rundt $110 fatet 21.10 etter angrep nær Hormuzstredet, mens meklingssamtaler mellom USA og Iran demper frykten for tilbudsbrudd. 10-årsrenten rundt 5,10 %, og aksjene steg etter sterke SpaceX-tall. Fed-møte 27.–28.10; Tesla legger fram tall i kveld.",
   "items": [
     {
       "nm": "Gull (XAU)",
@@ -171,12 +171,12 @@
       "name": "Monero",
       "grp": "top",
       "dir": "blandet",
-      "why": "Lite ferske nyheter. Fjerning fra børser er fortsatt en risiko for personvernmynter, men kursen har klart seg godt i 2026.",
+      "why": "Steg over $600 21.10, høyeste siden januar. Åpne futuresposisjoner er over $300 mill., nær januartoppen som ble fulgt av et fall på 66 %.",
       "event": "–",
       "src": [
         {
-          "t": "KuCoin",
-          "u": "https://www.kucoin.com/news/flash/monero-survives-73-exchange-delistings-in-2025-amid-privacy-gains-and-political-backing?lang=en_US"
+          "t": "CoinDesk 21.10",
+          "u": "https://www.coindesk.com/markets/2026/10/21/monero-futures-are-again-heating-with-leverage-raising-volatility-risks"
         }
       ]
     },
