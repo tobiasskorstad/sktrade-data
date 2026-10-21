@@ -1,22 +1,18 @@
 {
-  "updated": "20.10.2026 kl. 21:36",
-  "note": "Bakteppe: Brent var over $111 fatet 20.10 etter angrep i Midtøsten, men falt tilbake mot $109, og Iran truer undersjøiske kabler i Hormuzstredet. Børsene snudde opp etter en svak åpning; 10-årsrenten rundt 5,1 %. Fed-møte 27.–28.10 (82,8 % sjanse for uendret rente); SpaceX legger fram tall i kveld, Tesla 21.10.",
+  "updated": "21.10.2026 kl. 15:38",
+  "note": "Bakteppe: Brent rundt $109–110 fatet 21.10 etter topp på $111,99 dagen før, da meklingssamtaler mellom USA og Iran dempet frykten for tilbudsbrudd. 10-årsrenten ned til ca. 5,10 %, og futures steg før åpning etter sterke SpaceX-tall. Fed-møte 27.–28.10; Tesla legger fram tall i kveld.",
   "items": [
     {
       "nm": "Gull (XAU)",
       "name": "Gull",
       "grp": "core",
       "dir": "blandet",
-      "why": "Ned ca. 0,4 % til rundt $4 143 ved åpning 20.10, til tross for svakere dollar og lavere renter. Holder seg under $4 200 før Fed-møtet.",
+      "why": "Opp ca. 0,4 % til rundt $4 158 morgenen 21.10 da 10-årsrenten falt litt. Holder seg fortsatt under $4 200 før Fed-møtet.",
       "event": "Fed-møte 28.10",
       "src": [
         {
-          "t": "Schwab 20.10",
-          "u": "https://www.schwab.com/learn/story/stock-market-update-open"
-        },
-        {
-          "t": "TradingKey 19.10",
-          "u": "https://tradingkey.com/analysis/stocks/us-stocks/262223737-us-premarket-oil-falls-trump-eases-russia-sanctions-intel-mu-sndk-memory-stocks-rise-tradingkey"
+          "t": "Yahoo Finance 21.10",
+          "u": "https://finance.yahoo.com/markets/live/stock-market-today-wednesday-october-21-dow-sp-500-nasdaq-100000105.html"
         }
       ]
     },
@@ -25,16 +21,16 @@
       "name": "Bitcoin",
       "grp": "core",
       "dir": "blandet",
-      "why": "Rundt $81 500 20.10, under 20-dagers snitt ($82 571), da oljen steg. Bitcoin-fondene fikk inn $526,7 mill. 19.10, mest på nesten en måned.",
+      "why": "Opp 2,6 % til ca. $83 500 21.10. Bitcoin-fondene fikk bare inn $23,2 mill. 20.10, ned fra $526,7 mill. dagen før.",
       "event": "Fed-møte 28.10",
       "src": [
         {
-          "t": "Ted Pillows 20.10",
-          "u": "https://tedpillows.substack.com/p/crypto-and-finance-market-report-0a7"
+          "t": "Ted Pillows 21.10",
+          "u": "https://tedpillows.substack.com/p/crypto-and-finance-market-report-717"
         },
         {
-          "t": "CoinDesk 20.10",
-          "u": "https://www.coindesk.com/de/newsletters/daybook-us"
+          "t": "Bitcoin.com 21.10",
+          "u": "https://news.bitcoin.com/bitcoin-etf/bitcoin-etfs-add-550m-in-2-days-as-ether-outflows-persist/"
         }
       ]
     },
@@ -42,17 +38,17 @@
       "nm": "Ethereum",
       "name": "Ethereum",
       "grp": "core",
-      "dir": "ned",
-      "why": "ETH-fondene tapte $103,3 mill. 19.10, fjerde dag på rad med utstrømming ($338 mill. siste fem dager). ETH/BTC falt til 0,0293 20.10.",
+      "dir": "blandet",
+      "why": "Opp 3,3 % siste døgn 21.10, og ETH/BTC steg til 0,0295. ETH-fondene tapte likevel $26,1 mill. 20.10, femte dag på rad med utstrømming.",
       "event": "Glamsterdam-test på Hoodi ca. 27.10",
       "src": [
         {
-          "t": "Ted Pillows 20.10",
-          "u": "https://tedpillows.substack.com/p/crypto-and-finance-market-report-0a7"
+          "t": "Ted Pillows 21.10",
+          "u": "https://tedpillows.substack.com/p/crypto-and-finance-market-report-717"
         },
         {
-          "t": "KuCoin 19.10",
-          "u": "https://www.kucoin.com/news/flash/bitcoin-price-rises-amid-black-monday-fears-etfs-see-229m-outflow"
+          "t": "Bitcoin.com 21.10",
+          "u": "https://news.bitcoin.com/bitcoin-etf/bitcoin-etfs-add-550m-in-2-days-as-ether-outflows-persist/"
         }
       ]
     },
@@ -60,17 +56,17 @@
       "nm": "Solana",
       "name": "Solana",
       "grp": "core",
-      "dir": "opp",
-      "why": "Alpenglow aktiveres på mainnet 21.10 ca. kl. 16:50 norsk tid og skal kutte bekreftelsestiden fra 12,8 s til ca. 150 ms. Overgangen gir en kort pause i transaksjonene.",
+      "dir": "blandet",
+      "why": "Alpenglow aktiveres 21.10 (ca. kl. 15:20–16:50 norsk tid), med kortere bekreftelsestid. SOL stabil rundt $106, men SOL-fondene har hatt utstrømming 12 dager på rad.",
       "event": "Alpenglow 21.10",
       "src": [
         {
-          "t": "Solana Compass 13.10",
-          "u": "https://solanacompass.com/news/anza-sets-alpenglow-mainnet-date-solanas-consensus-switch-is-scheduled-for-october-21-at-about-1450-utc"
+          "t": "NameCoinNews 21.10",
+          "u": "https://www.namecoinnews.com/solana-alpenglow-mainnet-launch-sol-stable/"
         },
         {
-          "t": "Crypto Briefing 13.10",
-          "u": "https://cryptobriefing.com/solanas-alpenglow-upgrade-to-enhance-transaction-speed-on-october-21/"
+          "t": "Bitcoin.com 21.10",
+          "u": "https://news.bitcoin.com/bitcoin-etf/bitcoin-etfs-add-550m-in-2-days-as-ether-outflows-persist/"
         }
       ]
     },
@@ -79,16 +75,16 @@
       "name": "XRP",
       "grp": "core",
       "dir": "blandet",
-      "why": "Falt 9 % siste uke etter at Evernorth (XRPN) kom på Nasdaq. XRP-fondene har likevel hatt innstrømming i mange uker på rad.",
-      "event": "SEC-høring om kryptoregler slutter 20.10",
+      "why": "Steg ca. 4 % til rundt $1,35 21.10, sterkere enn bitcoin. En oppryddingsoppdatering av XRP Ledger kan aktiveres 23.10.",
+      "event": "XRPL-oppdatering 23.10",
       "src": [
         {
-          "t": "Caleb & Brown 13.10",
-          "u": "https://calebandbrown.com/blog/weekly-rollup-october-13-2026/"
+          "t": "DiarioBitcoin 21.10",
+          "u": "https://www.diariobitcoin.com/analisis/xrp-avanza-397-el-21-de-octubre-de-2026-pero-el-volumen-no-confirma-el-impulso/"
         },
         {
-          "t": "24/7 Wall St 12.10",
-          "u": "https://www.aol.com/articles/cardano-avalanche-litecoin-more-20-190027000.html"
+          "t": "Ad-hoc-news 21.10",
+          "u": "https://www.ad-hoc-news.de/boerse/news/marktberichte/xrp-ledger-upgrade-on-october-23-2026-what-it-means-for-the-xrp-price/70379344"
         }
       ]
     },
@@ -328,17 +324,17 @@
       "nm": "SpaceX",
       "name": "SpaceX",
       "grp": "stk",
-      "dir": "blandet",
-      "why": "Legger fram Q3-tall etter børsslutt 20.10; analytikere venter $0,14 per aksje på $12,74 mrd. i omsetning. Aksjen var ned 0,6 % før åpning; Barclays mener en Tesla-fusjon kan kunngjøres før desember.",
-      "event": "Kvartalstall 20.10 (kl. 22:30 norsk tid)",
+      "dir": "opp",
+      "why": "Q3-omsetning $14,6 mrd. (+161 %) og $0,35 per aksje, mot ventet $0,15. Aksjen steg ca. 7,5 % ved åpning 21.10; opptil 1,3 mrd. aksjer låses opp 22.10.",
+      "event": "Aksjeopplåsing 22.10",
       "src": [
         {
-          "t": "Benzinga 20.10",
-          "u": "https://benzinga.com/markets/equities/26/10/62460028/stock-market-today-dow-jones-futures-rise-nasdaq-100-falls-as-iran-threatens-to-target-undersea-cables-spcx-nflx-stld-in-focus"
+          "t": "Investing.com 20.10",
+          "u": "https://www.investing.com/news/stock-market-news/spacex-tops-q3-estimates-as-revenue-surges-161-on-starlink-ai-compute-expansion-4960964"
         },
         {
-          "t": "24/7 Wall St 15.10",
-          "u": "https://247wallst.com/investing/2026/10/15/barclays-says-a-tesla-spacex-merger-could-be-announced-before-december/"
+          "t": "Yahoo Finance 21.10",
+          "u": "https://finance.yahoo.com/markets/live/stock-market-today-wednesday-october-21-dow-sp-500-nasdaq-100000105.html"
         }
       ]
     },
@@ -361,16 +357,16 @@
       "name": "Tesla",
       "grp": "stk",
       "dir": "blandet",
-      "why": "Steg 3,8 % 19.10 før kvartalstallene. Leverte 486 532 biler i Q3, 2,1 % færre enn i fjor; marginer og Cybercab i fokus 21.10.",
-      "event": "Kvartalstall 21.10 (webcast kl. 23:30 norsk tid)",
+      "why": "Opp ca. 3 % ved åpning 21.10 etter at Musk sa begge selskaper har satt ned komiteer for å vurdere en fusjon med SpaceX. Venter $0,45 per aksje på ca. $28 mrd. i kveld.",
+      "event": "Kvartalstall 21.10 (kl. 23:30 norsk tid)",
       "src": [
         {
-          "t": "TipRanks 20.10",
-          "u": "https://www.tipranks.com/news/stock-market-today-oct-20-futures-mixed-as-oil-prices-rise-and-ai-stocks-retreat-again"
+          "t": "Yahoo Finance 21.10",
+          "u": "https://finance.yahoo.com/markets/live/stock-market-today-wednesday-october-21-dow-sp-500-nasdaq-100000105.html"
         },
         {
-          "t": "Basenor 16.10",
-          "u": "https://www.basenor.com/blogs/news/spacex-and-tesla-both-report-q3-2026-earnings-this-week"
+          "t": "Electrek 20.10",
+          "u": "https://electrek.co/2026/10/20/tesla-tsla-q3-2026-earnings-preview/"
         }
       ]
     },
@@ -379,16 +375,12 @@
       "name": "Nvidia",
       "grp": "stk",
       "dir": "blandet",
-      "why": "Steg 1,4 % 19.10, men var svakt ned før åpning 20.10 da AI- og brikkeaksjer falt igjen (Micron −2,5 %). Fortsatt ca. 10 % under toppen.",
+      "why": "Opp ca. 2 % før åpning 21.10 da AI-aksjene hentet seg inn. Har handlet mellom ca. $214 og $230 i det siste.",
       "event": "Kvartalstall ventet sent i november",
       "src": [
         {
-          "t": "TipRanks 20.10",
-          "u": "https://www.tipranks.com/news/stock-market-today-oct-20-futures-mixed-as-oil-prices-rise-and-ai-stocks-retreat-again"
-        },
-        {
-          "t": "Reuters/KFGO 20.10",
-          "u": "https://kfgo.com/2026/10/20/nasdaq-futures-dip-as-oil-prices-climb-earnings-loom/"
+          "t": "StocksToTrade 21.10",
+          "u": "https://stockstotrade.com/news/nvidia-corporation-nvda-news-2026_10_21/"
         }
       ]
     }
