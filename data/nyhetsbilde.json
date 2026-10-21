@@ -1,5 +1,5 @@
 {
-  "updated": "21.10.2026 kl. 19:41",
+  "updated": "21.10.2026 kl. 20:41",
   "note": "Bakteppe: Brent rundt $109–110 fatet 21.10 etter topp på $111,99 dagen før, da meklingssamtaler mellom USA og Iran dempet frykten for tilbudsbrudd. 10-årsrenten ned til ca. 5,10 %, og futures steg før åpning etter sterke SpaceX-tall. Solanas Alpenglow ble aktivert 21.10. Fed-møte 27.–28.10; Tesla legger fram tall i kveld.",
   "items": [
     {
@@ -124,13 +124,17 @@
       "nm": "Zcash",
       "name": "Zcash",
       "grp": "top",
-      "dir": "blandet",
-      "why": "Har steget kraftig i 2026, med søknad om spot-ETF fra Grayscale og mer bruk av skjulte transaksjoner. Etter så stor oppgang er fallhøyden stor.",
-      "event": "ETF-beslutning (dato ukjent)",
+      "dir": "opp",
+      "why": "Steg 11 % til ca. $1 260 natt til 21.10 etter at oppgraderingen NU7 fikk dato rundt 5.11. Den kutter blokktiden fra 75 til 25 sekunder.",
+      "event": "NU7-oppgradering ca. 05.11",
       "src": [
         {
-          "t": "Whale Alert",
-          "u": "https://whale-alert.io/stories/b3b901ba1af463/Zcash-surges-on-SEC-clearance-Multicoin-stake-disclosure-Grayscale-ETF-filing-and-shielded-supply-growth"
+          "t": "CoinDesk 21.10",
+          "u": "https://www.coindesk.com/markets/2026/10/21/bitcoin-hovers-around-usd83-000-as-ai-earnings-revive-tech-zec-jumps-11"
+        },
+        {
+          "t": "CoinDesk 21.10",
+          "u": "https://www.coindesk.com/markets/2026/10/21/zcash-developers-confirm-november-date-for-upgrade-that-triples-payment-speed"
         }
       ]
     },
