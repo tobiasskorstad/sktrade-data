@@ -1,6 +1,6 @@
 {
-  "updated": "21.10.2026 kl. 15:38",
-  "note": "Bakteppe: Brent rundt $109–110 fatet 21.10 etter topp på $111,99 dagen før, da meklingssamtaler mellom USA og Iran dempet frykten for tilbudsbrudd. 10-årsrenten ned til ca. 5,10 %, og futures steg før åpning etter sterke SpaceX-tall. Fed-møte 27.–28.10; Tesla legger fram tall i kveld.",
+  "updated": "21.10.2026 kl. 16:45",
+  "note": "Bakteppe: Brent rundt $109–110 fatet 21.10 etter topp på $111,99 dagen før, da meklingssamtaler mellom USA og Iran dempet frykten for tilbudsbrudd. 10-årsrenten ned til ca. 5,10 %, og futures steg før åpning etter sterke SpaceX-tall. Solanas Alpenglow ble aktivert 21.10. Fed-møte 27.–28.10; Tesla legger fram tall i kveld.",
   "items": [
     {
       "nm": "Gull (XAU)",
@@ -57,12 +57,12 @@
       "name": "Solana",
       "grp": "core",
       "dir": "blandet",
-      "why": "Alpenglow aktiveres 21.10 (ca. kl. 15:20–16:50 norsk tid), med kortere bekreftelsestid. SOL stabil rundt $106, men SOL-fondene har hatt utstrømming 12 dager på rad.",
-      "event": "Alpenglow 21.10",
+      "why": "Alpenglow ble aktivert på hovednettet ca. kl. 15:54 norsk tid 21.10. Målet er 150 ms bekreftelsestid, men den lå på 6,6 sek like etter. SOL rundt $106.",
+      "event": "–",
       "src": [
         {
-          "t": "NameCoinNews 21.10",
-          "u": "https://www.namecoinnews.com/solana-alpenglow-mainnet-launch-sol-stable/"
+          "t": "Cointelegraph 21.10",
+          "u": "https://cointelegraph.com/news/solanas-alpenglow-launches-mainnet-99-faster-finality"
         },
         {
           "t": "Bitcoin.com 21.10",
