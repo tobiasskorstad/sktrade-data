@@ -1,6 +1,6 @@
 {
-  "updated": "21.10.2026 kl. 21:45",
-  "note": "Bakteppe: Brent rundt $110 fatet 21.10 etter angrep nær Hormuzstredet, mens meklingssamtaler mellom USA og Iran demper frykten for tilbudsbrudd. 10-årsrenten rundt 5,10 %, og aksjene steg etter sterke SpaceX-tall. Fed-møte 27.–28.10; Tesla legger fram tall i kveld.",
+  "updated": "22.10.2026 kl. 15:45",
+  "note": "Bakteppe: Brent over $110 fatet i Asia 22.10, og europeiske renter stiger (fransk 10-årsrente over 5,05 %). Futures pekte ned før åpning, Nasdaq 100 rundt −1,5 %, etter Tesla- og Meta-tall. Fed-møte 27.–28.10.",
   "items": [
     {
       "nm": "Gull (XAU)",
@@ -21,16 +21,16 @@
       "name": "Bitcoin",
       "grp": "core",
       "dir": "blandet",
-      "why": "Opp 2,6 % til ca. $83 500 21.10. Bitcoin-fondene fikk bare inn $23,2 mill. 20.10, ned fra $526,7 mill. dagen før.",
+      "why": "Bitcoin-fondene fikk inn $528,4 mill. 21.10, opp fra $23,2 mill. dagen før. Svake teknologi-futures 22.10 kan dempe risikoviljen.",
       "event": "Fed-møte 28.10",
       "src": [
         {
-          "t": "Ted Pillows 21.10",
-          "u": "https://tedpillows.substack.com/p/crypto-and-finance-market-report-717"
+          "t": "TFTC 22.10",
+          "u": "https://www.tftc.io/bitcoin-etf-flows/october-2026"
         },
         {
-          "t": "Bitcoin.com 21.10",
-          "u": "https://news.bitcoin.com/bitcoin-etf/bitcoin-etfs-add-550m-in-2-days-as-ether-outflows-persist/"
+          "t": "MoneyCheck 22.10",
+          "u": "https://moneycheck.com/stock-market-today-futures-slide-as-tesla-and-meta-post-third-quarter-results"
         }
       ]
     },
@@ -328,17 +328,17 @@
       "nm": "SpaceX",
       "name": "SpaceX",
       "grp": "stk",
-      "dir": "opp",
-      "why": "Q3-omsetning $14,6 mrd. (+161 %) og $0,35 per aksje, mot ventet $0,15. Aksjen steg ca. 7,5 % ved åpning 21.10; opptil 1,3 mrd. aksjer låses opp 22.10.",
-      "event": "Aksjeopplåsing 22.10",
+      "dir": "blandet",
+      "why": "Sterke Q3-tall: omsetning $14,6 mrd. (+161 %). Aksjen falt over 2 % etter børs 21.10, og opptil 1,3 mrd. aksjer låses opp 22.10.",
+      "event": "Fusjonsvurdering med Tesla (ingen dato)",
       "src": [
+        {
+          "t": "MoneyCheck 22.10",
+          "u": "https://moneycheck.com/stock-market-today-futures-slide-as-tesla-and-meta-post-third-quarter-results"
+        },
         {
           "t": "Investing.com 20.10",
           "u": "https://www.investing.com/news/stock-market-news/spacex-tops-q3-estimates-as-revenue-surges-161-on-starlink-ai-compute-expansion-4960964"
-        },
-        {
-          "t": "Yahoo Finance 21.10",
-          "u": "https://finance.yahoo.com/markets/live/stock-market-today-wednesday-october-21-dow-sp-500-nasdaq-100000105.html"
         }
       ]
     },
@@ -361,16 +361,16 @@
       "name": "Tesla",
       "grp": "stk",
       "dir": "blandet",
-      "why": "Opp ca. 3 % ved åpning 21.10 etter at Musk sa begge selskaper har satt ned komiteer for å vurdere en fusjon med SpaceX. Venter $0,45 per aksje på ca. $28 mrd. i kveld.",
-      "event": "Kvartalstall 21.10 (kl. 23:30 norsk tid)",
+      "why": "Q3: $0,48 per aksje mot ventet $0,45, omsetning $28,05 mrd. Aksjen falt 2,2 % etter børs 21.10 til $377,88; capex nedjustert til ca. $20 mrd.",
+      "event": "Fed-møte 28.10",
       "src": [
         {
-          "t": "Yahoo Finance 21.10",
-          "u": "https://finance.yahoo.com/markets/live/stock-market-today-wednesday-october-21-dow-sp-500-nasdaq-100000105.html"
+          "t": "Investing.com 21.10",
+          "u": "https://www.investing.com/news/transcripts/earnings-call-transcript-tesla-beats-q3-2026-estimates-as-stock-slips-after-hours-93CH-4964365"
         },
         {
-          "t": "Electrek 20.10",
-          "u": "https://electrek.co/2026/10/20/tesla-tsla-q3-2026-earnings-preview/"
+          "t": "TT News 21.10",
+          "u": "https://www.ttnews.com/articles/tesla-earnings-q3-2026"
         }
       ]
     },
