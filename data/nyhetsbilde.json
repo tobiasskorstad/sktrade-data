@@ -1,6 +1,6 @@
 {
-  "updated": "22.10.2026 kl. 18:42",
-  "note": "Bakteppe: Brent over $111 22.10, høyeste siden mai, etter meldinger om mulige nye angrep på Iran og angrep mot Aramco. Nasdaq falt 2,2 % kl. 17:34 på chip-salg, mens 10-årsrenten falt 11 punkter til 5,02 %. Fed-møte 27.–28.10.",
+  "updated": "22.10.2026 kl. 20:40",
+  "note": "Bakteppe: AI-salg 22.10: Nasdaq ned 2,4 % og S&P 500 ned 1,3 % midt på dagen, mens Dow holdt seg nær null. Brent steg 2,9 % til $111,99, høyeste på fem måneder, på grunn av Iran-krigen. 10-årsrenten falt til 4,98 %. Fed-møte 27.–28.10.",
   "items": [
     {
       "nm": "Gull (XAU)",
@@ -21,12 +21,12 @@
       "name": "Bitcoin",
       "grp": "core",
       "dir": "blandet",
-      "why": "Ned 3,6 % til ca. $81 400 kl. 17:34 22.10 sammen med teknologiaksjene. Fondene fikk likevel inn $528,4 mill. 21.10, over $1 mrd. på tre dager.",
+      "why": "Rundt $81 000–82 000 22.10, under $84 000-motstanden, sammen med teknologisalget. Fondene fikk inn $528 mill. 21.10, ca. $1 mrd. denne uken.",
       "event": "Fed-møte 28.10",
       "src": [
         {
-          "t": "Yahoo Finance 22.10",
-          "u": "https://finance.yahoo.com/markets/live/stock-market-today-thursday-october-22-dow-sp-500-nasdaq-tesla-meta-112217857.html"
+          "t": "FXStreet 22.10",
+          "u": "https://www.mitrade.com/au/insights/news/live-news/article-3-2184980-20261022"
         },
         {
           "t": "The Block 22.10",
@@ -39,16 +39,12 @@
       "name": "Ethereum",
       "grp": "core",
       "dir": "blandet",
-      "why": "ETH-fondene fikk inn $14,9 mill. 21.10 og brøt fem dager med utstrømming. Kryptomarkedet falt rundt 1,6 % 22.10.",
+      "why": "Gled mot $2 400 22.10. ETH-fondene fikk inn $15 mill. 21.10 og brøt fem dager med utstrømming, men har tapt ca. $1 mrd. i oktober.",
       "event": "Glamsterdam-test på Hoodi ca. 27.10",
       "src": [
         {
-          "t": "The Block 22.10",
-          "u": "https://www.theblock.co/news/markets/2026-10-22-bitcoin-etfs-draw-528-million-as-ether-funds-snap-five-day-outflow-streak-421904"
-        },
-        {
-          "t": "Coin Gabbar 22.10",
-          "u": "https://www.coingabbar.com/en/bitcoin-crypto-news-why-did-btc-drop-below-82k-today"
+          "t": "FXStreet 22.10",
+          "u": "https://www.mitrade.com/au/insights/news/live-news/article-3-2184980-20261022"
         }
       ]
     },
@@ -75,12 +71,12 @@
       "name": "XRP",
       "grp": "core",
       "dir": "blandet",
-      "why": "Steg ca. 4 % til rundt $1,35 21.10, sterkere enn bitcoin. En oppryddingsoppdatering av XRP Ledger kan aktiveres 23.10.",
+      "why": "Rundt $1,33 22.10, ned mot $1,30 etter oppgangen 21.10. Fondene fikk inn bare $0,7 mill. 21.10. XRPL-oppdatering kan aktiveres 23.10.",
       "event": "XRPL-oppdatering 23.10",
       "src": [
         {
-          "t": "DiarioBitcoin 21.10",
-          "u": "https://www.diariobitcoin.com/analisis/xrp-avanza-397-el-21-de-octubre-de-2026-pero-el-volumen-no-confirma-el-impulso/"
+          "t": "FXStreet 22.10",
+          "u": "https://www.mitrade.com/au/insights/news/live-news/article-3-2184980-20261022"
         },
         {
           "t": "Ad-hoc-news 21.10",
@@ -329,12 +325,12 @@
       "name": "SpaceX",
       "grp": "stk",
       "dir": "blandet",
-      "why": "Sterke Q3-tall: omsetning $14,6 mrd. (+161 %). Aksjen falt over 2 % etter børs 21.10, og opptil 1,3 mrd. aksjer låses opp 22.10.",
+      "why": "Sterke Q3-tall: omsetning $14,6 mrd. (+161 %). Tapte likevel ca. $125 mrd. i børsverdi 22.10, samtidig som opptil 1,3 mrd. aksjer låses opp.",
       "event": "Fusjonsvurdering med Tesla (ingen dato)",
       "src": [
         {
-          "t": "MoneyCheck 22.10",
-          "u": "https://moneycheck.com/stock-market-today-futures-slide-as-tesla-and-meta-post-third-quarter-results"
+          "t": "StockTitan 22.10",
+          "u": "https://www.stocktitan.net/articles/why-is-nasdaq-down-today-october-22-2026-ai-chip-stocks"
         },
         {
           "t": "Investing.com 20.10",
@@ -347,9 +343,13 @@
       "name": "Microsoft",
       "grp": "stk",
       "dir": "blandet",
-      "why": "Opp ca. 34 % siste tre måneder før kvartalstallene. Markedet venter Azure-vekst rundt 45 %, og investeringer på $175 mrd. i 2026 presser marginene.",
+      "why": "Ned 1,6 % 22.10 i AI-salget etter Metas høye investeringer. Markedet venter Azure-vekst rundt 45 % i tallene 27.10.",
       "event": "Kvartalstall 27.10",
       "src": [
+        {
+          "t": "StockTitan 22.10",
+          "u": "https://www.stocktitan.net/articles/why-is-nasdaq-down-today-october-22-2026-ai-chip-stocks"
+        },
         {
           "t": "Trefis 01.10",
           "u": "https://www.trefis.com/articles/617316/which-dates-could-move-microsoft-stock-most/2026-10-01"
@@ -361,12 +361,16 @@
       "name": "Tesla",
       "grp": "stk",
       "dir": "blandet",
-      "why": "Q3: $0,48 per aksje mot ventet $0,44, men omsetning $28,05 mrd. mot ventet $28,13 mrd. Aksjen ned 1,1 % til $382,41 kl. 17:34 22.10.",
+      "why": "Q3: $0,48 per aksje mot ventet $0,44, omsetning litt under. Kuttet investeringsplanen for 2026 til over $20 mrd. (fra $25 mrd.). Aksjen ned 2,1 % 22.10.",
       "event": "Fed-møte 28.10",
       "src": [
         {
-          "t": "Yahoo Finance 22.10",
-          "u": "https://finance.yahoo.com/markets/live/stock-market-today-thursday-october-22-dow-sp-500-nasdaq-tesla-meta-112217857.html"
+          "t": "AP 22.10",
+          "u": "https://mymotherlode.com/news/national/11243112/sinking-ai-stocks-undercut-markets-worldwide-as-oil-climbs-to-its-highest-price-since-may.html"
+        },
+        {
+          "t": "StockTitan 22.10",
+          "u": "https://www.stocktitan.net/articles/why-is-nasdaq-down-today-october-22-2026-ai-chip-stocks"
         }
       ]
     },
@@ -375,12 +379,16 @@
       "name": "Nvidia",
       "grp": "stk",
       "dir": "ned",
-      "why": "Ned ca. 2 % før åpning 22.10 i et bredt chip-salg ledet av Lam Research (ca. −9 %). Nasdaq var ned 2,2 % kl. 17:34.",
+      "why": "Ned 4,3 % midt på dagen 22.10 og tapte ca. $218 mrd. i børsverdi. AI- og chipaksjer sto for 93 % av fallet i Nasdaq-100.",
       "event": "Kvartalstall ventet sent i november",
       "src": [
         {
-          "t": "Yahoo Finance 22.10",
-          "u": "https://finance.yahoo.com/markets/live/stock-market-today-thursday-october-22-dow-sp-500-nasdaq-tesla-meta-112217857.html"
+          "t": "AP 22.10",
+          "u": "https://mymotherlode.com/news/national/11243112/sinking-ai-stocks-undercut-markets-worldwide-as-oil-climbs-to-its-highest-price-since-may.html"
+        },
+        {
+          "t": "StockTitan 22.10",
+          "u": "https://www.stocktitan.net/articles/why-is-nasdaq-down-today-october-22-2026-ai-chip-stocks"
         }
       ]
     }
