@@ -1,5 +1,5 @@
 {
-  "updated": "22.10.2026 kl. 20:40",
+  "updated": "22.10.2026 kl. 21:40",
   "note": "Bakteppe: AI-salg 22.10: Nasdaq ned 2,4 % og S&P 500 ned 1,3 % midt på dagen, mens Dow holdt seg nær null. Brent steg 2,9 % til $111,99, høyeste på fem måneder, på grunn av Iran-krigen. 10-årsrenten falt til 4,98 %. Fed-møte 27.–28.10.",
   "items": [
     {
@@ -167,9 +167,13 @@
       "name": "Monero",
       "grp": "top",
       "dir": "blandet",
-      "why": "Steg over $600 21.10, høyeste siden januar. Åpne futuresposisjoner er over $300 mill., nær januartoppen som ble fulgt av et fall på 66 %.",
+      "why": "Steg 4,9 % til ca. $651 22.10 og går mot strømmen i et fallende kryptomarked. Høy giring i futures (over $300 mill.) gir risiko for kraftige svingninger.",
       "event": "–",
       "src": [
+        {
+          "t": "CoinDesk 22.10",
+          "u": "https://coindesk.com/markets/2026/10/22/bitcoin-slides-below-usd82-000-as-ai-doubts-return-with-defi-tokens-leading-declines"
+        },
         {
           "t": "CoinDesk 21.10",
           "u": "https://www.coindesk.com/markets/2026/10/21/monero-futures-are-again-heating-with-leverage-raising-volatility-risks"
@@ -264,13 +268,13 @@
       "nm": "Uniswap",
       "name": "Uniswap",
       "grp": "top",
-      "dir": "blandet",
-      "why": "Steg 3,2 % til ca. $7,42 19.10 da DeFi-tokenene ledet oppgangen i kryptomarkedet. Gebyrbryteren, der deler av gebyrene brenner UNI, er positivt på sikt.",
+      "dir": "ned",
+      "why": "Ned ca. 5 % 22.10 da DeFi-tokenene ledet fallet i kryptomarkedet. Er ned rundt 20 % så langt i oktober.",
       "event": "–",
       "src": [
         {
-          "t": "CoinDesk 19.10",
-          "u": "https://www.coindesk.com/markets/2026/10/19/bitcoin-extends-bounce-above-usd82-000-as-stocks-rebound-defi-tokens-lead-altcoin-gains"
+          "t": "CoinDesk 22.10",
+          "u": "https://coindesk.com/markets/2026/10/22/bitcoin-slides-below-usd82-000-as-ai-doubts-return-with-defi-tokens-leading-declines"
         }
       ]
     },
