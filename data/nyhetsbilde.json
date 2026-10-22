@@ -1,18 +1,18 @@
 {
-  "updated": "22.10.2026 kl. 16:37",
-  "note": "Bakteppe: Brent over $110 fatet i Asia 22.10, og europeiske renter stiger (fransk 10-årsrente over 5,05 %). Futures pekte ned før åpning, Nasdaq 100 rundt −1,5 %, etter Tesla- og Meta-tall. Fed-møte 27.–28.10.",
+  "updated": "22.10.2026 kl. 17:38",
+  "note": "Bakteppe: Brent over $111 22.10, høyeste siden mai, etter meldinger om mulige nye angrep på Iran og angrep mot Aramco. Nasdaq falt 2,2 % kl. 17:34 på chip-salg, mens 10-årsrenten falt 11 punkter til 5,02 %. Fed-møte 27.–28.10.",
   "items": [
     {
       "nm": "Gull (XAU)",
       "name": "Gull",
       "grp": "core",
-      "dir": "blandet",
-      "why": "Opp ca. 0,4 % til rundt $4 158 morgenen 21.10 da 10-årsrenten falt litt. Holder seg fortsatt under $4 200 før Fed-møtet.",
+      "dir": "ned",
+      "why": "Ned 1,9 % til ca. $4 072 kl. 17:34 norsk tid 22.10, til tross for lavere renter. Holder seg under $4 200 før Fed-møtet.",
       "event": "Fed-møte 28.10",
       "src": [
         {
-          "t": "Yahoo Finance 21.10",
-          "u": "https://finance.yahoo.com/markets/live/stock-market-today-wednesday-october-21-dow-sp-500-nasdaq-100000105.html"
+          "t": "Yahoo Finance 22.10",
+          "u": "https://finance.yahoo.com/markets/live/stock-market-today-thursday-october-22-dow-sp-500-nasdaq-tesla-meta-112217857.html"
         }
       ]
     },
@@ -21,16 +21,16 @@
       "name": "Bitcoin",
       "grp": "core",
       "dir": "blandet",
-      "why": "Bitcoin-fondene fikk inn $528,4 mill. 21.10, opp fra $23,2 mill. dagen før. Svake teknologi-futures 22.10 kan dempe risikoviljen.",
+      "why": "Ned 3,6 % til ca. $81 400 kl. 17:34 22.10 sammen med teknologiaksjene. Fondene fikk likevel inn $528,4 mill. 21.10, over $1 mrd. på tre dager.",
       "event": "Fed-møte 28.10",
       "src": [
         {
-          "t": "TFTC 22.10",
-          "u": "https://www.tftc.io/bitcoin-etf-flows/october-2026"
+          "t": "Yahoo Finance 22.10",
+          "u": "https://finance.yahoo.com/markets/live/stock-market-today-thursday-october-22-dow-sp-500-nasdaq-tesla-meta-112217857.html"
         },
         {
-          "t": "MoneyCheck 22.10",
-          "u": "https://moneycheck.com/stock-market-today-futures-slide-as-tesla-and-meta-post-third-quarter-results"
+          "t": "The Block 22.10",
+          "u": "https://www.theblock.co/news/markets/2026-10-22-bitcoin-etfs-draw-528-million-as-ether-funds-snap-five-day-outflow-streak-421904"
         }
       ]
     },
@@ -39,16 +39,16 @@
       "name": "Ethereum",
       "grp": "core",
       "dir": "blandet",
-      "why": "Opp 3,3 % siste døgn 21.10, og ETH/BTC steg til 0,0295. ETH-fondene tapte likevel $26,1 mill. 20.10, femte dag på rad med utstrømming.",
+      "why": "ETH-fondene fikk inn $14,9 mill. 21.10 og brøt fem dager med utstrømming. Kryptomarkedet falt rundt 1,6 % 22.10.",
       "event": "Glamsterdam-test på Hoodi ca. 27.10",
       "src": [
         {
-          "t": "Ted Pillows 21.10",
-          "u": "https://tedpillows.substack.com/p/crypto-and-finance-market-report-717"
+          "t": "The Block 22.10",
+          "u": "https://www.theblock.co/news/markets/2026-10-22-bitcoin-etfs-draw-528-million-as-ether-funds-snap-five-day-outflow-streak-421904"
         },
         {
-          "t": "Bitcoin.com 21.10",
-          "u": "https://news.bitcoin.com/bitcoin-etf/bitcoin-etfs-add-550m-in-2-days-as-ether-outflows-persist/"
+          "t": "Coin Gabbar 22.10",
+          "u": "https://www.coingabbar.com/en/bitcoin-crypto-news-why-did-btc-drop-below-82k-today"
         }
       ]
     },
@@ -361,16 +361,12 @@
       "name": "Tesla",
       "grp": "stk",
       "dir": "blandet",
-      "why": "Q3: $0,48 per aksje mot ventet $0,45, omsetning $28,05 mrd. Aksjen falt 2,2 % etter børs 21.10 til $377,88; capex nedjustert til ca. $20 mrd.",
+      "why": "Q3: $0,48 per aksje mot ventet $0,44, men omsetning $28,05 mrd. mot ventet $28,13 mrd. Aksjen ned 1,1 % til $382,41 kl. 17:34 22.10.",
       "event": "Fed-møte 28.10",
       "src": [
         {
-          "t": "Investing.com 21.10",
-          "u": "https://www.investing.com/news/transcripts/earnings-call-transcript-tesla-beats-q3-2026-estimates-as-stock-slips-after-hours-93CH-4964365"
-        },
-        {
-          "t": "TT News 21.10",
-          "u": "https://www.ttnews.com/articles/tesla-earnings-q3-2026"
+          "t": "Yahoo Finance 22.10",
+          "u": "https://finance.yahoo.com/markets/live/stock-market-today-thursday-october-22-dow-sp-500-nasdaq-tesla-meta-112217857.html"
         }
       ]
     },
@@ -378,13 +374,13 @@
       "nm": "Nvidia",
       "name": "Nvidia",
       "grp": "stk",
-      "dir": "blandet",
-      "why": "Opp ca. 2 % før åpning 21.10 da AI-aksjene hentet seg inn. Har handlet mellom ca. $214 og $230 i det siste.",
+      "dir": "ned",
+      "why": "Ned ca. 2 % før åpning 22.10 i et bredt chip-salg ledet av Lam Research (ca. −9 %). Nasdaq var ned 2,2 % kl. 17:34.",
       "event": "Kvartalstall ventet sent i november",
       "src": [
         {
-          "t": "StocksToTrade 21.10",
-          "u": "https://stockstotrade.com/news/nvidia-corporation-nvda-news-2026_10_21/"
+          "t": "Yahoo Finance 22.10",
+          "u": "https://finance.yahoo.com/markets/live/stock-market-today-thursday-october-22-dow-sp-500-nasdaq-tesla-meta-112217857.html"
         }
       ]
     }
