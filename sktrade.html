@@ -1257,14 +1257,15 @@ async function loadKv(force){
  $("kvs").innerHTML=`Oppdatert ${KV.updated}. ${KV.note||""}`;
  const now=Date.now(),its=KV.items.filter(x=>Date.parse(x.t)>now-4*864e5).sort((a,b)=>Date.parse(a.t)-Date.parse(b.t));
  const [mids,reacts]=await Promise.all([kvMids(),Promise.all(KV.items.map(kvReact))]);
- const all=reacts.flat(),ok=all.filter(x=>x.m!=null),nb=all.filter(x=>x.beat).length,up=ok.filter(x=>x.m>0).length,upB=ok.filter(x=>x.beat&&x.m>0).length,nB=ok.filter(x=>x.beat).length;
+ const all=reacts.filter((_,i)=>!KV.items[i].histLbl).flat(),ok=all.filter(x=>x.m!=null),nb=all.filter(x=>x.beat).length,up=ok.filter(x=>x.m>0).length,upB=ok.filter(x=>x.beat&&x.m>0).length,nB=ok.filter(x=>x.beat).length;
  if(all.length)$("kvv").textContent=`De ${all.length} siste rapportene her: ${Math.round(nb/all.length*100)} % slo resultatforventningen, men kursen steg bare etter ${Math.round(up/Math.max(ok.length,1)*100)} %. Også når de slo, steg kursen bare ${upB} av ${nB} ganger.`;
  const R={};KV.items.forEach((x,i)=>R[x.name]=reacts[i]);
- $("kvg").innerHTML=its.map(it=>{const h=R[it.name]||[],hm=h.filter(x=>x.m!=null),t=Date.parse(it.t),[dd,tt]=fdt(t),done=it.done||t<now;
+ $("kvg").innerHTML=its.map(it=>{const h=R[it.name]||[],hm=h.filter(x=>x.m!=null),t=Date.parse(it.t),[dd,tt]=fdt(t),done=it.done||(t<now&&it.eps!=null);
   const avg=hm.length?hm.reduce((s,x)=>s+Math.abs(x.m),0)/hm.length:null,mv=it.imp!=null?it.imp/100:avg;
   const px=it.hl?+mids[HLDEX+":"+it.hl]:NaN,nb=h.filter(x=>x.beat).length,nu=hm.filter(x=>x.m>0).length;
   const bc={"Trolig ja":"tu","Usikkert":"tn","Trolig nei":"td","Slo":"tu","Bommet":"td"}[it.beat]||"tn";
-  let o=`<div class="c"><div class="kh"><h3>${it.name}</h3><span class="tr ${done?"tu":it.ok?"tn":"tn"}">${done?"Rapportert":it.ok?"Bekreftet dato":"Dato er anslag"}</span></div>
+  if(it.info)return`<div class="c"><div class="kh"><h3>${it.name}</h3><span class="tr tn">${it.q}</span></div><div class="kd">Rapporteres med Microsoft · ${dd} kl. ${tt} norsk tid${t>now?" · "+until(t):""}</div><div class="kw">${it.why}</div><div class="kf"><span>Følg med på:</span> ${it.watch}</div><div class="nt">${(it.src||[]).map(([n,u])=>`<a href="${u}" target="_blank" rel="noopener">${n} ↗</a>`).join(" · ")}</div></div>`;
+  let o=`<div class="c"><div class="kh"><h3>${it.name}</h3><span class="tr ${done?"tu":it.ok?"tn":"tn"}">${done?"Rapportert":t<now?"Venter på tall":it.ok?"Bekreftet dato":"Dato er anslag"}</span></div>
   <div class="kd">${it.q} · ${dd} kl. ${tt} norsk tid · ${it.when=="bmo"?"før børsen åpner":"etter stengetid"}${done?"":" · "+until(t)}</div>`;
   if(done){o+=`<div class="kp"><div>Resultat per aksje<b>${kvNum(it.eps)} $</b>forv. ${it.epsE}</div><div>Omsetning<b>${it.rev}</b>forv. ${it.revE}</div><div>Kursen<b class="${it.move>0?"u":"d"}">${kvPct(it.move/100)}</b>etter rapporten</div></div>
    <div class="kw">${it.res}</div><div class="kf"><span>Reaksjon:</span> ${it.moveTxt}.</div>`}
@@ -1275,7 +1276,7 @@ async function loadKv(force){
    <div class="kw">${it.why}</div><div class="kf"><span>Følg med på:</span> ${it.watch}</div>`;
    if(it.sl&&px&&mv&&px*(1-mv)<it.sl)o+=`<div class="ko">Hvis ${it.slTxt} fortsatt er åpen: stopen ligger ${((1-it.sl/px)*100).toFixed(1).replace(".",",")} % under kursen, innenfor forventet utslag. Et hopp ned kan gå forbi stopen.</div>`}
   if(done&&it.watch)o+=`<div class="kf"><span>Videre:</span> ${it.watch}</div>`;
-  if(h.length)o+=`<table><tr><th>Rapport</th><th>Resultat mot forv.</th><th>Kurs etter</th></tr>${h.slice().reverse().map(x=>`<tr><td>${new Date(x.d+"T12:00Z").toLocaleDateString("no",{day:"numeric",month:"short",year:"2-digit"})}</td><td class="${x.beat?"u":"d"}">${kvNum(x.a)} mot ${kvNum(x.e)} ${x.beat?"✓":"✗"}</td><td class="${x.m==null?"z":x.m>0?"u":"d"}">${x.m==null?"–":kvPct(x.m)}</td></tr>`).join("")}</table>`;
+  if(h.length)o+=`<table><tr><th>Rapport</th><th>${it.histLbl||"Resultat mot forv."}</th><th>Kurs etter</th></tr>${h.slice().reverse().map(x=>`<tr><td>${new Date(x.d+"T12:00Z").toLocaleDateString("no",{day:"numeric",month:"short",year:"2-digit"})}</td><td class="${x.beat?"u":"d"}">${kvNum(x.a)} mot ${kvNum(x.e)} ${x.beat?"✓":"✗"}</td><td class="${x.m==null?"z":x.m>0?"u":"d"}">${x.m==null?"–":kvPct(x.m)}</td></tr>`).join("")}</table>`;
   o+=`<div class="nt">${(it.src||[]).map(([n,u])=>`<a href="${u}" target="_blank" rel="noopener">${n} ↗</a>`).join(" · ")}</div></div>`;return o}).join("")||'<div class="nt">Ingen rapporter de neste ukene. Be Claude om en oppdatering.</div>'}
 
 /* ===== Navigasjon: fire hovedfaner + underfaner i Analyse ===== */

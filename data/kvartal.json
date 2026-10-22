@@ -1,5 +1,5 @@
 {
- "updated": "20.10.2026 kl. 23:55",
+ "updated": "22.10.2026 kl. 11:40",
  "note": "Forventninger er snittet av analytikernes anslag (konsensus). Forventet utslag er det opsjonsmarkedet priser inn (±), der det finnes. Ellers bruker siden snittet av de fire siste reaksjonene.",
  "items": [
   {
@@ -47,14 +47,14 @@
    "when": "amc",
    "ok": true,
    "q": "3. kv. 2026",
-   "epsE": "0,45 $ (spenn 0,30–0,70)",
-   "revE": "28,1 mrd. $",
+   "epsE": "0,45",
+   "revE": "28,06 mrd. $",
    "guide": null,
    "imp": 7.3,
    "beat": "Usikkert",
    "dir": "usikker",
    "why": "Leveransene slo forventningene (486 500 biler mot 462 000), men energilagring kom under. Forrige kvartal bommet Tesla på resultatet og falt 14,5 %. Marginene i bilsalget og stadig mindre inntekt fra klimakvoter er det som avgjør.",
-   "watch": "Bruttomargin i bil uten klimakvoter (16,3 % sist), investeringer (over 25 mrd. $ i 2026), robotaxi og Optimus.",
+   "watch": "Investeringene for 2026 kuttet til rundt 20 mrd. $. Førerløse kundebiler skjøvet til ca. 2. kv. 2027, Optimus til kunder ca. slutten av 2027.",
    "hist": [
     [
      "2025-10-22",
@@ -79,18 +79,20 @@
    ],
    "src": [
     [
-     "Electrek 20.10",
-     "https://electrek.co/2026/10/20/tesla-tsla-q3-2026-earnings-preview/"
+     "Electrek 21.10",
+     "https://electrek.co/2026/10/21/tesla-tsla-q3-2026-financial-results/"
     ],
     [
-     "Benzinga",
-     "https://www.benzinga.com/quote/TSLA/earnings-forecasts"
-    ],
-    [
-     "Earnings Watcher",
-     "https://earnings-watcher.com/wiki/earnings-implied-moves-2026-10-19"
+     "FinanceFeeds 22.10",
+     "https://financefeeds.com/tesla-tsla-stock-374-after-q3-eps-0-48-beat-cybercab-dallas-capex-20-billion-bull-400-bear-347/"
     ]
-   ]
+   ],
+   "done": true,
+   "eps": 0.48,
+   "rev": "28,05 mrd. $",
+   "move": -3.3,
+   "moveTxt": "−3,3 % etter stengetid (rundt $373,7 mot $386,5 ved stengning). Aksjen steg 3,4 % gjennom dagen før rapporten",
+   "res": "Slo litt på resultatet (0,48 $ mot 0,45 $), omsetningen var flat. Bilmarginen bedret seg (18,1 % uten klimakvoter), men driftsresultatet falt 56 % fordi kostnadene til AI, Optimus og Cybercab steg kraftig."
   },
   {
    "key": "MSFT",
@@ -107,7 +109,7 @@
    "beat": "Trolig ja",
    "dir": "usikker",
    "why": "Har slått både resultat og omsetning fire ganger på rad, men kursen falt etter tre av dem. Azure-veksten mot AI-investeringene er det markedet ser på. Rapporten kommer samme kveld som rentebeslutningen fra Fed.",
-   "watch": "Azure-vekst, investeringer (capex), OpenAI-tap, ordrereserve.",
+   "watch": "Azure-vekst, investeringer (capex), OpenAI-tap, ordrereserve. Spill (Xbox og Activision Blizzard): innhold og tjenester falt 10 % sist, og Nadella venter vekst igjen i år.",
    "hist": [
     [
      "2025-10-29",
@@ -430,6 +432,82 @@
     [
      "Benzinga",
      "https://www.benzinga.com/quote/BABA/earnings-forecasts"
+    ]
+   ]
+  },
+  {
+   "key": null,
+   "hl": null,
+   "info": true,
+   "name": "Activision Blizzard",
+   "t": "2026-10-28T20:05Z",
+   "when": "amc",
+   "ok": true,
+   "q": "Del av Microsoft",
+   "why": "Activision Blizzard (Call of Duty, World of Warcraft, Candy Crush) ble kjøpt av Microsoft i oktober 2023 og er ikke lenger på børs. Selskapet har derfor ingen egne kvartalsrapporter. Tallene kommer i Microsofts rapport 28.10, i spill-delen (Xbox-innhold og -tjenester), og påvirker bare Microsoft-aksjen.",
+   "watch": "Xbox-innhold og -tjenester falt 10 % i forrige kvartal. Spill er en liten del av Microsoft, så Azure betyr mye mer for kursen.",
+   "src": [
+    [
+     "God is a Geek 07.26",
+     "https://godisageek.com/2026/07/xbox-revenue-falls-10-q4-fy26-earnings/"
+    ]
+   ]
+  },
+  {
+   "key": "TTWO",
+   "hl": "TTWO",
+   "name": "Take-Two",
+   "t": "2026-11-09T21:05Z",
+   "when": "amc",
+   "ok": true,
+   "q": "2. kv. 2027 (regnskapsår)",
+   "epsE": "ca. 0,97 $ (justert)",
+   "revE": "1,61–1,66 mrd. $",
+   "guide": "1,62–1,67 mrd. $, resultat 0,90–1,00 $",
+   "imp": null,
+   "beat": "Trolig ja",
+   "dir": "usikker",
+   "why": "Har slått omsetningsforventningen fire ganger på rad. Rapporten kommer ti dager før GTA VI lanseres (19.11). Derfor betyr guidingen for julekvartalet og ordet om forhåndssalg mer enn tallene for kvartalet. Kursen steg 5,5 % etter stengetid sist.",
+   "watch": "Guiding for 3. kvartal og hele året (8,0–8,2 mrd. $), forhåndssalg av GTA VI, at lanseringsdatoen står fast.",
+   "histLbl": "Omsetning mot forv. (mrd. $)",
+   "hist": [
+    [
+     "2025-11-06",
+     1.96,
+     1.74
+    ],
+    [
+     "2026-02-03",
+     1.76,
+     1.58
+    ],
+    [
+     "2026-05-21",
+     1.58,
+     1.55
+    ],
+    [
+     "2026-08-07",
+     1.39,
+     1.36
+    ]
+   ],
+   "src": [
+    [
+     "Stock Titan",
+     "https://www.stocktitan.net/news/TTWO/take-two-interactive-software-inc-to-report-second-quarter-fiscal-qst6u4vkpwg0.html"
+    ],
+    [
+     "Benzinga",
+     "https://www.benzinga.com/quote/TTWO/earnings-forecasts"
+    ],
+    [
+     "MarketBeat",
+     "https://www.marketbeat.com/earnings/reports/2026-11-9-take-two-interactive-software-inc-stock/"
+    ],
+    [
+     "Vice (GTA VI-dato)",
+     "https://www.vice.com/en/article/take-two-ceo-confirms-gta-6-release-date-is-locked-in-amid-pre-order-rumors/"
     ]
    ]
   }

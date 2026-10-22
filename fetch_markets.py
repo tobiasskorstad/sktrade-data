@@ -39,6 +39,11 @@ MARKETS = [
     ("HIMS", "Hims & Hers", "HIMS", "hims.us", "aksje", "NYSE:HIMS"),
 ]
 
+# Bare for fanen Kvartalsrapporter (kursreaksjoner). Ikke med i index.json / Andre markeder.
+KV_ONLY = [
+    ("TTWO", "Take-Two", "TTWO", "ttwo.us", "aksje", "NASDAQ:TTWO"),
+]
+
 EPOCH = dt.date(1970, 1, 1)
 
 
@@ -94,7 +99,8 @@ def from_stooq(sym):
 def main():
     os.makedirs(OUT, exist_ok=True)
     index, failed = [], []
-    for key, name, yh, st, grp, tv in MARKETS:
+    kv_keys = {m[0] for m in KV_ONLY}
+    for key, name, yh, st, grp, tv in MARKETS + KV_ONLY:
         rows, src = [], ""
         for label, fn, arg in (("Yahoo", from_yahoo, yh), ("Stooq", from_stooq, st)):
             for attempt in range(3):
@@ -115,13 +121,15 @@ def main():
             if os.path.exists(path):  # behold forrige versjon
                 with open(path) as f:
                     old = json.load(f)
-                index.append({k: old[k] for k in ("key", "name", "grp", "tv", "src", "first", "last", "n")})
+                if key not in kv_keys:
+                    index.append({k: old[k] for k in ("key", "name", "grp", "tv", "src", "first", "last", "n")})
             continue
         doc = {"key": key, "name": name, "grp": grp, "tv": tv, "src": src, "ticker": yh if src == "Yahoo" else st,
                "first": rows[0][0], "last": rows[-1][0], "n": len(rows), "rows": rows}
         with open(path, "w") as f:
             json.dump(doc, f, separators=(",", ":"))
-        index.append({k: doc[k] for k in ("key", "name", "grp", "tv", "src", "first", "last", "n")})
+        if key not in kv_keys:
+            index.append({k: doc[k] for k in ("key", "name", "grp", "tv", "src", "first", "last", "n")})
         print(f"{key}: {len(rows)} dager fra {src}")
         time.sleep(1)
     with open(os.path.join(OUT, "index.json"), "w") as f:
