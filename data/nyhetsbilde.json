@@ -1,18 +1,22 @@
 {
-  "updated": "22.10.2026 kl. 21:40",
-  "note": "Bakteppe: AI-salg 22.10: Nasdaq ned 2,4 % og S&P 500 ned 1,3 % midt på dagen, mens Dow holdt seg nær null. Brent steg 2,9 % til $111,99, høyeste på fem måneder, på grunn av Iran-krigen. 10-årsrenten falt til 4,98 %. Fed-møte 27.–28.10.",
+  "updated": "23.10.2026 kl. 15:37",
+  "note": "Bakteppe: Roligere start 23.10 etter AI-salget, Nasdaq-futures nær uendret. Brent steg 1,2 % til $114,50, høyeste på over fem måneder, etter Houthi-angrep i Saudi-Arabia. Rentene steg litt tilbake. Fed-møte 27.–28.10.",
   "items": [
     {
       "nm": "Gull (XAU)",
       "name": "Gull",
       "grp": "core",
       "dir": "ned",
-      "why": "Ned 1,9 % til ca. $4 072 kl. 17:34 norsk tid 22.10, til tross for lavere renter. Holder seg under $4 200 før Fed-møtet.",
+      "why": "Gullfutures ned 0,55 % til $4 037,90 kl. 13:32 norsk tid 23.10. Var nede i $3 986 i natt, laveste siden 29.07.",
       "event": "Fed-møte 28.10",
       "src": [
         {
-          "t": "Yahoo Finance 22.10",
-          "u": "https://finance.yahoo.com/markets/live/stock-market-today-thursday-october-22-dow-sp-500-nasdaq-tesla-meta-112217857.html"
+          "t": "TheStreet 23.10",
+          "u": "https://www.thestreet.com/stock-market-today/stock-market-today-dow-jones-sp-500-nasdaq-updates-oct-23-2026"
+        },
+        {
+          "t": "CoinDesk 23.10",
+          "u": "https://www.coindesk.com/markets/2026/10/23/bitcoin-gold-trim-early-losses-as-yen-gives-up-gains-oil-stays-near-usd100"
         }
       ]
     },
@@ -20,17 +24,17 @@
       "nm": "Bitcoin",
       "name": "Bitcoin",
       "grp": "core",
-      "dir": "blandet",
-      "why": "Rundt $81 000–82 000 22.10, under $84 000-motstanden, sammen med teknologisalget. Fondene fikk inn $528 mill. 21.10, ca. $1 mrd. denne uken.",
+      "dir": "ned",
+      "why": "Rundt $81 600 23.10, under støtten ved $82 500. Fondene tapte $635 mill. 22.10 (IBIT $254 mill.), etter innstrømming på $528 mill. 21.10.",
       "event": "Fed-møte 28.10",
       "src": [
         {
-          "t": "FXStreet 22.10",
-          "u": "https://www.mitrade.com/au/insights/news/live-news/article-3-2184980-20261022"
+          "t": "CoinDesk 23.10",
+          "u": "https://www.coindesk.com/markets/2026/10/23/live-updates-bitcoin-holds-above-usd81-000-as-the-ai-rout-fades-and-oil-climbs"
         },
         {
-          "t": "The Block 22.10",
-          "u": "https://www.theblock.co/news/markets/2026-10-22-bitcoin-etfs-draw-528-million-as-ether-funds-snap-five-day-outflow-streak-421904"
+          "t": "Crypto Briefing 23.10",
+          "u": "https://cryptobriefing.com/spot-bitcoin-etfs-635-million-outflows-october-22/"
         }
       ]
     },
@@ -71,16 +75,16 @@
       "name": "XRP",
       "grp": "core",
       "dir": "blandet",
-      "why": "Rundt $1,33 22.10, ned mot $1,30 etter oppgangen 21.10. Fondene fikk inn bare $0,7 mill. 21.10. XRPL-oppdatering kan aktiveres 23.10.",
-      "event": "XRPL-oppdatering 23.10",
+      "why": "Rundt $1,32 23.10, ned ca. 1 %. XRPL-oppdateringen fixCleanup3_4_0 er utsatt til tidligst 04.11; utlånsfunksjonen mangler fortsatt flertall.",
+      "event": "XRPL-oppdatering tidligst 04.11",
       "src": [
         {
-          "t": "FXStreet 22.10",
-          "u": "https://www.mitrade.com/au/insights/news/live-news/article-3-2184980-20261022"
+          "t": "CoinDesk 23.10",
+          "u": "https://www.coindesk.com/markets/2026/10/23/live-updates-bitcoin-holds-above-usd81-000-as-the-ai-rout-fades-and-oil-climbs"
         },
         {
-          "t": "Ad-hoc-news 21.10",
-          "u": "https://www.ad-hoc-news.de/boerse/news/marktberichte/xrp-ledger-upgrade-on-october-23-2026-what-it-means-for-the-xrp-price/70379344"
+          "t": "CryptoTicker 22.10",
+          "u": "https://cryptoticker.io/en/xrp-ledger-fixcleanup-amendment-lending-date/"
         }
       ]
     },
@@ -89,12 +93,12 @@
       "name": "BNB",
       "grp": "core",
       "dir": "blandet",
-      "why": "Eneste store kryptovaluta i pluss morgenen 20.10. Brøt likevel nedre Bollinger-bånd 15.10 og ligger under de viktige glidende snittene.",
+      "why": "Steg nesten 2 % til ca. $745 23.10 og var dagens sterkeste store kryptovaluta. Ligger likevel under de viktige glidende snittene etter bruddet 15.10.",
       "event": "–",
       "src": [
         {
-          "t": "Ted Pillows 20.10",
-          "u": "https://tedpillows.substack.com/p/crypto-and-finance-market-report-0a7"
+          "t": "CoinDesk 23.10",
+          "u": "https://www.coindesk.com/markets/2026/10/23/live-updates-bitcoin-holds-above-usd81-000-as-the-ai-rout-fades-and-oil-climbs"
         },
         {
           "t": "Blockchain.News 15.10",
@@ -121,12 +125,12 @@
       "name": "Zcash",
       "grp": "top",
       "dir": "opp",
-      "why": "Steg 11 % til ca. $1 260 natt til 21.10 etter at oppgraderingen NU7 fikk dato rundt 5.11. Den kutter blokktiden fra 75 til 25 sekunder.",
+      "why": "Falt nesten 4 % til ca. $1 200 23.10 etter hoppet på 11 % 21.10. Oppgraderingen NU7 rundt 5.11 kutter blokktiden fra 75 til 25 sekunder.",
       "event": "NU7-oppgradering ca. 05.11",
       "src": [
         {
-          "t": "CoinDesk 21.10",
-          "u": "https://www.coindesk.com/markets/2026/10/21/bitcoin-hovers-around-usd83-000-as-ai-earnings-revive-tech-zec-jumps-11"
+          "t": "CoinDesk 23.10",
+          "u": "https://www.coindesk.com/markets/2026/10/23/live-updates-bitcoin-holds-above-usd81-000-as-the-ai-rout-fades-and-oil-climbs"
         },
         {
           "t": "CoinDesk 21.10",
@@ -166,13 +170,13 @@
       "nm": "Monero",
       "name": "Monero",
       "grp": "top",
-      "dir": "blandet",
-      "why": "Steg 4,9 % til ca. $651 22.10 og går mot strømmen i et fallende kryptomarked. Høy giring i futures (over $300 mill.) gir risiko for kraftige svingninger.",
+      "dir": "ned",
+      "why": "Falt 7 % til ca. $607 23.10 og ga tilbake mye av oppgangen 22.10. Høy giring i futures (over $300 mill.) gir risiko for kraftige svingninger.",
       "event": "–",
       "src": [
         {
-          "t": "CoinDesk 22.10",
-          "u": "https://coindesk.com/markets/2026/10/22/bitcoin-slides-below-usd82-000-as-ai-doubts-return-with-defi-tokens-leading-declines"
+          "t": "CoinDesk 23.10",
+          "u": "https://www.coindesk.com/markets/2026/10/23/live-updates-bitcoin-holds-above-usd81-000-as-the-ai-rout-fades-and-oil-climbs"
         },
         {
           "t": "CoinDesk 21.10",
@@ -329,12 +333,12 @@
       "name": "SpaceX",
       "grp": "stk",
       "dir": "blandet",
-      "why": "Sterke Q3-tall: omsetning $14,6 mrd. (+161 %). Tapte likevel ca. $125 mrd. i børsverdi 22.10, samtidig som opptil 1,3 mrd. aksjer låses opp.",
+      "why": "Opp 1,6 % til $147,04 før åpning 23.10 etter rapporter om tilgang til ca. 80 000 mastepunkter i USA. Investeringene skal opp til $35–40 mrd. i Q4.",
       "event": "Fusjonsvurdering med Tesla (ingen dato)",
       "src": [
         {
-          "t": "StockTitan 22.10",
-          "u": "https://www.stocktitan.net/articles/why-is-nasdaq-down-today-october-22-2026-ai-chip-stocks"
+          "t": "TheStreet 23.10",
+          "u": "https://www.thestreet.com/stock-market-today/stock-market-today-dow-jones-sp-500-nasdaq-updates-oct-23-2026"
         },
         {
           "t": "Investing.com 20.10",
