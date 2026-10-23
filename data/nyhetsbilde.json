@@ -1,6 +1,6 @@
 {
-  "updated": "23.10.2026 kl. 17:47",
-  "note": "Bakteppe: Roligere start 23.10 etter AI-salget, Nasdaq-futures nær uendret. Brent steg 1,2 % til $114,50, høyeste på over fem måneder, etter Houthi-angrep i Saudi-Arabia. Rentene steg litt tilbake. Fed-møte 27.–28.10.",
+  "updated": "23.10.2026 kl. 18:50",
+  "note": "Bakteppe: Wall Street åpnet ned 0,3–0,4 % 23.10 etter AI-salget. WTI er over $100 og 10-årsrenten ligger rundt 4,96–4,98 %. Fed-beslutning 28.10, BNP og PCE 29.10.",
   "items": [
     {
       "nm": "Gull (XAU)",
@@ -333,16 +333,16 @@
       "name": "SpaceX",
       "grp": "stk",
       "dir": "blandet",
-      "why": "Opp 1,6 % til $147,04 før åpning 23.10 etter rapporter om tilgang til ca. 80 000 mastepunkter i USA. Investeringene skal opp til $35–40 mrd. i Q4.",
+      "why": "Falt 9 % 22.10, men steg 1,7 % til $147,21 ved åpning 23.10 etter oppgradering til kjøp fra Phillip Securities. AT&T falt 4,7 % på frykt for SpaceX-konkurranse.",
       "event": "Fusjonsvurdering med Tesla (ingen dato)",
       "src": [
         {
-          "t": "TheStreet 23.10",
-          "u": "https://www.thestreet.com/stock-market-today/stock-market-today-dow-jones-sp-500-nasdaq-updates-oct-23-2026"
+          "t": "Investing.com 23.10",
+          "u": "https://www.investing.com/news/stock-market-news/wall-st-opens-lower-after-ai-rout-spacex-worries-hit-telecoms-4969697"
         },
         {
-          "t": "Investing.com 20.10",
-          "u": "https://www.investing.com/news/stock-market-news/spacex-tops-q3-estimates-as-revenue-surges-161-on-starlink-ai-compute-expansion-4960964"
+          "t": "Schwab 23.10",
+          "u": "https://www.schwab.com/learn/story/stock-market-update-open"
         }
       ]
     },
@@ -351,16 +351,16 @@
       "name": "Microsoft",
       "grp": "stk",
       "dir": "blandet",
-      "why": "Ned 1,6 % 22.10 i AI-salget etter Metas høye investeringer. Markedet venter Azure-vekst rundt 45 % i tallene 27.10.",
-      "event": "Kvartalstall 27.10",
+      "why": "Ned 1,6 % 22.10 i AI-salget etter Metas høye investeringer. Kvartalstallene kommer etter børsslutt 28.10, og markedet venter Azure-vekst rundt 45 %.",
+      "event": "Kvartalstall 28.10",
       "src": [
         {
           "t": "StockTitan 22.10",
           "u": "https://www.stocktitan.net/articles/why-is-nasdaq-down-today-october-22-2026-ai-chip-stocks"
         },
         {
-          "t": "Trefis 01.10",
-          "u": "https://www.trefis.com/articles/617316/which-dates-could-move-microsoft-stock-most/2026-10-01"
+          "t": "Finviz 07.10",
+          "u": "https://finviz.com/news/400058/microsoft-announces-quarterly-earnings-release-date"
         }
       ]
     },
@@ -369,16 +369,16 @@
       "name": "Tesla",
       "grp": "stk",
       "dir": "blandet",
-      "why": "Q3: $0,48 per aksje mot ventet $0,44, omsetning litt under. Kuttet investeringsplanen for 2026 til over $20 mrd. (fra $25 mrd.). Aksjen ned 2,1 % 22.10.",
+      "why": "Ned 1,9 % til $367,56 ved åpning 23.10 etter Q3: $0,48 per aksje mot ventet $0,44. Investeringsplanen for 2026 ble kuttet til over $20 mrd. (fra $25 mrd.).",
       "event": "Fed-møte 28.10",
       "src": [
         {
-          "t": "AP 22.10",
-          "u": "https://mymotherlode.com/news/national/11243112/sinking-ai-stocks-undercut-markets-worldwide-as-oil-climbs-to-its-highest-price-since-may.html"
+          "t": "Investing.com 23.10",
+          "u": "https://www.investing.com/news/stock-market-news/wall-st-opens-lower-after-ai-rout-spacex-worries-hit-telecoms-4969697"
         },
         {
-          "t": "StockTitan 22.10",
-          "u": "https://www.stocktitan.net/articles/why-is-nasdaq-down-today-october-22-2026-ai-chip-stocks"
+          "t": "AP 22.10",
+          "u": "https://mymotherlode.com/news/national/11243112/sinking-ai-stocks-undercut-markets-worldwide-as-oil-climbs-to-its-highest-price-since-may.html"
         }
       ]
     },
