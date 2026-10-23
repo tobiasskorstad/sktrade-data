@@ -1,5 +1,5 @@
 {
-  "updated": "23.10.2026 kl. 20:45",
+  "updated": "23.10.2026 kl. 21:45",
   "note": "Bakteppe: Dow ned 1,1 % og S&P 500 ned 0,5 % kl. 20:40 norsk tid 23.10, mens Brent steg 2,8 % til ca. $112. 10-årsrenten er 4,99 %. Fed-beslutning 28.10, BNP og PCE 29.10.",
   "items": [
     {
@@ -43,9 +43,13 @@
       "name": "Ethereum",
       "grp": "core",
       "dir": "blandet",
-      "why": "Gled mot $2 400 22.10. ETH-fondene fikk inn $15 mill. 21.10 og brøt fem dager med utstrømming, men har tapt ca. $1 mrd. i oktober.",
-      "event": "Glamsterdam-test på Hoodi ca. 27.10",
+      "why": "Glamsterdam-testen på Hoodi, satt til 26.10, er utsatt uten ny dato etter sikkerhetsfunn (EIP-8037). ETH rundt $2 400 22.10; fondene har tapt ca. $1 mrd. i oktober.",
+      "event": "Glamsterdam på Hoodi (ny dato ikke satt)",
       "src": [
+        {
+          "t": "Ethereum Foundation 22.10",
+          "u": "https://blog.ethereum.org/2026/10/22/glamsterdam-hoodi-delay"
+        },
         {
           "t": "FXStreet 22.10",
           "u": "https://www.mitrade.com/au/insights/news/live-news/article-3-2184980-20261022"
