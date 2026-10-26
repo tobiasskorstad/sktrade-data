@@ -1,6 +1,6 @@
 {
-  "updated": "26.10.2026 kl. 18:41",
-  "note": "Bakteppe: S&P 500 opp ca. 1 % kl. 10:53 New York-tid 26.10, drevet av rekyl i brikkeaksjer; Brent faller mot $110–115 på håp om roligere forhold USA–Iran. Fed ventes å holde 3,75–4,00 % 28.10, BNP og PCE 29.10.",
+  "updated": "26.10.2026 kl. 19:45",
+  "note": "Bakteppe: S&P 500 opp 0,8 % og Nasdaq 1,1 % kl. 13:15 New York-tid 26.10, drevet av Nvidia; Brent rundt $111 og tiårsrenten 4,98 %. Fed ventes å holde 3,75–4,00 % 28.10, BNP og PCE 29.10.",
   "items": [
     {
       "nm": "Gull (XAU)",
@@ -337,12 +337,12 @@
       "name": "SpaceX",
       "grp": "stk",
       "dir": "blandet",
-      "why": "Musk bekreftet 26.10 et lån på $40 mrd., hovedsakelig til AI-brikker. Aksjen rundt $146,87, ned 0,4 %. Q3 ga overskudd på $4,4 mrd.",
+      "why": "Snudde fra fall til oppgang på 0,9 % 26.10 etter avtalen om å leie AI-datakraft for ca. $40 mrd. Q3 ga overskudd på $4,4 mrd.",
       "event": "Fusjonsvurdering med Tesla (ingen dato)",
       "src": [
         {
-          "t": "CoinDesk 26.10",
-          "u": "https://coindesk.com/markets/2026/10/26/elon-musk-confirms-usd40-billion-spacex-debt-deal-for-ai-chips-warns-of-neocloud-shakeout"
+          "t": "BNN Bloomberg 26.10",
+          "u": "https://bnnbloomberg.ca/markets/2026/10/26/world-shares-mostly-advance-after-a-decline-on-wall-street-and-oil-prices-fall-more-than-1"
         },
         {
           "t": "Khaleej Times 21.10",
@@ -387,12 +387,12 @@
       "name": "Nvidia",
       "grp": "stk",
       "dir": "blandet",
-      "why": "Rundt $213 ved åpning 26.10, opp 1,2 % fra $210,96, da brikkeaksjene hentet seg inn etter salget. Er GPU-leverandør i SpaceX sin brikkeavtale på $40 mrd.",
+      "why": "Opp 2,5 % kl. 13:15 New York-tid 26.10 og var største bidragsyter til S&P 500s oppgang; er igjen USAs største selskap foran Apple.",
       "event": "Kvartalstall ventet sent i november",
       "src": [
         {
-          "t": "Coinpaper 26.10",
-          "u": "https://coinpaper.com/37875/stock-market-today-s-and-p-500-dji-rise-as-nvidia-rebounds-ai-debt-fears-persist-ahead-of-fed-decision"
+          "t": "BNN Bloomberg 26.10",
+          "u": "https://bnnbloomberg.ca/markets/2026/10/26/world-shares-mostly-advance-after-a-decline-on-wall-street-and-oil-prices-fall-more-than-1"
         },
         {
           "t": "TheStreet 26.10",
