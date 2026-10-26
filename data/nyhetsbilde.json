@@ -1,22 +1,22 @@
 {
-  "updated": "23.10.2026 kl. 21:45",
-  "note": "Bakteppe: Dow ned 1,1 % og S&P 500 ned 0,5 % kl. 20:40 norsk tid 23.10, mens Brent steg 2,8 % til ca. $112. 10-årsrenten er 4,99 %. Fed-beslutning 28.10, BNP og PCE 29.10.",
+  "updated": "26.10.2026 kl. 14:45",
+  "note": "Bakteppe: S&P 500 opp 0,3 % og Dow opp 0,5 % ved åpning 26.10, mens WTI-olje falt ca. 1,8 % til $101. 10-årsrenten er 4,99 %. Fed-beslutning 28.10 (ventet uendret), BNP og PCE 29.10.",
   "items": [
     {
       "nm": "Gull (XAU)",
       "name": "Gull",
       "grp": "core",
-      "dir": "ned",
-      "why": "Gullfutures ned 1,1 % til $4 014,40 kl. 20:40 norsk tid 23.10. Var nede i $3 986 i natt, laveste siden 29.07.",
+      "dir": "blandet",
+      "why": "Gullfutures opp ca. 0,4 % til $4 025 26.10, etter fallet til $3 986 23.10 (laveste siden 29.07). Fed ventes å holde renten uendret 28.10.",
       "event": "Fed-møte 28.10",
       "src": [
         {
-          "t": "Yahoo Finance 23.10",
-          "u": "https://finance.yahoo.com/markets/live/stock-market-today-friday-october-23-dow-sp-500-nasdaq-tesla-meta-093000521.html"
+          "t": "TheStreet 26.10",
+          "u": "https://www.thestreet.com/stock-market-today/stock-market-today-dow-jones-sp-500-nasdaq-updates-oct-26-2026"
         },
         {
-          "t": "CoinDesk 23.10",
-          "u": "https://www.coindesk.com/markets/2026/10/23/bitcoin-gold-trim-early-losses-as-yen-gives-up-gains-oil-stays-near-usd100"
+          "t": "Yahoo Finance 26.10",
+          "u": "https://finance.yahoo.com/markets/live/stock-market-today-monday-october-26-dow-sp-500-nasdaq-101153035.html"
         }
       ]
     },
@@ -25,16 +25,16 @@
       "name": "Bitcoin",
       "grp": "core",
       "dir": "ned",
-      "why": "Rundt $81 600 23.10, under støtten ved $82 500. Fondene tapte $635 mill. 22.10 (IBIT $254 mill.), etter innstrømming på $528 mill. 21.10.",
+      "why": "Falt under $80 000 natt til 26.10 (ca. $79 800) da tradere tok ned risiko før Fed-møtet. Rundt $80 300 senere på morgenen.",
       "event": "Fed-møte 28.10",
       "src": [
         {
-          "t": "CoinDesk 23.10",
-          "u": "https://www.coindesk.com/markets/2026/10/23/live-updates-bitcoin-holds-above-usd81-000-as-the-ai-rout-fades-and-oil-climbs"
+          "t": "CoinDesk 26.10",
+          "u": "https://www.coindesk.com/markets/2026/10/26/bitcoin-slips-under-usd80-000-as-traders-de-risk-ahead-of-fed-meeting"
         },
         {
-          "t": "Crypto Briefing 23.10",
-          "u": "https://cryptobriefing.com/spot-bitcoin-etfs-635-million-outflows-october-22/"
+          "t": "Yahoo Finance 26.10",
+          "u": "https://finance.yahoo.com/markets/live/stock-market-today-monday-october-26-dow-sp-500-nasdaq-101153035.html"
         }
       ]
     },
@@ -42,17 +42,17 @@
       "nm": "Ethereum",
       "name": "Ethereum",
       "grp": "core",
-      "dir": "blandet",
-      "why": "Glamsterdam-testen på Hoodi, satt til 26.10, er utsatt uten ny dato etter sikkerhetsfunn (EIP-8037). ETH rundt $2 400 22.10; fondene har tapt ca. $1 mrd. i oktober.",
+      "dir": "ned",
+      "why": "Falt nesten 3 % til drøyt $2 300 26.10. Glamsterdam-testen på Hoodi er utsatt uten ny dato etter sikkerhetsfunn (EIP-8037).",
       "event": "Glamsterdam på Hoodi (ny dato ikke satt)",
       "src": [
         {
-          "t": "Ethereum Foundation 22.10",
-          "u": "https://blog.ethereum.org/2026/10/22/glamsterdam-hoodi-delay"
+          "t": "CoinDesk 26.10",
+          "u": "https://www.coindesk.com/markets/2026/10/26/bitcoin-slips-under-usd80-000-as-traders-de-risk-ahead-of-fed-meeting"
         },
         {
-          "t": "FXStreet 22.10",
-          "u": "https://www.mitrade.com/au/insights/news/live-news/article-3-2184980-20261022"
+          "t": "Ethereum Foundation 22.10",
+          "u": "https://blog.ethereum.org/2026/10/22/glamsterdam-hoodi-delay"
         }
       ]
     },
@@ -61,16 +61,16 @@
       "name": "Solana",
       "grp": "core",
       "dir": "blandet",
-      "why": "Alpenglow ble aktivert på hovednettet ca. kl. 15:54 norsk tid 21.10. Målet er 150 ms bekreftelsestid, men den lå på 6,6 sek like etter. SOL rundt $106.",
+      "why": "Ned ca. 2 % og så vidt over $100 26.10. Alpenglow ble aktivert på hovednettet 21.10 med mål om 150 ms bekreftelsestid.",
       "event": "–",
       "src": [
         {
-          "t": "Cointelegraph 21.10",
-          "u": "https://cointelegraph.com/news/solanas-alpenglow-launches-mainnet-99-faster-finality"
+          "t": "CoinDesk 26.10",
+          "u": "https://www.coindesk.com/markets/2026/10/26/bitcoin-slips-under-usd80-000-as-traders-de-risk-ahead-of-fed-meeting"
         },
         {
-          "t": "Bitcoin.com 21.10",
-          "u": "https://news.bitcoin.com/bitcoin-etf/bitcoin-etfs-add-550m-in-2-days-as-ether-outflows-persist/"
+          "t": "Cointelegraph 21.10",
+          "u": "https://cointelegraph.com/news/solanas-alpenglow-launches-mainnet-99-faster-finality"
         }
       ]
     },
@@ -79,12 +79,12 @@
       "name": "XRP",
       "grp": "core",
       "dir": "blandet",
-      "why": "Rundt $1,32 23.10, ned ca. 1 %. XRPL-oppdateringen fixCleanup3_4_0 er utsatt til tidligst 04.11; utlånsfunksjonen mangler fortsatt flertall.",
+      "why": "Ned ca. 3 % til $1,28 26.10. XRPL-oppdateringen fixCleanup3_4_0 er utsatt til tidligst 04.11; utlånsfunksjonen mangler fortsatt flertall.",
       "event": "XRPL-oppdatering tidligst 04.11",
       "src": [
         {
-          "t": "CoinDesk 23.10",
-          "u": "https://www.coindesk.com/markets/2026/10/23/live-updates-bitcoin-holds-above-usd81-000-as-the-ai-rout-fades-and-oil-climbs"
+          "t": "CoinDesk 26.10",
+          "u": "https://www.coindesk.com/markets/2026/10/26/bitcoin-slips-under-usd80-000-as-traders-de-risk-ahead-of-fed-meeting"
         },
         {
           "t": "CryptoTicker 22.10",
@@ -337,16 +337,16 @@
       "name": "SpaceX",
       "grp": "stk",
       "dir": "blandet",
-      "why": "Opp 1,5 % til $146,92 kl. 20:40 norsk tid 23.10 etter fallet på 9 % 22.10. Phillip Securities oppgraderte til kjøp; AT&T falt på frykt for konkurranse.",
+      "why": "Musk bekreftet 26.10 et lån på $40 mrd., hovedsakelig til AI-brikker. Aksjen rundt $146,87, ned 0,4 %. Q3 ga overskudd på $4,4 mrd.",
       "event": "Fusjonsvurdering med Tesla (ingen dato)",
       "src": [
         {
-          "t": "Yahoo Finance 23.10",
-          "u": "https://finance.yahoo.com/markets/live/stock-market-today-friday-october-23-dow-sp-500-nasdaq-tesla-meta-093000521.html"
+          "t": "CoinDesk 26.10",
+          "u": "https://coindesk.com/markets/2026/10/26/elon-musk-confirms-usd40-billion-spacex-debt-deal-for-ai-chips-warns-of-neocloud-shakeout"
         },
         {
-          "t": "Investing.com 23.10",
-          "u": "https://www.investing.com/news/stock-market-news/wall-st-opens-lower-after-ai-rout-spacex-worries-hit-telecoms-4969697"
+          "t": "Khaleej Times 21.10",
+          "u": "https://www.khaleejtimes.com/world/asia/musk-spacex-tesla-merger-rocket-firm-turns-profit"
         }
       ]
     },
@@ -391,16 +391,16 @@
       "name": "Nvidia",
       "grp": "stk",
       "dir": "blandet",
-      "why": "Falt 4,3 % 22.10 i AI-salget. Apple gikk kort forbi Nvidia i børsverdi 23.10, men Nvidia tok tilbake ledelsen; begge rundt $5,1 billioner.",
+      "why": "SpaceX har ifølge Reuters forhandlet om $40 mrd. for å kjøpe Nvidia-brikker; lånet ble bekreftet 26.10. Aksjen falt 4,3 % 22.10 i AI-salget.",
       "event": "Kvartalstall ventet sent i november",
       "src": [
         {
-          "t": "Yahoo Finance 23.10",
-          "u": "https://finance.yahoo.com/markets/live/stock-market-today-friday-october-23-dow-sp-500-nasdaq-tesla-meta-093000521.html"
+          "t": "CoinDesk 26.10",
+          "u": "https://coindesk.com/markets/2026/10/26/elon-musk-confirms-usd40-billion-spacex-debt-deal-for-ai-chips-warns-of-neocloud-shakeout"
         },
         {
-          "t": "AP 22.10",
-          "u": "https://mymotherlode.com/news/national/11243112/sinking-ai-stocks-undercut-markets-worldwide-as-oil-climbs-to-its-highest-price-since-may.html"
+          "t": "Yahoo Finance 23.10",
+          "u": "https://finance.yahoo.com/markets/live/stock-market-today-friday-october-23-dow-sp-500-nasdaq-tesla-meta-093000521.html"
         }
       ]
     }
