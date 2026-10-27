@@ -1,5 +1,5 @@
 {
-  "updated": "27.10.2026 kl. 19:40",
+  "updated": "27.10.2026 kl. 20:36",
   "note": "Bakteppe: Aksjene stiger 27.10 (Nasdaq +1 %) med brikkeaksjer i front, mens oljen faller (WTI ca. $100, Brent ca. $114). Tiårsrenten ligger rundt 4,99 % og dollaren styrker seg (DXY 102,2). Fed ventes å holde renten uendret 28.10, men markedet venter renteheving i desember.",
   "items": [
     {
@@ -143,9 +143,13 @@
       "name": "Hyperliquid",
       "grp": "top",
       "dir": "blandet",
-      "why": "Tilbakekjøp og vekst i nye markeder (HIP-3) trekker opp. En stor token-opplåsing for teamet (9,9 mill. HYPE) trekker ned, og datoen er uklar.",
+      "why": "Ned ca. 2,5 % siste døgn 27.10 etter at en storaktør flyttet ca. 494 000 HYPE ($37,8 mill.) til Coinbase, et mulig salgssignal. Tilbakekjøp og HIP-3-vekst gir motvekt.",
       "event": "Opplåsing (dato uklar)",
       "src": [
+        {
+          "t": "Phemex 27.10",
+          "u": "https://phemex.com/news/article/phemex-crypto-market-daily-btc-holds-82k-ahead-of-fed-decision-oct-27-101228"
+        },
         {
           "t": "CoinMarketCap 15.10",
           "u": "https://www.coinmarketcap.com/cmc-ai/hyperliquid/latest-updates/"
