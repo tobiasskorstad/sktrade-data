@@ -1,18 +1,18 @@
 {
-  "updated": "27.10.2026 kl. 18:40",
-  "note": "Bakteppe: Aksjene stiger 27.10 med brikkeaksjer i front, mens oljen faller (WTI ca. $101) og tiårsrenten ligger rundt 4,99 %. Markedet priser 93 % sjanse for uendret rente (3,75–4 %) 28.10, men venter renteheving i desember. Kredittpåslagene har økt (high yield 3,37 %).",
+  "updated": "27.10.2026 kl. 19:40",
+  "note": "Bakteppe: Aksjene stiger 27.10 (Nasdaq +1 %) med brikkeaksjer i front, mens oljen faller (WTI ca. $100, Brent ca. $114). Tiårsrenten ligger rundt 4,99 % og dollaren styrker seg (DXY 102,2). Fed ventes å holde renten uendret 28.10, men markedet venter renteheving i desember.",
   "items": [
     {
       "nm": "Gull (XAU)",
       "name": "Gull",
       "grp": "core",
-      "dir": "blandet",
-      "why": "Gullfutures snudde opp 0,4 % til ca. $4 055 27.10, etter svakere start. Fed startet todagersmøtet 27.10, og renten ventes holdt uendret 28.10.",
+      "dir": "opp",
+      "why": "Spotgull steg ca. 1 % til $4 057 27.10 (kl. 17:35 norsk tid), trass i sterkere dollar og høyere renter. Fed-vedtaket kommer 28.10.",
       "event": "Fed-vedtak 28.10",
       "src": [
         {
-          "t": "Yahoo Finance 27.10",
-          "u": "https://finance.yahoo.com/markets/stocks/articles/stock-market-today-oct-27-135043351.html"
+          "t": "Reuters/Euronext 27.10",
+          "u": "https://live.euronext.com/en/financial-news/stocks-rise-oil-slips-tech-earnings-fed-ahead"
         }
       ]
     },
@@ -74,10 +74,14 @@
       "nm": "XRP",
       "name": "XRP",
       "grp": "core",
-      "dir": "blandet",
-      "why": "Ripple fikk endelig godkjenning for en nasjonal trustbank i USA 27.10, men XRP løftet seg lite og ligger rundt $1,25–1,30. XRPL-oppdatering tidligst 04.11.",
+      "dir": "opp",
+      "why": "BNY tilbyr nå oppbevaring av XRP og RLUSD (27.10), og Ripple fikk godkjent nasjonal trustbank samme dag. Kursen har likevel løftet seg lite, rundt $1,25–1,30.",
       "event": "XRPL-oppdatering tidligst 04.11",
       "src": [
+        {
+          "t": "Blockchain Reporter 27.10",
+          "u": "https://blockchainreporter.net/best-crypto-to-buy-now-bitcoin-80k-bny-xrp-custody/"
+        },
         {
           "t": "CoinDesk 27.10",
           "u": "https://www.coindesk.com/daybook-us/2026/10/27/bitcoin-shows-signs-of-weakness-while-ripple-s-bank-win-fails-to-bolster-xrp"
@@ -268,10 +272,14 @@
       "nm": "Uniswap",
       "name": "Uniswap",
       "grp": "top",
-      "dir": "ned",
-      "why": "Ned ca. 5 % 22.10 da DeFi-tokenene ledet fallet i kryptomarkedet. Er ned rundt 20 % så langt i oktober.",
+      "dir": "blandet",
+      "why": "Opp 0,9 % til $7,13 27.10, og innskudd av tokeniserte aksjer på Uniswap passerte $300 mill. Er likevel ned rundt 20 % i oktober.",
       "event": "–",
       "src": [
+        {
+          "t": "KuCoin 27.10",
+          "u": "https://www.kucoin.com/news/articles/crypto-daily-market-report-october-27-2026"
+        },
         {
           "t": "CoinDesk 22.10",
           "u": "https://coindesk.com/markets/2026/10/22/bitcoin-slides-below-usd82-000-as-ai-doubts-return-with-defi-tokens-leading-declines"
