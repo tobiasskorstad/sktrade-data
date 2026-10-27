@@ -1,22 +1,18 @@
 {
-  "updated": "26.10.2026 kl. 20:46",
-  "note": "Bakteppe: S&P 500 opp 0,8 % og Nasdaq 1,1 % kl. 13:15 New York-tid 26.10, drevet av Nvidia; Brent rundt $111 og tiårsrenten 4,98 %. Fed ventes å holde 3,75–4,00 % 28.10, BNP og PCE 29.10.",
+  "updated": "27.10.2026 kl. 14:46",
+  "note": "Bakteppe: S&P 500 opp 0,3 % og Nasdaq 0,5 % ved åpning 27.10; WTI ned 0,5 % til $101 på håp om USA–Iran-diplomati, tiårsrenten 4,99 %. Fed-møtet startet 27.10, med vedtak 28.10 (ca. 90 % sannsynlighet for uendret rente).",
   "items": [
     {
       "nm": "Gull (XAU)",
       "name": "Gull",
       "grp": "core",
       "dir": "blandet",
-      "why": "Gullfutures opp ca. 0,4 % til $4 025 26.10, etter fallet til $3 986 23.10 (laveste siden 29.07). Fed ventes å holde renten uendret 28.10.",
-      "event": "Fed-møte 28.10",
+      "why": "Gullfutures ned 0,3 % til $4 027 27.10, mens sølv falt 1,9 %. Fed startet todagersmøtet 27.10, og renten ventes holdt uendret 28.10.",
+      "event": "Fed-vedtak 28.10",
       "src": [
         {
-          "t": "TheStreet 26.10",
-          "u": "https://www.thestreet.com/stock-market-today/stock-market-today-dow-jones-sp-500-nasdaq-updates-oct-26-2026"
-        },
-        {
-          "t": "Yahoo Finance 26.10",
-          "u": "https://finance.yahoo.com/markets/live/stock-market-today-monday-october-26-dow-sp-500-nasdaq-101153035.html"
+          "t": "TheStreet 27.10",
+          "u": "https://www.thestreet.com/stock-market-today/stock-market-today-dow-jones-sp-500-nasdaq-updates-oct-27-2026"
         }
       ]
     },
@@ -25,16 +21,16 @@
       "name": "Bitcoin",
       "grp": "core",
       "dir": "ned",
-      "why": "Rundt $80 000 26.10 etter bunn på $79 332. Spot-ETF-ene hadde utstrømming på $773,5 mill. 22.–23.10, som brøt tre dager med innstrømming.",
-      "event": "Fed-møte 28.10",
+      "why": "Under $80 000 (ca. $79 700) 27.10, ned rundt 1 % siste døgn. Spot-ETF-ene fikk inn $110 mill. 26.10 etter to dager med utstrømming.",
+      "event": "Fed-vedtak 28.10",
       "src": [
         {
-          "t": "crypto.news 26.10",
-          "u": "https://crypto.news/why-is-bitcoin-price-down-today-fed-etf-outflows/"
+          "t": "CoinDesk 27.10",
+          "u": "https://www.coindesk.com/markets/2026/10/27/bitcoin-drops-below-usd80-000-as-crypto-ignores-asian-tech-rally-fed-meeting-begins"
         },
         {
-          "t": "CoinDesk 26.10",
-          "u": "https://www.coindesk.com/markets/2026/10/26/bitcoin-slips-under-usd80-000-as-traders-de-risk-ahead-of-fed-meeting"
+          "t": "TFTC 27.10",
+          "u": "https://www.tftc.io/bitcoin-etf-flows/october-2026"
         }
       ]
     },
@@ -42,17 +38,13 @@
       "nm": "Ethereum",
       "name": "Ethereum",
       "grp": "core",
-      "dir": "ned",
-      "why": "Falt nesten 3 % til drøyt $2 300 26.10. Glamsterdam-testen på Hoodi er utsatt uten ny dato etter sikkerhetsfunn (EIP-8037).",
+      "dir": "blandet",
+      "why": "Ned ca. 0,5–1 % til rundt $2 310 27.10. Utviklerne har rettet en Glamsterdam-feil som kunne sendt staking-innskudd til blokkbyggere; ny testdato er ikke satt.",
       "event": "Glamsterdam på Hoodi (ny dato ikke satt)",
       "src": [
         {
-          "t": "CoinDesk 26.10",
-          "u": "https://www.coindesk.com/markets/2026/10/26/bitcoin-slips-under-usd80-000-as-traders-de-risk-ahead-of-fed-meeting"
-        },
-        {
-          "t": "Ethereum Foundation 22.10",
-          "u": "https://blog.ethereum.org/2026/10/22/glamsterdam-hoodi-delay"
+          "t": "CoinDesk 27.10",
+          "u": "https://www.coindesk.com/tech/2026/10/27/live-updates-bitcoin-holds-below-usd80-000-as-ai-buildout-draws-more-capital"
         }
       ]
     },
@@ -61,12 +53,12 @@
       "name": "Solana",
       "grp": "core",
       "dir": "blandet",
-      "why": "Ned ca. 2 % og så vidt over $100 26.10. Alpenglow ble aktivert på hovednettet 21.10 med mål om 150 ms bekreftelsestid.",
+      "why": "Ned ca. 1,5–1,9 % siste døgn og rundt $100 27.10. Alpenglow ble aktivert på hovednettet 21.10.",
       "event": "–",
       "src": [
         {
-          "t": "CoinDesk 26.10",
-          "u": "https://www.coindesk.com/markets/2026/10/26/bitcoin-slips-under-usd80-000-as-traders-de-risk-ahead-of-fed-meeting"
+          "t": "CoinDesk 27.10",
+          "u": "https://www.coindesk.com/markets/2026/10/27/bitcoin-drops-below-usd80-000-as-crypto-ignores-asian-tech-rally-fed-meeting-begins"
         },
         {
           "t": "Cointelegraph 21.10",
@@ -79,16 +71,12 @@
       "name": "XRP",
       "grp": "core",
       "dir": "blandet",
-      "why": "Ned ca. 3 % til $1,28 26.10. XRPL-oppdateringen fixCleanup3_4_0 er utsatt til tidligst 04.11; utlånsfunksjonen mangler fortsatt flertall.",
+      "why": "Ripple fikk endelig godkjenning for en nasjonal trustbank i USA 27.10, men XRP løftet seg lite og ligger rundt $1,25–1,30. XRPL-oppdatering tidligst 04.11.",
       "event": "XRPL-oppdatering tidligst 04.11",
       "src": [
         {
-          "t": "CoinDesk 26.10",
-          "u": "https://www.coindesk.com/markets/2026/10/26/bitcoin-slips-under-usd80-000-as-traders-de-risk-ahead-of-fed-meeting"
-        },
-        {
-          "t": "CryptoTicker 22.10",
-          "u": "https://cryptoticker.io/en/xrp-ledger-fixcleanup-amendment-lending-date/"
+          "t": "CoinDesk 27.10",
+          "u": "https://www.coindesk.com/daybook-us/2026/10/27/bitcoin-shows-signs-of-weakness-while-ripple-s-bank-win-fails-to-bolster-xrp"
         }
       ]
     },
@@ -336,17 +324,13 @@
       "nm": "SpaceX",
       "name": "SpaceX",
       "grp": "stk",
-      "dir": "blandet",
-      "why": "Snudde fra fall til oppgang på 0,9 % 26.10 etter avtalen om å leie AI-datakraft for ca. $40 mrd. Q3 ga overskudd på $4,4 mrd.",
+      "dir": "opp",
+      "why": "Opp 1,2 % til $148,66 før åpning 27.10 etter at Anthropic sa de vil betale opptil $120,5 mrd. for AI-datakraft fram til 2029.",
       "event": "Fusjonsvurdering med Tesla (ingen dato)",
       "src": [
         {
-          "t": "BNN Bloomberg 26.10",
-          "u": "https://bnnbloomberg.ca/markets/2026/10/26/world-shares-mostly-advance-after-a-decline-on-wall-street-and-oil-prices-fall-more-than-1"
-        },
-        {
-          "t": "Khaleej Times 21.10",
-          "u": "https://www.khaleejtimes.com/world/asia/musk-spacex-tesla-merger-rocket-firm-turns-profit"
+          "t": "TheStreet 27.10",
+          "u": "https://www.thestreet.com/stock-market-today/stock-market-today-dow-jones-sp-500-nasdaq-updates-oct-27-2026"
         }
       ]
     },
@@ -355,12 +339,12 @@
       "name": "Microsoft",
       "grp": "stk",
       "dir": "blandet",
-      "why": "Opp 0,7 % 23.10 og dempet fallet i markedet, etter nedgang på 1,6 % 22.10. Kvartalstall etter børsslutt 28.10; markedet venter Azure-vekst rundt 45 %.",
+      "why": "Opp ca. 1,5 % 27.10 før kvartalstallene. Investorene ser etter om de store AI-investeringene gir inntektsvekst; markedet venter Azure-vekst rundt 45 %.",
       "event": "Kvartalstall 28.10",
       "src": [
         {
-          "t": "BNN Bloomberg 23.10",
-          "u": "https://www.bnnbloomberg.ca/markets/2026/10/23/us-futures-under-pressure-as-crude-reaches-levels-not-seen-since-may/"
+          "t": "Yahoo Finance 27.10",
+          "u": "https://finance.yahoo.com/markets/live/stock-market-today-tuesday-october-27-dow-sp-500-nasdaq-081901995.html"
         },
         {
           "t": "Finviz 07.10",
@@ -386,17 +370,13 @@
       "nm": "Nvidia",
       "name": "Nvidia",
       "grp": "stk",
-      "dir": "blandet",
-      "why": "Opp 2,5 % kl. 13:15 New York-tid 26.10 og var største bidragsyter til S&P 500s oppgang; er igjen USAs største selskap foran Apple.",
+      "dir": "opp",
+      "why": "Investerer $3 mrd. i Metas aksjeemisjon og samarbeider med Meta om Muse-modellene (27.10). Steg 2,5 % 26.10 og er igjen USAs største selskap.",
       "event": "Kvartalstall ventet sent i november",
       "src": [
         {
-          "t": "BNN Bloomberg 26.10",
-          "u": "https://bnnbloomberg.ca/markets/2026/10/26/world-shares-mostly-advance-after-a-decline-on-wall-street-and-oil-prices-fall-more-than-1"
-        },
-        {
-          "t": "TheStreet 26.10",
-          "u": "https://www.thestreet.com/stock-market-today/stock-market-today-dow-jones-sp-500-nasdaq-updates-oct-26-2026"
+          "t": "Yahoo Finance 27.10",
+          "u": "https://finance.yahoo.com/markets/live/stock-market-today-tuesday-october-27-dow-sp-500-nasdaq-081901995.html"
         }
       ]
     }
