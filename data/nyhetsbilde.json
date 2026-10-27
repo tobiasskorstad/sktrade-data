@@ -1,18 +1,18 @@
 {
-  "updated": "27.10.2026 kl. 14:46",
-  "note": "Bakteppe: S&P 500 opp 0,3 % og Nasdaq 0,5 % ved åpning 27.10; WTI ned 0,5 % til $101 på håp om USA–Iran-diplomati, tiårsrenten 4,99 %. Fed-møtet startet 27.10, med vedtak 28.10 (ca. 90 % sannsynlighet for uendret rente).",
+  "updated": "27.10.2026 kl. 16:00",
+  "note": "Bakteppe: Rolig handel 27.10 – S&P 500 omtrent uendret, Nasdaq +0,3 % og Dow −0,2 %; tiårsrenten rundt 5,00 % og WTI ca. $101,5. Fed-møtet startet 27.10, med vedtak 28.10 (ca. 90 % sannsynlighet for uendret rente).",
   "items": [
     {
       "nm": "Gull (XAU)",
       "name": "Gull",
       "grp": "core",
       "dir": "blandet",
-      "why": "Gullfutures ned 0,3 % til $4 027 27.10, mens sølv falt 1,9 %. Fed startet todagersmøtet 27.10, og renten ventes holdt uendret 28.10.",
+      "why": "Gullfutures snudde opp 0,4 % til ca. $4 055 27.10, etter svakere start. Fed startet todagersmøtet 27.10, og renten ventes holdt uendret 28.10.",
       "event": "Fed-vedtak 28.10",
       "src": [
         {
-          "t": "TheStreet 27.10",
-          "u": "https://www.thestreet.com/stock-market-today/stock-market-today-dow-jones-sp-500-nasdaq-updates-oct-27-2026"
+          "t": "Yahoo Finance 27.10",
+          "u": "https://finance.yahoo.com/markets/stocks/articles/stock-market-today-oct-27-135043351.html"
         }
       ]
     },
