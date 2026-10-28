@@ -1,6 +1,6 @@
 {
-  "updated": "28.10.2026 kl. 15:43",
-  "note": "Bakteppe: Oljen stiger 28.10 (WTI ca. $102, +2 %) etter Houthi-angrep på et saudisk raffineri, og tiårsrenten ligger rundt 5,0 %. Fed ventes å holde renten på 3,75–4 % i kveld (kl. 19:00), med Warshs pressekonferanse i fokus. Microsoft og Alphabet melder tall etter børsslutt; PCE og BNP kommer 29.10.",
+  "updated": "28.10.2026 kl. 16:43",
+  "note": "Bakteppe: S&P 500 åpnet 0,2 % opp 28.10, løftet av brikkeaksjer etter SK Hynix. Brent rundt $115 etter Houthi-angrepet på saudisk raffineri, og tiårsrenten er nær 5 %. Fed ventes å holde renten kl. 19:00 (rentehevingsodds ca. 5 %); Microsoft melder tall etter børsslutt, PCE og BNP 29.10.",
   "items": [
     {
       "nm": "Gull (XAU)",
@@ -25,16 +25,16 @@
       "name": "Bitcoin",
       "grp": "core",
       "dir": "blandet",
-      "why": "Steg 2 % til over $81 000 28.10, men falt tilbake til ca. $80 700. Spot-ETF-ene fikk inn $286 mill. 26.–27.10; oktober er likevel svak.",
+      "why": "Rundt $80 600 28.10 (+0,5 %) etter en topp på $81 636 tidligere på dagen. Spot-ETF-ene fikk inn $176 mill. 27.10, andre dag på rad med innstrømming.",
       "event": "Fed-vedtak 28.10 kl. 19:00",
       "src": [
         {
-          "t": "CoinDesk 28.10",
-          "u": "https://www.coindesk.com/business/2026/10/28/live-updates-bitcoin-climbs-above-usd81-000-as-majors-rally-ahead-of-fed-decision"
+          "t": "Phemex 28.10",
+          "u": "https://phemex.com/news/article/bitcoin-etfs-post-176m-daily-net-inflow-as-ethereum-etfs-bleed-64m-101540"
         },
         {
-          "t": "TokenPost 28.10",
-          "u": "https://www.tokenpost.com/news/investing/42560"
+          "t": "Ted Pillows 28.10",
+          "u": "https://tedpillows.substack.com/p/crypto-and-finance-market-report-127"
         }
       ]
     },
@@ -43,16 +43,16 @@
       "name": "Ethereum",
       "grp": "core",
       "dir": "ned",
-      "why": "Rundt $2 340 28.10, opp under 1 %. Ether-ETF-ene hadde utstrømming på ca. $149 mill. 26.–27.10 og $1,32 mrd. hittil i oktober.",
+      "why": "Rundt $2 340 28.10, svakere enn bitcoin (ETH/BTC 0,0290). Ether-ETF-ene tapte $64 mill. 27.10 og $240 mill. de siste fem handelsdagene.",
       "event": "Glamsterdam på Hoodi (ny dato ikke satt)",
       "src": [
         {
-          "t": "TokenPost 28.10",
-          "u": "https://www.tokenpost.com/news/investing/42560"
+          "t": "Phemex 28.10",
+          "u": "https://phemex.com/news/article/bitcoin-etfs-post-176m-daily-net-inflow-as-ethereum-etfs-bleed-64m-101540"
         },
         {
-          "t": "CoinDesk 28.10",
-          "u": "https://www.coindesk.com/business/2026/10/28/live-updates-bitcoin-climbs-above-usd81-000-as-majors-rally-ahead-of-fed-decision"
+          "t": "Ted Pillows 28.10",
+          "u": "https://tedpillows.substack.com/p/crypto-and-finance-market-report-127"
         }
       ]
     },
