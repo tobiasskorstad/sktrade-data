@@ -1,13 +1,13 @@
 {
-  "updated": "28.10.2026 kl. 17:41",
-  "note": "Bakteppe: S&P 500 og Nasdaq åpnet svakt opp 28.10 (+0,2 %), brikkeaksjer leder etter SK Hynix. Brent rundt $115 og tiårsrenten nær 5 %. Fed ventes å holde renten på 3,75–4,00 % kl. 19:00; i Reuters-måling venter alle 100 økonomer en heving i desember. Microsoft melder tall etter børsslutt, PCE og BNP 29.10.",
+  "updated": "28.10.2026 kl. 18:45",
+  "note": "Bakteppe: Børsene i New York står nær flatt før Fed-vedtaket kl. 19:00 (S&P 500 +0,15 %, Nasdaq −0,1 %). WTI-olje steg over 3 % til ca. $103 etter angrepet på saudisk raffineri, og tiårsrenten er 5,02 %. Bank of Canada hevet renten til 2,5 %; Fed ventes å holde 3,75–4,00 % med hauk-tone. Microsoft melder tall etter børsslutt, PCE og BNP 29.10.",
   "items": [
     {
       "nm": "Gull (XAU)",
       "name": "Gull",
       "grp": "core",
       "dir": "blandet",
-      "why": "Rundt $4 065 før børsåpning 28.10, ned 0,24 %, mens oljen og tiårsrenten (ca. 5,0 %) stiger på inflasjonsfrykt etter angrepet på saudisk raffineri.",
+      "why": "Ned 0,5 % til ca. $4 053 midt i handelsdagen 28.10, mens WTI-olje stiger over 3 % og tiårsrenten ligger på 5,02 % før Fed-vedtaket.",
       "event": "Fed-vedtak 28.10 kl. 19:00, PCE 29.10",
       "src": [
         {
@@ -25,16 +25,16 @@
       "name": "Bitcoin",
       "grp": "core",
       "dir": "blandet",
-      "why": "Rundt $80 600 28.10 (+0,5 %) etter en topp på $81 636 tidligere på dagen. Spot-ETF-ene fikk inn $176 mill. 27.10, andre dag på rad med innstrømming.",
+      "why": "Ga fra seg morgenens oppgang og står rundt $80 600, flatt siste døgn, før Fed kl. 19:00. Spot-ETF-ene fikk inn $176 mill. 27.10.",
       "event": "Fed-vedtak 28.10 kl. 19:00",
       "src": [
         {
-          "t": "Phemex 28.10",
-          "u": "https://phemex.com/news/article/bitcoin-etfs-post-176m-daily-net-inflow-as-ethereum-etfs-bleed-64m-101540"
+          "t": "CoinDesk 28.10",
+          "u": "https://www.coindesk.com/business/2026/10/28/live-updates-bitcoin-climbs-above-usd81-000-as-majors-rally-ahead-of-fed-decision"
         },
         {
-          "t": "Ted Pillows 28.10",
-          "u": "https://tedpillows.substack.com/p/crypto-and-finance-market-report-127"
+          "t": "Phemex 28.10",
+          "u": "https://phemex.com/news/article/bitcoin-etfs-post-176m-daily-net-inflow-as-ethereum-etfs-bleed-64m-101540"
         }
       ]
     },
@@ -340,10 +340,14 @@
       "nm": "SpaceX",
       "name": "SpaceX",
       "grp": "stk",
-      "dir": "opp",
-      "why": "Opp ca. 1 % før åpning 28.10. Musk kalte en fusjon med Tesla «en god idé»; begge har nedsatt uavhengige komiteer. Markedsverdi ca. $1,96 bill.",
+      "dir": "blandet",
+      "why": "Falt sammen med de fleste romfartsaksjer 28.10 og tester støtte rundt $140. Musk kalte en fusjon med Tesla «en god idé»; uavhengige komiteer vurderer saken.",
       "event": "Fusjonsvurdering med Tesla (ingen dato)",
       "src": [
+        {
+          "t": "Yahoo Finance 28.10",
+          "u": "https://finance.yahoo.com/markets/live/stock-market-today-wednesday-october-28-dow-sp-500-nasdaq-fed-meeting-decision-big-tech-earnings-130508769.html"
+        },
         {
           "t": "24/7 Wall St 28.10",
           "u": "https://247wallst.com/investing/2026/10/28/tesla-closed-up-4-at-407-heres-what-a-spacex-merger-could-mean-for-your-shares/"
