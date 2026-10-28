@@ -1,18 +1,18 @@
 {
-  "updated": "28.10.2026 kl. 19:45",
-  "note": "Bakteppe: Fed holdt renten på 3,75–4,00 % 28.10 (10–2, Cook og Hammack ville heve). Markedet priser nå 86 % sjanse for renteheving i desember; tiårsrenten 5,025 %, aksjene nær flate. WTI-olje rundt $102–103. Microsoft melder tall etter børsslutt, PCE og BNP 29.10.",
+  "updated": "28.10.2026 kl. 20:40",
+  "note": "Bakteppe: Fed holdt renten på 3,75–4,00 % 28.10 (10–2, to ville heve); Warsh sa mer informasjon trengs, og desemberheving prises til 85–86 %. Tiårsrenten rundt 5,05 %, WTI-olje rundt $103 etter meldinger om nye USA-angrep på Iran. Microsoft melder tall etter børsslutt, PCE og BNP 29.10.",
   "items": [
     {
       "nm": "Gull (XAU)",
       "name": "Gull",
       "grp": "core",
       "dir": "blandet",
-      "why": "Rundt $4 050 28.10. Fed holdt renten, men to stemte for heving og desemberheving prises til 86 %; tiårsrenten 5,025 % og høy oljepris tynger.",
+      "why": "Rundt $4 067 (−0,2 %) 28.10 etter at Fed holdt renten. Desemberheving prises til 85 %, tiårsrenten 5,05 % og olje over $102 tynger.",
       "event": "PCE og BNP 29.10",
       "src": [
         {
           "t": "Yahoo Finance 28.10",
-          "u": "https://ca.finance.yahoo.com/news/live/fed-meeting-live-updates-federal-reserve-october-meeting-kevin-warsh-161129201.html"
+          "u": "https://finance.yahoo.com/markets/live/stock-market-today-wednesday-october-28-dow-sp-500-nasdaq-fed-meeting-decision-big-tech-earnings-130508769.html"
         },
         {
           "t": "FinanceFeeds 28.10",
@@ -25,7 +25,7 @@
       "name": "Bitcoin",
       "grp": "core",
       "dir": "blandet",
-      "why": "Steg kort til ca. $81 000 etter at Fed holdt renten 28.10, rundt $81 100 (+0,7 %). Odds for desemberheving steg til 86 %; spot-ETF-ene fikk inn $176 mill. 27.10.",
+      "why": "Rundt $81 100–81 300 (+0,5 %) under Warshs pressekonferanse 28.10. Desemberheving prises til 86 %; spot-ETF-ene fikk inn $176 mill. 27.10.",
       "event": "PCE 29.10",
       "src": [
         {
