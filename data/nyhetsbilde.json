@@ -1,18 +1,18 @@
 {
-  "updated": "27.10.2026 kl. 20:36",
-  "note": "Bakteppe: Aksjene stiger 27.10 (Nasdaq +1 %) med brikkeaksjer i front, mens oljen faller (WTI ca. $100, Brent ca. $114). Tiårsrenten ligger rundt 4,99 % og dollaren styrker seg (DXY 102,2). Fed ventes å holde renten uendret 28.10, men markedet venter renteheving i desember.",
+  "updated": "28.10.2026 kl. 14:41",
+  "note": "Bakteppe: Oljen stiger igjen 28.10 (Brent ca. $116, WTI ca. $102) etter Houthi-angrep på et saudisk raffineri, og tiårsrenten ligger rundt 4,99 %. Fed ventes å holde renten på 3,75–4 % i kveld (kl. 19:00), men markedet priser 84 % sjanse for heving i desember. PCE og BNP kommer 29.10.",
   "items": [
     {
       "nm": "Gull (XAU)",
       "name": "Gull",
       "grp": "core",
-      "dir": "opp",
-      "why": "Spotgull steg ca. 1 % til $4 057 27.10 (kl. 17:35 norsk tid), trass i sterkere dollar og høyere renter. Fed-vedtaket kommer 28.10.",
-      "event": "Fed-vedtak 28.10",
+      "dir": "blandet",
+      "why": "Ned 0,6 % til ca. $4 038 natt til 28.10 etter at Houthi-angrep på saudisk raffineri løftet oljen og inflasjonsfrykten. Steg 1,15 % 27.10.",
+      "event": "Fed-vedtak 28.10 kl. 19:00, PCE 29.10",
       "src": [
         {
-          "t": "Reuters/Euronext 27.10",
-          "u": "https://live.euronext.com/en/financial-news/stocks-rise-oil-slips-tech-earnings-fed-ahead"
+          "t": "FinanceFeeds 28.10",
+          "u": "https://financefeeds.com/gold-price-today-4038-wednesday-fed-decision-day-pce-thursday-bull-4125-bear-3940/"
         }
       ]
     },
@@ -20,17 +20,17 @@
       "nm": "Bitcoin",
       "name": "Bitcoin",
       "grp": "core",
-      "dir": "ned",
-      "why": "Rundt $79 700 27.10 og ned ca. 6 % siste måned. Strategy kjøpte ingen bitcoin uka til 25.10. Spot-ETF-ene fikk inn $110 mill. 26.10.",
-      "event": "Fed-vedtak 28.10",
+      "dir": "blandet",
+      "why": "Steg 2 % til over $81 000 28.10, men falt tilbake til ca. $80 700. Spot-ETF-ene fikk inn $286 mill. 26.–27.10; oktober er likevel svak.",
+      "event": "Fed-vedtak 28.10 kl. 19:00",
       "src": [
         {
-          "t": "TipRanks 27.10",
-          "u": "https://www.tipranks.com/news/bitcoin-btc-slides-below-80000-ahead-of-fed-rate-decision"
+          "t": "CoinDesk 28.10",
+          "u": "https://www.coindesk.com/business/2026/10/28/live-updates-bitcoin-climbs-above-usd81-000-as-majors-rally-ahead-of-fed-decision"
         },
         {
-          "t": "Analytics Insight 27.10",
-          "u": "https://analyticsinsight.net/news/bitcoin-price-drops-as-strategy-pauses-btc-purchases-ahead-of-fed-decision"
+          "t": "TokenPost 28.10",
+          "u": "https://www.tokenpost.com/news/investing/42560"
         }
       ]
     },
@@ -38,17 +38,17 @@
       "nm": "Ethereum",
       "name": "Ethereum",
       "grp": "core",
-      "dir": "blandet",
-      "why": "Ned ca. 0,5–1 % til rundt $2 310 27.10. Ether-ETF-ene hadde utstrømming på $88,6 mill. 26.10. Glamsterdam-feil er rettet; ny testdato er ikke satt.",
+      "dir": "ned",
+      "why": "Rundt $2 340 28.10, opp under 1 %. Ether-ETF-ene hadde utstrømming på ca. $149 mill. 26.–27.10 og $1,32 mrd. hittil i oktober.",
       "event": "Glamsterdam på Hoodi (ny dato ikke satt)",
       "src": [
         {
-          "t": "CoinDesk 27.10",
-          "u": "https://www.coindesk.com/tech/2026/10/27/live-updates-bitcoin-holds-below-usd80-000-as-ai-buildout-draws-more-capital"
+          "t": "TokenPost 28.10",
+          "u": "https://www.tokenpost.com/news/investing/42560"
         },
         {
-          "t": "CoinGabbar 27.10",
-          "u": "https://www.coingabbar.com/en/crypto-etf-news-today-btc-inflow-eth-xrp-sol-outflow-fed-meeting"
+          "t": "CoinDesk 28.10",
+          "u": "https://www.coindesk.com/business/2026/10/28/live-updates-bitcoin-climbs-above-usd81-000-as-majors-rally-ahead-of-fed-decision"
         }
       ]
     },
@@ -57,16 +57,12 @@
       "name": "Solana",
       "grp": "core",
       "dir": "blandet",
-      "why": "Ned ca. 1,5–1,9 % siste døgn og rundt $100 27.10. Alpenglow ble aktivert på hovednettet 21.10.",
+      "why": "Steg ca. 3 % til over $102 tidlig 28.10, men ga tilbake mye; rundt $101,5. Alpenglow ble aktivert på hovednettet 21.10.",
       "event": "–",
       "src": [
         {
-          "t": "CoinDesk 27.10",
-          "u": "https://www.coindesk.com/markets/2026/10/27/bitcoin-drops-below-usd80-000-as-crypto-ignores-asian-tech-rally-fed-meeting-begins"
-        },
-        {
-          "t": "Cointelegraph 21.10",
-          "u": "https://cointelegraph.com/news/solanas-alpenglow-launches-mainnet-99-faster-finality"
+          "t": "CoinDesk 28.10",
+          "u": "https://www.coindesk.com/business/2026/10/28/live-updates-bitcoin-climbs-above-usd81-000-as-majors-rally-ahead-of-fed-decision"
         }
       ]
     },
@@ -75,12 +71,12 @@
       "name": "XRP",
       "grp": "core",
       "dir": "opp",
-      "why": "BNY tilbyr nå oppbevaring av XRP og RLUSD (27.10), og Ripple fikk godkjent nasjonal trustbank samme dag. Kursen har likevel løftet seg lite, rundt $1,25–1,30.",
+      "why": "Rundt $1,32 28.10 etter ca. 3 % oppgang tidlig på dagen. BNY tilbyr nå oppbevaring av XRP, og Ripple fikk trustbank-godkjenning 27.10.",
       "event": "XRPL-oppdatering tidligst 04.11",
       "src": [
         {
-          "t": "Blockchain Reporter 27.10",
-          "u": "https://blockchainreporter.net/best-crypto-to-buy-now-bitcoin-80k-bny-xrp-custody/"
+          "t": "CoinDesk 28.10",
+          "u": "https://www.coindesk.com/business/2026/10/28/live-updates-bitcoin-climbs-above-usd81-000-as-majors-rally-ahead-of-fed-decision"
         },
         {
           "t": "CoinDesk 27.10",
@@ -93,16 +89,12 @@
       "name": "BNB",
       "grp": "core",
       "dir": "blandet",
-      "why": "Steg nesten 2 % til ca. $745 23.10 og var dagens sterkeste store kryptovaluta. Ligger likevel under de viktige glidende snittene etter bruddet 15.10.",
+      "why": "Steg ca. 3 % til like under $760 tidlig 28.10 i bred altcoin-oppgang før Fed-vedtaket.",
       "event": "–",
       "src": [
         {
-          "t": "CoinDesk 23.10",
-          "u": "https://www.coindesk.com/markets/2026/10/23/live-updates-bitcoin-holds-above-usd81-000-as-the-ai-rout-fades-and-oil-climbs"
-        },
-        {
-          "t": "Blockchain.News 15.10",
-          "u": "https://blockchain.news/news/20261015-price-prediction-bnb-lower-bollinger-band-breached-as-analysts"
+          "t": "CoinDesk 28.10",
+          "u": "https://www.coindesk.com/business/2026/10/28/live-updates-bitcoin-climbs-above-usd81-000-as-majors-rally-ahead-of-fed-decision"
         }
       ]
     },
@@ -125,12 +117,12 @@
       "name": "Zcash",
       "grp": "top",
       "dir": "opp",
-      "why": "Falt nesten 4 % til ca. $1 200 23.10 etter hoppet på 11 % 21.10. Oppgraderingen NU7 rundt 5.11 kutter blokktiden fra 75 til 25 sekunder.",
+      "why": "Opp 5 % til ca. $1 300 28.10. Oppgraderingen NU7 rundt 5.11 kutter blokktiden fra 75 til 25 sekunder.",
       "event": "NU7-oppgradering ca. 05.11",
       "src": [
         {
-          "t": "CoinDesk 23.10",
-          "u": "https://www.coindesk.com/markets/2026/10/23/live-updates-bitcoin-holds-above-usd81-000-as-the-ai-rout-fades-and-oil-climbs"
+          "t": "CoinDesk 28.10",
+          "u": "https://www.coindesk.com/business/2026/10/28/live-updates-bitcoin-climbs-above-usd81-000-as-majors-rally-ahead-of-fed-decision"
         },
         {
           "t": "CoinDesk 21.10",
@@ -143,16 +135,16 @@
       "name": "Hyperliquid",
       "grp": "top",
       "dir": "blandet",
-      "why": "Ned ca. 2,5 % siste døgn 27.10 etter at en storaktør flyttet ca. 494 000 HYPE ($37,8 mill.) til Coinbase, et mulig salgssignal. Tilbakekjøp og HIP-3-vekst gir motvekt.",
+      "why": "Steg nesten 6 % til litt over $81 tidlig 28.10, etter fallet 27.10 da en storaktør flyttet $37,8 mill. i HYPE til Coinbase.",
       "event": "Opplåsing (dato uklar)",
       "src": [
         {
-          "t": "Phemex 27.10",
-          "u": "https://phemex.com/news/article/phemex-crypto-market-daily-btc-holds-82k-ahead-of-fed-decision-oct-27-101228"
+          "t": "CoinDesk 28.10",
+          "u": "https://www.coindesk.com/business/2026/10/28/live-updates-bitcoin-climbs-above-usd81-000-as-majors-rally-ahead-of-fed-decision"
         },
         {
-          "t": "CoinMarketCap 15.10",
-          "u": "https://www.coinmarketcap.com/cmc-ai/hyperliquid/latest-updates/"
+          "t": "Phemex 27.10",
+          "u": "https://phemex.com/news/article/phemex-crypto-market-daily-btc-holds-82k-ahead-of-fed-decision-oct-27-101228"
         }
       ]
     },
@@ -341,12 +333,12 @@
       "name": "SpaceX",
       "grp": "stk",
       "dir": "opp",
-      "why": "Opp 1,2 % til $148,66 før åpning 27.10 etter at Anthropic sa de vil betale opptil $120,5 mrd. for AI-datakraft fram til 2029.",
+      "why": "Opp ca. 1 % før åpning 28.10. Musk kalte en fusjon med Tesla «en god idé»; begge har nedsatt uavhengige komiteer. Markedsverdi ca. $1,96 bill.",
       "event": "Fusjonsvurdering med Tesla (ingen dato)",
       "src": [
         {
-          "t": "TheStreet 27.10",
-          "u": "https://www.thestreet.com/stock-market-today/stock-market-today-dow-jones-sp-500-nasdaq-updates-oct-27-2026"
+          "t": "24/7 Wall St 28.10",
+          "u": "https://247wallst.com/investing/2026/10/28/tesla-closed-up-4-at-407-heres-what-a-spacex-merger-could-mean-for-your-shares/"
         }
       ]
     },
@@ -355,16 +347,12 @@
       "name": "Microsoft",
       "grp": "stk",
       "dir": "blandet",
-      "why": "Opp ca. 1,5 % 27.10 før kvartalstallene. Investorene ser etter om de store AI-investeringene gir inntektsvekst; markedet venter Azure-vekst rundt 45 %.",
-      "event": "Kvartalstall 28.10",
+      "why": "Ned 0,2 % før åpning 28.10, nær rekordnivå. Medier melder om frivillig sluttpakke for opptil 60 000 ansatte (27 %). Markedet venter Azure-vekst rundt 45 %.",
+      "event": "Kvartalstall 28.10 etter børsslutt",
       "src": [
         {
-          "t": "Yahoo Finance 27.10",
-          "u": "https://finance.yahoo.com/markets/live/stock-market-today-tuesday-october-27-dow-sp-500-nasdaq-081901995.html"
-        },
-        {
-          "t": "Finviz 07.10",
-          "u": "https://finviz.com/news/400058/microsoft-announces-quarterly-earnings-release-date"
+          "t": "Yahoo/Stocktwits 28.10",
+          "u": "https://finance.yahoo.com/markets/stocks/articles/p-500-nasdaq-futures-mixed-094836107.html"
         }
       ]
     },
@@ -373,16 +361,12 @@
       "name": "Tesla",
       "grp": "stk",
       "dir": "opp",
-      "why": "Opp nær 3 % 27.10 etter over 5 % oppgang 26.10, da Barclays oppgraderte til Overweight (kursmål $450) med henvisning til mulig sammenslåing med SpaceX.",
-      "event": "Fed-møte 28.10",
+      "why": "Steg 4 % til $407,46 27.10 og ca. 0,5 % før åpning 28.10. Uavhengige komiteer i Tesla og SpaceX vurderer fusjon, men ingen vilkår er avtalt.",
+      "event": "Fed-vedtak 28.10",
       "src": [
         {
-          "t": "Reuters/Lufkin 27.10",
-          "u": "https://lufkindailynews.com/news_reuters/business/s-p-500-nasdaq-advance-as-oil-eases-ahead-of-fed-decision/article_20b80065-ec4f-566d-8a69-133ccb8aa24a.html"
-        },
-        {
-          "t": "TheStreet 26.10",
-          "u": "https://www.thestreet.com/stock-market-today/stock-market-today-dow-jones-sp-500-nasdaq-updates-oct-26-2026"
+          "t": "24/7 Wall St 28.10",
+          "u": "https://247wallst.com/investing/2026/10/28/tesla-closed-up-4-at-407-heres-what-a-spacex-merger-could-mean-for-your-shares/"
         }
       ]
     },
