@@ -1,15 +1,19 @@
 {
-  "updated": "28.10.2026 kl. 14:41",
-  "note": "Bakteppe: Oljen stiger igjen 28.10 (Brent ca. $116, WTI ca. $102) etter Houthi-angrep på et saudisk raffineri, og tiårsrenten ligger rundt 4,99 %. Fed ventes å holde renten på 3,75–4 % i kveld (kl. 19:00), men markedet priser 84 % sjanse for heving i desember. PCE og BNP kommer 29.10.",
+  "updated": "28.10.2026 kl. 15:43",
+  "note": "Bakteppe: Oljen stiger 28.10 (WTI ca. $102, +2 %) etter Houthi-angrep på et saudisk raffineri, og tiårsrenten ligger rundt 5,0 %. Fed ventes å holde renten på 3,75–4 % i kveld (kl. 19:00), med Warshs pressekonferanse i fokus. Microsoft og Alphabet melder tall etter børsslutt; PCE og BNP kommer 29.10.",
   "items": [
     {
       "nm": "Gull (XAU)",
       "name": "Gull",
       "grp": "core",
       "dir": "blandet",
-      "why": "Ned 0,6 % til ca. $4 038 natt til 28.10 etter at Houthi-angrep på saudisk raffineri løftet oljen og inflasjonsfrykten. Steg 1,15 % 27.10.",
+      "why": "Rundt $4 065 før børsåpning 28.10, ned 0,24 %, mens oljen og tiårsrenten (ca. 5,0 %) stiger på inflasjonsfrykt etter angrepet på saudisk raffineri.",
       "event": "Fed-vedtak 28.10 kl. 19:00, PCE 29.10",
       "src": [
+        {
+          "t": "Yahoo Finance 28.10",
+          "u": "https://finance.yahoo.com/markets/live/stock-market-today-wednesday-october-28-dow-sp-500-nasdaq-fed-meeting-decision-big-tech-earnings-130508769.html"
+        },
         {
           "t": "FinanceFeeds 28.10",
           "u": "https://financefeeds.com/gold-price-today-4038-wednesday-fed-decision-day-pce-thursday-bull-4125-bear-3940/"
@@ -117,12 +121,12 @@
       "name": "Zcash",
       "grp": "top",
       "dir": "opp",
-      "why": "Opp 5 % til ca. $1 300 28.10. Oppgraderingen NU7 rundt 5.11 kutter blokktiden fra 75 til 25 sekunder.",
+      "why": "Opp ca. 6 % 28.10, og åpne futures-posisjoner økte 14 %. Oppgraderingen NU7 rundt 5.11 kutter blokktiden fra 75 til 25 sekunder.",
       "event": "NU7-oppgradering ca. 05.11",
       "src": [
         {
           "t": "CoinDesk 28.10",
-          "u": "https://www.coindesk.com/business/2026/10/28/live-updates-bitcoin-climbs-above-usd81-000-as-majors-rally-ahead-of-fed-decision"
+          "u": "https://www.coindesk.com/markets/2026/10/28/bitcoin-rebounds-above-usd81-000-as-asian-chip-rally-spills-into-crypto-pepe-jumps-9"
         },
         {
           "t": "CoinDesk 21.10",
@@ -152,10 +156,14 @@
       "nm": "Dogecoin",
       "name": "Dogecoin",
       "grp": "top",
-      "dir": "ned",
-      "why": "Brøt ned fra en stigende kanal og tester $0,080. Kinesiske påtalemyndigheter vil inndra millioner av DOGE, noe som kan gi salgspress.",
+      "dir": "blandet",
+      "why": "Opp 1,9 % til ca. $0,0788 28.10 i en memecoin-oppgang (PEPE +9 %). Kinesisk inndragning av DOGE kan fortsatt gi salgspress.",
       "event": "–",
       "src": [
+        {
+          "t": "CoinDesk 28.10",
+          "u": "https://www.coindesk.com/markets/2026/10/28/bitcoin-rebounds-above-usd81-000-as-asian-chip-rally-spills-into-crypto-pepe-jumps-9"
+        },
         {
           "t": "CoinMarketCap 15.10",
           "u": "https://coinmarketcap.com/cmc-ai/dogecoin/latest-updates/"
