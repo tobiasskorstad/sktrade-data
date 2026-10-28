@@ -1,18 +1,18 @@
 {
-  "updated": "28.10.2026 kl. 18:45",
-  "note": "Bakteppe: Børsene i New York står nær flatt før Fed-vedtaket kl. 19:00 (S&P 500 +0,15 %, Nasdaq −0,1 %). WTI-olje steg over 3 % til ca. $103 etter angrepet på saudisk raffineri, og tiårsrenten er 5,02 %. Bank of Canada hevet renten til 2,5 %; Fed ventes å holde 3,75–4,00 % med hauk-tone. Microsoft melder tall etter børsslutt, PCE og BNP 29.10.",
+  "updated": "28.10.2026 kl. 19:45",
+  "note": "Bakteppe: Fed holdt renten på 3,75–4,00 % 28.10 (10–2, Cook og Hammack ville heve). Markedet priser nå 86 % sjanse for renteheving i desember; tiårsrenten 5,025 %, aksjene nær flate. WTI-olje rundt $102–103. Microsoft melder tall etter børsslutt, PCE og BNP 29.10.",
   "items": [
     {
       "nm": "Gull (XAU)",
       "name": "Gull",
       "grp": "core",
       "dir": "blandet",
-      "why": "Ned 0,5 % til ca. $4 053 midt i handelsdagen 28.10, mens WTI-olje stiger over 3 % og tiårsrenten ligger på 5,02 % før Fed-vedtaket.",
-      "event": "Fed-vedtak 28.10 kl. 19:00, PCE 29.10",
+      "why": "Rundt $4 050 28.10. Fed holdt renten, men to stemte for heving og desemberheving prises til 86 %; tiårsrenten 5,025 % og høy oljepris tynger.",
+      "event": "PCE og BNP 29.10",
       "src": [
         {
           "t": "Yahoo Finance 28.10",
-          "u": "https://finance.yahoo.com/markets/live/stock-market-today-wednesday-october-28-dow-sp-500-nasdaq-fed-meeting-decision-big-tech-earnings-130508769.html"
+          "u": "https://ca.finance.yahoo.com/news/live/fed-meeting-live-updates-federal-reserve-october-meeting-kevin-warsh-161129201.html"
         },
         {
           "t": "FinanceFeeds 28.10",
@@ -25,8 +25,8 @@
       "name": "Bitcoin",
       "grp": "core",
       "dir": "blandet",
-      "why": "Ga fra seg morgenens oppgang og står rundt $80 600, flatt siste døgn, før Fed kl. 19:00. Spot-ETF-ene fikk inn $176 mill. 27.10.",
-      "event": "Fed-vedtak 28.10 kl. 19:00",
+      "why": "Steg kort til ca. $81 000 etter at Fed holdt renten 28.10, rundt $81 100 (+0,7 %). Odds for desemberheving steg til 86 %; spot-ETF-ene fikk inn $176 mill. 27.10.",
+      "event": "PCE 29.10",
       "src": [
         {
           "t": "CoinDesk 28.10",
@@ -61,7 +61,7 @@
       "name": "Solana",
       "grp": "core",
       "dir": "blandet",
-      "why": "Steg ca. 3 % til over $102 tidlig 28.10, men ga tilbake mye; rundt $101,5. Alpenglow ble aktivert på hovednettet 21.10.",
+      "why": "Rundt $102 (+1,2 %) etter Fed-vedtaket 28.10. Alpenglow ble aktivert på hovednettet 21.10.",
       "event": "–",
       "src": [
         {
