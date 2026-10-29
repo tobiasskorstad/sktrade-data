@@ -1,22 +1,18 @@
 {
-  "updated": "28.10.2026 kl. 20:40",
-  "note": "Bakteppe: Fed holdt renten på 3,75–4,00 % 28.10 (10–2, to ville heve); Warsh sa mer informasjon trengs, og desemberheving prises til 85–86 %. Tiårsrenten rundt 5,05 %, WTI-olje rundt $103 etter meldinger om nye USA-angrep på Iran. Microsoft melder tall etter børsslutt, PCE og BNP 29.10.",
+  "updated": "29.10.2026 kl. 17:37",
+  "note": "Bakteppe: BNP steg 3,4 % i Q3 (ventet 3,2 %), og kjerne-PCE lå på 3,1 % i september, som ventet (29.10). Desemberheving prises til rundt 76–83 %, tiårsrenten falt til ca. 4,96 % og Brent ligger rundt $114. Nasdaq ned 1,3 % midt på dagen etter Alphabet-fall.",
   "items": [
     {
       "nm": "Gull (XAU)",
       "name": "Gull",
       "grp": "core",
-      "dir": "blandet",
-      "why": "Rundt $4 067 (−0,2 %) 28.10 etter at Fed holdt renten. Desemberheving prises til 85 %, tiårsrenten 5,05 % og olje over $102 tynger.",
-      "event": "PCE og BNP 29.10",
+      "dir": "ned",
+      "why": "Falt 1,1 % til ca. $4 022 29.10 etter sterkere BNP (3,4 %) og kjerne-PCE 3,1 %. Desemberheving prises opptil 83 %; dollarindeksen 102,2.",
+      "event": "Fed-talere (Warsh, Cook, Hammack)",
       "src": [
         {
-          "t": "Yahoo Finance 28.10",
-          "u": "https://finance.yahoo.com/markets/live/stock-market-today-wednesday-october-28-dow-sp-500-nasdaq-fed-meeting-decision-big-tech-earnings-130508769.html"
-        },
-        {
-          "t": "FinanceFeeds 28.10",
-          "u": "https://financefeeds.com/gold-price-today-4038-wednesday-fed-decision-day-pce-thursday-bull-4125-bear-3940/"
+          "t": "FinanceFeeds 29.10",
+          "u": "https://financefeeds.com/gold-price-today-4022-thursday-gdp-3-4-percent-core-pce-3-1-after-fed-hold-two-hike-dissents-bull-4110-bear-3940/"
         }
       ]
     },
@@ -25,16 +21,12 @@
       "name": "Bitcoin",
       "grp": "core",
       "dir": "blandet",
-      "why": "Rundt $81 100–81 300 (+0,5 %) under Warshs pressekonferanse 28.10. Desemberheving prises til 86 %; spot-ETF-ene fikk inn $176 mill. 27.10.",
-      "event": "PCE 29.10",
+      "why": "Rundt $81 600 (+1,5 %) 29.10 etter PCE og BNP. Spot-ETF-ene fikk inn $137 mill. 28.10, men har netto utstrømming på $350 mill. siste fem dager.",
+      "event": "Fed-talere etter PCE",
       "src": [
         {
-          "t": "CoinDesk 28.10",
-          "u": "https://www.coindesk.com/business/2026/10/28/live-updates-bitcoin-climbs-above-usd81-000-as-majors-rally-ahead-of-fed-decision"
-        },
-        {
-          "t": "Phemex 28.10",
-          "u": "https://phemex.com/news/article/bitcoin-etfs-post-176m-daily-net-inflow-as-ethereum-etfs-bleed-64m-101540"
+          "t": "Ted Pillows 29.10",
+          "u": "https://tedpillows.substack.com/p/crypto-and-finance-market-report-bbb"
         }
       ]
     },
@@ -43,16 +35,12 @@
       "name": "Ethereum",
       "grp": "core",
       "dir": "ned",
-      "why": "Rundt $2 340 28.10, svakere enn bitcoin (ETH/BTC 0,0290). Ether-ETF-ene tapte $64 mill. 27.10 og $240 mill. de siste fem handelsdagene.",
+      "why": "ETH/BTC uendret på 0,0290 29.10, svakere enn resten av markedet over tid. Ether-ETF-ene tapte netto $276 mill. siste fem handelsdager.",
       "event": "Glamsterdam på Hoodi (ny dato ikke satt)",
       "src": [
         {
-          "t": "Phemex 28.10",
-          "u": "https://phemex.com/news/article/bitcoin-etfs-post-176m-daily-net-inflow-as-ethereum-etfs-bleed-64m-101540"
-        },
-        {
-          "t": "Ted Pillows 28.10",
-          "u": "https://tedpillows.substack.com/p/crypto-and-finance-market-report-127"
+          "t": "Ted Pillows 29.10",
+          "u": "https://tedpillows.substack.com/p/crypto-and-finance-market-report-bbb"
         }
       ]
     },
@@ -138,17 +126,17 @@
       "nm": "Hyperliquid",
       "name": "Hyperliquid",
       "grp": "top",
-      "dir": "blandet",
-      "why": "Steg nesten 6 % til litt over $81 tidlig 28.10, etter fallet 27.10 da en storaktør flyttet $37,8 mill. i HYPE til Coinbase.",
-      "event": "Opplåsing (dato uklar)",
+      "dir": "opp",
+      "why": "Steg ca. 15 % til rundt $91 29.10 etter at NYSE-eier ICE vil tilby Hyperliquid-baserte perpetual futures i USA (krever godkjenning). Toppen er $97,96.",
+      "event": "Regulatorisk godkjenning av ICE-avtalen (ingen dato)",
       "src": [
         {
-          "t": "CoinDesk 28.10",
-          "u": "https://www.coindesk.com/business/2026/10/28/live-updates-bitcoin-climbs-above-usd81-000-as-majors-rally-ahead-of-fed-decision"
+          "t": "The Block 29.10",
+          "u": "https://www.theblock.co/news/business/2026-10-29-ice-tradexyz-hyperliquid-perpetual-futures-us-432132"
         },
         {
-          "t": "Phemex 27.10",
-          "u": "https://phemex.com/news/article/phemex-crypto-market-daily-btc-holds-82k-ahead-of-fed-decision-oct-27-101228"
+          "t": "Ted Pillows 29.10",
+          "u": "https://tedpillows.substack.com/p/crypto-and-finance-market-report-bbb"
         }
       ]
     },
@@ -358,13 +346,17 @@
       "nm": "Microsoft",
       "name": "Microsoft",
       "grp": "stk",
-      "dir": "blandet",
-      "why": "Ned 0,2 % før åpning 28.10, nær rekordnivå. Medier melder om frivillig sluttpakke for opptil 60 000 ansatte (27 %). Markedet venter Azure-vekst rundt 45 %.",
-      "event": "Kvartalstall 28.10 etter børsslutt",
+      "dir": "opp",
+      "why": "Omsetning $92,3 mrd. (+19 %) og Azure +48 % i kvartalet, over ventet; Azure-guiding 49–50 %. Aksjen steg ca. 4 % etter børs, men var nær flat 29.10.",
+      "event": "–",
       "src": [
         {
-          "t": "Yahoo/Stocktwits 28.10",
-          "u": "https://finance.yahoo.com/markets/stocks/articles/p-500-nasdaq-futures-mixed-094836107.html"
+          "t": "SiliconANGLE 28.10",
+          "u": "https://siliconangle.com/2026/10/28/microsofts-stock-rises-on-solid-earnings-and-revenue-beat-with-azure-growing-48/"
+        },
+        {
+          "t": "Ted Pillows 29.10",
+          "u": "https://tedpillows.substack.com/p/crypto-and-finance-market-report-bbb"
         }
       ]
     },
@@ -374,7 +366,7 @@
       "grp": "stk",
       "dir": "opp",
       "why": "Steg 4 % til $407,46 27.10 og ca. 0,5 % før åpning 28.10. Uavhengige komiteer i Tesla og SpaceX vurderer fusjon, men ingen vilkår er avtalt.",
-      "event": "Fed-vedtak 28.10",
+      "event": "Fusjonsvurdering med SpaceX (ingen dato)",
       "src": [
         {
           "t": "24/7 Wall St 28.10",
