@@ -1,18 +1,22 @@
 {
-  "updated": "29.10.2026 kl. 17:37",
-  "note": "Bakteppe: BNP steg 3,4 % i Q3 (ventet 3,2 %), og kjerne-PCE lå på 3,1 % i september, som ventet (29.10). Desemberheving prises til rundt 76–83 %, tiårsrenten falt til ca. 4,96 % og Brent ligger rundt $114. Nasdaq ned 1,3 % midt på dagen etter Alphabet-fall.",
+  "updated": "29.10.2026 kl. 18:45",
+  "note": "Bakteppe: BNP steg 3,4 % i Q3 og PCE-inflasjonen steg til 3,6 % (kjerne 3,1 %) 29.10. Desemberheving prises høyt, tiårsrenten ligger rundt 5,00 % og WTI falt til ca. $101. Nasdaq ned ca. 1,4 % etter Alphabets kraftige fall (ca. −12 %).",
   "items": [
     {
       "nm": "Gull (XAU)",
       "name": "Gull",
       "grp": "core",
       "dir": "ned",
-      "why": "Falt 1,1 % til ca. $4 022 29.10 etter sterkere BNP (3,4 %) og kjerne-PCE 3,1 %. Desemberheving prises opptil 83 %; dollarindeksen 102,2.",
+      "why": "Ned ca. 0,6 % til rundt $4 028 29.10 etter sterkere BNP (3,4 %) og PCE-inflasjon på 3,6 %. Tiårsrenten rundt 5,00 %.",
       "event": "Fed-talere (Warsh, Cook, Hammack)",
       "src": [
         {
           "t": "FinanceFeeds 29.10",
           "u": "https://financefeeds.com/gold-price-today-4022-thursday-gdp-3-4-percent-core-pce-3-1-after-fed-hold-two-hike-dissents-bull-4110-bear-3940/"
+        },
+        {
+          "t": "Yahoo Finance 29.10",
+          "u": "https://finance.yahoo.com/markets/live/stock-market-today-thursday-october-29-dow-sp-500-nasdaq-alphabet-microsoft-earnings-130305714.html"
         }
       ]
     },
@@ -21,9 +25,13 @@
       "name": "Bitcoin",
       "grp": "core",
       "dir": "blandet",
-      "why": "Rundt $81 600 (+1,5 %) 29.10 etter PCE og BNP. Spot-ETF-ene fikk inn $137 mill. 28.10, men har netto utstrømming på $350 mill. siste fem dager.",
-      "event": "Fed-talere etter PCE",
+      "why": "Rundt $81 000 29.10 etter dypp til $79 300 tidligere i uka. Opsjoner for $10,86 mrd. forfaller 30.10, og put-opsjoner er klart dyrest.",
+      "event": "Opsjonsforfall 30.10 kl. 09 norsk tid",
       "src": [
+        {
+          "t": "CoinDesk 29.10",
+          "u": "https://www.coindesk.com/daybook-us/2026/10/29/as-usd10-billion-in-bitcoin-options-near-expiry-the-tell-is-in-the-pricing"
+        },
         {
           "t": "Ted Pillows 29.10",
           "u": "https://tedpillows.substack.com/p/crypto-and-finance-market-report-bbb"
@@ -62,13 +70,13 @@
       "nm": "XRP",
       "name": "XRP",
       "grp": "core",
-      "dir": "opp",
-      "why": "Rundt $1,32 28.10 etter ca. 3 % oppgang tidlig på dagen. BNY tilbyr nå oppbevaring av XRP, og Ripple fikk trustbank-godkjenning 27.10.",
+      "dir": "blandet",
+      "why": "Ned 1,7 % til ca. $1,29 29.10. BNY tilbyr nå oppbevaring av XRP, og Ripple fikk trustbank-godkjenning 27.10.",
       "event": "XRPL-oppdatering tidligst 04.11",
       "src": [
         {
-          "t": "CoinDesk 28.10",
-          "u": "https://www.coindesk.com/business/2026/10/28/live-updates-bitcoin-climbs-above-usd81-000-as-majors-rally-ahead-of-fed-decision"
+          "t": "CoinDesk 29.10",
+          "u": "https://www.coindesk.com/daybook-us/2026/10/29/as-usd10-billion-in-bitcoin-options-near-expiry-the-tell-is-in-the-pricing"
         },
         {
           "t": "CoinDesk 27.10",
@@ -127,7 +135,7 @@
       "name": "Hyperliquid",
       "grp": "top",
       "dir": "opp",
-      "why": "Steg ca. 15 % til rundt $91 29.10 etter at NYSE-eier ICE vil tilby Hyperliquid-baserte perpetual futures i USA (krever godkjenning). Toppen er $97,96.",
+      "why": "Steg ca. 18 % til rundt $94,8 29.10 etter at NYSE-eier ICE vil tilby Hyperliquid-baserte perpetual futures i USA (krever godkjenning).",
       "event": "Regulatorisk godkjenning av ICE-avtalen (ingen dato)",
       "src": [
         {
@@ -135,8 +143,8 @@
           "u": "https://www.theblock.co/news/business/2026-10-29-ice-tradexyz-hyperliquid-perpetual-futures-us-432132"
         },
         {
-          "t": "Ted Pillows 29.10",
-          "u": "https://tedpillows.substack.com/p/crypto-and-finance-market-report-bbb"
+          "t": "CoinDesk 29.10",
+          "u": "https://www.coindesk.com/daybook-us/2026/10/29/as-usd10-billion-in-bitcoin-options-near-expiry-the-tell-is-in-the-pricing"
         }
       ]
     },
@@ -346,8 +354,8 @@
       "nm": "Microsoft",
       "name": "Microsoft",
       "grp": "stk",
-      "dir": "opp",
-      "why": "Omsetning $92,3 mrd. (+19 %) og Azure +48 % i kvartalet, over ventet; Azure-guiding 49–50 %. Aksjen steg ca. 4 % etter børs, men var nær flat 29.10.",
+      "dir": "blandet",
+      "why": "Sterke tall: omsetning $92,3 mrd. (+19 %), Azure +48 %. Aksjen steg 2,6 % før åpning, men var ned ca. 1,2 % 29.10 da AI-uroen etter Alphabet slo inn.",
       "event": "–",
       "src": [
         {
@@ -355,8 +363,8 @@
           "u": "https://siliconangle.com/2026/10/28/microsofts-stock-rises-on-solid-earnings-and-revenue-beat-with-azure-growing-48/"
         },
         {
-          "t": "Ted Pillows 29.10",
-          "u": "https://tedpillows.substack.com/p/crypto-and-finance-market-report-bbb"
+          "t": "Yahoo Finance 29.10",
+          "u": "https://finance.yahoo.com/markets/stocks/articles/stock-market-today-oct-29-134623155.html"
         }
       ]
     },
