@@ -1,416 +1,408 @@
 {
-  "updated": "30.10.2026 kl. 16:56",
-  "note": "Bakteppe: Hack mot Binance (anslått $6,3 mrd.) utløste kryptofall natt til 30.10. Nasdaq falt ca. 2 % etter svake tall fra Amazon og Intel; tiårsrenten falt til ca. 4,93 %. Bank of Japan holdt renten på 1,25 %, og Brent er rundt $113–115.",
-  "items": [
+ "updated": "30.10.2026 kl. 17:45",
+ "note": "Bakteppe: Nasdaq ned ca. 2,4 % og S&P 500 ned 1,5 % 30.10 etter svake tall fra Amazon og Intel (Intel −28 %). Binance-hacket ($6,3 mrd.) presser krypto; tiårsrenten er 4,95 %, BoJ holdt renten på 1,25 %, og Brent er rundt $113.",
+ "items": [
+  {
+   "nm": "Gull (XAU)",
+   "name": "Gull",
+   "grp": "core",
+   "dir": "ned",
+   "why": "Ned ca. 2,8 % til rundt $3 917 30.10, under $4 000, selv med høy oljepris (WTI ca. $104) og spenning rundt Iran.",
+   "event": "Mellomvalg i USA 03.11",
+   "src": [
     {
-      "nm": "Gull (XAU)",
-      "name": "Gull",
-      "grp": "core",
-      "dir": "ned",
-      "why": "Falt ca. 2,4 % til rundt $3 934 30.10, under $4 000, til tross for et tankskipangrep i Hormuzstredet. Brent rundt $113–115.",
-      "event": "Mellomvalg i USA 03.11",
-      "src": [
-        {
-          "t": "Yahoo Finance 30.10",
-          "u": "https://finance.yahoo.com/personal-finance/investing/article/gold-price-today-friday-october-30-2026-gold-slips-below-4000-as-mid-east-concerns-mount-111451238.html"
-        },
-        {
-          "t": "Yahoo Finance 30.10",
-          "u": "https://finance.yahoo.com/markets/live/stock-market-today-friday-october-30-dow-sp-500-nasdaq-083236552.html"
-        }
-      ]
-    },
-    {
-      "nm": "Bitcoin",
-      "name": "Bitcoin",
-      "grp": "core",
-      "dir": "ned",
-      "why": "Ned ca. 4,2 % til rundt $76 850 30.10 etter et hack mot Binance (anslått $6,3 mrd., knyttet til Nord-Korea). Binance sier alle tap dekkes.",
-      "event": "Mellomvalg i USA 03.11",
-      "src": [
-        {
-          "t": "Yahoo Finance 30.10",
-          "u": "https://finance.yahoo.com/markets/live/stock-market-today-friday-october-30-dow-sp-500-nasdaq-083236552.html"
-        },
-        {
-          "t": "CryptoTicker 29.10",
-          "u": "https://cryptoticker.io/en/crypto-crash-binance-hack-timeline-liquidations"
-        }
-      ]
-    },
-    {
-      "nm": "Ethereum",
-      "name": "Ethereum",
-      "grp": "core",
-      "dir": "ned",
-      "why": "Ned ca. 3,5 % til rundt $2 237 30.10. Hackeren flyttet over 360 000 ETH fra en Binance-lommebok 29.10; ETF-ene har hatt utstrømming i oktober.",
-      "event": "Glamsterdam på Hoodi (ny dato ikke satt)",
-      "src": [
-        {
-          "t": "KuCoin 30.10",
-          "u": "https://www.kucoin.com/news/flash/crypto-market-declines-as-bitcoin-falls-below-79-000-bnb-drops-5-2"
-        },
-        {
-          "t": "CryptoTicker 29.10",
-          "u": "https://cryptoticker.io/en/crypto-crash-binance-hack-timeline-liquidations"
-        }
-      ]
-    },
-    {
-      "nm": "Solana",
-      "name": "Solana",
-      "grp": "core",
-      "dir": "ned",
-      "why": "Ned ca. 3,2 % til rundt $96,9 30.10 i bredt kryptofall etter Binance-hacket. Alpenglow ble aktivert på hovednettet 21.10.",
-      "event": "–",
-      "src": [
-        {
-          "t": "KuCoin 30.10",
-          "u": "https://www.kucoin.com/news/flash/crypto-market-declines-as-bitcoin-falls-below-79-000-bnb-drops-5-2"
-        }
-      ]
-    },
-    {
-      "nm": "XRP",
-      "name": "XRP",
-      "grp": "core",
-      "dir": "blandet",
-      "why": "Ned ca. 2,7 % til $1,25 30.10 etter Binance-hacket. BNY tilbyr oppbevaring av XRP, og Ripple fikk trustbank-godkjenning 27.10.",
-      "event": "XRPL-oppdatering tidligst 04.11",
-      "src": [
-        {
-          "t": "KuCoin 30.10",
-          "u": "https://www.kucoin.com/news/flash/crypto-market-declines-as-bitcoin-falls-below-79-000-bnb-drops-5-2"
-        },
-        {
-          "t": "CoinDesk 27.10",
-          "u": "https://www.coindesk.com/daybook-us/2026/10/27/bitcoin-shows-signs-of-weakness-while-ripple-s-bank-win-fails-to-bolster-xrp"
-        }
-      ]
-    },
-    {
-      "nm": "BNB",
-      "name": "BNB",
-      "grp": "core",
-      "dir": "ned",
-      "why": "Ned ca. 5,3 % til rundt $702 30.10 etter hacket mot Binance (anslått $6,3 mrd.). Ca. $3 mrd. er frosset, og Binance lover å dekke tapene.",
-      "event": "–",
-      "src": [
-        {
-          "t": "KuCoin 30.10",
-          "u": "https://www.kucoin.com/news/flash/crypto-market-declines-as-bitcoin-falls-below-79-000-bnb-drops-5-2"
-        },
-        {
-          "t": "Yahoo Finance 30.10",
-          "u": "https://finance.yahoo.com/markets/live/stock-market-today-friday-october-30-dow-sp-500-nasdaq-083236552.html"
-        }
-      ]
-    },
-    {
-      "nm": "TRON",
-      "name": "TRON",
-      "grp": "top",
-      "dir": "opp",
-      "why": "Steg ca. 5 % 29.10 og 1,8 % til $0,336 30.10, mot et fallende marked. Q3-rapporten viste $2,21 billioner i stablecoin-oppgjør (sponset).",
-      "event": "–",
-      "src": [
-        {
-          "t": "KuCoin 30.10",
-          "u": "https://www.kucoin.com/news/flash/crypto-market-declines-as-bitcoin-falls-below-79-000-bnb-drops-5-2"
-        },
-        {
-          "t": "GlobeNewswire 12.10",
-          "u": "https://www.globenewswire.com/news-release/2026/10/12/3379264/0/en/state-of-tron-q3-2026-report-highlights-2-21-trillion-in-stablecoin-settlement-amid-network-activity-growth.html"
-        }
-      ]
-    },
-    {
-      "nm": "Zcash",
-      "name": "Zcash",
-      "grp": "top",
-      "dir": "opp",
-      "why": "Opp 2 % til ca. $1 250 30.10 mot et fallende marked. NU7-oppgraderingen rundt 5.11 kutter blokktiden fra 75 til 25 sekunder.",
-      "event": "NU7-oppgradering ca. 05.11",
-      "src": [
-        {
-          "t": "KuCoin 30.10",
-          "u": "https://www.kucoin.com/news/flash/crypto-market-declines-as-bitcoin-falls-below-79-000-bnb-drops-5-2"
-        },
-        {
-          "t": "CoinDesk 21.10",
-          "u": "https://www.coindesk.com/markets/2026/10/21/zcash-developers-confirm-november-date-for-upgrade-that-triples-payment-speed"
-        }
-      ]
-    },
-    {
-      "nm": "Hyperliquid",
-      "name": "Hyperliquid",
-      "grp": "top",
-      "dir": "opp",
-      "why": "Opp ca. 18 % til rundt $91,7 30.10 etter at NYSE-eier ICE vil tilby Hyperliquid-baserte perpetual futures i USA (krever godkjenning).",
-      "event": "Regulatorisk godkjenning av ICE-avtalen (ingen dato)",
-      "src": [
-        {
-          "t": "KuCoin 30.10",
-          "u": "https://www.kucoin.com/news/flash/crypto-market-declines-as-bitcoin-falls-below-79-000-bnb-drops-5-2"
-        },
-        {
-          "t": "The Block 29.10",
-          "u": "https://www.theblock.co/news/business/2026-10-29-ice-tradexyz-hyperliquid-perpetual-futures-us-432132"
-        }
-      ]
-    },
-    {
-      "nm": "Dogecoin",
-      "name": "Dogecoin",
-      "grp": "top",
-      "dir": "blandet",
-      "why": "Ned 2,8 % til ca. $0,0757 30.10 i kryptofallet etter Binance-hacket. Kinesisk inndragning av DOGE kan fortsatt gi salgspress.",
-      "event": "–",
-      "src": [
-        {
-          "t": "KuCoin 30.10",
-          "u": "https://www.kucoin.com/news/flash/crypto-market-declines-as-bitcoin-falls-below-79-000-bnb-drops-5-2"
-        },
-        {
-          "t": "CoinMarketCap 15.10",
-          "u": "https://coinmarketcap.com/cmc-ai/dogecoin/latest-updates/"
-        }
-      ]
-    },
-    {
-      "nm": "Monero",
-      "name": "Monero",
-      "grp": "top",
-      "dir": "blandet",
-      "why": "Uendret rundt $587 30.10 mens resten av markedet falt. Høy giring i futures gir fortsatt risiko for kraftige svingninger.",
-      "event": "–",
-      "src": [
-        {
-          "t": "KuCoin 30.10",
-          "u": "https://www.kucoin.com/news/flash/crypto-market-declines-as-bitcoin-falls-below-79-000-bnb-drops-5-2"
-        },
-        {
-          "t": "CoinDesk 21.10",
-          "u": "https://www.coindesk.com/markets/2026/10/21/monero-futures-are-again-heating-with-leverage-raising-volatility-risks"
-        }
-      ]
-    },
-    {
-      "nm": "Chainlink",
-      "name": "Chainlink",
-      "grp": "top",
-      "dir": "blandet",
-      "why": "Utvidet samarbeidet med S&P Global Ratings 29.10 om å legge risikovurderinger on-chain. Kursen var likevel ned ca. 3,7 % til rundt $11,3.",
-      "event": "–",
-      "src": [
-        {
-          "t": "KuCoin 29.10",
-          "u": "https://www.kucoin.com/news/articles/crypto-daily-market-report-october-29-2026"
-        }
-      ]
-    },
-    {
-      "nm": "Cardano",
-      "name": "Cardano",
-      "grp": "top",
-      "dir": "ned",
-      "why": "Falt over 4 % 29.10 i et bredt kryptofall etter Fed-signaler om mulig renteheving i desember.",
-      "event": "–",
-      "src": [
-        {
-          "t": "CaptainAltcoin 29.10",
-          "u": "https://captainaltcoin.com/why-is-the-crypto-market-down-today-october-29/"
-        }
-      ]
-    },
-    {
-      "nm": "Stellar",
-      "name": "Stellar",
-      "grp": "top",
-      "dir": "blandet",
-      "why": "Lite ferske nyheter. Følger i hovedsak resten av kryptomarkedet.",
-      "event": "–",
-      "src": [
-        {
-          "t": "CoinMarketCap",
-          "u": "https://coinmarketcap.com/ja/cmc-ai/stellar/latest-updates/"
-        }
-      ]
-    },
-    {
-      "nm": "NEAR",
-      "name": "NEAR",
-      "grp": "top",
-      "dir": "blandet",
-      "why": "Doblet seg siste 30 dager, men falt 10,8 % siste uke. Den eneste av de svake altcoinene med innstrømming i fond 14.10.",
-      "event": "–",
-      "src": [
-        {
-          "t": "24/7 Wall St 15.10",
-          "u": "https://www.aol.com/articles/bitcoin-fell-2-week-5-143938000.html"
-        }
-      ]
-    },
-    {
-      "nm": "Bitcoin Cash",
-      "name": "Bitcoin Cash",
-      "grp": "top",
-      "dir": "blandet",
-      "why": "Lite ferske nyheter. Følger bitcoin.",
-      "event": "–",
-      "src": [
-        {
-          "t": "CoinMarketCap",
-          "u": "https://coinmarketcap.com/cmc-ai/bitcoin-cash/latest-updates/"
-        }
-      ]
-    },
-    {
-      "nm": "Litecoin",
-      "name": "Litecoin",
-      "grp": "top",
-      "dir": "opp",
-      "why": "Opp 20,7 % siste 30 dager. Halveringen i 2027 vil redusere nye mynter.",
-      "event": "Halvering 2027",
-      "src": [
-        {
-          "t": "24/7 Wall St 12.10",
-          "u": "https://www.aol.com/articles/cardano-avalanche-litecoin-more-20-190027000.html"
-        }
-      ]
-    },
-    {
-      "nm": "Uniswap",
-      "name": "Uniswap",
-      "grp": "top",
-      "dir": "blandet",
-      "why": "Binance-hackeren flyttet 7,0 mill. UNI 29.10, som kan gi salgspress. Ned rundt 20 % i oktober, men tokeniserte aksjer på Uniswap passerte $300 mill.",
-      "event": "–",
-      "src": [
-        {
-          "t": "CryptoTicker 29.10",
-          "u": "https://cryptoticker.io/en/crypto-crash-binance-hack-timeline-liquidations"
-        },
-        {
-          "t": "KuCoin 27.10",
-          "u": "https://www.kucoin.com/news/articles/crypto-daily-market-report-october-27-2026"
-        }
-      ]
-    },
-    {
-      "nm": "Avalanche",
-      "name": "Avalanche",
-      "grp": "top",
-      "dir": "opp",
-      "why": "Opp 47,6 % siste 30 dager på fokus på tokenisering av tradisjonelle verdier. Er fortsatt over 90 % under toppen.",
-      "event": "–",
-      "src": [
-        {
-          "t": "24/7 Wall St 12.10",
-          "u": "https://www.aol.com/articles/cardano-avalanche-litecoin-more-20-190027000.html"
-        }
-      ]
-    },
-    {
-      "nm": "Sui",
-      "name": "Sui",
-      "grp": "top",
-      "dir": "ned",
-      "why": "Falt 11,5 % siste uke og 5,2 % på en dag 13.10, mer enn resten av markedet.",
-      "event": "Opplåsing 01.11 (0,32 % av sirkulerende, ca. $12 mill.)",
-      "src": [
-        {
-          "t": "24/7 Wall St 15.10",
-          "u": "https://www.aol.com/articles/bitcoin-fell-2-week-5-143938000.html"
-        },
-        {
-          "t": "KuCoin 29.10",
-          "u": "https://www.kucoin.com/news/articles/crypto-daily-market-report-october-29-2026"
-        }
-      ]
-    },
-    {
-      "nm": "Gram (Toncoin)",
-      "name": "Gram (Toncoin)",
-      "grp": "top",
-      "dir": "opp",
-      "why": "Telegram utvidet tilgangen til lommeboken «Money» 9.10, og den skal på sikt ut til over 1 milliard brukere.",
-      "event": "Opplåsing 24.03.2027",
-      "src": [
-        {
-          "t": "CoinMarketCap",
-          "u": "https://coinmarketcap.com/cmc-ai/gram/latest-updates/"
-        }
-      ]
-    },
-    {
-      "nm": "SpaceX",
-      "name": "SpaceX",
-      "grp": "stk",
-      "dir": "blandet",
-      "why": "Falt sammen med de fleste romfartsaksjer 28.10 og tester støtte rundt $140. Musk kalte en fusjon med Tesla «en god idé»; uavhengige komiteer vurderer saken.",
-      "event": "Fusjonsvurdering med Tesla (ingen dato)",
-      "src": [
-        {
-          "t": "Yahoo Finance 28.10",
-          "u": "https://finance.yahoo.com/markets/live/stock-market-today-wednesday-october-28-dow-sp-500-nasdaq-fed-meeting-decision-big-tech-earnings-130508769.html"
-        },
-        {
-          "t": "24/7 Wall St 28.10",
-          "u": "https://247wallst.com/investing/2026/10/28/tesla-closed-up-4-at-407-heres-what-a-spacex-merger-could-mean-for-your-shares/"
-        }
-      ]
-    },
-    {
-      "nm": "Microsoft",
-      "name": "Microsoft",
-      "grp": "stk",
-      "dir": "blandet",
-      "why": "Sterke tall: omsetning $92,3 mrd. (+19 %), Azure +48 %. Aksjen steg 2,6 % før åpning, men var ned ca. 1,2 % 29.10 da AI-uroen etter Alphabet slo inn.",
-      "event": "–",
-      "src": [
-        {
-          "t": "SiliconANGLE 28.10",
-          "u": "https://siliconangle.com/2026/10/28/microsofts-stock-rises-on-solid-earnings-and-revenue-beat-with-azure-growing-48/"
-        },
-        {
-          "t": "Yahoo Finance 29.10",
-          "u": "https://finance.yahoo.com/markets/stocks/articles/stock-market-today-oct-29-134623155.html"
-        }
-      ]
-    },
-    {
-      "nm": "Tesla",
-      "name": "Tesla",
-      "grp": "stk",
-      "dir": "opp",
-      "why": "Steg 4 % til $407,46 27.10 og ca. 0,5 % før åpning 28.10. Uavhengige komiteer i Tesla og SpaceX vurderer fusjon, men ingen vilkår er avtalt.",
-      "event": "Fusjonsvurdering med SpaceX (ingen dato)",
-      "src": [
-        {
-          "t": "24/7 Wall St 28.10",
-          "u": "https://247wallst.com/investing/2026/10/28/tesla-closed-up-4-at-407-heres-what-a-spacex-merger-could-mean-for-your-shares/"
-        }
-      ]
-    },
-    {
-      "nm": "Nvidia",
-      "name": "Nvidia",
-      "grp": "stk",
-      "dir": "blandet",
-      "why": "Nasdaq falt ca. 2,1 % 30.10 etter svake tall fra Amazon og Intel, med frykt for lavere AI-investeringer i 2027. Nvidia er 12 % under toppen.",
-      "event": "Kvartalstall ventet sent i november",
-      "src": [
-        {
-          "t": "Yahoo Finance 30.10",
-          "u": "https://finance.yahoo.com/markets/live/stock-market-today-friday-october-30-dow-sp-500-nasdaq-083236552.html"
-        },
-        {
-          "t": "Yahoo Finance 27.10",
-          "u": "https://finance.yahoo.com/markets/live/stock-market-today-tuesday-october-27-dow-sp-500-nasdaq-081901995.html"
-        }
-      ]
+     "t": "Yahoo Finance 30.10",
+     "u": "https://finance.yahoo.com/markets/live/stock-market-today-friday-october-30-dow-sp-500-nasdaq-amazon-intel-131609630.html"
     }
-  ]
+   ]
+  },
+  {
+   "nm": "Bitcoin",
+   "name": "Bitcoin",
+   "grp": "core",
+   "dir": "ned",
+   "why": "Ned ca. 5 % til rundt $77 300 30.10 etter Binance-hacket ($6,3 mrd.). Om lag $1,5 mrd. i giret posisjoner er likvidert.",
+   "event": "Binance-uttak gjenåpnes ca. 01.11; mellomvalg i USA 03.11",
+   "src": [
+    {
+     "t": "CoinDesk 30.10",
+     "u": "https://www.coindesk.com/markets/2026/10/30/live-news-binance-hack-rattles-crypto-as-intel-plunges-and-ai-spending-fears-hit-tech"
+    },
+    {
+     "t": "Yahoo Finance 30.10",
+     "u": "https://finance.yahoo.com/markets/live/stock-market-today-friday-october-30-dow-sp-500-nasdaq-amazon-intel-131609630.html"
+    }
+   ]
+  },
+  {
+   "nm": "Ethereum",
+   "name": "Ethereum",
+   "grp": "core",
+   "dir": "ned",
+   "why": "Ned ca. 3,5 % til rundt $2 237 30.10. Hackeren flyttet over 360 000 ETH fra en Binance-lommebok 29.10; ETF-ene har hatt utstrømming i oktober.",
+   "event": "Glamsterdam på Hoodi (ny dato ikke satt)",
+   "src": [
+    {
+     "t": "KuCoin 30.10",
+     "u": "https://www.kucoin.com/news/flash/crypto-market-declines-as-bitcoin-falls-below-79-000-bnb-drops-5-2"
+    },
+    {
+     "t": "CryptoTicker 29.10",
+     "u": "https://cryptoticker.io/en/crypto-crash-binance-hack-timeline-liquidations"
+    }
+   ]
+  },
+  {
+   "nm": "Solana",
+   "name": "Solana",
+   "grp": "core",
+   "dir": "ned",
+   "why": "Ned ca. 6,5 % til rundt $95 30.10 i bredt kryptofall etter Binance-hacket. Alpenglow ble aktivert på hovednettet 21.10.",
+   "event": "–",
+   "src": [
+    {
+     "t": "CoinDesk 30.10",
+     "u": "https://www.coindesk.com/markets/2026/10/30/live-news-binance-hack-rattles-crypto-as-intel-plunges-and-ai-spending-fears-hit-tech"
+    }
+   ]
+  },
+  {
+   "nm": "XRP",
+   "name": "XRP",
+   "grp": "core",
+   "dir": "blandet",
+   "why": "Ned ca. 2,7 % til $1,25 30.10 etter Binance-hacket. BNY tilbyr oppbevaring av XRP, og Ripple fikk trustbank-godkjenning 27.10.",
+   "event": "XRPL-oppdatering tidligst 04.11",
+   "src": [
+    {
+     "t": "KuCoin 30.10",
+     "u": "https://www.kucoin.com/news/flash/crypto-market-declines-as-bitcoin-falls-below-79-000-bnb-drops-5-2"
+    },
+    {
+     "t": "CoinDesk 27.10",
+     "u": "https://www.coindesk.com/daybook-us/2026/10/27/bitcoin-shows-signs-of-weakness-while-ripple-s-bank-win-fails-to-bolster-xrp"
+    }
+   ]
+  },
+  {
+   "nm": "BNB",
+   "name": "BNB",
+   "grp": "core",
+   "dir": "ned",
+   "why": "Falt kraftig 30.10 etter hacket mot Binance ($6,3 mrd.). Binance har satt av $6,34 mrd. for å dekke tapene; ca. $3 mrd. er frosset.",
+   "event": "Uttak fra Binance gjenåpnes ca. 01.11",
+   "src": [
+    {
+     "t": "CoinDesk 30.10",
+     "u": "https://www.coindesk.com/markets/2026/10/30/live-news-binance-hack-rattles-crypto-as-intel-plunges-and-ai-spending-fears-hit-tech"
+    }
+   ]
+  },
+  {
+   "nm": "TRON",
+   "name": "TRON",
+   "grp": "top",
+   "dir": "opp",
+   "why": "Steg ca. 5 % 29.10 og 1,8 % til $0,336 30.10, mot et fallende marked. Q3-rapporten viste $2,21 billioner i stablecoin-oppgjør (sponset).",
+   "event": "–",
+   "src": [
+    {
+     "t": "KuCoin 30.10",
+     "u": "https://www.kucoin.com/news/flash/crypto-market-declines-as-bitcoin-falls-below-79-000-bnb-drops-5-2"
+    },
+    {
+     "t": "GlobeNewswire 12.10",
+     "u": "https://www.globenewswire.com/news-release/2026/10/12/3379264/0/en/state-of-tron-q3-2026-report-highlights-2-21-trillion-in-stablecoin-settlement-amid-network-activity-growth.html"
+    }
+   ]
+  },
+  {
+   "nm": "Zcash",
+   "name": "Zcash",
+   "grp": "top",
+   "dir": "opp",
+   "why": "Opp 2 % til ca. $1 250 30.10 mot et fallende marked. NU7-oppgraderingen rundt 5.11 kutter blokktiden fra 75 til 25 sekunder.",
+   "event": "NU7-oppgradering ca. 05.11",
+   "src": [
+    {
+     "t": "KuCoin 30.10",
+     "u": "https://www.kucoin.com/news/flash/crypto-market-declines-as-bitcoin-falls-below-79-000-bnb-drops-5-2"
+    },
+    {
+     "t": "CoinDesk 21.10",
+     "u": "https://www.coindesk.com/markets/2026/10/21/zcash-developers-confirm-november-date-for-upgrade-that-triples-payment-speed"
+    }
+   ]
+  },
+  {
+   "nm": "Hyperliquid",
+   "name": "Hyperliquid",
+   "grp": "top",
+   "dir": "opp",
+   "why": "Opp ca. 18 % til rundt $91,7 30.10 etter at NYSE-eier ICE vil tilby Hyperliquid-baserte perpetual futures i USA (krever godkjenning).",
+   "event": "Regulatorisk godkjenning av ICE-avtalen (ingen dato)",
+   "src": [
+    {
+     "t": "KuCoin 30.10",
+     "u": "https://www.kucoin.com/news/flash/crypto-market-declines-as-bitcoin-falls-below-79-000-bnb-drops-5-2"
+    },
+    {
+     "t": "The Block 29.10",
+     "u": "https://www.theblock.co/news/business/2026-10-29-ice-tradexyz-hyperliquid-perpetual-futures-us-432132"
+    }
+   ]
+  },
+  {
+   "nm": "Dogecoin",
+   "name": "Dogecoin",
+   "grp": "top",
+   "dir": "blandet",
+   "why": "Ned 2,8 % til ca. $0,0757 30.10 i kryptofallet etter Binance-hacket. Kinesisk inndragning av DOGE kan fortsatt gi salgspress.",
+   "event": "–",
+   "src": [
+    {
+     "t": "KuCoin 30.10",
+     "u": "https://www.kucoin.com/news/flash/crypto-market-declines-as-bitcoin-falls-below-79-000-bnb-drops-5-2"
+    },
+    {
+     "t": "CoinMarketCap 15.10",
+     "u": "https://coinmarketcap.com/cmc-ai/dogecoin/latest-updates/"
+    }
+   ]
+  },
+  {
+   "nm": "Monero",
+   "name": "Monero",
+   "grp": "top",
+   "dir": "blandet",
+   "why": "Uendret rundt $587 30.10 mens resten av markedet falt. Høy giring i futures gir fortsatt risiko for kraftige svingninger.",
+   "event": "–",
+   "src": [
+    {
+     "t": "KuCoin 30.10",
+     "u": "https://www.kucoin.com/news/flash/crypto-market-declines-as-bitcoin-falls-below-79-000-bnb-drops-5-2"
+    },
+    {
+     "t": "CoinDesk 21.10",
+     "u": "https://www.coindesk.com/markets/2026/10/21/monero-futures-are-again-heating-with-leverage-raising-volatility-risks"
+    }
+   ]
+  },
+  {
+   "nm": "Chainlink",
+   "name": "Chainlink",
+   "grp": "top",
+   "dir": "blandet",
+   "why": "Utvidet samarbeidet med S&P Global Ratings 29.10 om å legge risikovurderinger on-chain. Kursen var likevel ned ca. 3,7 % til rundt $11,3.",
+   "event": "–",
+   "src": [
+    {
+     "t": "KuCoin 29.10",
+     "u": "https://www.kucoin.com/news/articles/crypto-daily-market-report-october-29-2026"
+    }
+   ]
+  },
+  {
+   "nm": "Cardano",
+   "name": "Cardano",
+   "grp": "top",
+   "dir": "ned",
+   "why": "Falt over 4 % 29.10 i et bredt kryptofall etter Fed-signaler om mulig renteheving i desember.",
+   "event": "–",
+   "src": [
+    {
+     "t": "CaptainAltcoin 29.10",
+     "u": "https://captainaltcoin.com/why-is-the-crypto-market-down-today-october-29/"
+    }
+   ]
+  },
+  {
+   "nm": "Stellar",
+   "name": "Stellar",
+   "grp": "top",
+   "dir": "blandet",
+   "why": "Lite ferske nyheter. Følger i hovedsak resten av kryptomarkedet.",
+   "event": "–",
+   "src": [
+    {
+     "t": "CoinMarketCap",
+     "u": "https://coinmarketcap.com/ja/cmc-ai/stellar/latest-updates/"
+    }
+   ]
+  },
+  {
+   "nm": "NEAR",
+   "name": "NEAR",
+   "grp": "top",
+   "dir": "blandet",
+   "why": "Doblet seg siste 30 dager, men falt 10,8 % siste uke. Den eneste av de svake altcoinene med innstrømming i fond 14.10.",
+   "event": "–",
+   "src": [
+    {
+     "t": "24/7 Wall St 15.10",
+     "u": "https://www.aol.com/articles/bitcoin-fell-2-week-5-143938000.html"
+    }
+   ]
+  },
+  {
+   "nm": "Bitcoin Cash",
+   "name": "Bitcoin Cash",
+   "grp": "top",
+   "dir": "blandet",
+   "why": "Lite ferske nyheter. Følger bitcoin.",
+   "event": "–",
+   "src": [
+    {
+     "t": "CoinMarketCap",
+     "u": "https://coinmarketcap.com/cmc-ai/bitcoin-cash/latest-updates/"
+    }
+   ]
+  },
+  {
+   "nm": "Litecoin",
+   "name": "Litecoin",
+   "grp": "top",
+   "dir": "opp",
+   "why": "Opp 20,7 % siste 30 dager. Halveringen i 2027 vil redusere nye mynter.",
+   "event": "Halvering 2027",
+   "src": [
+    {
+     "t": "24/7 Wall St 12.10",
+     "u": "https://www.aol.com/articles/cardano-avalanche-litecoin-more-20-190027000.html"
+    }
+   ]
+  },
+  {
+   "nm": "Uniswap",
+   "name": "Uniswap",
+   "grp": "top",
+   "dir": "blandet",
+   "why": "Binance-hackeren flyttet 7,0 mill. UNI 29.10, som kan gi salgspress. Ned rundt 20 % i oktober, men tokeniserte aksjer på Uniswap passerte $300 mill.",
+   "event": "–",
+   "src": [
+    {
+     "t": "CryptoTicker 29.10",
+     "u": "https://cryptoticker.io/en/crypto-crash-binance-hack-timeline-liquidations"
+    },
+    {
+     "t": "KuCoin 27.10",
+     "u": "https://www.kucoin.com/news/articles/crypto-daily-market-report-october-27-2026"
+    }
+   ]
+  },
+  {
+   "nm": "Avalanche",
+   "name": "Avalanche",
+   "grp": "top",
+   "dir": "opp",
+   "why": "Opp 47,6 % siste 30 dager på fokus på tokenisering av tradisjonelle verdier. Er fortsatt over 90 % under toppen.",
+   "event": "–",
+   "src": [
+    {
+     "t": "24/7 Wall St 12.10",
+     "u": "https://www.aol.com/articles/cardano-avalanche-litecoin-more-20-190027000.html"
+    }
+   ]
+  },
+  {
+   "nm": "Sui",
+   "name": "Sui",
+   "grp": "top",
+   "dir": "ned",
+   "why": "Falt 11,5 % siste uke og 5,2 % på en dag 13.10, mer enn resten av markedet.",
+   "event": "Opplåsing 01.11 (0,32 % av sirkulerende, ca. $12 mill.)",
+   "src": [
+    {
+     "t": "24/7 Wall St 15.10",
+     "u": "https://www.aol.com/articles/bitcoin-fell-2-week-5-143938000.html"
+    },
+    {
+     "t": "KuCoin 29.10",
+     "u": "https://www.kucoin.com/news/articles/crypto-daily-market-report-october-29-2026"
+    }
+   ]
+  },
+  {
+   "nm": "Gram (Toncoin)",
+   "name": "Gram (Toncoin)",
+   "grp": "top",
+   "dir": "opp",
+   "why": "Telegram utvidet tilgangen til lommeboken «Money» 9.10, og den skal på sikt ut til over 1 milliard brukere.",
+   "event": "Opplåsing 24.03.2027",
+   "src": [
+    {
+     "t": "CoinMarketCap",
+     "u": "https://coinmarketcap.com/cmc-ai/gram/latest-updates/"
+    }
+   ]
+  },
+  {
+   "nm": "SpaceX",
+   "name": "SpaceX",
+   "grp": "stk",
+   "dir": "blandet",
+   "why": "Falt sammen med de fleste romfartsaksjer 28.10 og tester støtte rundt $140. Musk kalte en fusjon med Tesla «en god idé»; uavhengige komiteer vurderer saken.",
+   "event": "Fusjonsvurdering med Tesla (ingen dato)",
+   "src": [
+    {
+     "t": "Yahoo Finance 28.10",
+     "u": "https://finance.yahoo.com/markets/live/stock-market-today-wednesday-october-28-dow-sp-500-nasdaq-fed-meeting-decision-big-tech-earnings-130508769.html"
+    },
+    {
+     "t": "24/7 Wall St 28.10",
+     "u": "https://247wallst.com/investing/2026/10/28/tesla-closed-up-4-at-407-heres-what-a-spacex-merger-could-mean-for-your-shares/"
+    }
+   ]
+  },
+  {
+   "nm": "Microsoft",
+   "name": "Microsoft",
+   "grp": "stk",
+   "dir": "blandet",
+   "why": "Sterke tall: omsetning $92,3 mrd. (+19 %), Azure +48 %. Aksjen steg 2,6 % før åpning, men var ned ca. 1,2 % 29.10 da AI-uroen etter Alphabet slo inn.",
+   "event": "–",
+   "src": [
+    {
+     "t": "SiliconANGLE 28.10",
+     "u": "https://siliconangle.com/2026/10/28/microsofts-stock-rises-on-solid-earnings-and-revenue-beat-with-azure-growing-48/"
+    },
+    {
+     "t": "Yahoo Finance 29.10",
+     "u": "https://finance.yahoo.com/markets/stocks/articles/stock-market-today-oct-29-134623155.html"
+    }
+   ]
+  },
+  {
+   "nm": "Tesla",
+   "name": "Tesla",
+   "grp": "stk",
+   "dir": "opp",
+   "why": "Steg 4 % til $407,46 27.10 og ca. 0,5 % før åpning 28.10. Uavhengige komiteer i Tesla og SpaceX vurderer fusjon, men ingen vilkår er avtalt.",
+   "event": "Fusjonsvurdering med SpaceX (ingen dato)",
+   "src": [
+    {
+     "t": "24/7 Wall St 28.10",
+     "u": "https://247wallst.com/investing/2026/10/28/tesla-closed-up-4-at-407-heres-what-a-spacex-merger-could-mean-for-your-shares/"
+    }
+   ]
+  },
+  {
+   "nm": "Nvidia",
+   "name": "Nvidia",
+   "grp": "stk",
+   "dir": "blandet",
+   "why": "Nasdaq falt ca. 2,1 % 30.10 etter svake tall fra Amazon og Intel, med frykt for lavere AI-investeringer i 2027. Nvidia er 12 % under toppen.",
+   "event": "Kvartalstall ventet sent i november",
+   "src": [
+    {
+     "t": "Yahoo Finance 30.10",
+     "u": "https://finance.yahoo.com/markets/live/stock-market-today-friday-october-30-dow-sp-500-nasdaq-083236552.html"
+    },
+    {
+     "t": "Yahoo Finance 27.10",
+     "u": "https://finance.yahoo.com/markets/live/stock-market-today-tuesday-october-27-dow-sp-500-nasdaq-081901995.html"
+    }
+   ]
+  }
+ ]
 }
