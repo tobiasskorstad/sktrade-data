@@ -1,6 +1,6 @@
 {
-  "updated": "30.10.2026 kl. 19:45",
-  "note": "Bakteppe: Nasdaq ned ca. 3 % og S&P 500 ned 1,6 % midt på dagen 30.10 etter svake tall fra Amazon og Intel (Intel −30 %). Binance-hacket ($6,3 mrd.) presser krypto; tiårsrenten er 4,95 %, og Brent er rundt $117 på Iran-uro.",
+  "updated": "30.10.2026 kl. 20:40",
+  "note": "Bakteppe: Nasdaq ned ca. 3,3 %, S&P 500 ned 2,1 % og Dow ned 1,2 % 30.10, på vei mot verste dag siden juni etter Amazon og Intel (−30 %). Fed-toppene Musalem og Barkin snakker om renteheving i desember; Brent er over $113 på Iran-uro, og Binance-hacket ($6,3 mrd.) presser krypto.",
   "items": [
     {
       "nm": "Gull (XAU)",
@@ -340,13 +340,13 @@
       "nm": "SpaceX",
       "name": "SpaceX",
       "grp": "stk",
-      "dir": "blandet",
-      "why": "Falt sammen med de fleste romfartsaksjer 28.10 og tester støtte rundt $140. Musk kalte en fusjon med Tesla «en god idé»; uavhengige komiteer vurderer saken.",
+      "dir": "ned",
+      "why": "Falt ca. 5 % 30.10 i tech-salget og har tapt over $400 mrd. i markedsverdi siden 06.10. Tesla-fusjon vurderes fortsatt av uavhengige komiteer.",
       "event": "Fusjonsvurdering med Tesla (ingen dato)",
       "src": [
         {
-          "t": "Yahoo Finance 28.10",
-          "u": "https://finance.yahoo.com/markets/live/stock-market-today-wednesday-october-28-dow-sp-500-nasdaq-fed-meeting-decision-big-tech-earnings-130508769.html"
+          "t": "Yahoo Finance 30.10",
+          "u": "https://finance.yahoo.com/markets/live/stock-market-today-friday-october-30-dow-sp-500-nasdaq-amazon-intel-131609630.html"
         },
         {
           "t": "24/7 Wall St 28.10",
@@ -376,10 +376,14 @@
       "nm": "Tesla",
       "name": "Tesla",
       "grp": "stk",
-      "dir": "opp",
-      "why": "Steg 4 % til $407,46 27.10 og ca. 0,5 % før åpning 28.10. Uavhengige komiteer i Tesla og SpaceX vurderer fusjon, men ingen vilkår er avtalt.",
+      "dir": "blandet",
+      "why": "Er 19,2 % under 52-ukers toppen 30.10 midt i tech-salget, etter +4 % til $407,46 27.10. Komiteer vurderer fusjon med SpaceX; ingen vilkår avtalt.",
       "event": "Fusjonsvurdering med SpaceX (ingen dato)",
       "src": [
+        {
+          "t": "Yahoo Finance 30.10",
+          "u": "https://finance.yahoo.com/markets/live/stock-market-today-friday-october-30-dow-sp-500-nasdaq-amazon-intel-131609630.html"
+        },
         {
           "t": "24/7 Wall St 28.10",
           "u": "https://247wallst.com/investing/2026/10/28/tesla-closed-up-4-at-407-heres-what-a-spacex-merger-could-mean-for-your-shares/"
