@@ -1,18 +1,18 @@
 {
-  "updated": "30.10.2026 kl. 18:41",
-  "note": "Bakteppe: Nasdaq ned ca. 2,4 % og S&P 500 ned 1,5 % 30.10 etter svake tall fra Amazon og Intel (Intel −28 %). Binance-hacket ($6,3 mrd.) presser krypto; tiårsrenten er 4,95 %, BoJ holdt renten på 1,25 %, og Brent er rundt $113.",
+  "updated": "30.10.2026 kl. 19:45",
+  "note": "Bakteppe: Nasdaq ned ca. 3 % og S&P 500 ned 1,6 % midt på dagen 30.10 etter svake tall fra Amazon og Intel (Intel −30 %). Binance-hacket ($6,3 mrd.) presser krypto; tiårsrenten er 4,95 %, og Brent er rundt $117 på Iran-uro.",
   "items": [
     {
       "nm": "Gull (XAU)",
       "name": "Gull",
       "grp": "core",
       "dir": "ned",
-      "why": "Ned ca. 2,8 % til rundt $3 917 30.10, under $4 000, selv med høy oljepris (WTI ca. $104) og spenning rundt Iran.",
+      "why": "Ned rundt 1,5–3 % 30.10 til under $4 000 (futures $3 974 kl. 8.40 New York), selv med Brent ca. $118 og spenning rundt Iran.",
       "event": "Mellomvalg i USA 03.11",
       "src": [
         {
-          "t": "Yahoo Finance 30.10",
-          "u": "https://finance.yahoo.com/markets/live/stock-market-today-friday-october-30-dow-sp-500-nasdaq-amazon-intel-131609630.html"
+          "t": "TheStreet 30.10",
+          "u": "https://www.thestreet.com/stock-market-today/stock-market-today-dow-jones-sp-500-nasdaq-updates-oct-30-2026"
         }
       ]
     },
@@ -21,16 +21,16 @@
       "name": "Bitcoin",
       "grp": "core",
       "dir": "ned",
-      "why": "Ned ca. 5 % til rundt $77 300 30.10 etter Binance-hacket ($6,3 mrd.). Om lag $1,5 mrd. i giret posisjoner er likvidert.",
+      "why": "Ned over 3 % til rundt $77 400 30.10 etter Binance-hacket ($6,3 mrd.); $1,5 mrd. likvidert. Standard Chartered venter mer fall før en ny bunn.",
       "event": "Binance-uttak gjenåpnes ca. 01.11; mellomvalg i USA 03.11",
       "src": [
         {
           "t": "CoinDesk 30.10",
-          "u": "https://www.coindesk.com/markets/2026/10/30/live-news-binance-hack-rattles-crypto-as-intel-plunges-and-ai-spending-fears-hit-tech"
+          "u": "https://www.coindesk.com/markets/2026/10/30/usd6-billion-binance-hack-sends-bitcoin-ether-tumbling-standard-chartered-sees-more-losses-ahead"
         },
         {
-          "t": "Yahoo Finance 30.10",
-          "u": "https://finance.yahoo.com/markets/live/stock-market-today-friday-october-30-dow-sp-500-nasdaq-amazon-intel-131609630.html"
+          "t": "TheStreet 30.10",
+          "u": "https://www.thestreet.com/stock-market-today/stock-market-today-dow-jones-sp-500-nasdaq-updates-oct-30-2026"
         }
       ]
     },
@@ -277,16 +277,16 @@
       "name": "Uniswap",
       "grp": "top",
       "dir": "blandet",
-      "why": "Binance-hackeren flyttet 7,0 mill. UNI 29.10, som kan gi salgspress. Ned rundt 20 % i oktober, men tokeniserte aksjer på Uniswap passerte $300 mill.",
+      "why": "Hackeren flyttet 7,0 mill. UNI 29.10, og UNI falt med markedet 30.10. Standard Chartered venter skifte mot desentraliserte børser og holder kursmål $100 for 2030.",
       "event": "–",
       "src": [
         {
-          "t": "CryptoTicker 29.10",
-          "u": "https://cryptoticker.io/en/crypto-crash-binance-hack-timeline-liquidations"
+          "t": "CoinDesk 30.10",
+          "u": "https://www.coindesk.com/markets/2026/10/30/usd6-billion-binance-hack-sends-bitcoin-ether-tumbling-standard-chartered-sees-more-losses-ahead"
         },
         {
-          "t": "KuCoin 27.10",
-          "u": "https://www.kucoin.com/news/articles/crypto-daily-market-report-october-27-2026"
+          "t": "CryptoTicker 29.10",
+          "u": "https://cryptoticker.io/en/crypto-crash-binance-hack-timeline-liquidations"
         }
       ]
     },
@@ -390,17 +390,13 @@
       "nm": "Nvidia",
       "name": "Nvidia",
       "grp": "stk",
-      "dir": "blandet",
-      "why": "Nasdaq falt ca. 2,1 % 30.10 etter svake tall fra Amazon og Intel, med frykt for lavere AI-investeringer i 2027. Nvidia er 12 % under toppen.",
+      "dir": "ned",
+      "why": "Ned ca. 5 % 30.10 kl. 13.36 (New York) da chipaksjene falt (SMH −7,9 %, AMD −12 %) etter Intels svake veiledning og frykt for lavere AI-investeringer.",
       "event": "Kvartalstall ventet sent i november",
       "src": [
         {
-          "t": "Yahoo Finance 30.10",
-          "u": "https://finance.yahoo.com/markets/live/stock-market-today-friday-october-30-dow-sp-500-nasdaq-083236552.html"
-        },
-        {
-          "t": "Yahoo Finance 27.10",
-          "u": "https://finance.yahoo.com/markets/live/stock-market-today-tuesday-october-27-dow-sp-500-nasdaq-081901995.html"
+          "t": "TheStreet 30.10",
+          "u": "https://www.thestreet.com/stock-market-today/stock-market-today-dow-jones-sp-500-nasdaq-updates-oct-30-2026"
         }
       ]
     }
