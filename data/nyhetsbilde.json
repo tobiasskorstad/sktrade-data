@@ -1,5 +1,5 @@
 {
-  "updated": "02.11.2026 kl. 20:40",
+  "updated": "02.11.2026 kl. 21:45",
   "note": "Bakteppe: Wall Street steg 02.11 (Dow ca. +0,8 %, Nasdaq +0,7 %) etter fredagens tech-fall. Brent falt rundt 6 % til ca. $106,5 på håp om fred mellom USA og Iran; tiårsrenten er ca. 4,92 %. Mellomvalg 03.11 og jobbrapport 06.11.",
   "items": [
     {
@@ -21,12 +21,12 @@
       "name": "Bitcoin",
       "grp": "core",
       "dir": "blandet",
-      "why": "Rundt $78 000 02.11, over fredagens bunn etter at Binance åpnet uttak 01.11. Bitcoin-ETF-ene hadde $643 mill. i utstrømming 30.10, mest siden juni.",
+      "why": "Ned ca. 1,4 % til rundt $76 800 på kvelden 02.11. Store uttak fra børser til kald lagring, men ca. $2,2 mrd. i korte CME-posisjoner før valget 03.11.",
       "event": "Mellomvalg i USA 03.11; jobbrapport 06.11",
       "src": [
         {
           "t": "CoinDesk 02.11",
-          "u": "https://www.coindesk.com/daybook-us/2026/11/02/bitcoin-s-volatility-curve-has-a-midterm-bump"
+          "u": "https://www.coindesk.com/markets/2026/11/02/bitcoin-traders-eye-post-election-rally-as-exchange-outflows-point-to-supply-squeeze"
         },
         {
           "t": "CoinDesk 01.11",
@@ -53,9 +53,13 @@
       "name": "Solana",
       "grp": "core",
       "dir": "ned",
-      "why": "Ned ca. 1,6 % siste døgn til rundt $94,5 02.11. Hackeren fikk 970 000 SOL fra Binance og har vekslet om lag halvparten til BTC.",
+      "why": "Ned ca. 3,4 % til rundt $91 på kvelden 02.11, svakere enn bitcoin. Hackeren fikk 970 000 SOL fra Binance og har vekslet om lag halvparten til BTC.",
       "event": "–",
       "src": [
+        {
+          "t": "CoinDesk 02.11",
+          "u": "https://www.coindesk.com/markets/2026/11/02/bitcoin-traders-eye-post-election-rally-as-exchange-outflows-point-to-supply-squeeze"
+        },
         {
           "t": "CoinDesk 02.11",
           "u": "https://www.coindesk.com/markets/2026/11/02/live-updates-binance-records-usd6-billion-outflows-after-starting-withdrawals-less-then-4-of-total-holdings"
@@ -139,12 +143,12 @@
       "name": "Hyperliquid",
       "grp": "top",
       "dir": "blandet",
-      "why": "Ned ca. 2 % til rundt $86 02.11 etter hoppet på 18 % 30.10 på ICE-planen om Hyperliquid-baserte futures i USA (krever godkjenning).",
+      "why": "Ned ca. 4,4 % til rundt $83 på kvelden 02.11 etter hoppet på 18 % 30.10 på ICE-planen om Hyperliquid-baserte futures i USA (krever godkjenning).",
       "event": "Regulatorisk godkjenning av ICE-avtalen (ingen dato)",
       "src": [
         {
           "t": "CoinDesk 02.11",
-          "u": "https://www.coindesk.com/daybook-us/2026/11/02/bitcoin-s-volatility-curve-has-a-midterm-bump"
+          "u": "https://www.coindesk.com/markets/2026/11/02/bitcoin-traders-eye-post-election-rally-as-exchange-outflows-point-to-supply-squeeze"
         },
         {
           "t": "The Block 29.10",
