@@ -1,6 +1,6 @@
 {
-  "updated": "02.11.2026 kl. 15:38",
-  "note": "Bakteppe: Futures steg før åpning 02.11 (Nasdaq 100 +0,6–0,8 %) etter fredagens tech-fall. Olje falt over 6 % (WTI ca. $97) på samtaler mellom USA og Iran, og tiårsrenten er 4,89 %. Mellomvalg 03.11 og jobbrapport 06.11; Binance åpnet uttak igjen 01.11.",
+  "updated": "02.11.2026 kl. 16:58",
+  "note": "Bakteppe: Wall Street åpnet høyere 02.11 (Nasdaq 100 opp over 200 poeng, S&P 500 og Dow ca. +0,6 %) etter fredagens tech-fall. Brent falt over 3 % til rundt $108 på samtaler mellom USA og Iran, og tiårsrenten er ca. 4,90 %. Mellomvalg 03.11 og jobbrapport 06.11.",
   "items": [
     {
       "nm": "Gull (XAU)",
@@ -121,12 +121,12 @@
       "name": "Zcash",
       "grp": "top",
       "dir": "opp",
-      "why": "Opp 2 % til ca. $1 250 30.10 mot et fallende marked. NU7-oppgraderingen rundt 5.11 kutter blokktiden fra 75 til 25 sekunder.",
+      "why": "Små kursgevinster 02.11 mot et svakt altcoin-marked. NU7-oppgraderingen rundt 5.11 kutter blokktiden fra 75 til 25 sekunder.",
       "event": "NU7-oppgradering ca. 05.11",
       "src": [
         {
-          "t": "KuCoin 30.10",
-          "u": "https://www.kucoin.com/news/flash/crypto-market-declines-as-bitcoin-falls-below-79-000-bnb-drops-5-2"
+          "t": "CoinDesk 02.11",
+          "u": "https://www.coindesk.com/markets/2026/11/02/bitcoin-eases-to-usd77-900-as-binance-customers-pull-usd3-6-billion-after-withdrawals-reopen"
         },
         {
           "t": "CoinDesk 21.10",
@@ -175,12 +175,12 @@
       "name": "Monero",
       "grp": "top",
       "dir": "blandet",
-      "why": "Uendret rundt $587 30.10 mens resten av markedet falt. Høy giring i futures gir fortsatt risiko for kraftige svingninger.",
+      "why": "Små kursgevinster 02.11 mens memecoins og AI-tokens falt. Høy giring i futures gir fortsatt risiko for kraftige svingninger.",
       "event": "–",
       "src": [
         {
-          "t": "KuCoin 30.10",
-          "u": "https://www.kucoin.com/news/flash/crypto-market-declines-as-bitcoin-falls-below-79-000-bnb-drops-5-2"
+          "t": "CoinDesk 02.11",
+          "u": "https://www.coindesk.com/markets/2026/11/02/bitcoin-eases-to-usd77-900-as-binance-customers-pull-usd3-6-billion-after-withdrawals-reopen"
         },
         {
           "t": "CoinDesk 21.10",
@@ -341,16 +341,16 @@
       "name": "SpaceX",
       "grp": "stk",
       "dir": "blandet",
-      "why": "Opp ca. 1,8 % til $137 før åpning 02.11. Utforsker ifølge rapporter kjøp av Boost Mobile etter at Verizon, AT&T og T-Mobile avslo nettilgang.",
+      "why": "Opp over 4 % etter åpning 02.11. Utforsker ifølge rapporter kjøp av Boost Mobile etter at Verizon, AT&T og T-Mobile avslo nettilgang.",
       "event": "Fusjonsvurdering med Tesla (ingen dato)",
       "src": [
         {
-          "t": "Yahoo Finance 02.11",
-          "u": "https://finance.yahoo.com/markets/live/stock-market-today-monday-november-2-dow-sp-500-nasdaq-091835095.html"
+          "t": "Upstox 02.11",
+          "u": "https://upstox.com/news/market-news/us-stocks/us-stock-markets-open-in-green-on-monday-after-crude-oil-prices-drop-4-ndx-dji-surge-0-8/article-202845/"
         },
         {
-          "t": "Reuters/Investing 02.11",
-          "u": "https://www.investing.com/news/stock-market-news/wall-street-futures-rise-as-ai-stocks-catch-their-breath-midterms-in-focus-4990733"
+          "t": "Yahoo Finance 02.11",
+          "u": "https://finance.yahoo.com/markets/live/stock-market-today-monday-november-2-dow-sp-500-nasdaq-091835095.html"
         }
       ]
     },
@@ -359,16 +359,16 @@
       "name": "Microsoft",
       "grp": "stk",
       "dir": "blandet",
-      "why": "Sterke tall: omsetning $92,3 mrd. (+19 %), Azure +48 %. Aksjen steg 2,6 % før åpning, men var ned ca. 1,2 % 29.10 da AI-uroen etter Alphabet slo inn.",
+      "why": "Opp ca. 1 % etter åpning 02.11. Sterke tall 28.10: omsetning $92,3 mrd. (+19 %), Azure +48 %, men AI-uroen har tynget sektoren.",
       "event": "–",
       "src": [
         {
-          "t": "SiliconANGLE 28.10",
-          "u": "https://siliconangle.com/2026/10/28/microsofts-stock-rises-on-solid-earnings-and-revenue-beat-with-azure-growing-48/"
+          "t": "Upstox 02.11",
+          "u": "https://upstox.com/news/market-news/us-stocks/us-stock-markets-open-in-green-on-monday-after-crude-oil-prices-drop-4-ndx-dji-surge-0-8/article-202845/"
         },
         {
-          "t": "Yahoo Finance 29.10",
-          "u": "https://finance.yahoo.com/markets/stocks/articles/stock-market-today-oct-29-134623155.html"
+          "t": "SiliconANGLE 28.10",
+          "u": "https://siliconangle.com/2026/10/28/microsofts-stock-rises-on-solid-earnings-and-revenue-beat-with-azure-growing-48/"
         }
       ]
     },
@@ -377,12 +377,12 @@
       "name": "Tesla",
       "grp": "stk",
       "dir": "blandet",
-      "why": "Opp ca. 2,5 % til $409,8 før åpning 02.11 etter fredagens tech-salg. Komiteer vurderer fortsatt fusjon med SpaceX; ingen vilkår avtalt.",
+      "why": "Opp ca. 1,4 % etter åpning 02.11 etter fredagens tech-salg. Komiteer vurderer fortsatt fusjon med SpaceX; ingen vilkår avtalt.",
       "event": "Fusjonsvurdering med SpaceX (ingen dato)",
       "src": [
         {
-          "t": "Reuters/Investing 02.11",
-          "u": "https://www.investing.com/news/stock-market-news/wall-street-futures-rise-as-ai-stocks-catch-their-breath-midterms-in-focus-4990733"
+          "t": "Upstox 02.11",
+          "u": "https://upstox.com/news/market-news/us-stocks/us-stock-markets-open-in-green-on-monday-after-crude-oil-prices-drop-4-ndx-dji-surge-0-8/article-202845/"
         },
         {
           "t": "24/7 Wall St 28.10",
@@ -395,12 +395,12 @@
       "name": "Nvidia",
       "grp": "stk",
       "dir": "blandet",
-      "why": "Opp ca. 1,6 % til $208 før åpning 02.11 etter fall på 4,2 % 30.10 i AI-salget. Nasdaq 100 hadde sin svakeste måned siden 2025 i oktober.",
+      "why": "Opp over 1 % etter åpning 02.11 etter fall på 4,2 % 30.10 i AI-salget. Nasdaq 100 hadde sin svakeste måned siden 2025 i oktober.",
       "event": "Kvartalstall ventet sent i november",
       "src": [
         {
-          "t": "Reuters/Investing 02.11",
-          "u": "https://www.investing.com/news/stock-market-news/wall-street-futures-rise-as-ai-stocks-catch-their-breath-midterms-in-focus-4990733"
+          "t": "Upstox 02.11",
+          "u": "https://upstox.com/news/market-news/us-stocks/us-stock-markets-open-in-green-on-monday-after-crude-oil-prices-drop-4-ndx-dji-surge-0-8/article-202845/"
         },
         {
           "t": "Yahoo/Bloomberg 01.11",
