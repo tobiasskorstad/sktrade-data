@@ -1,18 +1,18 @@
 {
-  "updated": "02.11.2026 kl. 18:17",
-  "note": "Bakteppe: Wall Street åpnet høyere 02.11 (Nasdaq 100 opp over 200 poeng, S&P 500 og Dow ca. +0,6 %) etter fredagens tech-fall. Brent falt over 3 % til rundt $108 på samtaler mellom USA og Iran, og tiårsrenten er ca. 4,90 %. Mellomvalg 03.11 og jobbrapport 06.11.",
+  "updated": "02.11.2026 kl. 20:40",
+  "note": "Bakteppe: Wall Street steg 02.11 (Dow ca. +0,8 %, Nasdaq +0,7 %) etter fredagens tech-fall. Brent falt rundt 6 % til ca. $106,5 på håp om fred mellom USA og Iran; tiårsrenten er ca. 4,92 %. Mellomvalg 03.11 og jobbrapport 06.11.",
   "items": [
     {
       "nm": "Gull (XAU)",
       "name": "Gull",
       "grp": "core",
       "dir": "blandet",
-      "why": "Opp ca. 1,4 % til rundt $3 955 02.11 etter fallet fredag, mens oljen falt over 6 % på samtaler mellom USA og Iran. Fortsatt under $4 000.",
+      "why": "Opp ca. 2,2 % til rundt $3 958 02.11 etter fallet fredag, mens Brent falt ca. 6 % på håp om fred mellom USA og Iran. Fortsatt under $4 000.",
       "event": "Mellomvalg i USA 03.11; jobbrapport 06.11",
       "src": [
         {
-          "t": "Yahoo Finance 02.11",
-          "u": "https://finance.yahoo.com/markets/live/stock-market-today-monday-november-2-dow-sp-500-nasdaq-091835095.html"
+          "t": "Eurasia Business News 02.11",
+          "u": "https://eurasiabusinessnews.com/2026/11/02/stock-market-today-oil-slides-on-middle-east-hopes-as-wall-street-rebounds-gold-price-gains-2/"
         }
       ]
     },
@@ -85,16 +85,16 @@
       "name": "BNB",
       "grp": "core",
       "dir": "blandet",
-      "why": "Rundt $704 01.11. Binance har erstattet ca. 95 % av de stjålne verdiene; netto utstrømming var $3,64 mrd. (2,1 % av eiendelene) de første 9,5 timene.",
-      "event": "Neste uttaksfase og full reserverapport (ingen dato)",
+      "why": "Rundt $705 02.11 (ned ca. 1,1 %). Netto utstrømming fra Binance var $3,64 mrd. de første 9,5 timene; ca. 95 % av de stjålne verdiene er dekket.",
+      "event": "Binance full reserverapport innen 03.11",
       "src": [
         {
-          "t": "CoinDesk 01.11",
-          "u": "https://www.coindesk.com/markets/2026/11/01/binance-opens-crypto-withdrawals-in-phases-starting-with-bitcoin-following-usd6-3-billion-hack"
+          "t": "Economies.com 02.11",
+          "u": "https://www.economies.com/crypto/news/bitcoin-steadies-near-78-000-as-binance-withdrawals-test-cryptocurrency-market-confidence-50437"
         },
         {
-          "t": "CoinDesk 02.11",
-          "u": "https://www.coindesk.com/markets/2026/11/02/live-updates-binance-records-usd6-billion-outflows-after-starting-withdrawals-less-then-4-of-total-holdings"
+          "t": "Ted Pillows 02.11",
+          "u": "https://tedpillows.substack.com/p/crypto-and-finance-market-report-e7d"
         }
       ]
     },
@@ -192,10 +192,14 @@
       "nm": "Chainlink",
       "name": "Chainlink",
       "grp": "top",
-      "dir": "blandet",
-      "why": "Utvidet samarbeidet med S&P Global Ratings 29.10 om å legge risikovurderinger on-chain. Kursen var likevel ned ca. 3,7 % til rundt $11,3.",
+      "dir": "ned",
+      "why": "Falt 4,1 % 02.11, blant de svakeste store tokenene, etter ca. 3,7 % fall 29.10. Samarbeidet med S&P Global Ratings ble utvidet 29.10.",
       "event": "–",
       "src": [
+        {
+          "t": "Ted Pillows 02.11",
+          "u": "https://tedpillows.substack.com/p/crypto-and-finance-market-report-e7d"
+        },
         {
           "t": "KuCoin 29.10",
           "u": "https://www.kucoin.com/news/articles/crypto-daily-market-report-october-29-2026"
