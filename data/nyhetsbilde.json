@@ -1,6 +1,6 @@
 {
-  "updated": "03.11.2026 kl. 17:41",
-  "note": "Bakteppe: Nasdaq steg 0,8 % etter åpning 03.11 etter gårsdagens chipsalg, mens Dow falt 0,5 %. Brent steg 1,7 % til $106,50 etter rapporter om USA-angrep på iransk stilling; markedet priser ca. 75 % sjanse for renteheving i desember. Mellomvalg i dag, AMD-tall i kveld, jobbrapport 06.11.",
+  "updated": "03.11.2026 kl. 18:42",
+  "note": "Bakteppe: S&P 500 var opp 0,4 % kl. 11:45 New York-tid 03.11, ledet av teknologi. Brent rundt $106,50 etter USA-angrep på iransk stilling; markedet priser ca. 75 % sjanse for renteheving i desember. JPMorgan anslår 66 % sjanse for demokratisk «blå bølge» i mellomvalget i dag; AMD-tall i kveld, jobbrapport 06.11.",
   "items": [
     {
       "nm": "Gull (XAU)",
@@ -25,12 +25,12 @@
       "name": "Bitcoin",
       "grp": "core",
       "dir": "blandet",
-      "why": "Rundt $77 100 03.11 (ned ca. 0,9 %). BTC-ETF-ene hadde $398,6 mill. i utstrømming 02.11 og $711 mill. siste fem dager; frykt-indeksen er 26.",
+      "why": "Rundt $76 500–77 100 03.11. BTC-ETF-ene hadde $643 mill. i utstrømming 30.10, mest siden juni, og $398,6 mill. 02.11. Strategy kjøpte 811 BTC for $65,5 mill.",
       "event": "Mellomvalg i USA 03.11; jobbrapport 06.11",
       "src": [
         {
-          "t": "Ted Pillows 03.11",
-          "u": "https://tedpillows.substack.com/p/crypto-and-finance-market-report-46c"
+          "t": "Analytics Insight 03.11",
+          "u": "https://www.analyticsinsight.net/price-analysis/crypto-prices-today-bitcoin-slips-to-usd-76500-as-us-midterm-voting-begins"
         },
         {
           "t": "CoinDesk 03.11",
