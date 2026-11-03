@@ -1,6 +1,6 @@
 {
-  "updated": "03.11.2026 kl. 18:42",
-  "note": "Bakteppe: S&P 500 var opp 0,4 % kl. 11:45 New York-tid 03.11, ledet av teknologi. Brent rundt $106,50 etter USA-angrep på iransk stilling; markedet priser ca. 75 % sjanse for renteheving i desember. JPMorgan anslår 66 % sjanse for demokratisk «blå bølge» i mellomvalget i dag; AMD-tall i kveld, jobbrapport 06.11.",
+  "updated": "03.11.2026 kl. 19:45",
+  "note": "Bakteppe: S&P 500 var opp 0,6 % og Nasdaq 1,1 % kl. 13:43 New York-tid 03.11, mens Dow falt 0,2 %. Brent falt 1,2 % til ca. $103 på meldinger om fremgang i samtalene mellom USA og Iran; ca. 75 % sjanse for renteheving i desember. Mellomvalg i dag, AMD-tall i kveld, jobbrapport 06.11.",
   "items": [
     {
       "nm": "Gull (XAU)",
@@ -363,9 +363,13 @@
       "name": "Microsoft",
       "grp": "stk",
       "dir": "blandet",
-      "why": "Falt ca. 2,9 % 02.11, størst fall i Dow, i chip- og AI-salget. Sterke tall 28.10: omsetning $92,3 mrd. (+19 %), Azure +48 %.",
+      "why": "Blant de sterkeste teknologiaksjene 03.11 etter fallet på ca. 2,9 % 02.11. Sterke tall 28.10: omsetning $92,3 mrd. (+19 %), Azure +48 %.",
       "event": "–",
       "src": [
+        {
+          "t": "TipRanks 03.11",
+          "u": "https://www.tipranks.com/news/dow-jones-midday-report-djia-stalls-on-midterm-election-day-as-oil-eases"
+        },
         {
           "t": "Trading Economics 02.11",
           "u": "https://tradingeconomics.com/united-states/stock-market/news/498328"
@@ -390,17 +394,17 @@
       "nm": "Nvidia",
       "name": "Nvidia",
       "grp": "stk",
-      "dir": "ned",
-      "why": "Chipsalget forsterket seg 02.11 (AMD −7,5 %, Micron −5,8 %), og Nasdaq 100 gikk inn i korreksjon. AMD legger fram tall 03.11 etter stengning.",
+      "dir": "blandet",
+      "why": "Opp ca. 3 % midt på dagen 03.11 etter fire fall på rad, og AMD steg 5,1 % før kveldens kvartalstall. Nasdaq 100 gikk inn i korreksjon 02.11.",
       "event": "AMD-tall 03.11; Nvidia-tall sent i november",
       "src": [
         {
-          "t": "Trading Economics 03.11",
-          "u": "https://tradingeconomics.com/united-states/stock-market/news/498328"
+          "t": "MarketScreener 03.11",
+          "u": "https://www.marketscreener.com/news/s-p-500-nasdaq-rise-as-tech-stocks-gain-ahead-of-midterm-results-ce785fdeda8ff726"
         },
         {
-          "t": "Ted Pillows 03.11",
-          "u": "https://tedpillows.substack.com/p/crypto-and-finance-market-report-46c"
+          "t": "Trading Economics 02.11",
+          "u": "https://tradingeconomics.com/united-states/stock-market/news/498328"
         }
       ]
     }
