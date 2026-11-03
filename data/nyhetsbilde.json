@@ -1,15 +1,19 @@
 {
-  "updated": "03.11.2026 kl. 15:43",
-  "note": "Bakteppe: Nasdaq falt 1,1 % 02.11 og Nasdaq 100 er i korreksjon (over 10 % under toppen) etter chipsalg, mens Dow steg 0,46 %. Oljen svinger på USA–Iran-nyheter; markedet priser ca. 75 % sjanse for renteheving i desember. Mellomvalg i dag 03.11, jobbrapport 06.11.",
+  "updated": "03.11.2026 kl. 16:40",
+  "note": "Bakteppe: Nasdaq steg 0,8 % etter åpning 03.11 etter gårsdagens chipsalg, mens Dow falt 0,5 %. Brent steg 1,7 % til $106,50 etter rapporter om USA-angrep på iransk stilling; markedet priser ca. 75 % sjanse for renteheving i desember. Mellomvalg i dag, AMD-tall i kveld, jobbrapport 06.11.",
   "items": [
     {
       "nm": "Gull (XAU)",
       "name": "Gull",
       "grp": "core",
       "dir": "blandet",
-      "why": "Rundt $3 965 03.11 etter +2 % 02.11, støttet av lavere olje. Ca. 75 % sjanse for renteheving i desember, og WGC halverte investeringsprognosen for 2026 til 200 tonn.",
+      "why": "Gullfutures falt 1,46 % til $3 911,80 morgenen 03.11 da oljen steg igjen. Ca. 75 % sjanse for renteheving i desember; WGC halverte investeringsprognosen for 2026 til 200 tonn.",
       "event": "Mellomvalg i USA 03.11; jobbrapport 06.11",
       "src": [
+        {
+          "t": "TheStreet 03.11",
+          "u": "https://www.thestreet.com/stock-market-today/stock-market-today-dow-jones-sp-500-nasdaq-updates-nov-03-2026"
+        },
         {
           "t": "Trading Economics 03.11",
           "u": "https://tradingeconomics.com/commodity/gold/news/498802"
@@ -124,13 +128,13 @@
       "nm": "Zcash",
       "name": "Zcash",
       "grp": "top",
-      "dir": "opp",
-      "why": "Små kursgevinster 02.11 mot et svakt altcoin-marked. NU7-oppgraderingen rundt 5.11 kutter blokktiden fra 75 til 25 sekunder.",
+      "dir": "blandet",
+      "why": "Falt 7,6 % siste døgn til 03.11, deretter opp 1,2 % til ca. $1 146. NU7-oppgraderingen rundt 05.11 kutter blokktiden fra 75 til 25 sekunder.",
       "event": "NU7-oppgradering ca. 05.11",
       "src": [
         {
-          "t": "CoinDesk 02.11",
-          "u": "https://www.coindesk.com/markets/2026/11/02/bitcoin-eases-to-usd77-900-as-binance-customers-pull-usd3-6-billion-after-withdrawals-reopen"
+          "t": "CoinDesk 03.11",
+          "u": "https://www.coindesk.com/markets/2026/11/03/bitcoin-steadies-after-dip-to-usd76-300-as-etf-outflows-and-midterm-elections-weigh-on-crypto"
         },
         {
           "t": "CoinDesk 21.10",
@@ -238,13 +242,13 @@
       "nm": "NEAR",
       "name": "NEAR",
       "grp": "top",
-      "dir": "blandet",
-      "why": "Doblet seg siste 30 dager, men falt 10,8 % siste uke. Den eneste av de svake altcoinene med innstrømming i fond 14.10.",
+      "dir": "ned",
+      "why": "Falt 7 % siste døgn og ytterligere 0,9 % til ca. $3,83 03.11, svakere enn resten av kryptomarkedet.",
       "event": "–",
       "src": [
         {
-          "t": "24/7 Wall St 15.10",
-          "u": "https://www.aol.com/articles/bitcoin-fell-2-week-5-143938000.html"
+          "t": "CoinDesk 03.11",
+          "u": "https://www.coindesk.com/markets/2026/11/03/bitcoin-steadies-after-dip-to-usd76-300-as-etf-outflows-and-midterm-elections-weigh-on-crypto"
         }
       ]
     },
@@ -345,16 +349,12 @@
       "name": "SpaceX",
       "grp": "stk",
       "dir": "blandet",
-      "why": "Opp over 4 % etter åpning 02.11. Utforsker ifølge rapporter kjøp av Boost Mobile etter at Verizon, AT&T og T-Mobile avslo nettilgang.",
+      "why": "Opp 0,6 % til $137,24 før åpning 03.11 etter rapporter om samtaler med EchoStar om kjøp av Boost Mobile eller leie av nettet.",
       "event": "Fusjonsvurdering med Tesla (ingen dato)",
       "src": [
         {
-          "t": "Upstox 02.11",
-          "u": "https://upstox.com/news/market-news/us-stocks/us-stock-markets-open-in-green-on-monday-after-crude-oil-prices-drop-4-ndx-dji-surge-0-8/article-202845/"
-        },
-        {
-          "t": "Yahoo Finance 02.11",
-          "u": "https://finance.yahoo.com/markets/live/stock-market-today-monday-november-2-dow-sp-500-nasdaq-091835095.html"
+          "t": "TheStreet 03.11",
+          "u": "https://www.thestreet.com/stock-market-today/stock-market-today-dow-jones-sp-500-nasdaq-updates-nov-03-2026"
         }
       ]
     },
