@@ -1,18 +1,18 @@
 {
-  "updated": "02.11.2026 kl. 21:45",
-  "note": "Bakteppe: Wall Street steg 02.11 (Dow ca. +0,8 %, Nasdaq +0,7 %) etter fredagens tech-fall. Brent falt rundt 6 % til ca. $106,5 på håp om fred mellom USA og Iran; tiårsrenten er ca. 4,92 %. Mellomvalg 03.11 og jobbrapport 06.11.",
+  "updated": "03.11.2026 kl. 15:43",
+  "note": "Bakteppe: Nasdaq falt 1,1 % 02.11 og Nasdaq 100 er i korreksjon (over 10 % under toppen) etter chipsalg, mens Dow steg 0,46 %. Oljen svinger på USA–Iran-nyheter; markedet priser ca. 75 % sjanse for renteheving i desember. Mellomvalg i dag 03.11, jobbrapport 06.11.",
   "items": [
     {
       "nm": "Gull (XAU)",
       "name": "Gull",
       "grp": "core",
       "dir": "blandet",
-      "why": "Opp ca. 2,2 % til rundt $3 958 02.11 etter fallet fredag, mens Brent falt ca. 6 % på håp om fred mellom USA og Iran. Fortsatt under $4 000.",
+      "why": "Rundt $3 965 03.11 etter +2 % 02.11, støttet av lavere olje. Ca. 75 % sjanse for renteheving i desember, og WGC halverte investeringsprognosen for 2026 til 200 tonn.",
       "event": "Mellomvalg i USA 03.11; jobbrapport 06.11",
       "src": [
         {
-          "t": "Eurasia Business News 02.11",
-          "u": "https://eurasiabusinessnews.com/2026/11/02/stock-market-today-oil-slides-on-middle-east-hopes-as-wall-street-rebounds-gold-price-gains-2/"
+          "t": "Trading Economics 03.11",
+          "u": "https://tradingeconomics.com/commodity/gold/news/498802"
         }
       ]
     },
@@ -21,16 +21,16 @@
       "name": "Bitcoin",
       "grp": "core",
       "dir": "blandet",
-      "why": "Ned ca. 1,4 % til rundt $76 800 på kvelden 02.11. Store uttak fra børser til kald lagring, men ca. $2,2 mrd. i korte CME-posisjoner før valget 03.11.",
+      "why": "Rundt $77 100 03.11 (ned ca. 0,9 %). BTC-ETF-ene hadde $398,6 mill. i utstrømming 02.11 og $711 mill. siste fem dager; frykt-indeksen er 26.",
       "event": "Mellomvalg i USA 03.11; jobbrapport 06.11",
       "src": [
         {
-          "t": "CoinDesk 02.11",
-          "u": "https://www.coindesk.com/markets/2026/11/02/bitcoin-traders-eye-post-election-rally-as-exchange-outflows-point-to-supply-squeeze"
+          "t": "Ted Pillows 03.11",
+          "u": "https://tedpillows.substack.com/p/crypto-and-finance-market-report-46c"
         },
         {
-          "t": "CoinDesk 01.11",
-          "u": "https://www.coindesk.com/markets/2026/11/01/binance-opens-crypto-withdrawals-in-phases-starting-with-bitcoin-following-usd6-3-billion-hack"
+          "t": "CoinDesk 03.11",
+          "u": "https://www.coindesk.com/daybook-us/2026/11/03/bitcoin-is-breaking-a-midterm-election-pattern-going-back-to-2014"
         }
       ]
     },
@@ -39,12 +39,16 @@
       "name": "Ethereum",
       "grp": "core",
       "dir": "blandet",
-      "why": "Opp ca. 0,9 % til rundt $2 290 02.11. ETH-ETF-ene hadde rekordutstrømming på $1,61 mrd. i oktober, og Bitmine kjøpte bare 8 573 ETH sist uke.",
+      "why": "Rundt $2 290 03.11, flatt. ETH-ETF-ene har hatt $482,5 mill. i utstrømming siste fem handelsdager.",
       "event": "Glamsterdam på Hoodi (ny dato ikke satt)",
       "src": [
         {
-          "t": "CoinDesk 02.11",
-          "u": "https://www.coindesk.com/markets/2026/11/02/live-updates-binance-records-usd6-billion-outflows-after-starting-withdrawals-less-then-4-of-total-holdings"
+          "t": "CoinDesk 03.11",
+          "u": "https://www.coindesk.com/daybook-us/2026/11/03/bitcoin-is-breaking-a-midterm-election-pattern-going-back-to-2014"
+        },
+        {
+          "t": "Ted Pillows 03.11",
+          "u": "https://tedpillows.substack.com/p/crypto-and-finance-market-report-46c"
         }
       ]
     },
@@ -52,17 +56,17 @@
       "nm": "Solana",
       "name": "Solana",
       "grp": "core",
-      "dir": "ned",
-      "why": "Ned ca. 3,4 % til rundt $91 på kvelden 02.11, svakere enn bitcoin. Hackeren fikk 970 000 SOL fra Binance og har vekslet om lag halvparten til BTC.",
+      "dir": "blandet",
+      "why": "Rundt $93,40 03.11 (ned ca. 0,9 %). Binance åpnet uttak av dusinvis av Solana-tokens igjen 03.11; hackerens SOL-salg er fortsatt en risiko.",
       "event": "–",
       "src": [
         {
-          "t": "CoinDesk 02.11",
-          "u": "https://www.coindesk.com/markets/2026/11/02/bitcoin-traders-eye-post-election-rally-as-exchange-outflows-point-to-supply-squeeze"
+          "t": "CoinDesk 03.11",
+          "u": "https://www.coindesk.com/daybook-us/2026/11/03/bitcoin-is-breaking-a-midterm-election-pattern-going-back-to-2014"
         },
         {
-          "t": "CoinDesk 02.11",
-          "u": "https://www.coindesk.com/markets/2026/11/02/live-updates-binance-records-usd6-billion-outflows-after-starting-withdrawals-less-then-4-of-total-holdings"
+          "t": "Ted Pillows 03.11",
+          "u": "https://tedpillows.substack.com/p/crypto-and-finance-market-report-46c"
         }
       ]
     },
@@ -71,16 +75,16 @@
       "name": "XRP",
       "grp": "core",
       "dir": "blandet",
-      "why": "Rundt $1,26 02.11. Binance åpnet XRP-uttak 01.11, og XRP Ledger skal rette en feil som kunne la stablecoin-partnere lage nye tokens.",
+      "why": "Rundt $1,28 03.11 (opp ca. 2,2 %), blant få vinnere i et svakt marked. XRP Ledger skal rette feil knyttet til stablecoin-utstedelse.",
       "event": "XRPL-oppdatering tidligst 04.11",
       "src": [
         {
-          "t": "CoinDesk 02.11",
-          "u": "https://www.coindesk.com/markets/2026/11/02/live-updates-binance-records-usd6-billion-outflows-after-starting-withdrawals-less-then-4-of-total-holdings"
+          "t": "CoinDesk 03.11",
+          "u": "https://www.coindesk.com/daybook-us/2026/11/03/bitcoin-is-breaking-a-midterm-election-pattern-going-back-to-2014"
         },
         {
-          "t": "CoinDesk 01.11",
-          "u": "https://www.coindesk.com/markets/2026/11/01/binance-opens-crypto-withdrawals-in-phases-starting-with-bitcoin-following-usd6-3-billion-hack"
+          "t": "Ted Pillows 03.11",
+          "u": "https://tedpillows.substack.com/p/crypto-and-finance-market-report-46c"
         }
       ]
     },
@@ -89,16 +93,16 @@
       "name": "BNB",
       "grp": "core",
       "dir": "blandet",
-      "why": "Rundt $705 02.11 (ned ca. 1,1 %). Netto utstrømming fra Binance var $3,64 mrd. de første 9,5 timene; ca. 95 % av de stjålne verdiene er dekket.",
-      "event": "Binance full reserverapport innen 03.11",
+      "why": "Binance publiserte reservebevis for 31.10: 10 tokens fullt dekket, ca. 95 % av stjålne verdier erstattet. Uttaksfase to startet 03.11.",
+      "event": "Ny reservesnapshot 04.11",
       "src": [
         {
-          "t": "Economies.com 02.11",
-          "u": "https://www.economies.com/crypto/news/bitcoin-steadies-near-78-000-as-binance-withdrawals-test-cryptocurrency-market-confidence-50437"
+          "t": "Ted Pillows 03.11",
+          "u": "https://tedpillows.substack.com/p/crypto-and-finance-market-report-46c"
         },
         {
-          "t": "Ted Pillows 02.11",
-          "u": "https://tedpillows.substack.com/p/crypto-and-finance-market-report-e7d"
+          "t": "CoinDesk 03.11",
+          "u": "https://www.coindesk.com/daybook-us/2026/11/03/bitcoin-is-breaking-a-midterm-election-pattern-going-back-to-2014"
         }
       ]
     },
@@ -107,16 +111,12 @@
       "name": "TRON",
       "grp": "top",
       "dir": "opp",
-      "why": "Opp ca. 2,2 % til rundt $0,31 02.11 og fortsatt sterkere enn resten av markedet, etter +5 % 29.10.",
+      "why": "Opp ca. 1,1 % til rundt $0,32 03.11 og holder seg fortsatt bedre enn resten av markedet.",
       "event": "–",
       "src": [
         {
-          "t": "CoinDesk 02.11",
-          "u": "https://www.coindesk.com/daybook-us/2026/11/02/bitcoin-s-volatility-curve-has-a-midterm-bump"
-        },
-        {
-          "t": "KuCoin 30.10",
-          "u": "https://www.kucoin.com/news/flash/crypto-market-declines-as-bitcoin-falls-below-79-000-bnb-drops-5-2"
+          "t": "CoinDesk 03.11",
+          "u": "https://www.coindesk.com/daybook-us/2026/11/03/bitcoin-is-breaking-a-midterm-election-pattern-going-back-to-2014"
         }
       ]
     },
@@ -143,12 +143,12 @@
       "name": "Hyperliquid",
       "grp": "top",
       "dir": "blandet",
-      "why": "Ned ca. 4,4 % til rundt $83 på kvelden 02.11 etter hoppet på 18 % 30.10 på ICE-planen om Hyperliquid-baserte futures i USA (krever godkjenning).",
+      "why": "Opp ca. 1,2 % til rundt $87 03.11 etter fallet 02.11. ICE-planen om Hyperliquid-baserte futures i USA venter fortsatt godkjenning.",
       "event": "Regulatorisk godkjenning av ICE-avtalen (ingen dato)",
       "src": [
         {
-          "t": "CoinDesk 02.11",
-          "u": "https://www.coindesk.com/markets/2026/11/02/bitcoin-traders-eye-post-election-rally-as-exchange-outflows-point-to-supply-squeeze"
+          "t": "CoinDesk 03.11",
+          "u": "https://www.coindesk.com/daybook-us/2026/11/03/bitcoin-is-breaking-a-midterm-election-pattern-going-back-to-2014"
         },
         {
           "t": "The Block 29.10",
@@ -196,17 +196,13 @@
       "nm": "Chainlink",
       "name": "Chainlink",
       "grp": "top",
-      "dir": "ned",
-      "why": "Falt 4,1 % 02.11, blant de svakeste store tokenene, etter ca. 3,7 % fall 29.10. Samarbeidet med S&P Global Ratings ble utvidet 29.10.",
+      "dir": "blandet",
+      "why": "Falt 4,1 % 02.11. Binance åpnet LINK-uttak igjen 03.11 i andre uttaksfase etter hacket.",
       "event": "–",
       "src": [
         {
-          "t": "Ted Pillows 02.11",
-          "u": "https://tedpillows.substack.com/p/crypto-and-finance-market-report-e7d"
-        },
-        {
-          "t": "KuCoin 29.10",
-          "u": "https://www.kucoin.com/news/articles/crypto-daily-market-report-october-29-2026"
+          "t": "Ted Pillows 03.11",
+          "u": "https://tedpillows.substack.com/p/crypto-and-finance-market-report-46c"
         }
       ]
     },
@@ -367,16 +363,12 @@
       "name": "Microsoft",
       "grp": "stk",
       "dir": "blandet",
-      "why": "Opp ca. 1 % etter åpning 02.11. Sterke tall 28.10: omsetning $92,3 mrd. (+19 %), Azure +48 %, men AI-uroen har tynget sektoren.",
+      "why": "Falt ca. 2,9 % 02.11, størst fall i Dow, i chip- og AI-salget. Sterke tall 28.10: omsetning $92,3 mrd. (+19 %), Azure +48 %.",
       "event": "–",
       "src": [
         {
-          "t": "Upstox 02.11",
-          "u": "https://upstox.com/news/market-news/us-stocks/us-stock-markets-open-in-green-on-monday-after-crude-oil-prices-drop-4-ndx-dji-surge-0-8/article-202845/"
-        },
-        {
-          "t": "SiliconANGLE 28.10",
-          "u": "https://siliconangle.com/2026/10/28/microsofts-stock-rises-on-solid-earnings-and-revenue-beat-with-azure-growing-48/"
+          "t": "Trading Economics 02.11",
+          "u": "https://tradingeconomics.com/united-states/stock-market/news/498328"
         }
       ]
     },
@@ -385,16 +377,12 @@
       "name": "Tesla",
       "grp": "stk",
       "dir": "blandet",
-      "why": "Opp ca. 1,4 % etter åpning 02.11 etter fredagens tech-salg. Komiteer vurderer fortsatt fusjon med SpaceX; ingen vilkår avtalt.",
+      "why": "Steg ca. 1 % 02.11 mens Nasdaq falt 1,1 %. Komiteer vurderer fortsatt fusjon med SpaceX; ingen vilkår avtalt.",
       "event": "Fusjonsvurdering med SpaceX (ingen dato)",
       "src": [
         {
-          "t": "Upstox 02.11",
-          "u": "https://upstox.com/news/market-news/us-stocks/us-stock-markets-open-in-green-on-monday-after-crude-oil-prices-drop-4-ndx-dji-surge-0-8/article-202845/"
-        },
-        {
-          "t": "24/7 Wall St 28.10",
-          "u": "https://247wallst.com/investing/2026/10/28/tesla-closed-up-4-at-407-heres-what-a-spacex-merger-could-mean-for-your-shares/"
+          "t": "Trading Economics 02.11",
+          "u": "https://tradingeconomics.com/united-states/stock-market/news/498328"
         }
       ]
     },
@@ -402,17 +390,17 @@
       "nm": "Nvidia",
       "name": "Nvidia",
       "grp": "stk",
-      "dir": "blandet",
-      "why": "Opp over 1 % etter åpning 02.11 etter fall på 4,2 % 30.10 i AI-salget. Nasdaq 100 hadde sin svakeste måned siden 2025 i oktober.",
-      "event": "Kvartalstall ventet sent i november",
+      "dir": "ned",
+      "why": "Chipsalget forsterket seg 02.11 (AMD −7,5 %, Micron −5,8 %), og Nasdaq 100 gikk inn i korreksjon. AMD legger fram tall 03.11 etter stengning.",
+      "event": "AMD-tall 03.11; Nvidia-tall sent i november",
       "src": [
         {
-          "t": "Upstox 02.11",
-          "u": "https://upstox.com/news/market-news/us-stocks/us-stock-markets-open-in-green-on-monday-after-crude-oil-prices-drop-4-ndx-dji-surge-0-8/article-202845/"
+          "t": "Trading Economics 03.11",
+          "u": "https://tradingeconomics.com/united-states/stock-market/news/498328"
         },
         {
-          "t": "Yahoo/Bloomberg 01.11",
-          "u": "https://uk.finance.yahoo.com/news/wall-street-braces-more-wild-150000411.html"
+          "t": "Ted Pillows 03.11",
+          "u": "https://tedpillows.substack.com/p/crypto-and-finance-market-report-46c"
         }
       ]
     }
