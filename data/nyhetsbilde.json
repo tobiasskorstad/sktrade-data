@@ -1,6 +1,6 @@
 {
-  "updated": "04.11.2026 kl. 17:42",
-  "note": "Bakteppe: Demokratene vant begge kamre i mellomvalget 03.11, og Dow åpnet ca. 1 000 poeng (1,9 %) opp 04.11, mens dollaren falt og Brent lå rundt $102. ADP viste 86 000 nye private jobber i oktober (ventet 67 000), mens ISM-tjenester falt til 54,5. Jobbrapport 06.11.",
+  "updated": "04.11.2026 kl. 18:41",
+  "note": "Bakteppe: Demokratene vant begge kamre i mellomvalget 03.11. Dow steg rundt 1 400 poeng (ca. 2,8 %) 04.11, dollaren svekket seg og 10-årsrenten falt ca. 3 rentepunkter til 4,92 %. ADP viste 86 000 nye private jobber i oktober; jobbrapport 06.11.",
   "items": [
     {
       "nm": "Gull (XAU)",
@@ -24,17 +24,17 @@
       "nm": "Bitcoin",
       "name": "Bitcoin",
       "grp": "core",
-      "dir": "blandet",
-      "why": "Hentet seg inn til ca. $78 500 04.11 etter dykk til $75 600, laveste siden 17.09. BTC-ETF-ene tapte ca. $1,15 mrd. over tre dager til 03.11.",
+      "dir": "opp",
+      "why": "Over $80 400 04.11, opp ca. 4 % siste døgn etter valget. $951 mill. likvidert siste døgn, mest shortposisjoner. BTC-ETF-ene har hatt flere dager med utstrømming.",
       "event": "Jobbrapport 06.11",
       "src": [
         {
-          "t": "crypto.news 04.11",
-          "u": "https://crypto.news/bitcoin-price-reclaims-78000-us-midterm-election/"
+          "t": "Crypto News Flash 04.11",
+          "u": "https://www.crypto-news-flash.com/bitcoin-reclaims-80k-democrats-sweep-midterms/"
         },
         {
-          "t": "KuCoin 04.11",
-          "u": "https://www.kucoin.com/news/flash/bitcoin-rises-on-democratic-midterm-election-sweep"
+          "t": "BigGo Finance 04.11",
+          "u": "https://finance.biggo.com/news/adeb9509-f571-4aa1-80a4-71bd05ae2f64"
         }
       ]
     },
@@ -42,17 +42,17 @@
       "nm": "Ethereum",
       "name": "Ethereum",
       "grp": "core",
-      "dir": "blandet",
-      "why": "Opp ca. 2,5 % til rundt $2 321 04.11 etter et dykk under $2 250. ETH-ETF-ene hadde $85,3 mill. i utstrømming 03.11.",
+      "dir": "opp",
+      "why": "Opp 6–7 % siste døgn til rundt $2 430 04.11, sterkere enn bitcoin. $239 mill. i ETH-likvidasjoner siste døgn.",
       "event": "Glamsterdam på Hoodi (ny dato ikke satt)",
       "src": [
         {
-          "t": "Trading & Investment News 04.11",
-          "u": "https://www.tradingandinvestmentnews.co.uk/bitcoin-price-midterms/"
+          "t": "Crypto News Flash 04.11",
+          "u": "https://www.crypto-news-flash.com/bitcoin-reclaims-80k-democrats-sweep-midterms/"
         },
         {
-          "t": "FameEX 04.11",
-          "u": "https://www.fameex.com/en-US/news/crypto-news-recap-20261104"
+          "t": "BigGo Finance 04.11",
+          "u": "https://finance.biggo.com/news/adeb9509-f571-4aa1-80a4-71bd05ae2f64"
         }
       ]
     },
@@ -61,16 +61,16 @@
       "name": "Solana",
       "grp": "core",
       "dir": "blandet",
-      "why": "Var kort under $90 under valgnatten, rundt $93 04.11 (opp ca. 0,9 %). THORChain viste fortsatt driftsvarsel for Solana 04.11.",
+      "why": "Opp ca. 4–5 % til rundt $96–98 04.11 etter at den var kort under $90 valgnatten.",
       "event": "–",
       "src": [
         {
-          "t": "Trading & Investment News 04.11",
-          "u": "https://www.tradingandinvestmentnews.co.uk/bitcoin-price-midterms/"
+          "t": "Crypto News Flash 04.11",
+          "u": "https://www.crypto-news-flash.com/bitcoin-reclaims-80k-democrats-sweep-midterms/"
         },
         {
-          "t": "FameEX 04.11",
-          "u": "https://www.fameex.com/en-US/news/crypto-news-recap-20261104"
+          "t": "BigGo Finance 04.11",
+          "u": "https://finance.biggo.com/news/adeb9509-f571-4aa1-80a4-71bd05ae2f64"
         }
       ]
     },
@@ -79,16 +79,16 @@
       "name": "XRP",
       "grp": "core",
       "dir": "blandet",
-      "why": "Rundt $1,28 04.11, opp ca. 2,2 % siste døgn og fortsatt blant de sterkere store myntene.",
+      "why": "Rundt $1,30–1,33 04.11, opp ca. 3–5 % siste døgn i den brede oppgangen etter valget.",
       "event": "XRPL-oppdatering tidligst 04.11",
       "src": [
         {
-          "t": "Trading & Investment News 04.11",
-          "u": "https://www.tradingandinvestmentnews.co.uk/bitcoin-price-midterms/"
+          "t": "Crypto News Flash 04.11",
+          "u": "https://www.crypto-news-flash.com/bitcoin-reclaims-80k-democrats-sweep-midterms/"
         },
         {
-          "t": "Analytics Insight 04.11",
-          "u": "https://www.analyticsinsight.net/price-analysis/crypto-prices-today-bitcoin-holds-usd-77300-as-democrats-take-the-house"
+          "t": "BigGo Finance 04.11",
+          "u": "https://finance.biggo.com/news/adeb9509-f571-4aa1-80a4-71bd05ae2f64"
         }
       ]
     },
@@ -129,12 +129,12 @@
       "name": "Zcash",
       "grp": "top",
       "dir": "opp",
-      "why": "Opp 7,1 % siste døgn til 04.11 etter fallet dagen før. NU7-oppgraderingen rundt 05.11 kutter blokktiden fra 75 til 25 sekunder.",
+      "why": "Opp ca. 10–12 % siste døgn til rundt $1 307 04.11. NU7-oppgraderingen rundt 05.11 kutter blokktiden fra 75 til 25 sekunder.",
       "event": "NU7-oppgradering ca. 05.11",
       "src": [
         {
-          "t": "Analytics Insight 04.11",
-          "u": "https://www.analyticsinsight.net/price-analysis/crypto-prices-today-bitcoin-holds-usd-77300-as-democrats-take-the-house"
+          "t": "Crypto News Flash 04.11",
+          "u": "https://www.crypto-news-flash.com/bitcoin-reclaims-80k-democrats-sweep-midterms/"
         },
         {
           "t": "CoinDesk 21.10",
@@ -366,13 +366,13 @@
       "nm": "Microsoft",
       "name": "Microsoft",
       "grp": "stk",
-      "dir": "blandet",
-      "why": "Blant de sterkeste teknologiaksjene 03.11 etter fallet på ca. 2,9 % 02.11. Sterke tall 28.10: omsetning $92,3 mrd. (+19 %), Azure +48 %.",
+      "dir": "opp",
+      "why": "Steg ca. 6 % til ny rekord 04.11 etter mellomvalget. Sterke tall 28.10: omsetning $92,3 mrd. (+19 %), Azure +48 %.",
       "event": "–",
       "src": [
         {
-          "t": "TipRanks 03.11",
-          "u": "https://www.tipranks.com/news/dow-jones-midday-report-djia-stalls-on-midterm-election-day-as-oil-eases"
+          "t": "Yahoo Finance 04.11",
+          "u": "https://ca.finance.yahoo.com/news/live/stock-market-today-dow-sp-500-nasdaq-midterm-elections-earnings-140752043.html"
         },
         {
           "t": "Trading Economics 02.11",
