@@ -1,22 +1,22 @@
 {
-  "updated": "03.11.2026 kl. 21:48",
-  "note": "Bakteppe: S&P 500 var opp 0,6 % og Nasdaq 1,1 % kl. 13:43 New York-tid 03.11, mens Dow falt 0,2 %. Brent falt 1,2 % til ca. $103 på meldinger om fremgang i samtalene mellom USA og Iran; ca. 75 % sjanse for renteheving i desember. Mellomvalg i dag, AMD-tall i kveld, jobbrapport 06.11.",
+  "updated": "04.11.2026 kl. 15:37",
+  "note": "Bakteppe: Demokratene vant både Representantenes hus og Senatet i mellomvalget 03.11. Dow-futures var opp 2,1 % og S&P 500-futures 1,1 % før åpning 04.11, mens rentene og dollaren falt og Brent falt ca. 2 %. Ca. 78 % sjanse for renteheving i desember; jobbrapport 06.11.",
   "items": [
     {
       "nm": "Gull (XAU)",
       "name": "Gull",
       "grp": "core",
-      "dir": "blandet",
-      "why": "Gullfutures falt 1,46 % til $3 911,80 morgenen 03.11 da oljen steg igjen. Ca. 75 % sjanse for renteheving i desember; WGC halverte investeringsprognosen for 2026 til 200 tonn.",
-      "event": "Mellomvalg i USA 03.11; jobbrapport 06.11",
+      "dir": "opp",
+      "why": "Gull steg 2,93 % og sølv 4,44 % morgenen 04.11 etter demokratisk seier i mellomvalget, mens dollaren og rentene falt. Markedet priser fortsatt ca. 78 % sjanse for renteheving i desember.",
+      "event": "Jobbrapport 06.11",
       "src": [
         {
-          "t": "TheStreet 03.11",
-          "u": "https://www.thestreet.com/stock-market-today/stock-market-today-dow-jones-sp-500-nasdaq-updates-nov-03-2026"
+          "t": "StockTitan 04.11",
+          "u": "https://www.stocktitan.net/articles/stock-market-today-live-november-4-2026"
         },
         {
-          "t": "Trading Economics 03.11",
-          "u": "https://tradingeconomics.com/commodity/gold/news/498802"
+          "t": "Analytics Insight 04.11",
+          "u": "https://www.analyticsinsight.net/price-analysis/crypto-prices-today-bitcoin-holds-usd-77300-as-democrats-take-the-house"
         }
       ]
     },
@@ -25,16 +25,16 @@
       "name": "Bitcoin",
       "grp": "core",
       "dir": "blandet",
-      "why": "Rundt $76 500–77 100 03.11. BTC-ETF-ene hadde $643 mill. i utstrømming 30.10, mest siden juni, og $398,6 mill. 02.11. Strategy kjøpte 811 BTC for $65,5 mill.",
-      "event": "Mellomvalg i USA 03.11; jobbrapport 06.11",
+      "why": "Falt til $75 618 natt til 04.11, laveste siden 16.09, og hentet seg inn til ca. $78 300. BTC-ETF-ene tapte $115,6 mill. 03.11, tredje dag med utstrømming.",
+      "event": "Jobbrapport 06.11",
       "src": [
         {
-          "t": "Analytics Insight 03.11",
-          "u": "https://www.analyticsinsight.net/price-analysis/crypto-prices-today-bitcoin-slips-to-usd-76500-as-us-midterm-voting-begins"
+          "t": "Trading & Investment News 04.11",
+          "u": "https://www.tradingandinvestmentnews.co.uk/bitcoin-price-midterms/"
         },
         {
-          "t": "CoinDesk 03.11",
-          "u": "https://www.coindesk.com/daybook-us/2026/11/03/bitcoin-is-breaking-a-midterm-election-pattern-going-back-to-2014"
+          "t": "FameEX 04.11",
+          "u": "https://www.fameex.com/en-US/news/crypto-news-recap-20261104"
         }
       ]
     },
@@ -43,16 +43,16 @@
       "name": "Ethereum",
       "grp": "core",
       "dir": "blandet",
-      "why": "Rundt $2 290 03.11, flatt. ETH-ETF-ene har hatt $482,5 mill. i utstrømming siste fem handelsdager.",
+      "why": "Opp ca. 2,5 % til rundt $2 321 04.11 etter et dykk under $2 250. ETH-ETF-ene hadde $85,3 mill. i utstrømming 03.11.",
       "event": "Glamsterdam på Hoodi (ny dato ikke satt)",
       "src": [
         {
-          "t": "CoinDesk 03.11",
-          "u": "https://www.coindesk.com/daybook-us/2026/11/03/bitcoin-is-breaking-a-midterm-election-pattern-going-back-to-2014"
+          "t": "Trading & Investment News 04.11",
+          "u": "https://www.tradingandinvestmentnews.co.uk/bitcoin-price-midterms/"
         },
         {
-          "t": "Ted Pillows 03.11",
-          "u": "https://tedpillows.substack.com/p/crypto-and-finance-market-report-46c"
+          "t": "FameEX 04.11",
+          "u": "https://www.fameex.com/en-US/news/crypto-news-recap-20261104"
         }
       ]
     },
@@ -61,16 +61,16 @@
       "name": "Solana",
       "grp": "core",
       "dir": "blandet",
-      "why": "Rundt $93,40 03.11 (ned ca. 0,9 %). Binance åpnet uttak av dusinvis av Solana-tokens igjen 03.11; hackerens SOL-salg er fortsatt en risiko.",
+      "why": "Var kort under $90 under valgnatten, rundt $93 04.11 (opp ca. 0,9 %). THORChain viste fortsatt driftsvarsel for Solana 04.11.",
       "event": "–",
       "src": [
         {
-          "t": "CoinDesk 03.11",
-          "u": "https://www.coindesk.com/daybook-us/2026/11/03/bitcoin-is-breaking-a-midterm-election-pattern-going-back-to-2014"
+          "t": "Trading & Investment News 04.11",
+          "u": "https://www.tradingandinvestmentnews.co.uk/bitcoin-price-midterms/"
         },
         {
-          "t": "Ted Pillows 03.11",
-          "u": "https://tedpillows.substack.com/p/crypto-and-finance-market-report-46c"
+          "t": "FameEX 04.11",
+          "u": "https://www.fameex.com/en-US/news/crypto-news-recap-20261104"
         }
       ]
     },
@@ -79,16 +79,16 @@
       "name": "XRP",
       "grp": "core",
       "dir": "blandet",
-      "why": "Rundt $1,28 03.11 (opp ca. 2,2 %), blant få vinnere i et svakt marked. XRP Ledger skal rette feil knyttet til stablecoin-utstedelse.",
+      "why": "Rundt $1,28 04.11, opp ca. 2,2 % siste døgn og fortsatt blant de sterkere store myntene.",
       "event": "XRPL-oppdatering tidligst 04.11",
       "src": [
         {
-          "t": "CoinDesk 03.11",
-          "u": "https://www.coindesk.com/daybook-us/2026/11/03/bitcoin-is-breaking-a-midterm-election-pattern-going-back-to-2014"
+          "t": "Trading & Investment News 04.11",
+          "u": "https://www.tradingandinvestmentnews.co.uk/bitcoin-price-midterms/"
         },
         {
-          "t": "Ted Pillows 03.11",
-          "u": "https://tedpillows.substack.com/p/crypto-and-finance-market-report-46c"
+          "t": "Analytics Insight 04.11",
+          "u": "https://www.analyticsinsight.net/price-analysis/crypto-prices-today-bitcoin-holds-usd-77300-as-democrats-take-the-house"
         }
       ]
     },
@@ -128,13 +128,13 @@
       "nm": "Zcash",
       "name": "Zcash",
       "grp": "top",
-      "dir": "blandet",
-      "why": "Falt 7,6 % siste døgn til 03.11, deretter opp 1,2 % til ca. $1 146. NU7-oppgraderingen rundt 05.11 kutter blokktiden fra 75 til 25 sekunder.",
+      "dir": "opp",
+      "why": "Opp 7,1 % siste døgn til 04.11 etter fallet dagen før. NU7-oppgraderingen rundt 05.11 kutter blokktiden fra 75 til 25 sekunder.",
       "event": "NU7-oppgradering ca. 05.11",
       "src": [
         {
-          "t": "CoinDesk 03.11",
-          "u": "https://www.coindesk.com/markets/2026/11/03/bitcoin-steadies-after-dip-to-usd76-300-as-etf-outflows-and-midterm-elections-weigh-on-crypto"
+          "t": "Analytics Insight 04.11",
+          "u": "https://www.analyticsinsight.net/price-analysis/crypto-prices-today-bitcoin-holds-usd-77300-as-democrats-take-the-house"
         },
         {
           "t": "CoinDesk 21.10",
@@ -183,12 +183,12 @@
       "name": "Monero",
       "grp": "top",
       "dir": "blandet",
-      "why": "Små kursgevinster 02.11 mens memecoins og AI-tokens falt. Høy giring i futures gir fortsatt risiko for kraftige svingninger.",
+      "why": "Opp 4,0 % siste døgn til 04.11, blant vinnerne etter valget. Høy giring i futures gir fortsatt risiko for kraftige svingninger.",
       "event": "–",
       "src": [
         {
-          "t": "CoinDesk 02.11",
-          "u": "https://www.coindesk.com/markets/2026/11/02/bitcoin-eases-to-usd77-900-as-binance-customers-pull-usd3-6-billion-after-withdrawals-reopen"
+          "t": "Analytics Insight 04.11",
+          "u": "https://www.analyticsinsight.net/price-analysis/crypto-prices-today-bitcoin-holds-usd-77300-as-democrats-take-the-house"
         },
         {
           "t": "CoinDesk 21.10",
@@ -348,13 +348,17 @@
       "nm": "SpaceX",
       "name": "SpaceX",
       "grp": "stk",
-      "dir": "blandet",
-      "why": "Opp 0,6 % til $137,24 før åpning 03.11 etter rapporter om samtaler med EchoStar om kjøp av Boost Mobile eller leie av nettet.",
+      "dir": "ned",
+      "why": "Ned 6,75 % før åpning 04.11 etter at demokraten Gina Hinojosa vant guvernørvalget i Texas, der SpaceX holder til. Endelig opptelling gjenstår.",
       "event": "Fusjonsvurdering med Tesla (ingen dato)",
       "src": [
         {
-          "t": "TheStreet 03.11",
-          "u": "https://www.thestreet.com/stock-market-today/stock-market-today-dow-jones-sp-500-nasdaq-updates-nov-03-2026"
+          "t": "StockTitan 04.11",
+          "u": "https://www.stocktitan.net/articles/stock-market-today-live-november-4-2026"
+        },
+        {
+          "t": "Upstox 04.11",
+          "u": "https://upstox.com/news/market-news/us-stocks/dow-jones-s-and-p-500-nasdaq-futures-indicate-positive-open-as-democrats-win-us-midterm-elections-stocks-to-watch/article-202986/"
         }
       ]
     },
@@ -380,13 +384,17 @@
       "nm": "Tesla",
       "name": "Tesla",
       "grp": "stk",
-      "dir": "blandet",
-      "why": "Steg ca. 1 % 02.11 mens Nasdaq falt 1,1 %. Komiteer vurderer fortsatt fusjon med SpaceX; ingen vilkår avtalt.",
+      "dir": "ned",
+      "why": "Ned 5,5 % før åpning 04.11 sammen med SpaceX etter demokratisk seier i mellomvalget og i Texas. Fusjonsvurderingen med SpaceX pågår; ingen vilkår avtalt.",
       "event": "Fusjonsvurdering med SpaceX (ingen dato)",
       "src": [
         {
-          "t": "Trading Economics 02.11",
-          "u": "https://tradingeconomics.com/united-states/stock-market/news/498328"
+          "t": "StockTitan 04.11",
+          "u": "https://www.stocktitan.net/articles/stock-market-today-live-november-4-2026"
+        },
+        {
+          "t": "Upstox 04.11",
+          "u": "https://upstox.com/news/market-news/us-stocks/dow-jones-s-and-p-500-nasdaq-futures-indicate-positive-open-as-democrats-win-us-midterm-elections-stocks-to-watch/article-202986/"
         }
       ]
     },
@@ -395,16 +403,16 @@
       "name": "Nvidia",
       "grp": "stk",
       "dir": "blandet",
-      "why": "Opp ca. 3 % midt på dagen 03.11 etter fire fall på rad, og AMD steg 5,1 % før kveldens kvartalstall. Nasdaq 100 gikk inn i korreksjon 02.11.",
-      "event": "AMD-tall 03.11; Nvidia-tall sent i november",
+      "why": "Nasdaq 100-futures lå etter resten 04.11 på svakhet i AI-aksjer. AMD steg først på kvartalstallene, men var nær flat før åpning.",
+      "event": "Qualcomm- og Arm-tall 04.11; Nvidia-tall sent i november",
       "src": [
         {
-          "t": "MarketScreener 03.11",
-          "u": "https://www.marketscreener.com/news/s-p-500-nasdaq-rise-as-tech-stocks-gain-ahead-of-midterm-results-ce785fdeda8ff726"
+          "t": "StockTitan 04.11",
+          "u": "https://www.stocktitan.net/articles/stock-market-today-live-november-4-2026"
         },
         {
-          "t": "Trading Economics 02.11",
-          "u": "https://tradingeconomics.com/united-states/stock-market/news/498328"
+          "t": "Upstox 04.11",
+          "u": "https://upstox.com/news/market-news/us-stocks/dow-jones-s-and-p-500-nasdaq-futures-indicate-positive-open-as-democrats-win-us-midterm-elections-stocks-to-watch/article-202986/"
         }
       ]
     }
