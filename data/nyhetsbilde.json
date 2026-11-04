@@ -1,22 +1,22 @@
 {
-  "updated": "04.11.2026 kl. 15:37",
-  "note": "Bakteppe: Demokratene vant både Representantenes hus og Senatet i mellomvalget 03.11. Dow-futures var opp 2,1 % og S&P 500-futures 1,1 % før åpning 04.11, mens rentene og dollaren falt og Brent falt ca. 2 %. Ca. 78 % sjanse for renteheving i desember; jobbrapport 06.11.",
+  "updated": "04.11.2026 kl. 16:45",
+  "note": "Bakteppe: Demokratene vant begge kamre i mellomvalget 03.11, og Dow åpnet ca. 1 000 poeng (1,9 %) opp 04.11, mens dollaren falt og Brent lå rundt $102. ADP viste 86 000 nye private jobber i oktober (ventet 67 000), mens ISM-tjenester falt til 54,5. Jobbrapport 06.11.",
   "items": [
     {
       "nm": "Gull (XAU)",
       "name": "Gull",
       "grp": "core",
       "dir": "opp",
-      "why": "Gull steg 2,93 % og sølv 4,44 % morgenen 04.11 etter demokratisk seier i mellomvalget, mens dollaren og rentene falt. Markedet priser fortsatt ca. 78 % sjanse for renteheving i desember.",
+      "why": "Gull steg 2,86 % til $4 052,90 og sølv 4,94 % 04.11 etter demokratisk seier i mellomvalget, mens dollaren og rentene falt.",
       "event": "Jobbrapport 06.11",
       "src": [
         {
-          "t": "StockTitan 04.11",
-          "u": "https://www.stocktitan.net/articles/stock-market-today-live-november-4-2026"
+          "t": "TheStreet 04.11",
+          "u": "https://www.thestreet.com/stock-market-today/stock-market-today-dow-jones-sp-500-nasdaq-updates-nov-04-2026"
         },
         {
-          "t": "Analytics Insight 04.11",
-          "u": "https://www.analyticsinsight.net/price-analysis/crypto-prices-today-bitcoin-holds-usd-77300-as-democrats-take-the-house"
+          "t": "StockTitan 04.11",
+          "u": "https://www.stocktitan.net/articles/stock-market-today-live-november-4-2026"
         }
       ]
     },
@@ -25,16 +25,16 @@
       "name": "Bitcoin",
       "grp": "core",
       "dir": "blandet",
-      "why": "Falt til $75 618 natt til 04.11, laveste siden 16.09, og hentet seg inn til ca. $78 300. BTC-ETF-ene tapte $115,6 mill. 03.11, tredje dag med utstrømming.",
+      "why": "Hentet seg inn til ca. $78 500 04.11 etter dykk til $75 600, laveste siden 17.09. BTC-ETF-ene tapte ca. $1,15 mrd. over tre dager til 03.11.",
       "event": "Jobbrapport 06.11",
       "src": [
         {
-          "t": "Trading & Investment News 04.11",
-          "u": "https://www.tradingandinvestmentnews.co.uk/bitcoin-price-midterms/"
+          "t": "crypto.news 04.11",
+          "u": "https://crypto.news/bitcoin-price-reclaims-78000-us-midterm-election/"
         },
         {
-          "t": "FameEX 04.11",
-          "u": "https://www.fameex.com/en-US/news/crypto-news-recap-20261104"
+          "t": "KuCoin 04.11",
+          "u": "https://www.kucoin.com/news/flash/bitcoin-rises-on-democratic-midterm-election-sweep"
         }
       ]
     },
@@ -147,12 +147,12 @@
       "name": "Hyperliquid",
       "grp": "top",
       "dir": "blandet",
-      "why": "Opp ca. 1,2 % til rundt $87 03.11 etter fallet 02.11. ICE-planen om Hyperliquid-baserte futures i USA venter fortsatt godkjenning.",
+      "why": "Opp ca. 3,2 % til rundt $86,9 siste døgn 04.11. ICE-planen om Hyperliquid-baserte futures i USA venter fortsatt godkjenning.",
       "event": "Regulatorisk godkjenning av ICE-avtalen (ingen dato)",
       "src": [
         {
-          "t": "CoinDesk 03.11",
-          "u": "https://www.coindesk.com/daybook-us/2026/11/03/bitcoin-is-breaking-a-midterm-election-pattern-going-back-to-2014"
+          "t": "crypto.news 04.11",
+          "u": "https://crypto.news/bitcoin-price-reclaims-78000-us-midterm-election/"
         },
         {
           "t": "The Block 29.10",
@@ -349,16 +349,16 @@
       "name": "SpaceX",
       "grp": "stk",
       "dir": "ned",
-      "why": "Ned 6,75 % før åpning 04.11 etter at demokraten Gina Hinojosa vant guvernørvalget i Texas, der SpaceX holder til. Endelig opptelling gjenstår.",
+      "why": "Ned 5–6,4 % før åpning 04.11 etter demokratisk seier i mellomvalget og guvernørvalget i Texas. Valgte samtidig Qualcomm til Starlink Mobile 5G-nettet.",
       "event": "Fusjonsvurdering med Tesla (ingen dato)",
       "src": [
         {
-          "t": "StockTitan 04.11",
-          "u": "https://www.stocktitan.net/articles/stock-market-today-live-november-4-2026"
+          "t": "TheStreet 04.11",
+          "u": "https://www.thestreet.com/stock-market-today/stock-market-today-dow-jones-sp-500-nasdaq-updates-nov-04-2026"
         },
         {
-          "t": "Upstox 04.11",
-          "u": "https://upstox.com/news/market-news/us-stocks/dow-jones-s-and-p-500-nasdaq-futures-indicate-positive-open-as-democrats-win-us-midterm-elections-stocks-to-watch/article-202986/"
+          "t": "StockTitan 04.11",
+          "u": "https://www.stocktitan.net/articles/stock-market-today-live-november-4-2026"
         }
       ]
     },
@@ -403,16 +403,16 @@
       "name": "Nvidia",
       "grp": "stk",
       "dir": "blandet",
-      "why": "Nasdaq 100-futures lå etter resten 04.11 på svakhet i AI-aksjer. AMD steg først på kvartalstallene, men var nær flat før åpning.",
-      "event": "Qualcomm- og Arm-tall 04.11; Nvidia-tall sent i november",
+      "why": "Steg 2,29 % til $206,69 03.11 og ble igjen verdens mest verdifulle selskap ($4,99 bill.). Brikkeaksjene falt over 1 % ved åpning 04.11.",
+      "event": "Kvartalstall 17.11",
       "src": [
         {
-          "t": "StockTitan 04.11",
-          "u": "https://www.stocktitan.net/articles/stock-market-today-live-november-4-2026"
+          "t": "24/7 Wall St 04.11",
+          "u": "https://247wallst.com/investing/2026/11/04/nvidia-took-back-the-worlds-biggest-company-title-from-apple-on-election-day/"
         },
         {
-          "t": "Upstox 04.11",
-          "u": "https://upstox.com/news/market-news/us-stocks/dow-jones-s-and-p-500-nasdaq-futures-indicate-positive-open-as-democrats-win-us-midterm-elections-stocks-to-watch/article-202986/"
+          "t": "Yahoo Finance 04.11",
+          "u": "https://ca.finance.yahoo.com/news/live/stock-market-today-dow-sp-500-nasdaq-midterm-elections-earnings-140752043.html"
         }
       ]
     }
