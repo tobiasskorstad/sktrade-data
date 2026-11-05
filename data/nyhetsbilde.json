@@ -1,6 +1,6 @@
 {
-  "updated": "05.11.2026 kl. 18:42",
-  "note": "Bakteppe: Nasdaq falt 3–4 % 05.11 i et bredt salg av AI- og brikkeaksjer, S&P 500 ned ca. 2 %. Arbeidsledighetskrav falt til 189 000, laveste siden 1969, og Bank of England hevet renten til 4 %. Brent opp til ca. $97. Jobbrapport 06.11 og KPI 10.11.",
+  "updated": "05.11.2026 kl. 19:45",
+  "note": "Bakteppe: Nasdaq ned ca. 5 % og S&P 500 over 3 % 05.11 i det kraftigste salget av AI-aksjer på lenge, VIX over 20. Tiårsrenten under 4,9 % (fra over 5,3 % før valget), gull rundt $4 120. Jobbrapport 06.11 og KPI 10.11.",
   "items": [
     {
       "nm": "Gull (XAU)",
@@ -21,12 +21,16 @@
       "name": "Bitcoin",
       "grp": "core",
       "dir": "ned",
-      "why": "Falt til ca. $76 500 05.11, ned 5 % siste døgn, sammen med Nasdaq. Kryptoaksjer som Coinbase (−7,8 %) og Strategy (−8,3 %) falt kraftig.",
+      "why": "Rundt $76 000 05.11, ned 5,3 % siste døgn. Ca. $878 mill. likvidert på fire timer, og Coinbase og Strategy falt over 10 %.",
       "event": "Jobbrapport 06.11",
       "src": [
         {
-          "t": "CoinDesk 05.11",
-          "u": "https://www.coindesk.com/business/2026/11/05/live-updates-bitcoin-steady-around-usd80-000-as-markets-rally-after-democratic-sweep"
+          "t": "Trending Topics 05.11",
+          "u": "https://www.trendingtopics.eu/ai-stocks-and-cryptocurrencies-crash-hard-after-democrats-midterm-win/"
+        },
+        {
+          "t": "TheStreet 05.11",
+          "u": "https://www.thestreet.com/crypto/markets/bitcoin-stocks-crash-as-markets-erase-post-election-rally"
         }
       ]
     },
@@ -313,16 +317,12 @@
       "name": "SpaceX",
       "grp": "stk",
       "dir": "ned",
-      "why": "Ca. 7 % lavere i annenhåndshandel 05.11, etter 4,5 % fall 04.11. Frykt for hindringer for AI-datasentre etter demokratisk seier.",
+      "why": "Falt 10,5 % til $121,62 05.11, ned 13,9 % på to dager. Frykt for hindringer for AI-datasentre etter demokratisk seier.",
       "event": "Fusjonsvurdering med Tesla (ingen dato)",
       "src": [
         {
-          "t": "Dimsum Daily 05.11",
-          "u": "https://www.dimsumdaily.hk/nasdaq-plunges-as-investors-rotate-from-technology-after-democratic-wins/"
-        },
-        {
-          "t": "Upstox 05.11",
-          "u": "https://upstox.com/news/market-news/us-stocks/wall-street-tumbles-as-tech-and-chip-stocks-plunge-amd-nvidia-intel-alphabet-space-x-extend-losses-up-to-12/article-203083/"
+          "t": "Trending Topics 05.11",
+          "u": "https://www.trendingtopics.eu/ai-stocks-and-cryptocurrencies-crash-hard-after-democrats-midterm-win/"
         }
       ]
     },
@@ -331,12 +331,12 @@
       "name": "Microsoft",
       "grp": "stk",
       "dir": "blandet",
-      "why": "Steg 6,7 % 04.11, men var blant megaselskapene som falt opptil 6 % 05.11 i AI-salget. Sterke tall 28.10: Azure +48 %.",
+      "why": "Ned 3,5 % til $536,47 05.11, men fortsatt opp 3,0 % på to dager etter hoppet 04.11. Sterke tall 28.10: Azure +48 %.",
       "event": "–",
       "src": [
         {
-          "t": "Upstox 05.11",
-          "u": "https://upstox.com/news/market-news/us-stocks/wall-street-tumbles-as-tech-and-chip-stocks-plunge-amd-nvidia-intel-alphabet-space-x-extend-losses-up-to-12/article-203083/"
+          "t": "Trending Topics 05.11",
+          "u": "https://www.trendingtopics.eu/ai-stocks-and-cryptocurrencies-crash-hard-after-democrats-midterm-win/"
         }
       ]
     },
@@ -345,12 +345,12 @@
       "name": "Tesla",
       "grp": "stk",
       "dir": "ned",
-      "why": "Falt ca. 9 % 05.11 i det brede tech-salget, etter 2,3 % nedgang 04.11. Cybercab i Dallas skal starte i november.",
+      "why": "Falt 10,6 % til $344,49 05.11, ned 13,6 % på to dager i det brede tech-salget. Cybercab i Dallas skal starte i november.",
       "event": "Cybercab-lansering i Dallas (nov.)",
       "src": [
         {
-          "t": "Dimsum Daily 05.11",
-          "u": "https://www.dimsumdaily.hk/nasdaq-plunges-as-investors-rotate-from-technology-after-democratic-wins/"
+          "t": "Trending Topics 05.11",
+          "u": "https://www.trendingtopics.eu/ai-stocks-and-cryptocurrencies-crash-hard-after-democrats-midterm-win/"
         }
       ]
     },
@@ -359,16 +359,12 @@
       "name": "Nvidia",
       "grp": "stk",
       "dir": "ned",
-      "why": "Falt ca. 4–5 % 05.11 da Nasdaq-100 gikk inn i korreksjon. Tvil om avkastning på AI-investeringer og frykt for strengere tilsyn etter valget.",
+      "why": "Falt 8,2 % til $183,69 05.11 (−11,1 % på to dager) da Nasdaq gikk inn i korreksjon. Tvil om AI-investeringer etter valget.",
       "event": "Kvartalstall 17.11",
       "src": [
         {
-          "t": "Dimsum Daily 05.11",
-          "u": "https://www.dimsumdaily.hk/nasdaq-plunges-as-investors-rotate-from-technology-after-democratic-wins/"
-        },
-        {
-          "t": "Upstox 05.11",
-          "u": "https://upstox.com/news/market-news/us-stocks/wall-street-tumbles-as-tech-and-chip-stocks-plunge-amd-nvidia-intel-alphabet-space-x-extend-losses-up-to-12/article-203083/"
+          "t": "Trending Topics 05.11",
+          "u": "https://www.trendingtopics.eu/ai-stocks-and-cryptocurrencies-crash-hard-after-democrats-midterm-win/"
         }
       ]
     }
