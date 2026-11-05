@@ -1,5 +1,5 @@
 {
-  "updated": "05.11.2026 kl. 19:45",
+  "updated": "05.11.2026 kl. 20:45",
   "note": "Bakteppe: Nasdaq ned ca. 5 % og S&P 500 over 3 % 05.11 i det kraftigste salget av AI-aksjer på lenge, VIX over 20. Tiårsrenten under 4,9 % (fra over 5,3 % før valget), gull rundt $4 120. Jobbrapport 06.11 og KPI 10.11.",
   "items": [
     {
@@ -108,13 +108,13 @@
       "nm": "Zcash",
       "name": "Zcash",
       "grp": "top",
-      "dir": "opp",
-      "why": "Steg 9,4 % til ca. $1 310 04.11 foran NU7, som aktiveres ved blokk 3 543 405 rundt 05.11 og kutter blokktiden fra 75 til 25 sekunder.",
-      "event": "NU7 ved blokk 3 543 405 (ca. 05.11)",
+      "dir": "blandet",
+      "why": "Ned ca. 4 % til $1 268 05.11 etter oppgangen foran NU7. Oppgraderingen kutter blokktiden fra 75 til 25 sekunder.",
+      "event": "NU7 ved blokk 3 543 405 (ca. 06.11 kl. 03:30)",
       "src": [
         {
-          "t": "CoinCentral 05.11",
-          "u": "https://coincentral.com/zcash-zec-price-rallies-9-as-nu7-switches-on-zcashs-fastest-blocks-yet"
+          "t": "24/7 Wall St 05.11",
+          "u": "https://247wallst.com/investing/cryptocurrency/2026/11/05/zcash-upgrades-tonight-bitcoin-or-zcash-which-is-the-better-buy-for-2027/"
         }
       ]
     },
