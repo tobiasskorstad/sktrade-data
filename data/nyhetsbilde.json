@@ -1,18 +1,18 @@
 {
-  "updated": "05.11.2026 kl. 15:50",
-  "note": "Bakteppe: Etter demokratisk seier i mellomvalget steg Dow 3 % til 53 356 04.11, mens Brent falt nesten 9 % til ca. $95 og 10-årsrenten til under 4,9 %. Arbeidsledighetskrav 189 000 05.11. Jobbrapport 06.11 og KPI 10.11.",
+  "updated": "05.11.2026 kl. 16:43",
+  "note": "Bakteppe: Nasdaq falt 3–4 % 05.11 i et bredt salg av AI- og brikkeaksjer, S&P 500 ned ca. 2 %. Arbeidsledighetskrav falt til 189 000, laveste siden 1969, og Bank of England hevet renten til 4 %. Brent opp til ca. $97. Jobbrapport 06.11 og KPI 10.11.",
   "items": [
     {
       "nm": "Gull (XAU)",
       "name": "Gull",
       "grp": "core",
       "dir": "opp",
-      "why": "Steg ca. 3,4 % til $4 073 04.11 og handlet rundt $4 130 natt til 05.11, mens dollaren falt til laveste siden 30.09.",
+      "why": "Opp 1,1 % til $4 116 05.11 som trygg havn mens Nasdaq og bitcoin falt. Dollaren er svak etter mellomvalget.",
       "event": "Jobbrapport 06.11, KPI 10.11",
       "src": [
         {
-          "t": "Nexus Research 05.11",
-          "u": "https://nexusresearchreports.substack.com/p/nexus-technology-morning-note-thursday"
+          "t": "CoinDesk 05.11",
+          "u": "https://www.coindesk.com/business/2026/11/05/live-updates-bitcoin-steady-around-usd80-000-as-markets-rally-after-democratic-sweep"
         }
       ]
     },
@@ -20,17 +20,13 @@
       "nm": "Bitcoin",
       "name": "Bitcoin",
       "grp": "core",
-      "dir": "blandet",
-      "why": "Rundt $79 600 morgen 05.11 etter oppgang over $80 000 04.11. BTC-ETF-ene fikk $75 mill. inn 04.11 etter tre dager med $1,16 mrd. ut.",
+      "dir": "ned",
+      "why": "Falt til ca. $76 500 05.11, ned 5 % siste døgn, sammen med Nasdaq. Kryptoaksjer som Coinbase (−7,8 %) og Strategy (−8,3 %) falt kraftig.",
       "event": "Jobbrapport 06.11",
       "src": [
         {
           "t": "CoinDesk 05.11",
           "u": "https://www.coindesk.com/business/2026/11/05/live-updates-bitcoin-steady-around-usd80-000-as-markets-rally-after-democratic-sweep"
-        },
-        {
-          "t": "Cointelegraph 05.11",
-          "u": "https://cointelegraph.com/markets/bitcoin-ether-etfs-turn-green-post-election-rebound"
         }
       ]
     },
@@ -38,17 +34,13 @@
       "nm": "Ethereum",
       "name": "Ethereum",
       "grp": "core",
-      "dir": "blandet",
-      "why": "Steg 4 % til rett over $2 400 04.11, rundt $2 380 05.11. ETH-ETF-ene fikk $53 mill. inn 04.11 etter sju dager med utstrømming.",
+      "dir": "ned",
+      "why": "Falt ca. 6 % til rundt $2 280 05.11 i det brede salget av teknologi og krypto, etter oppgang over $2 400 04.11.",
       "event": "Glamsterdam på Hoodi (ny dato ikke satt)",
       "src": [
         {
           "t": "CoinDesk 05.11",
           "u": "https://www.coindesk.com/business/2026/11/05/live-updates-bitcoin-steady-around-usd80-000-as-markets-rally-after-democratic-sweep"
-        },
-        {
-          "t": "Cointelegraph 05.11",
-          "u": "https://cointelegraph.com/markets/bitcoin-ether-etfs-turn-green-post-election-rebound"
         }
       ]
     },
@@ -56,8 +48,8 @@
       "nm": "Solana",
       "name": "Solana",
       "grp": "core",
-      "dir": "blandet",
-      "why": "Steg nesten 4 % til rundt $97 04.11, men lå rundt $95 morgen 05.11 da oppgangen kjølnet.",
+      "dir": "ned",
+      "why": "Falt ca. 5,7 % til rundt $91 05.11 sammen med resten av kryptomarkedet og Nasdaq.",
       "event": "–",
       "src": [
         {
@@ -71,7 +63,7 @@
       "name": "XRP",
       "grp": "core",
       "dir": "blandet",
-      "why": "Rundt $1,30 05.11, ned ca. 1 % etter 3 % oppgang 04.11. Lommebøker med minst 1 mill. XRP nådde 2 147, årets høyeste (Santiment).",
+      "why": "Ned ca. 4 % til $1,26 05.11 med markedet. Lommebøker med minst 1 mill. XRP nådde 2 147, årets høyeste (Santiment).",
       "event": "–",
       "src": [
         {
@@ -126,8 +118,8 @@
       "nm": "Hyperliquid",
       "name": "Hyperliquid",
       "grp": "top",
-      "dir": "blandet",
-      "why": "Nådde $96 etter ICE/Trade[XYZ]-avtalen om amerikanske perps, men har falt nesten 15 % til rett over $81 05.11.",
+      "dir": "ned",
+      "why": "Falt til ca. $79 05.11, nær 18 % under toppen på $96 etter ICE/Trade[XYZ]-avtalen om amerikanske perps.",
       "event": "Regulatorisk godkjenning av ICE-avtalen (ingen dato)",
       "src": [
         {
@@ -321,16 +313,16 @@
       "name": "SpaceX",
       "grp": "stk",
       "dir": "ned",
-      "why": "Falt ca. 4,5 % til rundt $135 04.11 etter demokratisk seier i Texas. Analytiker Dan Ives advarer om hindringer for AI-datasentre i Texas.",
+      "why": "Ca. 7 % lavere i annenhåndshandel 05.11, etter 4,5 % fall 04.11. Frykt for hindringer for AI-datasentre etter demokratisk seier.",
       "event": "Fusjonsvurdering med Tesla (ingen dato)",
       "src": [
         {
-          "t": "Teslarati 04.11",
-          "u": "https://www.teslarati.com/musk-tesla-tsla-spacex-spcx-decline-after-democratic-midterm-sweep/"
+          "t": "Dimsum Daily 05.11",
+          "u": "https://www.dimsumdaily.hk/nasdaq-plunges-as-investors-rotate-from-technology-after-democratic-wins/"
         },
         {
-          "t": "Yahoo Finance 04.11",
-          "u": "https://finance.yahoo.com/markets/stocks/article/spacex-tesla-stocks-sink-as-analyst-warns-democrats-victory-will-create-major-hurdles-for-ai-build-out-135511616.html"
+          "t": "Upstox 05.11",
+          "u": "https://upstox.com/news/market-news/us-stocks/wall-street-tumbles-as-tech-and-chip-stocks-plunge-amd-nvidia-intel-alphabet-space-x-extend-losses-up-to-12/article-203083/"
         }
       ]
     },
@@ -338,17 +330,13 @@
       "nm": "Microsoft",
       "name": "Microsoft",
       "grp": "stk",
-      "dir": "opp",
-      "why": "Steg ca. 6,7 % 04.11 etter mellomvalget. Sterke tall 28.10: omsetning $92,3 mrd. (+19 %), Azure +48 %.",
+      "dir": "blandet",
+      "why": "Steg 6,7 % 04.11, men var blant megaselskapene som falt opptil 6 % 05.11 i AI-salget. Sterke tall 28.10: Azure +48 %.",
       "event": "–",
       "src": [
         {
-          "t": "Nexus Research 05.11",
-          "u": "https://nexusresearchreports.substack.com/p/nexus-technology-morning-note-thursday"
-        },
-        {
-          "t": "Trading Economics 02.11",
-          "u": "https://tradingeconomics.com/united-states/stock-market/news/498328"
+          "t": "Upstox 05.11",
+          "u": "https://upstox.com/news/market-news/us-stocks/wall-street-tumbles-as-tech-and-chip-stocks-plunge-amd-nvidia-intel-alphabet-space-x-extend-losses-up-to-12/article-203083/"
         }
       ]
     },
@@ -357,16 +345,12 @@
       "name": "Tesla",
       "grp": "stk",
       "dir": "ned",
-      "why": "Ned ca. 2,3 % til rundt $389 04.11 sammen med SpaceX etter mellomvalget. Robotaxi-tjenesten Cybercab i Dallas skal starte i november.",
+      "why": "Falt ca. 9 % 05.11 i det brede tech-salget, etter 2,3 % nedgang 04.11. Cybercab i Dallas skal starte i november.",
       "event": "Cybercab-lansering i Dallas (nov.)",
       "src": [
         {
-          "t": "Teslarati 04.11",
-          "u": "https://www.teslarati.com/musk-tesla-tsla-spacex-spcx-decline-after-democratic-midterm-sweep/"
-        },
-        {
-          "t": "Yahoo Finance 04.11",
-          "u": "https://finance.yahoo.com/markets/stocks/article/spacex-tesla-stocks-sink-as-analyst-warns-democrats-victory-will-create-major-hurdles-for-ai-build-out-135511616.html"
+          "t": "Dimsum Daily 05.11",
+          "u": "https://www.dimsumdaily.hk/nasdaq-plunges-as-investors-rotate-from-technology-after-democratic-wins/"
         }
       ]
     },
@@ -375,16 +359,16 @@
       "name": "Nvidia",
       "grp": "stk",
       "dir": "ned",
-      "why": "Falt ca. 3 % 04.11 og brikkeindeksen 3,1 %. Qualcomm ned 9 % før åpning 05.11 etter svak guiding, Nasdaq 100-futures ned ca. 0,9 %.",
+      "why": "Falt ca. 4–5 % 05.11 da Nasdaq-100 gikk inn i korreksjon. Tvil om avkastning på AI-investeringer og frykt for strengere tilsyn etter valget.",
       "event": "Kvartalstall 17.11",
       "src": [
         {
-          "t": "Nexus Research 05.11",
-          "u": "https://nexusresearchreports.substack.com/p/nexus-technology-morning-note-thursday"
+          "t": "Dimsum Daily 05.11",
+          "u": "https://www.dimsumdaily.hk/nasdaq-plunges-as-investors-rotate-from-technology-after-democratic-wins/"
         },
         {
-          "t": "CoinDesk 05.11",
-          "u": "https://www.coindesk.com/business/2026/11/05/live-updates-bitcoin-steady-around-usd80-000-as-markets-rally-after-democratic-sweep"
+          "t": "Upstox 05.11",
+          "u": "https://upstox.com/news/market-news/us-stocks/wall-street-tumbles-as-tech-and-chip-stocks-plunge-amd-nvidia-intel-alphabet-space-x-extend-losses-up-to-12/article-203083/"
         }
       ]
     }
