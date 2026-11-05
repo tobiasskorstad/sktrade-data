@@ -1,6 +1,6 @@
 {
-  "updated": "05.11.2026 kl. 20:45",
-  "note": "Bakteppe: Nasdaq ned ca. 5 % og S&P 500 over 3 % 05.11 i det kraftigste salget av AI-aksjer på lenge, VIX over 20. Tiårsrenten under 4,9 % (fra over 5,3 % før valget), gull rundt $4 120. Jobbrapport 06.11 og KPI 10.11.",
+  "updated": "05.11.2026 kl. 21:45",
+  "note": "Bakteppe: Nasdaq ned over 5 % og S&P 500 rundt 4 % 05.11 i det kraftigste salget av AI-aksjer på lenge, VIX rundt 26. Tiårsrenten ned til ca. 4,83 %, gull rundt $4 115 og Brent rundt $97. Jobbrapport 06.11 og KPI 10.11.",
   "items": [
     {
       "nm": "Gull (XAU)",
@@ -21,16 +21,16 @@
       "name": "Bitcoin",
       "grp": "core",
       "dir": "ned",
-      "why": "Rundt $76 000 05.11, ned 5,3 % siste døgn. Ca. $878 mill. likvidert på fire timer, og Coinbase og Strategy falt over 10 %.",
+      "why": "Falt 6 % til ca. $75 700 05.11 (bunn $75 568) og har slettet oppgangen etter valget. Nesten $1,1 mrd. likvidert siste døgn (CoinGlass).",
       "event": "Jobbrapport 06.11",
       "src": [
         {
-          "t": "Trending Topics 05.11",
-          "u": "https://www.trendingtopics.eu/ai-stocks-and-cryptocurrencies-crash-hard-after-democrats-midterm-win/"
+          "t": "The Block 05.11",
+          "u": "https://www.theblock.co/news/markets/2026-11-05-bitcoin-erases-post-election-gains-wall-street-selloff-liquidations-435434"
         },
         {
-          "t": "TheStreet 05.11",
-          "u": "https://www.thestreet.com/crypto/markets/bitcoin-stocks-crash-as-markets-erase-post-election-rally"
+          "t": "Yahoo Finance 05.11",
+          "u": "https://finance.yahoo.com/markets/live/stock-market-today-thursday-november-5-dow-sp-500-nasdaq-oil-rises-chip-stocks-141439950.html"
         }
       ]
     },
@@ -39,12 +39,12 @@
       "name": "Ethereum",
       "grp": "core",
       "dir": "ned",
-      "why": "Falt ca. 6 % til rundt $2 280 05.11 i det brede salget av teknologi og krypto, etter oppgang over $2 400 04.11.",
+      "why": "Falt over 7 % til ca. $2 247 05.11 i det brede salget av teknologi og krypto, etter oppgang over $2 400 04.11.",
       "event": "Glamsterdam på Hoodi (ny dato ikke satt)",
       "src": [
         {
-          "t": "CoinDesk 05.11",
-          "u": "https://www.coindesk.com/business/2026/11/05/live-updates-bitcoin-steady-around-usd80-000-as-markets-rally-after-democratic-sweep"
+          "t": "The Block 05.11",
+          "u": "https://www.theblock.co/news/markets/2026-11-05-bitcoin-erases-post-election-gains-wall-street-selloff-liquidations-435434"
         }
       ]
     },
@@ -53,12 +53,12 @@
       "name": "Solana",
       "grp": "core",
       "dir": "ned",
-      "why": "Falt ca. 5,7 % til rundt $91 05.11 sammen med resten av kryptomarkedet og Nasdaq.",
+      "why": "Ned ca. 5,7 % til rundt $89,6 05.11 sammen med resten av kryptomarkedet og Nasdaq.",
       "event": "–",
       "src": [
         {
-          "t": "CoinDesk 05.11",
-          "u": "https://www.coindesk.com/business/2026/11/05/live-updates-bitcoin-steady-around-usd80-000-as-markets-rally-after-democratic-sweep"
+          "t": "The Block 05.11",
+          "u": "https://www.theblock.co/news/markets/2026-11-05-bitcoin-erases-post-election-gains-wall-street-selloff-liquidations-435434"
         }
       ]
     },
@@ -168,13 +168,13 @@
       "nm": "Chainlink",
       "name": "Chainlink",
       "grp": "top",
-      "dir": "blandet",
-      "why": "Falt 4,1 % 02.11. Binance åpnet LINK-uttak igjen 03.11 i andre uttaksfase etter hacket.",
+      "dir": "ned",
+      "why": "Ned ca. 6 % til rundt $10,8 05.11 i kryptosalget. Binance åpnet LINK-uttak igjen 03.11 etter hacket.",
       "event": "–",
       "src": [
         {
-          "t": "Ted Pillows 03.11",
-          "u": "https://tedpillows.substack.com/p/crypto-and-finance-market-report-46c"
+          "t": "The Block 05.11",
+          "u": "https://www.theblock.co/news/markets/2026-11-05-bitcoin-erases-post-election-gains-wall-street-selloff-liquidations-435434"
         }
       ]
     },
