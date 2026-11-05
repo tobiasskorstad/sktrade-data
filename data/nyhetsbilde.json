@@ -1,22 +1,18 @@
 {
-  "updated": "04.11.2026 kl. 21:42",
-  "note": "Bakteppe: Demokratene vant begge kamre i mellomvalget 03.11. Dow steg rundt 1 400 poeng (ca. 2,8 %) og S&P 500 ca. 1,8 % 04.11, mens dollaren svekket seg og 10-årsrenten falt til 4,92 %. Olje (WTI) rundt $95. Jobbrapport 06.11.",
+  "updated": "05.11.2026 kl. 15:50",
+  "note": "Bakteppe: Etter demokratisk seier i mellomvalget steg Dow 3 % til 53 356 04.11, mens Brent falt nesten 9 % til ca. $95 og 10-årsrenten til under 4,9 %. Arbeidsledighetskrav 189 000 05.11. Jobbrapport 06.11 og KPI 10.11.",
   "items": [
     {
       "nm": "Gull (XAU)",
       "name": "Gull",
       "grp": "core",
       "dir": "opp",
-      "why": "Gull steg 2,86 % til $4 052,90 og sølv 4,94 % 04.11 etter demokratisk seier i mellomvalget, mens dollaren og rentene falt.",
-      "event": "Jobbrapport 06.11",
+      "why": "Steg ca. 3,4 % til $4 073 04.11 og handlet rundt $4 130 natt til 05.11, mens dollaren falt til laveste siden 30.09.",
+      "event": "Jobbrapport 06.11, KPI 10.11",
       "src": [
         {
-          "t": "TheStreet 04.11",
-          "u": "https://www.thestreet.com/stock-market-today/stock-market-today-dow-jones-sp-500-nasdaq-updates-nov-04-2026"
-        },
-        {
-          "t": "StockTitan 04.11",
-          "u": "https://www.stocktitan.net/articles/stock-market-today-live-november-4-2026"
+          "t": "Nexus Research 05.11",
+          "u": "https://nexusresearchreports.substack.com/p/nexus-technology-morning-note-thursday"
         }
       ]
     },
@@ -24,17 +20,17 @@
       "nm": "Bitcoin",
       "name": "Bitcoin",
       "grp": "core",
-      "dir": "opp",
-      "why": "Over $80 400 04.11, opp ca. 4 % siste døgn etter valget. $951 mill. likvidert siste døgn, mest shortposisjoner. BTC-ETF-ene har hatt flere dager med utstrømming.",
+      "dir": "blandet",
+      "why": "Rundt $79 600 morgen 05.11 etter oppgang over $80 000 04.11. BTC-ETF-ene fikk $75 mill. inn 04.11 etter tre dager med $1,16 mrd. ut.",
       "event": "Jobbrapport 06.11",
       "src": [
         {
-          "t": "Crypto News Flash 04.11",
-          "u": "https://www.crypto-news-flash.com/bitcoin-reclaims-80k-democrats-sweep-midterms/"
+          "t": "CoinDesk 05.11",
+          "u": "https://www.coindesk.com/business/2026/11/05/live-updates-bitcoin-steady-around-usd80-000-as-markets-rally-after-democratic-sweep"
         },
         {
-          "t": "BigGo Finance 04.11",
-          "u": "https://finance.biggo.com/news/adeb9509-f571-4aa1-80a4-71bd05ae2f64"
+          "t": "Cointelegraph 05.11",
+          "u": "https://cointelegraph.com/markets/bitcoin-ether-etfs-turn-green-post-election-rebound"
         }
       ]
     },
@@ -42,17 +38,17 @@
       "nm": "Ethereum",
       "name": "Ethereum",
       "grp": "core",
-      "dir": "opp",
-      "why": "Opp 6–7 % siste døgn til rundt $2 430 04.11, sterkere enn bitcoin. $239 mill. i ETH-likvidasjoner siste døgn.",
+      "dir": "blandet",
+      "why": "Steg 4 % til rett over $2 400 04.11, rundt $2 380 05.11. ETH-ETF-ene fikk $53 mill. inn 04.11 etter sju dager med utstrømming.",
       "event": "Glamsterdam på Hoodi (ny dato ikke satt)",
       "src": [
         {
-          "t": "Crypto News Flash 04.11",
-          "u": "https://www.crypto-news-flash.com/bitcoin-reclaims-80k-democrats-sweep-midterms/"
+          "t": "CoinDesk 05.11",
+          "u": "https://www.coindesk.com/business/2026/11/05/live-updates-bitcoin-steady-around-usd80-000-as-markets-rally-after-democratic-sweep"
         },
         {
-          "t": "BigGo Finance 04.11",
-          "u": "https://finance.biggo.com/news/adeb9509-f571-4aa1-80a4-71bd05ae2f64"
+          "t": "Cointelegraph 05.11",
+          "u": "https://cointelegraph.com/markets/bitcoin-ether-etfs-turn-green-post-election-rebound"
         }
       ]
     },
@@ -61,16 +57,12 @@
       "name": "Solana",
       "grp": "core",
       "dir": "blandet",
-      "why": "Opp ca. 4–5 % til rundt $96–98 04.11 etter at den var kort under $90 valgnatten.",
+      "why": "Steg nesten 4 % til rundt $97 04.11, men lå rundt $95 morgen 05.11 da oppgangen kjølnet.",
       "event": "–",
       "src": [
         {
-          "t": "Crypto News Flash 04.11",
-          "u": "https://www.crypto-news-flash.com/bitcoin-reclaims-80k-democrats-sweep-midterms/"
-        },
-        {
-          "t": "BigGo Finance 04.11",
-          "u": "https://finance.biggo.com/news/adeb9509-f571-4aa1-80a4-71bd05ae2f64"
+          "t": "CoinDesk 05.11",
+          "u": "https://www.coindesk.com/business/2026/11/05/live-updates-bitcoin-steady-around-usd80-000-as-markets-rally-after-democratic-sweep"
         }
       ]
     },
@@ -79,16 +71,12 @@
       "name": "XRP",
       "grp": "core",
       "dir": "blandet",
-      "why": "Rundt $1,30–1,33 04.11, opp ca. 3–5 % siste døgn i den brede oppgangen etter valget.",
-      "event": "XRPL-oppdatering tidligst 04.11",
+      "why": "Rundt $1,30 05.11, ned ca. 1 % etter 3 % oppgang 04.11. Lommebøker med minst 1 mill. XRP nådde 2 147, årets høyeste (Santiment).",
+      "event": "–",
       "src": [
         {
-          "t": "Crypto News Flash 04.11",
-          "u": "https://www.crypto-news-flash.com/bitcoin-reclaims-80k-democrats-sweep-midterms/"
-        },
-        {
-          "t": "BigGo Finance 04.11",
-          "u": "https://finance.biggo.com/news/adeb9509-f571-4aa1-80a4-71bd05ae2f64"
+          "t": "CoinDesk 05.11",
+          "u": "https://www.coindesk.com/business/2026/11/05/live-updates-bitcoin-steady-around-usd80-000-as-markets-rally-after-democratic-sweep"
         }
       ]
     },
@@ -97,16 +85,12 @@
       "name": "BNB",
       "grp": "core",
       "dir": "blandet",
-      "why": "Binance publiserte reservebevis for 31.10: 10 tokens fullt dekket, ca. 95 % av stjålne verdier erstattet. Uttaksfase to startet 03.11.",
-      "event": "Ny reservesnapshot 04.11",
+      "why": "Opp 2 % 04.11 og tilbake over $700, markedsverdi ca. $93 mrd. Binance har gjenopptatt uttak i fase to etter hacket.",
+      "event": "–",
       "src": [
         {
-          "t": "Ted Pillows 03.11",
-          "u": "https://tedpillows.substack.com/p/crypto-and-finance-market-report-46c"
-        },
-        {
-          "t": "CoinDesk 03.11",
-          "u": "https://www.coindesk.com/daybook-us/2026/11/03/bitcoin-is-breaking-a-midterm-election-pattern-going-back-to-2014"
+          "t": "CoinDesk 05.11",
+          "u": "https://www.coindesk.com/business/2026/11/05/live-updates-bitcoin-steady-around-usd80-000-as-markets-rally-after-democratic-sweep"
         }
       ]
     },
@@ -114,13 +98,13 @@
       "nm": "TRON",
       "name": "TRON",
       "grp": "top",
-      "dir": "opp",
-      "why": "Opp ca. 1,1 % til rundt $0,32 03.11 og holder seg fortsatt bedre enn resten av markedet.",
+      "dir": "blandet",
+      "why": "Falt ca. 1 % til rundt $0,31 04.11 som eneste store kryptovaluta i minus etter valget.",
       "event": "–",
       "src": [
         {
-          "t": "CoinDesk 03.11",
-          "u": "https://www.coindesk.com/daybook-us/2026/11/03/bitcoin-is-breaking-a-midterm-election-pattern-going-back-to-2014"
+          "t": "CoinDesk 05.11",
+          "u": "https://www.coindesk.com/business/2026/11/05/live-updates-bitcoin-steady-around-usd80-000-as-markets-rally-after-democratic-sweep"
         }
       ]
     },
@@ -129,16 +113,12 @@
       "name": "Zcash",
       "grp": "top",
       "dir": "opp",
-      "why": "Opp ca. 10–12 % siste døgn til rundt $1 307 04.11. NU7-oppgraderingen rundt 05.11 kutter blokktiden fra 75 til 25 sekunder.",
-      "event": "NU7-oppgradering ca. 05.11",
+      "why": "Steg 9,4 % til ca. $1 310 04.11 foran NU7, som aktiveres ved blokk 3 543 405 rundt 05.11 og kutter blokktiden fra 75 til 25 sekunder.",
+      "event": "NU7 ved blokk 3 543 405 (ca. 05.11)",
       "src": [
         {
-          "t": "Crypto News Flash 04.11",
-          "u": "https://www.crypto-news-flash.com/bitcoin-reclaims-80k-democrats-sweep-midterms/"
-        },
-        {
-          "t": "CoinDesk 21.10",
-          "u": "https://www.coindesk.com/markets/2026/10/21/zcash-developers-confirm-november-date-for-upgrade-that-triples-payment-speed"
+          "t": "CoinCentral 05.11",
+          "u": "https://coincentral.com/zcash-zec-price-rallies-9-as-nu7-switches-on-zcashs-fastest-blocks-yet"
         }
       ]
     },
@@ -147,16 +127,12 @@
       "name": "Hyperliquid",
       "grp": "top",
       "dir": "blandet",
-      "why": "Opp ca. 3,2 % til rundt $86,9 siste døgn 04.11. ICE-planen om Hyperliquid-baserte futures i USA venter fortsatt godkjenning.",
+      "why": "Nådde $96 etter ICE/Trade[XYZ]-avtalen om amerikanske perps, men har falt nesten 15 % til rett over $81 05.11.",
       "event": "Regulatorisk godkjenning av ICE-avtalen (ingen dato)",
       "src": [
         {
-          "t": "crypto.news 04.11",
-          "u": "https://crypto.news/bitcoin-price-reclaims-78000-us-midterm-election/"
-        },
-        {
-          "t": "The Block 29.10",
-          "u": "https://www.theblock.co/news/business/2026-10-29-ice-tradexyz-hyperliquid-perpetual-futures-us-432132"
+          "t": "CoinDesk 05.11",
+          "u": "https://www.coindesk.com/business/2026/11/05/live-updates-bitcoin-steady-around-usd80-000-as-markets-rally-after-democratic-sweep"
         }
       ]
     },
@@ -165,16 +141,12 @@
       "name": "Dogecoin",
       "grp": "top",
       "dir": "blandet",
-      "why": "Ned 2,8 % til ca. $0,0757 30.10 i kryptofallet etter Binance-hacket. Kinesisk inndragning av DOGE kan fortsatt gi salgspress.",
+      "why": "Rundt $0,077 05.11 og følger i hovedsak resten av kryptomarkedet etter valget.",
       "event": "–",
       "src": [
         {
-          "t": "KuCoin 30.10",
-          "u": "https://www.kucoin.com/news/flash/crypto-market-declines-as-bitcoin-falls-below-79-000-bnb-drops-5-2"
-        },
-        {
-          "t": "CoinMarketCap 15.10",
-          "u": "https://coinmarketcap.com/cmc-ai/dogecoin/latest-updates/"
+          "t": "Cointelegraph 05.11",
+          "u": "https://cointelegraph.com/markets/bitcoin-ether-etfs-turn-green-post-election-rebound"
         }
       ]
     },
@@ -349,16 +321,16 @@
       "name": "SpaceX",
       "grp": "stk",
       "dir": "ned",
-      "why": "Ned 5–6,4 % før åpning 04.11 etter demokratisk seier i mellomvalget og guvernørvalget i Texas. Valgte samtidig Qualcomm til Starlink Mobile 5G-nettet.",
+      "why": "Falt ca. 4,5 % til rundt $135 04.11 etter demokratisk seier i Texas. Analytiker Dan Ives advarer om hindringer for AI-datasentre i Texas.",
       "event": "Fusjonsvurdering med Tesla (ingen dato)",
       "src": [
         {
-          "t": "TheStreet 04.11",
-          "u": "https://www.thestreet.com/stock-market-today/stock-market-today-dow-jones-sp-500-nasdaq-updates-nov-04-2026"
+          "t": "Teslarati 04.11",
+          "u": "https://www.teslarati.com/musk-tesla-tsla-spacex-spcx-decline-after-democratic-midterm-sweep/"
         },
         {
-          "t": "StockTitan 04.11",
-          "u": "https://www.stocktitan.net/articles/stock-market-today-live-november-4-2026"
+          "t": "Yahoo Finance 04.11",
+          "u": "https://finance.yahoo.com/markets/stocks/article/spacex-tesla-stocks-sink-as-analyst-warns-democrats-victory-will-create-major-hurdles-for-ai-build-out-135511616.html"
         }
       ]
     },
@@ -367,12 +339,12 @@
       "name": "Microsoft",
       "grp": "stk",
       "dir": "opp",
-      "why": "Steg ca. 6 % til ny rekord 04.11 etter mellomvalget. Sterke tall 28.10: omsetning $92,3 mrd. (+19 %), Azure +48 %.",
+      "why": "Steg ca. 6,7 % 04.11 etter mellomvalget. Sterke tall 28.10: omsetning $92,3 mrd. (+19 %), Azure +48 %.",
       "event": "–",
       "src": [
         {
-          "t": "Yahoo Finance 04.11",
-          "u": "https://ca.finance.yahoo.com/news/live/stock-market-today-dow-sp-500-nasdaq-midterm-elections-earnings-140752043.html"
+          "t": "Nexus Research 05.11",
+          "u": "https://nexusresearchreports.substack.com/p/nexus-technology-morning-note-thursday"
         },
         {
           "t": "Trading Economics 02.11",
@@ -385,16 +357,16 @@
       "name": "Tesla",
       "grp": "stk",
       "dir": "ned",
-      "why": "Ned 5,5 % før åpning 04.11 sammen med SpaceX etter demokratisk seier i mellomvalget og i Texas. Fusjonsvurderingen med SpaceX pågår; ingen vilkår avtalt.",
-      "event": "Fusjonsvurdering med SpaceX (ingen dato)",
+      "why": "Ned ca. 2,3 % til rundt $389 04.11 sammen med SpaceX etter mellomvalget. Robotaxi-tjenesten Cybercab i Dallas skal starte i november.",
+      "event": "Cybercab-lansering i Dallas (nov.)",
       "src": [
         {
-          "t": "StockTitan 04.11",
-          "u": "https://www.stocktitan.net/articles/stock-market-today-live-november-4-2026"
+          "t": "Teslarati 04.11",
+          "u": "https://www.teslarati.com/musk-tesla-tsla-spacex-spcx-decline-after-democratic-midterm-sweep/"
         },
         {
-          "t": "Upstox 04.11",
-          "u": "https://upstox.com/news/market-news/us-stocks/dow-jones-s-and-p-500-nasdaq-futures-indicate-positive-open-as-democrats-win-us-midterm-elections-stocks-to-watch/article-202986/"
+          "t": "Yahoo Finance 04.11",
+          "u": "https://finance.yahoo.com/markets/stocks/article/spacex-tesla-stocks-sink-as-analyst-warns-democrats-victory-will-create-major-hurdles-for-ai-build-out-135511616.html"
         }
       ]
     },
@@ -402,17 +374,17 @@
       "nm": "Nvidia",
       "name": "Nvidia",
       "grp": "stk",
-      "dir": "blandet",
-      "why": "Steg 2,29 % til $206,69 03.11 og ble igjen verdens mest verdifulle selskap ($4,99 bill.). Brikkeaksjene falt over 1 % ved åpning 04.11.",
+      "dir": "ned",
+      "why": "Falt ca. 3 % 04.11 og brikkeindeksen 3,1 %. Qualcomm ned 9 % før åpning 05.11 etter svak guiding, Nasdaq 100-futures ned ca. 0,9 %.",
       "event": "Kvartalstall 17.11",
       "src": [
         {
-          "t": "24/7 Wall St 04.11",
-          "u": "https://247wallst.com/investing/2026/11/04/nvidia-took-back-the-worlds-biggest-company-title-from-apple-on-election-day/"
+          "t": "Nexus Research 05.11",
+          "u": "https://nexusresearchreports.substack.com/p/nexus-technology-morning-note-thursday"
         },
         {
-          "t": "Yahoo Finance 04.11",
-          "u": "https://ca.finance.yahoo.com/news/live/stock-market-today-dow-sp-500-nasdaq-midterm-elections-earnings-140752043.html"
+          "t": "CoinDesk 05.11",
+          "u": "https://www.coindesk.com/business/2026/11/05/live-updates-bitcoin-steady-around-usd80-000-as-markets-rally-after-democratic-sweep"
         }
       ]
     }
