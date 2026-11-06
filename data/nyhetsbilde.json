@@ -1,18 +1,22 @@
 {
-  "updated": "05.11.2026 kl. 21:45",
-  "note": "Bakteppe: Nasdaq ned over 5 % og S&P 500 rundt 4 % 05.11 i det kraftigste salget av AI-aksjer på lenge, VIX rundt 26. Tiårsrenten ned til ca. 4,83 %, gull rundt $4 115 og Brent rundt $97. Jobbrapport 06.11 og KPI 10.11.",
+  "updated": "06.11.2026 kl. 15:37",
+  "note": "Bakteppe: USA la til 165 000 jobber i oktober (ventet 65 000), ledigheten falt til 4,1 % og lønnsveksten var 3,1 %. Tiårsrenten steg mot 4,89 %, og markedet priser høy sjanse for renteheving i desember. Nasdaq-futures opp ca. 1,5 % etter fallet på 5,5 % 05.11. KPI 10.11.",
   "items": [
     {
       "nm": "Gull (XAU)",
       "name": "Gull",
       "grp": "core",
-      "dir": "opp",
-      "why": "Opp 1,1 % til $4 116 05.11 som trygg havn mens Nasdaq og bitcoin falt. Dollaren er svak etter mellomvalget.",
-      "event": "Jobbrapport 06.11, KPI 10.11",
+      "dir": "blandet",
+      "why": "Ned ca. 1 % til rundt $4 070 06.11 etter oppgangen 05.11. Sterk jobbrapport løftet tiårsrenten mot 4,89 %.",
+      "event": "KPI 10.11",
       "src": [
         {
-          "t": "CoinDesk 05.11",
-          "u": "https://www.coindesk.com/business/2026/11/05/live-updates-bitcoin-steady-around-usd80-000-as-markets-rally-after-democratic-sweep"
+          "t": "Yahoo Finance 06.11",
+          "u": "https://finance.yahoo.com/markets/live/stock-market-today-friday-november-6-dow-sp-500-nasdaq-jobs-report-091927729.html"
+        },
+        {
+          "t": "CoinDesk 06.11",
+          "u": "https://www.coindesk.com/markets/2026/11/06/u-s-added-165-000-jobs-in-october-blowing-past-65-000-estimate"
         }
       ]
     },
@@ -21,16 +25,16 @@
       "name": "Bitcoin",
       "grp": "core",
       "dir": "ned",
-      "why": "Falt 6 % til ca. $75 700 05.11 (bunn $75 568) og har slettet oppgangen etter valget. Nesten $1,1 mrd. likvidert siste døgn (CoinGlass).",
-      "event": "Jobbrapport 06.11",
+      "why": "Rundt $75 300–75 800 06.11, ned ca. 5 % siste døgn. Spot-ETF-ene tapte $430 mill. 05.11, og IBIT har hatt utstrømming fem dager på rad.",
+      "event": "KPI 10.11",
       "src": [
         {
-          "t": "The Block 05.11",
-          "u": "https://www.theblock.co/news/markets/2026-11-05-bitcoin-erases-post-election-gains-wall-street-selloff-liquidations-435434"
+          "t": "CoinDesk 06.11",
+          "u": "https://www.coindesk.com/daybook-us/2026/11/06/over-usd1-billion-in-bullish-bets-liquidated-while-etf-flows-suggest-no-help-in-spot-market"
         },
         {
-          "t": "Yahoo Finance 05.11",
-          "u": "https://finance.yahoo.com/markets/live/stock-market-today-thursday-november-5-dow-sp-500-nasdaq-oil-rises-chip-stocks-141439950.html"
+          "t": "CoinDesk 06.11",
+          "u": "https://www.coindesk.com/markets/2026/11/06/u-s-added-165-000-jobs-in-october-blowing-past-65-000-estimate"
         }
       ]
     },
@@ -39,12 +43,12 @@
       "name": "Ethereum",
       "grp": "core",
       "dir": "ned",
-      "why": "Falt over 7 % til ca. $2 247 05.11 i det brede salget av teknologi og krypto, etter oppgang over $2 400 04.11.",
+      "why": "Rundt $2 220 06.11, ned 5–7 % siste døgn i salget av teknologi og krypto.",
       "event": "Glamsterdam på Hoodi (ny dato ikke satt)",
       "src": [
         {
-          "t": "The Block 05.11",
-          "u": "https://www.theblock.co/news/markets/2026-11-05-bitcoin-erases-post-election-gains-wall-street-selloff-liquidations-435434"
+          "t": "CoinDesk 06.11",
+          "u": "https://www.coindesk.com/markets/2026/11/06/bitcoin-steadies-near-usd76-000-after-ai-led-selloff"
         }
       ]
     },
@@ -53,12 +57,12 @@
       "name": "Solana",
       "grp": "core",
       "dir": "ned",
-      "why": "Ned ca. 5,7 % til rundt $89,6 05.11 sammen med resten av kryptomarkedet og Nasdaq.",
+      "why": "Rundt $89,8 06.11, ned ca. 3,3 % siste døgn, litt bedre enn resten av kryptomarkedet.",
       "event": "–",
       "src": [
         {
-          "t": "The Block 05.11",
-          "u": "https://www.theblock.co/news/markets/2026-11-05-bitcoin-erases-post-election-gains-wall-street-selloff-liquidations-435434"
+          "t": "CoinDesk 06.11",
+          "u": "https://www.coindesk.com/tech/2026/11/06/live-updates-nasdaq-100-futures-rally-points-to-stock-market-respite"
         }
       ]
     },
@@ -66,13 +70,13 @@
       "nm": "XRP",
       "name": "XRP",
       "grp": "core",
-      "dir": "blandet",
-      "why": "Ned ca. 4 % til $1,26 05.11 med markedet. Lommebøker med minst 1 mill. XRP nådde 2 147, årets høyeste (Santiment).",
+      "dir": "ned",
+      "why": "Falt ca. 7,9 % siste døgn til $1,18 06.11, svakere enn bitcoin.",
       "event": "–",
       "src": [
         {
-          "t": "CoinDesk 05.11",
-          "u": "https://www.coindesk.com/business/2026/11/05/live-updates-bitcoin-steady-around-usd80-000-as-markets-rally-after-democratic-sweep"
+          "t": "CoinDesk 06.11",
+          "u": "https://www.coindesk.com/tech/2026/11/06/live-updates-nasdaq-100-futures-rally-points-to-stock-market-respite"
         }
       ]
     },
@@ -95,12 +99,12 @@
       "name": "TRON",
       "grp": "top",
       "dir": "blandet",
-      "why": "Falt ca. 1 % til rundt $0,31 04.11 som eneste store kryptovaluta i minus etter valget.",
+      "why": "Stabil rundt $0,31 06.11 (+0,2 % siste døgn) mens resten av markedet falt.",
       "event": "–",
       "src": [
         {
-          "t": "CoinDesk 05.11",
-          "u": "https://www.coindesk.com/business/2026/11/05/live-updates-bitcoin-steady-around-usd80-000-as-markets-rally-after-democratic-sweep"
+          "t": "CoinDesk 06.11",
+          "u": "https://www.coindesk.com/tech/2026/11/06/live-updates-nasdaq-100-futures-rally-points-to-stock-market-respite"
         }
       ]
     },
@@ -109,12 +113,12 @@
       "name": "Zcash",
       "grp": "top",
       "dir": "blandet",
-      "why": "Ned ca. 4 % til $1 268 05.11 etter oppgangen foran NU7. Oppgraderingen kutter blokktiden fra 75 til 25 sekunder.",
-      "event": "NU7 ved blokk 3 543 405 (ca. 06.11 kl. 03:30)",
+      "why": "NU7 ble aktivert tidlig 06.11 og kutter blokktiden fra 75 til 25 sekunder. ZEC var opp ca. 1 % etter midnatt UTC.",
+      "event": "–",
       "src": [
         {
-          "t": "24/7 Wall St 05.11",
-          "u": "https://247wallst.com/investing/cryptocurrency/2026/11/05/zcash-upgrades-tonight-bitcoin-or-zcash-which-is-the-better-buy-for-2027/"
+          "t": "CoinDesk 06.11",
+          "u": "https://www.coindesk.com/markets/2026/11/06/bitcoin-steadies-near-usd76-000-after-ai-led-selloff"
         }
       ]
     },
@@ -123,12 +127,12 @@
       "name": "Hyperliquid",
       "grp": "top",
       "dir": "ned",
-      "why": "Falt til ca. $79 05.11, nær 18 % under toppen på $96 etter ICE/Trade[XYZ]-avtalen om amerikanske perps.",
+      "why": "Rundt $77,9 06.11, ned ca. 3 % siste døgn og ca. 19 % under toppen på $96 forrige uke.",
       "event": "Regulatorisk godkjenning av ICE-avtalen (ingen dato)",
       "src": [
         {
-          "t": "CoinDesk 05.11",
-          "u": "https://www.coindesk.com/business/2026/11/05/live-updates-bitcoin-steady-around-usd80-000-as-markets-rally-after-democratic-sweep"
+          "t": "CoinDesk 06.11",
+          "u": "https://www.coindesk.com/markets/2026/11/06/bitcoin-steadies-near-usd76-000-after-ai-led-selloff"
         }
       ]
     },
@@ -151,12 +155,12 @@
       "name": "Monero",
       "grp": "top",
       "dir": "blandet",
-      "why": "Opp 4,0 % siste døgn til 04.11, blant vinnerne etter valget. Høy giring i futures gir fortsatt risiko for kraftige svingninger.",
+      "why": "Ned 3,2 % siste døgn til 06.11, men klarte seg bedre enn bitcoin. Høy giring i futures gir risiko for kraftige svingninger.",
       "event": "–",
       "src": [
         {
-          "t": "Analytics Insight 04.11",
-          "u": "https://www.analyticsinsight.net/price-analysis/crypto-prices-today-bitcoin-holds-usd-77300-as-democrats-take-the-house"
+          "t": "CoinDesk 06.11",
+          "u": "https://www.coindesk.com/markets/2026/11/06/bitcoin-steadies-near-usd76-000-after-ai-led-selloff"
         },
         {
           "t": "CoinDesk 21.10",
@@ -316,10 +320,14 @@
       "nm": "SpaceX",
       "name": "SpaceX",
       "grp": "stk",
-      "dir": "ned",
-      "why": "Falt 10,5 % til $121,62 05.11, ned 13,9 % på to dager. Frykt for hindringer for AI-datasentre etter demokratisk seier.",
+      "dir": "blandet",
+      "why": "Opp 5,5 % før åpning 06.11 etter fall på 13,9 % over to dager til $121,62 05.11.",
       "event": "Fusjonsvurdering med Tesla (ingen dato)",
       "src": [
+        {
+          "t": "Yahoo Finance 06.11",
+          "u": "https://finance.yahoo.com/technology/ai/articles/nasdaq-futures-rise-steep-ai-094400237.html"
+        },
         {
           "t": "Trending Topics 05.11",
           "u": "https://www.trendingtopics.eu/ai-stocks-and-cryptocurrencies-crash-hard-after-democrats-midterm-win/"
@@ -344,10 +352,14 @@
       "nm": "Tesla",
       "name": "Tesla",
       "grp": "stk",
-      "dir": "ned",
-      "why": "Falt 10,6 % til $344,49 05.11, ned 13,6 % på to dager i det brede tech-salget. Cybercab i Dallas skal starte i november.",
+      "dir": "blandet",
+      "why": "Opp 2,1 % før åpning 06.11 etter fall på 13,6 % over to dager til $344,49 05.11. Cybercab i Dallas skal starte i november.",
       "event": "Cybercab-lansering i Dallas (nov.)",
       "src": [
+        {
+          "t": "Yahoo Finance 06.11",
+          "u": "https://finance.yahoo.com/technology/ai/articles/nasdaq-futures-rise-steep-ai-094400237.html"
+        },
         {
           "t": "Trending Topics 05.11",
           "u": "https://www.trendingtopics.eu/ai-stocks-and-cryptocurrencies-crash-hard-after-democrats-midterm-win/"
@@ -358,10 +370,14 @@
       "nm": "Nvidia",
       "name": "Nvidia",
       "grp": "stk",
-      "dir": "ned",
-      "why": "Falt 8,2 % til $183,69 05.11 (−11,1 % på to dager) da Nasdaq gikk inn i korreksjon. Tvil om AI-investeringer etter valget.",
+      "dir": "blandet",
+      "why": "Opp 4,2 % før åpning 06.11 etter verste dag siden januar 2025 (−8,2 % til $183,69 05.11). Andre brikkeaksjer opp 5–9 %.",
       "event": "Kvartalstall 17.11",
       "src": [
+        {
+          "t": "Yahoo Finance 06.11",
+          "u": "https://finance.yahoo.com/technology/ai/articles/nasdaq-futures-rise-steep-ai-094400237.html"
+        },
         {
           "t": "Trending Topics 05.11",
           "u": "https://www.trendingtopics.eu/ai-stocks-and-cryptocurrencies-crash-hard-after-democrats-midterm-win/"
