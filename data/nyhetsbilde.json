@@ -1,6 +1,6 @@
 {
-  "updated": "06.11.2026 kl. 15:37",
-  "note": "Bakteppe: USA la til 165 000 jobber i oktober (ventet 65 000), ledigheten falt til 4,1 % og lønnsveksten var 3,1 %. Tiårsrenten steg mot 4,89 %, og markedet priser høy sjanse for renteheving i desember. Nasdaq-futures opp ca. 1,5 % etter fallet på 5,5 % 05.11. KPI 10.11.",
+  "updated": "06.11.2026 kl. 16:45",
+  "note": "Bakteppe: USA la til 165 000 jobber i oktober (ventet 65 000) og ledigheten falt til 4,1 %. Tiårsrenten rundt 4,87 %, og markedet priser høy sjanse for renteheving i desember. Nasdaq opp ca. 1,7 % og VIX ned ca. 14 % etter fallet 05.11; Brent nær $97. KPI 10.11.",
   "items": [
     {
       "nm": "Gull (XAU)",
@@ -25,7 +25,7 @@
       "name": "Bitcoin",
       "grp": "core",
       "dir": "ned",
-      "why": "Rundt $75 300–75 800 06.11, ned ca. 5 % siste døgn. Spot-ETF-ene tapte $430 mill. 05.11, og IBIT har hatt utstrømming fem dager på rad.",
+      "why": "Rundt $75 300–76 000 06.11 og deltar ikke i aksjerekylen. Over $1,27 mrd. i posisjoner likvidert siste døgn; spot-ETF-ene tapte $430 mill. 05.11.",
       "event": "KPI 10.11",
       "src": [
         {
@@ -34,7 +34,7 @@
         },
         {
           "t": "CoinDesk 06.11",
-          "u": "https://www.coindesk.com/markets/2026/11/06/u-s-added-165-000-jobs-in-october-blowing-past-65-000-estimate"
+          "u": "https://www.coindesk.com/tech/2026/11/06/live-updates-nasdaq-100-futures-rally-points-to-stock-market-respite"
         }
       ]
     },
@@ -321,12 +321,12 @@
       "name": "SpaceX",
       "grp": "stk",
       "dir": "blandet",
-      "why": "Opp 5,5 % før åpning 06.11 etter fall på 13,9 % over to dager til $121,62 05.11.",
+      "why": "Opp ca. 6 % 06.11 etter fall på 13,9 % over to dager til $121,62 05.11, knyttet til frykt for regulatoriske hindringer.",
       "event": "Fusjonsvurdering med Tesla (ingen dato)",
       "src": [
         {
           "t": "Yahoo Finance 06.11",
-          "u": "https://finance.yahoo.com/technology/ai/articles/nasdaq-futures-rise-steep-ai-094400237.html"
+          "u": "https://finance.yahoo.com/markets/article/semiconductor-stocks-lead-tech-rebound-spacex-and-tesla-jump-alphacheck-150906077.html"
         },
         {
           "t": "Trending Topics 05.11",
@@ -353,16 +353,16 @@
       "name": "Tesla",
       "grp": "stk",
       "dir": "blandet",
-      "why": "Opp 2,1 % før åpning 06.11 etter fall på 13,6 % over to dager til $344,49 05.11. Cybercab i Dallas skal starte i november.",
-      "event": "Cybercab-lansering i Dallas (nov.)",
+      "why": "Opp ca. 5 % 06.11 etter fall på 13,6 % over to dager. Fallet var knyttet til regulatorisk uro etter at demokratene tok Kongressen.",
+      "event": "Musk på Baron-konferansen 06.11; Cybercab Dallas (nov.)",
       "src": [
         {
           "t": "Yahoo Finance 06.11",
-          "u": "https://finance.yahoo.com/technology/ai/articles/nasdaq-futures-rise-steep-ai-094400237.html"
+          "u": "https://finance.yahoo.com/markets/article/semiconductor-stocks-lead-tech-rebound-spacex-and-tesla-jump-alphacheck-150906077.html"
         },
         {
-          "t": "Trending Topics 05.11",
-          "u": "https://www.trendingtopics.eu/ai-stocks-and-cryptocurrencies-crash-hard-after-democrats-midterm-win/"
+          "t": "BigGo Finance 06.11",
+          "u": "https://finance.biggo.com/news/ce4a9ea4-4771-472d-9988-72a357ca8571"
         }
       ]
     },
@@ -370,17 +370,17 @@
       "nm": "Nvidia",
       "name": "Nvidia",
       "grp": "stk",
-      "dir": "blandet",
-      "why": "Opp 4,2 % før åpning 06.11 etter verste dag siden januar 2025 (−8,2 % til $183,69 05.11). Andre brikkeaksjer opp 5–9 %.",
+      "dir": "opp",
+      "why": "Opp ca. 5 % til rundt $189,80 06.11 etter fall på ca. 9 % 05.11. Brikkeaksjene leder rekylen, AMD opp ca. 13 %.",
       "event": "Kvartalstall 17.11",
       "src": [
         {
           "t": "Yahoo Finance 06.11",
-          "u": "https://finance.yahoo.com/technology/ai/articles/nasdaq-futures-rise-steep-ai-094400237.html"
+          "u": "https://finance.yahoo.com/markets/stocks/articles/amd-jumps-8-intel-nvidia-140502989.html"
         },
         {
-          "t": "Trending Topics 05.11",
-          "u": "https://www.trendingtopics.eu/ai-stocks-and-cryptocurrencies-crash-hard-after-democrats-midterm-win/"
+          "t": "Yahoo Finance 06.11",
+          "u": "https://finance.yahoo.com/markets/article/semiconductor-stocks-lead-tech-rebound-spacex-and-tesla-jump-alphacheck-150906077.html"
         }
       ]
     }
