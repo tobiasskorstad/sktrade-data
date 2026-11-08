@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-07T02:20+00:00",
+ "updated": "2026-11-08T02:26+00:00",
  "failed": [],
  "markets": [
   {
@@ -109,8 +109,8 @@
    "tv": "FX_IDC:JPYUSD",
    "src": "Yahoo",
    "first": 13879,
-   "last": 20763,
-   "n": 4890
+   "last": 20764,
+   "n": 4891
   },
   {
    "key": "GOOGL",
@@ -179,8 +179,8 @@
    "tv": "NYSE:BABA",
    "src": "Yahoo",
    "first": 16332,
-   "last": 20762,
-   "n": 3051
+   "last": 20763,
+   "n": 3052
   },
   {
    "key": "HIMS",
@@ -189,8 +189,8 @@
    "tv": "NYSE:HIMS",
    "src": "Yahoo",
    "first": 18152,
-   "last": 20762,
-   "n": 1797
+   "last": 20763,
+   "n": 1798
   }
  ]
 }
