@@ -1,6 +1,6 @@
 {
-  "updated": "09.11.2026 kl. 18:41",
-  "note": "Bakteppe: Markedet priser ca. 80 % sjanse for renteheving 08.–09.12. WTI ned ca. 4 % til rundt $87 09.11 og rentene litt lavere, mens Nasdaq var opp ca. 2,5 % tross Nvidia-fall. Iran-samtalene står fast ifølge Rubio; KPI tirsdag 10.11 kl. 14:30.",
+  "updated": "09.11.2026 kl. 20:42",
+  "note": "Bakteppe: Markedet priser ca. 80 % sjanse for renteheving 08.–09.12. Olje falt (Brent under $94) og S&P 500 var opp ca. 2,4 % midt på dagen 09.11, med 10-årsrenten rundt 4,87 %. Iran-samtalene står fast; KPI tirsdag 10.11 kl. 14:30.",
   "items": [
     {
       "nm": "Gull (XAU)",
@@ -317,12 +317,16 @@
       "name": "SpaceX",
       "grp": "stk",
       "dir": "blandet",
-      "why": "Stengte på $134,27 06.11 og var opp over 2 % før børsåpning 09.11. Stifel gjentar kursmål $190; omtalt GPU-leasing på ca. $40 mrd.",
+      "why": "Opp 1,7 % til $136,55 før åpning 09.11 etter at Stifel gjentok kursmål $190. NASA tildelte månelandingskontrakter på opptil $10 mrd. til åtte selskaper, blant dem SpaceX.",
       "event": "Starship test 15 tidligst 13.11",
       "src": [
         {
-          "t": "TradingKey 09.11",
-          "u": "https://tradingkey.com/analysis/stocks/us-stocks/262296307-spacex-spcx-musk-tradingkey"
+          "t": "TheStreet 09.11",
+          "u": "https://www.thestreet.com/stock-market-today/stock-market-today-dow-jones-sp-500-nasdaq-updates-nov-09-202"
+        },
+        {
+          "t": "Yahoo Finance 09.11",
+          "u": "https://finance.yahoo.com/markets/live/stock-market-today-monday-november-9-dow-sp-500-nasdaq-nvidia-090535419.html"
         }
       ]
     },
@@ -349,16 +353,12 @@
       "name": "Tesla",
       "grp": "stk",
       "dir": "blandet",
-      "why": "Opp ca. 5 % 06.11 etter fall på 13,6 % over to dager etter valget. Mag 7 utenom Nvidia var opp 2,5–6 % 09.11.",
-      "event": "Musk på Baron-konferansen 06.11; generalforsamling 03.12",
+      "why": "Opp ca. 5 % tidlig 09.11 i teknologirebounden. Musk sier Cybertruck-produksjonen avsluttes om ca. åtte måneder for å gi plass til Cybercab.",
+      "event": "Generalforsamling 03.12",
       "src": [
         {
-          "t": "Yahoo Finance 06.11",
-          "u": "https://finance.yahoo.com/markets/article/semiconductor-stocks-lead-tech-rebound-spacex-and-tesla-jump-alphacheck-150906077.html"
-        },
-        {
-          "t": "CoinDesk 09.11",
-          "u": "https://www.coindesk.com/tech/2026/11/09/live-news-nvidia-slides-on-ceo-allegations-as-bitcoin-hovers-just-above-its-200-day-average"
+          "t": "Yahoo Finance 09.11",
+          "u": "https://finance.yahoo.com/markets/live/stock-market-today-monday-november-9-dow-sp-500-nasdaq-nvidia-090535419.html"
         }
       ]
     },
@@ -367,16 +367,16 @@
       "name": "Nvidia",
       "grp": "stk",
       "dir": "ned",
-      "why": "Ned ca. 4 % 09.11 mens Nasdaq steg ca. 2,5 %. Styret granker Jensen Huangs forhold til en person USA mistenker for å gi informasjon til Beijing.",
+      "why": "Ned ca. 5 % 09.11 (på det meste ca. 8 %) mens Nasdaq steg ca. 2,6 %. Styret granker Jensen Huang; Alphabet lanserte samtidig to nye AI-brikker.",
       "event": "Kvartalstall 17.11",
       "src": [
         {
-          "t": "CoinDesk 09.11",
-          "u": "https://www.coindesk.com/tech/2026/11/09/live-news-nvidia-slides-on-ceo-allegations-as-bitcoin-hovers-just-above-its-200-day-average"
+          "t": "Yahoo Finance 09.11",
+          "u": "https://finance.yahoo.com/markets/live/stock-market-today-monday-november-9-dow-sp-500-nasdaq-nvidia-090535419.html"
         },
         {
-          "t": "CoinDesk 09.11",
-          "u": "https://www.coindesk.com/markets/2026/11/09/bitcoin-drops-then-pops-as-nvidia-cheating-scandal-and-failed-iran-talks-trigger-volatility"
+          "t": "TheStreet 09.11",
+          "u": "https://www.thestreet.com/stock-market-today/stock-market-today-dow-jones-sp-500-nasdaq-updates-nov-09-202"
         }
       ]
     }
