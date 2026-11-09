@@ -1,6 +1,6 @@
 {
-  "updated": "09.11.2026 kl. 16:41",
-  "note": "Bakteppe: Markedet priser ca. 80 % sjanse for renteheving 08.–09.12 etter sterk jobbrapport. Tiårsrenten rundt 4,87 %, dollaren litt svakere og Brent ned mot $95 etter signaler om fortsatte Iran-samtaler. Nvidia-gransking tynger teknologi og krypto; KPI tirsdag 10.11 kl. 14:30.",
+  "updated": "09.11.2026 kl. 17:37",
+  "note": "Bakteppe: Markedet priser ca. 80 % sjanse for renteheving 08.–09.12. WTI ned ca. 4 % til rundt $87 09.11 og rentene litt lavere, mens Nasdaq var opp ca. 2,5 % tross Nvidia-fall. Iran-samtalene står fast ifølge Rubio; KPI tirsdag 10.11 kl. 14:30.",
   "items": [
     {
       "nm": "Gull (XAU)",
@@ -20,13 +20,17 @@
       "nm": "Bitcoin",
       "name": "Bitcoin",
       "grp": "core",
-      "dir": "ned",
-      "why": "Rundt $74 400 09.11, ned ca. 2 % siste døgn. Ukesopsjoner viser økt etterspørsel etter salgsopsjoner ($70 000–72 000) og høyere volatilitet.",
+      "dir": "blandet",
+      "why": "Falt til $73 761 natt til 09.11, laveste siden august, men hentet seg inn til rundt $75 000. Over $1 mrd. i likvideringer siste døgn.",
       "event": "KPI 10.11",
       "src": [
         {
           "t": "CoinDesk 09.11",
-          "u": "https://www.coindesk.com/markets/2026/11/09/tech-selloff-weighs-on-crypto-majors"
+          "u": "https://www.coindesk.com/tech/2026/11/09/live-news-nvidia-slides-on-ceo-allegations-as-bitcoin-hovers-just-above-its-200-day-average"
+        },
+        {
+          "t": "CoinDesk 09.11",
+          "u": "https://www.coindesk.com/markets/2026/11/09/bitcoin-drops-then-pops-as-nvidia-cheating-scandal-and-failed-iran-talks-trigger-volatility"
         }
       ]
     },
@@ -35,12 +39,12 @@
       "name": "Ethereum",
       "grp": "core",
       "dir": "ned",
-      "why": "Ned ca. 5–6 % til rundt $2 125 09.11 og stengte søndag under 200-dagers snitt for første gang siden 18.08. Ca. $500 mill. i likviderte posisjoner.",
+      "why": "Rundt $2 133 09.11, ned ca. 4 % siste døgn etter kort fall under $2 100. ETH sto for $448 mill. av over $1 mrd. i likvideringer.",
       "event": "KPI 10.11",
       "src": [
         {
           "t": "CoinDesk 09.11",
-          "u": "https://www.coindesk.com/markets/2026/11/09/tech-selloff-weighs-on-crypto-majors"
+          "u": "https://www.coindesk.com/markets/2026/11/09/bitcoin-drops-then-pops-as-nvidia-cheating-scandal-and-failed-iran-talks-trigger-volatility"
         }
       ]
     },
@@ -63,12 +67,12 @@
       "name": "XRP",
       "grp": "core",
       "dir": "ned",
-      "why": "Rundt $1,10 09.11, ned ca. 7 % siste døgn. Betalingstokens falt over 5 % samlet, og åpne posisjoner i futures falt ca. 9 %.",
+      "why": "Rundt $1,11 09.11, ned ca. 4 % siste døgn og svakere enn bitcoin i et bredt kryptosalg.",
       "event": "–",
       "src": [
         {
           "t": "CoinDesk 09.11",
-          "u": "https://www.coindesk.com/markets/2026/11/09/tech-selloff-weighs-on-crypto-majors"
+          "u": "https://www.coindesk.com/tech/2026/11/09/live-news-nvidia-slides-on-ceo-allegations-as-bitcoin-hovers-just-above-its-200-day-average"
         }
       ]
     },
@@ -119,12 +123,12 @@
       "name": "Hyperliquid",
       "grp": "top",
       "dir": "ned",
-      "why": "Rundt $74 09.11, ned ca. 4 % siste døgn og godt under toppen på $96.",
+      "why": "Rundt $75 09.11, ned ca. 2,4 % siste døgn og godt under toppen på $96.",
       "event": "Regulatorisk godkjenning av ICE-avtalen (ingen dato)",
       "src": [
         {
           "t": "CoinDesk 09.11",
-          "u": "https://www.coindesk.com/markets/2026/11/09/tech-selloff-weighs-on-crypto-majors"
+          "u": "https://www.coindesk.com/markets/2026/11/09/bitcoin-drops-then-pops-as-nvidia-cheating-scandal-and-failed-iran-talks-trigger-volatility"
         }
       ]
     },
@@ -267,12 +271,12 @@
       "name": "Avalanche",
       "grp": "top",
       "dir": "opp",
-      "why": "Opp 47,6 % siste 30 dager på fokus på tokenisering av tradisjonelle verdier. Er fortsatt over 90 % under toppen.",
+      "why": "Opp ca. 5 % 09.11 etter meldinger om at NYSE skal bruke Avalanche til oppgjør av tokeniserte aksjehandler.",
       "event": "–",
       "src": [
         {
-          "t": "24/7 Wall St 12.10",
-          "u": "https://www.aol.com/articles/cardano-avalanche-litecoin-more-20-190027000.html"
+          "t": "CoinDesk 09.11",
+          "u": "https://www.coindesk.com/tech/2026/11/09/live-news-nvidia-slides-on-ceo-allegations-as-bitcoin-hovers-just-above-its-200-day-average"
         }
       ]
     },
@@ -327,12 +331,16 @@
       "name": "Microsoft",
       "grp": "stk",
       "dir": "blandet",
-      "why": "Ned 3,5 % til $536,47 05.11, men fortsatt opp 3,0 % på to dager etter hoppet 04.11. Sterke tall 28.10: Azure +48 %.",
+      "why": "Ned 3,5 % til $536,47 05.11 etter hoppet 04.11. Mag 7 utenom Nvidia var opp 2,5–6 % 09.11; sterke tall 28.10 med Azure +48 %.",
       "event": "–",
       "src": [
         {
           "t": "Trending Topics 05.11",
           "u": "https://www.trendingtopics.eu/ai-stocks-and-cryptocurrencies-crash-hard-after-democrats-midterm-win/"
+        },
+        {
+          "t": "CoinDesk 09.11",
+          "u": "https://www.coindesk.com/tech/2026/11/09/live-news-nvidia-slides-on-ceo-allegations-as-bitcoin-hovers-just-above-its-200-day-average"
         }
       ]
     },
@@ -341,7 +349,7 @@
       "name": "Tesla",
       "grp": "stk",
       "dir": "blandet",
-      "why": "Opp ca. 5 % 06.11 etter fall på 13,6 % over to dager. Fallet var knyttet til regulatorisk uro etter at demokratene tok Kongressen.",
+      "why": "Opp ca. 5 % 06.11 etter fall på 13,6 % over to dager etter valget. Mag 7 utenom Nvidia var opp 2,5–6 % 09.11.",
       "event": "Musk på Baron-konferansen 06.11; generalforsamling 03.12",
       "src": [
         {
@@ -349,8 +357,8 @@
           "u": "https://finance.yahoo.com/markets/article/semiconductor-stocks-lead-tech-rebound-spacex-and-tesla-jump-alphacheck-150906077.html"
         },
         {
-          "t": "BigGo Finance 06.11",
-          "u": "https://finance.biggo.com/news/ce4a9ea4-4771-472d-9988-72a357ca8571"
+          "t": "CoinDesk 09.11",
+          "u": "https://www.coindesk.com/tech/2026/11/09/live-news-nvidia-slides-on-ceo-allegations-as-bitcoin-hovers-just-above-its-200-day-average"
         }
       ]
     },
@@ -359,16 +367,16 @@
       "name": "Nvidia",
       "grp": "stk",
       "dir": "ned",
-      "why": "Ned over 4 % før børsåpning 09.11 etter at styret startet gransking av påstander om at Jensen Huang var mål for utenlandsk etterretning.",
+      "why": "Ned ca. 4 % 09.11 mens Nasdaq steg ca. 2,5 %. Styret granker Jensen Huangs forhold til en person USA mistenker for å gi informasjon til Beijing.",
       "event": "Kvartalstall 17.11",
       "src": [
         {
-          "t": "TipRanks 09.11",
-          "u": "https://www.tipranks.com/news/stock-market-today-nov-9-nvidia-stock-falls-on-probe-into-ceo-huang-focus-on-inflation-data-ai-earnings"
+          "t": "CoinDesk 09.11",
+          "u": "https://www.coindesk.com/tech/2026/11/09/live-news-nvidia-slides-on-ceo-allegations-as-bitcoin-hovers-just-above-its-200-day-average"
         },
         {
           "t": "CoinDesk 09.11",
-          "u": "https://www.coindesk.com/markets/2026/11/09/tech-selloff-weighs-on-crypto-majors"
+          "u": "https://www.coindesk.com/markets/2026/11/09/bitcoin-drops-then-pops-as-nvidia-cheating-scandal-and-failed-iran-talks-trigger-volatility"
         }
       ]
     }
