@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-08T02:26+00:00",
+ "updated": "2026-11-09T02:30+00:00",
  "failed": [],
  "markets": [
   {
@@ -9,8 +9,8 @@
    "tv": "TVC:SILVER",
    "src": "Yahoo",
    "first": 13880,
-   "last": 20763,
-   "n": 4742
+   "last": 20765,
+   "n": 4743
   },
   {
    "key": "COPPER",
@@ -19,8 +19,8 @@
    "tv": "COMEX:HG1!",
    "src": "Yahoo",
    "first": 13880,
-   "last": 20763,
-   "n": 4743
+   "last": 20765,
+   "n": 4744
   },
   {
    "key": "PLATINUM",
@@ -29,8 +29,8 @@
    "tv": "TVC:PLATINUM",
    "src": "Yahoo",
    "first": 13880,
-   "last": 20763,
-   "n": 4458
+   "last": 20765,
+   "n": 4459
   },
   {
    "key": "WTI",
@@ -39,8 +39,8 @@
    "tv": "TVC:USOIL",
    "src": "Yahoo",
    "first": 13880,
-   "last": 20763,
-   "n": 4741
+   "last": 20765,
+   "n": 4742
   },
   {
    "key": "BRENT",
@@ -49,8 +49,8 @@
    "tv": "TVC:UKOIL",
    "src": "Yahoo",
    "first": 13880,
-   "last": 20763,
-   "n": 4691
+   "last": 20765,
+   "n": 4692
   },
   {
    "key": "NATGAS",
@@ -59,8 +59,8 @@
    "tv": "NYMEX:NG1!",
    "src": "Yahoo",
    "first": 13880,
-   "last": 20763,
-   "n": 4744
+   "last": 20765,
+   "n": 4745
   },
   {
    "key": "WHEAT",
@@ -69,8 +69,8 @@
    "tv": "CBOT:ZW1!",
    "src": "Yahoo",
    "first": 13880,
-   "last": 20763,
-   "n": 4742
+   "last": 20765,
+   "n": 4743
   },
   {
    "key": "SP500",
@@ -99,8 +99,8 @@
    "tv": "FX:EURUSD",
    "src": "Yahoo",
    "first": 13879,
-   "last": 20763,
-   "n": 4890
+   "last": 20766,
+   "n": 4891
   },
   {
    "key": "JPY",
@@ -109,7 +109,7 @@
    "tv": "FX_IDC:JPYUSD",
    "src": "Yahoo",
    "first": 13879,
-   "last": 20764,
+   "last": 20766,
    "n": 4891
   },
   {
