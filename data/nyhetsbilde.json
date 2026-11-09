@@ -1,18 +1,18 @@
 {
-  "updated": "06.11.2026 kl. 21:41",
-  "note": "Bakteppe: USA la til 165 000 jobber i oktober (ventet 65 000) og ledigheten falt til 4,1 %. Tiårsrenten rundt 4,88 %, dollarindeksen nær 101,9, og markedet priser ca. 77 % sjanse for renteheving 09.12. Nasdaq opp ca. 1,3 % midt på dagen; Brent rundt $98. KPI 10.11.",
+  "updated": "09.11.2026 kl. 15:37",
+  "note": "Bakteppe: Markedet priser ca. 80 % sjanse for renteheving 08.–09.12 etter sterk jobbrapport. Tiårsrenten rundt 4,87 %, dollaren litt svakere og Brent ned mot $95 etter signaler om fortsatte Iran-samtaler. Nvidia-gransking tynger teknologi og krypto; KPI tirsdag 10.11 kl. 14:30.",
   "items": [
     {
       "nm": "Gull (XAU)",
       "name": "Gull",
       "grp": "core",
-      "dir": "blandet",
-      "why": "Ned ca. 0,9 % til rundt $4 051 06.11 etter jobbrapporten. Sterkere dollar og høyere renter tynger; markedet venter renteheving 09.12.",
+      "dir": "opp",
+      "why": "Opp ca. 1,3 % til rundt $4 125 09.11. Svakere dollar og lavere olje etter Iran-diplomati gir støtte, men høye renteforventninger før KPI demper.",
       "event": "KPI 10.11",
       "src": [
         {
-          "t": "Kitco 06.11",
-          "u": "https://www.kitco.com/news/article/2026-11-06/gold-falls-us-payrolls-surge-165000-strengthening-december-fed-hike-case"
+          "t": "Kitco 09.11",
+          "u": "https://www.kitco.com/news/article/2026-11-09/gold-silver-rise-iran-diplomacy-pressures-crude-dollar-weakens-kitco-am"
         }
       ]
     },
@@ -21,16 +21,12 @@
       "name": "Bitcoin",
       "grp": "core",
       "dir": "ned",
-      "why": "Rundt $75 400 06.11, nær laveste siden sommeren, og deltar ikke i aksjerekylen. Krypto-ETF-ene tapte over $540 mill. 05.11.",
+      "why": "Rundt $74 400 09.11, ned ca. 2 % siste døgn. Ukesopsjoner viser økt etterspørsel etter salgsopsjoner ($70 000–72 000) og høyere volatilitet.",
       "event": "KPI 10.11",
       "src": [
         {
-          "t": "CoinDesk 06.11",
-          "u": "https://www.coindesk.com/tech/2026/11/06/live-updates-nasdaq-100-futures-rally-points-to-stock-market-respite"
-        },
-        {
-          "t": "The Block 06.11",
-          "u": "https://www.theblock.co/news/markets/2026-11-06-crypto-etfs-see-over-half-a-billion-dollars-in-outflows-amid-post-midterm-market-slide-435873"
+          "t": "CoinDesk 09.11",
+          "u": "https://www.coindesk.com/markets/2026/11/09/tech-selloff-weighs-on-crypto-majors"
         }
       ]
     },
@@ -39,12 +35,12 @@
       "name": "Ethereum",
       "grp": "core",
       "dir": "ned",
-      "why": "Rundt $2 220 06.11, ned 5–7 % siste døgn i salget av teknologi og krypto.",
-      "event": "Glamsterdam på Hoodi (ny dato ikke satt)",
+      "why": "Ned ca. 5–6 % til rundt $2 125 09.11 og stengte søndag under 200-dagers snitt for første gang siden 18.08. Ca. $500 mill. i likviderte posisjoner.",
+      "event": "KPI 10.11",
       "src": [
         {
-          "t": "CoinDesk 06.11",
-          "u": "https://www.coindesk.com/markets/2026/11/06/bitcoin-steadies-near-usd76-000-after-ai-led-selloff"
+          "t": "CoinDesk 09.11",
+          "u": "https://www.coindesk.com/markets/2026/11/09/tech-selloff-weighs-on-crypto-majors"
         }
       ]
     },
@@ -53,12 +49,12 @@
       "name": "Solana",
       "grp": "core",
       "dir": "ned",
-      "why": "Rundt $89,8 06.11, ned ca. 3,3 % siste døgn, litt bedre enn resten av kryptomarkedet.",
+      "why": "Rundt $87 09.11, ned ca. 2,5 % siste døgn i et bredt kryptosalg drevet av teknologiuro.",
       "event": "–",
       "src": [
         {
-          "t": "CoinDesk 06.11",
-          "u": "https://www.coindesk.com/tech/2026/11/06/live-updates-nasdaq-100-futures-rally-points-to-stock-market-respite"
+          "t": "CoinDesk 09.11",
+          "u": "https://www.coindesk.com/markets/2026/11/09/tech-selloff-weighs-on-crypto-majors"
         }
       ]
     },
@@ -67,16 +63,12 @@
       "name": "XRP",
       "grp": "core",
       "dir": "ned",
-      "why": "Rundt $1,18 06.11, ned ca. 8 % siste døgn. Binance-hackerne har vekslet ca. $50 mill. stjålet XRP og har ca. $226 mill. igjen.",
+      "why": "Rundt $1,10 09.11, ned ca. 7 % siste døgn. Betalingstokens falt over 5 % samlet, og åpne posisjoner i futures falt ca. 9 %.",
       "event": "–",
       "src": [
         {
-          "t": "The Block 06.11",
-          "u": "https://www.theblock.co/news/markets/2026-11-06-binance-hackers-swap-stolen-tokens-124-million-bitcoin-exchange-plans-withdrawal-reopenings-435930"
-        },
-        {
-          "t": "CoinDesk 06.11",
-          "u": "https://www.coindesk.com/tech/2026/11/06/live-updates-nasdaq-100-futures-rally-points-to-stock-market-respite"
+          "t": "CoinDesk 09.11",
+          "u": "https://www.coindesk.com/markets/2026/11/09/tech-selloff-weighs-on-crypto-majors"
         }
       ]
     },
@@ -99,12 +91,12 @@
       "name": "TRON",
       "grp": "top",
       "dir": "blandet",
-      "why": "Stabil rundt $0,31 06.11 (+0,2 % siste døgn) mens resten av markedet falt.",
+      "why": "Rundt $0,31 09.11, ned under 1 % siste døgn og fortsatt mer stabil enn resten av markedet.",
       "event": "–",
       "src": [
         {
-          "t": "CoinDesk 06.11",
-          "u": "https://www.coindesk.com/tech/2026/11/06/live-updates-nasdaq-100-futures-rally-points-to-stock-market-respite"
+          "t": "CoinDesk 09.11",
+          "u": "https://www.coindesk.com/markets/2026/11/09/tech-selloff-weighs-on-crypto-majors"
         }
       ]
     },
@@ -112,13 +104,13 @@
       "nm": "Zcash",
       "name": "Zcash",
       "grp": "top",
-      "dir": "blandet",
-      "why": "NU7 ble aktivert tidlig 06.11 og kutter blokktiden fra 75 til 25 sekunder. ZEC var opp ca. 1 % etter midnatt UTC.",
+      "dir": "ned",
+      "why": "Ned ca. 4,5 % siste døgn til 09.11, og åpne posisjoner i futures falt ca. 10 %, dager etter NU7-oppgraderingen 06.11.",
       "event": "–",
       "src": [
         {
-          "t": "CoinDesk 06.11",
-          "u": "https://www.coindesk.com/markets/2026/11/06/bitcoin-steadies-near-usd76-000-after-ai-led-selloff"
+          "t": "CoinDesk 09.11",
+          "u": "https://www.coindesk.com/markets/2026/11/09/tech-selloff-weighs-on-crypto-majors"
         }
       ]
     },
@@ -127,16 +119,12 @@
       "name": "Hyperliquid",
       "grp": "top",
       "dir": "ned",
-      "why": "Rundt $78 06.11, ca. 19 % under toppen på $96. HYPE-ETF-ene tapte $3 mill. 05.11; Binance vil åpne HYPE-uttak innen slutten av neste uke.",
+      "why": "Rundt $74 09.11, ned ca. 4 % siste døgn og godt under toppen på $96.",
       "event": "Regulatorisk godkjenning av ICE-avtalen (ingen dato)",
       "src": [
         {
-          "t": "CoinDesk 06.11",
-          "u": "https://www.coindesk.com/tech/2026/11/06/live-updates-nasdaq-100-futures-rally-points-to-stock-market-respite"
-        },
-        {
-          "t": "The Block 06.11",
-          "u": "https://www.theblock.co/news/markets/2026-11-06-binance-hackers-swap-stolen-tokens-124-million-bitcoin-exchange-plans-withdrawal-reopenings-435930"
+          "t": "CoinDesk 09.11",
+          "u": "https://www.coindesk.com/markets/2026/11/09/tech-selloff-weighs-on-crypto-majors"
         }
       ]
     },
@@ -325,16 +313,12 @@
       "name": "SpaceX",
       "grp": "stk",
       "dir": "blandet",
-      "why": "Opp ca. 6 % 06.11 etter fall på 13,9 % over to dager til $121,62 05.11, knyttet til frykt for regulatoriske hindringer.",
-      "event": "Fusjonsvurdering med Tesla (ingen dato)",
+      "why": "Stengte på $134,27 06.11 og var opp over 2 % før børsåpning 09.11. Stifel gjentar kursmål $190; omtalt GPU-leasing på ca. $40 mrd.",
+      "event": "Starship test 15 tidligst 13.11",
       "src": [
         {
-          "t": "Yahoo Finance 06.11",
-          "u": "https://finance.yahoo.com/markets/article/semiconductor-stocks-lead-tech-rebound-spacex-and-tesla-jump-alphacheck-150906077.html"
-        },
-        {
-          "t": "Trending Topics 05.11",
-          "u": "https://www.trendingtopics.eu/ai-stocks-and-cryptocurrencies-crash-hard-after-democrats-midterm-win/"
+          "t": "TradingKey 09.11",
+          "u": "https://tradingkey.com/analysis/stocks/us-stocks/262296307-spacex-spcx-musk-tradingkey"
         }
       ]
     },
@@ -374,17 +358,17 @@
       "nm": "Nvidia",
       "name": "Nvidia",
       "grp": "stk",
-      "dir": "opp",
-      "why": "Opp ca. 5 % til rundt $189,80 06.11 etter fall på ca. 9 % 05.11. Brikkeaksjene leder rekylen, AMD opp ca. 13 %.",
+      "dir": "ned",
+      "why": "Ned over 4 % før børsåpning 09.11 etter at styret startet gransking av påstander om at Jensen Huang var mål for utenlandsk etterretning.",
       "event": "Kvartalstall 17.11",
       "src": [
         {
-          "t": "Yahoo Finance 06.11",
-          "u": "https://finance.yahoo.com/markets/stocks/articles/amd-jumps-8-intel-nvidia-140502989.html"
+          "t": "TipRanks 09.11",
+          "u": "https://www.tipranks.com/news/stock-market-today-nov-9-nvidia-stock-falls-on-probe-into-ceo-huang-focus-on-inflation-data-ai-earnings"
         },
         {
-          "t": "Yahoo Finance 06.11",
-          "u": "https://finance.yahoo.com/markets/article/semiconductor-stocks-lead-tech-rebound-spacex-and-tesla-jump-alphacheck-150906077.html"
+          "t": "CoinDesk 09.11",
+          "u": "https://www.coindesk.com/markets/2026/11/09/tech-selloff-weighs-on-crypto-majors"
         }
       ]
     }
