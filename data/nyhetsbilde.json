@@ -1,6 +1,6 @@
 {
-  "updated": "10.11.2026 kl. 17:41",
-  "note": "Bakteppe: KPI for oktober steg 0,4 % m/m (ventet 0,3 %), kjerne 0,3 % (ventet 0,2 %). 10-årsrenten steg ca. 14 bp til 5,00 % og 2-årsrenten 20 bp; Waller åpner for 50 bp, som prises til ca. 11 % 09.12. Nasdaq var ned ca. 1 % midt på dagen.",
+  "updated": "10.11.2026 kl. 18:45",
+  "note": "Bakteppe: KPI for oktober steg 0,4 % m/m (ventet 0,3 %), kjerne 0,3 %. 10-årsrenten rundt 4,93–5,00 %; markedet priser 84 % for 25 bp renteøkning 09.12 og 15 % for 50 bp. S&P 500 ned ca. 0,8 % og Nasdaq 1,2 % midt på dagen; gull ned ca. 2 %.",
   "items": [
     {
       "nm": "Gull (XAU)",
@@ -21,12 +21,12 @@
       "name": "Bitcoin",
       "grp": "core",
       "dir": "ned",
-      "why": "Rundt $73 800 10.11, ned ca. 1 % siste døgn og 11 % på 30 dager; ca. $200 mill. likvidert etter KPI. Spot-ETF-ene tapte $1,28 mrd. 02.–06.11 og $201 mill. 09.11.",
+      "why": "Rundt $73 200 10.11, ned ca. 2,3 % siste døgn med bunn på $72 787 etter varm KPI. Ca. $632 mill. likvidert i kryptomarkedet; ETF-ene tapte $201 mill. 09.11.",
       "event": "Fed-møte 08.–09.12",
       "src": [
         {
-          "t": "crypto.news 10.11",
-          "u": "https://crypto.news/bitcoin-price-falls-below-74000-as-hot-us-cpi-fuels-fed-rate-hike-fears/"
+          "t": "Bitcoin.com 10.11",
+          "u": "https://news.bitcoin.com/market-updates/bitcoin-price-crashes-72787-hotter-than-expected-cpi/"
         }
       ]
     },
@@ -35,12 +35,12 @@
       "name": "Ethereum",
       "grp": "core",
       "dir": "ned",
-      "why": "Rundt $2 065 10.11, ned ca. 2,6 % siste døgn. Ether-ETF-ene tapte $184,6 mill. 09.11.",
+      "why": "Rundt $2 020 10.11, ned ca. 4,9 % siste døgn; nær $240 mill. i ether-likvideringer. Ether-ETF-ene tapte $184,6 mill. 09.11.",
       "event": "Fed-møte 08.–09.12",
       "src": [
         {
-          "t": "crypto.news 10.11",
-          "u": "https://crypto.news/bitcoin-price-falls-below-74000-as-hot-us-cpi-fuels-fed-rate-hike-fears/"
+          "t": "Bitcoin.com 10.11",
+          "u": "https://news.bitcoin.com/market-updates/bitcoin-price-crashes-72787-hotter-than-expected-cpi/"
         }
       ]
     },
@@ -49,12 +49,12 @@
       "name": "Solana",
       "grp": "core",
       "dir": "ned",
-      "why": "Rundt $84,4 10.11, ned ca. 3,3 % siste døgn i svakt kryptomarked før og etter KPI.",
+      "why": "Rundt $82,2 10.11, ned ca. 5 % siste døgn i svakt kryptomarked etter varm KPI.",
       "event": "–",
       "src": [
         {
-          "t": "CoinDesk 10.11",
-          "u": "https://www.coindesk.com/markets/2026/11/10/bitcoin-lags-stock-rebound-in-advance-of-u-s-inflation-report"
+          "t": "Bitcoin.com 10.11",
+          "u": "https://news.bitcoin.com/market-updates/bitcoin-price-crashes-72787-hotter-than-expected-cpi/"
         }
       ]
     },
@@ -63,12 +63,12 @@
       "name": "XRP",
       "grp": "core",
       "dir": "ned",
-      "why": "Rundt $1,07 10.11, ned ca. 3 % siste døgn og fortsatt svakere enn bitcoin.",
+      "why": "Rundt $1,05 10.11, ned ca. 3,9 % siste døgn, fortsatt svakere enn bitcoin.",
       "event": "–",
       "src": [
         {
-          "t": "CoinDesk 10.11",
-          "u": "https://www.coindesk.com/markets/2026/11/10/bitcoin-lags-stock-rebound-in-advance-of-u-s-inflation-report"
+          "t": "Bitcoin.com 10.11",
+          "u": "https://news.bitcoin.com/market-updates/bitcoin-price-crashes-72787-hotter-than-expected-cpi/"
         }
       ]
     },
@@ -132,13 +132,13 @@
       "nm": "Dogecoin",
       "name": "Dogecoin",
       "grp": "top",
-      "dir": "blandet",
-      "why": "Rundt $0,077 05.11 og følger i hovedsak resten av kryptomarkedet etter valget.",
+      "dir": "ned",
+      "why": "Rundt $0,067 10.11, ned ca. 4,3 % siste døgn sammen med resten av kryptomarkedet etter varm KPI.",
       "event": "–",
       "src": [
         {
-          "t": "Cointelegraph 05.11",
-          "u": "https://cointelegraph.com/markets/bitcoin-ether-etfs-turn-green-post-election-rebound"
+          "t": "Bitcoin.com 10.11",
+          "u": "https://news.bitcoin.com/market-updates/bitcoin-price-crashes-72787-hotter-than-expected-cpi/"
         }
       ]
     },
@@ -295,7 +295,7 @@
       "name": "Gram (Toncoin)",
       "grp": "top",
       "dir": "opp",
-      "why": "Rundt $1,09 10.11, opp ca. 4 % siste døgn mot et ellers svakt marked. Telegram utvidet lommeboken «Money» 9.10.",
+      "why": "Rundt $1,11 10.11, opp ca. 7,7 % siste døgn mot et ellers svakt marked. Telegram utvidet lommeboken «Money» 9.10.",
       "event": "Opplåsing 24.03.2027",
       "src": [
         {
@@ -359,12 +359,12 @@
       "name": "Nvidia",
       "grp": "stk",
       "dir": "ned",
-      "why": "Falt videre 10.11, ned ca. 5–6 % midt på dagen etter fall på 4,2 % 09.11 til laveste sluttkurs siden 07.04. Styret gransker Jensen Huang.",
+      "why": "Rundt $166,9 midt på dagen 10.11, ned ca. 6,6 % etter fall på 4,3 % 09.11. Styret gransker Huang; analytiker anslår 25–30 % lavere verdi uten ham.",
       "event": "Kvartalstall 17.11",
       "src": [
         {
-          "t": "Investing.com 10.11",
-          "u": "https://www.investing.com/news/stock-market-news/us-stock-futures-steady-after-techled-rebound-cpi-in-focus-5013763"
+          "t": "Yahoo Finance 10.11",
+          "u": "https://finance.yahoo.com/technology/live/nvidia-scandal-live-updates-nvidia-stock--board-investigates-ceo-jensen-huang-affair-alleged-chinese-spy-163130372.html"
         }
       ]
     }
