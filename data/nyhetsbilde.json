@@ -1,5 +1,5 @@
 {
-  "updated": "10.11.2026 kl. 19:37",
+  "updated": "10.11.2026 kl. 20:37",
   "note": "Bakteppe: KPI for oktober steg 0,4 % m/m (ventet 0,3 %), kjerne 0,3 %. 10-årsrenten rundt 4,93–5,00 %; markedet priser ca. 84 % for 25 bp renteøkning 09.12 og 15 % for 50 bp. S&P 500 ned ca. 0,9 % og Nasdaq 1,4 %; olje ned ca. 3 % (WTI rundt $85,5) etter at Trump venter med nye angrep på Iran.",
   "items": [
     {
@@ -21,9 +21,13 @@
       "name": "Bitcoin",
       "grp": "core",
       "dir": "ned",
-      "why": "Rundt $73 200 10.11, ned ca. 2,3 % siste døgn med bunn på $72 787 etter varm KPI. Ca. $632 mill. likvidert i kryptomarkedet; ETF-ene tapte $201 mill. 09.11.",
+      "why": "Rundt $73 200 10.11, ned ca. 2,6 % med bunn på $72 866, laveste siden 20.08. Bitcoin-ETF-ene tapte $1,08 mrd. de fem siste handelsdagene til 09.11.",
       "event": "Fed-møte 08.–09.12",
       "src": [
+        {
+          "t": "Ted Pillows 10.11",
+          "u": "https://tedpillows.substack.com/p/crypto-and-finance-market-report-f2c"
+        },
         {
           "t": "Bitcoin.com 10.11",
           "u": "https://news.bitcoin.com/market-updates/bitcoin-price-crashes-72787-hotter-than-expected-cpi/"
@@ -35,12 +39,12 @@
       "name": "Ethereum",
       "grp": "core",
       "dir": "ned",
-      "why": "Rundt $2 020 10.11, ned ca. 4,9 % siste døgn; nær $240 mill. i ether-likvideringer. Ether-ETF-ene tapte $184,6 mill. 09.11.",
+      "why": "Rundt $2 028 10.11, ned ca. 5,2 %; ETH/BTC falt til 0,0277. Ether-ETF-ene tapte $184,6 mill. 09.11, største dagsutgang denne måneden.",
       "event": "Fed-møte 08.–09.12",
       "src": [
         {
-          "t": "Bitcoin.com 10.11",
-          "u": "https://news.bitcoin.com/market-updates/bitcoin-price-crashes-72787-hotter-than-expected-cpi/"
+          "t": "Ted Pillows 10.11",
+          "u": "https://tedpillows.substack.com/p/crypto-and-finance-market-report-f2c"
         }
       ]
     },
