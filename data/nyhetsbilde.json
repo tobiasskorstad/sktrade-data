@@ -1,6 +1,6 @@
 {
-  "updated": "10.11.2026 kl. 18:45",
-  "note": "Bakteppe: KPI for oktober steg 0,4 % m/m (ventet 0,3 %), kjerne 0,3 %. 10-årsrenten rundt 4,93–5,00 %; markedet priser 84 % for 25 bp renteøkning 09.12 og 15 % for 50 bp. S&P 500 ned ca. 0,8 % og Nasdaq 1,2 % midt på dagen; gull ned ca. 2 %.",
+  "updated": "10.11.2026 kl. 19:37",
+  "note": "Bakteppe: KPI for oktober steg 0,4 % m/m (ventet 0,3 %), kjerne 0,3 %. 10-årsrenten rundt 4,93–5,00 %; markedet priser ca. 84 % for 25 bp renteøkning 09.12 og 15 % for 50 bp. S&P 500 ned ca. 0,9 % og Nasdaq 1,4 %; olje ned ca. 3 % (WTI rundt $85,5) etter at Trump venter med nye angrep på Iran.",
   "items": [
     {
       "nm": "Gull (XAU)",
@@ -327,12 +327,12 @@
       "name": "Microsoft",
       "grp": "stk",
       "dir": "blandet",
-      "why": "Ned ca. 0,7 % 10.11 med teknologisalget. Nevnes som hjørnesteinsinvestor i Anthropics planlagte rettede emisjon; sterke tall 28.10 med Azure +48 %.",
-      "event": "–",
+      "why": "Svakere med teknologisalget 10.11. Anthropic, der Microsoft er hjørnesteinsinvestor, satte prisintervall $70–78 for 825 mill. aksjer (ca. $1,3–1,45 bill.); handel ventet rundt 19.–20.11.",
+      "event": "Anthropic-notering ca. 19.11",
       "src": [
         {
-          "t": "Investing.com 10.11",
-          "u": "https://www.investing.com/news/stock-market-news/us-stock-futures-steady-after-techled-rebound-cpi-in-focus-5013763"
+          "t": "Yahoo Finance 10.11",
+          "u": "https://finance.yahoo.com/markets/live/stock-market-today-tuesday-november-10-dow-sp-500-nasdaq-inflation-data-cpi-090627830.html"
         }
       ]
     },
@@ -359,12 +359,16 @@
       "name": "Nvidia",
       "grp": "stk",
       "dir": "ned",
-      "why": "Rundt $166,9 midt på dagen 10.11, ned ca. 6,6 % etter fall på 4,3 % 09.11. Styret gransker Huang; analytiker anslår 25–30 % lavere verdi uten ham.",
+      "why": "Ned 3–6 % 10.11 etter 4 % fall 09.11. The Information: minst $7,5 mrd. i Nvidia-maskinvare sendt til kinesiske selskaper via nettverk knyttet til Huang-saken; FBI ser på saken.",
       "event": "Kvartalstall 17.11",
       "src": [
         {
           "t": "Yahoo Finance 10.11",
-          "u": "https://finance.yahoo.com/technology/live/nvidia-scandal-live-updates-nvidia-stock--board-investigates-ceo-jensen-huang-affair-alleged-chinese-spy-163130372.html"
+          "u": "https://finance.yahoo.com/markets/live/stock-market-today-tuesday-november-10-dow-sp-500-nasdaq-inflation-data-cpi-090627830.html"
+        },
+        {
+          "t": "TheStreet 10.11",
+          "u": "https://www.thestreet.com/stock-market-today/stock-market-today-dow-jones-sp-500-nasdaq-updates-nov-10-2026"
         }
       ]
     }
