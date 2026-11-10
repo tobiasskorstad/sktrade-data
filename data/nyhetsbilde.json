@@ -1,6 +1,6 @@
 {
-  "updated": "10.11.2026 kl. 20:37",
-  "note": "Bakteppe: KPI for oktober steg 0,4 % m/m (ventet 0,3 %), kjerne 0,3 %. 10-årsrenten rundt 4,93–5,00 %; markedet priser ca. 84 % for 25 bp renteøkning 09.12 og 15 % for 50 bp. S&P 500 ned ca. 0,9 % og Nasdaq 1,4 %; olje ned ca. 3 % (WTI rundt $85,5) etter at Trump venter med nye angrep på Iran.",
+  "updated": "10.11.2026 kl. 21:41",
+  "note": "Bakteppe: KPI for oktober steg 0,4 % m/m (ventet 0,3 %). 2-årsrenten steg 21,4 bp, største dagsøkning siden april 2025, og FedWatch priser nesten 99 % for renteøkning 09.12; Logan antyder minst to økninger til. Kl. 18 norsk tid var S&P 500 ned 0,85 % og Nasdaq 1,27 %.",
   "items": [
     {
       "nm": "Gull (XAU)",
@@ -363,16 +363,16 @@
       "name": "Nvidia",
       "grp": "stk",
       "dir": "ned",
-      "why": "Ned 3–6 % 10.11 etter 4 % fall 09.11. The Information: minst $7,5 mrd. i Nvidia-maskinvare sendt til kinesiske selskaper via nettverk knyttet til Huang-saken; FBI ser på saken.",
+      "why": "Ned 6,3 % midt på dagen 10.11, andre fallende dag, etter at selskapet startet intern gransking av spionanklager mot Jensen Huang; The Information: minst $7,5 mrd. i brikker via kinesiske selskaper.",
       "event": "Kvartalstall 17.11",
       "src": [
         {
-          "t": "Yahoo Finance 10.11",
-          "u": "https://finance.yahoo.com/markets/live/stock-market-today-tuesday-november-10-dow-sp-500-nasdaq-inflation-data-cpi-090627830.html"
+          "t": "Reuters/Korea Times 10.11",
+          "u": "https://www.koreatimes.co.kr/world/20261111/wall-st-falls-as-hot-inflation-data-fuels-rate-hike-jitters"
         },
         {
-          "t": "TheStreet 10.11",
-          "u": "https://www.thestreet.com/stock-market-today/stock-market-today-dow-jones-sp-500-nasdaq-updates-nov-10-2026"
+          "t": "Yahoo Finance 10.11",
+          "u": "https://finance.yahoo.com/markets/live/stock-market-today-tuesday-november-10-dow-sp-500-nasdaq-inflation-data-cpi-090627830.html"
         }
       ]
     }
