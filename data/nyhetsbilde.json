@@ -1,18 +1,18 @@
 {
-  "updated": "10.11.2026 kl. 21:41",
-  "note": "Bakteppe: KPI for oktober steg 0,4 % m/m (ventet 0,3 %). 2-årsrenten steg 21,4 bp, største dagsøkning siden april 2025, og FedWatch priser nesten 99 % for renteøkning 09.12; Logan antyder minst to økninger til. Kl. 18 norsk tid var S&P 500 ned 0,85 % og Nasdaq 1,27 %.",
+  "updated": "11.11.2026 kl. 15:37",
+  "note": "Bakteppe: Etter varm KPI (0,4 % m/m) steg 2-årsrenten 17 bp til 4,73 % og 10-årsrenten til 4,99 %; markedet priser full renteøkning 09.12, og Waller åpner for 50 bp. Dollaren styrket seg, Brent rundt $92,5. Nasdaq-futures opp ca. 1,7 % 11.11 etter CoreWeave-tall; amerikanske statsobligasjoner stengt (Veterans Day).",
   "items": [
     {
       "nm": "Gull (XAU)",
       "name": "Gull",
       "grp": "core",
-      "dir": "ned",
-      "why": "Gullfutures ned ca. 2 % til rundt $4 029 10.11 etter varm KPI; 10-årsrenten steg til 5,00 %, som presser gull.",
+      "dir": "blandet",
+      "why": "Hentet seg inn til rundt $4 055 11.11 etter fall mot $4 000 10.11. Høyere renter (10-år 4,99 %) og sterkere dollar holder igjen.",
       "event": "Fed-møte 08.–09.12",
       "src": [
         {
-          "t": "Investing.com 10.11",
-          "u": "https://www.investing.com/news/stock-market-news/us-stock-futures-steady-after-techled-rebound-cpi-in-focus-5013763"
+          "t": "Saxo 11.11",
+          "u": "https://www.home.saxo/en-mena/content/articles/macro/market-quick-take---us-treasury-yields-rip-higher---11-november-2026-11112026"
         }
       ]
     },
@@ -21,16 +21,16 @@
       "name": "Bitcoin",
       "grp": "core",
       "dir": "ned",
-      "why": "Rundt $73 200 10.11, ned ca. 2,6 % med bunn på $72 866, laveste siden 20.08. Bitcoin-ETF-ene tapte $1,08 mrd. de fem siste handelsdagene til 09.11.",
+      "why": "Rundt $73 700 11.11, nær laveste på 11 uker etter dukkert til $72 700. ETF-ene tapte $95 mill. 10.11, fjerde utgangsdag på rad, men takten avtar.",
       "event": "Fed-møte 08.–09.12",
       "src": [
         {
-          "t": "Ted Pillows 10.11",
-          "u": "https://tedpillows.substack.com/p/crypto-and-finance-market-report-f2c"
+          "t": "CoinDesk 11.11",
+          "u": "https://www.coindesk.com/markets/2026/11/11/bitcoin-sits-out-stock-rebound-as-etf-outflows-extend-to-fourth-day"
         },
         {
-          "t": "Bitcoin.com 10.11",
-          "u": "https://news.bitcoin.com/market-updates/bitcoin-price-crashes-72787-hotter-than-expected-cpi/"
+          "t": "CoinDesk Daybook 11.11",
+          "u": "https://www.coindesk.com/daybook-us/2026/11/11/bitcoin-barely-flinches-at-hot-cpi-as-etf-selling-slows"
         }
       ]
     },
@@ -39,12 +39,12 @@
       "name": "Ethereum",
       "grp": "core",
       "dir": "ned",
-      "why": "Rundt $2 028 10.11, ned ca. 5,2 %; ETH/BTC falt til 0,0277. Ether-ETF-ene tapte $184,6 mill. 09.11, største dagsutgang denne måneden.",
+      "why": "Rundt $2 053 11.11, ned 3,8 % siste døgn. Ether-ETF-ene tapte $185 mill. 09.11, tredje utgangsdag på rad.",
       "event": "Fed-møte 08.–09.12",
       "src": [
         {
-          "t": "Ted Pillows 10.11",
-          "u": "https://tedpillows.substack.com/p/crypto-and-finance-market-report-f2c"
+          "t": "KuCoin 11.11",
+          "u": "https://www.kucoin.com/news/articles/crypto-daily-market-report-november-11-2026"
         }
       ]
     },
@@ -109,12 +109,12 @@
       "name": "Zcash",
       "grp": "top",
       "dir": "ned",
-      "why": "Ned ca. 6,3 % siste døgn til 10.11, og fortsetter svakheten etter NU7-oppgraderingen 06.11.",
+      "why": "Falt ca. 14 % 11.11 da belånte long-posisjoner ble likvidert og penger forlot Zcash-ETF-en.",
       "event": "–",
       "src": [
         {
-          "t": "CoinDesk 10.11",
-          "u": "https://www.coindesk.com/markets/2026/11/10/bitcoin-lags-stock-rebound-in-advance-of-u-s-inflation-report"
+          "t": "CoinDesk 11.11",
+          "u": "https://www.coindesk.com/markets/2026/11/11/bitcoin-sits-out-stock-rebound-as-etf-outflows-extend-to-fourth-day"
         }
       ]
     },
@@ -150,13 +150,13 @@
       "nm": "Monero",
       "name": "Monero",
       "grp": "top",
-      "dir": "ned",
-      "why": "Ned ca. 7,8 % siste døgn til 10.11, blant de svakeste store myntene.",
+      "dir": "blandet",
+      "why": "Opp ca. 2 % 11.11 etter fall på 7,8 % siste døgn til 10.11.",
       "event": "–",
       "src": [
         {
-          "t": "CoinDesk 10.11",
-          "u": "https://www.coindesk.com/markets/2026/11/10/bitcoin-lags-stock-rebound-in-advance-of-u-s-inflation-report"
+          "t": "CoinDesk 11.11",
+          "u": "https://www.coindesk.com/markets/2026/11/11/bitcoin-sits-out-stock-rebound-as-etf-outflows-extend-to-fourth-day"
         }
       ]
     },
@@ -299,16 +299,16 @@
       "name": "Gram (Toncoin)",
       "grp": "top",
       "dir": "opp",
-      "why": "Rundt $1,11 10.11, opp ca. 7,7 % siste døgn mot et ellers svakt marked. Telegram utvidet lommeboken «Money» 9.10.",
+      "why": "Opp 5–8 % siste døgn til 11.11 etter at Telegram-grunnleggeren meldte over 700 000 nye lommebøker på 48 timer.",
       "event": "Opplåsing 24.03.2027",
       "src": [
         {
-          "t": "crypto.news 10.11",
-          "u": "https://crypto.news/bitcoin-price-falls-below-74000-as-hot-us-cpi-fuels-fed-rate-hike-fears/"
+          "t": "CoinDesk 11.11",
+          "u": "https://www.coindesk.com/markets/2026/11/11/bitcoin-sits-out-stock-rebound-as-etf-outflows-extend-to-fourth-day"
         },
         {
-          "t": "CoinMarketCap",
-          "u": "https://coinmarketcap.com/cmc-ai/gram/latest-updates/"
+          "t": "KuCoin 11.11",
+          "u": "https://www.kucoin.com/news/articles/crypto-daily-market-report-november-11-2026"
         }
       ]
     },
@@ -331,12 +331,16 @@
       "name": "Microsoft",
       "grp": "stk",
       "dir": "blandet",
-      "why": "Svakere med teknologisalget 10.11. Anthropic, der Microsoft er hjørnesteinsinvestor, satte prisintervall $70–78 for 825 mill. aksjer (ca. $1,3–1,45 bill.); handel ventet rundt 19.–20.11.",
+      "why": "Falt 2,2 % 10.11 etter at Anthropic utfordret Office. Anthropic, der Microsoft er investor, søker opptil $1,4 bill. i verdsettelse ved notering, mulig neste uke.",
       "event": "Anthropic-notering ca. 19.11",
       "src": [
         {
-          "t": "Yahoo Finance 10.11",
-          "u": "https://finance.yahoo.com/markets/live/stock-market-today-tuesday-november-10-dow-sp-500-nasdaq-inflation-data-cpi-090627830.html"
+          "t": "Current Logic 11.11",
+          "u": "https://currentlogic.substack.com/p/the-morning-brief-november-11-2026"
+        },
+        {
+          "t": "Yahoo Finance 11.11",
+          "u": "https://finance.yahoo.com/markets/live/stock-market-today-wednesday-november-11-dow-sp-500-nasdaq-nvidia-treasurys-123445799.html"
         }
       ]
     },
@@ -362,17 +366,17 @@
       "nm": "Nvidia",
       "name": "Nvidia",
       "grp": "stk",
-      "dir": "ned",
-      "why": "Ned 6,3 % midt på dagen 10.11, andre fallende dag, etter at selskapet startet intern gransking av spionanklager mot Jensen Huang; The Information: minst $7,5 mrd. i brikker via kinesiske selskaper.",
+      "dir": "blandet",
+      "why": "Opp ca. 4 % før åpning 11.11 etter fall på 4,3 % 09.11 og 5,5 % 10.11; en senior republikansk senator krevde samtidig at Jensen Huang går av.",
       "event": "Kvartalstall 17.11",
       "src": [
         {
-          "t": "Reuters/Korea Times 10.11",
-          "u": "https://www.koreatimes.co.kr/world/20261111/wall-st-falls-as-hot-inflation-data-fuels-rate-hike-jitters"
+          "t": "Current Logic 11.11",
+          "u": "https://currentlogic.substack.com/p/the-morning-brief-november-11-2026"
         },
         {
-          "t": "Yahoo Finance 10.11",
-          "u": "https://finance.yahoo.com/markets/live/stock-market-today-tuesday-november-10-dow-sp-500-nasdaq-inflation-data-cpi-090627830.html"
+          "t": "Yahoo Finance 11.11",
+          "u": "https://finance.yahoo.com/markets/live/stock-market-today-wednesday-november-11-dow-sp-500-nasdaq-nvidia-treasurys-123445799.html"
         }
       ]
     }
