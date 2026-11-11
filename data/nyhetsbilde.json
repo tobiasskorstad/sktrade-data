@@ -1,18 +1,18 @@
 {
-  "updated": "11.11.2026 kl. 16:42",
-  "note": "Bakteppe: Etter varm KPI (0,4 % m/m) steg 2-årsrenten 17 bp til 4,73 % og 10-årsrenten til 4,99 %; markedet priser full renteøkning 09.12, og Waller åpner for 50 bp. Dollaren styrket seg, Brent rundt $92,5. Nasdaq-futures opp ca. 1,7 % 11.11 etter CoreWeave-tall; amerikanske statsobligasjoner stengt (Veterans Day).",
+  "updated": "11.11.2026 kl. 17:45",
+  "note": "Bakteppe: Etter varm KPI (0,4 % m/m) priser markedet ca. 90 % sjanse for renteøkning 09.12, og 10-årsrenten er nær 5 %. Nasdaq opp 1,8 % og S&P 500 opp ca. 1 % 11.11 etter CoreWeave-tall, mens Dow er flat; amerikansk råolje opp 2,5 % til ca. $88.",
   "items": [
     {
       "nm": "Gull (XAU)",
       "name": "Gull",
       "grp": "core",
       "dir": "blandet",
-      "why": "Hentet seg inn til rundt $4 055 11.11 etter fall mot $4 000 10.11. Høyere renter (10-år 4,99 %) og sterkere dollar holder igjen.",
+      "why": "Ned 0,4 % til ca. $4 013 11.11 og tilbake mot $4 000. Høye renter (10-år nær 5 %) og forventet renteøkning i desember holder igjen.",
       "event": "Fed-møte 08.–09.12",
       "src": [
         {
-          "t": "Saxo 11.11",
-          "u": "https://www.home.saxo/en-mena/content/articles/macro/market-quick-take---us-treasury-yields-rip-higher---11-november-2026-11112026"
+          "t": "Yahoo Finance 11.11",
+          "u": "https://finance.yahoo.com/markets/live/stock-market-today-wednesday-november-11-dow-sp-500-nasdaq-nvidia-treasurys-veterans-day-140638547.html"
         }
       ]
     },
@@ -367,16 +367,16 @@
       "name": "Nvidia",
       "grp": "stk",
       "dir": "blandet",
-      "why": "Opp ca. 4 % før åpning 11.11 etter fall på 4,3 % 09.11 og 5,5 % 10.11; en senior republikansk senator krevde samtidig at Jensen Huang går av.",
+      "why": "Opp ca. 4 % til $175,5 11.11 etter to fallende dager, men fortsatt ned ca. 14 % i november. Baird nedgraderte aksjen til nøytral samme dag.",
       "event": "Kvartalstall 17.11",
       "src": [
         {
-          "t": "Current Logic 11.11",
-          "u": "https://currentlogic.substack.com/p/the-morning-brief-november-11-2026"
+          "t": "Yahoo Finance 11.11",
+          "u": "https://finance.yahoo.com/markets/live/stock-market-today-wednesday-november-11-dow-sp-500-nasdaq-nvidia-treasurys-veterans-day-140638547.html"
         },
         {
-          "t": "Yahoo Finance 11.11",
-          "u": "https://finance.yahoo.com/markets/live/stock-market-today-wednesday-november-11-dow-sp-500-nasdaq-nvidia-treasurys-123445799.html"
+          "t": "StockTitan 11.11",
+          "u": "https://www.stocktitan.net/articles/stock-market-today-live-november-11-2026"
         }
       ]
     }
