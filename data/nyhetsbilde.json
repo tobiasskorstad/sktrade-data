@@ -1,6 +1,6 @@
 {
- "updated": "12.11.2026 kl. 20:40",
- "note": "Bakteppe: Nvidia-sjef Jensen Huang gikk av 12.11, og CFO Colette Kress er midlertidig sjef. Markedet priser ca. 94 % sjanse for renteøkning 09.12; 10-årsrenten er over 5 % og dollarindeksen over 103. Olje steg ca. 1,5 % til $87,6 etter Trump-uttalelse om Iran.",
+ "updated": "12.11.2026 kl. 21:37",
+ "note": "Bakteppe: Nvidia-sjef Jensen Huang gikk av 12.11; CFO Colette Kress er midlertidig sjef, og Trump foreslo Tim Cook som erstatter. Markedet priser ca. 94 % sjanse for renteøkning 09.12; 10-årsrenten er over 5 % og dollarindeksen over 103. Olje steg ca. 1,5 % til $87,6 etter Trump-uttalelse om Iran.",
  "items": [
   {
    "nm": "Gull (XAU)",
@@ -387,16 +387,16 @@
    "name": "Nvidia",
    "grp": "stk",
    "dir": "ned",
-   "why": "Bunn rundt $151 før åpning 12.11 etter at Jensen Huang gikk av, men hentet seg inn til ca. $163–166 i handelen. CFO Colette Kress er midlertidig sjef.",
+   "why": "Falt opptil 13–14 % 12.11 etter Huangs avgang, men tok inn tapet til ca. −5 %. Oppenheimer nedgraderte; Bernstein har kursmål $200, Dan Ives kuttet til $225.",
    "event": "Kvartalstall 17.11",
    "src": [
     {
-     "t": "PC Gamer 12.11",
-     "u": "https://www.pcgamer.com/hardware/nvidia-stocks-jump-back-up-after-ex-ceo-jensen-huangs-ousting/"
+     "t": "Yahoo Finance 12.11",
+     "u": "https://finance.yahoo.com/technology/live/nvidia-live-updates-jensen-huang-resigns-cfo-colette-kress-to-serve-as-interim-ceo-140341430.html"
     },
     {
-     "t": "BNN Bloomberg/AP 12.11",
-     "u": "https://www.bnnbloomberg.ca/markets/2026/11/12/nvidia-shares-plunge-13-at-open-after-ceo-jensen-huang-resigns/"
+     "t": "CoinDesk 12.11",
+     "u": "https://www.coindesk.com/tech/2026/11/12/live-news-strategy-kicked-out-of-msci-indexes-as-nvidia-slump-rattles-markets"
     }
    ]
   }
