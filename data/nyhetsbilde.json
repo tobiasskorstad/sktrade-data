@@ -1,400 +1,404 @@
 {
-  "updated": "12.11.2026 kl. 19:45",
-  "note": "Bakteppe: Nvidia-sjef Jensen Huang gikk av 12.11, og CFO Colette Kress er midlertidig sjef. Markedet priser ca. 94 % sjanse for renteøkning 09.12; 10-årsrenten er over 5 % og dollarindeksen over 103. Olje steg ca. 1,5 % til $87,6 etter Trump-uttalelse om Iran.",
-  "items": [
+ "updated": "12.11.2026 kl. 20:40",
+ "note": "Bakteppe: Nvidia-sjef Jensen Huang gikk av 12.11, og CFO Colette Kress er midlertidig sjef. Markedet priser ca. 94 % sjanse for renteøkning 09.12; 10-årsrenten er over 5 % og dollarindeksen over 103. Olje steg ca. 1,5 % til $87,6 etter Trump-uttalelse om Iran.",
+ "items": [
+  {
+   "nm": "Gull (XAU)",
+   "name": "Gull",
+   "grp": "core",
+   "dir": "ned",
+   "why": "Falt til ca. $3 868 12.11, laveste siden september 2025. 10-årsrenten over 5 %, sterk dollar og ca. 94 % sjanse for renteøkning i desember.",
+   "event": "Fed-møte 08.–09.12",
+   "src": [
     {
-      "nm": "Gull (XAU)",
-      "name": "Gull",
-      "grp": "core",
-      "dir": "ned",
-      "why": "Falt til ca. $3 868 12.11, laveste siden september 2025. 10-årsrenten over 5 %, sterk dollar og ca. 94 % sjanse for renteøkning i desember.",
-      "event": "Fed-møte 08.–09.12",
-      "src": [
-        {
-          "t": "CoinDesk 12.11",
-          "u": "https://www.coindesk.com/tech/2026/11/12/live-news-strategy-kicked-out-of-msci-indexes-as-nvidia-slump-rattles-markets"
-        }
-      ]
-    },
-    {
-      "nm": "Bitcoin",
-      "name": "Bitcoin",
-      "grp": "core",
-      "dir": "ned",
-      "why": "Ned til $71 200 12.11, laveste på nesten 12 uker, etter Huangs avgang. Over $750 mill. likvidert på et døgn; MSCI fjerner Strategy fra indeksene 30.11.",
-      "event": "Strategy ut av MSCI 30.11",
-      "src": [
-        {
-          "t": "The Block 12.11",
-          "u": "https://www.theblock.co/news/markets/2026-11-12-bitcoin-12-week-low-jensen-huang-exit-nvidia-438992"
-        },
-        {
-          "t": "CoinDesk 12.11",
-          "u": "https://www.coindesk.com/tech/2026/11/12/live-news-strategy-kicked-out-of-msci-indexes-as-nvidia-slump-rattles-markets"
-        }
-      ]
-    },
-    {
-      "nm": "Ethereum",
-      "name": "Ethereum",
-      "grp": "core",
-      "dir": "ned",
-      "why": "Rundt $1 990–2 015 12.11, ned ca. 16 % på en uke. Ether-ETF-ene tapte ca. $145 mill. 11.11.",
-      "event": "Fed-møte 08.–09.12",
-      "src": [
-        {
-          "t": "CoinDesk 12.11",
-          "u": "https://www.coindesk.com/tech/2026/11/12/live-news-strategy-kicked-out-of-msci-indexes-as-nvidia-slump-rattles-markets"
-        },
-        {
-          "t": "Coindoo 12.11",
-          "u": "https://coindoo.com/bitcoin-under-72k-ethereum-under-2k-as-huang-exits-nvidia/"
-        }
-      ]
-    },
-    {
-      "nm": "Solana",
-      "name": "Solana",
-      "grp": "core",
-      "dir": "ned",
-      "why": "Rundt $81 12.11, ned ca. 3 % siste døgn og 15 % på en uke. SOL-fondene tapte ca. $6 mill. 11.11.",
-      "event": "–",
-      "src": [
-        {
-          "t": "CoinDesk 12.11",
-          "u": "https://www.coindesk.com/tech/2026/11/12/live-news-strategy-kicked-out-of-msci-indexes-as-nvidia-slump-rattles-markets"
-        },
-        {
-          "t": "Coindoo 12.11",
-          "u": "https://coindoo.com/bitcoin-under-72k-ethereum-under-2k-as-huang-exits-nvidia/"
-        }
-      ]
-    },
-    {
-      "nm": "XRP",
-      "name": "XRP",
-      "grp": "core",
-      "dir": "ned",
-      "why": "Rundt $1,02–1,03 12.11, ned ca. 2 % siste døgn og 21 % på en uke. Ingen strømmer i XRP-fondene 11.11.",
-      "event": "–",
-      "src": [
-        {
-          "t": "CoinDesk 12.11",
-          "u": "https://www.coindesk.com/tech/2026/11/12/live-news-strategy-kicked-out-of-msci-indexes-as-nvidia-slump-rattles-markets"
-        },
-        {
-          "t": "Coindoo 12.11",
-          "u": "https://coindoo.com/bitcoin-under-72k-ethereum-under-2k-as-huang-exits-nvidia/"
-        }
-      ]
-    },
-    {
-      "nm": "BNB",
-      "name": "BNB",
-      "grp": "core",
-      "dir": "ned",
-      "why": "Rundt $652 12.11, ned fra ca. $684 10.11, i svakt marked etter Nvidia-sjokket.",
-      "event": "–",
-      "src": [
-        {
-          "t": "Coindoo 12.11",
-          "u": "https://coindoo.com/bitcoin-under-72k-ethereum-under-2k-as-huang-exits-nvidia/"
-        }
-      ]
-    },
-    {
-      "nm": "TRON",
-      "name": "TRON",
-      "grp": "top",
-      "dir": "blandet",
-      "why": "Rundt $0,31 10.11, opp ca. 0,4 % siste døgn og fortsatt mer stabil enn resten av markedet.",
-      "event": "–",
-      "src": [
-        {
-          "t": "CoinDesk 10.11",
-          "u": "https://www.coindesk.com/markets/2026/11/10/bitcoin-lags-stock-rebound-in-advance-of-u-s-inflation-report"
-        }
-      ]
-    },
-    {
-      "nm": "Zcash",
-      "name": "Zcash",
-      "grp": "top",
-      "dir": "ned",
-      "why": "Rundt $955 12.11 etter fallet på ca. 14 % 11.11. Zcash-fondet tapte nesten $15 mill. 11.11.",
-      "event": "–",
-      "src": [
-        {
-          "t": "CoinDesk 12.11",
-          "u": "https://www.coindesk.com/tech/2026/11/12/live-news-strategy-kicked-out-of-msci-indexes-as-nvidia-slump-rattles-markets"
-        },
-        {
-          "t": "Coindoo 12.11",
-          "u": "https://coindoo.com/bitcoin-under-72k-ethereum-under-2k-as-huang-exits-nvidia/"
-        }
-      ]
-    },
-    {
-      "nm": "Hyperliquid",
-      "name": "Hyperliquid",
-      "grp": "top",
-      "dir": "blandet",
-      "why": "Rundt $73–75 10.11, ned 1–4 % siste døgn. Ble notert på sørkoreanske Upbit, som kan gi mer handel.",
-      "event": "Regulatorisk godkjenning av ICE-avtalen (ingen dato)",
-      "src": [
-        {
-          "t": "CoinDesk 10.11",
-          "u": "https://www.coindesk.com/markets/2026/11/10/bitcoin-lags-stock-rebound-in-advance-of-u-s-inflation-report"
-        }
-      ]
-    },
-    {
-      "nm": "Dogecoin",
-      "name": "Dogecoin",
-      "grp": "top",
-      "dir": "ned",
-      "why": "Rundt $0,065 12.11, ned fra ca. $0,067 10.11 i bredt kryptofall.",
-      "event": "–",
-      "src": [
-        {
-          "t": "Coindoo 12.11",
-          "u": "https://coindoo.com/bitcoin-under-72k-ethereum-under-2k-as-huang-exits-nvidia/"
-        }
-      ]
-    },
-    {
-      "nm": "Monero",
-      "name": "Monero",
-      "grp": "top",
-      "dir": "blandet",
-      "why": "Opp ca. 2 % 11.11 etter fall på 7,8 % siste døgn til 10.11.",
-      "event": "–",
-      "src": [
-        {
-          "t": "CoinDesk 11.11",
-          "u": "https://www.coindesk.com/markets/2026/11/11/bitcoin-sits-out-stock-rebound-as-etf-outflows-extend-to-fourth-day"
-        }
-      ]
-    },
-    {
-      "nm": "Chainlink",
-      "name": "Chainlink",
-      "grp": "top",
-      "dir": "ned",
-      "why": "Rundt $9,81 12.11, ned fra ca. $10,40 10.11 i bredt kryptofall.",
-      "event": "–",
-      "src": [
-        {
-          "t": "Coindoo 12.11",
-          "u": "https://coindoo.com/bitcoin-under-72k-ethereum-under-2k-as-huang-exits-nvidia/"
-        }
-      ]
-    },
-    {
-      "nm": "Cardano",
-      "name": "Cardano",
-      "grp": "top",
-      "dir": "ned",
-      "why": "Rundt $0,176 10.11, ned ca. 1,9 % siste døgn i svakt kryptomarked etter varm KPI.",
-      "event": "–",
-      "src": [
-        {
-          "t": "crypto.news 10.11",
-          "u": "https://crypto.news/bitcoin-price-falls-below-74000-as-hot-us-cpi-fuels-fed-rate-hike-fears/"
-        }
-      ]
-    },
-    {
-      "nm": "Stellar",
-      "name": "Stellar",
-      "grp": "top",
-      "dir": "blandet",
-      "why": "Lite ferske nyheter. Følger i hovedsak resten av kryptomarkedet.",
-      "event": "–",
-      "src": [
-        {
-          "t": "CoinMarketCap",
-          "u": "https://coinmarketcap.com/ja/cmc-ai/stellar/latest-updates/"
-        }
-      ]
-    },
-    {
-      "nm": "NEAR",
-      "name": "NEAR",
-      "grp": "top",
-      "dir": "ned",
-      "why": "Elliptic: Nord-Korea-tilknyttede hackere brukte minst seks memecoins på NEAR til å hvitvaske ca. 117 000 stjålne NEAR (ca. $430 000), meldt 10.11.",
-      "event": "–",
-      "src": [
-        {
-          "t": "KuCoin 10.11",
-          "u": "https://www.kucoin.com/news/articles/crypto-daily-market-report-november-10-2026"
-        }
-      ]
-    },
-    {
-      "nm": "Bitcoin Cash",
-      "name": "Bitcoin Cash",
-      "grp": "top",
-      "dir": "blandet",
-      "why": "Lite ferske nyheter. Følger bitcoin.",
-      "event": "–",
-      "src": [
-        {
-          "t": "CoinMarketCap",
-          "u": "https://coinmarketcap.com/cmc-ai/bitcoin-cash/latest-updates/"
-        }
-      ]
-    },
-    {
-      "nm": "Litecoin",
-      "name": "Litecoin",
-      "grp": "top",
-      "dir": "opp",
-      "why": "Opp 20,7 % siste 30 dager. Halveringen i 2027 vil redusere nye mynter.",
-      "event": "Halvering 2027",
-      "src": [
-        {
-          "t": "24/7 Wall St 12.10",
-          "u": "https://www.aol.com/articles/cardano-avalanche-litecoin-more-20-190027000.html"
-        }
-      ]
-    },
-    {
-      "nm": "Uniswap",
-      "name": "Uniswap",
-      "grp": "top",
-      "dir": "blandet",
-      "why": "Hackeren flyttet 7,0 mill. UNI 29.10, og UNI falt med markedet 30.10. Standard Chartered venter skifte mot desentraliserte børser og holder kursmål $100 for 2030.",
-      "event": "–",
-      "src": [
-        {
-          "t": "CoinDesk 30.10",
-          "u": "https://www.coindesk.com/markets/2026/10/30/usd6-billion-binance-hack-sends-bitcoin-ether-tumbling-standard-chartered-sees-more-losses-ahead"
-        },
-        {
-          "t": "CryptoTicker 29.10",
-          "u": "https://cryptoticker.io/en/crypto-crash-binance-hack-timeline-liquidations"
-        }
-      ]
-    },
-    {
-      "nm": "Avalanche",
-      "name": "Avalanche",
-      "grp": "top",
-      "dir": "opp",
-      "why": "Opp ca. 5 % siste døgn etter at NYSE valgte Avalanche til oppgjør på planlagt 24/7-plattform for tokeniserte verdipapirer; ned 2,6 % siden midnatt UTC 10.11.",
-      "event": "–",
-      "src": [
-        {
-          "t": "CoinDesk 10.11",
-          "u": "https://www.coindesk.com/markets/2026/11/10/bitcoin-lags-stock-rebound-in-advance-of-u-s-inflation-report"
-        }
-      ]
-    },
-    {
-      "nm": "Sui",
-      "name": "Sui",
-      "grp": "top",
-      "dir": "ned",
-      "why": "Falt 11,5 % siste uke og 5,2 % på en dag 13.10, mer enn resten av markedet.",
-      "event": "–",
-      "src": [
-        {
-          "t": "24/7 Wall St 15.10",
-          "u": "https://www.aol.com/articles/bitcoin-fell-2-week-5-143938000.html"
-        },
-        {
-          "t": "KuCoin 29.10",
-          "u": "https://www.kucoin.com/news/articles/crypto-daily-market-report-october-29-2026"
-        }
-      ]
-    },
-    {
-      "nm": "Gram (Toncoin)",
-      "name": "Gram (Toncoin)",
-      "grp": "top",
-      "dir": "opp",
-      "why": "Opp 5–8 % siste døgn til 11.11 etter at Telegram-grunnleggeren meldte over 700 000 nye lommebøker på 48 timer.",
-      "event": "Opplåsing 24.03.2027",
-      "src": [
-        {
-          "t": "CoinDesk 11.11",
-          "u": "https://www.coindesk.com/markets/2026/11/11/bitcoin-sits-out-stock-rebound-as-etf-outflows-extend-to-fourth-day"
-        },
-        {
-          "t": "KuCoin 11.11",
-          "u": "https://www.kucoin.com/news/articles/crypto-daily-market-report-november-11-2026"
-        }
-      ]
-    },
-    {
-      "nm": "SpaceX",
-      "name": "SpaceX",
-      "grp": "stk",
-      "dir": "blandet",
-      "why": "Endte opp 5,8 % til $142,07 09.11 etter NASA-kontrakter for månebase. Motley Fool 10.11: nyvalgte politikere kan gjøre et oppkjøp av Tesla vanskeligere.",
-      "event": "Starship test 15 tidligst 13.11",
-      "src": [
-        {
-          "t": "Motley Fool 10.11",
-          "u": "https://www.fool.com/investing/2026/11/10/interesting-news-for-spacex-stock-and-tesla-stock-investors/"
-        }
-      ]
-    },
-    {
-      "nm": "Microsoft",
-      "name": "Microsoft",
-      "grp": "stk",
-      "dir": "blandet",
-      "why": "Falt 2,2 % 10.11 etter at Anthropic utfordret Office. Anthropic, der Microsoft er investor, søker opptil $1,4 bill. i verdsettelse ved notering, mulig neste uke.",
-      "event": "Anthropic-notering ca. 19.11",
-      "src": [
-        {
-          "t": "Current Logic 11.11",
-          "u": "https://currentlogic.substack.com/p/the-morning-brief-november-11-2026"
-        },
-        {
-          "t": "Yahoo Finance 11.11",
-          "u": "https://finance.yahoo.com/markets/live/stock-market-today-wednesday-november-11-dow-sp-500-nasdaq-nvidia-treasurys-123445799.html"
-        }
-      ]
-    },
-    {
-      "nm": "Tesla",
-      "name": "Tesla",
-      "grp": "stk",
-      "dir": "blandet",
-      "why": "Ned ca. 0,8 % før åpning 12.11 da Nvidia-sjokket trakk ned teknologiaksjene. Endte opp 5,5 % til $378,05 09.11.",
-      "event": "Generalforsamling 03.12",
-      "src": [
-        {
-          "t": "Reuters/Yahoo 12.11",
-          "u": "https://finance.yahoo.com/markets/stocks/articles/nasdaq-futures-fall-nvidia-turmoil-093910045.html"
-        },
-        {
-          "t": "Motley Fool 10.11",
-          "u": "https://www.fool.com/investing/2026/11/10/interesting-news-for-spacex-stock-and-tesla-stock-investors/"
-        }
-      ]
-    },
-    {
-      "nm": "Nvidia",
-      "name": "Nvidia",
-      "grp": "stk",
-      "dir": "ned",
-      "why": "Falt opptil 13–14 % ved åpning 12.11 etter at Jensen Huang gikk av, men hentet seg inn til ca. −5 % ($165) kl. 10:51 New York-tid. CFO Colette Kress er midlertidig sjef.",
-      "event": "Kvartalstall 17.11",
-      "src": [
-        {
-          "t": "Yahoo Finance 12.11",
-          "u": "https://finance.yahoo.com/technology/live/nvidia-live-updates-jensen-huang-resigns-cfo-colette-kress-to-serve-as-interim-ceo-140341430.html"
-        },
-        {
-          "t": "BNN Bloomberg/AP 12.11",
-          "u": "https://www.bnnbloomberg.ca/markets/2026/11/12/nvidia-shares-plunge-13-at-open-after-ceo-jensen-huang-resigns/"
-        }
-      ]
+     "t": "CoinDesk 12.11",
+     "u": "https://www.coindesk.com/tech/2026/11/12/live-news-strategy-kicked-out-of-msci-indexes-as-nvidia-slump-rattles-markets"
     }
-  ]
+   ]
+  },
+  {
+   "nm": "Bitcoin",
+   "name": "Bitcoin",
+   "grp": "core",
+   "dir": "ned",
+   "why": "Ned til $71 200 12.11, laveste på nesten 12 uker, etter Huangs avgang. Over $750 mill. likvidert på et døgn; MSCI fjerner Strategy fra indeksene 30.11.",
+   "event": "Strategy ut av MSCI 30.11",
+   "src": [
+    {
+     "t": "The Block 12.11",
+     "u": "https://www.theblock.co/news/markets/2026-11-12-bitcoin-12-week-low-jensen-huang-exit-nvidia-438992"
+    },
+    {
+     "t": "CoinDesk 12.11",
+     "u": "https://www.coindesk.com/tech/2026/11/12/live-news-strategy-kicked-out-of-msci-indexes-as-nvidia-slump-rattles-markets"
+    }
+   ]
+  },
+  {
+   "nm": "Ethereum",
+   "name": "Ethereum",
+   "grp": "core",
+   "dir": "ned",
+   "why": "Rundt $1 990–2 015 12.11, ned ca. 16 % på en uke. Ether-ETF-ene tapte ca. $145 mill. 11.11.",
+   "event": "Fed-møte 08.–09.12",
+   "src": [
+    {
+     "t": "CoinDesk 12.11",
+     "u": "https://www.coindesk.com/tech/2026/11/12/live-news-strategy-kicked-out-of-msci-indexes-as-nvidia-slump-rattles-markets"
+    },
+    {
+     "t": "Coindoo 12.11",
+     "u": "https://coindoo.com/bitcoin-under-72k-ethereum-under-2k-as-huang-exits-nvidia/"
+    }
+   ]
+  },
+  {
+   "nm": "Solana",
+   "name": "Solana",
+   "grp": "core",
+   "dir": "ned",
+   "why": "Rundt $81 12.11, ned ca. 3 % siste døgn og 15 % på en uke. SOL-fondene tapte ca. $6 mill. 11.11.",
+   "event": "–",
+   "src": [
+    {
+     "t": "CoinDesk 12.11",
+     "u": "https://www.coindesk.com/tech/2026/11/12/live-news-strategy-kicked-out-of-msci-indexes-as-nvidia-slump-rattles-markets"
+    },
+    {
+     "t": "Coindoo 12.11",
+     "u": "https://coindoo.com/bitcoin-under-72k-ethereum-under-2k-as-huang-exits-nvidia/"
+    }
+   ]
+  },
+  {
+   "nm": "XRP",
+   "name": "XRP",
+   "grp": "core",
+   "dir": "ned",
+   "why": "Rundt $1,02–1,03 12.11, ned ca. 2 % siste døgn og 21 % på en uke. Ingen strømmer i XRP-fondene 11.11.",
+   "event": "–",
+   "src": [
+    {
+     "t": "CoinDesk 12.11",
+     "u": "https://www.coindesk.com/tech/2026/11/12/live-news-strategy-kicked-out-of-msci-indexes-as-nvidia-slump-rattles-markets"
+    },
+    {
+     "t": "Coindoo 12.11",
+     "u": "https://coindoo.com/bitcoin-under-72k-ethereum-under-2k-as-huang-exits-nvidia/"
+    }
+   ]
+  },
+  {
+   "nm": "BNB",
+   "name": "BNB",
+   "grp": "core",
+   "dir": "ned",
+   "why": "Rundt $652 12.11, ned fra ca. $684 10.11, i svakt marked etter Nvidia-sjokket.",
+   "event": "–",
+   "src": [
+    {
+     "t": "Coindoo 12.11",
+     "u": "https://coindoo.com/bitcoin-under-72k-ethereum-under-2k-as-huang-exits-nvidia/"
+    }
+   ]
+  },
+  {
+   "nm": "TRON",
+   "name": "TRON",
+   "grp": "top",
+   "dir": "blandet",
+   "why": "Rundt $0,31 10.11, opp ca. 0,4 % siste døgn og fortsatt mer stabil enn resten av markedet.",
+   "event": "–",
+   "src": [
+    {
+     "t": "CoinDesk 10.11",
+     "u": "https://www.coindesk.com/markets/2026/11/10/bitcoin-lags-stock-rebound-in-advance-of-u-s-inflation-report"
+    }
+   ]
+  },
+  {
+   "nm": "Zcash",
+   "name": "Zcash",
+   "grp": "top",
+   "dir": "ned",
+   "why": "Rundt $955 12.11 etter fallet på ca. 14 % 11.11. Zcash-fondet tapte nesten $15 mill. 11.11.",
+   "event": "–",
+   "src": [
+    {
+     "t": "CoinDesk 12.11",
+     "u": "https://www.coindesk.com/tech/2026/11/12/live-news-strategy-kicked-out-of-msci-indexes-as-nvidia-slump-rattles-markets"
+    },
+    {
+     "t": "Coindoo 12.11",
+     "u": "https://coindoo.com/bitcoin-under-72k-ethereum-under-2k-as-huang-exits-nvidia/"
+    }
+   ]
+  },
+  {
+   "nm": "Hyperliquid",
+   "name": "Hyperliquid",
+   "grp": "top",
+   "dir": "blandet",
+   "why": "Rundt $73–75 10.11, ned 1–4 % siste døgn. Ble notert på sørkoreanske Upbit, som kan gi mer handel.",
+   "event": "Regulatorisk godkjenning av ICE-avtalen (ingen dato)",
+   "src": [
+    {
+     "t": "CoinDesk 10.11",
+     "u": "https://www.coindesk.com/markets/2026/11/10/bitcoin-lags-stock-rebound-in-advance-of-u-s-inflation-report"
+    }
+   ]
+  },
+  {
+   "nm": "Dogecoin",
+   "name": "Dogecoin",
+   "grp": "top",
+   "dir": "ned",
+   "why": "Rundt $0,065 12.11, ned fra ca. $0,067 10.11 i bredt kryptofall.",
+   "event": "–",
+   "src": [
+    {
+     "t": "Coindoo 12.11",
+     "u": "https://coindoo.com/bitcoin-under-72k-ethereum-under-2k-as-huang-exits-nvidia/"
+    }
+   ]
+  },
+  {
+   "nm": "Monero",
+   "name": "Monero",
+   "grp": "top",
+   "dir": "blandet",
+   "why": "Opp ca. 2 % 11.11 etter fall på 7,8 % siste døgn til 10.11.",
+   "event": "–",
+   "src": [
+    {
+     "t": "CoinDesk 11.11",
+     "u": "https://www.coindesk.com/markets/2026/11/11/bitcoin-sits-out-stock-rebound-as-etf-outflows-extend-to-fourth-day"
+    }
+   ]
+  },
+  {
+   "nm": "Chainlink",
+   "name": "Chainlink",
+   "grp": "top",
+   "dir": "ned",
+   "why": "Rundt $9,81 12.11, ned fra ca. $10,40 10.11 i bredt kryptofall.",
+   "event": "–",
+   "src": [
+    {
+     "t": "Coindoo 12.11",
+     "u": "https://coindoo.com/bitcoin-under-72k-ethereum-under-2k-as-huang-exits-nvidia/"
+    }
+   ]
+  },
+  {
+   "nm": "Cardano",
+   "name": "Cardano",
+   "grp": "top",
+   "dir": "ned",
+   "why": "Rundt $0,176 10.11, ned ca. 1,9 % siste døgn i svakt kryptomarked etter varm KPI.",
+   "event": "–",
+   "src": [
+    {
+     "t": "crypto.news 10.11",
+     "u": "https://crypto.news/bitcoin-price-falls-below-74000-as-hot-us-cpi-fuels-fed-rate-hike-fears/"
+    }
+   ]
+  },
+  {
+   "nm": "Stellar",
+   "name": "Stellar",
+   "grp": "top",
+   "dir": "blandet",
+   "why": "Lite ferske nyheter. Følger i hovedsak resten av kryptomarkedet.",
+   "event": "–",
+   "src": [
+    {
+     "t": "CoinMarketCap",
+     "u": "https://coinmarketcap.com/ja/cmc-ai/stellar/latest-updates/"
+    }
+   ]
+  },
+  {
+   "nm": "NEAR",
+   "name": "NEAR",
+   "grp": "top",
+   "dir": "ned",
+   "why": "Elliptic: Nord-Korea-tilknyttede hackere brukte minst seks memecoins på NEAR til å hvitvaske ca. 117 000 stjålne NEAR (ca. $430 000), meldt 10.11.",
+   "event": "–",
+   "src": [
+    {
+     "t": "KuCoin 10.11",
+     "u": "https://www.kucoin.com/news/articles/crypto-daily-market-report-november-10-2026"
+    }
+   ]
+  },
+  {
+   "nm": "Bitcoin Cash",
+   "name": "Bitcoin Cash",
+   "grp": "top",
+   "dir": "blandet",
+   "why": "Lite ferske nyheter. Følger bitcoin.",
+   "event": "–",
+   "src": [
+    {
+     "t": "CoinMarketCap",
+     "u": "https://coinmarketcap.com/cmc-ai/bitcoin-cash/latest-updates/"
+    }
+   ]
+  },
+  {
+   "nm": "Litecoin",
+   "name": "Litecoin",
+   "grp": "top",
+   "dir": "opp",
+   "why": "Opp 20,7 % siste 30 dager. Halveringen i 2027 vil redusere nye mynter.",
+   "event": "Halvering 2027",
+   "src": [
+    {
+     "t": "24/7 Wall St 12.10",
+     "u": "https://www.aol.com/articles/cardano-avalanche-litecoin-more-20-190027000.html"
+    }
+   ]
+  },
+  {
+   "nm": "Uniswap",
+   "name": "Uniswap",
+   "grp": "top",
+   "dir": "blandet",
+   "why": "Hackeren flyttet 7,0 mill. UNI 29.10, og UNI falt med markedet 30.10. Standard Chartered venter skifte mot desentraliserte børser og holder kursmål $100 for 2030.",
+   "event": "–",
+   "src": [
+    {
+     "t": "CoinDesk 30.10",
+     "u": "https://www.coindesk.com/markets/2026/10/30/usd6-billion-binance-hack-sends-bitcoin-ether-tumbling-standard-chartered-sees-more-losses-ahead"
+    },
+    {
+     "t": "CryptoTicker 29.10",
+     "u": "https://cryptoticker.io/en/crypto-crash-binance-hack-timeline-liquidations"
+    }
+   ]
+  },
+  {
+   "nm": "Avalanche",
+   "name": "Avalanche",
+   "grp": "top",
+   "dir": "opp",
+   "why": "Opp ca. 5 % siste døgn etter at NYSE valgte Avalanche til oppgjør på planlagt 24/7-plattform for tokeniserte verdipapirer; ned 2,6 % siden midnatt UTC 10.11.",
+   "event": "–",
+   "src": [
+    {
+     "t": "CoinDesk 10.11",
+     "u": "https://www.coindesk.com/markets/2026/11/10/bitcoin-lags-stock-rebound-in-advance-of-u-s-inflation-report"
+    }
+   ]
+  },
+  {
+   "nm": "Sui",
+   "name": "Sui",
+   "grp": "top",
+   "dir": "ned",
+   "why": "Falt 11,5 % siste uke og 5,2 % på en dag 13.10, mer enn resten av markedet.",
+   "event": "–",
+   "src": [
+    {
+     "t": "24/7 Wall St 15.10",
+     "u": "https://www.aol.com/articles/bitcoin-fell-2-week-5-143938000.html"
+    },
+    {
+     "t": "KuCoin 29.10",
+     "u": "https://www.kucoin.com/news/articles/crypto-daily-market-report-october-29-2026"
+    }
+   ]
+  },
+  {
+   "nm": "Gram (Toncoin)",
+   "name": "Gram (Toncoin)",
+   "grp": "top",
+   "dir": "opp",
+   "why": "Opp 5–8 % siste døgn til 11.11 etter at Telegram-grunnleggeren meldte over 700 000 nye lommebøker på 48 timer.",
+   "event": "Opplåsing 24.03.2027",
+   "src": [
+    {
+     "t": "CoinDesk 11.11",
+     "u": "https://www.coindesk.com/markets/2026/11/11/bitcoin-sits-out-stock-rebound-as-etf-outflows-extend-to-fourth-day"
+    },
+    {
+     "t": "KuCoin 11.11",
+     "u": "https://www.kucoin.com/news/articles/crypto-daily-market-report-november-11-2026"
+    }
+   ]
+  },
+  {
+   "nm": "SpaceX",
+   "name": "SpaceX",
+   "grp": "stk",
+   "dir": "blandet",
+   "why": "Endte opp 5,8 % til $142,07 09.11 etter NASA-kontrakter for månebase. Motley Fool 10.11: nyvalgte politikere kan gjøre et oppkjøp av Tesla vanskeligere.",
+   "event": "Starship test 15 tidligst 13.11 kl. 23:45",
+   "src": [
+    {
+     "t": "Motley Fool 10.11",
+     "u": "https://www.fool.com/investing/2026/11/10/interesting-news-for-spacex-stock-and-tesla-stock-investors/"
+    },
+    {
+     "t": "Space Launch Schedule 10.11",
+     "u": "https://www.spacelaunchschedule.com/launch/starship-flight-15/"
+    }
+   ]
+  },
+  {
+   "nm": "Microsoft",
+   "name": "Microsoft",
+   "grp": "stk",
+   "dir": "blandet",
+   "why": "Falt 2,2 % 10.11 etter at Anthropic utfordret Office. Anthropic, der Microsoft er investor, søker opptil $1,4 bill. i verdsettelse ved notering, mulig neste uke.",
+   "event": "Anthropic-notering ca. 19.11",
+   "src": [
+    {
+     "t": "Current Logic 11.11",
+     "u": "https://currentlogic.substack.com/p/the-morning-brief-november-11-2026"
+    },
+    {
+     "t": "Yahoo Finance 11.11",
+     "u": "https://finance.yahoo.com/markets/live/stock-market-today-wednesday-november-11-dow-sp-500-nasdaq-nvidia-treasurys-123445799.html"
+    }
+   ]
+  },
+  {
+   "nm": "Tesla",
+   "name": "Tesla",
+   "grp": "stk",
+   "dir": "blandet",
+   "why": "Ned ca. 0,8 % før åpning 12.11 da Nvidia-sjokket trakk ned teknologiaksjene. Endte opp 5,5 % til $378,05 09.11.",
+   "event": "Generalforsamling 03.12",
+   "src": [
+    {
+     "t": "Reuters/Yahoo 12.11",
+     "u": "https://finance.yahoo.com/markets/stocks/articles/nasdaq-futures-fall-nvidia-turmoil-093910045.html"
+    },
+    {
+     "t": "Motley Fool 10.11",
+     "u": "https://www.fool.com/investing/2026/11/10/interesting-news-for-spacex-stock-and-tesla-stock-investors/"
+    }
+   ]
+  },
+  {
+   "nm": "Nvidia",
+   "name": "Nvidia",
+   "grp": "stk",
+   "dir": "ned",
+   "why": "Bunn rundt $151 før åpning 12.11 etter at Jensen Huang gikk av, men hentet seg inn til ca. $163–166 i handelen. CFO Colette Kress er midlertidig sjef.",
+   "event": "Kvartalstall 17.11",
+   "src": [
+    {
+     "t": "PC Gamer 12.11",
+     "u": "https://www.pcgamer.com/hardware/nvidia-stocks-jump-back-up-after-ex-ceo-jensen-huangs-ousting/"
+    },
+    {
+     "t": "BNN Bloomberg/AP 12.11",
+     "u": "https://www.bnnbloomberg.ca/markets/2026/11/12/nvidia-shares-plunge-13-at-open-after-ceo-jensen-huang-resigns/"
+    }
+   ]
+  }
+ ]
 }
