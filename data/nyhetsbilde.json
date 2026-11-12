@@ -1,17 +1,17 @@
 {
-  "updated": "11.11.2026 kl. 21:47",
-  "note": "Bakteppe: Etter varm KPI (0,4 % m/m) priser markedet nær 100 % sjanse for renteøkning 09.12, og dollaren er på det sterkeste siden april 2025. 10-årsrenten er rundt 5,0 %. Kl. 19 norsk tid 11.11 var Nasdaq opp 2,1 % og S&P 500 opp 1,5 % etter CoreWeave-tall; råolje opp 1,3 % til ca. $87.",
+  "updated": "12.11.2026 kl. 15:48",
+  "note": "Bakteppe: Nvidia-sjef Jensen Huang gikk av 12.11, og Nasdaq-futures falt ca. 1 % før åpning. Haukete Fed-taler etter varm KPI; markedet priser ca. 91 % sjanse for renteøkning 09.12, og 2-årsrenten steg til 4,80 %. Olje opp ca. 1,5 % til $87,6.",
   "items": [
     {
       "nm": "Gull (XAU)",
       "name": "Gull",
       "grp": "core",
       "dir": "ned",
-      "why": "Ned ca. 1,1 % til rundt $3 986 11.11, under $4 000. Sterk dollar og nær sikker renteøkning i desember etter varm KPI presser prisen.",
+      "why": "Ned 2,1 % til ca. $3 905 12.11, tredje fallende dag. Sterk dollar og haukete Fed-taler; markedet priser ca. 91 % sjanse for renteøkning i desember.",
       "event": "Fed-møte 08.–09.12",
       "src": [
         {
-          "t": "Trading Economics 11.11",
+          "t": "Trading Economics 12.11",
           "u": "https://tradingeconomics.com/commodity/gold"
         }
       ]
@@ -20,17 +20,17 @@
       "nm": "Bitcoin",
       "name": "Bitcoin",
       "grp": "core",
-      "dir": "blandet",
-      "why": "Opp 1,3 % til ca. $74 300 11.11 sammen med aksjene, etter dukkert til $72 700. ETF-ene tapte $95 mill. 10.11, fjerde utgangsdag på rad, men takten avtar.",
+      "dir": "ned",
+      "why": "Under $72 000 12.11 etter at Nvidia-sjef Huang gikk av; ned ca. 9 % på en uke. ETF-ene tapte ca. $300 mill. 11.11, femte utgangsdag.",
       "event": "Fed-møte 08.–09.12",
       "src": [
         {
-          "t": "CoinDesk 11.11",
-          "u": "https://www.coindesk.com/markets/2026/11/11/bitcoin-sits-out-stock-rebound-as-etf-outflows-extend-to-fourth-day"
+          "t": "CoinDesk 12.11",
+          "u": "https://www.coindesk.com/tech/2026/11/12/live-news-strategy-kicked-out-of-msci-indexes-as-nvidia-slump-rattles-markets"
         },
         {
-          "t": "Yahoo Finance 11.11",
-          "u": "https://finance.yahoo.com/markets/live/stock-market-today-wednesday-november-11-dow-sp-500-nasdaq-nvidia-treasurys-veterans-day-140638547.html"
+          "t": "Coindoo 12.11",
+          "u": "https://coindoo.com/bitcoin-under-72k-ethereum-under-2k-as-huang-exits-nvidia/"
         }
       ]
     },
@@ -39,12 +39,16 @@
       "name": "Ethereum",
       "grp": "core",
       "dir": "ned",
-      "why": "Rundt $2 053 11.11, ned 3,8 % siste døgn. Ether-ETF-ene tapte $185 mill. 09.11, tredje utgangsdag på rad.",
+      "why": "Rundt $1 990–2 015 12.11, ned ca. 16 % på en uke. Ether-ETF-ene tapte ca. $145 mill. 11.11.",
       "event": "Fed-møte 08.–09.12",
       "src": [
         {
-          "t": "KuCoin 11.11",
-          "u": "https://www.kucoin.com/news/articles/crypto-daily-market-report-november-11-2026"
+          "t": "CoinDesk 12.11",
+          "u": "https://www.coindesk.com/tech/2026/11/12/live-news-strategy-kicked-out-of-msci-indexes-as-nvidia-slump-rattles-markets"
+        },
+        {
+          "t": "Coindoo 12.11",
+          "u": "https://coindoo.com/bitcoin-under-72k-ethereum-under-2k-as-huang-exits-nvidia/"
         }
       ]
     },
@@ -53,12 +57,16 @@
       "name": "Solana",
       "grp": "core",
       "dir": "ned",
-      "why": "Rundt $82,2 10.11, ned ca. 5 % siste døgn i svakt kryptomarked etter varm KPI.",
+      "why": "Rundt $81 12.11, ned ca. 3 % siste døgn og 15 % på en uke. SOL-fondene tapte ca. $6 mill. 11.11.",
       "event": "–",
       "src": [
         {
-          "t": "Bitcoin.com 10.11",
-          "u": "https://news.bitcoin.com/market-updates/bitcoin-price-crashes-72787-hotter-than-expected-cpi/"
+          "t": "CoinDesk 12.11",
+          "u": "https://www.coindesk.com/tech/2026/11/12/live-news-strategy-kicked-out-of-msci-indexes-as-nvidia-slump-rattles-markets"
+        },
+        {
+          "t": "Coindoo 12.11",
+          "u": "https://coindoo.com/bitcoin-under-72k-ethereum-under-2k-as-huang-exits-nvidia/"
         }
       ]
     },
@@ -67,12 +75,16 @@
       "name": "XRP",
       "grp": "core",
       "dir": "ned",
-      "why": "Rundt $1,05 10.11, ned ca. 3,9 % siste døgn, fortsatt svakere enn bitcoin.",
+      "why": "Rundt $1,02–1,03 12.11, ned ca. 2 % siste døgn og 21 % på en uke. Ingen strømmer i XRP-fondene 11.11.",
       "event": "–",
       "src": [
         {
-          "t": "Bitcoin.com 10.11",
-          "u": "https://news.bitcoin.com/market-updates/bitcoin-price-crashes-72787-hotter-than-expected-cpi/"
+          "t": "CoinDesk 12.11",
+          "u": "https://www.coindesk.com/tech/2026/11/12/live-news-strategy-kicked-out-of-msci-indexes-as-nvidia-slump-rattles-markets"
+        },
+        {
+          "t": "Coindoo 12.11",
+          "u": "https://coindoo.com/bitcoin-under-72k-ethereum-under-2k-as-huang-exits-nvidia/"
         }
       ]
     },
@@ -80,13 +92,13 @@
       "nm": "BNB",
       "name": "BNB",
       "grp": "core",
-      "dir": "blandet",
-      "why": "Rundt $684 10.11, nesten uendret siste døgn og mer stabil enn resten av markedet etter KPI.",
+      "dir": "ned",
+      "why": "Rundt $652 12.11, ned fra ca. $684 10.11, i svakt marked etter Nvidia-sjokket.",
       "event": "–",
       "src": [
         {
-          "t": "crypto.news 10.11",
-          "u": "https://crypto.news/bitcoin-price-falls-below-74000-as-hot-us-cpi-fuels-fed-rate-hike-fears/"
+          "t": "Coindoo 12.11",
+          "u": "https://coindoo.com/bitcoin-under-72k-ethereum-under-2k-as-huang-exits-nvidia/"
         }
       ]
     },
@@ -109,12 +121,16 @@
       "name": "Zcash",
       "grp": "top",
       "dir": "ned",
-      "why": "Falt ca. 14 % 11.11 da belånte long-posisjoner ble likvidert og penger forlot Zcash-ETF-en.",
+      "why": "Rundt $955 12.11 etter fallet på ca. 14 % 11.11. Zcash-fondet tapte nesten $15 mill. 11.11.",
       "event": "–",
       "src": [
         {
-          "t": "CoinDesk 11.11",
-          "u": "https://www.coindesk.com/markets/2026/11/11/bitcoin-sits-out-stock-rebound-as-etf-outflows-extend-to-fourth-day"
+          "t": "CoinDesk 12.11",
+          "u": "https://www.coindesk.com/tech/2026/11/12/live-news-strategy-kicked-out-of-msci-indexes-as-nvidia-slump-rattles-markets"
+        },
+        {
+          "t": "Coindoo 12.11",
+          "u": "https://coindoo.com/bitcoin-under-72k-ethereum-under-2k-as-huang-exits-nvidia/"
         }
       ]
     },
@@ -137,12 +153,12 @@
       "name": "Dogecoin",
       "grp": "top",
       "dir": "ned",
-      "why": "Rundt $0,067 10.11, ned ca. 4,3 % siste døgn sammen med resten av kryptomarkedet etter varm KPI.",
+      "why": "Rundt $0,065 12.11, ned fra ca. $0,067 10.11 i bredt kryptofall.",
       "event": "–",
       "src": [
         {
-          "t": "Bitcoin.com 10.11",
-          "u": "https://news.bitcoin.com/market-updates/bitcoin-price-crashes-72787-hotter-than-expected-cpi/"
+          "t": "Coindoo 12.11",
+          "u": "https://coindoo.com/bitcoin-under-72k-ethereum-under-2k-as-huang-exits-nvidia/"
         }
       ]
     },
@@ -165,12 +181,12 @@
       "name": "Chainlink",
       "grp": "top",
       "dir": "ned",
-      "why": "Rundt $10,40 10.11, ned ca. 2 % siste døgn i svakt kryptomarked etter varm KPI.",
+      "why": "Rundt $9,81 12.11, ned fra ca. $10,40 10.11 i bredt kryptofall.",
       "event": "–",
       "src": [
         {
-          "t": "crypto.news 10.11",
-          "u": "https://crypto.news/bitcoin-price-falls-below-74000-as-hot-us-cpi-fuels-fed-rate-hike-fears/"
+          "t": "Coindoo 12.11",
+          "u": "https://coindoo.com/bitcoin-under-72k-ethereum-under-2k-as-huang-exits-nvidia/"
         }
       ]
     },
@@ -349,16 +365,16 @@
       "name": "Tesla",
       "grp": "stk",
       "dir": "blandet",
-      "why": "Endte opp 5,5 % til $378,05 09.11 i teknologirebounden. Nasdaq-futures falt ca. 1,2 % etter varm KPI 10.11.",
+      "why": "Ned ca. 0,8 % før åpning 12.11 da Nvidia-sjokket trakk ned teknologiaksjene. Endte opp 5,5 % til $378,05 09.11.",
       "event": "Generalforsamling 03.12",
       "src": [
         {
-          "t": "Motley Fool 10.11",
-          "u": "https://www.fool.com/investing/2026/11/10/interesting-news-for-spacex-stock-and-tesla-stock-investors/"
+          "t": "Reuters/Yahoo 12.11",
+          "u": "https://finance.yahoo.com/markets/stocks/articles/nasdaq-futures-fall-nvidia-turmoil-093910045.html"
         },
         {
-          "t": "Yahoo Finance 10.11",
-          "u": "https://finance.yahoo.com/markets/live/stock-market-today-tuesday-november-10-dow-sp-500-nasdaq-inflation-data-cpi-090627830.html"
+          "t": "Motley Fool 10.11",
+          "u": "https://www.fool.com/investing/2026/11/10/interesting-news-for-spacex-stock-and-tesla-stock-investors/"
         }
       ]
     },
@@ -366,17 +382,17 @@
       "nm": "Nvidia",
       "name": "Nvidia",
       "grp": "stk",
-      "dir": "blandet",
-      "why": "Opp ca. 4,7 % til $176,66 11.11 etter to fallende dager og CoreWeave-tall, men fortsatt ned ca. 14 % i november. Baird nedgraderte til nøytral samme dag.",
+      "dir": "ned",
+      "why": "Jensen Huang gikk av som sjef 12.11; finansdirektør Kress er midlertidig sjef. Aksjen ned ca. 10 % før åpning; Bernstein kuttet kursmål til $200 fra $400.",
       "event": "Kvartalstall 17.11",
       "src": [
         {
-          "t": "Yahoo Finance 11.11",
-          "u": "https://finance.yahoo.com/markets/live/stock-market-today-wednesday-november-11-dow-sp-500-nasdaq-nvidia-treasurys-veterans-day-140638547.html"
+          "t": "CoinDesk 12.11",
+          "u": "https://www.coindesk.com/tech/2026/11/12/live-news-strategy-kicked-out-of-msci-indexes-as-nvidia-slump-rattles-markets"
         },
         {
-          "t": "StockTitan 11.11",
-          "u": "https://www.stocktitan.net/articles/stock-market-today-live-november-11-2026"
+          "t": "TheStreet 12.11",
+          "u": "https://pro.thestreet.com/stock-market-today/2026-11-12"
         }
       ]
     }
