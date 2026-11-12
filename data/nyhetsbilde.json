@@ -1,6 +1,6 @@
 {
-  "updated": "12.11.2026 kl. 15:48",
-  "note": "Bakteppe: Nvidia-sjef Jensen Huang gikk av 12.11, og Nasdaq-futures falt ca. 1 % før åpning. Haukete Fed-taler etter varm KPI; markedet priser ca. 91 % sjanse for renteøkning 09.12, og 2-årsrenten steg til 4,80 %. Olje opp ca. 1,5 % til $87,6.",
+  "updated": "12.11.2026 kl. 17:45",
+  "note": "Bakteppe: Nvidia-sjef Jensen Huang gikk av 12.11; Nasdaq ned ca. 1,5 % og S&P 500 ned 0,7 % tidlig i handelen, mens Dow holdt seg i pluss. Markedet priser nesten sikker renteøkning 09.12. Olje svingte etter at Trump sa han ikke lenger er interessert i en Iran-avtale; Brent rundt $93,5.",
   "items": [
     {
       "nm": "Gull (XAU)",
@@ -383,16 +383,16 @@
       "name": "Nvidia",
       "grp": "stk",
       "dir": "ned",
-      "why": "Jensen Huang gikk av som sjef 12.11; finansdirektør Kress er midlertidig sjef. Aksjen ned ca. 10 % før åpning; Bernstein kuttet kursmål til $200 fra $400.",
+      "why": "Falt ca. 14 % etter åpning 12.11, med laveste kurs $148,80, etter at Jensen Huang gikk av som sjef. Andre AI- og brikkeaksjer falt 2–5 %.",
       "event": "Kvartalstall 17.11",
       "src": [
         {
-          "t": "CoinDesk 12.11",
-          "u": "https://www.coindesk.com/tech/2026/11/12/live-news-strategy-kicked-out-of-msci-indexes-as-nvidia-slump-rattles-markets"
+          "t": "BNN Bloomberg/AP 12.11",
+          "u": "https://www.bnnbloomberg.ca/markets/2026/11/12/nvidia-shares-plunge-13-at-open-after-ceo-jensen-huang-resigns/"
         },
         {
-          "t": "TheStreet 12.11",
-          "u": "https://pro.thestreet.com/stock-market-today/2026-11-12"
+          "t": "AOL 12.11",
+          "u": "https://www.aol.com/articles/stocks-drop-jensen-huangs-resignation-152300000.html"
         }
       ]
     }
