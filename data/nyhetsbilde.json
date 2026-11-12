@@ -1,6 +1,6 @@
 {
-  "updated": "12.11.2026 kl. 17:45",
-  "note": "Bakteppe: Nvidia-sjef Jensen Huang gikk av 12.11; Nasdaq ned ca. 1,5 % og S&P 500 ned 0,7 % tidlig i handelen, mens Dow holdt seg i pluss. Markedet priser nesten sikker renteøkning 09.12. Olje svingte etter at Trump sa han ikke lenger er interessert i en Iran-avtale; Brent rundt $93,5.",
+  "updated": "12.11.2026 kl. 18:45",
+  "note": "Bakteppe: Nvidia-sjef Jensen Huang gikk av 12.11, og CFO Colette Kress er midlertidig sjef. Indeksene hentet seg inn utover dagen: S&P 500 ca. −0,1 %, Nasdaq ca. −0,4 % og Dow ca. +0,1 % rundt kl. 16:50. Markedet priser nesten sikker renteøkning 09.12; Brent rundt $93,5.",
   "items": [
     {
       "nm": "Gull (XAU)",
@@ -21,12 +21,12 @@
       "name": "Bitcoin",
       "grp": "core",
       "dir": "ned",
-      "why": "Under $72 000 12.11 etter at Nvidia-sjef Huang gikk av; ned ca. 9 % på en uke. ETF-ene tapte ca. $300 mill. 11.11, femte utgangsdag.",
+      "why": "Rundt $71 300 12.11, ned 3,9 % siste døgn og laveste siden 20.08, etter at Nvidia-sjef Huang gikk av. ETF-ene tapte ca. $300 mill. 11.11, femte utgangsdag.",
       "event": "Fed-møte 08.–09.12",
       "src": [
         {
-          "t": "CoinDesk 12.11",
-          "u": "https://www.coindesk.com/tech/2026/11/12/live-news-strategy-kicked-out-of-msci-indexes-as-nvidia-slump-rattles-markets"
+          "t": "24/7 Wall St 12.11",
+          "u": "https://247wallst.com/investing/cryptocurrency/2026/11/12/bitcoin-fell-to-71800-after-nvidia-ceo-jensen-huang-resigned-is-that-why-btc-hit-its-lowest-price-since-august/"
         },
         {
           "t": "Coindoo 12.11",
@@ -383,16 +383,16 @@
       "name": "Nvidia",
       "grp": "stk",
       "dir": "ned",
-      "why": "Falt ca. 14 % etter åpning 12.11, med laveste kurs $148,80, etter at Jensen Huang gikk av som sjef. Andre AI- og brikkeaksjer falt 2–5 %.",
+      "why": "Falt opptil 13–14 % ved åpning 12.11 etter at Jensen Huang gikk av, men hentet seg inn til ca. −5 % ($165) kl. 10:51 New York-tid. CFO Colette Kress er midlertidig sjef.",
       "event": "Kvartalstall 17.11",
       "src": [
         {
-          "t": "BNN Bloomberg/AP 12.11",
-          "u": "https://www.bnnbloomberg.ca/markets/2026/11/12/nvidia-shares-plunge-13-at-open-after-ceo-jensen-huang-resigns/"
+          "t": "Yahoo Finance 12.11",
+          "u": "https://finance.yahoo.com/technology/live/nvidia-live-updates-jensen-huang-resigns-cfo-colette-kress-to-serve-as-interim-ceo-140341430.html"
         },
         {
-          "t": "AOL 12.11",
-          "u": "https://www.aol.com/articles/stocks-drop-jensen-huangs-resignation-152300000.html"
+          "t": "BNN Bloomberg/AP 12.11",
+          "u": "https://www.bnnbloomberg.ca/markets/2026/11/12/nvidia-shares-plunge-13-at-open-after-ceo-jensen-huang-resigns/"
         }
       ]
     }
