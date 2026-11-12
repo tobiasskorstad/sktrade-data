@@ -1,18 +1,18 @@
 {
-  "updated": "12.11.2026 kl. 18:45",
-  "note": "Bakteppe: Nvidia-sjef Jensen Huang gikk av 12.11, og CFO Colette Kress er midlertidig sjef. Indeksene hentet seg inn utover dagen: S&P 500 ca. −0,1 %, Nasdaq ca. −0,4 % og Dow ca. +0,1 % rundt kl. 16:50. Markedet priser nesten sikker renteøkning 09.12; Brent rundt $93,5.",
+  "updated": "12.11.2026 kl. 19:45",
+  "note": "Bakteppe: Nvidia-sjef Jensen Huang gikk av 12.11, og CFO Colette Kress er midlertidig sjef. Markedet priser ca. 94 % sjanse for renteøkning 09.12; 10-årsrenten er over 5 % og dollarindeksen over 103. Olje steg ca. 1,5 % til $87,6 etter Trump-uttalelse om Iran.",
   "items": [
     {
       "nm": "Gull (XAU)",
       "name": "Gull",
       "grp": "core",
       "dir": "ned",
-      "why": "Ned 2,1 % til ca. $3 905 12.11, tredje fallende dag. Sterk dollar og haukete Fed-taler; markedet priser ca. 91 % sjanse for renteøkning i desember.",
+      "why": "Falt til ca. $3 868 12.11, laveste siden september 2025. 10-årsrenten over 5 %, sterk dollar og ca. 94 % sjanse for renteøkning i desember.",
       "event": "Fed-møte 08.–09.12",
       "src": [
         {
-          "t": "Trading Economics 12.11",
-          "u": "https://tradingeconomics.com/commodity/gold"
+          "t": "CoinDesk 12.11",
+          "u": "https://www.coindesk.com/tech/2026/11/12/live-news-strategy-kicked-out-of-msci-indexes-as-nvidia-slump-rattles-markets"
         }
       ]
     },
@@ -21,16 +21,16 @@
       "name": "Bitcoin",
       "grp": "core",
       "dir": "ned",
-      "why": "Rundt $71 300 12.11, ned 3,9 % siste døgn og laveste siden 20.08, etter at Nvidia-sjef Huang gikk av. ETF-ene tapte ca. $300 mill. 11.11, femte utgangsdag.",
-      "event": "Fed-møte 08.–09.12",
+      "why": "Ned til $71 200 12.11, laveste på nesten 12 uker, etter Huangs avgang. Over $750 mill. likvidert på et døgn; MSCI fjerner Strategy fra indeksene 30.11.",
+      "event": "Strategy ut av MSCI 30.11",
       "src": [
         {
-          "t": "24/7 Wall St 12.11",
-          "u": "https://247wallst.com/investing/cryptocurrency/2026/11/12/bitcoin-fell-to-71800-after-nvidia-ceo-jensen-huang-resigned-is-that-why-btc-hit-its-lowest-price-since-august/"
+          "t": "The Block 12.11",
+          "u": "https://www.theblock.co/news/markets/2026-11-12-bitcoin-12-week-low-jensen-huang-exit-nvidia-438992"
         },
         {
-          "t": "Coindoo 12.11",
-          "u": "https://coindoo.com/bitcoin-under-72k-ethereum-under-2k-as-huang-exits-nvidia/"
+          "t": "CoinDesk 12.11",
+          "u": "https://www.coindesk.com/tech/2026/11/12/live-news-strategy-kicked-out-of-msci-indexes-as-nvidia-slump-rattles-markets"
         }
       ]
     },
