@@ -1,18 +1,18 @@
 {
- "updated": "12.11.2026 kl. 21:37",
- "note": "Bakteppe: Nvidia-sjef Jensen Huang gikk av 12.11; CFO Colette Kress er midlertidig sjef, og Trump foreslo Tim Cook som erstatter. Markedet priser ca. 94 % sjanse for renteøkning 09.12; 10-årsrenten er over 5 % og dollarindeksen over 103. Olje steg ca. 1,5 % til $87,6 etter Trump-uttalelse om Iran.",
+ "updated": "19.11.2026 kl. 21:38",
+ "note": "Bakteppe: Renteøkning fra Fed 09.12 er fullt priset inn, og ca. 70 % sjanse for en ny i januar (17.11). Dollarindeksen er rundt 103,5, nær 19-måneders topp. Nvidia leverte rekordtall 17.11 tross Huangs avgang.",
  "items": [
   {
    "nm": "Gull (XAU)",
    "name": "Gull",
    "grp": "core",
    "dir": "ned",
-   "why": "Falt til ca. $3 868 12.11, laveste siden september 2025. 10-årsrenten over 5 %, sterk dollar og ca. 94 % sjanse for renteøkning i desember.",
+   "why": "Rundt $3 853 17.11 etter 13-måneders bunn på $3 832 16.11. Renteøkning i desember er fullt priset inn, og dollarindeksen er ca. 103,5.",
    "event": "Fed-møte 08.–09.12",
    "src": [
     {
-     "t": "CoinDesk 12.11",
-     "u": "https://www.coindesk.com/tech/2026/11/12/live-news-strategy-kicked-out-of-msci-indexes-as-nvidia-slump-rattles-markets"
+     "t": "Mitrade/FXStreet 17.11",
+     "u": "https://www.mitrade.com/insights/news/live-news/article-2-2259420-20261117"
     }
    ]
   },
@@ -21,16 +21,16 @@
    "name": "Bitcoin",
    "grp": "core",
    "dir": "ned",
-   "why": "Ned til $71 200 12.11, laveste på nesten 12 uker, etter Huangs avgang. Over $750 mill. likvidert på et døgn; MSCI fjerner Strategy fra indeksene 30.11.",
+   "why": "Rundt $65 000 17.11, ned ca. 20 % på en måned. Bitcoin-ETF-ene tapte $1,07 mrd. uka til 13.11, andre uke på rad over $1 mrd.",
    "event": "Strategy ut av MSCI 30.11",
    "src": [
     {
-     "t": "The Block 12.11",
-     "u": "https://www.theblock.co/news/markets/2026-11-12-bitcoin-12-week-low-jensen-huang-exit-nvidia-438992"
+     "t": "Fortune 17.11",
+     "u": "https://fortune.com/article/price-of-bitcoin-11-17-2026/"
     },
     {
-     "t": "CoinDesk 12.11",
-     "u": "https://www.coindesk.com/tech/2026/11/12/live-news-strategy-kicked-out-of-msci-indexes-as-nvidia-slump-rattles-markets"
+     "t": "The Block 14.11",
+     "u": "https://www.theblock.co/news/markets/2026-11-14-bitcoin-etfs-lose-1-billion-for-the-second-week-in-a-row-as-crypto-funds-except-one-440337"
     }
    ]
   },
@@ -39,16 +39,16 @@
    "name": "Ethereum",
    "grp": "core",
    "dir": "ned",
-   "why": "Rundt $1 990–2 015 12.11, ned ca. 16 % på en uke. Ether-ETF-ene tapte ca. $145 mill. 11.11.",
+   "why": "Rundt $1 820 17.11. Ether-ETF-ene tapte $399 mill. uka til 13.11, sjuende negative uke på rad.",
    "event": "Fed-møte 08.–09.12",
    "src": [
     {
-     "t": "CoinDesk 12.11",
-     "u": "https://www.coindesk.com/tech/2026/11/12/live-news-strategy-kicked-out-of-msci-indexes-as-nvidia-slump-rattles-markets"
+     "t": "Fortune 17.11",
+     "u": "https://fortune.com/article/price-of-bitcoin-11-17-2026/"
     },
     {
-     "t": "Coindoo 12.11",
-     "u": "https://coindoo.com/bitcoin-under-72k-ethereum-under-2k-as-huang-exits-nvidia/"
+     "t": "The Block 14.11",
+     "u": "https://www.theblock.co/news/markets/2026-11-14-bitcoin-etfs-lose-1-billion-for-the-second-week-in-a-row-as-crypto-funds-except-one-440337"
     }
    ]
   },
@@ -57,16 +57,12 @@
    "name": "Solana",
    "grp": "core",
    "dir": "ned",
-   "why": "Rundt $81 12.11, ned ca. 3 % siste døgn og 15 % på en uke. SOL-fondene tapte ca. $6 mill. 11.11.",
+   "why": "SOL-ETF-ene tapte $32 mill. uka til 13.11, sjette negative uke på rad, men er fortsatt ca. $644 mill. i pluss i år.",
    "event": "–",
    "src": [
     {
-     "t": "CoinDesk 12.11",
-     "u": "https://www.coindesk.com/tech/2026/11/12/live-news-strategy-kicked-out-of-msci-indexes-as-nvidia-slump-rattles-markets"
-    },
-    {
-     "t": "Coindoo 12.11",
-     "u": "https://coindoo.com/bitcoin-under-72k-ethereum-under-2k-as-huang-exits-nvidia/"
+     "t": "The Block 14.11",
+     "u": "https://www.theblock.co/news/markets/2026-11-14-bitcoin-etfs-lose-1-billion-for-the-second-week-in-a-row-as-crypto-funds-except-one-440337"
     }
    ]
   },
@@ -75,16 +71,16 @@
    "name": "XRP",
    "grp": "core",
    "dir": "ned",
-   "why": "Rundt $1,02–1,03 12.11, ned ca. 2 % siste døgn og 21 % på en uke. Ingen strømmer i XRP-fondene 11.11.",
+   "why": "Rundt $0,97 17.11, under $1. XRP-ETF-ene tapte $19 mill. uka til 13.11, andre negative uke på rad.",
    "event": "–",
    "src": [
     {
-     "t": "CoinDesk 12.11",
-     "u": "https://www.coindesk.com/tech/2026/11/12/live-news-strategy-kicked-out-of-msci-indexes-as-nvidia-slump-rattles-markets"
+     "t": "Fortune 17.11",
+     "u": "https://fortune.com/article/price-of-bitcoin-11-17-2026/"
     },
     {
-     "t": "Coindoo 12.11",
-     "u": "https://coindoo.com/bitcoin-under-72k-ethereum-under-2k-as-huang-exits-nvidia/"
+     "t": "The Block 14.11",
+     "u": "https://www.theblock.co/news/markets/2026-11-14-bitcoin-etfs-lose-1-billion-for-the-second-week-in-a-row-as-crypto-funds-except-one-440337"
     }
    ]
   },
@@ -121,16 +117,12 @@
    "name": "Zcash",
    "grp": "top",
    "dir": "ned",
-   "why": "Rundt $955 12.11 etter fallet på ca. 14 % 11.11. Zcash-fondet tapte nesten $15 mill. 11.11.",
+   "why": "Grayscales Zcash-fond tapte $30,7 mill. uka til 13.11, og forvaltningen falt 32 % til $524 mill.",
    "event": "–",
    "src": [
     {
-     "t": "CoinDesk 12.11",
-     "u": "https://www.coindesk.com/tech/2026/11/12/live-news-strategy-kicked-out-of-msci-indexes-as-nvidia-slump-rattles-markets"
-    },
-    {
-     "t": "Coindoo 12.11",
-     "u": "https://coindoo.com/bitcoin-under-72k-ethereum-under-2k-as-huang-exits-nvidia/"
+     "t": "The Block 14.11",
+     "u": "https://www.theblock.co/news/markets/2026-11-14-bitcoin-etfs-lose-1-billion-for-the-second-week-in-a-row-as-crypto-funds-except-one-440337"
     }
    ]
   },
@@ -138,13 +130,13 @@
    "nm": "Hyperliquid",
    "name": "Hyperliquid",
    "grp": "top",
-   "dir": "blandet",
-   "why": "Rundt $73–75 10.11, ned 1–4 % siste døgn. Ble notert på sørkoreanske Upbit, som kan gi mer handel.",
+   "dir": "ned",
+   "why": "HYPE-ETF-ene tapte $4,3 mill. uka til 13.11, sjette uke på rad med uttak.",
    "event": "Regulatorisk godkjenning av ICE-avtalen (ingen dato)",
    "src": [
     {
-     "t": "CoinDesk 10.11",
-     "u": "https://www.coindesk.com/markets/2026/11/10/bitcoin-lags-stock-rebound-in-advance-of-u-s-inflation-report"
+     "t": "The Block 14.11",
+     "u": "https://www.theblock.co/news/markets/2026-11-14-bitcoin-etfs-lose-1-billion-for-the-second-week-in-a-row-as-crypto-funds-except-one-440337"
     }
    ]
   },
@@ -282,13 +274,13 @@
    "nm": "Avalanche",
    "name": "Avalanche",
    "grp": "top",
-   "dir": "opp",
-   "why": "Opp ca. 5 % siste døgn etter at NYSE valgte Avalanche til oppgjør på planlagt 24/7-plattform for tokeniserte verdipapirer; ned 2,6 % siden midnatt UTC 10.11.",
+   "dir": "blandet",
+   "why": "AVAX var eneste krypto-ETF-kategori med innstrømning uka til 13.11, men bare $227 000. NYSE-avtalen fra 10.11 står fortsatt.",
    "event": "–",
    "src": [
     {
-     "t": "CoinDesk 10.11",
-     "u": "https://www.coindesk.com/markets/2026/11/10/bitcoin-lags-stock-rebound-in-advance-of-u-s-inflation-report"
+     "t": "The Block 14.11",
+     "u": "https://www.theblock.co/news/markets/2026-11-14-bitcoin-etfs-lose-1-billion-for-the-second-week-in-a-row-as-crypto-funds-except-one-440337"
     }
    ]
   },
@@ -333,16 +325,12 @@
    "name": "SpaceX",
    "grp": "stk",
    "dir": "blandet",
-   "why": "Endte opp 5,8 % til $142,07 09.11 etter NASA-kontrakter for månebase. Motley Fool 10.11: nyvalgte politikere kan gjøre et oppkjøp av Tesla vanskeligere.",
-   "event": "Starship test 15 tidligst 13.11 kl. 23:45",
+   "why": "Starship Flight 15 nådde bane 13.11 og satte ut 26 Starlink V3-satellitter, men boosterfangsten ble avlyst og den landet i Mexicogolfen.",
+   "event": "–",
    "src": [
     {
-     "t": "Motley Fool 10.11",
-     "u": "https://www.fool.com/investing/2026/11/10/interesting-news-for-spacex-stock-and-tesla-stock-investors/"
-    },
-    {
-     "t": "Space Launch Schedule 10.11",
-     "u": "https://www.spacelaunchschedule.com/launch/starship-flight-15/"
+     "t": "Space.com 13.11",
+     "u": "https://www.space.com/space-exploration/launches-spacecraft/spacex-starship-flight-15-chopsticks-double-catch-super-heavy-ship"
     }
    ]
   },
@@ -351,16 +339,12 @@
    "name": "Microsoft",
    "grp": "stk",
    "dir": "blandet",
-   "why": "Falt 2,2 % 10.11 etter at Anthropic utfordret Office. Anthropic, der Microsoft er investor, søker opptil $1,4 bill. i verdsettelse ved notering, mulig neste uke.",
-   "event": "Anthropic-notering ca. 19.11",
+   "why": "Microsoft er blant ankerinvestorene i Anthropics private plassering på $26 mrd. Anthropic skal handles på Nasdaq fra 19.11, priset opptil ca. $1,4 bill.",
+   "event": "–",
    "src": [
     {
-     "t": "Current Logic 11.11",
-     "u": "https://currentlogic.substack.com/p/the-morning-brief-november-11-2026"
-    },
-    {
-     "t": "Yahoo Finance 11.11",
-     "u": "https://finance.yahoo.com/markets/live/stock-market-today-wednesday-november-11-dow-sp-500-nasdaq-nvidia-treasurys-123445799.html"
+     "t": "TNW 11.11",
+     "u": "https://thenextweb.com/news/anthropic-ipo-terms-1-4-trillion-valuation"
     }
    ]
   },
@@ -369,16 +353,12 @@
    "name": "Tesla",
    "grp": "stk",
    "dir": "blandet",
-   "why": "Ned ca. 0,8 % før åpning 12.11 da Nvidia-sjokket trakk ned teknologiaksjene. Endte opp 5,5 % til $378,05 09.11.",
+   "why": "Falt 2,7 % til $379,74 16.11 da teknologiaksjene falt. Cybercab tilbys til $29 990; WSJ: $3,31 mrd. til økt Cybercab-produksjon i Berlin.",
    "event": "Generalforsamling 03.12",
    "src": [
     {
-     "t": "Reuters/Yahoo 12.11",
-     "u": "https://finance.yahoo.com/markets/stocks/articles/nasdaq-futures-fall-nvidia-turmoil-093910045.html"
-    },
-    {
-     "t": "Motley Fool 10.11",
-     "u": "https://www.fool.com/investing/2026/11/10/interesting-news-for-spacex-stock-and-tesla-stock-investors/"
+     "t": "Gotrade 17.11",
+     "u": "https://www.heygotrade.com/en/news/tesla-tsla-stock-news-november-17-2026/"
     }
    ]
   },
@@ -386,17 +366,17 @@
    "nm": "Nvidia",
    "name": "Nvidia",
    "grp": "stk",
-   "dir": "ned",
-   "why": "Falt opptil 13–14 % 12.11 etter Huangs avgang, men tok inn tapet til ca. −5 %. Oppenheimer nedgraderte; Bernstein har kursmål $200, Dan Ives kuttet til $225.",
-   "event": "Kvartalstall 17.11",
+   "dir": "opp",
+   "why": "Rekordomsetning $115,8 mrd. (+103 %) 17.11, over forventning; guider ca. $130 mrd. neste kvartal. Steg ca. 4–5 % etter børsslutt fra $155,46.",
+   "event": "Utbytte utbetales 23.12",
    "src": [
     {
-     "t": "Yahoo Finance 12.11",
-     "u": "https://finance.yahoo.com/technology/live/nvidia-live-updates-jensen-huang-resigns-cfo-colette-kress-to-serve-as-interim-ceo-140341430.html"
+     "t": "Stock Titan 17.11",
+     "u": "https://www.stocktitan.net/articles/nvidia-q3-fiscal-2027-earnings-revenue-outlook"
     },
     {
-     "t": "CoinDesk 12.11",
-     "u": "https://www.coindesk.com/tech/2026/11/12/live-news-strategy-kicked-out-of-msci-indexes-as-nvidia-slump-rattles-markets"
+     "t": "Coinpedia 18.11",
+     "u": "https://coinpedia.org/crypto-live-news/nvidia-shares-rally-5-as-first-post-huang-quarter-smashes-records/amp/"
     }
    ]
   }
