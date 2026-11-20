@@ -1,5 +1,5 @@
 {
- "updated": "20.11.2026 kl. 17:37",
+ "updated": "20.11.2026 kl. 18:45",
  "note": "Bakteppe: Fed-referatet 19.11 viste at nesten alle støtter flere renteøkninger; markedet priser ca. 90 % for +25 punkter 09.12 og 10 % for +50. Dollaren er nær 19-måneders topp, og gull er under $3 700. Nasdaq-100 har tapt ca. $2 bill. i november.",
  "items": [
   {
@@ -52,13 +52,13 @@
    "nm": "Solana",
    "name": "Solana",
    "grp": "core",
-   "dir": "ned",
-   "why": "SOL-ETF-ene tapte $32 mill. uka til 13.11, sjette negative uke på rad, men er fortsatt ca. $644 mill. i pluss i år.",
+   "dir": "blandet",
+   "why": "Rundt $75 18.11, opp 3,4 % på døgnet men ned ca. 9 % på uka. SOL-ETF-ene fikk $11,7 mill. inn 16.11, første innstrømning siden 21.10.",
    "event": "–",
    "src": [
     {
-     "t": "The Block 14.11",
-     "u": "https://www.theblock.co/news/markets/2026-11-14-bitcoin-etfs-lose-1-billion-for-the-second-week-in-a-row-as-crypto-funds-except-one-440337"
+     "t": "Analytics Insight 18.11",
+     "u": "https://www.analyticsinsight.net/news/crypto-market-today-xrp-solana-near-rise-as-bitcoin-holds-near-usd-64500"
     }
    ]
   },
@@ -66,17 +66,13 @@
    "nm": "XRP",
    "name": "XRP",
    "grp": "core",
-   "dir": "ned",
-   "why": "Rundt $0,97 17.11, under $1. XRP-ETF-ene tapte $19 mill. uka til 13.11, andre negative uke på rad.",
+   "dir": "blandet",
+   "why": "Rundt $1 18.11, opp ca. 4,6 % siste døgn, etter å ha vært under $1 17.11. Markedet er fortsatt i ekstrem frykt.",
    "event": "–",
    "src": [
     {
-     "t": "Fortune 17.11",
-     "u": "https://fortune.com/article/price-of-bitcoin-11-17-2026/"
-    },
-    {
-     "t": "The Block 14.11",
-     "u": "https://www.theblock.co/news/markets/2026-11-14-bitcoin-etfs-lose-1-billion-for-the-second-week-in-a-row-as-crypto-funds-except-one-440337"
+     "t": "Analytics Insight 18.11",
+     "u": "https://www.analyticsinsight.net/news/crypto-market-today-xrp-solana-near-rise-as-bitcoin-holds-near-usd-64500"
     }
    ]
   },
@@ -85,12 +81,12 @@
    "name": "BNB",
    "grp": "core",
    "dir": "ned",
-   "why": "Rundt $652 12.11, ned fra ca. $684 10.11, i svakt marked etter Nvidia-sjokket.",
+   "why": "Rundt $592 18.11, ned fra ca. $652 12.11. Totalt kryptomarked ca. $2,26 bill.",
    "event": "–",
    "src": [
     {
-     "t": "Coindoo 12.11",
-     "u": "https://coindoo.com/bitcoin-under-72k-ethereum-under-2k-as-huang-exits-nvidia/"
+     "t": "Analytics Insight 18.11",
+     "u": "https://www.analyticsinsight.net/news/crypto-market-today-xrp-solana-near-rise-as-bitcoin-holds-near-usd-64500"
     }
    ]
   },
@@ -113,9 +109,13 @@
    "name": "Zcash",
    "grp": "top",
    "dir": "ned",
-   "why": "Grayscales Zcash-fond tapte $30,7 mill. uka til 13.11, og forvaltningen falt 32 % til $524 mill.",
+   "why": "Rundt $948 18.11, under $1 000. Grayscales Zcash-fond tapte $30,7 mill. uka til 13.11.",
    "event": "–",
    "src": [
+    {
+     "t": "Analytics Insight 18.11",
+     "u": "https://www.analyticsinsight.net/news/crypto-market-today-xrp-solana-near-rise-as-bitcoin-holds-near-usd-64500"
+    },
     {
      "t": "The Block 14.11",
      "u": "https://www.theblock.co/news/markets/2026-11-14-bitcoin-etfs-lose-1-billion-for-the-second-week-in-a-row-as-crypto-funds-except-one-440337"
@@ -210,13 +210,13 @@
    "nm": "NEAR",
    "name": "NEAR",
    "grp": "top",
-   "dir": "ned",
-   "why": "Elliptic: Nord-Korea-tilknyttede hackere brukte minst seks memecoins på NEAR til å hvitvaske ca. 117 000 stjålne NEAR (ca. $430 000), meldt 10.11.",
+   "dir": "blandet",
+   "why": "Rundt $3,36 18.11 og blant dagens vinnere, med $1,1 mill. i likviderte shortposisjoner. Elliptic-saken om hvitvasking fra 10.11 henger igjen.",
    "event": "–",
    "src": [
     {
-     "t": "KuCoin 10.11",
-     "u": "https://www.kucoin.com/news/articles/crypto-daily-market-report-november-10-2026"
+     "t": "Analytics Insight 18.11",
+     "u": "https://www.analyticsinsight.net/news/crypto-market-today-xrp-solana-near-rise-as-bitcoin-holds-near-usd-64500"
     }
    ]
   },
