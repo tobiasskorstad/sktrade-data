@@ -1,6 +1,6 @@
 {
- "updated": "20.11.2026 kl. 20:36",
- "note": "Bakteppe: Fed-referatet 19.11 viste at nesten alle støtter flere renteøkninger; markedet priser ca. 90 % for +25 punkter 09.12 og 10 % for +50. Dollaren er nær 19-måneders topp, og gull er under $3 700. Nasdaq-100 har tapt ca. $2 bill. i november.",
+ "updated": "20.11.2026 kl. 21:45",
+ "note": "Bakteppe: Bred AI-utsalg 20.11; Nasdaq 100 ned ca. 3,9 % midt på dagen og VIX nær 31, høyeste siden mars. Fed-guvernør Cook advarer mot å vente med renteøkning; Polymarket gir 94 % for ny økning innen 09.12. Gull er svakt.",
  "items": [
   {
    "nm": "Gull (XAU)",
@@ -21,16 +21,16 @@
    "name": "Bitcoin",
    "grp": "core",
    "dir": "ned",
-   "why": "Rundt $63 900 18.11, ned 1,5 % på 12 timer. Frykt-og-grådighetsindeksen er 13, og ca. halvparten av BTC-tilbudet ligger med urealisert tap (Glassnode).",
+   "why": "Under $60 000 20.11 for første gang siden juli, ca. $59 400. Spot-ETF-ene tapte $582,3 mill. 19.11, hvorav IBIT $541,1 mill.; ca. $3,47 mrd. ut i november.",
    "event": "Strategy ut av MSCI 30.11",
    "src": [
     {
-     "t": "Phemex 18.11",
-     "u": "https://phemex.com/fr/news/article/phemex-crypto-market-daily-russia-legalizes-crypto-funds-btc-holds-64k-as-etfs-bleed-nov-18-104048"
+     "t": "crypto.news 20.11",
+     "u": "https://crypto.news/bitcoin-below-60000-santiment-extreme-fear/"
     },
     {
-     "t": "KuCoin 18.11",
-     "u": "https://www.kucoin.com/news/articles/123457"
+     "t": "Coinpaper 20.11",
+     "u": "https://coinpaper.com/39113/bitcoin-etf-investors-withdraw-582-m-as-btc-falls-below-62-k"
     }
    ]
   },
@@ -334,13 +334,13 @@
    "nm": "Microsoft",
    "name": "Microsoft",
    "grp": "stk",
-   "dir": "blandet",
-   "why": "Anthropic, der Microsoft er blant ankerinvestorene, debuterte på Nasdaq 19.11: priset til $83, stengte på $97,17 (+17,1 %).",
+   "dir": "ned",
+   "why": "Anthropic, der Microsoft er blant ankerinvestorene, falt 12,8 % til ca. $84,7 20.11, like over IPO-prisen på $83. Nasdaq 100 ned ca. 3,9 %.",
    "event": "–",
    "src": [
     {
-     "t": "Stock Titan 19.11",
-     "u": "https://www.stocktitan.net/articles/anthropic-ipo-live-ant-first-trading-day-2026"
+     "t": "Stock Titan 20.11",
+     "u": "https://www.stocktitan.net/articles/stock-market-today-live-november-20-2026"
     }
    ]
   },
@@ -362,13 +362,13 @@
    "nm": "Nvidia",
    "name": "Nvidia",
    "grp": "stk",
-   "dir": "blandet",
-   "why": "Falt 2,9 % til ca. $152 18.11 tross rekordomsetning på $115,8 mrd. Mangel på fast toppsjef og WSJ-melding om SEC-gransking tynger.",
+   "dir": "ned",
+   "why": "Ned 7,2 % til ca. $135,5 midt på dagen 20.11, laveste siden mai 2025, i bredt brikkefall (AMD −11 %, Micron −13 %).",
    "event": "Utbytte utbetales 23.12",
    "src": [
     {
-     "t": "Star-Advertiser 18.11",
-     "u": "https://www.staradvertiser.com/2026/11/18/breaking-news/nvidia-retreats-as-strong-outlook-fails-to-dispel-uncertainty/"
+     "t": "Stock Titan 20.11",
+     "u": "https://www.stocktitan.net/articles/stock-market-today-live-november-20-2026"
     }
    ]
   }
