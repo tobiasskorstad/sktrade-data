@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-20T09:06+00:00",
+ "updated": "2026-11-21T08:43+00:00",
  "failed": [],
  "markets": [
   {
@@ -79,8 +79,8 @@
    "tv": "SP:SPX",
    "src": "Yahoo",
    "first": 13880,
-   "last": 20776,
-   "n": 4752
+   "last": 20777,
+   "n": 4753
   },
   {
    "key": "NDX",
@@ -89,8 +89,8 @@
    "tv": "NASDAQ:NDX",
    "src": "Yahoo",
    "first": 13880,
-   "last": 20776,
-   "n": 4752
+   "last": 20777,
+   "n": 4753
   },
   {
    "key": "EUR",
@@ -119,8 +119,8 @@
    "tv": "NASDAQ:GOOGL",
    "src": "Yahoo",
    "first": 13880,
-   "last": 20776,
-   "n": 4752
+   "last": 20777,
+   "n": 4753
   },
   {
    "key": "NVDA",
@@ -129,8 +129,8 @@
    "tv": "NASDAQ:NVDA",
    "src": "Yahoo",
    "first": 13880,
-   "last": 20776,
-   "n": 4752
+   "last": 20777,
+   "n": 4753
   },
   {
    "key": "AMZN",
@@ -139,8 +139,8 @@
    "tv": "NASDAQ:AMZN",
    "src": "Yahoo",
    "first": 13880,
-   "last": 20776,
-   "n": 4752
+   "last": 20777,
+   "n": 4753
   },
   {
    "key": "TSLA",
@@ -149,8 +149,8 @@
    "tv": "NASDAQ:TSLA",
    "src": "Yahoo",
    "first": 14789,
-   "last": 20776,
-   "n": 4125
+   "last": 20777,
+   "n": 4126
   },
   {
    "key": "INTC",
@@ -159,8 +159,8 @@
    "tv": "NASDAQ:INTC",
    "src": "Yahoo",
    "first": 13880,
-   "last": 20776,
-   "n": 4752
+   "last": 20777,
+   "n": 4753
   },
   {
    "key": "MSFT",
@@ -169,8 +169,8 @@
    "tv": "NASDAQ:MSFT",
    "src": "Yahoo",
    "first": 13880,
-   "last": 20776,
-   "n": 4752
+   "last": 20777,
+   "n": 4753
   },
   {
    "key": "BABA",
@@ -179,8 +179,8 @@
    "tv": "NYSE:BABA",
    "src": "Yahoo",
    "first": 16332,
-   "last": 20776,
-   "n": 3061
+   "last": 20777,
+   "n": 3062
   },
   {
    "key": "HIMS",
@@ -189,8 +189,8 @@
    "tv": "NYSE:HIMS",
    "src": "Yahoo",
    "first": 18152,
-   "last": 20776,
-   "n": 1807
+   "last": 20777,
+   "n": 1808
   }
  ]
 }
