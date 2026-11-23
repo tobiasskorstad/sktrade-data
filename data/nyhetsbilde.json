@@ -1,18 +1,22 @@
 {
- "updated": "20.11.2026 kl. 21:45",
- "note": "Bakteppe: Bred AI-utsalg 20.11; Nasdaq 100 ned ca. 3,9 % midt på dagen og VIX nær 31, høyeste siden mars. Fed-guvernør Cook advarer mot å vente med renteøkning; Polymarket gir 94 % for ny økning innen 09.12. Gull er svakt.",
+ "updated": "23.11.2026 kl. 15:38",
+ "note": "Bakteppe: S&P 500 falt 3,7 % og Nasdaq 5,3 % fredag 20.11, sjuende tapsdag på rad. Mandag 23.11 peker futures opp ca. 2–3 %. Markedet priser 96 % for renteøkning 09.12; PCE-tall onsdag 25.11, børsen stengt torsdag.",
  "items": [
   {
    "nm": "Gull (XAU)",
    "name": "Gull",
    "grp": "core",
-   "dir": "ned",
-   "why": "Falt under $3 700 19.11, laveste siden september 2025, etter Fed-referatet. Ned ytterligere 2 % til ca. $3 651 20.11.",
-   "event": "Fed-møte 08.–09.12",
+   "dir": "blandet",
+   "why": "Futures stengte på $3 515 fredag 20.11, laveste på over ett år, ned ca. 9 % på uka. Opp ca. 2–3 % til rundt $3 620 mandag 23.11.",
+   "event": "PCE 25.11, Fed 08.–09.12",
    "src": [
     {
-     "t": "Trading Economics 20.11",
-     "u": "https://tradingeconomics.com/commodity/gold/news/601952"
+     "t": "CryptoTicker 23.11",
+     "u": "https://cryptoticker.io/en/crypto-news-gold-price-jumps-3-percent-bitcoin/"
+    },
+    {
+     "t": "Capital Street FX 23.11",
+     "u": "https://www.capitalstreetfx.com/market-analysis/daily-commodity-report-23-nov-2026/"
     }
    ]
   },
@@ -20,17 +24,17 @@
    "nm": "Bitcoin",
    "name": "Bitcoin",
    "grp": "core",
-   "dir": "ned",
-   "why": "Under $60 000 20.11 for første gang siden juli, ca. $59 400. Spot-ETF-ene tapte $582,3 mill. 19.11, hvorav IBIT $541,1 mill.; ca. $3,47 mrd. ut i november.",
+   "dir": "blandet",
+   "why": "Bunn ca. $55 300 i helgen, laveste siden september 2024; tilbake over $61 000 23.11. ETF-ene tapte $669 mill. 20.11 og $4,14 mrd. i november.",
    "event": "Strategy ut av MSCI 30.11",
    "src": [
     {
-     "t": "crypto.news 20.11",
-     "u": "https://crypto.news/bitcoin-below-60000-santiment-extreme-fear/"
+     "t": "Bitcoin Foundation 23.11",
+     "u": "https://bitcoinfoundation.org/news/bitcoin/rebounding-stock-futures-help-bitcoin-recover-above-61k/"
     },
     {
-     "t": "Coinpaper 20.11",
-     "u": "https://coinpaper.com/39113/bitcoin-etf-investors-withdraw-582-m-as-btc-falls-below-62-k"
+     "t": "KuCoin 23.11",
+     "u": "https://www.kucoin.com/news/articles/crypto-daily-market-report-november-23-2026"
     }
    ]
   },
@@ -38,13 +42,17 @@
    "nm": "Ethereum",
    "name": "Ethereum",
    "grp": "core",
-   "dir": "ned",
-   "why": "Rundt $1 790 18.11, ned 1,7 % på 12 timer. Ether-ETF-ene tapte $29,1 mill. 17.11, hvorav BlackRocks ETHA $27,6 mill.",
+   "dir": "blandet",
+   "why": "Rundt $1 730 23.11, opp ca. 5 % siste døgn, men ned 5,2 % siste sju dager.",
    "event": "Fed-møte 08.–09.12",
    "src": [
     {
-     "t": "Phemex 18.11",
-     "u": "https://phemex.com/fr/news/article/phemex-crypto-market-daily-russia-legalizes-crypto-funds-btc-holds-64k-as-etfs-bleed-nov-18-104048"
+     "t": "CryptoTicker 23.11",
+     "u": "https://cryptoticker.io/en/crypto-news-gold-price-jumps-3-percent-bitcoin/"
+    },
+    {
+     "t": "Santiment 23.11",
+     "u": "https://santimentdata.substack.com/p/santiment-weekly-nov-23-multi-market"
     }
    ]
   },
@@ -53,12 +61,12 @@
    "name": "Solana",
    "grp": "core",
    "dir": "blandet",
-   "why": "Rundt $75 18.11, opp 3,4 % på døgnet men ned ca. 9 % på uka. SOL-ETF-ene fikk $11,7 mill. inn 16.11, første innstrømning siden 21.10.",
+   "why": "Ned bare 0,4 % siste sju dager til 23.11, langt bedre enn bitcoin (−5,7 %). Solana har fjernet «mainnet-beta»-merket.",
    "event": "–",
    "src": [
     {
-     "t": "Analytics Insight 18.11",
-     "u": "https://www.analyticsinsight.net/news/crypto-market-today-xrp-solana-near-rise-as-bitcoin-holds-near-usd-64500"
+     "t": "Santiment 23.11",
+     "u": "https://santimentdata.substack.com/p/santiment-weekly-nov-23-multi-market"
     }
    ]
   },
@@ -67,12 +75,16 @@
    "name": "XRP",
    "grp": "core",
    "dir": "blandet",
-   "why": "Rundt $1 18.11, opp ca. 4,6 % siste døgn, etter å ha vært under $1 17.11. Markedet er fortsatt i ekstrem frykt.",
+   "why": "Rundt $0,94 23.11, opp 2,9 % siste døgn; ned 2,4 % siste sju dager.",
    "event": "–",
    "src": [
     {
-     "t": "Analytics Insight 18.11",
-     "u": "https://www.analyticsinsight.net/news/crypto-market-today-xrp-solana-near-rise-as-bitcoin-holds-near-usd-64500"
+     "t": "CryptoTicker 23.11",
+     "u": "https://cryptoticker.io/en/crypto-news-gold-price-jumps-3-percent-bitcoin/"
+    },
+    {
+     "t": "Santiment 23.11",
+     "u": "https://santimentdata.substack.com/p/santiment-weekly-nov-23-multi-market"
     }
    ]
   },
@@ -109,16 +121,12 @@
    "name": "Zcash",
    "grp": "top",
    "dir": "ned",
-   "why": "Rundt $948 18.11, under $1 000. Grayscales Zcash-fond tapte $30,7 mill. uka til 13.11.",
+   "why": "Ned 13,3 % siste sju dager til 23.11, svakest av de store myntene.",
    "event": "–",
    "src": [
     {
-     "t": "Analytics Insight 18.11",
-     "u": "https://www.analyticsinsight.net/news/crypto-market-today-xrp-solana-near-rise-as-bitcoin-holds-near-usd-64500"
-    },
-    {
-     "t": "The Block 14.11",
-     "u": "https://www.theblock.co/news/markets/2026-11-14-bitcoin-etfs-lose-1-billion-for-the-second-week-in-a-row-as-crypto-funds-except-one-440337"
+     "t": "Santiment 23.11",
+     "u": "https://santimentdata.substack.com/p/santiment-weekly-nov-23-multi-market"
     }
    ]
   },
@@ -141,12 +149,12 @@
    "name": "Dogecoin",
    "grp": "top",
    "dir": "ned",
-   "why": "Rundt $0,065 12.11, ned fra ca. $0,067 10.11 i bredt kryptofall.",
+   "why": "Ned 6,1 % siste sju dager til 23.11, mer enn bitcoin.",
    "event": "–",
    "src": [
     {
-     "t": "Coindoo 12.11",
-     "u": "https://coindoo.com/bitcoin-under-72k-ethereum-under-2k-as-huang-exits-nvidia/"
+     "t": "Santiment 23.11",
+     "u": "https://santimentdata.substack.com/p/santiment-weekly-nov-23-multi-market"
     }
    ]
   },
@@ -154,13 +162,13 @@
    "nm": "Monero",
    "name": "Monero",
    "grp": "top",
-   "dir": "blandet",
-   "why": "Opp ca. 2 % 11.11 etter fall på 7,8 % siste døgn til 10.11.",
+   "dir": "opp",
+   "why": "Eneste store mynt som steg siste sju dager til 23.11, opp 1,6 %.",
    "event": "–",
    "src": [
     {
-     "t": "CoinDesk 11.11",
-     "u": "https://www.coindesk.com/markets/2026/11/11/bitcoin-sits-out-stock-rebound-as-etf-outflows-extend-to-fourth-day"
+     "t": "Santiment 23.11",
+     "u": "https://santimentdata.substack.com/p/santiment-weekly-nov-23-multi-market"
     }
    ]
   },
@@ -168,13 +176,13 @@
    "nm": "Chainlink",
    "name": "Chainlink",
    "grp": "top",
-   "dir": "ned",
-   "why": "Rundt $9,81 12.11, ned fra ca. $10,40 10.11 i bredt kryptofall.",
+   "dir": "blandet",
+   "why": "Ned 2,6 % siste sju dager til 23.11, mindre enn bitcoin.",
    "event": "–",
    "src": [
     {
-     "t": "Coindoo 12.11",
-     "u": "https://coindoo.com/bitcoin-under-72k-ethereum-under-2k-as-huang-exits-nvidia/"
+     "t": "Santiment 23.11",
+     "u": "https://santimentdata.substack.com/p/santiment-weekly-nov-23-multi-market"
     }
    ]
   },
@@ -348,13 +356,13 @@
    "nm": "Tesla",
    "name": "Tesla",
    "grp": "stk",
-   "dir": "blandet",
-   "why": "Falt 2,7 % til $379,74 16.11 da teknologiaksjene falt. Cybercab tilbys til $29 990; WSJ: $3,31 mrd. til økt Cybercab-produksjon i Berlin.",
+   "dir": "ned",
+   "why": "Stengte på $345,82 20.11, ned 7,64 % på dagen, 13,5 % i november og 23,1 % hittil i år.",
    "event": "Generalforsamling 03.12",
    "src": [
     {
-     "t": "Gotrade 17.11",
-     "u": "https://www.heygotrade.com/en/news/tesla-tsla-stock-news-november-17-2026/"
+     "t": "AAII 21.11",
+     "u": "https://www.aaii.com/investingideas/article/563690-why-tesla-inc8217s-tsla-stock-is-down-978"
     }
    ]
   },
@@ -362,13 +370,17 @@
    "nm": "Nvidia",
    "name": "Nvidia",
    "grp": "stk",
-   "dir": "ned",
-   "why": "Ned 7,2 % til ca. $135,5 midt på dagen 20.11, laveste siden mai 2025, i bredt brikkefall (AMD −11 %, Micron −13 %).",
+   "dir": "blandet",
+   "why": "Falt ca. 14 % fredag 20.11 og ca. 23 % på uka. Opp ca. 8 % før åpning 23.11.",
    "event": "Utbytte utbetales 23.12",
    "src": [
     {
-     "t": "Stock Titan 20.11",
-     "u": "https://www.stocktitan.net/articles/stock-market-today-live-november-20-2026"
+     "t": "KuCoin 23.11",
+     "u": "https://www.kucoin.com/news/articles/crypto-daily-market-report-november-23-2026"
+    },
+    {
+     "t": "Bitcoin Foundation 23.11",
+     "u": "https://bitcoinfoundation.org/news/bitcoin/rebounding-stock-futures-help-bitcoin-recover-above-61k/"
     }
    ]
   }
