@@ -1,22 +1,22 @@
 {
- "updated": "23.11.2026 kl. 15:38",
- "note": "Bakteppe: S&P 500 falt 3,7 % og Nasdaq 5,3 % fredag 20.11, sjuende tapsdag på rad. Mandag 23.11 peker futures opp ca. 2–3 %. Markedet priser 96 % for renteøkning 09.12; PCE-tall onsdag 25.11, børsen stengt torsdag.",
+ "updated": "23.11.2026 kl. 16:37",
+ "note": "Bakteppe: Nvidia gjeninnsatte Jensen Huang som toppsjef 23.11, og Nasdaq steg rundt 6–7 % ved åpning etter sju tapsdager på rad. Markedet priser ca. 91–92 % for renteøkning 09.12, tiårsrenta ca. 4,97 %. PCE-tall onsdag 25.11, børsen stengt torsdag.",
  "items": [
   {
    "nm": "Gull (XAU)",
    "name": "Gull",
    "grp": "core",
    "dir": "blandet",
-   "why": "Futures stengte på $3 515 fredag 20.11, laveste på over ett år, ned ca. 9 % på uka. Opp ca. 2–3 % til rundt $3 620 mandag 23.11.",
+   "why": "Futures stengte på $3 515 fredag 20.11, laveste på over ett år. Opp ca. 4,4 % til rundt $3 668 mandag 23.11 ved børsåpning.",
    "event": "PCE 25.11, Fed 08.–09.12",
    "src": [
     {
-     "t": "CryptoTicker 23.11",
-     "u": "https://cryptoticker.io/en/crypto-news-gold-price-jumps-3-percent-bitcoin/"
+     "t": "Yahoo Finance 23.11",
+     "u": "https://finance.yahoo.com/markets/live/stock-market-today-monday-november-23-dow-sp-500-nasdaq-091118583.html"
     },
     {
-     "t": "Capital Street FX 23.11",
-     "u": "https://www.capitalstreetfx.com/market-analysis/daily-commodity-report-23-nov-2026/"
+     "t": "CryptoTicker 23.11",
+     "u": "https://cryptoticker.io/en/crypto-news-gold-price-jumps-3-percent-bitcoin/"
     }
    ]
   },
@@ -25,12 +25,12 @@
    "name": "Bitcoin",
    "grp": "core",
    "dir": "blandet",
-   "why": "Bunn ca. $55 300 i helgen, laveste siden september 2024; tilbake over $61 000 23.11. ETF-ene tapte $669 mill. 20.11 og $4,14 mrd. i november.",
+   "why": "Bunn ca. $55 300 i helgen; rundt $63 900 ved børsåpning 23.11, opp ca. 5 %. ETF-ene tapte $669 mill. 20.11 og $4,14 mrd. i november.",
    "event": "Strategy ut av MSCI 30.11",
    "src": [
     {
-     "t": "Bitcoin Foundation 23.11",
-     "u": "https://bitcoinfoundation.org/news/bitcoin/rebounding-stock-futures-help-bitcoin-recover-above-61k/"
+     "t": "Yahoo Finance 23.11",
+     "u": "https://finance.yahoo.com/markets/live/stock-market-today-monday-november-23-dow-sp-500-nasdaq-091118583.html"
     },
     {
      "t": "KuCoin 23.11",
@@ -370,17 +370,17 @@
    "nm": "Nvidia",
    "name": "Nvidia",
    "grp": "stk",
-   "dir": "blandet",
-   "why": "Falt ca. 14 % fredag 20.11 og ca. 23 % på uka. Opp ca. 8 % før åpning 23.11.",
+   "dir": "opp",
+   "why": "Opp ca. 28–32 % til rundt $161–166 ved åpning 23.11 etter at styret gjeninnsatte Jensen Huang som toppsjef. Granskingen av Megaspeed-båndene fortsetter.",
    "event": "Utbytte utbetales 23.12",
    "src": [
     {
-     "t": "KuCoin 23.11",
-     "u": "https://www.kucoin.com/news/articles/crypto-daily-market-report-november-23-2026"
+     "t": "Yahoo Finance 23.11",
+     "u": "https://finance.yahoo.com/markets/live/stock-market-today-monday-november-23-dow-sp-500-nasdaq-091118583.html"
     },
     {
-     "t": "Bitcoin Foundation 23.11",
-     "u": "https://bitcoinfoundation.org/news/bitcoin/rebounding-stock-futures-help-bitcoin-recover-above-61k/"
+     "t": "24/7 Wall St 23.11",
+     "u": "https://247wallst.com/investing/2026/11/23/nvidia-jumps-28-as-chip-stocks-rebound-from-last-weeks-ai-sell-off-intel-rallies-13-amd-gains-7/"
     }
    ]
   }
