@@ -1,22 +1,22 @@
 {
- "updated": "24.11.2026 kl. 16:42",
- "note": "Bakteppe: Nvidia steg 31,5 % mandag 23.11 etter at Jensen Huang ble gjeninnsatt, og Dow stengte opp 3,11 % på 49 643. Markedet priser ca. 93–95 % for renteøkning 09.12, dollaren nær 19-måneders topp. PCE-tall onsdag 25.11, børsen stengt torsdag.",
+ "updated": "24.11.2026 kl. 17:38",
+ "note": "Bakteppe: Nasdaq falt ca. 1,8 % og S&P 500 ca. 1,2 % tidlig tirsdag 24.11 da brikkeaksjene ga tilbake noe av mandagens rally. Markedet priser 95 % for renteøkning på 0,25 prosentpoeng i desember, tiårsrenten rundt 4,92 %. PCE-tall onsdag 25.11, børsen stengt torsdag.",
  "items": [
   {
    "nm": "Gull (XAU)",
    "name": "Gull",
    "grp": "core",
    "dir": "blandet",
-   "why": "Steg ca. 4 % mot $3 680 mandag 23.11 etter et fall på 9 % uka før. Sterk dollar og 93–95 % sjanse for renteøkning holder igjen.",
+   "why": "Falt ca. 1,3 % til rundt $3 605 tirsdag 24.11, etter oppgangen på ca. 4 % mandag. 95 % sjanse for renteøkning i desember holder igjen.",
    "event": "PCE 25.11, Fed 08.–09.12",
    "src": [
     {
-     "t": "Trading Economics 24.11",
-     "u": "https://tradingeconomics.com/commodity/gold/news/601952"
+     "t": "Yahoo Finance 24.11",
+     "u": "https://finance.yahoo.com/markets/live/stock-market-today-tuesday-november-24-dow-sp-500-nasdaq-chip-stocks-nvidia-140629923.html"
     },
     {
-     "t": "Yahoo Finance 23.11",
-     "u": "https://finance.yahoo.com/markets/live/stock-market-today-monday-november-23-dow-sp-500-nasdaq-091118583.html"
+     "t": "Trading Economics 24.11",
+     "u": "https://tradingeconomics.com/commodity/gold/news/601952"
     }
    ]
   },
@@ -25,12 +25,12 @@
    "name": "Bitcoin",
    "grp": "core",
    "dir": "blandet",
-   "why": "Bunn ca. $55 300 i helgen; rundt $63 900 ved børsåpning 23.11, opp ca. 5 %. ETF-ene tapte $669 mill. 20.11 og $4,14 mrd. i november.",
+   "why": "Falt ca. 4,9 % til rundt $59 700 tirsdag 24.11, etter bunn ca. $55 300 i helgen. ETF-ene tapte $4,14 mrd. i november.",
    "event": "Strategy ut av MSCI 30.11",
    "src": [
     {
-     "t": "Yahoo Finance 23.11",
-     "u": "https://finance.yahoo.com/markets/live/stock-market-today-monday-november-23-dow-sp-500-nasdaq-091118583.html"
+     "t": "Yahoo Finance 24.11",
+     "u": "https://finance.yahoo.com/markets/live/stock-market-today-tuesday-november-24-dow-sp-500-nasdaq-chip-stocks-nvidia-140629923.html"
     },
     {
      "t": "KuCoin 23.11",
@@ -370,17 +370,17 @@
    "nm": "Nvidia",
    "name": "Nvidia",
    "grp": "stk",
-   "dir": "opp",
-   "why": "Stengte opp 31,5 % mandag 23.11 etter at styret gjeninnsatte Jensen Huang som toppsjef. Granskingen av Megaspeed-båndene fortsetter.",
+   "dir": "blandet",
+   "why": "Ned ca. 5 % tidlig tirsdag 24.11 etter oppgangen på 31,5 % mandag da Jensen Huang ble gjeninnsatt. Også AMD, Micron og Broadcom falt.",
    "event": "Utbytte utbetales 23.12",
    "src": [
     {
-     "t": "Trading Economics 24.11",
-     "u": "https://tradingeconomics.com/united-states/stock-market/news/504530"
+     "t": "Yahoo Finance 24.11",
+     "u": "https://finance.yahoo.com/markets/live/stock-market-today-tuesday-november-24-dow-sp-500-nasdaq-chip-stocks-nvidia-140629923.html"
     },
     {
-     "t": "24/7 Wall St 23.11",
-     "u": "https://247wallst.com/investing/2026/11/23/nvidia-jumps-28-as-chip-stocks-rebound-from-last-weeks-ai-sell-off-intel-rallies-13-amd-gains-7/"
+     "t": "Trading Economics 24.11",
+     "u": "https://tradingeconomics.com/united-states/stock-market/news/504530"
     }
    ]
   }
