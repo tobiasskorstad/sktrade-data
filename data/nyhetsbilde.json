@@ -1,6 +1,6 @@
 {
- "updated": "24.11.2026 kl. 17:38",
- "note": "Bakteppe: Nasdaq falt ca. 1,8 % og S&P 500 ca. 1,2 % tidlig tirsdag 24.11 da brikkeaksjene ga tilbake noe av mandagens rally. Markedet priser 95 % for renteøkning på 0,25 prosentpoeng i desember, tiårsrenten rundt 4,92 %. PCE-tall onsdag 25.11, børsen stengt torsdag.",
+ "updated": "24.11.2026 kl. 18:42",
+ "note": "Bakteppe: S&P 500 ca. −1,2 % og Nasdaq ca. −2 % tirsdag 24.11 da brikkeaksjene ga tilbake mandagens rally; meldinger om mulig høyere USA-toll mot Kina og EU tynget. Markedet priser 95 % for renteøkning i desember. PCE-tall onsdag 25.11, børsen stengt torsdag.",
  "items": [
   {
    "nm": "Gull (XAU)",
@@ -329,9 +329,13 @@
    "name": "SpaceX",
    "grp": "stk",
    "dir": "blandet",
-   "why": "Starship Flight 15 nådde bane 13.11 og satte ut 26 Starlink V3-satellitter, men boosterfangsten ble avlyst og den landet i Mexicogolfen.",
+   "why": "Ned ca. 2,6 % ved åpning tirsdag 24.11 i et bredt fall i teknologiaksjer. Starship Flight 15 nådde bane 13.11, men boosterfangsten ble avlyst.",
    "event": "–",
    "src": [
+    {
+     "t": "Trading Economics 24.11",
+     "u": "https://tradingeconomics.com/united-states/stock-market/news/504530"
+    },
     {
      "t": "Space.com 13.11",
      "u": "https://www.space.com/space-exploration/launches-spacecraft/spacex-starship-flight-15-chopsticks-double-catch-super-heavy-ship"
@@ -343,9 +347,13 @@
    "name": "Microsoft",
    "grp": "stk",
    "dir": "ned",
-   "why": "Anthropic, der Microsoft er blant ankerinvestorene, falt 12,8 % til ca. $84,7 20.11, like over IPO-prisen på $83. Nasdaq 100 ned ca. 3,9 %.",
+   "why": "Anthropic, der Microsoft er blant ankerinvestorene, falt under IPO-prisen på $83 tirsdag 24.11, etter fall på 12,8 % 20.11. Nasdaq ned ca. 2 %.",
    "event": "–",
    "src": [
+    {
+     "t": "Trading Economics 24.11",
+     "u": "https://tradingeconomics.com/united-states/stock-market/news/504530"
+    },
     {
      "t": "Stock Titan 20.11",
      "u": "https://www.stocktitan.net/articles/stock-market-today-live-november-20-2026"
@@ -371,7 +379,7 @@
    "name": "Nvidia",
    "grp": "stk",
    "dir": "blandet",
-   "why": "Ned ca. 5 % tidlig tirsdag 24.11 etter oppgangen på 31,5 % mandag da Jensen Huang ble gjeninnsatt. Også AMD, Micron og Broadcom falt.",
+   "why": "Ned ca. 5,5 % tirsdag 24.11 på styringsbekymringer etter at Jensen Huang ble gjeninnsatt, etter oppgangen på 31,5 % mandag. Micron og Intel falt opptil 10 %.",
    "event": "Utbytte utbetales 23.12",
    "src": [
     {
