@@ -1,22 +1,22 @@
 {
- "updated": "23.11.2026 kl. 21:41",
- "note": "Bakteppe: Nvidia gjeninnsatte Jensen Huang som toppsjef 23.11, og Nasdaq steg rundt 6–7 % ved åpning etter sju tapsdager på rad. Markedet priser ca. 91–92 % for renteøkning 09.12, tiårsrenta ca. 4,97 %. PCE-tall onsdag 25.11, børsen stengt torsdag.",
+ "updated": "24.11.2026 kl. 15:55",
+ "note": "Bakteppe: Nvidia steg 31,5 % mandag 23.11 etter at Jensen Huang ble gjeninnsatt, og Dow stengte opp 3,11 % på 49 643. Markedet priser ca. 93–95 % for renteøkning 09.12, dollaren nær 19-måneders topp. PCE-tall onsdag 25.11, børsen stengt torsdag.",
  "items": [
   {
    "nm": "Gull (XAU)",
    "name": "Gull",
    "grp": "core",
    "dir": "blandet",
-   "why": "Futures stengte på $3 515 fredag 20.11, laveste på over ett år. Opp ca. 4,4 % til rundt $3 668 mandag 23.11 ved børsåpning.",
+   "why": "Steg ca. 4 % mot $3 680 mandag 23.11 etter et fall på 9 % uka før. Sterk dollar og 93–95 % sjanse for renteøkning holder igjen.",
    "event": "PCE 25.11, Fed 08.–09.12",
    "src": [
     {
-     "t": "Yahoo Finance 23.11",
-     "u": "https://finance.yahoo.com/markets/live/stock-market-today-monday-november-23-dow-sp-500-nasdaq-091118583.html"
+     "t": "Trading Economics 24.11",
+     "u": "https://tradingeconomics.com/commodity/gold/news/601952"
     },
     {
-     "t": "CryptoTicker 23.11",
-     "u": "https://cryptoticker.io/en/crypto-news-gold-price-jumps-3-percent-bitcoin/"
+     "t": "Yahoo Finance 23.11",
+     "u": "https://finance.yahoo.com/markets/live/stock-market-today-monday-november-23-dow-sp-500-nasdaq-091118583.html"
     }
    ]
   },
@@ -371,12 +371,12 @@
    "name": "Nvidia",
    "grp": "stk",
    "dir": "opp",
-   "why": "Opp ca. 28–32 % til rundt $161–166 ved åpning 23.11 etter at styret gjeninnsatte Jensen Huang som toppsjef. Granskingen av Megaspeed-båndene fortsetter.",
+   "why": "Stengte opp 31,5 % mandag 23.11 etter at styret gjeninnsatte Jensen Huang som toppsjef. Granskingen av Megaspeed-båndene fortsetter.",
    "event": "Utbytte utbetales 23.12",
    "src": [
     {
-     "t": "Yahoo Finance 23.11",
-     "u": "https://finance.yahoo.com/markets/live/stock-market-today-monday-november-23-dow-sp-500-nasdaq-091118583.html"
+     "t": "Trading Economics 24.11",
+     "u": "https://tradingeconomics.com/united-states/stock-market/news/504530"
     },
     {
      "t": "24/7 Wall St 23.11",
