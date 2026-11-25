@@ -1,22 +1,22 @@
 {
- "updated": "24.11.2026 kl. 21:36",
- "note": "Bakteppe: S&P 500 ca. −1,2 % og Nasdaq ca. −2 % tirsdag 24.11 da brikkeaksjene ga tilbake mandagens rally; meldinger om mulig høyere USA-toll mot Kina og EU tynget. Markedet priser 95 % for renteøkning i desember. PCE-tall onsdag 25.11, børsen stengt torsdag.",
+ "updated": "25.11.2026 kl. 15:45",
+ "note": "Bakteppe: Kjerne-PCE for oktober steg 3,3 % på årsbasis (ventet 3,2 %) og 0,3 % på måneden, ifølge tall 25.11. Det støtter markedets prising av renteøkning på Fed-møtet 08.–09.12. Tirsdag 24.11 falt Nasdaq ca. 2 %; børsen er stengt torsdag.",
  "items": [
   {
    "nm": "Gull (XAU)",
    "name": "Gull",
    "grp": "core",
    "dir": "blandet",
-   "why": "Falt ca. 1,3 % til rundt $3 605 tirsdag 24.11, etter oppgangen på ca. 4 % mandag. 95 % sjanse for renteøkning i desember holder igjen.",
-   "event": "PCE 25.11, Fed 08.–09.12",
+   "why": "Falt ca. 1,3 % til rundt $3 605 tirsdag 24.11. Kjerne-PCE på 3,3 % 25.11 (ventet 3,2 %) styrker renteøkningsforventningene.",
+   "event": "Fed 08.–09.12",
    "src": [
     {
      "t": "Yahoo Finance 24.11",
      "u": "https://finance.yahoo.com/markets/live/stock-market-today-tuesday-november-24-dow-sp-500-nasdaq-chip-stocks-nvidia-140629923.html"
     },
     {
-     "t": "Trading Economics 24.11",
-     "u": "https://tradingeconomics.com/commodity/gold/news/601952"
+     "t": "Seeking Alpha 25.11",
+     "u": "https://seekingalpha.com/news/4676533-core-pce-price-index-rises-33-yy-slightly-hotter-than-expected"
     }
    ]
   },
