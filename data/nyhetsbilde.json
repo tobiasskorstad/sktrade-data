@@ -1,6 +1,6 @@
 {
- "updated": "25.11.2026 kl. 16:36",
- "note": "Bakteppe: Kjerne-PCE for oktober steg 3,3 % på årsbasis (ventet 3,2 %) og 0,3 % på måneden, ifølge tall 25.11. Det støtter markedets prising av renteøkning på Fed-møtet 08.–09.12. Tirsdag 24.11 falt Nasdaq ca. 2 %; børsen er stengt torsdag.",
+ "updated": "25.11.2026 kl. 17:45",
+ "note": "Bakteppe: Kjerne-PCE for oktober steg 3,3 % på årsbasis (ventet 3,2 %), og BNP ble revidert opp 25.11. Dow åpnet ca. 1,8 % lavere og Nasdaq 100 falt opptil 4 % onsdag, også etter nye amerikanske tollhevinger. Fed-møte 08.–09.12; børsen er stengt torsdag.",
  "items": [
   {
    "nm": "Gull (XAU)",
@@ -328,17 +328,17 @@
    "nm": "SpaceX",
    "name": "SpaceX",
    "grp": "stk",
-   "dir": "blandet",
-   "why": "Ned ca. 2,6 % ved åpning tirsdag 24.11 i et bredt fall i teknologiaksjer. Starship Flight 15 nådde bane 13.11, men boosterfangsten ble avlyst.",
+   "dir": "ned",
+   "why": "Ned ca. 8,6 % etter åpning onsdag 25.11 og ledet fallet i Dow, etter ca. 2,6 % ned tirsdag. Bredt teknologisalg og nye tollhevinger.",
    "event": "–",
    "src": [
     {
-     "t": "Trading Economics 24.11",
-     "u": "https://tradingeconomics.com/united-states/stock-market/news/504530"
+     "t": "Trading Economics 25.11",
+     "u": "https://tradingeconomics.com/united-states/stock-market/news/578299"
     },
     {
-     "t": "Space.com 13.11",
-     "u": "https://www.space.com/space-exploration/launches-spacecraft/spacex-starship-flight-15-chopsticks-double-catch-super-heavy-ship"
+     "t": "Trading Economics 24.11",
+     "u": "https://tradingeconomics.com/united-states/stock-market/news/504530"
     }
    ]
   },
@@ -347,12 +347,12 @@
    "name": "Microsoft",
    "grp": "stk",
    "dir": "ned",
-   "why": "Anthropic, der Microsoft er blant ankerinvestorene, falt under IPO-prisen på $83 tirsdag 24.11, etter fall på 12,8 % 20.11. Nasdaq ned ca. 2 %.",
+   "why": "Ned opptil 4 % onsdag 25.11 i bredt teknologifall. Anthropic, der Microsoft er blant ankerinvestorene, lå ca. 8 % under IPO-prisen på $83.",
    "event": "–",
    "src": [
     {
-     "t": "Trading Economics 24.11",
-     "u": "https://tradingeconomics.com/united-states/stock-market/news/504530"
+     "t": "Trading Economics 25.11",
+     "u": "https://tradingeconomics.com/united-states/stock-market/news/578299"
     },
     {
      "t": "Stock Titan 20.11",
@@ -378,17 +378,17 @@
    "nm": "Nvidia",
    "name": "Nvidia",
    "grp": "stk",
-   "dir": "blandet",
-   "why": "Ned ca. 5,5 % tirsdag 24.11 på styringsbekymringer etter at Jensen Huang ble gjeninnsatt, etter oppgangen på 31,5 % mandag. Micron og Intel falt opptil 10 %.",
+   "dir": "ned",
+   "why": "Ned ca. 8 % onsdag 25.11, etter fall på ca. 6 % tirsdag, på bekymring for statlig innflytelse over styringen etter Huangs retur. Broadcom, AMD og Micron ned opptil 8 %.",
    "event": "Utbytte utbetales 23.12",
    "src": [
     {
-     "t": "Yahoo Finance 24.11",
-     "u": "https://finance.yahoo.com/markets/live/stock-market-today-tuesday-november-24-dow-sp-500-nasdaq-chip-stocks-nvidia-140629923.html"
+     "t": "Trading Economics 25.11",
+     "u": "https://tradingeconomics.com/united-states/stock-market/news/578299"
     },
     {
-     "t": "Trading Economics 24.11",
-     "u": "https://tradingeconomics.com/united-states/stock-market/news/504530"
+     "t": "Yahoo Finance 24.11",
+     "u": "https://finance.yahoo.com/markets/live/stock-market-today-tuesday-november-24-dow-sp-500-nasdaq-chip-stocks-nvidia-140629923.html"
     }
    ]
   }
