@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-26T09:59+00:00",
+ "updated": "2026-11-27T10:04+00:00",
  "failed": [],
  "markets": [
   {
@@ -9,7 +9,7 @@
    "tv": "TVC:SILVER",
    "src": "Yahoo",
    "first": 13880,
-   "last": 20783,
+   "last": 20784,
    "n": 4756
   },
   {
@@ -19,7 +19,7 @@
    "tv": "COMEX:HG1!",
    "src": "Yahoo",
    "first": 13880,
-   "last": 20783,
+   "last": 20784,
    "n": 4757
   },
   {
@@ -29,7 +29,7 @@
    "tv": "TVC:PLATINUM",
    "src": "Yahoo",
    "first": 13880,
-   "last": 20783,
+   "last": 20784,
    "n": 4472
   },
   {
@@ -39,7 +39,7 @@
    "tv": "TVC:USOIL",
    "src": "Yahoo",
    "first": 13880,
-   "last": 20783,
+   "last": 20784,
    "n": 4755
   },
   {
@@ -49,7 +49,7 @@
    "tv": "TVC:UKOIL",
    "src": "Yahoo",
    "first": 13880,
-   "last": 20783,
+   "last": 20784,
    "n": 4705
   },
   {
@@ -59,7 +59,7 @@
    "tv": "NYMEX:NG1!",
    "src": "Yahoo",
    "first": 13880,
-   "last": 20783,
+   "last": 20784,
    "n": 4758
   },
   {
@@ -99,8 +99,8 @@
    "tv": "FX:EURUSD",
    "src": "Yahoo",
    "first": 13879,
-   "last": 20783,
-   "n": 4904
+   "last": 20784,
+   "n": 4905
   },
   {
    "key": "JPY",
@@ -109,8 +109,8 @@
    "tv": "FX_IDC:JPYUSD",
    "src": "Yahoo",
    "first": 13879,
-   "last": 20783,
-   "n": 4904
+   "last": 20784,
+   "n": 4905
   },
   {
    "key": "GOOGL",
