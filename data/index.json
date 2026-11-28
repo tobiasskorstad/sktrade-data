@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-27T10:04+00:00",
+ "updated": "2026-11-28T09:22+00:00",
  "failed": [],
  "markets": [
   {
@@ -69,8 +69,8 @@
    "tv": "CBOT:ZW1!",
    "src": "Yahoo",
    "first": 13880,
-   "last": 20782,
-   "n": 4755
+   "last": 20784,
+   "n": 4756
   },
   {
    "key": "SP500",
@@ -79,8 +79,8 @@
    "tv": "SP:SPX",
    "src": "Yahoo",
    "first": 13880,
-   "last": 20782,
-   "n": 4756
+   "last": 20784,
+   "n": 4757
   },
   {
    "key": "NDX",
@@ -89,8 +89,8 @@
    "tv": "NASDAQ:NDX",
    "src": "Yahoo",
    "first": 13880,
-   "last": 20782,
-   "n": 4756
+   "last": 20784,
+   "n": 4757
   },
   {
    "key": "EUR",
@@ -109,8 +109,8 @@
    "tv": "FX_IDC:JPYUSD",
    "src": "Yahoo",
    "first": 13879,
-   "last": 20784,
-   "n": 4905
+   "last": 20785,
+   "n": 4906
   },
   {
    "key": "GOOGL",
@@ -119,8 +119,8 @@
    "tv": "NASDAQ:GOOGL",
    "src": "Yahoo",
    "first": 13880,
-   "last": 20782,
-   "n": 4756
+   "last": 20784,
+   "n": 4757
   },
   {
    "key": "NVDA",
@@ -129,8 +129,8 @@
    "tv": "NASDAQ:NVDA",
    "src": "Yahoo",
    "first": 13880,
-   "last": 20782,
-   "n": 4756
+   "last": 20784,
+   "n": 4757
   },
   {
    "key": "AMZN",
@@ -139,8 +139,8 @@
    "tv": "NASDAQ:AMZN",
    "src": "Yahoo",
    "first": 13880,
-   "last": 20782,
-   "n": 4756
+   "last": 20784,
+   "n": 4757
   },
   {
    "key": "TSLA",
@@ -149,8 +149,8 @@
    "tv": "NASDAQ:TSLA",
    "src": "Yahoo",
    "first": 14789,
-   "last": 20782,
-   "n": 4129
+   "last": 20784,
+   "n": 4130
   },
   {
    "key": "INTC",
@@ -159,8 +159,8 @@
    "tv": "NASDAQ:INTC",
    "src": "Yahoo",
    "first": 13880,
-   "last": 20782,
-   "n": 4756
+   "last": 20784,
+   "n": 4757
   },
   {
    "key": "MSFT",
@@ -169,8 +169,8 @@
    "tv": "NASDAQ:MSFT",
    "src": "Yahoo",
    "first": 13880,
-   "last": 20782,
-   "n": 4756
+   "last": 20784,
+   "n": 4757
   },
   {
    "key": "BABA",
@@ -179,8 +179,8 @@
    "tv": "NYSE:BABA",
    "src": "Yahoo",
    "first": 16332,
-   "last": 20782,
-   "n": 3065
+   "last": 20784,
+   "n": 3066
   },
   {
    "key": "HIMS",
@@ -189,8 +189,8 @@
    "tv": "NYSE:HIMS",
    "src": "Yahoo",
    "first": 18152,
-   "last": 20782,
-   "n": 1811
+   "last": 20784,
+   "n": 1812
   }
  ]
 }
